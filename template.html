@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="global/style.css">
+		<script src="global/sidebar.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
+	</head>
+	<body>
+
+		<span id="sidetogmobile" onclick="toggside();"></span>
+		<div id="sidebar">
+			<span id="sidetop" class="sidelist">
+				<span id="sidetog" onclick="toggside();"></span>
+			</span>
+			<span id="sidenav" class="sidelist">
+				$sidenav$
+				$global/navbar.html()$
+			</span>
+		</div>
+
+		<main>
+			$body$
+		</main>
+
+	</body>
+</html>
