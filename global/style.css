@@ -46,7 +46,10 @@ body {
 main {
 	overflow-x:hidden;
 	overflow-y:scroll;
-	padding: 0 16%;
+	padding: 0 16vw;
+}
+.folded main {
+	padding: 0 22vw;
 }
 #sidebar {
 	flex: 1 1 20%;

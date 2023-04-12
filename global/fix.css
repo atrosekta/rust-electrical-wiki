@@ -43,7 +43,7 @@ html, body { touch-action:none; overscroll-behavior-y: none; }
 		padding: 0 5vw;
 	}
 	.folded main {
-		padding: 0 10vw;
+		padding: 0 16vw;
 	}
 }
 
