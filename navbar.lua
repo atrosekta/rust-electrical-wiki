@@ -29,7 +29,7 @@ function ParseToc (el, path)
 			local line = linkline( text, link )
 			out:insert(line)
 		else
-			local line = foldlink( text, link )
+			local line = linkline( text, link )
 			local list = ParseToc ( items[2], path )
 			out:insert(line)
 			out:extend(list)
@@ -57,7 +57,7 @@ function ParseConf (el)
 			local line = foldlink( text, path )
 			out:insert(line)
 			local mdpath = 'text/' .. path:gsub("html","md")
-			local toc = ParseToc( FileToc(md), path )
+			local toc = ParseToc( FileToc(mdpath), path )
 			out:extend(toc)
 		end
 	end
