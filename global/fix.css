@@ -4,7 +4,8 @@
 { width: 0.8rem; height: 8px; }
 ::-webkit-scrollbar-thumb
 { background: var(--fg2); border-radius: 0px; }
-main { scroll-behavior: smooth; }
+main { scroll-behavior: instant; }
+main.loaded { scroll-behavior: smooth; }
 
 /* sidebar scrollbar */
 #sidenav { padding-right: 0.75rem; }
@@ -46,13 +47,16 @@ html, body { touch-action:none; overscroll-behavior-y: none; }
 @media screen (orientation:portrait),
 screen and (max-device-aspect-ratio: 2/3) and (orientation:portrait),
 screen and (max-aspect-ratio: 1) {
-	.folded main,
-	main {
-		padding: 0 8vw;
-		width: 84vw;
-	}
 	.folded main {
 		padding: 0 6vw;
+	}
+	main{
+		width: 84vw;
+		padding-left:0;
+		padding-right:8vw;
+	}
+	#main-container:not(.folded) {
+		margin-left: 8vw;
 	}
 
 	/* invisible button on mobile to toggle sidebar */

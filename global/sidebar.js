@@ -11,6 +11,7 @@ function loadside() {
 	setTimeout( ()=>{
 		sidenav.scrollTo({top:h, behavior:"smooth"});
 	}, 333);
+	document.querySelector("main").classList.add("loaded");
 }
 
 function portraitClickCloseBar(e) {
