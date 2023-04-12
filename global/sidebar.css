@@ -13,7 +13,6 @@
 	flex: 0 1 90%;
 	width:100%;
 	padding-bottom: 8em;
-	opacity:1;
 }
 
 #sidetop {
@@ -64,6 +63,7 @@
 .folded #sidetop{
 	flex: 0 0 100%;
 }
+.folded #sidenav.loaded,
 .folded #sidenav {
 	opacity:0;
 }
@@ -76,7 +76,7 @@
 	transition: flex .2s ease-out;
 }
 #sidenav {
-	transition: opacity .1s;
+	transition: opacity .3s ease-in;
 }
 .sideline.foldable + .sidelist {
 	transition: height .2s;

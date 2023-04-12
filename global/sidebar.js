@@ -2,16 +2,19 @@
 window.addEventListener("load", loadside);
 
 function loadside() {
+	setTimeout( ()=>{
+		sidenav.classList.add("loaded");
+		document.querySelector("main").classList.add("loaded");
+	}, 100);
 	var sidenav = document.getElementById("sidenav");
-	sidenav.addEventListener("click", portraitClickCloseBar);
 	var cur = curlinkelem();
+	sidenav.addEventListener("click", portraitClickCloseBar);
 	if (!cur) return
 	toggfold(cur);
 	var h = cur.offsetTop - sidenav.offsetTop - 128;
 	setTimeout( ()=>{
 		sidenav.scrollTo({top:h, behavior:"smooth"});
 	}, 333);
-	document.querySelector("main").classList.add("loaded");
 }
 
 function portraitClickCloseBar(e) {

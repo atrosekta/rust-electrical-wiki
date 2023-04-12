@@ -11,6 +11,10 @@ main.loaded { scroll-behavior: smooth; }
 #sidenav { padding-right: 0.75rem; }
 /* #sidenav::-webkit-scrollbar-thumb { background: var(--bg1); border-radius: 0px; } */
 
+/* opacity load */
+#sidenav:not(.loaded) { opacity:0; }
+#sidenav.loaded { opacity:1; }
+
 /* fix unresponsive mobile touch click */
 html { touch-action: manipulation;
 -ms-touch-action: manipulation; }
@@ -57,6 +61,9 @@ screen and (max-aspect-ratio: 1) {
 	}
 	#main-container:not(.folded) {
 		margin-left: 8vw;
+	}
+	:not(.folded) > main {
+		transition: none;
 	}
 
 	/* invisible button on mobile to toggle sidebar */
