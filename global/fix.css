@@ -5,7 +5,7 @@
 ::-webkit-scrollbar-thumb
 { background: var(--fg2); border-radius: 0px; }
 main { scroll-behavior: instant; }
-main.loaded { scroll-behavior: smooth; }
+main.smooth { scroll-behavior: smooth; }
 
 /* sidebar scrollbar */
 #sidenav { padding-right: 0.75rem; }
@@ -71,13 +71,14 @@ screen and (max-aspect-ratio: 1) {
 		height:100vh;
 		width:100vw;
 		position:absolute;
+		z-index:1;
 		/* background-color:purple; */
 	}
 	.folded + #sidetogmobile {
 		width:8vw;
 	}
 	#sidebar {
-		z-index:1;
+		z-index:2;
 	}
 
 	#sidebar {

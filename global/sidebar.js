@@ -4,7 +4,8 @@ window.addEventListener("load", loadside);
 function loadside() {
 	setTimeout( ()=>{
 		sidenav.classList.add("loaded");
-		document.querySelector("main").classList.add("loaded");
+		if ( window.matchMedia( "(hover: hover) and (pointer: fine)" ).matches)
+			document.querySelector("main").classList.add("smooth");
 	}, 100);
 	var sidenav = document.getElementById("sidenav");
 	var cur = curlinkelem();
@@ -17,8 +18,11 @@ function loadside() {
 	}, 333);
 }
 
+const mobilemediaquery = 
+	"screen and (max-device-aspect-ratio: 2/3) and (orientation:portrait),"
+	 + "screen (orientation:portrait), screen and (max-aspect-ratio: 1)";
 function portraitClickCloseBar(e) {
-	if (! window.matchMedia("(max-aspect-ratio: 1)").matches)
+	if (! window.matchMedia( mobilemediaquery ).matches)
 		return; // only for portrait screen
 	if (! e.target.closest("a"))
 		return; // only for click on anchor links
