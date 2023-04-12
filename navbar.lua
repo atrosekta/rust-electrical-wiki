@@ -18,19 +18,19 @@ function FileToc ( path )
 	return pandoc.structure.table_of_contents( ReadFile( path ) )
 end
 
-function ParseToc (el)
+function ParseToc (el, path)
 	indent = indent + 1
 	local out = pandoc.Inlines( foldlist( indent, 1 ) )
 	for i, items in ipairs(el.content) do
 		local item = items[1].content[1]
 		local text = pandoc.utils.stringify( item )
-		local link = item.target
+		local link = path .. item.target
 		if #items == 1 then
 			local line = linkline( text, link )
 			out:insert(line)
 		else
 			local line = foldlink( text, link )
-			local list = ParseToc ( items[2] )
+			local list = ParseToc ( items[2], path )
 			out:insert(line)
 			out:extend(list)
 		end
@@ -56,8 +56,8 @@ function ParseConf (el)
 		else
 			local line = foldlink( text, path )
 			out:insert(line)
-			path = 'text/' .. path:gsub("html","md")
-			local toc = ParseToc( FileToc( path ) )
+			local mdpath = 'text/' .. path:gsub("html","md")
+			local toc = ParseToc( FileToc(md), path )
 			out:extend(toc)
 		end
 	end
