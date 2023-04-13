@@ -1,7 +1,7 @@
 
 # Centralized vs Decentralized
 
-## Locations
+# Locations
 
 When we talk about centralizing or decentralizing electricity, we are
 talking about 1 of 2 things. We are either talking about the physical
@@ -92,7 +92,7 @@ afterthought just like the disconnected TC was not an afterthought.
 
 ---
 
-## Circuits
+# Circuits
 
 When we talk about centralizing or decentralizing circuits, we are
 talking about how we are delivering power from the source to the

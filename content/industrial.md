@@ -1,5 +1,5 @@
 
-# \*Industrial
+# Industrial
 
 ---
 
@@ -50,8 +50,7 @@ Notes:
 | | |  
 |-|---|  
 Identifier          |  -1049172752
-Description         | Attach to a storage container to allow industrial IO
-connections
+Description         | Attach to a storage container to allow industrial IO connections
 Crafting Recipe     | 100 Metal Fragments
 Recycles Into       | 50 Metal Fragments
 Stack Size          | 5
@@ -72,8 +71,7 @@ Notes:
 | | |  
 |-|---|  
 Identifier                |  
-Description               | An electrical version of a furnace that uses electricity
-instead of a fuel source
+Description               | An electrical version of a furnace that uses electricity instead of a fuel source
 Crafting Recipe           | 5 HQM, 200 Metal Fragments
 Recycles Into             | 3 HQM, 100 Metal Fragments
 Stack Size                | 1
@@ -135,9 +133,5 @@ Notes:
 ---
 
 # What is the industrial system?
-
----
-
-# Common Traits
 
 ---

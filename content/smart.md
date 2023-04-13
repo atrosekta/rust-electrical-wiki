@@ -95,9 +95,6 @@ Decay Time          |
 Notes:
 
 - Only people with TC authorization can operate the Switch
-
-&nbsp;
-
 - Can be paired with Rust+ and the Rust+ Bot
 - Link to section talking about the side inputs
 

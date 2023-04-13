@@ -12,16 +12,9 @@ THIS IS A WORK IN PROGRESS
 
 EVERYTHING IS SUBJECT TO CHANGE
 
-Anything marked with an \* is incomplete
-
-PLEASE MAKE COMMENTS
-
 ---
 
-# 
-
-Rustrician.io change log -
-[https://www.reddit.com/r/rustrician/wiki/changelog/](https://www.google.com/url?q=https://www.reddit.com/r/rustrician/wiki/changelog/&sa=D&source=editors&ust=1677670979047633&usg=AOvVaw1qr4GXyZYdGEH5gP3F1HFi)
+[Rustrician.io change log](https://www.reddit.com/r/rustrician/wiki/changelog/)
 
 # Change Log
 

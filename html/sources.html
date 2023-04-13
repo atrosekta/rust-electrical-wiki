@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>sources</title>
+		<link rel="stylesheet" href="global/style.css">
+		<link rel="stylesheet" href="global/sidebar.css">
+		<link rel="stylesheet" href="global/fix.css">
+		<script src="global/sidebar.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
+	</head>
+	<body>
+
+		<div id="sidebar">
+			<span id="sidetop" class="sidelist">
+				<span id="sidetog" class="sidetext" onclick="toggside();"></span>
+			</span>
+			<span id="sidenav">
+				  <span class="sidelist indent0 folded">
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='index.html'> Home </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent1 folded">
+		<a class='sideline' href='index.html#the-rust-electrical-handbook'>
+			<span class='sidetext'> The RUST Electrical Handbook </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='index.html#change-log'>
+			<span class='sidetext'> Change Log </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+<span class="sideline foldable folded unfoldonload" onclick="toggfold(this);">
+	<span class="sidetext"> Items Details </span>
+	<span class="sidesign"></span>
+</span>
+
+  <span class="sidelist indent1 folded">
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='tools.html'> Tools </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='tools.html#tools'>
+			<span class='sidetext'> Tools </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#hammer'>
+			<span class='sidetext'> Hammer </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#wire-tool'>
+			<span class='sidetext'> Wire Tool </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#hose-tool'>
+			<span class='sidetext'> Hose Tool </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#pipe-tool'>
+			<span class='sidetext'> Pipe Tool </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='sources.html'> Sources </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='sources.html#power-sources'>
+			<span class='sidetext'> Power Sources </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sources.html#test-generator'>
+			<span class='sidetext'> Test Generator  </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sources.html#wind-turbine'>
+			<span class='sidetext'> Wind Turbine </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sources.html#large-solar-panel'>
+			<span class='sidetext'> Large Solar Panel </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sources.html#small-generator'>
+			<span class='sidetext'> Small Generator </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='distribution.html'> Distribution </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='distribution.html#power-distribution'>
+			<span class='sidetext'> Power Distribution </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='distribution.html#root-combiner'>
+			<span class='sidetext'> Root Combiner </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='distribution.html#electrical-branch'>
+			<span class='sidetext'> Electrical Branch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='distribution.html#splitter'>
+			<span class='sidetext'> Splitter </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='storage.html'> Storage </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='storage.html#power-storage'>
+			<span class='sidetext'> Power Storage </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='storage.html#small-rechargeable-battery'>
+			<span class='sidetext'> Small Rechargeable Battery </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='storage.html#medium-rechargeable-battery'>
+			<span class='sidetext'> Medium Rechargeable Battery </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='storage.html#large-battery'>
+			<span class='sidetext'> Large Battery </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='defense.html'> Defense </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='defense.html#defense'>
+			<span class='sidetext'> Defense </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='defense.html#sam-site'>
+			<span class='sidetext'> SAM Site </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='defense.html#auto-turret'>
+			<span class='sidetext'> Auto Turret </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='defense.html#tesla-coil'>
+			<span class='sidetext'> Tesla Coil </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='light.html'> Lights </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='light.html#lights'>
+			<span class='sidetext'> Lights </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#flasher-light'>
+			<span class='sidetext'> Flasher Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#siren-light'>
+			<span class='sidetext'> Siren Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#ceiling-light'>
+			<span class='sidetext'> Ceiling Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#simple-light'>
+			<span class='sidetext'> Simple Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#deluxe-christmas-lights'>
+			<span class='sidetext'> Deluxe Christmas Lights </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#search-light'>
+			<span class='sidetext'> Search Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#small-neon-sign'>
+			<span class='sidetext'> Small Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#medium-neon-sign'>
+			<span class='sidetext'> Medium Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#medium-animated-neon-sign'>
+			<span class='sidetext'> Medium Animated Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#large-neon-sign'>
+			<span class='sidetext'> Large Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#large-animated-neon-sign'>
+			<span class='sidetext'> Large Animated Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#industrial-wall-light'>
+			<span class='sidetext'> Industrial Wall Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#green-industrial-light'>
+			<span class='sidetext'> Green Industrial Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#red-industrial-light'>
+			<span class='sidetext'> Red Industrial Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#strobe-light'>
+			<span class='sidetext'> Strobe Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='utils.html'> Utilities </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='utils.html#utilities-quality-of-life'>
+			<span class='sidetext'> Utilities / Quality Of Life </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#door-controller'>
+			<span class='sidetext'> Door Controller </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#igniter'>
+			<span class='sidetext'> Igniter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#cctv-camera'>
+			<span class='sidetext'> CCTV Camera </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#electric-heater'>
+			<span class='sidetext'> Electric Heater </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#modular-car-lift'>
+			<span class='sidetext'> Modular Car Lift </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#elevator'>
+			<span class='sidetext'> Elevator </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#telephone'>
+			<span class='sidetext'> Telephone </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#audio-alarm'>
+			<span class='sidetext'> Audio Alarm </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#computer-station'>
+			<span class='sidetext'> Computer Station </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#fogger-3000'>
+			<span class='sidetext'> Fogger-3000 </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#snow-machine'>
+			<span class='sidetext'> Snow Machine </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='logic.html'> Logic </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='logic.html#logic'>
+			<span class='sidetext'> Logic </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#blocker'>
+			<span class='sidetext'> Blocker </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#memory-cell'>
+			<span class='sidetext'> Memory Cell </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#timer'>
+			<span class='sidetext'> Timer </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#rand-switch'>
+			<span class='sidetext'> RAND Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#or-switch'>
+			<span class='sidetext'> OR Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#and-switch'>
+			<span class='sidetext'> AND Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#xor-switch'>
+			<span class='sidetext'> XOR Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#counter'>
+			<span class='sidetext'> Counter </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='switch.html'> Switchs </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='switch.html#switches'>
+			<span class='sidetext'> Switches </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='switch.html#button'>
+			<span class='sidetext'> Button </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='switch.html#switch'>
+			<span class='sidetext'> Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='switch.html#side-inputs'>
+			<span class='sidetext'> Side Inputs </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='sensor.html'> Sensors </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='sensor.html#sensors'>
+			<span class='sidetext'> Sensors </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sensor.html#hbhf-sensor'>
+			<span class='sidetext'> HBHF Sensor </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sensor.html#laser-detector'>
+			<span class='sidetext'> Laser Detector </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sensor.html#pressure-pad'>
+			<span class='sidetext'> Pressure Pad </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sensor.html#reactive-target'>
+			<span class='sidetext'> Reactive Target </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='rf.html'> RF </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='rf.html#radio-frequency-rf'>
+			<span class='sidetext'> Radio Frequency (RF) </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#rf-broadcaster'>
+			<span class='sidetext'> RF Broadcaster </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#rf-receiver'>
+			<span class='sidetext'> RF Receiver </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#rf-transmitter'>
+			<span class='sidetext'> RF Transmitter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#rf-pager'>
+			<span class='sidetext'> RF Pager </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='smart.html'> Smart </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='smart.html#smart'>
+			<span class='sidetext'> Smart </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='smart.html#storage-monitor'>
+			<span class='sidetext'> Storage Monitor </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='smart.html#smart-alarm'>
+			<span class='sidetext'> Smart Alarm </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='smart.html#smart-switch'>
+			<span class='sidetext'> Smart Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='smart.html#smart-timer'>
+			<span class='sidetext'> Smart Timer </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='fireworks.html'> Fireworks </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='fireworks.html#fireworks'>
+			<span class='sidetext'> Fireworks </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#volcano-firework'>
+			<span class='sidetext'> Volcano Firework </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#roman-candle'>
+			<span class='sidetext'> Roman Candle </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#boomer'>
+			<span class='sidetext'> Boomer </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#champagne-boomer'>
+			<span class='sidetext'> Champagne Boomer </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#pattern-boomer'>
+			<span class='sidetext'> Pattern Boomer </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='voiceDLC.html'> Voice DLC </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='voiceDLC.html#voice-props-pack-dlc'>
+			<span class='sidetext'> Voice Props Pack DLC </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#boom-box'>
+			<span class='sidetext'> Boom Box </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#connected-speaker'>
+			<span class='sidetext'> Connected Speaker </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#disco-ball'>
+			<span class='sidetext'> Disco Ball </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#disco-floor'>
+			<span class='sidetext'> Disco Floor </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#laser-light'>
+			<span class='sidetext'> Laser Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#microphone-stand'>
+			<span class='sidetext'> Microphone Stand </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#sound-light'>
+			<span class='sidetext'> Sound Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='water.html'> Water </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='water.html#water'>
+			<span class='sidetext'> Water </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#what-is-the-water-system'>
+			<span class='sidetext'> What is the water system? </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#common-traits'>
+			<span class='sidetext'> Common Traits </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#large-water-catcher'>
+			<span class='sidetext'> Large Water Catcher </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#small-water-catcher'>
+			<span class='sidetext'> Small Water Catcher </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#water-barrel'>
+			<span class='sidetext'> Water Barrel </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#water-pump'>
+			<span class='sidetext'> Water Pump </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#powered-water-purifier'>
+			<span class='sidetext'> Powered Water Purifier </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#fuel-tank-vehicle-module'>
+			<span class='sidetext'> Fuel Tank Vehicle Module </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#fluid-switch-pump'>
+			<span class='sidetext'> Fluid Switch & Pump </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#fluid-combiner'>
+			<span class='sidetext'> Fluid Combiner </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#fluid-splitter'>
+			<span class='sidetext'> Fluid Splitter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#sprinkler'>
+			<span class='sidetext'> Sprinkler </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='industrial.html'> Industrial </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='industrial.html#industrial'>
+			<span class='sidetext'> Industrial </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#industrial-conveyor'>
+			<span class='sidetext'> Industrial Conveyor </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#industrial-crafter'>
+			<span class='sidetext'> Industrial Crafter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#storage-adapter'>
+			<span class='sidetext'> Storage Adapter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#electric-furnace'>
+			<span class='sidetext'> Electric Furnace </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#industrial-splitter'>
+			<span class='sidetext'> Industrial Splitter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#industrial-combiner'>
+			<span class='sidetext'> Industrial Combiner </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#what-is-the-industrial-system'>
+			<span class='sidetext'> What is the industrial system? </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+<span class="sideline foldable folded unfoldonload" onclick="toggfold(this);">
+	<span class="sidetext"> Concepts </span>
+	<span class="sidesign"></span>
+</span>
+
+  <span class="sidelist indent1 folded">
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='concepts.html'> Concepts </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='concepts.html#the-structure-of-a-base-circuit'>
+			<span class='sidetext'> The Structure of a Base Circuit </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='concepts.html#battery-active-usage-vs-actual-power-consumed'>
+			<span class='sidetext'> Battery Active Usage Vs Actual Power Consumed </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='concepts.html#short-circuit-max-depth'>
+			<span class='sidetext'> Short Circuit / Max Depth </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='concepts.html#short-circuit'>
+			<span class='sidetext'> Short Circuit </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='concepts.html#max-depth'>
+			<span class='sidetext'> Max Depth </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+		<a class='sideline' href='concepts.html#circuit-delay-and-power-flow'>
+			<span class='sidetext'> Circuit Delay and Power Flow </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='concepts.html#useful-circuits'>
+			<span class='sidetext'> Useful Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='concepts.html#basic'>
+			<span class='sidetext'> Basic </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='concepts.html#advanced'>
+			<span class='sidetext'> Advanced </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='centralized.html'> Centralization </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='centralized.html#centralized-vs-decentralized'>
+			<span class='sidetext'> Centralized vs Decentralized </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#locations'>
+			<span class='sidetext'> Locations </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='centralized.html#centralized-location'>
+			<span class='sidetext'> Centralized Location </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#decentralized-locations'>
+			<span class='sidetext'> Decentralized Locations </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+		<a class='sideline' href='centralized.html#circuits'>
+			<span class='sidetext'> Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='centralized.html#centralized-circuits'>
+			<span class='sidetext'> Centralized Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#decentralized-circuits'>
+			<span class='sidetext'> Decentralized Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#hybrid-circuits'>
+			<span class='sidetext'> Hybrid Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+		<a class='sideline' href='centralized.html#what-is-a-power-bus'>
+			<span class='sidetext'> What is a Power Bus?* </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='centralized.html#fixed-bus-f-bus'>
+			<span class='sidetext'> Fixed Bus (F-Bus) </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#dynamic-bus-d-bus'>
+			<span class='sidetext'> Dynamic Bus (D-Bus) </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#configure-siphon-c-bus'>
+			<span class='sidetext'> Configure Siphon (C-Bus) </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='backup.html'> Backup & Distribution </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='backup.html#battery-backup-and-distribution-systems'>
+			<span class='sidetext'> Battery Backup and Distribution Systems </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#direct-delivery'>
+			<span class='sidetext'> Direct Delivery </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#inline'>
+			<span class='sidetext'> Inline </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#orblocker'>
+			<span class='sidetext'> OR/Blocker </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#secondary-battery-backup'>
+			<span class='sidetext'> Secondary Battery Backup </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#nih-core'>
+			<span class='sidetext'> Nih Core </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+  </span>			</span>
+		</div>
+		<span id="sidetogmobile" onclick="toggside();"></span>
+
+		<div id="main-container">
+		<main>
+			<h1 id="power-sources">Power Sources</h1>
+<hr />
+<h1 id="test-generator">Test Generator <img
+src="images/image34.png" /></h1>
+<p><strong>(NOT CRAFTABLE)</strong></p>
+<table>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td> -295829489</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td>Providing a constant 100rW per Power Output</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>Cannot be crafted</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>13 HQM/2 Gears/1 Metal Pipe/2 Fuse</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Hit Points</td>
+<td>1000</td>
+</tr>
+<tr class="odd">
+<td>Outputs</td>
+<td>Power Output 1, Power Output 2, Power Output 3</td>
+</tr>
+<tr class="even">
+<td>Power Consumption</td>
+<td>0rW</td>
+</tr>
+<tr class="odd">
+<td>Power Output</td>
+<td>100rW per output</td>
+</tr>
+<tr class="even">
+<td>Despawn Time</td>
+<td>20 minutes</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>This item can only be spawned in by an admin.</li>
+<li>It supplies a constant 100rW per output constantly for free.</li>
+<li>Excellent for testing.</li>
+</ul>
+<hr />
+<h1 id="wind-turbine">Wind Turbine<img src="images/image89.png" /></h1>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td>-1819763926</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td>Generating electricity from the wind</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>500 Wood/10 HQM/3 Gears/3 Sheet Metal</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>250 Wood/5 HQM/2 Gears/2 Sheet Metal</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Workbench Required</td>
+<td>Level 2</td>
+</tr>
+<tr class="odd">
+<td>Research Table Cost</td>
+<td>125 Scrap</td>
+</tr>
+<tr class="even">
+<td>Hit Points</td>
+<td>250</td>
+</tr>
+<tr class="odd">
+<td>Where To Buy</td>
+<td>Bandit Camp for 500 Scrap</td>
+</tr>
+<tr class="even">
+<td>Where To Find</td>
+<td>Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, Excavator
+Scientist, Heavy Scientist, Locked Crate, Military Base Scientist,
+Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box,
+Underwater Lab Elite Crate, Underwater Lab Yellow Crate</td>
+</tr>
+<tr class="odd">
+<td>Outputs</td>
+<td>Power Out</td>
+</tr>
+<tr class="even">
+<td>Power Consumption</td>
+<td>0rW</td>
+</tr>
+<tr class="odd">
+<td>Power Output</td>
+<td>0-150rW</td>
+</tr>
+<tr class="even">
+<td>Active Usage</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>Despawn Time</td>
+<td>40 minutes</td>
+</tr>
+<tr class="even">
+<td>Decay Time</td>
+<td>8 hours</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>Wind Turbines operate in both day and night</li>
+<li>The amount of power they output is heavily influenced by the number
+of floors above the ground they are, not sea level</li>
+<li>They will produce more power, more often the more floors above
+ground you place them</li>
+<li>Requires a 1x1 to be placed on and cannot be picked up with a
+hammer</li>
+<li>There is a small area at the base of the turbine, on some sheet
+metal where you can place components.</li>
+<li>A turbine made on an iceberg, will calculate its output based on the
+height of the buildable ground of the iceberg below the turbine, down to
+the ocean bottom. This means no additional height above an iceberg will
+increase its height calculation.</li>
+</ul>
+<p><img src="images/image23.png" /></p>
+<p><img src="images/image31.png" /></p>
+<hr />
+<h1 id="large-solar-panel">Large Solar Panel<img
+src="images/image22.png" /></h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td>2090395347</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td>Generating electricity from the Sun</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>5 HQM/1 Tech Trash</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>3 HQM/50% - 1 Tech Trash</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>Workbench Required</td>
+<td>Level 1</td>
+</tr>
+<tr class="odd">
+<td>Research Table Cost</td>
+<td>75 Scrap</td>
+</tr>
+<tr class="even">
+<td>Hit Points</td>
+<td>100</td>
+</tr>
+<tr class="odd">
+<td>Where To Buy</td>
+<td>Outpost for 75 Scrap</td>
+</tr>
+<tr class="even">
+<td>Where To Find</td>
+<td>Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist,
+Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken
+Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue
+Crate</td>
+</tr>
+<tr class="odd">
+<td>Outputs</td>
+<td>Power Out</td>
+</tr>
+<tr class="even">
+<td>Power Consumption</td>
+<td>0rW</td>
+</tr>
+<tr class="odd">
+<td>Power Output</td>
+<td>0-20rW</td>
+</tr>
+<tr class="even">
+<td>Active Usage</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>Despawn Time</td>
+<td>20 minutes</td>
+</tr>
+<tr class="even">
+<td>Decay Time</td>
+<td>8 hours</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>Large Solar Panels output electricity only during the day.</li>
+<li>They will produce less power if they are damaged or the Sun is not
+making it to the entire front face.</li>
+<li>They can be placed on the ground or flat building structure.</li>
+<li>They can be picked up with a hammer but will lose 25% health.</li>
+<li>24 hours in game is 1 irl hour</li>
+</ul>
+<p><img src="images/image111.png" /></p>
+<p>Depending on the time of year, the Sun will take a different path
+through the sky. In June and July, the Sun reaches its most Northern
+path. In December and January, the Sun reaches its most Southern path.
+The picture above on the right shows how the Sun will traverse the sky
+over 6 Rust months. A day in the game is an hour of real time. This
+means it takes about 15 days for a full Rust Year. Wipe day is always
+May 20th 2024 so depending how long or short your wipe is, and where on
+the map you build, will determine the direction of your Solar Panels. If
+you are only playing the first 3 days of a fresh wipe and you build in
+the South, face the panels North and call it a day, but, if you are
+playing a monthly wipe, placing them facing East and West is the
+simplest option.</p>
+<hr />
+<h1 id="small-generator">Small Generator<img
+src="images/image76.png" /></h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td>1849887541</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td>Generating electricity from Low Grade Fuel</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>5 HQM/2 Gears</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>3 HQM/1 Gears</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Workbench Required</td>
+<td>Level 2</td>
+</tr>
+<tr class="odd">
+<td>Research Table Cost</td>
+<td>75 Scrap</td>
+</tr>
+<tr class="even">
+<td>Hit Points</td>
+<td>100</td>
+</tr>
+<tr class="odd">
+<td>Where To Buy</td>
+<td>Outpost for 125 Scrap</td>
+</tr>
+<tr class="even">
+<td>Where To Find</td>
+<td>Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate,
+Excavator Scientist, Heavy Scientist, Locked Crate, Military Base
+Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure
+Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater
+Lab Yellow Crate</td>
+</tr>
+<tr class="odd">
+<td>Inputs/Outputs</td>
+<td>Force Start, Force Stop / Power Out</td>
+</tr>
+<tr class="even">
+<td>Power Consumption</td>
+<td>0rW</td>
+</tr>
+<tr class="odd">
+<td>Fuel Consumption</td>
+<td>500 Low Grade Fuel/2hr</td>
+</tr>
+<tr class="even">
+<td>Power Output</td>
+<td>40rW</td>
+</tr>
+<tr class="odd">
+<td>Active Usage</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>Despawn Time</td>
+<td>20 minutes</td>
+</tr>
+<tr class="odd">
+<td>Decay Time</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>Small Generators will output electricity when they are turned
+on</li>
+<li>You can Start and Stop them manually or use one of the electrical
+inputs.</li>
+<li>The last input to receive power is the function that is activated,
+even if power is still being applied to the opposite.</li>
+<li>They must be placed on floors, foundations or the ground</li>
+<li>They still produce max power when damaged</li>
+<li>They can be picked up with a hammer but lose 20% health</li>
+<li>If a battery is feeding power to either of the inputs, components
+connected to Power Out will register an active usage on the
+battery.</li>
+</ul>
+<hr />
+		</main>
+		</div>
+
+	</body>
+</html>

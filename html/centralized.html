@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>centralized</title>
+		<link rel="stylesheet" href="global/style.css">
+		<link rel="stylesheet" href="global/sidebar.css">
+		<link rel="stylesheet" href="global/fix.css">
+		<script src="global/sidebar.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
+	</head>
+	<body>
+
+		<div id="sidebar">
+			<span id="sidetop" class="sidelist">
+				<span id="sidetog" class="sidetext" onclick="toggside();"></span>
+			</span>
+			<span id="sidenav">
+				  <span class="sidelist indent0 folded">
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='index.html'> Home </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent1 folded">
+		<a class='sideline' href='index.html#the-rust-electrical-handbook'>
+			<span class='sidetext'> The RUST Electrical Handbook </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='index.html#change-log'>
+			<span class='sidetext'> Change Log </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+<span class="sideline foldable folded unfoldonload" onclick="toggfold(this);">
+	<span class="sidetext"> Items Details </span>
+	<span class="sidesign"></span>
+</span>
+
+  <span class="sidelist indent1 folded">
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='tools.html'> Tools </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='tools.html#tools'>
+			<span class='sidetext'> Tools </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#hammer'>
+			<span class='sidetext'> Hammer </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#wire-tool'>
+			<span class='sidetext'> Wire Tool </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#hose-tool'>
+			<span class='sidetext'> Hose Tool </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#pipe-tool'>
+			<span class='sidetext'> Pipe Tool </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='sources.html'> Sources </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='sources.html#power-sources'>
+			<span class='sidetext'> Power Sources </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sources.html#test-generator'>
+			<span class='sidetext'> Test Generator  </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sources.html#wind-turbine'>
+			<span class='sidetext'> Wind Turbine </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sources.html#large-solar-panel'>
+			<span class='sidetext'> Large Solar Panel </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sources.html#small-generator'>
+			<span class='sidetext'> Small Generator </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='distribution.html'> Distribution </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='distribution.html#power-distribution'>
+			<span class='sidetext'> Power Distribution </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='distribution.html#root-combiner'>
+			<span class='sidetext'> Root Combiner </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='distribution.html#electrical-branch'>
+			<span class='sidetext'> Electrical Branch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='distribution.html#splitter'>
+			<span class='sidetext'> Splitter </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='storage.html'> Storage </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='storage.html#power-storage'>
+			<span class='sidetext'> Power Storage </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='storage.html#small-rechargeable-battery'>
+			<span class='sidetext'> Small Rechargeable Battery </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='storage.html#medium-rechargeable-battery'>
+			<span class='sidetext'> Medium Rechargeable Battery </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='storage.html#large-battery'>
+			<span class='sidetext'> Large Battery </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='defense.html'> Defense </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='defense.html#defense'>
+			<span class='sidetext'> Defense </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='defense.html#sam-site'>
+			<span class='sidetext'> SAM Site </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='defense.html#auto-turret'>
+			<span class='sidetext'> Auto Turret </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='defense.html#tesla-coil'>
+			<span class='sidetext'> Tesla Coil </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='light.html'> Lights </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='light.html#lights'>
+			<span class='sidetext'> Lights </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#flasher-light'>
+			<span class='sidetext'> Flasher Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#siren-light'>
+			<span class='sidetext'> Siren Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#ceiling-light'>
+			<span class='sidetext'> Ceiling Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#simple-light'>
+			<span class='sidetext'> Simple Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#deluxe-christmas-lights'>
+			<span class='sidetext'> Deluxe Christmas Lights </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#search-light'>
+			<span class='sidetext'> Search Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#small-neon-sign'>
+			<span class='sidetext'> Small Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#medium-neon-sign'>
+			<span class='sidetext'> Medium Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#medium-animated-neon-sign'>
+			<span class='sidetext'> Medium Animated Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#large-neon-sign'>
+			<span class='sidetext'> Large Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#large-animated-neon-sign'>
+			<span class='sidetext'> Large Animated Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#industrial-wall-light'>
+			<span class='sidetext'> Industrial Wall Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#green-industrial-light'>
+			<span class='sidetext'> Green Industrial Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#red-industrial-light'>
+			<span class='sidetext'> Red Industrial Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#strobe-light'>
+			<span class='sidetext'> Strobe Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='utils.html'> Utilities </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='utils.html#utilities-quality-of-life'>
+			<span class='sidetext'> Utilities / Quality Of Life </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#door-controller'>
+			<span class='sidetext'> Door Controller </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#igniter'>
+			<span class='sidetext'> Igniter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#cctv-camera'>
+			<span class='sidetext'> CCTV Camera </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#electric-heater'>
+			<span class='sidetext'> Electric Heater </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#modular-car-lift'>
+			<span class='sidetext'> Modular Car Lift </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#elevator'>
+			<span class='sidetext'> Elevator </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#telephone'>
+			<span class='sidetext'> Telephone </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#audio-alarm'>
+			<span class='sidetext'> Audio Alarm </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#computer-station'>
+			<span class='sidetext'> Computer Station </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#fogger-3000'>
+			<span class='sidetext'> Fogger-3000 </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#snow-machine'>
+			<span class='sidetext'> Snow Machine </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='logic.html'> Logic </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='logic.html#logic'>
+			<span class='sidetext'> Logic </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#blocker'>
+			<span class='sidetext'> Blocker </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#memory-cell'>
+			<span class='sidetext'> Memory Cell </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#timer'>
+			<span class='sidetext'> Timer </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#rand-switch'>
+			<span class='sidetext'> RAND Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#or-switch'>
+			<span class='sidetext'> OR Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#and-switch'>
+			<span class='sidetext'> AND Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#xor-switch'>
+			<span class='sidetext'> XOR Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#counter'>
+			<span class='sidetext'> Counter </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='switch.html'> Switchs </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='switch.html#switches'>
+			<span class='sidetext'> Switches </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='switch.html#button'>
+			<span class='sidetext'> Button </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='switch.html#switch'>
+			<span class='sidetext'> Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='switch.html#side-inputs'>
+			<span class='sidetext'> Side Inputs </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='sensor.html'> Sensors </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='sensor.html#sensors'>
+			<span class='sidetext'> Sensors </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sensor.html#hbhf-sensor'>
+			<span class='sidetext'> HBHF Sensor </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sensor.html#laser-detector'>
+			<span class='sidetext'> Laser Detector </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sensor.html#pressure-pad'>
+			<span class='sidetext'> Pressure Pad </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sensor.html#reactive-target'>
+			<span class='sidetext'> Reactive Target </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='rf.html'> RF </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='rf.html#radio-frequency-rf'>
+			<span class='sidetext'> Radio Frequency (RF) </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#rf-broadcaster'>
+			<span class='sidetext'> RF Broadcaster </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#rf-receiver'>
+			<span class='sidetext'> RF Receiver </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#rf-transmitter'>
+			<span class='sidetext'> RF Transmitter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#rf-pager'>
+			<span class='sidetext'> RF Pager </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='smart.html'> Smart </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='smart.html#smart'>
+			<span class='sidetext'> Smart </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='smart.html#storage-monitor'>
+			<span class='sidetext'> Storage Monitor </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='smart.html#smart-alarm'>
+			<span class='sidetext'> Smart Alarm </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='smart.html#smart-switch'>
+			<span class='sidetext'> Smart Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='smart.html#smart-timer'>
+			<span class='sidetext'> Smart Timer </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='fireworks.html'> Fireworks </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='fireworks.html#fireworks'>
+			<span class='sidetext'> Fireworks </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#volcano-firework'>
+			<span class='sidetext'> Volcano Firework </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#roman-candle'>
+			<span class='sidetext'> Roman Candle </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#boomer'>
+			<span class='sidetext'> Boomer </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#champagne-boomer'>
+			<span class='sidetext'> Champagne Boomer </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#pattern-boomer'>
+			<span class='sidetext'> Pattern Boomer </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='voiceDLC.html'> Voice DLC </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='voiceDLC.html#voice-props-pack-dlc'>
+			<span class='sidetext'> Voice Props Pack DLC </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#boom-box'>
+			<span class='sidetext'> Boom Box </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#connected-speaker'>
+			<span class='sidetext'> Connected Speaker </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#disco-ball'>
+			<span class='sidetext'> Disco Ball </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#disco-floor'>
+			<span class='sidetext'> Disco Floor </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#laser-light'>
+			<span class='sidetext'> Laser Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#microphone-stand'>
+			<span class='sidetext'> Microphone Stand </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#sound-light'>
+			<span class='sidetext'> Sound Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='water.html'> Water </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='water.html#water'>
+			<span class='sidetext'> Water </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#what-is-the-water-system'>
+			<span class='sidetext'> What is the water system? </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#common-traits'>
+			<span class='sidetext'> Common Traits </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#large-water-catcher'>
+			<span class='sidetext'> Large Water Catcher </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#small-water-catcher'>
+			<span class='sidetext'> Small Water Catcher </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#water-barrel'>
+			<span class='sidetext'> Water Barrel </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#water-pump'>
+			<span class='sidetext'> Water Pump </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#powered-water-purifier'>
+			<span class='sidetext'> Powered Water Purifier </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#fuel-tank-vehicle-module'>
+			<span class='sidetext'> Fuel Tank Vehicle Module </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#fluid-switch-pump'>
+			<span class='sidetext'> Fluid Switch & Pump </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#fluid-combiner'>
+			<span class='sidetext'> Fluid Combiner </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#fluid-splitter'>
+			<span class='sidetext'> Fluid Splitter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#sprinkler'>
+			<span class='sidetext'> Sprinkler </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='industrial.html'> Industrial </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='industrial.html#industrial'>
+			<span class='sidetext'> Industrial </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#industrial-conveyor'>
+			<span class='sidetext'> Industrial Conveyor </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#industrial-crafter'>
+			<span class='sidetext'> Industrial Crafter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#storage-adapter'>
+			<span class='sidetext'> Storage Adapter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#electric-furnace'>
+			<span class='sidetext'> Electric Furnace </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#industrial-splitter'>
+			<span class='sidetext'> Industrial Splitter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#industrial-combiner'>
+			<span class='sidetext'> Industrial Combiner </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#what-is-the-industrial-system'>
+			<span class='sidetext'> What is the industrial system? </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+<span class="sideline foldable folded unfoldonload" onclick="toggfold(this);">
+	<span class="sidetext"> Concepts </span>
+	<span class="sidesign"></span>
+</span>
+
+  <span class="sidelist indent1 folded">
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='concepts.html'> Concepts </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='concepts.html#the-structure-of-a-base-circuit'>
+			<span class='sidetext'> The Structure of a Base Circuit </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='concepts.html#battery-active-usage-vs-actual-power-consumed'>
+			<span class='sidetext'> Battery Active Usage Vs Actual Power Consumed </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='concepts.html#short-circuit-max-depth'>
+			<span class='sidetext'> Short Circuit / Max Depth </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='concepts.html#short-circuit'>
+			<span class='sidetext'> Short Circuit </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='concepts.html#max-depth'>
+			<span class='sidetext'> Max Depth </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+		<a class='sideline' href='concepts.html#circuit-delay-and-power-flow'>
+			<span class='sidetext'> Circuit Delay and Power Flow </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='concepts.html#useful-circuits'>
+			<span class='sidetext'> Useful Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='concepts.html#basic'>
+			<span class='sidetext'> Basic </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='concepts.html#advanced'>
+			<span class='sidetext'> Advanced </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='centralized.html'> Centralization </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='centralized.html#centralized-vs-decentralized'>
+			<span class='sidetext'> Centralized vs Decentralized </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#locations'>
+			<span class='sidetext'> Locations </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='centralized.html#centralized-location'>
+			<span class='sidetext'> Centralized Location </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#decentralized-locations'>
+			<span class='sidetext'> Decentralized Locations </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+		<a class='sideline' href='centralized.html#circuits'>
+			<span class='sidetext'> Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='centralized.html#centralized-circuits'>
+			<span class='sidetext'> Centralized Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#decentralized-circuits'>
+			<span class='sidetext'> Decentralized Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#hybrid-circuits'>
+			<span class='sidetext'> Hybrid Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+		<a class='sideline' href='centralized.html#what-is-a-power-bus'>
+			<span class='sidetext'> What is a Power Bus?* </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='centralized.html#fixed-bus-f-bus'>
+			<span class='sidetext'> Fixed Bus (F-Bus) </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#dynamic-bus-d-bus'>
+			<span class='sidetext'> Dynamic Bus (D-Bus) </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#configure-siphon-c-bus'>
+			<span class='sidetext'> Configure Siphon (C-Bus) </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='backup.html'> Backup & Distribution </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='backup.html#battery-backup-and-distribution-systems'>
+			<span class='sidetext'> Battery Backup and Distribution Systems </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#direct-delivery'>
+			<span class='sidetext'> Direct Delivery </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#inline'>
+			<span class='sidetext'> Inline </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#orblocker'>
+			<span class='sidetext'> OR/Blocker </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#secondary-battery-backup'>
+			<span class='sidetext'> Secondary Battery Backup </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#nih-core'>
+			<span class='sidetext'> Nih Core </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+  </span>			</span>
+		</div>
+		<span id="sidetogmobile" onclick="toggside();"></span>
+
+		<div id="main-container">
+		<main>
+			<h1 id="centralized-vs-decentralized">Centralized vs Decentralized</h1>
+<h1 id="locations">Locations</h1>
+<p>When we talk about centralizing or decentralizing electricity, we are
+talking about 1 of 2 things. We are either talking about the physical
+placement of components or we are talking about power flow from a source
+to the end component. A 100% completely centralized system, the
+electrical circuit would collect, store and distribute power all through
+a single circuit and all of this would be located in a single electrical
+room/area. A 100% completely decentralized system would have independent
+circuits with their own power source, battery backup, and distribution
+located in different rooms/areas for each system and section of a base.
+These 2 concepts exist on the extreme ends of a spectrum. The best
+circuit does not need to be one or the other, it can be located anywhere
+in between. There are several variables including the server, wipe
+length, group size, the base, server limits and electrical experience
+that will influence the solution that works for your situation. This is
+not a 1 size fits all. The best circuit is the one that does the job you
+need in the time you need it.</p>
+<p>First we will talk about the physical placement then we will get into
+the electrical circuit(s).</p>
+<p>When talking about centralizing or decentralizing the physical
+location of components, it should be understood that we are NOT talking
+about the auto turrets on the roof for defense. We are NOT talking about
+the quality of life improvements of having electric heaters everywhere
+because the build location was in the arctic biome. We are NOT talking
+about the components placed on walls for the purpose of destruction
+detection. What we are talking about is the location of the core
+components. We are talking about all the circuits that power, control
+and support the defensive systems, monitoring systems or quality of life
+systems. We are talking about the location of collection points for
+power sources, battery backups, the batteries, power buses and all the
+logic circuits for everything electric in a base. We are talking about
+the location a Windmill sends its power to or the place where the wire
+that powers the auto turret comes from.  </p>
+<h2 id="centralized-location">Centralized Location</h2>
+<p><img src="images/image37.png" /></p>
+<p>Where you place these components is very important because you don’t
+want to make it easy for raiders to destroy them. You want to protect
+your circuits like you protect your TC. Centralizing the placement of
+these components in a single room or area is very convenient. It’s easy
+to add layers of honeycomb, add lots of traps and doors to protect but
+can come at the potential risk that if raiders get into this room/area,
+with 1 rocket they can destroy and disable everything. You could place
+it in a spot raiders would not think to or want to raid. When
+centralizing, the location should not be an afterthought. It should be
+preplanned into the base.</p>
+<p>No matter where the room is, hiding the wires that will need to lead
+to and from this room is a must. They should be either hidden out of
+sight or mislead the raiders as to the rooms location. Wires are limited
+in length so in smaller bases, it is much easier to reach all the
+components outside the room, like auto turrets, without requiring extra
+components to extend the wire. In larger bases, this can become a
+problem if you don’t have a safe place to put components to extend the
+wires. A safe place should not be easier to destroy than the end
+component itself. As an example, if you are using a memory cell to
+extend a wire to an auto turret. The memory cell should not be easier to
+destroy than the auto turret it connects to.</p>
+<hr />
+<h2 id="decentralized-locations">Decentralized Locations</h2>
+<p><img src="images/image107.jpg" /></p>
+<p>Decentralizing the physical locations of circuits is where there are
+2 or more electrical rooms/areas. These locations should be hard to find
+and harder to raid. These locations could be rooms that raiders would
+think is worth raiding. The more rooms there are, the less likely
+raiders will disable every system when cutting the base in half with
+rockets. The larger the base is, the easier it should be spreading out
+the electrical rooms/areas. The more spread out these locations are
+could lead to more wiring back and forth but not necessarily.</p>
+<p>Hiding your wires is very important. Any information a raider can
+collect about the locations of your electrical rooms should be
+minimized. With the limitation of wire length, decentralizing can be an
+excellent way of distributing power closer to where it is actually
+needed. Eliminating the need to use wire extensions makes things more
+secure and builders won’t need to build in extra rooms just for this.
+These locations could be anywhere but it is recommended you plan them
+into the build for more security. Electrical rooms should not be an
+afterthought just like the disconnected TC was not an afterthought.</p>
+<hr />
+<h1 id="circuits">Circuits</h1>
+<p>When we talk about centralizing or decentralizing circuits, we are
+talking about how we are delivering power from the source to the
+different systems and end components. It is crucial to understand the
+structure of a base circuit because it makes it easier to visualize the
+difference between Centralized and Decentralized circuits. To help
+explain this, we will use 3 different end devices/circuits. First - Auto
+Turrets, Second - A HBHF grid to know where enemies are and Third -
+Lights.</p>
+<p>Centralized is a single system with all power sources, destruction
+detection, batteries, power distribution and end systems connected in a
+single circuit. To be more specific, all power sources get combined and
+run through a destruction detector into a battery backup system. From
+the battery back up we provide all of the end devices and circuits with
+a single distribution system.</p>
+<p><img src="images/image70.png" /></p>
+<p>Decentralized is when we provide all of our end systems with their
+own power source, destruction detection(optional), battery and power
+distribution. Decentralization is a concept that exists on a spectrum.
+On one extreme it could be as simple as cutting the base in half and
+using 1 circuit for the North and 1 for the South or putting the turrets
+on 1 circuit and keeping the HBHF and lights on another. On the other
+extreme end we break every end system down as far as we want. Lets start
+with auto turrets and lets say we have 15 of them. 3 per side, North,
+South, East and West as well as 3 on the roof. That could be 5 separate
+circuits. 5 separate power sources with 5 different detectors, 5 battery
+backups and 5 separate distributors. Then we could also do the same with
+the HBHF grind. Separate that into 5 circuits. Destruction detection
+could be included in all of those circuits and separate stand alone
+systems could be added for all the walls on each of the 4 sides. Even
+the lights if you wanted to could be decentralized.  </p>
+<p><img src="images/image3.png" /></p>
+<p>Knowing ahead of time what systems your base will use, how much power
+they consume, the size of the base and the environment being played in
+(competitive vs casual), will influence your design. For best results,
+design the base build around your circuits so you never need to
+sacrifice functionality or security.</p>
+<hr />
+<h2 id="centralized-circuits">Centralized Circuits</h2>
+<p>Here we can look at some examples of a centralized circuit. Like we
+stated before, the idea is to combine everything into a single circuit.
+These have the advantage of being less complex but at the disadvantage
+of having single points of failure. The first circuit we can look at in
+the image below is pretty simple. We have a single source of power
+feeding an inline battery backup supplying power to our end components
+and circuits through a single distributor. We are starting with an
+inline backup because it does not scale efficiently in a centralized
+environment and it is easier to see points of failure. If the battery
+gets destroyed or if the first Electrical Branch gets taken out, the
+entire system goes offline.</p>
+<p><img src="images/image65.png" /></p>
+<p>The trick with an Inline system is to produce enough power to keep
+your battery charged but not produce so much that power is wasted. A
+large battery needs a constant input of 125 to not drain if its Active
+Usage is maxed out at 100. With an input of 127, it will take that
+battery 34 days to fully charge from empty. Always try to precharge the
+batteries above 3,000rWm before letting them power the circuit. Anything
+above what’s needed to maintain the battery will be a waste of power
+when the battery is full.</p>
+<p>When a circuit requires more than 100 power, and the goal is still to
+centralize, switch to a bypass system like the Nih Core and max out your
+batteries potential. If the amount of reliable power that can be
+produced is limited, the goal should be to minimize the battery’s Active
+Usage to a state that is manageable. The lower it is, the less power
+needed to maintain the battery and the longer it will last when main
+power is gone. Refer to the section titled Battery Active Usage Vs
+Actual Power Consumed for a better understanding of the 2 game
+mechanics.</p>
+<p>This next example uses the same end systems but has multiple power
+sources and multiple batteries to support the same or more components.
+It uses the Nih Core bypass battery backup and provides power to all the
+different end systems through a single distributor. The number of end
+systems you want to run and the amount of power they will consume will
+dictate how much power you need to generate and the number of batteries
+you need to support everything in the event of a power outage. If your
+circuit needs 160rW, we will use 2 large batteries. If we need 470rw, we
+will use 5 large batteries. DO NOT mix and match battery sizes.</p>
+<p> <img src="images/image12.png" /></p>
+<p>Before it was said that the above example could support the same or
+more components. The Nih Core really is meant to scale up to larger
+power demands but lets say the demand is only 100, that means we have
+built in some redundancy. 1 turbine or battery could be destroyed and
+the circuit would still function as normal. This is an expensive way of
+having redundancy but it does work. This is meant to be easily scalable
+to any size power load but once we start to root combine batteries, we
+should try to maximize the combined batteries potential by consuming as
+much as possible. This means that if we have 2 large batteries, we
+should try to use as much of the 200rW as possible. When batteries get
+root combined, they do not share the load as one would expect.</p>
+<p>For example, we have a circuit with 2 large batteries supporting a
+load of 50. It would seem to make sense that 50 power divided by 2
+batteries equals 25 per battery, but rustricity doesn’t work like that.
+That 50 power is taken from both batteries and is seen as Active Usage.
+<img src="images/image128.png" /></p>
+<p>This means when we get to circuits that need more than 100 power, all
+the batteries combined will show a max Active Usage. Active Usage is
+used to calculate how fast a battery drains. If we are forcing batteries
+to max drain then we might as well try to use as much as the combined
+power the batteries will provide.</p>
+<p>It is never good practice to mix and match different size batteries.
+A large battery will last 4 hours, a medium battery will last 3 hours
+and small batteries will last 15 minutes. If you mix and match, you can
+only rely on maximum power for the amount of time the smallest battery
+will last. For example, 2 large batteries and 1 medium for a total of
+250rW. For only 3 hours will you get 250, the last hour will only
+provide 200. There are situations where mixing is useful, but not for
+the main battery backup on a centralized circuit.</p>
+<p>Centralized circuits are simple, easy to work with and scalable. On
+paper, you can make a centralized circuit very large and consume a lot
+of power. The reality is to produce a lot and store a lot of power, you
+will need a lot of land to build it on. In this next example, on paper,
+we have 9 turbines on the 10th floor with 9 backup batteries feeding 36
+auto turrets divided by 9 per North, South, East and West sides. It also
+has 3 HBHF Sensors per side, Search Lights on each side and a bunch of
+lights. The circuit is only an example and is not using its full power
+potential. It could include a grid of tesla coils, destruction
+detection, a camera network, automatic doors, TC/Vending Machine and
+storage monitoring, an indoor garden, a system that makes your base look
+online when you are offline and much more. The point here is size, very
+large.</p>
+<p><img src="images/image58.png" /></p>
+<p>It is not so easy to see, with a circuit this large, and the ability
+to be much larger, how one would go abouts physically building this. It
+would be possible to centralize the location of the battery backup and
+distribution but the size of the base will probably call for multiple
+wire extensions. Any component can be used to extend a wire. The idea is
+to make that component as cheap as possible. Only consuming 1 power and
+being the resource cheapest component is the Industrial Lights. They are
+easy to integrate as base lighting giving them the perfect camouflage.
+Decentralizing the locations of a centralized circuit is possible but
+difficult especially on large bases. At a certain point, you may find it
+easier to just decentralize the circuit itself along with the locations.
+ </p>
+<hr />
+<h2 id="decentralized-circuits">Decentralized Circuits</h2>
+<p>Decentralizing circuits really comes down to how extreme you want to
+take it. The idea behind decentralizing is adding security by segmenting
+different systems and areas with their own independent powers supplies
+and backups. Keep in mind, the type of battery backup you choose is up
+to you but for our examples, we will stick with inlines because it takes
+up less room in the pictures.</p>
+<p>The first example shows decentralizing by separating the different
+end circuits with independent power supplies and battery backups. The
+Auto Turrets get their own power supply and inline battery. Same for the
+SAM sites, interior lights, exterior lights and HBHF grid, they all have
+their own power supply and inline battery backup.</p>
+<p><img src="images/image55.png" /></p>
+<p>While decentralizing based on end circuits is an option, if the
+battery powering that circuit gets destroyed, that entire circuit will
+become disabled. Having all your auto turrets go offline during a raid
+is never a good thing. A more secure option would be to decentralize by
+location. To keep the idea simple for the next example, lets breakup a
+base into 5 sections, North, South, East, West and the roof. By giving
+each group their own power supply and backup, it prevents the entire
+base from going offline when raiders destroy both the power supply and
+battery backup. Decentralizing the circuit makes it a lot easier to
+decentralize the locations. Wire length is limited, so depending on the
+size of the base, being able to put the power source, battery backup and
+distribution in a location that minimizes the need to wire extensions is
+very appealing. If the base is of a smaller size, putting the power
+supply, battery backup and distribution on the North side that powers
+the South side has the clear advantage that in the event raiders come
+through the South side, when they hit the electrical room on the South
+side, it only disables the North side of the base. It is recommended
+that when needing to extend wires, if you cant put the extension
+component in a protected area, use an industrial light and integrate it
+into your base lighting.</p>
+<p><img src="images/image54.png" /></p>
+<h2 id="hybrid-circuits">Hybrid Circuits</h2>
+<h1 id="what-is-a-power-bus">What is a Power Bus?*</h1>
+<p><img src="images/image127.png" /></p>
+<p>A power bus is a group of components with the sole purpose of
+directing the flow of electricity to different circuits that perform
+specific tasks such as auto turrets or lighting. This is a lot like the
+breaker panel or fuse panel you have in your home for your electricity.
+Each breaker or fuse is dedicated for a specific room or purpose, like
+the fridge, furnace, bedrooms or garage. A power bus also helps
+prioritize the order in which circuits receive power. In the event you
+are producing less power then you need, you have built in control over
+which circuit is last to go offline. We have 3 types of power buses,
+fixed and dynamic.</p>
+<h2 id="fixed-bus-f-bus">Fixed Bus (F-Bus)</h2>
+<p><img src="images/image115.png" /></p>
+<p>A fixed bus is when you dedicate a specific amount of power per
+output. Electrical Branches are required to dedicate the amount of power
+to a specific amount. This type of power bus always consumes the amount
+of power each output is set to even if nothing is attached to the
+connection point.</p>
+<h2 id="dynamic-bus-d-bus">Dynamic Bus (D-Bus)</h2>
+<p><img src="images/image51.png" /></p>
+<p>A dynamic bus is when we let the components evenly distribute between
+all connected outputs. The only control you have over the amount of
+power available to each output is the amount of power you give it. This
+is primarily used when the component or circuit attached to each output
+requires the same amount of power.</p>
+<h2 id="configure-siphon-c-bus">Configure Siphon (C-Bus)</h2>
+<p><img src="images/image61.png" /></p>
+<p>NEEDS WORK</p>
+<hr />
+		</main>
+		</div>
+
+	</body>
+</html>

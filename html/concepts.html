@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>concepts</title>
+		<link rel="stylesheet" href="global/style.css">
+		<link rel="stylesheet" href="global/sidebar.css">
+		<link rel="stylesheet" href="global/fix.css">
+		<script src="global/sidebar.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
+	</head>
+	<body>
+
+		<div id="sidebar">
+			<span id="sidetop" class="sidelist">
+				<span id="sidetog" class="sidetext" onclick="toggside();"></span>
+			</span>
+			<span id="sidenav">
+				  <span class="sidelist indent0 folded">
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='index.html'> Home </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent1 folded">
+		<a class='sideline' href='index.html#the-rust-electrical-handbook'>
+			<span class='sidetext'> The RUST Electrical Handbook </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='index.html#change-log'>
+			<span class='sidetext'> Change Log </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+<span class="sideline foldable folded unfoldonload" onclick="toggfold(this);">
+	<span class="sidetext"> Items Details </span>
+	<span class="sidesign"></span>
+</span>
+
+  <span class="sidelist indent1 folded">
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='tools.html'> Tools </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='tools.html#tools'>
+			<span class='sidetext'> Tools </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#hammer'>
+			<span class='sidetext'> Hammer </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#wire-tool'>
+			<span class='sidetext'> Wire Tool </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#hose-tool'>
+			<span class='sidetext'> Hose Tool </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#pipe-tool'>
+			<span class='sidetext'> Pipe Tool </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='sources.html'> Sources </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='sources.html#power-sources'>
+			<span class='sidetext'> Power Sources </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sources.html#test-generator'>
+			<span class='sidetext'> Test Generator  </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sources.html#wind-turbine'>
+			<span class='sidetext'> Wind Turbine </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sources.html#large-solar-panel'>
+			<span class='sidetext'> Large Solar Panel </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sources.html#small-generator'>
+			<span class='sidetext'> Small Generator </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='distribution.html'> Distribution </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='distribution.html#power-distribution'>
+			<span class='sidetext'> Power Distribution </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='distribution.html#root-combiner'>
+			<span class='sidetext'> Root Combiner </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='distribution.html#electrical-branch'>
+			<span class='sidetext'> Electrical Branch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='distribution.html#splitter'>
+			<span class='sidetext'> Splitter </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='storage.html'> Storage </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='storage.html#power-storage'>
+			<span class='sidetext'> Power Storage </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='storage.html#small-rechargeable-battery'>
+			<span class='sidetext'> Small Rechargeable Battery </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='storage.html#medium-rechargeable-battery'>
+			<span class='sidetext'> Medium Rechargeable Battery </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='storage.html#large-battery'>
+			<span class='sidetext'> Large Battery </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='defense.html'> Defense </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='defense.html#defense'>
+			<span class='sidetext'> Defense </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='defense.html#sam-site'>
+			<span class='sidetext'> SAM Site </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='defense.html#auto-turret'>
+			<span class='sidetext'> Auto Turret </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='defense.html#tesla-coil'>
+			<span class='sidetext'> Tesla Coil </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='light.html'> Lights </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='light.html#lights'>
+			<span class='sidetext'> Lights </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#flasher-light'>
+			<span class='sidetext'> Flasher Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#siren-light'>
+			<span class='sidetext'> Siren Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#ceiling-light'>
+			<span class='sidetext'> Ceiling Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#simple-light'>
+			<span class='sidetext'> Simple Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#deluxe-christmas-lights'>
+			<span class='sidetext'> Deluxe Christmas Lights </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#search-light'>
+			<span class='sidetext'> Search Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#small-neon-sign'>
+			<span class='sidetext'> Small Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#medium-neon-sign'>
+			<span class='sidetext'> Medium Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#medium-animated-neon-sign'>
+			<span class='sidetext'> Medium Animated Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#large-neon-sign'>
+			<span class='sidetext'> Large Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#large-animated-neon-sign'>
+			<span class='sidetext'> Large Animated Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#industrial-wall-light'>
+			<span class='sidetext'> Industrial Wall Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#green-industrial-light'>
+			<span class='sidetext'> Green Industrial Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#red-industrial-light'>
+			<span class='sidetext'> Red Industrial Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#strobe-light'>
+			<span class='sidetext'> Strobe Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='utils.html'> Utilities </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='utils.html#utilities-quality-of-life'>
+			<span class='sidetext'> Utilities / Quality Of Life </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#door-controller'>
+			<span class='sidetext'> Door Controller </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#igniter'>
+			<span class='sidetext'> Igniter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#cctv-camera'>
+			<span class='sidetext'> CCTV Camera </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#electric-heater'>
+			<span class='sidetext'> Electric Heater </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#modular-car-lift'>
+			<span class='sidetext'> Modular Car Lift </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#elevator'>
+			<span class='sidetext'> Elevator </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#telephone'>
+			<span class='sidetext'> Telephone </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#audio-alarm'>
+			<span class='sidetext'> Audio Alarm </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#computer-station'>
+			<span class='sidetext'> Computer Station </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#fogger-3000'>
+			<span class='sidetext'> Fogger-3000 </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#snow-machine'>
+			<span class='sidetext'> Snow Machine </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='logic.html'> Logic </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='logic.html#logic'>
+			<span class='sidetext'> Logic </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#blocker'>
+			<span class='sidetext'> Blocker </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#memory-cell'>
+			<span class='sidetext'> Memory Cell </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#timer'>
+			<span class='sidetext'> Timer </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#rand-switch'>
+			<span class='sidetext'> RAND Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#or-switch'>
+			<span class='sidetext'> OR Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#and-switch'>
+			<span class='sidetext'> AND Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#xor-switch'>
+			<span class='sidetext'> XOR Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#counter'>
+			<span class='sidetext'> Counter </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='switch.html'> Switchs </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='switch.html#switches'>
+			<span class='sidetext'> Switches </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='switch.html#button'>
+			<span class='sidetext'> Button </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='switch.html#switch'>
+			<span class='sidetext'> Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='switch.html#side-inputs'>
+			<span class='sidetext'> Side Inputs </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='sensor.html'> Sensors </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='sensor.html#sensors'>
+			<span class='sidetext'> Sensors </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sensor.html#hbhf-sensor'>
+			<span class='sidetext'> HBHF Sensor </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sensor.html#laser-detector'>
+			<span class='sidetext'> Laser Detector </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sensor.html#pressure-pad'>
+			<span class='sidetext'> Pressure Pad </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sensor.html#reactive-target'>
+			<span class='sidetext'> Reactive Target </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='rf.html'> RF </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='rf.html#radio-frequency-rf'>
+			<span class='sidetext'> Radio Frequency (RF) </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#rf-broadcaster'>
+			<span class='sidetext'> RF Broadcaster </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#rf-receiver'>
+			<span class='sidetext'> RF Receiver </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#rf-transmitter'>
+			<span class='sidetext'> RF Transmitter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#rf-pager'>
+			<span class='sidetext'> RF Pager </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='smart.html'> Smart </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='smart.html#smart'>
+			<span class='sidetext'> Smart </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='smart.html#storage-monitor'>
+			<span class='sidetext'> Storage Monitor </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='smart.html#smart-alarm'>
+			<span class='sidetext'> Smart Alarm </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='smart.html#smart-switch'>
+			<span class='sidetext'> Smart Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='smart.html#smart-timer'>
+			<span class='sidetext'> Smart Timer </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='fireworks.html'> Fireworks </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='fireworks.html#fireworks'>
+			<span class='sidetext'> Fireworks </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#volcano-firework'>
+			<span class='sidetext'> Volcano Firework </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#roman-candle'>
+			<span class='sidetext'> Roman Candle </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#boomer'>
+			<span class='sidetext'> Boomer </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#champagne-boomer'>
+			<span class='sidetext'> Champagne Boomer </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#pattern-boomer'>
+			<span class='sidetext'> Pattern Boomer </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='voiceDLC.html'> Voice DLC </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='voiceDLC.html#voice-props-pack-dlc'>
+			<span class='sidetext'> Voice Props Pack DLC </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#boom-box'>
+			<span class='sidetext'> Boom Box </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#connected-speaker'>
+			<span class='sidetext'> Connected Speaker </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#disco-ball'>
+			<span class='sidetext'> Disco Ball </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#disco-floor'>
+			<span class='sidetext'> Disco Floor </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#laser-light'>
+			<span class='sidetext'> Laser Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#microphone-stand'>
+			<span class='sidetext'> Microphone Stand </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#sound-light'>
+			<span class='sidetext'> Sound Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='water.html'> Water </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='water.html#water'>
+			<span class='sidetext'> Water </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#what-is-the-water-system'>
+			<span class='sidetext'> What is the water system? </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#common-traits'>
+			<span class='sidetext'> Common Traits </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#large-water-catcher'>
+			<span class='sidetext'> Large Water Catcher </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#small-water-catcher'>
+			<span class='sidetext'> Small Water Catcher </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#water-barrel'>
+			<span class='sidetext'> Water Barrel </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#water-pump'>
+			<span class='sidetext'> Water Pump </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#powered-water-purifier'>
+			<span class='sidetext'> Powered Water Purifier </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#fuel-tank-vehicle-module'>
+			<span class='sidetext'> Fuel Tank Vehicle Module </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#fluid-switch-pump'>
+			<span class='sidetext'> Fluid Switch & Pump </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#fluid-combiner'>
+			<span class='sidetext'> Fluid Combiner </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#fluid-splitter'>
+			<span class='sidetext'> Fluid Splitter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#sprinkler'>
+			<span class='sidetext'> Sprinkler </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='industrial.html'> Industrial </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='industrial.html#industrial'>
+			<span class='sidetext'> Industrial </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#industrial-conveyor'>
+			<span class='sidetext'> Industrial Conveyor </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#industrial-crafter'>
+			<span class='sidetext'> Industrial Crafter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#storage-adapter'>
+			<span class='sidetext'> Storage Adapter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#electric-furnace'>
+			<span class='sidetext'> Electric Furnace </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#industrial-splitter'>
+			<span class='sidetext'> Industrial Splitter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#industrial-combiner'>
+			<span class='sidetext'> Industrial Combiner </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#what-is-the-industrial-system'>
+			<span class='sidetext'> What is the industrial system? </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+<span class="sideline foldable folded unfoldonload" onclick="toggfold(this);">
+	<span class="sidetext"> Concepts </span>
+	<span class="sidesign"></span>
+</span>
+
+  <span class="sidelist indent1 folded">
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='concepts.html'> Concepts </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='concepts.html#the-structure-of-a-base-circuit'>
+			<span class='sidetext'> The Structure of a Base Circuit </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='concepts.html#battery-active-usage-vs-actual-power-consumed'>
+			<span class='sidetext'> Battery Active Usage Vs Actual Power Consumed </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='concepts.html#short-circuit-max-depth'>
+			<span class='sidetext'> Short Circuit / Max Depth </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='concepts.html#short-circuit'>
+			<span class='sidetext'> Short Circuit </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='concepts.html#max-depth'>
+			<span class='sidetext'> Max Depth </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+		<a class='sideline' href='concepts.html#circuit-delay-and-power-flow'>
+			<span class='sidetext'> Circuit Delay and Power Flow </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='concepts.html#useful-circuits'>
+			<span class='sidetext'> Useful Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='concepts.html#basic'>
+			<span class='sidetext'> Basic </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='concepts.html#advanced'>
+			<span class='sidetext'> Advanced </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='centralized.html'> Centralization </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='centralized.html#centralized-vs-decentralized'>
+			<span class='sidetext'> Centralized vs Decentralized </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#locations'>
+			<span class='sidetext'> Locations </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='centralized.html#centralized-location'>
+			<span class='sidetext'> Centralized Location </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#decentralized-locations'>
+			<span class='sidetext'> Decentralized Locations </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+		<a class='sideline' href='centralized.html#circuits'>
+			<span class='sidetext'> Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='centralized.html#centralized-circuits'>
+			<span class='sidetext'> Centralized Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#decentralized-circuits'>
+			<span class='sidetext'> Decentralized Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#hybrid-circuits'>
+			<span class='sidetext'> Hybrid Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+		<a class='sideline' href='centralized.html#what-is-a-power-bus'>
+			<span class='sidetext'> What is a Power Bus?* </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='centralized.html#fixed-bus-f-bus'>
+			<span class='sidetext'> Fixed Bus (F-Bus) </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#dynamic-bus-d-bus'>
+			<span class='sidetext'> Dynamic Bus (D-Bus) </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#configure-siphon-c-bus'>
+			<span class='sidetext'> Configure Siphon (C-Bus) </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='backup.html'> Backup & Distribution </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='backup.html#battery-backup-and-distribution-systems'>
+			<span class='sidetext'> Battery Backup and Distribution Systems </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#direct-delivery'>
+			<span class='sidetext'> Direct Delivery </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#inline'>
+			<span class='sidetext'> Inline </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#orblocker'>
+			<span class='sidetext'> OR/Blocker </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#secondary-battery-backup'>
+			<span class='sidetext'> Secondary Battery Backup </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#nih-core'>
+			<span class='sidetext'> Nih Core </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+  </span>			</span>
+		</div>
+		<span id="sidetogmobile" onclick="toggside();"></span>
+
+		<div id="main-container">
+		<main>
+			<h1 id="the-structure-of-a-base-circuit">The Structure of a Base
+Circuit</h1>
+<p>All circuits for a base follow the same basic structure. It
+doesn’t matter if the base has 1 circuit or more, they all contain 4
+main parts with a 5th part that does not have a static location. We have
+the Power Source, Battery Backup, Distribution, End Devices/Circuits and
+the 5th, Destruction Detection. Using the following flow chart we can
+help illustrate this.</p>
+<p><img src="images/image38.png" /></p>
+<p>Moving top to bottom, every circuit needs a power source. You have 3
+choices, Windmills, Solar Panels or Small Generators.</p>
+<p>We then take our source power and feed it to a Battery Backup. You
+have 2 choices, the Inline or Bypass(Nih Core). Either way, you must
+ensure you are supplying enough power to keep your batteries
+charged.</p>
+<p>From the battery backup, we will then need to distribute the power to
+the different systems in the base. There are 3 options, a Fixed or
+Dynamic Bus or a Configure Siphon.</p>
+<p>If you are working with Inline Battery Backup, you want to minimize a
+battery’s Active Usage. If you are working with a Bypass Battery Backup,
+you want to maximize the use of Consumable Power.</p>
+<p>The End Devices and Circuits are your turrets, lights, cameras,
+farms, sensor grids, ect. The Destruction Detection system should be
+included in most circuits and if limited to one, placing one after the
+battery backup is probably the best option.</p>
+<hr />
+<h1 id="battery-active-usage-vs-actual-power-consumed">Battery Active
+Usage Vs Actual Power Consumed</h1>
+<p>The simple explanation is, Active Usage is the amount of power the
+battery is draining by. When you look at the battery with a wire tool,
+you will see Active Usage. It is reasonable to think that the number you
+see is the amount of power your circuit is currently consuming, but it’s
+not always the case. Even when some components are turned off and not
+consuming power, they still add to a battery’s active usage. Power
+Consumed is the reduction of available power after passing through a
+component. An electric heater consumes 3, if 100 goes in we get 97
+coming out. For almost all components, the consumed power = active
+usage, this is a 1:1. The electrical branch is the only component that
+does not register an active usage for itself and only for what is
+branched out.</p>
+<p><a
+href="https://www.rustrician.io/?circuit=f6b1665cb24abf785169b230e064016a">Active
+Usage VS Power Consumption</a></p>
+<hr />
+<h1 id="short-circuit-max-depth">Short Circuit / Max Depth</h1>
+<p>This is a single message that is displayed for 2 different errors. At
+the time of creating this section, XOR Switches did not consume any
+power which is why you will see them used in the pictures. The pictures
+might get remade in time but power consumption is not important when
+discussing and understanding this error.</p>
+<h2 id="short-circuit">Short Circuit</h2>
+<p>A short circuit happens when you have power feeding back into itself,
+AKA, a loop.  </p>
+<p><img src="images/image124.png" /></p>
+<p>Why would you do this? You wouldn’t. In the past, batteries
+functioned differently and there was a need to create the “Infinite
+Power Loop”. Today, batteries have something called “Active Usage”. This
+breaks the infinite loop and eliminates a need for it to exist.</p>
+<p>You can circumvent a short circuit by increasing the number of
+components in the loop to be 9 or greater.</p>
+<p><img src="images/image10.png" /></p>
+<p>In the next picture we show a battery feeding power back into
+itself.</p>
+<p><img src="images/image62.png" /></p>
+<p>There is no reason to do this anymore. There was a time when
+batteries could only exist in 1 state at a time. They were either
+charging or discharging and when they were discharging, they were always
+doing it at their max. Back then, people found a way to use the extra
+power and send it back to the battery. For example, a large battery was
+always outputting 100 power whereas today, they calculate an active
+usage and only drain the amount of power a circuit needs, up to 100.
+Today, if the circuit only needs 50, the battery only gives 50.</p>
+<p>The other thing to note is batteries also cause an active usage. For
+a large battery, it is 400, so in the above loop, you are forcing a max
+drain on the battery. There is no advantage to this.</p>
+<h2 id="max-depth">Max Depth</h2>
+<p>Maximum Depth is referring to the number of components between your
+power source and the  Root Combiner. A Max Depth error will occur when
+we exceed 16 components.</p>
+<p><img src="images/image101.png" /></p>
+<p>It is important to understand this mechanic and how to calculate it.
+This becomes important when combining multiple power sources including a
+battery backup with multiple combined batteries. If you experience this
+error, to calculate the depth of a circuit, we start with the last Root
+Combiner or the combiner that is furthest away from the power source and
+count the number of components power must pass through all the way back
+to the power source. This limits where in a circuit you can use Root
+Combiners.</p>
+<p>The below images are 2 ways root combiners can be stacked. The group
+on the left is known as pyramid stacking and the group on the right is
+known as a daisy chain. While both groups are possible, you can see that
+the group on the left is only 4 components deep whereas the right side
+is 8 deep. This is important when working with a large amount of
+centralized power because you can quickly use up the depth and then not
+be able to have the number of batteries you want or need.</p>
+<p><img src="images/image7.png" /></p>
+<p>In this next image, we have 8 Windmills combined into a Nih Core with
+a battery backup containing 6 Large Batteries. This circuit has a total
+depth of 13 components. The trick to counting depth is counting the
+components in the longest route from the last Root Combiner, #1 back to
+the Windmill, #13.  </p>
+<p><img src="images/image99.png" /></p>
+<p>In the next example, we have 2 isolated power sources. The first
+source is the cluster of Windmills. The second is the combined Solar
+Panels for the Component Destruction Detector. This means that we have 2
+paths we must consider when calculating the depth. The first path to
+look at is the one that goes from the Root Combiner #1 back to the
+Windmill #14. This path is the main power path. The second path goes
+from Root Combiner #1 back to the Solar Panel #16. If one of these paths
+exceed the Max Depth limit of 16 components, you will start to see the
+error message at Root Combiner #1.</p>
+<p><img src="images/image50.png" /></p>
+<p>The next image shows a Max Depth using an equal number of Windmills
+and Batteries with a Nih Core.</p>
+<p><img src="images/image21.png" /></p>
+<hr />
+<h1 id="circuit-delay-and-power-flow">Circuit Delay and Power Flow</h1>
+<p>NEEDS WORK</p>
+<p>A simple explanation for now:</p>
+<p>Circuit delay is the amount of time it takes power to pass from one
+component to another.</p>
+<p>Power flow is the path electricity takes through a circuit.</p>
+<hr />
+<h1 id="useful-circuits">Useful Circuits</h1>
+<h2 id="basic">Basic</h2>
+<p><a
+href="https://www.rustrician.io/?circuit=64810508602bc0cd1baa954d1a1da539">Logic
+Gates</a></p>
+<h2 id="advanced">Advanced</h2>
+<p><a
+href="https://www.rustrician.io/?circuit=076b71d674c3c1f90deb438d241a8f9d">Destruction
+Detection</a></p>
+<hr />
+		</main>
+		</div>
+
+	</body>
+</html>
