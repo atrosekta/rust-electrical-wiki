@@ -163,25 +163,12 @@ Power flow is the path electricity takes through a circuit.
 
 # Useful Circuits
 
-# Basic
-
-<!-- Logic Gates - -->
-<!-- [https://www.rustrician.io/?circuit=64810508602bc0cd1baa954d1a1da539](https://www.google.com/url?q=https://www.rustrician.io/?circuit%3D64810508602bc0cd1baa954d1a1da539&sa=D&source=editors&ust=1677670979217465&usg=AOvVaw10mzdQi1CNQSJYjf8AxD5p) -->
+## Basic
 
 [Logic Gates](https://www.rustrician.io/?circuit=64810508602bc0cd1baa954d1a1da539)
 
-# Advanced
-
-<!-- Destruction Detection - -->
-<!-- [https://www.rustrician.io/?circuit=076b71d674c3c1f90deb438d241a8f9d](https://www.google.com/url?q=https://www.rustrician.io/?circuit%3D076b71d674c3c1f90deb438d241a8f9d&sa=D&source=editors&ust=1677670979217974&usg=AOvVaw1kF_IugIYFqmK3fZ6iJBIf) -->
+## Advanced
 
 [Destruction Detection](https://www.rustrician.io/?circuit=076b71d674c3c1f90deb438d241a8f9d)
-
-[\[a\]](#cmnt_ref1)Add circuits for auto reset timers.
-
-[\[b\]](#cmnt_ref2)this is common for all smaller components. But it is
-limited to areas where the components will touch or be really close to a
-wall or the ground, it is effectively tricking them to think they are
-placed on a wall or the ground.
 
 ---

@@ -93,7 +93,9 @@ sends it out the top, with the expected power loss.
 
 Next, we leave power going into the bottom and then apply power to
 Switch Off. As we can see, the Switch will flip
-off.![](images/image41.png)
+off.
+
+![](images/image41.png)
 
 ![](images/image13.png)
 

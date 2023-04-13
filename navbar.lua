@@ -56,7 +56,7 @@ function ParseConf (el)
 		else
 			local line = foldlink( text, path )
 			out:insert(line)
-			local mdpath = 'text/' .. path:gsub("html","md")
+			local mdpath = 'content/' .. path:gsub("html","md")
 			local toc = ParseToc( FileToc(mdpath), path )
 			out:extend(toc)
 		end

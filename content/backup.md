@@ -2,7 +2,7 @@
 
 # Battery Backup and Distribution Systems
 
-## Direct Delivery
+# Direct Delivery
 
 ![](images/image86.png)
 
@@ -33,7 +33,7 @@ OR/Blocker and Nih Core.
 
 ---
 
-## Inline
+# Inline
 
 ![](images/image26.png)
 
@@ -63,7 +63,7 @@ Cons:
 
 ---
 
-## OR/Blocker![](images/image32.png)
+# OR/Blocker![](images/image32.png)
 
 This method has been around for a long time and has been carried over
 from a previous version of electricity when batteries could only charge
@@ -98,7 +98,7 @@ Cons:
 - Ignores the battery update to allow charging and discharging at the
   same time
 
-## Secondary Battery Backup
+# Secondary Battery Backup
 
 A secondary battery backup is a way to provide power to a circuit after
 the main backup system  goes offline. It's a backup of a backup so the
@@ -131,7 +131,7 @@ Cons:
 
 ---
 
-## Nih Core 
+# Nih Core 
 
 ![](images/image87.png)
 

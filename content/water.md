@@ -214,8 +214,7 @@ Notes:
 | | |  
 |-|---|  
 Identifier          | 443432036
-Description         | A switch that lets water through, either manually or with
-electricity for the pump to send water to a higher floor.
+Description         | A switch that lets water through, either manually or with electricity for the pump to send water to a higher floor.
 Crafting Recipe     | 150 Metal Fragments
 Recycles Into       | 75 Metal Fragments
 Stack Size          | 1
