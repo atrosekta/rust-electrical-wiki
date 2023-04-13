@@ -1,0 +1,1992 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>light</title>
+		<link rel="stylesheet" href="global/style.css">
+		<link rel="stylesheet" href="global/sidebar.css">
+		<link rel="stylesheet" href="global/fix.css">
+		<script src="global/sidebar.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
+	</head>
+	<body>
+
+		<div id="sidebar">
+			<span id="sidetop" class="sidelist">
+				<span id="sidetog" class="sidetext" onclick="toggside();"></span>
+			</span>
+			<span id="sidenav">
+				  <span class="sidelist indent0 folded">
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='index.html'> Home </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent1 folded">
+		<a class='sideline' href='index.html#the-rust-electrical-handbook'>
+			<span class='sidetext'> The RUST Electrical Handbook </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='index.html#change-log'>
+			<span class='sidetext'> Change Log </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+<span class="sideline foldable folded unfoldonload" onclick="toggfold(this);">
+	<span class="sidetext"> Items Details </span>
+	<span class="sidesign"></span>
+</span>
+
+  <span class="sidelist indent1 folded">
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='tools.html'> Tools </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='tools.html#tools'>
+			<span class='sidetext'> Tools </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#hammer'>
+			<span class='sidetext'> Hammer </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#wire-tool'>
+			<span class='sidetext'> Wire Tool </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#hose-tool'>
+			<span class='sidetext'> Hose Tool </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#pipe-tool'>
+			<span class='sidetext'> Pipe Tool </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='sources.html'> Sources </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='sources.html#power-sources'>
+			<span class='sidetext'> Power Sources </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sources.html#test-generator'>
+			<span class='sidetext'> Test Generator  </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sources.html#wind-turbine'>
+			<span class='sidetext'> Wind Turbine </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sources.html#large-solar-panel'>
+			<span class='sidetext'> Large Solar Panel </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sources.html#small-generator'>
+			<span class='sidetext'> Small Generator </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='distribution.html'> Distribution </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='distribution.html#power-distribution'>
+			<span class='sidetext'> Power Distribution </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='distribution.html#root-combiner'>
+			<span class='sidetext'> Root Combiner </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='distribution.html#electrical-branch'>
+			<span class='sidetext'> Electrical Branch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='distribution.html#splitter'>
+			<span class='sidetext'> Splitter </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='storage.html'> Storage </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='storage.html#power-storage'>
+			<span class='sidetext'> Power Storage </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='storage.html#small-rechargeable-battery'>
+			<span class='sidetext'> Small Rechargeable Battery </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='storage.html#medium-rechargeable-battery'>
+			<span class='sidetext'> Medium Rechargeable Battery </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='storage.html#large-battery'>
+			<span class='sidetext'> Large Battery </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='defense.html'> Defense </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='defense.html#defense'>
+			<span class='sidetext'> Defense </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='defense.html#sam-site'>
+			<span class='sidetext'> SAM Site </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='defense.html#auto-turret'>
+			<span class='sidetext'> Auto Turret </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='defense.html#tesla-coil'>
+			<span class='sidetext'> Tesla Coil </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='light.html'> Lights </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='light.html#lights'>
+			<span class='sidetext'> Lights </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#flasher-light'>
+			<span class='sidetext'> Flasher Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#siren-light'>
+			<span class='sidetext'> Siren Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#ceiling-light'>
+			<span class='sidetext'> Ceiling Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#simple-light'>
+			<span class='sidetext'> Simple Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#deluxe-christmas-lights'>
+			<span class='sidetext'> Deluxe Christmas Lights </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#search-light'>
+			<span class='sidetext'> Search Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#small-neon-sign'>
+			<span class='sidetext'> Small Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#medium-neon-sign'>
+			<span class='sidetext'> Medium Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#medium-animated-neon-sign'>
+			<span class='sidetext'> Medium Animated Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#large-neon-sign'>
+			<span class='sidetext'> Large Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#large-animated-neon-sign'>
+			<span class='sidetext'> Large Animated Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#industrial-wall-light'>
+			<span class='sidetext'> Industrial Wall Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#green-industrial-light'>
+			<span class='sidetext'> Green Industrial Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#red-industrial-light'>
+			<span class='sidetext'> Red Industrial Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#strobe-light'>
+			<span class='sidetext'> Strobe Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='utils.html'> Utilities </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='utils.html#utilities-quality-of-life'>
+			<span class='sidetext'> Utilities / Quality Of Life </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#door-controller'>
+			<span class='sidetext'> Door Controller </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#igniter'>
+			<span class='sidetext'> Igniter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#cctv-camera'>
+			<span class='sidetext'> CCTV Camera </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#electric-heater'>
+			<span class='sidetext'> Electric Heater </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#modular-car-lift'>
+			<span class='sidetext'> Modular Car Lift </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#elevator'>
+			<span class='sidetext'> Elevator </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#telephone'>
+			<span class='sidetext'> Telephone </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#audio-alarm'>
+			<span class='sidetext'> Audio Alarm </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#computer-station'>
+			<span class='sidetext'> Computer Station </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#fogger-3000'>
+			<span class='sidetext'> Fogger-3000 </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#snow-machine'>
+			<span class='sidetext'> Snow Machine </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='logic.html'> Logic </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='logic.html#logic'>
+			<span class='sidetext'> Logic </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#blocker'>
+			<span class='sidetext'> Blocker </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#memory-cell'>
+			<span class='sidetext'> Memory Cell </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#timer'>
+			<span class='sidetext'> Timer </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#rand-switch'>
+			<span class='sidetext'> RAND Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#or-switch'>
+			<span class='sidetext'> OR Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#and-switch'>
+			<span class='sidetext'> AND Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#xor-switch'>
+			<span class='sidetext'> XOR Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#counter'>
+			<span class='sidetext'> Counter </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='switch.html'> Switchs </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='switch.html#switches'>
+			<span class='sidetext'> Switches </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='switch.html#button'>
+			<span class='sidetext'> Button </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='switch.html#switch'>
+			<span class='sidetext'> Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='switch.html#side-inputs'>
+			<span class='sidetext'> Side Inputs </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='sensor.html'> Sensors </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='sensor.html#sensors'>
+			<span class='sidetext'> Sensors </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sensor.html#hbhf-sensor'>
+			<span class='sidetext'> HBHF Sensor </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sensor.html#laser-detector'>
+			<span class='sidetext'> Laser Detector </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sensor.html#pressure-pad'>
+			<span class='sidetext'> Pressure Pad </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sensor.html#reactive-target'>
+			<span class='sidetext'> Reactive Target </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='rf.html'> RF </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='rf.html#radio-frequency-rf'>
+			<span class='sidetext'> Radio Frequency (RF) </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#rf-broadcaster'>
+			<span class='sidetext'> RF Broadcaster </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#rf-receiver'>
+			<span class='sidetext'> RF Receiver </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#rf-transmitter'>
+			<span class='sidetext'> RF Transmitter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#rf-pager'>
+			<span class='sidetext'> RF Pager </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='smart.html'> Smart </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='smart.html#smart'>
+			<span class='sidetext'> Smart </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='smart.html#storage-monitor'>
+			<span class='sidetext'> Storage Monitor </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='smart.html#smart-alarm'>
+			<span class='sidetext'> Smart Alarm </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='smart.html#smart-switch'>
+			<span class='sidetext'> Smart Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='smart.html#smart-timer'>
+			<span class='sidetext'> Smart Timer </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='fireworks.html'> Fireworks </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='fireworks.html#fireworks'>
+			<span class='sidetext'> Fireworks </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#volcano-firework'>
+			<span class='sidetext'> Volcano Firework </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#roman-candle'>
+			<span class='sidetext'> Roman Candle </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#boomer'>
+			<span class='sidetext'> Boomer </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#champagne-boomer'>
+			<span class='sidetext'> Champagne Boomer </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#pattern-boomer'>
+			<span class='sidetext'> Pattern Boomer </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='voiceDLC.html'> Voice DLC </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='voiceDLC.html#voice-props-pack-dlc'>
+			<span class='sidetext'> Voice Props Pack DLC </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#boom-box'>
+			<span class='sidetext'> Boom Box </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#connected-speaker'>
+			<span class='sidetext'> Connected Speaker </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#disco-ball'>
+			<span class='sidetext'> Disco Ball </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#disco-floor'>
+			<span class='sidetext'> Disco Floor </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#laser-light'>
+			<span class='sidetext'> Laser Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#microphone-stand'>
+			<span class='sidetext'> Microphone Stand </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#sound-light'>
+			<span class='sidetext'> Sound Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='water.html'> Water </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='water.html#water'>
+			<span class='sidetext'> Water </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#what-is-the-water-system'>
+			<span class='sidetext'> What is the water system? </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#common-traits'>
+			<span class='sidetext'> Common Traits </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#large-water-catcher'>
+			<span class='sidetext'> Large Water Catcher </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#small-water-catcher'>
+			<span class='sidetext'> Small Water Catcher </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#water-barrel'>
+			<span class='sidetext'> Water Barrel </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#water-pump'>
+			<span class='sidetext'> Water Pump </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#powered-water-purifier'>
+			<span class='sidetext'> Powered Water Purifier </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#fuel-tank-vehicle-module'>
+			<span class='sidetext'> Fuel Tank Vehicle Module </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#fluid-switch-pump'>
+			<span class='sidetext'> Fluid Switch & Pump </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#fluid-combiner'>
+			<span class='sidetext'> Fluid Combiner </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#fluid-splitter'>
+			<span class='sidetext'> Fluid Splitter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#sprinkler'>
+			<span class='sidetext'> Sprinkler </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='industrial.html'> Industrial </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='industrial.html#industrial'>
+			<span class='sidetext'> Industrial </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#industrial-conveyor'>
+			<span class='sidetext'> Industrial Conveyor </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#industrial-crafter'>
+			<span class='sidetext'> Industrial Crafter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#storage-adapter'>
+			<span class='sidetext'> Storage Adapter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#electric-furnace'>
+			<span class='sidetext'> Electric Furnace </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#industrial-splitter'>
+			<span class='sidetext'> Industrial Splitter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#industrial-combiner'>
+			<span class='sidetext'> Industrial Combiner </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#what-is-the-industrial-system'>
+			<span class='sidetext'> What is the industrial system? </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+<span class="sideline foldable folded unfoldonload" onclick="toggfold(this);">
+	<span class="sidetext"> Concepts </span>
+	<span class="sidesign"></span>
+</span>
+
+  <span class="sidelist indent1 folded">
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='concepts.html'> Concepts </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='concepts.html#the-structure-of-a-base-circuit'>
+			<span class='sidetext'> The Structure of a Base Circuit </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='concepts.html#battery-active-usage-vs-actual-power-consumed'>
+			<span class='sidetext'> Battery Active Usage Vs Actual Power Consumed </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='concepts.html#short-circuit-max-depth'>
+			<span class='sidetext'> Short Circuit / Max Depth </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='concepts.html#short-circuit'>
+			<span class='sidetext'> Short Circuit </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='concepts.html#max-depth'>
+			<span class='sidetext'> Max Depth </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+		<a class='sideline' href='concepts.html#circuit-delay-and-power-flow'>
+			<span class='sidetext'> Circuit Delay and Power Flow </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='concepts.html#useful-circuits'>
+			<span class='sidetext'> Useful Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='concepts.html#basic'>
+			<span class='sidetext'> Basic </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='concepts.html#advanced'>
+			<span class='sidetext'> Advanced </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='centralized.html'> Centralization </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='centralized.html#centralized-vs-decentralized'>
+			<span class='sidetext'> Centralized vs Decentralized </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#locations'>
+			<span class='sidetext'> Locations </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='centralized.html#centralized-location'>
+			<span class='sidetext'> Centralized Location </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#decentralized-locations'>
+			<span class='sidetext'> Decentralized Locations </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+		<a class='sideline' href='centralized.html#circuits'>
+			<span class='sidetext'> Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='centralized.html#centralized-circuits'>
+			<span class='sidetext'> Centralized Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#decentralized-circuits'>
+			<span class='sidetext'> Decentralized Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#hybrid-circuits'>
+			<span class='sidetext'> Hybrid Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+		<a class='sideline' href='centralized.html#what-is-a-power-bus'>
+			<span class='sidetext'> What is a Power Bus?* </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='centralized.html#fixed-bus-f-bus'>
+			<span class='sidetext'> Fixed Bus (F-Bus) </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#dynamic-bus-d-bus'>
+			<span class='sidetext'> Dynamic Bus (D-Bus) </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#configure-siphon-c-bus'>
+			<span class='sidetext'> Configure Siphon (C-Bus) </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='backup.html'> Backup & Distribution </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='backup.html#battery-backup-and-distribution-systems'>
+			<span class='sidetext'> Battery Backup and Distribution Systems </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#direct-delivery'>
+			<span class='sidetext'> Direct Delivery </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#inline'>
+			<span class='sidetext'> Inline </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#orblocker'>
+			<span class='sidetext'> OR/Blocker </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#secondary-battery-backup'>
+			<span class='sidetext'> Secondary Battery Backup </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#nih-core'>
+			<span class='sidetext'> Nih Core </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+  </span>			</span>
+		</div>
+		<span id="sidetogmobile" onclick="toggside();"></span>
+
+		<div id="main-container">
+		<main>
+			<h1 id="lights">Lights</h1>
+<hr />
+<h1 id="flasher-light">Flasher Light<img
+src="images/image18.png" /></h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td> -939424778</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td>A flashing blue light</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>120 Metal Fragments</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>60 Metal Fragments</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Workbench Required</td>
+<td>Level 1</td>
+</tr>
+<tr class="odd">
+<td>Research Table Cost</td>
+<td>20 Scrap</td>
+</tr>
+<tr class="even">
+<td>Hit Points</td>
+<td>200</td>
+</tr>
+<tr class="odd">
+<td>Where To Find</td>
+<td>Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist,
+Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken
+Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue
+Crate</td>
+</tr>
+<tr class="even">
+<td>Inputs/Outputs</td>
+<td>Power In / Passthrough</td>
+</tr>
+<tr class="odd">
+<td>Active Usage</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Power Consumption</td>
+<td>1rW</td>
+</tr>
+<tr class="odd">
+<td>Power Output</td>
+<td>Input power minus 1</td>
+</tr>
+<tr class="even">
+<td>Despawn Time</td>
+<td>5 minutes</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>These blink a blue light. 3 fast pulses followed by a pause</li>
+<li>These can be placed on any angled surfaces</li>
+<li>Can be placed on other electrical components^(<a
+href="#cmnt2">[b]</a>)</li>
+</ul>
+<hr />
+<h1 id="siren-light">Siren Light<img src="images/image108.png" /></h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td> 762289806</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td>A spinning red light</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>120 Metal Fragments</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>60 Metal Fragments</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Workbench Required</td>
+<td>Level 1</td>
+</tr>
+<tr class="odd">
+<td>Research Table Cost</td>
+<td>20 Scrap</td>
+</tr>
+<tr class="even">
+<td>Hit Points</td>
+<td>75</td>
+</tr>
+<tr class="odd">
+<td>Where To Find</td>
+<td>Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist,
+Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Treasure
+Box, Underwater Dweller, Underwater Lab Blue Crate</td>
+</tr>
+<tr class="even">
+<td>Inputs/Outputs</td>
+<td>Power In / Passthrough</td>
+</tr>
+<tr class="odd">
+<td>Active Usage</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Power Consumption</td>
+<td>1rW</td>
+</tr>
+<tr class="odd">
+<td>Power Output</td>
+<td>Input power minus 1</td>
+</tr>
+<tr class="even">
+<td>Despawn Time</td>
+<td>5 minutes</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>These emit 2 red lights 180 degree from each other and spin in a
+circle</li>
+<li>Can be place on any angles surfaces</li>
+</ul>
+<hr />
+<h1 id="ceiling-light">Ceiling Light<img
+src="images/image114.png" /></h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td>1142993169</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td>Overhead lighting and growing plants</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>50 Metal Fragments</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>25 Metal Fragments</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>Workbench Required</td>
+<td>Level 1</td>
+</tr>
+<tr class="odd">
+<td>Research Table Cost</td>
+<td>20 Scrap</td>
+</tr>
+<tr class="even">
+<td>Hit Points</td>
+<td>300</td>
+</tr>
+<tr class="odd">
+<td>Where To Buy</td>
+<td>Bandit Camp for 30 Scrap</td>
+</tr>
+<tr class="even">
+<td>Where To Find</td>
+<td>Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist,
+Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken
+Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue
+Crate</td>
+</tr>
+<tr class="odd">
+<td>Inputs/Outputs</td>
+<td>Power In / Passthrough</td>
+</tr>
+<tr class="even">
+<td>Active Usage</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>Power Consumption</td>
+<td>2rW</td>
+</tr>
+<tr class="even">
+<td>Power Output</td>
+<td>Input power minus 2</td>
+</tr>
+<tr class="odd">
+<td>Despawn Time</td>
+<td>5 minutes</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>These hang from ceilings and focus light toward the ground</li>
+<li>Hanging this at 1.5 floors allows the light to cover more area</li>
+<li>They are required for farming and will be cover more in that
+section</li>
+</ul>
+<hr />
+<h1 id="simple-light">Simple Light<img src="images/image80.png" /></h1>
+<p><strong>(NON-CRAFTABLE)</strong></p>
+<table>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td> -282113991</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td> Lighting an area placed on walls</td>
+</tr>
+<tr class="odd">
+<td>Recycles Into</td>
+<td>50 Wood, 13 Metal Fragments</td>
+</tr>
+<tr class="even">
+<td>Stack Size</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>Inputs/Outputs</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Active Usage</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>Power Consumption</td>
+<td>1rW</td>
+</tr>
+<tr class="even">
+<td>Power Output</td>
+<td>Input power minus 1</td>
+</tr>
+<tr class="odd">
+<td>Despawn Time</td>
+<td>5 minutes</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>These can only be spawned in by an admin or using plugins</li>
+<li>They take no damage</li>
+<li>They can only be placed on vertical surfaces</li>
+</ul>
+<hr />
+<h1 id="deluxe-christmas-lights">Deluxe Christmas Lights<img
+src="images/image11.png" /></h1>
+<table>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td> -151387974</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td>Christmas themed lights</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>50 Metal Fragments for 10ft</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>3 Metal Fragments per 1ft</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>150</td>
+</tr>
+<tr class="even">
+<td>Hit Points</td>
+<td>100</td>
+</tr>
+<tr class="odd">
+<td>Where To Find</td>
+<td>Requires a Steam item purchased from the market</td>
+</tr>
+<tr class="even">
+<td>Inputs/Outputs</td>
+<td>Power In / Passthrough</td>
+</tr>
+<tr class="odd">
+<td>Active Usage</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Power Consumption</td>
+<td>5rW</td>
+</tr>
+<tr class="odd">
+<td>Power Output</td>
+<td>Input power minus 5</td>
+</tr>
+<tr class="even">
+<td>Despawn Time</td>
+<td>5 minutes</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>This item can only be crafted if you have the item in your Steam
+Inventory. It must be purchased from the community market</li>
+</ul>
+<p> </p>
+<ul>
+<li>1 foundation is supposed to be 3 meters. 3 meters is 9.8ft. 1
+foundation length worth of these lights is only 8ft</li>
+<li>Left click to place the first piece. Run the lights anywhere you
+want and right click to end placement</li>
+<li>They have 5 different modes, Steady, Flashing, Chasing, Fade and
+Slow Glow</li>
+<li>Can be placed underwater</li>
+</ul>
+<hr />
+<h1 id="search-light">Search Light<img src="images/image15.png" /></h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td> 2087678962</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td>Lighting up a large area</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>500 Wood, 200 Metal Fragments</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>250 Wood, 100 Metal Fragments</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Workbench Required</td>
+<td>Level 2</td>
+</tr>
+<tr class="odd">
+<td>Research Table Cost</td>
+<td>75 Scrap</td>
+</tr>
+<tr class="even">
+<td>Hit Points</td>
+<td>150</td>
+</tr>
+<tr class="odd">
+<td>Where To Find</td>
+<td>Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, Excavator
+Scientist, Heavy Scientist, Locked Crate, Military Base Scientist,
+Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box,
+Underwater Lab Elite Crate, Underwater Lab Yellow Crate</td>
+</tr>
+<tr class="even">
+<td>Inputs/Outputs</td>
+<td>Power In / Passthrough</td>
+</tr>
+<tr class="odd">
+<td>Active Usage</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>Power Consumption</td>
+<td>10rW</td>
+</tr>
+<tr class="odd">
+<td>Power Output</td>
+<td>Input power minus 10</td>
+</tr>
+<tr class="even">
+<td>Despawn Time</td>
+<td>20 minutes</td>
+</tr>
+<tr class="odd">
+<td>Decay Time</td>
+<td>8 hours</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>Use the light by looking at it and pressing E. Adjust where the
+light is shining. Once in position, if you can see ‘Stop Using’, press E
+or walk far enough away to stop using</li>
+<li>Has 360 degree rotation</li>
+<li>Maximum distance light can travel is 96m or 32 foundations. 1 square
+foundation is 3m.</li>
+<li>Can be used through ceilings and walls.</li>
+<li>The light can be seen through walls if placed close enough. The
+flash from the light turning on can be see as far away as 1 grid
+square.</li>
+</ul>
+<hr />
+<h1 id="small-neon-sign">Small Neon Sign<img
+src="images/image103.png" /></h1>
+<table>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td> 1305578813</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td>A small neon sign!</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>150 Metal Fragments</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>75 Metal Fragments</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Hit Points</td>
+<td>300</td>
+</tr>
+<tr class="odd">
+<td>Where To Find</td>
+<td>Requires a Steam item purchased from the market</td>
+</tr>
+<tr class="even">
+<td>Inputs/Outputs</td>
+<td>Electric Input / Passthrough</td>
+</tr>
+<tr class="odd">
+<td>Active Usage</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>Power Consumption</td>
+<td>4rW</td>
+</tr>
+<tr class="odd">
+<td>Power Output</td>
+<td>Input power minus 4</td>
+</tr>
+<tr class="even">
+<td>Despawn Time</td>
+<td>5 minutes</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>This item can only be crafted if you have the item in your Steam
+Inventory. It must be purchased from the community market</li>
+<li>Maximum image size is 128x128</li>
+<li>Can be placed on vertical and angled surfaces</li>
+<li>Can be placed underwater</li>
+</ul>
+<hr />
+<h1 id="medium-neon-sign">Medium Neon Sign<img
+src="images/image2.png" /></h1>
+<table>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td> -1423304443</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td> A medium neon sign!</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>200 Metal Fragments</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>100 Metal Fragments</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Workbench Required</td>
+<td>Level 1</td>
+</tr>
+<tr class="odd">
+<td>Hit Points</td>
+<td>300</td>
+</tr>
+<tr class="even">
+<td>Where To Find</td>
+<td>Requires a Steam item purchased from the market</td>
+</tr>
+<tr class="odd">
+<td>Inputs/Outputs</td>
+<td>Electric Input / Passthrough</td>
+</tr>
+<tr class="even">
+<td>Active Usage</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td>Power Consumption</td>
+<td>6rW</td>
+</tr>
+<tr class="even">
+<td>Power Output</td>
+<td>Input power minus 6</td>
+</tr>
+<tr class="odd">
+<td>Despawn Time</td>
+<td>5 minutes</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>This item can only be crafted if you have the item in your Steam
+Inventory. It must be purchased from the community market</li>
+<li>Maximum image size is 256x128</li>
+<li>Can be placed on vertical and angled surfaces</li>
+<li>Can be placed underwater</li>
+</ul>
+<hr />
+<h1 id="medium-animated-neon-sign">Medium Animated Neon Sign<img
+src="images/image95.png" /></h1>
+<table>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td> 42535890</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td> An animated neon sign!</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>2 HQM, 300 Metal Fragments</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>1 HQM, 150 Metal Fragments</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Workbench Required</td>
+<td>Level 2</td>
+</tr>
+<tr class="odd">
+<td>Hit Points</td>
+<td>300</td>
+</tr>
+<tr class="even">
+<td>Where To Find</td>
+<td>Requires a Steam item purchased from the market</td>
+</tr>
+<tr class="odd">
+<td>Inputs/Outputs</td>
+<td>Electric Input / Passthrough</td>
+</tr>
+<tr class="even">
+<td>Active Usage</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td>Power Consumption</td>
+<td>10rW</td>
+</tr>
+<tr class="even">
+<td>Power Output</td>
+<td>Input power minus 10</td>
+</tr>
+<tr class="odd">
+<td>Despawn Time</td>
+<td>5 minutes</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>This item can only be crafted if you have the item in your Steam
+Inventory. It must be purchased from the community market</li>
+<li>There are 5 pages you can paint and the sign will flip between
+them</li>
+<li>You can choose between 3 flipping speeds, Slow, Medium and Fast</li>
+<li>Maximum image size is 256x128</li>
+<li>Can be placed on vertical and angled surfaces</li>
+<li>Can be placed underwater</li>
+</ul>
+<hr />
+<h1 id="large-neon-sign">Large Neon Sign<img
+src="images/image42.png" /></h1>
+<table>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td> 866332017</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td> A large neon sign!</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>250 Metal Fragments</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>125 Metal Fragments</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Workbench Required</td>
+<td>Level 1</td>
+</tr>
+<tr class="odd">
+<td>Hit Points</td>
+<td>300</td>
+</tr>
+<tr class="even">
+<td>Where To Find</td>
+<td>Requires a Steam item purchased from the market</td>
+</tr>
+<tr class="odd">
+<td>Inputs/Outputs</td>
+<td>Electric Input / Passthrough</td>
+</tr>
+<tr class="even">
+<td>Active Usage</td>
+<td>8</td>
+</tr>
+<tr class="odd">
+<td>Power Consumption</td>
+<td>8rW</td>
+</tr>
+<tr class="even">
+<td>Power Output</td>
+<td>Input power minus 8</td>
+</tr>
+<tr class="odd">
+<td>Despawn Time</td>
+<td>5 minutes</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>This item can only be crafted if you have the item in your Steam
+Inventory. It must be purchased from the community market</li>
+<li>Can be placed on vertical and angled surfaces</li>
+<li>Maximum image size is 256x256</li>
+<li>Using a low or half wall above a window with bars or glass, you can
+pull one of these down over the window to cover it. When the sign is
+painted, you can’t see through the front but can through the back</li>
+<li>Can be placed underwater</li>
+</ul>
+<hr />
+<h1 id="large-animated-neon-sign">Large Animated Neon Sign<img
+src="images/image27.png" /></h1>
+<table>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td> 1643667218</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td> A large, animated neon sign!</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>5 HQM, 350 Metal Fragments</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>125 Metal Fragments</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Workbench Required</td>
+<td>Level 2</td>
+</tr>
+<tr class="odd">
+<td>Hit Points</td>
+<td>300</td>
+</tr>
+<tr class="even">
+<td>Where To Find</td>
+<td>Requires a Steam item purchased from the market</td>
+</tr>
+<tr class="odd">
+<td>Inputs/Outputs</td>
+<td>Electric Input / Passthrough</td>
+</tr>
+<tr class="even">
+<td>Active Usage</td>
+<td>15</td>
+</tr>
+<tr class="odd">
+<td>Power Consumption</td>
+<td>15rW</td>
+</tr>
+<tr class="even">
+<td>Power Output</td>
+<td>Input power minus 15</td>
+</tr>
+<tr class="odd">
+<td>Despawn Time</td>
+<td>5 minutes</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>This item can only be crafted if you have the item in your Steam
+Inventory. It must be purchased from the community market</li>
+<li>Can be placed on vertical and angled surfaces</li>
+<li>There are 5 pages you can paint and the sign will flip between
+them</li>
+<li>You can choose between 3 flipping speeds, Slow, Medium and Fast</li>
+<li>Maximum image size is 256x256</li>
+<li>Using a low or half wall above a window with bars or glass, you can
+pull one of these down over the window to cover it. When the sign is
+painted, you can’t see through the front but can through the back</li>
+<li>Can be placed underwater</li>
+</ul>
+<hr />
+<h1 id="industrial-wall-light">Industrial Wall Light<img
+src="images/image14.png" /></h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td> 1643667218</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td> A mountable white light</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>30 Metal Fragments</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>15 Metal Fragments</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>Workbench Required</td>
+<td>Level 1</td>
+</tr>
+<tr class="odd">
+<td>Hit Points</td>
+<td>200</td>
+</tr>
+<tr class="even">
+<td>Where To Find</td>
+<td>Requires a Steam item purchased from the Item Store</td>
+</tr>
+<tr class="odd">
+<td>Inputs/Outputs</td>
+<td>Power In / Passthrough</td>
+</tr>
+<tr class="even">
+<td>Active Usage</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>Power Consumption</td>
+<td>1rW</td>
+</tr>
+<tr class="even">
+<td>Power Output</td>
+<td>Input power minus 1</td>
+</tr>
+<tr class="odd">
+<td>Despawn Time</td>
+<td>5 minutes</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>This item can only be crafted if you have the item in your Steam
+Inventory. It must be purchased from the in game Item Store</li>
+<li>Can be placed on all angled surfaces</li>
+</ul>
+<hr />
+<h1 id="green-industrial-light">Green Industrial Light<img
+src="images/image78.png" /></h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td> 1268178466</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td> A mountable green light</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>30 Metal Fragments</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>15 Metal Fragments</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>Workbench Required</td>
+<td>Level 1</td>
+</tr>
+<tr class="odd">
+<td>Hit Points</td>
+<td>200</td>
+</tr>
+<tr class="even">
+<td>Where To Find</td>
+<td>Requires a Steam item purchased from the Item Store</td>
+</tr>
+<tr class="odd">
+<td>Inputs/Outputs</td>
+<td>Power In / Passthrough</td>
+</tr>
+<tr class="even">
+<td>Active Usage</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>Power Consumption</td>
+<td>1rW</td>
+</tr>
+<tr class="even">
+<td>Power Output</td>
+<td>Input power minus 1</td>
+</tr>
+<tr class="odd">
+<td>Despawn Time</td>
+<td>5 minutes</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>This item can only be crafted if you have the item in your Steam
+Inventory. It must be purchased from the in game Item Store</li>
+<li>Can be placed on all angled surfaces</li>
+</ul>
+<hr />
+<h1 id="red-industrial-light">Red Industrial Light<img
+src="images/image36.png" /></h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td>-1160621614</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td> A mountable red light</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>30 Metal Fragments</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>15 Metal Fragments</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>Workbench Required</td>
+<td>Level 1</td>
+</tr>
+<tr class="odd">
+<td>Hit Points</td>
+<td>200</td>
+</tr>
+<tr class="even">
+<td>Where To Find</td>
+<td>Requires a Steam item purchased from the Item Store</td>
+</tr>
+<tr class="odd">
+<td>Inputs/Outputs</td>
+<td>Power In / Passthrough</td>
+</tr>
+<tr class="even">
+<td>Active Usage</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>Power Consumption</td>
+<td>1rW</td>
+</tr>
+<tr class="even">
+<td>Power Output</td>
+<td>Input power minus 1</td>
+</tr>
+<tr class="odd">
+<td>Despawn Time</td>
+<td>5 minutes</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>This item can only be crafted if you have the item in your Steam
+Inventory. It must be purchased from the in game Item Store</li>
+<li>Can be placed on all angled surfaces</li>
+</ul>
+<hr />
+<h1 id="strobe-light">Strobe Light<img src="images/image102.png" /></h1>
+<table>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td> 2104517339</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td>A flashing light with 3 speeds</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>2 HQM, 100 Metal Fragments</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>1 HQM, 50 Metal Fragments</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Hit Points</td>
+<td>100</td>
+</tr>
+<tr class="odd">
+<td>Where To Find</td>
+<td>Requires a Steam item purchased from the market</td>
+</tr>
+<tr class="even">
+<td>Inputs/Outputs</td>
+<td>Toggle, Turn On, Turn Off</td>
+</tr>
+<tr class="odd">
+<td>Active Usage</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Power Consumption</td>
+<td>1rW per input but none for itself</td>
+</tr>
+<tr class="odd">
+<td>Despawn Time</td>
+<td>5 minutes</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>This item can only be crafted if you have the item in your Steam
+Inventory. It must be purchased from the community market</li>
+<li>Requires TC authorization to change strobe settings. Look at the
+light and hold USE(E) to change the frequency of the strobe between
+10hz, 20hz and 40hz or to manually turn it on.</li>
+<li>Whichever input is the last to be activated is the input that
+dictates the state of the light. For example, if you send constant power
+to TURN ON, the light turns on. Then send power to TURN OFF, the light
+will turn off. When you remove power from TURN OFF, the light will not
+turn back on even with power still going to TURN ON. You will need to
+remove and reapply power to TURN ON for the light to turn back on.</li>
+<li>The TOGGLE input will turn the light on when it receives power and
+turn off when power is removed. This does not change the previous bullet
+point. If you apply power to TOGGLE, the light will turn on. While the
+light is on, if you send power to TURN OFF, the light will turn off.
+When you remove power from TURN OFF with power still going to TOGGLE,
+the light will not turn back on. On the other hand if you send power to
+TURN ON, the light will turn on. Then send power to TOGGLE and the light
+will stay on. With power still going to TURN ON, we remove power from
+TOGGLE and the light will turn off. This is because when you remove
+power from TOGGLE, it tells the light to turn off.</li>
+<li>They take damage when active at a rate of 1hp/3min42sec</li>
+<li>They can be placed on flat and angled surfaces as well as the
+ground</li>
+<li>Can be picked up with a hammer but loses 10hp</li>
+</ul>
+<hr />
+		</main>
+		</div>
+
+	</body>
+</html>

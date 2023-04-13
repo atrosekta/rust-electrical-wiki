@@ -1,0 +1,1872 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>utils</title>
+		<link rel="stylesheet" href="global/style.css">
+		<link rel="stylesheet" href="global/sidebar.css">
+		<link rel="stylesheet" href="global/fix.css">
+		<script src="global/sidebar.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
+	</head>
+	<body>
+
+		<div id="sidebar">
+			<span id="sidetop" class="sidelist">
+				<span id="sidetog" class="sidetext" onclick="toggside();"></span>
+			</span>
+			<span id="sidenav">
+				  <span class="sidelist indent0 folded">
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='index.html'> Home </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent1 folded">
+		<a class='sideline' href='index.html#the-rust-electrical-handbook'>
+			<span class='sidetext'> The RUST Electrical Handbook </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='index.html#change-log'>
+			<span class='sidetext'> Change Log </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+<span class="sideline foldable folded unfoldonload" onclick="toggfold(this);">
+	<span class="sidetext"> Items Details </span>
+	<span class="sidesign"></span>
+</span>
+
+  <span class="sidelist indent1 folded">
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='tools.html'> Tools </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='tools.html#tools'>
+			<span class='sidetext'> Tools </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#hammer'>
+			<span class='sidetext'> Hammer </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#wire-tool'>
+			<span class='sidetext'> Wire Tool </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#hose-tool'>
+			<span class='sidetext'> Hose Tool </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#pipe-tool'>
+			<span class='sidetext'> Pipe Tool </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='sources.html'> Sources </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='sources.html#power-sources'>
+			<span class='sidetext'> Power Sources </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sources.html#test-generator'>
+			<span class='sidetext'> Test Generator  </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sources.html#wind-turbine'>
+			<span class='sidetext'> Wind Turbine </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sources.html#large-solar-panel'>
+			<span class='sidetext'> Large Solar Panel </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sources.html#small-generator'>
+			<span class='sidetext'> Small Generator </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='distribution.html'> Distribution </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='distribution.html#power-distribution'>
+			<span class='sidetext'> Power Distribution </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='distribution.html#root-combiner'>
+			<span class='sidetext'> Root Combiner </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='distribution.html#electrical-branch'>
+			<span class='sidetext'> Electrical Branch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='distribution.html#splitter'>
+			<span class='sidetext'> Splitter </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='storage.html'> Storage </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='storage.html#power-storage'>
+			<span class='sidetext'> Power Storage </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='storage.html#small-rechargeable-battery'>
+			<span class='sidetext'> Small Rechargeable Battery </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='storage.html#medium-rechargeable-battery'>
+			<span class='sidetext'> Medium Rechargeable Battery </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='storage.html#large-battery'>
+			<span class='sidetext'> Large Battery </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='defense.html'> Defense </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='defense.html#defense'>
+			<span class='sidetext'> Defense </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='defense.html#sam-site'>
+			<span class='sidetext'> SAM Site </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='defense.html#auto-turret'>
+			<span class='sidetext'> Auto Turret </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='defense.html#tesla-coil'>
+			<span class='sidetext'> Tesla Coil </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='light.html'> Lights </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='light.html#lights'>
+			<span class='sidetext'> Lights </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#flasher-light'>
+			<span class='sidetext'> Flasher Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#siren-light'>
+			<span class='sidetext'> Siren Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#ceiling-light'>
+			<span class='sidetext'> Ceiling Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#simple-light'>
+			<span class='sidetext'> Simple Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#deluxe-christmas-lights'>
+			<span class='sidetext'> Deluxe Christmas Lights </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#search-light'>
+			<span class='sidetext'> Search Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#small-neon-sign'>
+			<span class='sidetext'> Small Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#medium-neon-sign'>
+			<span class='sidetext'> Medium Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#medium-animated-neon-sign'>
+			<span class='sidetext'> Medium Animated Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#large-neon-sign'>
+			<span class='sidetext'> Large Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#large-animated-neon-sign'>
+			<span class='sidetext'> Large Animated Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#industrial-wall-light'>
+			<span class='sidetext'> Industrial Wall Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#green-industrial-light'>
+			<span class='sidetext'> Green Industrial Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#red-industrial-light'>
+			<span class='sidetext'> Red Industrial Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#strobe-light'>
+			<span class='sidetext'> Strobe Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='utils.html'> Utilities </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='utils.html#utilities-quality-of-life'>
+			<span class='sidetext'> Utilities / Quality Of Life </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#door-controller'>
+			<span class='sidetext'> Door Controller </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#igniter'>
+			<span class='sidetext'> Igniter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#cctv-camera'>
+			<span class='sidetext'> CCTV Camera </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#electric-heater'>
+			<span class='sidetext'> Electric Heater </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#modular-car-lift'>
+			<span class='sidetext'> Modular Car Lift </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#elevator'>
+			<span class='sidetext'> Elevator </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#telephone'>
+			<span class='sidetext'> Telephone </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#audio-alarm'>
+			<span class='sidetext'> Audio Alarm </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#computer-station'>
+			<span class='sidetext'> Computer Station </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#fogger-3000'>
+			<span class='sidetext'> Fogger-3000 </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#snow-machine'>
+			<span class='sidetext'> Snow Machine </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='logic.html'> Logic </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='logic.html#logic'>
+			<span class='sidetext'> Logic </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#blocker'>
+			<span class='sidetext'> Blocker </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#memory-cell'>
+			<span class='sidetext'> Memory Cell </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#timer'>
+			<span class='sidetext'> Timer </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#rand-switch'>
+			<span class='sidetext'> RAND Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#or-switch'>
+			<span class='sidetext'> OR Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#and-switch'>
+			<span class='sidetext'> AND Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#xor-switch'>
+			<span class='sidetext'> XOR Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#counter'>
+			<span class='sidetext'> Counter </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='switch.html'> Switchs </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='switch.html#switches'>
+			<span class='sidetext'> Switches </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='switch.html#button'>
+			<span class='sidetext'> Button </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='switch.html#switch'>
+			<span class='sidetext'> Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='switch.html#side-inputs'>
+			<span class='sidetext'> Side Inputs </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='sensor.html'> Sensors </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='sensor.html#sensors'>
+			<span class='sidetext'> Sensors </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sensor.html#hbhf-sensor'>
+			<span class='sidetext'> HBHF Sensor </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sensor.html#laser-detector'>
+			<span class='sidetext'> Laser Detector </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sensor.html#pressure-pad'>
+			<span class='sidetext'> Pressure Pad </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sensor.html#reactive-target'>
+			<span class='sidetext'> Reactive Target </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='rf.html'> RF </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='rf.html#radio-frequency-rf'>
+			<span class='sidetext'> Radio Frequency (RF) </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#rf-broadcaster'>
+			<span class='sidetext'> RF Broadcaster </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#rf-receiver'>
+			<span class='sidetext'> RF Receiver </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#rf-transmitter'>
+			<span class='sidetext'> RF Transmitter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#rf-pager'>
+			<span class='sidetext'> RF Pager </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='smart.html'> Smart </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='smart.html#smart'>
+			<span class='sidetext'> Smart </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='smart.html#storage-monitor'>
+			<span class='sidetext'> Storage Monitor </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='smart.html#smart-alarm'>
+			<span class='sidetext'> Smart Alarm </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='smart.html#smart-switch'>
+			<span class='sidetext'> Smart Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='smart.html#smart-timer'>
+			<span class='sidetext'> Smart Timer </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='fireworks.html'> Fireworks </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='fireworks.html#fireworks'>
+			<span class='sidetext'> Fireworks </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#volcano-firework'>
+			<span class='sidetext'> Volcano Firework </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#roman-candle'>
+			<span class='sidetext'> Roman Candle </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#boomer'>
+			<span class='sidetext'> Boomer </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#champagne-boomer'>
+			<span class='sidetext'> Champagne Boomer </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#pattern-boomer'>
+			<span class='sidetext'> Pattern Boomer </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='voiceDLC.html'> Voice DLC </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='voiceDLC.html#voice-props-pack-dlc'>
+			<span class='sidetext'> Voice Props Pack DLC </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#boom-box'>
+			<span class='sidetext'> Boom Box </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#connected-speaker'>
+			<span class='sidetext'> Connected Speaker </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#disco-ball'>
+			<span class='sidetext'> Disco Ball </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#disco-floor'>
+			<span class='sidetext'> Disco Floor </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#laser-light'>
+			<span class='sidetext'> Laser Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#microphone-stand'>
+			<span class='sidetext'> Microphone Stand </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#sound-light'>
+			<span class='sidetext'> Sound Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='water.html'> Water </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='water.html#water'>
+			<span class='sidetext'> Water </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#what-is-the-water-system'>
+			<span class='sidetext'> What is the water system? </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#common-traits'>
+			<span class='sidetext'> Common Traits </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#large-water-catcher'>
+			<span class='sidetext'> Large Water Catcher </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#small-water-catcher'>
+			<span class='sidetext'> Small Water Catcher </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#water-barrel'>
+			<span class='sidetext'> Water Barrel </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#water-pump'>
+			<span class='sidetext'> Water Pump </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#powered-water-purifier'>
+			<span class='sidetext'> Powered Water Purifier </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#fuel-tank-vehicle-module'>
+			<span class='sidetext'> Fuel Tank Vehicle Module </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#fluid-switch-pump'>
+			<span class='sidetext'> Fluid Switch & Pump </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#fluid-combiner'>
+			<span class='sidetext'> Fluid Combiner </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#fluid-splitter'>
+			<span class='sidetext'> Fluid Splitter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#sprinkler'>
+			<span class='sidetext'> Sprinkler </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='industrial.html'> Industrial </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='industrial.html#industrial'>
+			<span class='sidetext'> Industrial </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#industrial-conveyor'>
+			<span class='sidetext'> Industrial Conveyor </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#industrial-crafter'>
+			<span class='sidetext'> Industrial Crafter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#storage-adapter'>
+			<span class='sidetext'> Storage Adapter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#electric-furnace'>
+			<span class='sidetext'> Electric Furnace </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#industrial-splitter'>
+			<span class='sidetext'> Industrial Splitter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#industrial-combiner'>
+			<span class='sidetext'> Industrial Combiner </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#what-is-the-industrial-system'>
+			<span class='sidetext'> What is the industrial system? </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+<span class="sideline foldable folded unfoldonload" onclick="toggfold(this);">
+	<span class="sidetext"> Concepts </span>
+	<span class="sidesign"></span>
+</span>
+
+  <span class="sidelist indent1 folded">
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='concepts.html'> Concepts </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='concepts.html#the-structure-of-a-base-circuit'>
+			<span class='sidetext'> The Structure of a Base Circuit </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='concepts.html#battery-active-usage-vs-actual-power-consumed'>
+			<span class='sidetext'> Battery Active Usage Vs Actual Power Consumed </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='concepts.html#short-circuit-max-depth'>
+			<span class='sidetext'> Short Circuit / Max Depth </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='concepts.html#short-circuit'>
+			<span class='sidetext'> Short Circuit </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='concepts.html#max-depth'>
+			<span class='sidetext'> Max Depth </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+		<a class='sideline' href='concepts.html#circuit-delay-and-power-flow'>
+			<span class='sidetext'> Circuit Delay and Power Flow </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='concepts.html#useful-circuits'>
+			<span class='sidetext'> Useful Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='concepts.html#basic'>
+			<span class='sidetext'> Basic </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='concepts.html#advanced'>
+			<span class='sidetext'> Advanced </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='centralized.html'> Centralization </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='centralized.html#centralized-vs-decentralized'>
+			<span class='sidetext'> Centralized vs Decentralized </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#locations'>
+			<span class='sidetext'> Locations </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='centralized.html#centralized-location'>
+			<span class='sidetext'> Centralized Location </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#decentralized-locations'>
+			<span class='sidetext'> Decentralized Locations </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+		<a class='sideline' href='centralized.html#circuits'>
+			<span class='sidetext'> Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='centralized.html#centralized-circuits'>
+			<span class='sidetext'> Centralized Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#decentralized-circuits'>
+			<span class='sidetext'> Decentralized Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#hybrid-circuits'>
+			<span class='sidetext'> Hybrid Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+		<a class='sideline' href='centralized.html#what-is-a-power-bus'>
+			<span class='sidetext'> What is a Power Bus?* </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='centralized.html#fixed-bus-f-bus'>
+			<span class='sidetext'> Fixed Bus (F-Bus) </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#dynamic-bus-d-bus'>
+			<span class='sidetext'> Dynamic Bus (D-Bus) </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='centralized.html#configure-siphon-c-bus'>
+			<span class='sidetext'> Configure Siphon (C-Bus) </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='preventbubble(event);'
+		href='backup.html'> Backup & Distribution </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='backup.html#battery-backup-and-distribution-systems'>
+			<span class='sidetext'> Battery Backup and Distribution Systems </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#direct-delivery'>
+			<span class='sidetext'> Direct Delivery </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#inline'>
+			<span class='sidetext'> Inline </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#orblocker'>
+			<span class='sidetext'> OR/Blocker </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#secondary-battery-backup'>
+			<span class='sidetext'> Secondary Battery Backup </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#nih-core'>
+			<span class='sidetext'> Nih Core </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+  </span>			</span>
+		</div>
+		<span id="sidetogmobile" onclick="toggside();"></span>
+
+		<div id="main-container">
+		<main>
+			<h1 id="utilities-quality-of-life">Utilities / Quality Of Life</h1>
+<hr />
+<h1 id="door-controller">Door Controller<img
+src="images/image66.png" /></h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td> -502177121</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td>Manipulates the state of the door</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>75 Metal Fragments</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>38 Metal Fragments</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Workbench Required</td>
+<td>Level 1</td>
+</tr>
+<tr class="odd">
+<td>Research Table Cost</td>
+<td>75 Scrap</td>
+</tr>
+<tr class="even">
+<td>Hit Points</td>
+<td>200</td>
+</tr>
+<tr class="odd">
+<td>Where To Find</td>
+<td>Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist,
+Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken
+Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue
+Crate</td>
+</tr>
+<tr class="even">
+<td>Inputs/Outputs</td>
+<td>Power In / Passthrough</td>
+</tr>
+<tr class="odd">
+<td>Active Usage</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Power Consumption</td>
+<td>1rW</td>
+</tr>
+<tr class="odd">
+<td>Power Output</td>
+<td>Input power minus 1</td>
+</tr>
+<tr class="even">
+<td>Despawn Time</td>
+<td>20 minutes</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>Used to open and close single and double doors, garage doors, window
+shutters, wooden shop front, prison cell gates, chainlink fence gate,
+ladder hatches and high external gates  </li>
+<li>Place the controller within about 1 meter of the door model to be
+able to pair</li>
+<li>After placing the door and controller, pair them together by looking
+at the controller and press E. If successful, the bottom green light
+will turn on.</li>
+<li>The door must be unlocked to pair with the controller</li>
+</ul>
+<hr />
+<h1 id="igniter">Igniter<img src="images/image120.png" /></h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td>-44876289</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td>Ignites anything that burns</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>75 Metal Fragments</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>38 Metal Fragments</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>Workbench Required</td>
+<td>Level 1</td>
+</tr>
+<tr class="odd">
+<td>Research Table Cost</td>
+<td>20</td>
+</tr>
+<tr class="even">
+<td>Hit Points</td>
+<td>250</td>
+</tr>
+<tr class="odd">
+<td>Where To Buy</td>
+<td>Outpost for 50 Scrap</td>
+</tr>
+<tr class="even">
+<td>Where To Find</td>
+<td>Barrel, Crate, Primitive Crate, Tunnel Dweller, Underwater Dweller,
+Underwater Lab Blue Crate</td>
+</tr>
+<tr class="odd">
+<td>Inputs/Outputs</td>
+<td>Power In</td>
+</tr>
+<tr class="even">
+<td>Active Usage</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>Power Consumption</td>
+<td>2rW</td>
+</tr>
+<tr class="even">
+<td>Despawn Time</td>
+<td>5 minutes</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>2rW is only required if you want the visual effect. They will ignite
+things with 1rW but you won’t see the spark effect</li>
+<li>They can be used to ignite the camp fire, carvable pumpkin, chinese
+lantern, furnace, hobo barrel, jack o lanterns, lanterns, large furnace,
+small oil refinery, fireplace, tuna can lamp, fireworks, sky
+lanterns,candles, beancan grenade and satchel charge</li>
+<li>They take damage when they are on. They have enough health to last
+for 16 to 17 minutes</li>
+<li>Can be placed on any angled surface and the ground</li>
+</ul>
+<hr />
+<h1 id="cctv-camera">CCTV Camera<img src="images/image100.png" /></h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td>634478325</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td>A camera to view from a Computer Station</td>
+</tr>
+<tr class="odd">
+<td>Recycles Into</td>
+<td>2 HQM, 2 Tech Trash</td>
+</tr>
+<tr class="even">
+<td>Stack Size</td>
+<td>64</td>
+</tr>
+<tr class="odd">
+<td>Hit Points</td>
+<td>150</td>
+</tr>
+<tr class="even">
+<td>Where To Find</td>
+<td>APC Crate, Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate,
+Excavator Scientist, Heavy Scientist, Helicopter Crate, Locked Crate,
+Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol
+Scientist, Sunken Crate, Tool Box, Treasure Box, Tunnel Dweller,
+Underwater Dweller, Underwater Lab Elite Crate, Underwater Lab Tech
+Crate, Underwater Lab Tool Box, Underwater Lab Yellow Crate</td>
+</tr>
+<tr class="odd">
+<td>Inputs/Outputs</td>
+<td>Unnamed Input</td>
+</tr>
+<tr class="even">
+<td>Active Usage</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>Power Consumption</td>
+<td>5rW</td>
+</tr>
+<tr class="even">
+<td>Despawn Time</td>
+<td>60 minutes</td>
+</tr>
+<tr class="odd">
+<td>Decay Time</td>
+<td>48 hours</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>To use cameras, start by placing one on any vertical surface. Using
+a wire tool, look at the camera and press E to ‘Set ID’. Aim the camera
+by standing in the direction you want the camera to look. Holding a
+Hammer, press E to change its position. Hold E to pick them up.</li>
+<li>View cameras by mounting a Computer Station and in the bottom left,
+add the ID for the camera. Select the camera from the list on the left
+and begin viewing.</li>
+<li>Anyone can add any camera to any computer station</li>
+<li>The game has pre-placed cameras at some of the monuments, here is
+the current list.</li>
+</ul>
+<p><strong><a href="camcodes.html">Monuments Camera codes</a></strong>
+<em>(UNORGAIZED DUMPFILE !)</em></p>
+<hr />
+<h1 id="electric-heater">Electric Heater<img
+src="images/image49.png" /></h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td> -784870360</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td>A source of heat</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>200 Metal Fragments</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>100 Metal Fragments</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Workbench Required</td>
+<td>Level 1</td>
+</tr>
+<tr class="odd">
+<td>Research Table Cost</td>
+<td>75 Scrap</td>
+</tr>
+<tr class="even">
+<td>Hit Points</td>
+<td>200</td>
+</tr>
+<tr class="odd">
+<td>Where To Buy</td>
+<td>Outpost for 75 Scrap</td>
+</tr>
+<tr class="even">
+<td>Where To Find</td>
+<td>Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist,
+Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken
+Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue
+Crate</td>
+</tr>
+<tr class="odd">
+<td>Inputs/Outputs</td>
+<td>Power In / Passthrough</td>
+</tr>
+<tr class="even">
+<td>Active Usage</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Power Consumption</td>
+<td>3rW</td>
+</tr>
+<tr class="even">
+<td>Power Output</td>
+<td>Input power minus 3</td>
+</tr>
+<tr class="odd">
+<td>Despawn Time</td>
+<td>20 minutes</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>This item provides heat in the shape of a sphere that at its largest
+diameter covers a 2x2</li>
+<li>It also provides up to 50% comfort in a sphere that starts about 1m
+in front of the heater and has a diameter of  4 meters or 1 1/3rd square
+foundations</li>
+<li>Heaters will dry you off if you are wet</li>
+<li>They can be used to help regulate the temperature of crops, be
+careful not to overheat your plants</li>
+<li>They emit an orange light</li>
+<li>Can only be placed on vertical surfaces</li>
+</ul>
+<hr />
+<h1 id="modular-car-lift">Modular Car Lift<img
+src="images/image131.png" /></h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td> 1696050067</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td>A work platform for modular cars</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>5 HQM, 200 Metal Fragments, 1 Gear</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>3 HQM, 100 Metal Fragments, 50% 1 Gear</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Workbench Required</td>
+<td>Level 2</td>
+</tr>
+<tr class="odd">
+<td>Research Table Cost</td>
+<td>125 Scrap</td>
+</tr>
+<tr class="even">
+<td>Hit Points</td>
+<td>250</td>
+</tr>
+<tr class="odd">
+<td>Where To Buy</td>
+<td>Bandit Camp for 150 Scrap</td>
+</tr>
+<tr class="even">
+<td>Where To Find</td>
+<td>Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, Excavator
+Scientist, Heavy Scientist, Locked Crate, Military Base Scientist,
+Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box,
+Underwater Lab Elite Crate, Underwater Lab Yellow Crate</td>
+</tr>
+<tr class="odd">
+<td>Inputs/Outputs</td>
+<td>Power In</td>
+</tr>
+<tr class="even">
+<td>Active Usage</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>Power Consumption</td>
+<td>5rW</td>
+</tr>
+<tr class="even">
+<td>Despawn Time</td>
+<td>40 minutes</td>
+</tr>
+<tr class="odd">
+<td>Decay Time</td>
+<td>16 hours</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>These allow you to modify modular cars. You can add or remove empty
+modules. Add or remove locks and craft keys.</li>
+<li>To access the user interface, look at the control stand and press E.
+TC access is not required to access UI</li>
+<li>You can store cars on a powered lift to prevent decay</li>
+</ul>
+<hr />
+<h1 id="elevator">Elevator<img src="images/image69.png" /></h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td> 1177596584</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td>A powered lift</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>3 HQM, 200 Metal Fragments, 1 Gear</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>2 HQM, 100 Metal Fragments, 50% 1 Gear</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Workbench Required</td>
+<td>Level 2</td>
+</tr>
+<tr class="odd">
+<td>Research Table Cost</td>
+<td>125 Scrap</td>
+</tr>
+<tr class="even">
+<td>Hit Points</td>
+<td>600</td>
+</tr>
+<tr class="odd">
+<td>Where To Find</td>
+<td>Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, Excavator
+Scientist, Heavy Scientist, Locked Crate, Military Base Scientist,
+Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box,
+Underwater Lab Elite Crate, Underwater Lab Yellow Crate</td>
+</tr>
+<tr class="even">
+<td>Inputs/Outputs</td>
+<td>Power, Call Elevator</td>
+</tr>
+<tr class="odd">
+<td>Active Usage</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Power Consumption</td>
+<td>Carriage = 5rW, Call Elevator = 1rW</td>
+</tr>
+<tr class="odd">
+<td>Despawn Time</td>
+<td>40 minutes</td>
+</tr>
+<tr class="even">
+<td>Decay Time</td>
+<td>8 hours</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>The elevator consists of 2 parts, the shaft and the carriage</li>
+<li>At the top of the shaft there is a light and the motor for the
+carriage. This motor requires 5rW in order for the carriage to move</li>
+<li>The carriage has a control panel that allows a user to press a
+button and move all the way to the top or bottom floors. Holding USE(E)
+will let you move up or down 1 floor at a time.</li>
+<li>Each floor has 2 inputs, on the right side of each entrance, to call
+the elevator to that floor. </li>
+<li>The Maximum height of a single elevator shaft is 6 floors</li>
+<li>The elevator has an upkeep cost. For the first floor, it costs 1 HQM
+and 20 Metal Fragments. It costs an extra 20 Metal Fragments per floor
+but at the 4th floor, it costs an extra 1 HQM. 1 max height elevator
+shaft will cost 2 HQM and 120 Metal Fragments</li>
+<li>Standing under the carriage as it descends will kill you</li>
+<li>The Elevator has a travel time of 1.6 seconds per floor.</li>
+</ul>
+<hr />
+<h1 id="telephone">Telephone<img src="images/image125.png" /></h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td> 1234878710</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td>A telephone for making and receiving calls</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>50 Wood, 100 Metal Fragments, 1 Tech Trash</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>25 Wood, 100 Metal Fragments, 50% 1 Tech Trash</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Workbench Required</td>
+<td>Level 1</td>
+</tr>
+<tr class="odd">
+<td>Research Table Cost</td>
+<td>75 Scrap</td>
+</tr>
+<tr class="even">
+<td>Hit Points</td>
+<td>150</td>
+</tr>
+<tr class="odd">
+<td>Where To Find</td>
+<td>Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist,
+Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken
+Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue
+Crate</td>
+</tr>
+<tr class="even">
+<td>Inputs/Outputs</td>
+<td>Power / Call Passthrough</td>
+</tr>
+<tr class="odd">
+<td>Active Usage</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Power Consumption</td>
+<td>1rW</td>
+</tr>
+<tr class="odd">
+<td>Power Output</td>
+<td>1rW</td>
+</tr>
+<tr class="even">
+<td>Despawn Time</td>
+<td>20 minutes</td>
+</tr>
+<tr class="odd">
+<td>Decay Time</td>
+<td>8 hours</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>This is actually a telephone sitting on top of an tape cassette
+answering machine</li>
+<li>The answering machine needs a cassette to work. You will require the
+Voice Props DLC to craft cassettes.</li>
+<li>There are 3 types of cassettes, Short(10sec), Medium(20sec) and
+Long(30sec). Use a Cassette Recorder to record a message then place the
+cassette in the answering machine. When someone calls and you dont
+answer, the caller will hear your message and leave a message of their
+own for you to play back later.</li>
+<li>After 3 rings the answering machine message will begin to play. To
+leave a voicemail, press the spacebar when you hear the answering
+machines message. To listen to your voicemail, use the phone and at the
+bottom of the screen select voicemail.</li>
+<li>To use the phone, look at it and when you see MAKE CALL, press E to
+use.</li>
+<li>You can give your phone a name and it will appear in the Directory.
+All phones are automatically assigned a number.</li>
+<li>You can add phones to your contacts list by adding the phones number
+or name.</li>
+<li>Use the Directory to find the phones at monuments or random peoples
+phones.</li>
+<li>When a call comes in, the phone will output the incoming power and
+will continue to for as long as the call is active</li>
+</ul>
+<hr />
+<h1 id="audio-alarm">Audio Alarm<img src="images/image77.png" /></h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td> 2100007442</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td>A loud warning alarm speaker</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>75 Metal Fragments</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>38 Metal Fragments</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Workbench Required</td>
+<td>Level 1</td>
+</tr>
+<tr class="odd">
+<td>Research Table Cost</td>
+<td>20 Scrap</td>
+</tr>
+<tr class="even">
+<td>Hit Points</td>
+<td>100</td>
+</tr>
+<tr class="odd">
+<td>Where To Find</td>
+<td>Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist,
+Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken
+Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue
+Crate</td>
+</tr>
+<tr class="even">
+<td>Inputs/Outputs</td>
+<td>Unnamed Input</td>
+</tr>
+<tr class="odd">
+<td>Active Usage</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Power Consumption</td>
+<td>1rW</td>
+</tr>
+<tr class="odd">
+<td>Despawn Time</td>
+<td>5 minutes</td>
+</tr>
+<tr class="even">
+<td>Decay Time</td>
+<td>96 hours</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>The sound will travel approximately 14 foundations or 42ish meters.
+Behind 1 wall the distance is reduced to approximately 11 foundations or
+33ish meters. Adding more walls does not reduce the distance the sound
+will travel.</li>
+</ul>
+<hr />
+<h1 id="computer-station">Computer Station<img
+src="images/image60.png" /></h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td> -1588628467</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td>A place to view CCTV cameras</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>5 HQM, 1 Targeting Computer, 1 RF Broadcaster, 1 RF Receiver</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>3 HQM, 50% 1 Targeting Computer, 50% 1 RF Broadcaster, 50% 1 RF
+Receiver</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Workbench Required</td>
+<td>Level 2</td>
+</tr>
+<tr class="odd">
+<td>Research Table Cost</td>
+<td>75 Scrap</td>
+</tr>
+<tr class="even">
+<td>Hit Points</td>
+<td>500</td>
+</tr>
+<tr class="odd">
+<td>Where To Buy</td>
+<td>Outpost for 300 Scrap</td>
+</tr>
+<tr class="even">
+<td>Where To Find</td>
+<td>Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, Excavator
+Scientist, Heavy Scientist, Locked Crate, Military Base Scientist,
+Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box,
+Underwater Lab Elite Crate, Underwater Lab Yellow Crate</td>
+</tr>
+<tr class="odd">
+<td>Inputs/Outputs</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Power Consumption</td>
+<td>Requires zero electricity</td>
+</tr>
+<tr class="odd">
+<td>Despawn Time</td>
+<td>20 minutes</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>View cameras by mounting a Computer Station and in the bottom left,
+add the ID for the camera. Select the camera from the list on the left
+and begin viewing.</li>
+<li>Anyone can add any camera to any computer station</li>
+<li>The maximum number of cameras you can add to a computer is 20.</li>
+<li>The game has pre-placed cameras at some of the monuments, here is
+the current list.</li>
+</ul>
+<p><strong><a href="camcodes.html">Monuments Camera codes</a></strong>
+<em>(UNORGAIZED DUMPFILE !)</em></p>
+<hr />
+<h1 id="fogger-3000">Fogger-3000<img src="images/image35.png" /></h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td>-1973785141</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td>A fog machine that runs on low grade fuel</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>100 Metal Fragments, 30 Low Grade Fuel, 1 Metal Pipe</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>50 Metal Fragments, 15 Low Grade Fuel, 50% 1 Metal Pipe</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Hit Points</td>
+<td>100</td>
+</tr>
+<tr class="odd">
+<td>Where To Find</td>
+<td>Requires a Steam item purchased from the market</td>
+</tr>
+<tr class="even">
+<td>Inputs/Outputs</td>
+<td>Turn On, Toggle, Turn Off</td>
+</tr>
+<tr class="odd">
+<td>Active Usage</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Power Consumption</td>
+<td>1rW per input but none for itself</td>
+</tr>
+<tr class="odd">
+<td>Low Grade Fuel Capacity</td>
+<td>500</td>
+</tr>
+<tr class="even">
+<td>Low Grade Fuel Consumption</td>
+<td>1/min when active or 10/min when set to Motion</td>
+</tr>
+<tr class="odd">
+<td>Despawn Time</td>
+<td>5 minutes</td>
+</tr>
+<tr class="even">
+<td>Decay Time</td>
+<td>96 hours</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>This item can only be crafted if you have the item in your Steam
+Inventory. It must be purchased from the community market</li>
+<li>When Active, it creates a fog cloud in front of it that covers an
+area equal to a 2x2 and is thickest below half height walls. Consumes
+low grade fuel at 1 per minute.</li>
+<li>When set to Motion, it only gets set off by non authorized players
+and will emit fog every couple seconds creating a thicker cloud directly
+in front of it. Setting the fogger at a half wall height, the constant
+emission of the fogger creates a thick cloud at eye level. Consumes low
+grade fuel at 10 per minute.</li>
+<li>The fogger only emits a cloud as long as the non authorized player
+is moving. If the player stops moving, the fogger turns off.</li>
+<li>A cloud takes 5 seconds to form and 40 seconds to disappear.</li>
+<li>Increasing the number of foggers increases the density of the cloud.
+4 foggers is enough to block the light from fire and 5 will block light
+from electrical lighting.</li>
+<li>Fog will fall toward the ground and accumulate on any horizontal
+surface. The higher the fogger the thinner the cloud.</li>
+<li>Requires TC authorization to change settings. Look at the light and
+hold USE(E) to Activate, Open or turn on Motion.</li>
+<li>Whichever input is the last to be activated is the input that
+dictates the state of the fogger. For example, if you send constant
+power to TURN ON, the fogger turns on. Then send power to TURN OFF, the
+fogger will turn off. When you remove power from TURN OFF, the fogger
+will not turn back on even with power still going to TURN ON. You will
+need to remove and reapply power to TURN ON for the fogger to turn back
+on.</li>
+<li>The TOGGLE input will turn the fogger on when it receives power and
+turn off when power is removed. This does not change the previous bullet
+point. If you apply power to TOGGLE, the fogger will turn on. While the
+fogger is on, if you send power to TURN OFF, the fogger will turn off.
+When you remove power from TURN OFF with power still going to TOGGLE,
+the fogger will not turn back on. On the other hand if you send power to
+TURN ON, the fogger will turn on. Then send power to TOGGLE and the
+fogger will stay on. With power still going to TURN ON, we remove power
+from TOGGLE and the fogger will turn off. This is because when you
+remove power from TOGGLE, it tells the fogger to turn off.</li>
+<li>They can be placed on flat and angled surfaces as well as the
+ground</li>
+<li>Can be picked up with a hammer but loses 10hp</li>
+</ul>
+<hr />
+<h1 id="snow-machine">Snow Machine<img src="images/image110.png" /></h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td>1358643074</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td>A machine which will blanket the surrounding terrain in snow.</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>125 Metal Fragments, 30 Low Grade Fuel, 1 Metal Pipe</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>63 Metal Fragments, 15 Low Grade Fuel, 50% 1 Metal Pipe</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Workbench Required</td>
+<td>Level 1</td>
+</tr>
+<tr class="odd">
+<td>Hit Points</td>
+<td>100</td>
+</tr>
+<tr class="even">
+<td>Where To Find</td>
+<td>Requires a Steam item purchased from the market</td>
+</tr>
+<tr class="odd">
+<td>Inputs/Outputs</td>
+<td>Toggle, Turn On, Turn Off</td>
+</tr>
+<tr class="even">
+<td>Active Usage</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>Power Consumption</td>
+<td>1rW per input but none for itself</td>
+</tr>
+<tr class="even">
+<td>Low Grade Fuel Capacity</td>
+<td>500</td>
+</tr>
+<tr class="odd">
+<td>Low Grade Fuel Consumption</td>
+<td>1/min when active</td>
+</tr>
+<tr class="even">
+<td>Despawn Time</td>
+<td>5 minutes</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>This item can only be crafted if you have the item in your Steam
+Inventory. It must be purchased from the community market</li>
+<li>When Active, it creates a patch of snow in front of the machine with
+a radius of 3.5 square foundations.</li>
+<li>The snow pile takes 1 second to form and 2 minutes 45 seconds to
+disappear.</li>
+<li>The snow at its deepest goes halfway up a character’s chin.</li>
+<li>Increasing the number of machines does not increase the depth of the
+snow</li>
+<li>Snowfall is 3.5 floors high</li>
+<li>Requires TC authorization to change settings. Look at the light and
+hold USE(E) to Activate, Open or Stop.</li>
+<li>The TOGGLE input will turn the machine on when it receives power and
+turn off when power is removed. When TURN ON receives power, the machine
+will turn on and stay on when TURN ON loses power. When TURN OFF
+receives power, it will always turn the machine off. If power is
+currently going to TURN OFF, sending power to the other inputs will turn
+the machine on.</li>
+<li>When the machine turns on, there is a 10 second window where it
+cannot be turned off.</li>
+<li>They can only be placed on the ground.</li>
+<li>Can be picked up with a hammer but loses 75hp</li>
+</ul>
+<hr />
+		</main>
+		</div>
+
+	</body>
+</html>
