@@ -16,5 +16,8 @@ html/%.html: ${MRKDWNDIR}/%.md
 clean:
 	rm -f ${HTMLFILES}
 
+verify:
+	./verify.sh
+
 static:
 	cp html/* images global static
