@@ -15,5 +15,8 @@ html/%.html: text/%.md
 clean:
 	rm -f $(HTMLFILES)
 
+verify:
+	./verify.sh
+
 static:
 	cp html/* images global static
