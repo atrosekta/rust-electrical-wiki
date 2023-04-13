@@ -3,7 +3,7 @@ MRKDWNDIR := content
 TEXTFILES := $(wildcard ${MRKDWNDIR}/*.md)
 HTMLFILES := $(TEXTFILES:${MRKDWNDIR}/%.md=html/%.html)
 
-all: clean bar html
+all: clean bar html verify
 
 bar:
 	pandoc --lua-filter navbar.lua navbar.md -o global/navbar.html
