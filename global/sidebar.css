@@ -89,9 +89,7 @@ main {
 }
 
 /* INDENT */
-.indent2 .sidetext ,
-.indent3 .sidetext ,
-.indent4 .sidetext {
+a > .sidetext {
 	padding: 0.5em; 
 	font-size: 1.2rem;
 }

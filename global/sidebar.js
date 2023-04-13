@@ -12,7 +12,7 @@ function loadside() {
 	}
 	setTimeout( setLoadedClasses , 100);
 
-	var unfold = document.querySelectorAll(".indent0 > .sideline");
+	var unfold = document.querySelectorAll(".unfoldonload");
 	for (var i = 0; i < unfold.length; i++)
 		toggfold( unfold[i], true );
 
