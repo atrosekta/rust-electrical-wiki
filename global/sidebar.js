@@ -2,23 +2,28 @@
 window.addEventListener("load", loadside);
 
 function loadside() {
-	setTimeout( ()=>{
+	var sidenav = document.getElementById("sidenav");
+	sidenav.addEventListener("click", portraitClickCloseBar);
+
+	const setLoadedClasses = function() {
 		sidenav.classList.add("loaded");
-		if ( window.matchMedia( "(hover: hover) and (pointer: fine)" ).matches)
+		if ( window.matchMedia("(hover:hover) and (pointer:fine)").matches )
 			document.querySelector("main").classList.add("smooth");
-	}, 100);
+	}
+	setTimeout( setLoadedClasses , 100);
+
 	var unfold = document.querySelectorAll(".indent0 > .sideline");
 	for (var i = 0; i < unfold.length; i++)
-		toggfold(unfold[i], true);
-	var sidenav = document.getElementById("sidenav");
+		toggfold( unfold[i], true );
+
 	var cur = curlinkelem();
-	sidenav.addEventListener("click", portraitClickCloseBar);
-	if (!cur) return
+	if ( !cur ) return;
 	toggfold(cur, true);
-	setTimeout( ()=>{
+	const scrolltocur = function() {
 		var h = cur.offsetTop - sidenav.offsetTop - (window.innerHeight/8);
 		sidenav.scrollTo({top:h, behavior:"smooth"});
-	}, 333);
+	}
+	setTimeout( scrolltocur , 333);
 }
 
 const mobilemediaquery = 
