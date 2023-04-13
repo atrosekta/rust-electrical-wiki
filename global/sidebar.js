@@ -7,13 +7,16 @@ function loadside() {
 		if ( window.matchMedia( "(hover: hover) and (pointer: fine)" ).matches)
 			document.querySelector("main").classList.add("smooth");
 	}, 100);
+	var unfold = document.querySelectorAll(".indent0 > .sideline");
+	for (var i = 0; i < unfold.length; i++)
+		toggfold(unfold[i], true);
 	var sidenav = document.getElementById("sidenav");
 	var cur = curlinkelem();
 	sidenav.addEventListener("click", portraitClickCloseBar);
 	if (!cur) return
-	toggfold(cur);
-	var h = cur.offsetTop - sidenav.offsetTop - 128;
+	toggfold(cur, true);
 	setTimeout( ()=>{
+		var h = cur.offsetTop - sidenav.offsetTop - (window.innerHeight/8);
 		sidenav.scrollTo({top:h, behavior:"smooth"});
 	}, 333);
 }
@@ -48,8 +51,8 @@ function toggside() {
 
 var inanim = false;
 
-function toggfold(elem) {
-	if (inanim) return;
+function toggfold(elem, force) {
+	if (inanim && !force) return;
 	inanim = true;
 	elem.classList.toggle('folded');
 	elem = elem.nextElementSibling;

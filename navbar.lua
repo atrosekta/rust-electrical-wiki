@@ -67,7 +67,7 @@ function ParseConf (el)
 end
 
 function foldable (text) return pandoc.RawInline('html', [[
-<span class="sideline foldable" onclick="toggfold(this);">
+<span class="sideline foldable folded" onclick="toggfold(this);">
 	<span class="sidetext"> ]] .. text .. [[ </span>
 	<span class="sidesign"></span>
 </span>
