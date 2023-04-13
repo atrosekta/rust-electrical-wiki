@@ -1,0 +1,146 @@
+
+#sidebar {
+	background-color: var(--fg2);
+	height: 100vh;
+	flex: 0 0 60ex;
+	min-width: 0;
+	display:flex;
+	flex-direction: column;
+}
+#sidenav {
+	overflow-y:overlay;
+	overflow-x:hidden;
+	flex: 0 1 90%;
+	width:100%;
+	padding-bottom: 8em;
+}
+
+#sidetop {
+	flex: 0 0 10%;
+	display:flex;
+	flex-direction: column;
+	height: 40vh;
+}
+#sidetog {
+	flex: 1;
+	height:100%;
+	width:100%;
+	padding:0;
+}
+
+.sideline {
+	display:flex;
+}
+.sidelist {
+	min-height:0;
+	height:0;
+	overflow-y:hidden;
+}
+.sideline.foldable + .sidelist {
+	display:block;
+}
+.sidetext {
+	padding: 0.8em;
+	color: var(--bg1);
+	font-size: 1.5rem;
+	font-weight: bold;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	overflow-x:hidden;
+	user-select: none;
+}
+.sidelist a {
+	text-decoration: none;
+}
+.foldable a:hover {
+	text-decoration: underline;
+}
+
+/* FOLD */
+#sidebar.folded {
+	flex: 0 0 2em;
+}
+.folded #sidetop{
+	flex: 0 0 100%;
+}
+.folded #sidenav.loaded,
+.folded #sidenav {
+	opacity:0;
+}
+
+/* ANIMS */
+#sidebar {
+	transition: flex .2s ease-out;
+}
+#sidetop {
+	transition: flex .2s ease-out;
+}
+#sidenav {
+	transition: opacity .3s ease-in;
+}
+.sideline.foldable + .sidelist {
+	transition: height .2s;
+}
+#sidetog, .sideline {
+	transition: background-color .1s;
+}
+main {
+	transition: padding .2s;
+}
+
+/* INDENT */
+a > .sidetext {
+	padding: 0.5em; 
+	font-size: 1.2rem;
+}
+.indent1 .sidetext { padding-left: 2.8rem; }
+.indent2 .sidetext { padding-left: 4.8rem; }
+.indent3 .sidetext { padding-left: 6.8rem; }
+.indent4 .sidetext { padding-left: 8.8rem; }
+
+.sideline:hover { background-color: var(--fg3); }
+@media (hover: hover) and (pointer: fine) {
+	#sidetog:hover { background-color: var(--fg3); }
+}
+
+/* SIGN */
+.sidesign {
+	flex: 2;
+	padding-right:1em;
+	text-align: right;
+	font-size : 1.6rem;
+	font-weight : bold;
+	color: var(--bg1);
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+}
+.sidesign,
+.sidesign:after {
+}
+.sideline a:hover + .sidesign:after,
+.sideline:hover .sidesign:after {
+	content: '>';
+	font-size: 80%;
+}
+.foldable:hover .sidesign:after {
+	content: '-';
+	font-size: 100%;
+}
+.folded:hover > .sidesign:after   {
+	content: '+';
+	font-size: 100%;
+}
+/* FOLD BAR SIGN */
+#sidetog {
+	display: table;
+}
+#sidetog:after {
+	display: table-cell;
+	vertical-align: middle;
+	text-align:center;
+	content:'-';
+}
+.folded #sidetog:after {
+	content:'+';
+}
