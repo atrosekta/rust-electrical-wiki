@@ -93,10 +93,10 @@ a > .sidetext {
 	padding: 0.5em; 
 	font-size: 1.2rem;
 }
-.indent1 .sidetext { padding-left: 1.5em; }
-.indent2 .sidetext { padding-left: 3.3em; }
-.indent3 .sidetext { padding-left: 5em; }
-.indent4 .sidetext { padding-left: 8em; }
+.indent1 .sidetext { padding-left: 2.8rem; }
+.indent2 .sidetext { padding-left: 4.8rem; }
+.indent3 .sidetext { padding-left: 6.8rem; }
+.indent4 .sidetext { padding-left: 8.8rem; }
 
 .sideline:hover { background-color: var(--fg3); }
 @media (hover: hover) and (pointer: fine) {
