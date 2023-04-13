@@ -108,8 +108,12 @@ tr , td {
 td:first-child {
 	vertical-align: top;
 }
-.even > td:nth-child(1) { background-color: var(--bg2); }
-.odd  > td:nth-child(2) { background-color: var(--bg2); }
+/* .even > th:nth-child(2n+1) { background-color: var(--bg2); } */
+/* .odd  > td:nth-child(2n) { background-color: var(--bg2); } */
+th:nth-child(2n+1),
+.even > td:nth-child(2n+1),
+.odd  > td:nth-child(2n)
+{ background-color: var(--bg2);}
 
 /* OTHER HTML TYPES */
 a {

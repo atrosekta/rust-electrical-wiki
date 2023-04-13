@@ -24,19 +24,6 @@ Decay Time         | 96 hours
 
 Notes:
 
-- \* An Electrical Branch set to 10 will show an Active Usage of 10 on a
-  battery. If we use the 10 from Branch Out to power a Boom Box, the
-  battery will continue to show an Active Usage of 10. If we then make a
-  connection between Power Out on the Electrical Branch and Toggle Play
-  on the Boom Box, the battery will now register an Active Usage of 20.
-  This only appears to happen with the Electrical Branch, 10 for the
-  Branch and 10 for the Boom Box Toggle. If you replace it with a
-  Splitter, the battery will only register 11 Active Usage, 10 for the
-  Boom Box and 1 for the Splitter.
-- 
-
-![](images/image90.jpg)
-
 - Requires TC Authorization to change settings. Look at the speaker and
   hold USE(E). You can access Radio Settings or Open. Open allows you to
   insert a cassette. Radio Settings lets you select a Radio Station.
@@ -46,6 +33,19 @@ Notes:
   damage when picked up.
 - Can be placed in horizontal surfaces, the ground and some deployable
   items like Work Benches and Tables.
+
+Side Notes:
+
+- An Electrical Branch set to 10 will show an Active Usage of 10 on a
+  battery. If we use the 10 from Branch Out to power a Boom Box, the
+  battery will continue to show an Active Usage of 10. If we then make a
+  connection between Power Out on the Electrical Branch and Toggle Play
+  on the Boom Box, the battery will now register an Active Usage of 20.
+  This only appears to happen with the Electrical Branch, 10 for the
+  Branch and 10 for the Boom Box Toggle. If you replace it with a
+  Splitter, the battery will only register 11 Active Usage, 10 for the
+	Boom Box and 1 for the Splitter.
+	![](images/image90.jpg)
 
 ---
 

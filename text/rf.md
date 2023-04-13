@@ -36,9 +36,6 @@ Decay Time          | 48 Hours
 Notes:
 
 - Will send an RF signal as long as it receives power
-
-&nbsp;
-
 - They can be placed on most flat surfaces including Workbenches and the
   top of TC
 
@@ -68,9 +65,6 @@ Notes:
 
 - When it receives a signal, it will output power and continue to do so
   until it stops receiving a signal.
-
-&nbsp;
-
 - They can be placed on most flat surfaces including Workbenches and the
   top of TC
 - While not passing power through, it will block any components active
