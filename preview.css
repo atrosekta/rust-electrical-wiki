@@ -1,0 +1,124 @@
+@font-face {
+	font-family: LiberationMono;
+	src:url(font/LiberationMono-Regular.ttf);
+	font-weight: normal;
+}
+@font-face {
+	font-family: LiberationMono;
+	src:url('font/LiberationMono-Bold.ttf');
+	font-weight: bold;
+}
+
+/* GLOBAL LAYOUT */
+html {
+	--bg1: #070707;
+	--bg2: #ffffff12;
+	--fg1: #acacac;
+	--fg2: #cd412b;
+	--fg3: #ffffff1f;
+	font-family: LiberationMono, monospace;
+	font-size: 0.9rem;
+	line-height: 1.3em;
+	color: var(--fg1);
+	background-color: var(--bg1);
+	width:80%;
+	height:100%;
+}
+body {
+	margin: 0;
+	width:80%;
+	height:100%;
+	display: flex;
+	flex-direction: row;
+}
+#main-container {
+	display: flex;
+  	flex-direction: column;
+}
+main {
+	overflow-y:scroll;
+}
+.folded main {
+	padding: 0 22vw;
+}
+#sidebar {
+	flex: 1 1 20%;
+}
+
+/* HEADERS */
+hr {
+	margin: 6em 4em;
+	border: none;
+	background-color: var(--fg2);
+	height: 2px;
+}
+h1:first-of-type {
+	color: var(--fg2);
+	font-size : 3rem;
+	font-weight : bold;
+	font-size : 400%;
+	overflow:ellipsis;
+}
+h1 , h2 {
+	padding-top: 2em;
+	line-height: 130%;
+	font-size: 2.5rem;
+}
+h1 > img {
+	height: auto;
+	margin: 0;
+	width: 4em;
+	max-width:4em;
+}
+
+/* LISTS */
+ul {
+	padding: 0 1ex;
+}
+li {
+	padding: 0.4em 2ex;
+	font-size: 1em;
+	list-style: none;
+}
+li::before {
+	content: "• ";
+	margin-left : -2.5ex;
+	/* margin-left : 0; */
+	color: var(--fg2);
+}
+
+/* TABLES */
+table {
+	padding: 1em 1ex;
+	width:100%;
+}
+tr , td {
+	padding: 0.2em 1ex;
+}
+td:first-child {
+	vertical-align: top;
+}
+/* .even > th:nth-child(2n+1) { background-color: var(--bg2); } */
+/* .odd  > td:nth-child(2n) { background-color: var(--bg2); } */
+th:nth-child(2n+1),
+.even > td:nth-child(2n+1),
+.odd  > td:nth-child(2n)
+{ background-color: var(--bg2);}
+
+/* OTHER HTML TYPES */
+a {
+	color: var(--fg2);
+	text-decoration: underline dotted;
+}
+img {
+	width:auto;
+	max-height:50vh;
+	margin: 4vw 4%;
+	max-width:92%;
+}
+code {
+	font-family: LiberationMono, monospace;
+	background-color: var(--fg3);
+	display: inline-block;
+	padding: .2em .3em;
+}
