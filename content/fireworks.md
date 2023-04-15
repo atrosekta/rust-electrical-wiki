@@ -15,7 +15,15 @@ the fuse is sparkling, it cannot be picked up.
 The default number of Boomers, Patterns and Champagnes that can be
 active at 1 time is 25. Not 25 of each, 25 total.
 
-![](images/image24.png)
+Type | Start Time | Launch Time | Number of shots | Time between shots | Active Time 
+|---|-|-|-|-|-|
+Volcano | 5 |||| 40
+Candle | 5 | 2 | 12 | 3 | 40
+Boomer | 5 | 5 | 10 | 4 | 47
+Champagne | 5 | 5 | 3 | 10 | 35
+Pattern Short Fuse | 5 | 5 | 3 | 10 | 35
+Pattern Medium Fuse | 5 | 7 | 3 | 10 | 35
+Pattern Long Fuse | 5 | 10 | 3 | 10 | 35
 
 Start Time refers to the time between the fuse starting to sparkle and
 the time the firework starts to produce color or launches a projectile.
