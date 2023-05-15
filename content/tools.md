@@ -119,7 +119,7 @@ Notes:
 
 ---
 
-# Pipe Tool
+# Pipe Tool ![](images/pipe_tool.png)
 
 | | |  
 |-|---|  
@@ -129,9 +129,10 @@ Crafting Recipe    | 2 HQM
 Workbench Required | Level 1
 Despawn Time       | 5 minutes
 
-Notes: 
-- This tool is specifically designed to connect industrial connections.
-- Can be stored in a Tool Cupboard
+Notes:
+
+- This tool is specifically designed to connect industrial connections.  
+- Can be stored in a Tool Cupboard  
 - The color of the pipe can be customized by holding down the 'Reload' button `R`.  
     Colour options are :  
   *Red, green, Blue, Yellow and Default(Grey)*
@@ -140,7 +141,7 @@ Notes:
 
 ---
 
-# Garry's Mod Tool Gun
+# Garry's Mod Tool Gun ![](images/gun_tool.png)
 
 | | |  
 |-|---|  
@@ -149,14 +150,15 @@ Description        | An enhanced hammer to pick up or repair components
 Crafting Recipe    | 100 Wood, 20 Metal Fragments
 Despawn Time       | 5 minutes
 
-Notes: 
-- This tool requires you to own and play Garry’s Mod for 30 minutes
-- It is an upgraded hammer. On the screen it will tell you what you are looking at. It also has a longer range up to about 2 meters.
-- For electrical, this is used to pick up and repair components.
-- With the F1 console command `toolgun.classiceffects true` or `toolgun.classiceffects false` you can change the color of the beam. False will give you the default orange color but True is the blue color like it is in Gmod.
-- Can be stored in a Tool Cupboard
-- All components can be picked up with the exception of the Windmill and Modular Car Lift.
-- To pick up components, with TC authorization and a hammer in hand, look at the component then press and hold Use `E`.
-- Most components take no damage when picked up. Exceptions are the Laser Light, Sound Light, Door Controller,
-Igniter, Auto Turret and Tesla Coil. Batteries and Power Sources also take damage when picked up.
-- Careful when wielding this powerful tool as it can create problems if you accidently start picking up items.
+Notes:
+
+- This tool requires you to own and play Garry’s Mod for 30 minutes  
+- It is an upgraded hammer. On the screen it will tell you what you are looking at. It also has a longer range up to about 2 meters.  
+- For electrical, this is used to pick up and repair components.  
+- With the F1 console command `toolgun.classiceffects true` or `toolgun.classiceffects false` you can change the color of the beam. False will give you the default orange color but True is the blue color like it is in Gmod.  
+- Can be stored in a Tool Cupboard  
+- All components can be picked up with the exception of the Windmill and Modular Car Lift.  
+- To pick up components, with TC authorization and a hammer in hand, look at the component then press and hold Use `E`.  
+- Most components take no damage when picked up. Exceptions are the Laser Light, Sound Light, Door Controller,  
+Igniter, Auto Turret and Tesla Coil. Batteries and Power Sources also take damage when picked up.  
+- Careful when wielding this powerful tool as it can create problems if you accidently start picking up items.  
