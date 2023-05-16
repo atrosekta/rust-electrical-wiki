@@ -5,3 +5,5 @@ ign.*
 # but should force commit them in main branch when rebuilding
 global/navbar.html
 html/*.html
+html/images/*
+html/global/*

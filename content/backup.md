@@ -63,7 +63,9 @@ Cons:
 
 ---
 
-# OR/Blocker![](images/image32.png)
+# OR/Blocker 
+
+![](images/image32.png)
 
 This method has been around for a long time and has been carried over
 from a previous version of electricity when batteries could only charge
