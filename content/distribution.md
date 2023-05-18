@@ -4,22 +4,14 @@
 ---
 
 Power distribution is one of the most important things to know and
-understand when it comes to electricity. There are many ways to produce,
-store and distribute power for your circuits. These systems can be
-Centralized, Decentralized or a combination of both. This applies to
-both the structure of the electrical grid and the physical placement of
-the components inside your base.
-
-A completely centralized system would root combine all power sources to
-a single point and feed all components through a single power bus. All
-of the components would be located in a singleroom/central spot.
-
-A completely decentralized system would have separate power sources for
-different circuits for different areas of a base. No 2 circuits would
-share the same room or be located next to each other.
-
-Depending on the size of your base you may choose to use either or a
-combination of both.
+understand when it comes to electricity.  
+There are many ways to produce, store and distribute power for your circuits.  
+This section breaks down the components used for distribution and the different types of distribution circuits known as a power bus.  
+It covers the different types of battery backup systems.  
+It covers the difference between the amount of power a circuit consumes versus what a battery thinks it is consuming, aka active usage.  
+This section also covers the theory behind circuit and location centralization, decentralization and hybridization.  
+It covers the game mechanics behind circuit delay and power flow as well
+as the error message, short circuit/max depth.
 
 ---
 
@@ -51,7 +43,9 @@ Notes:
   battery
 - Can be placed on all building surfaces
 - They have a shared error message, ‘Short Circuit/Max Depth’, and that
-  has its own section breaking it down.
+  has [its own section]() breaking it down.
+- also see [Root combining batteries]() as it have down side
+  and isnt recommended in most cases,
 
 ---
 

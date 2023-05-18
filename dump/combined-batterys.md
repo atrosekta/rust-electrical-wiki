@@ -46,3 +46,15 @@ For the Nih core, it does not matter as much as the batteries are not supposed t
 I am tracking down every single person who uses root combined batteries for some base lights though,
 to spill a large box of Legos on their carpet at night. They deserve that and much more.
 
+---
+
+*and im now seeing that swift added this in the root combiner section,
+so yeah i ll just link to that new section instead*
+
+When combining batteries, the load is not evenly shared. For example,
+let's say we have 2 batteries on a combiner feeding a circuit that
+needs 50 power. Each battery will show an active usage of 50, not
+25/25 to = 50.  Both will show 50. This means that once you get a
+circuit that needs 101, both batteries will have a max usage with a
+combined potential of 200. Try to use all 200 because both batteries
+are draining at their max rate anyway.
