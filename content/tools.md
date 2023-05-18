@@ -63,9 +63,10 @@ Notes :
 
 - For electrical, this is used to pick up and repair components
 - Can be stored in a Tool Cupboard
-- All components can be picked up with the exception of the Windmill.
-- To pick up components, with a hammer in hand, look at the component
-  then press and hold Use`E`.
+- All components can be picked up with the exception of the Windmill
+  and Modular Car Lift.
+- To pick up components, with TC authorization and a hammer in hand,
+  look at the component then press and hold Use `E`.
 - Most components take no damage when picked up. Exceptions are the
   Laser Light, Sound Light, Door Controller, Igniter, Auto Turret and
   Tesla Coil. Batteries and Power Sources also take damage when picked
@@ -85,7 +86,10 @@ Despawn Time       | 5 minutes
 
 Notes:
 
-- This tool is only used to connect electrical components
+- This tool's primary function is to establish connections between
+  electrical components.
+- To trace an existing wire, left-click the connection point. This
+  action will prompt a wire animation for the selected connection only.
 - It can be stored in a Tool Cupboard
 - Wire colour can be changed by holding Reload `R`.  
 	Colour options are :  
@@ -108,7 +112,7 @@ Despawn Time       | 5 minutes
 
 Notes:
 
-- This tool is only used to connect fluid connections.
+- This tool is specifically designed to connect fluid components.
 - Can be stored in a Tool Cupboard
 - Hose colour can be changed by holding Reload `R`.  
 	Colour options are :  
