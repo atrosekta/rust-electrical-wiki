@@ -1,12 +1,12 @@
 
 # The Structure of a Base Circuit
 
-All circuits for a base follow the same basic structure. It
-doesn't matter if the base has 1 circuit or more, they all contain 4
-main parts with a 5th part that does not have a static location. We have
-the Power Source, Battery Backup, Distribution, End Devices/Circuits and
-the 5th, Destruction Detection. Using the following flow chart we can
-help illustrate this.
+All circuits for a base follow the same basic structure.  
+It doesn't matter if the base has 1 circuit or more,
+they all contain 4 main parts with an optional 5th part
+that does not have a static location.  
+We have the Power Source, Battery Backup, Distribution, End Devices/Circuits and the 5th, Destruction Detection.  
+Using the following flow chart we can help illustrate this.
 
 ![](images/image38.png)
 
