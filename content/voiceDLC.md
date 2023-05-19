@@ -33,6 +33,7 @@ Notes:
   damage when picked up.
 - Can be placed in horizontal surfaces, the ground and some deployable
   items like Work Benches and Tables.
+- They block the destruction detectors ability to see downstream
 
 Side Notes:
 
@@ -131,6 +132,7 @@ Notes:
 - Can only be placed on floors and nothing can be placed on top of them.
 - If receiving connection from a Boom Box or an Microphone Stand, the
   lights will move, flash and pulse to the audio.
+- They block the destruction detectors ability to see downstream
 
 ---
 
@@ -191,6 +193,7 @@ Notes:
 - Can be placed on flat surfaces or the ground.
 - Attach to a Connected Speaker to broadcast your voice over a larger
   area.
+- They block the destruction detectors ability to see downstream
 
 ---
 
