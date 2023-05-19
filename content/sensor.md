@@ -57,11 +57,10 @@ Active Usage        | 1
 Power Consumption   | 1rW
 Power Output        | Power input minus 1
 Despawn Time        | 20 minutes
-Decay Time          |
 
 Notes:
 
-- The maximum detection distance is 1.5m or 1.5 square foundations
+- The maximum detection distance is 4.5m or 1.5 square foundations
 - Laser will not detect if approached straight on
 - Placing the laser closer than .5m meters to a single door will not
   detect a player passing through from the opposite side
@@ -135,6 +134,7 @@ Decay Time          | 48 hours
 Notes:
 
 - When the target is lowered for any reason, it will pulse out 1rW
+- Can be connected to Root Combiners
 - When the target is supplied with power, when lowered for any reason,
   it will pulse 1rW first then output the incoming power constantly
   until it stands back up
