@@ -25,7 +25,8 @@ function.
 Tool Cupboard authorization is required to make IO connections with the
 Hose tool.
 
-There is a limit to how many water
+There is a max depth of 9 components and a max of 6 sprinklers in a
+chain.
 
 ---
 
@@ -106,7 +107,7 @@ Where To Buy         | Bandit Camp for 30 Scrap
 Where To Find        | Primitive Crate, Underwater Dweller, Tunnel Dweller, Barrel
 Water Inputs/Outputs | Water In / Water Out
 Water Output         | Up to 12mL/second
-Capacity             | 10,000 mL
+Capacity             | 20,000 mL
 Despawn Time         | 5 minutes
 Decay Time           | 8 hours
 
@@ -180,6 +181,8 @@ Notes:
 
 - Must be placed on a floor/foundation or the ground.
 - Blocks water components Active Usage downstream.
+- The smallest perfect salt pump to purifier ratio is 125:17, 1 purifier
+can handle over 7 pumps but can't handle 8
 
 ---
 
