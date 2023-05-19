@@ -88,3 +88,22 @@ Underwater Labs | `AUXPOWER` \
   `TECHCABINE` \
 Once inside an Underwater Lab, players will need to find a Keycard to open the Underwater Lab's CCTV Station Module since the final 4-digits of these Rust camera codes are randomly generated. With those 4-digits, players can now input the correct code to the corresponding CCTV camera.
 
+
+
+
+
+
+
+- Abandoned Military Base: COMPOUND\*\*\*\*, OUTDOOR\*\*\*\* - Locate
+  the computer station inside the monument, underground,  and access it
+  to find the randomly generated codes for the cameras.
+
+- Underwater Labs: AUXPOWER\*\*\*\*, BRIG\*\*\*\*, CANTINA\*\*\*\*,
+  CAPTAINQUARTER\*\*\*\*, CLASSIFIED\*\*\*\*, CREWQUARTERS\*\*\*\*,
+  HALLWAY\*\*\*\*, INFIRMARY\*\*\*\*, LAB\*\*\*\*, LOCKERROOM\*\*\*\*,
+  OPERATIONS\*\*\*\*, SECURITYHALL\*\*\*\*, TECHCABINET\*\*\*\* - Once
+  inside an Underwater Lap, find the Underwater Lab's CCTV Station
+  Module. Access the computer station and locate the final 4-digits for
+  the cameras. These camera codes are randomly generated. With those
+  4-digits, you can now input the correct name corresponding to each
+  CCTV camera.
