@@ -3,7 +3,7 @@
 
 ---
 
-# Industrial Conveyor
+# Industrial Conveyor![](images/industrial-conveyor.png)
 
 | | |  
 |-|---|  
@@ -33,7 +33,7 @@ Notes:
 
 ---
 
-# Industrial Crafter
+# Industrial Crafter![](images/industrial-crafter.png)
 
 | | |  
 |-|---|  
@@ -57,7 +57,7 @@ Notes:
 
 ---
 
-# Storage Adapter
+# Storage Adapter![](images/storage-adaptor.png)
 
 | | |  
 |-|---|  
@@ -78,7 +78,7 @@ Notes:
 
 ---
 
-# Electric Furnace
+# Electric Furnace![](images/electrical-furnace.png)
 
 | | |  
 |-|---|  
@@ -141,9 +141,5 @@ Despawn Time              |
 Decay Time                |
 
 Notes:
-
----
-
-# What is the industrial system?
 
 ---
