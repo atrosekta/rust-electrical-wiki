@@ -57,12 +57,15 @@ Notes:
 - They will produce more power, more often the more floors above ground
   you place them
 - Requires a 1x1 to be placed on and cannot be picked up with a hammer
+- Requires a single square or 2 triangles to be placed on
+  and cannot be picked up with a hammer.
 - There is a small area at the base of the turbine, on some sheet metal
   where you can place components.
-- A turbine made on an iceberg, will calculate its output based on the
-  height of the buildable ground of the iceberg below the turbine, down
-  to the ocean bottom. This means no additional height above an iceberg
-  will increase its height calculation.
+- A turbine made on an iceberg, will calculate its output based on sea
+  level down to the ocean bottom. This means no additional height above
+  sea level will increase its height calculation.
+- There needs to be a minimum of 3 foundations distance between
+  turbines. This will prevent 1 turbine blocking the wind for another.
 
 ![](images/image23.png)
 

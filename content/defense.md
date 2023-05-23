@@ -70,6 +70,7 @@ Notes:
 - Low Ammo will start to output 1rW when there is 50 ammo or less. When
   it has no more ammo it will stop outputting power.
 - No ammo will output 1rW constantly when there is no more ammo.
+- Range is 30 meters or 10 square foundations
 - Must be placed on flat surfaces
 - Try to place them in a way they cannot be baited to be drained
 - They contain their own authorization list

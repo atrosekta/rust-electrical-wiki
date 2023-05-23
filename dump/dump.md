@@ -39,3 +39,9 @@ Number of shots    |         | 12     | 10     | 3         | 3                  
 Time between shots |         | 3      | 4      | 10        | 10                 | 10                  | 10
 Active Time        | 40      | 40     | 47     | 35        | 35                 | 35                  | 35
 
+
+MAX: conveyor will stop moving this item when target container(s) reach this amount
+
+MIN: conveyor will only move items in excess of this amount from input container(s)
+
+BUFFER: conveyor will only move in chunks of this size. (Useful for crafting recipes in tandem with MAX to eliminate overfilling and trickle filling)

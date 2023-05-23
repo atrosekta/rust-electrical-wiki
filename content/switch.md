@@ -58,29 +58,32 @@ Notes:
 - When a switch is off, it will block all the components past it from
   registering active usage on batteries
 - Can only be placed on vertical surfaces
-- Side inputs explained in its own section
+- Side inputs explained in [its own section]()
+- The side inputs block the destruction detectors ability
+  to see downstream
 
 ---
 
 ## Side Inputs
 
-They are not bugged or broken, you just dont know how to use them yet.
+They are not bugged or broken, you just don't know how to use them yet.
 
 It is not uncommon for people to think of ‘Switch On’ and ‘Switch Off’
 as a toggle like on the side of a Timer. They are not toggles, they are
-inputs with an added function. Just like the input on the bottom, the
-side inputs also pass power through to the top. The function part only
-functions when power is received.
+inputs with an added function. Just like the ‘Power In’ on the bottom,
+the side inputs also pass power through to the top. The function part
+only functions when power is received, removed or the amount of power is
+updated.
 
-When any input on the Switch receives an ‘update’, the Switch will bind
+When ANY input on the Switch receives an "update", the Switch will bind
 to that input for its source of power that passes through to the top. It
-will remain bound to that input until another input updates which will
+will remain bound to that input until another input "updates" which will
 force the switch to bind to the new input. An update is either losing
 power or receiving power, 0-1 or 1-0 or power levels change up or down.
 
-The exception to this is when one input is receiving power and another
-receives the same amount of power, the Switch will not recognize the new
-source and remain bound to the previous input.
+The exception to this is when one input is receiving an amount of power
+and another input receives the same amount of power, the Switch will not
+recognize the new source and remain bound to the original input.
 
 The following pictures will help illustrate how it works.
 
@@ -121,11 +124,11 @@ Switch Off and the bottom.
 
 We can see here now that power was removed from Switch On, the Switch
 has no power. The green light turns off and the Switch is still in the
-on position. Even tho the other 2 inputs have power, the Switch is bound
-to Switch On for its source of power, which was removed. If we restore
-power to Switch On, the Switch will start passing power though again
-like the previous picture. With power restored, for the next picture we
-will remove power from Switch Off.
+on position. Even though the other 2 inputs have power, the Switch is
+bound to Switch On for its source of power, which was removed. If we
+restore power to Switch On, the Switch will start passing power though
+again like the previous picture. With power restored, for the next
+picture we will remove power from Switch Off.
 
 ![](images/image44.png)
 
@@ -150,7 +153,7 @@ the bottom input, the Switch loses power.
 ![](images/image73.png)
 
 It loses power because the bottom input was updated, from 1 to 0, so the
-Switch binded to it. Now bound to the bottom input and not receiving
+Switch bound to it. Now bound to the bottom input and not receiving
 power, the green light turns off and no power passes through. Restoring
 power to the bottom input, the green light turns back on and the new
 power amount is displayed on the counter.
