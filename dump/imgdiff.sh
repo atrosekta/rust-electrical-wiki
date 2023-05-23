@@ -3,8 +3,8 @@
 fmt="%s\n"
 silent=
 olddir=../content/images
-newdir=images
-cachefile=newimages-$(date '+%F-%H-%M-%S-%N')
+newdir=../ign.zip/images
+cachefile=new-images-list-$(date '+%F-%H-%M-%S-%N')
 
 while [ $#  -gt 0 ] 
 do case "$1" in
@@ -14,6 +14,16 @@ do case "$1" in
 	"-f" | "--file" | "--out" ) outfile="$2"; shift;;
 	* ) echo "unknown '$1', aborpting"; exit 1 ;;
 esac; shift; done
+
+exist(){
+	[[ -e $1 ]] && return 0
+	echo "$2 folder doesnt exist ! '$newdir'"
+	return 1
+}
+
+exist "$olddir" "old" || err=1
+exist "$newdir" "new" || err=1
+[[ -n $err ]] && exit 1
 
 olds=( $olddir/* )
 news=( $newdir/* )
