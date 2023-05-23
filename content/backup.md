@@ -212,7 +212,7 @@ backup time and extend it.
 Here is a look at a Nih Core with 4 batteries. Keep in mind Max Depth
 when using large numbers of power sources and
 
-![](images/nih-core-4batteries.png)
+![](images/ctr-nih-core.png)
 
 batteries. 16 power sources and 16 batteries is the most you can connect
 before hitting the Max Depth. Check out the section ‘Short Circuit / Max

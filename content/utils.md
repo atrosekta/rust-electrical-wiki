@@ -69,7 +69,7 @@ Notes:
 
 ---
 
-# PTZ CCTV Camera![](images/image150.png)
+# PTZ CCTV Camera![](images/ptz-cam.png)
 
 | | |  
 |-|---|  
@@ -175,7 +175,7 @@ Notes:
 - Can only be placed on vertical surfaces
 
 heatbox :
-![](images/heater-range-face.png)
+![](images/heater-range.png)
 ![](images/heater-range-profile.png)
 
 ---

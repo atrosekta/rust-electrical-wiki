@@ -120,7 +120,7 @@ Notes:
 
 ---
 
-# Timed Explosive Charge![](images/image74.png)
+# Timed Explosive Charge![](images/timed-c4.png)
 
 | | |  
 |-|---|  

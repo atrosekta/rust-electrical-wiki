@@ -26,7 +26,7 @@ it up and place it back down, it will still have a full charge.
 Batteries have something called Active Usage and components have
 something called Power Consumption. this have [ its own section ]().
 
-![](images/batteries_footprint.png)
+![](images/battery-footprint.png)
 
 ---
 
