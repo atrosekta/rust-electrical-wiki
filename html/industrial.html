@@ -68,7 +68,12 @@
 		</a>
 
 		<a class='sideline' href='tools.html#pipe-tool'>
-			<span class='sidetext'> Pipe Tool </span>
+			<span class='sidetext'> Pipe Tool  </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#garrys-mod-tool-gun'>
+			<span class='sidetext'> Garry’s Mod Tool Gun  </span>
 			<span class='sidesign'></span>
 		</a>
 
@@ -300,6 +305,11 @@
 			<span class='sidesign'></span>
 		</a>
 
+		<a class='sideline' href='utils.html#ptz-cctv-camera'>
+			<span class='sidetext'> PTZ CCTV Camera </span>
+			<span class='sidesign'></span>
+		</a>
+
 		<a class='sideline' href='utils.html#cctv-camera'>
 			<span class='sidetext'> CCTV Camera </span>
 			<span class='sidesign'></span>
@@ -491,6 +501,11 @@
 
 		<a class='sideline' href='rf.html#rf-pager'>
 			<span class='sidetext'> RF Pager </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#timed-explosive-charge'>
+			<span class='sidetext'> Timed Explosive Charge </span>
 			<span class='sidesign'></span>
 		</a>
 
@@ -729,11 +744,6 @@
 			<span class='sidesign'></span>
 		</a>
 
-		<a class='sideline' href='industrial.html#what-is-the-industrial-system'>
-			<span class='sidetext'> What is the industrial system? </span>
-			<span class='sidesign'></span>
-		</a>
-
   </span>
   </span>
 <span class="sideline foldable folded unfoldonload" onclick="toggfold(this);">
@@ -786,18 +796,6 @@
 			<span class='sidesign'></span>
 		</a>
 
-  <span class="sidelist indent3 folded">
-		<a class='sideline' href='concepts.html#basic'>
-			<span class='sidetext'> Basic </span>
-			<span class='sidesign'></span>
-		</a>
-
-		<a class='sideline' href='concepts.html#advanced'>
-			<span class='sidetext'> Advanced </span>
-			<span class='sidesign'></span>
-		</a>
-
-  </span>
   </span>
 	<span class='sideline foldable folded' onclick='toggfold(this);'>
 		<a class='sidetext' onclick='preventbubble(event);'
@@ -851,7 +849,7 @@
 
   </span>
 		<a class='sideline' href='centralized.html#what-is-a-power-bus'>
-			<span class='sidetext'> What is a Power Bus?* </span>
+			<span class='sidetext'> What is a Power Bus? </span>
 			<span class='sidesign'></span>
 		</a>
 
@@ -920,7 +918,8 @@
 		<main>
 			<h1 id="industrial">Industrial</h1>
 <hr />
-<h1 id="industrial-conveyor">Industrial Conveyor</h1>
+<h1 id="industrial-conveyor">Industrial Conveyor<img
+src="images/industrial-conveyor.png" /></h1>
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -963,12 +962,29 @@
 <td>Where To Find</td>
 <td>Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist,
 Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken
-Chest, Tunnel Dweller, Underwater Dweller, Wagon Crate</td>
+Chest, Tunnel Dweller, Underwater Dweller, Wagon Crate, Underwater Lab
+Blue Crate</td>
 </tr>
 <tr class="even">
-<td>Inputs/Outputs</td>
-<td>Industrial Input, Power Input, Turn On, Turn Off / Industrial
-Output, Electrical Passthrough, Filter Fail, Filter Pass</td>
+<td>Electrical Inputs/Outputs</td>
+<td>Power Input, Turn On, Turn Off / Electrical Passthrough, Filter
+Fail, Filter Pass</td>
+</tr>
+<tr class="odd">
+<td>Industrial Inputs/Outputs</td>
+<td>Industrial Input / Industrial Output</td>
+</tr>
+<tr class="even">
+<td>Active Usage</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>Power Consumption</td>
+<td>1rw</td>
+</tr>
+<tr class="even">
+<td>Power Output</td>
+<td>Input power minus 1</td>
 </tr>
 <tr class="odd">
 <td>Transfer Rate</td>
@@ -980,9 +996,13 @@ Output, Electrical Passthrough, Filter Fail, Filter Pass</td>
 </tr>
 </tbody>
 </table>
-<p>Notes:</p>
+<p>Notes: - There is a max of 12 items that can be filtered. You can
+filter by specific items or by a general filter group. General filter
+groups: Weapons, Medical, Ammo, Traps, Electrical, Construction,
+Resources, Clothing, Food, Other, Fun, Tools, Components</p>
 <hr />
-<h1 id="industrial-crafter">Industrial Crafter</h1>
+<h1 id="industrial-crafter">Industrial Crafter<img
+src="images/industrial-crafter.png" /></h1>
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -1030,23 +1050,35 @@ Underwater Lab Elite Crate, Underwater Lab Yellow Crate, Wagon Military
 Crate</td>
 </tr>
 <tr class="even">
-<td>Inputs/Outputs</td>
-<td>Industrial In, Power In, Toggle, Blueprints In, Turn On, Turn Off /
-Industrial Out, Blueprint Out</td>
+<td>Electrical Inputs</td>
+<td>Power In, Toggle, Turn On, Turn Off</td>
 </tr>
 <tr class="odd">
+<td>Industrial Inputs/Outputs</td>
+<td> Industrial In, Blueprints In / Industrial Out, Blueprint Out</td>
+</tr>
+<tr class="even">
+<td>Active Usage</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>Power Consumption</td>
+<td>1rW</td>
+</tr>
+<tr class="even">
 <td>Transfer Rate</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Despawn Time</td>
-<td>20 minutes</td>
+<td></td>
 </tr>
 </tbody>
 </table>
 <p>Notes:</p>
 <hr />
-<h1 id="storage-adapter">Storage Adapter</h1>
+<h1 id="storage-adapter">Storage Adapter<img
+src="images/storage-adaptor.png" /></h1>
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -1094,7 +1126,7 @@ Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate,
 Wagon Crate</td>
 </tr>
 <tr class="even">
-<td>Inputs/Outputs</td>
+<td>Industrial Inputs/Outputs</td>
 <td>Industrial In / Industrial Out</td>
 </tr>
 <tr class="odd">
@@ -1109,7 +1141,8 @@ Wagon Crate</td>
 </table>
 <p>Notes:</p>
 <hr />
-<h1 id="electric-furnace">Electric Furnace</h1>
+<h1 id="electric-furnace">Electric Furnace<img
+src="images/electrical-furnace.png" /></h1>
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -1154,8 +1187,8 @@ a fuel source</td>
 <td></td>
 </tr>
 <tr class="even">
-<td>Industrial Inputs/Outputs</td>
-<td></td>
+<td>Electrical Inputs</td>
+<td>Power, Turn On, Turn Off</td>
 </tr>
 <tr class="odd">
 <td>Transfer Rate</td>
@@ -1173,40 +1206,45 @@ a fuel source</td>
 </table>
 <p>Notes:</p>
 <hr />
-<h1 id="industrial-splitter">Industrial Splitter</h1>
+<h1 id="industrial-splitter">Industrial Splitter<img
+src="images/industrial-splitter.png" /></h1>
 <table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
 <tbody>
 <tr class="odd">
 <td>Identifier</td>
-<td> </td>
+<td>742745918 </td>
 </tr>
 <tr class="even">
 <td>Description</td>
-<td></td>
+<td>Splits an industrial connection into 3 separate connections</td>
 </tr>
 <tr class="odd">
 <td>Crafting Recipe</td>
-<td></td>
+<td>75 Metal Fragments</td>
 </tr>
 <tr class="even">
 <td>Recycles Into</td>
-<td></td>
+<td>38 Metal Fragments</td>
 </tr>
 <tr class="odd">
 <td>Stack Size</td>
-<td></td>
+<td>5</td>
 </tr>
 <tr class="even">
 <td>Workbench Required</td>
-<td></td>
+<td>Level 1</td>
 </tr>
 <tr class="odd">
 <td>Research Table Cost</td>
-<td></td>
+<td>20 Scrap</td>
 </tr>
 <tr class="even">
 <td>Hit Points</td>
-<td></td>
+<td>200</td>
 </tr>
 <tr class="odd">
 <td>Where To Find</td>
@@ -1214,7 +1252,8 @@ a fuel source</td>
 </tr>
 <tr class="even">
 <td>Industrial Inputs/Outputs</td>
-<td></td>
+<td>Industrial In / Industrial Out 1, Industrial Out 2, Industrial Out
+3</td>
 </tr>
 <tr class="odd">
 <td>Transfer Rate</td>
@@ -1232,40 +1271,45 @@ a fuel source</td>
 </table>
 <p>Notes:</p>
 <hr />
-<h1 id="industrial-combiner">Industrial Combiner</h1>
+<h1 id="industrial-combiner">Industrial Combiner<img
+src="images/industrial-combiner.png" /></h1>
 <table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
 <tbody>
 <tr class="odd">
 <td>Identifier</td>
-<td> </td>
+<td> 1538126328</td>
 </tr>
 <tr class="even">
 <td>Description</td>
-<td></td>
+<td>Combines 3 separate industrial connections into 1 connection</td>
 </tr>
 <tr class="odd">
 <td>Crafting Recipe</td>
-<td></td>
+<td>75 Metal Fragments</td>
 </tr>
 <tr class="even">
 <td>Recycles Into</td>
-<td></td>
+<td>38 Metal Fragments</td>
 </tr>
 <tr class="odd">
 <td>Stack Size</td>
-<td></td>
+<td>5</td>
 </tr>
 <tr class="even">
 <td>Workbench Required</td>
-<td></td>
+<td>Level 1</td>
 </tr>
 <tr class="odd">
 <td>Research Table Cost</td>
-<td></td>
+<td>20 Scrap</td>
 </tr>
 <tr class="even">
 <td>Hit Points</td>
-<td></td>
+<td>200</td>
 </tr>
 <tr class="odd">
 <td>Where To Find</td>
@@ -1273,7 +1317,8 @@ a fuel source</td>
 </tr>
 <tr class="even">
 <td>Industrial Inputs/Outputs</td>
-<td></td>
+<td>Industrial In 1, Industrial In 2, Industrial In 3 / Industrial
+Out</td>
 </tr>
 <tr class="odd">
 <td>Transfer Rate</td>
@@ -1290,9 +1335,6 @@ a fuel source</td>
 </tbody>
 </table>
 <p>Notes:</p>
-<hr />
-<h1 id="what-is-the-industrial-system">What is the industrial
-system?</h1>
 <hr />
 		</main>
 		</div>

@@ -68,7 +68,12 @@
 		</a>
 
 		<a class='sideline' href='tools.html#pipe-tool'>
-			<span class='sidetext'> Pipe Tool </span>
+			<span class='sidetext'> Pipe Tool  </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#garrys-mod-tool-gun'>
+			<span class='sidetext'> Garry’s Mod Tool Gun  </span>
 			<span class='sidesign'></span>
 		</a>
 
@@ -300,6 +305,11 @@
 			<span class='sidesign'></span>
 		</a>
 
+		<a class='sideline' href='utils.html#ptz-cctv-camera'>
+			<span class='sidetext'> PTZ CCTV Camera </span>
+			<span class='sidesign'></span>
+		</a>
+
 		<a class='sideline' href='utils.html#cctv-camera'>
 			<span class='sidetext'> CCTV Camera </span>
 			<span class='sidesign'></span>
@@ -491,6 +501,11 @@
 
 		<a class='sideline' href='rf.html#rf-pager'>
 			<span class='sidetext'> RF Pager </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#timed-explosive-charge'>
+			<span class='sidetext'> Timed Explosive Charge </span>
 			<span class='sidesign'></span>
 		</a>
 
@@ -729,11 +744,6 @@
 			<span class='sidesign'></span>
 		</a>
 
-		<a class='sideline' href='industrial.html#what-is-the-industrial-system'>
-			<span class='sidetext'> What is the industrial system? </span>
-			<span class='sidesign'></span>
-		</a>
-
   </span>
   </span>
 <span class="sideline foldable folded unfoldonload" onclick="toggfold(this);">
@@ -786,18 +796,6 @@
 			<span class='sidesign'></span>
 		</a>
 
-  <span class="sidelist indent3 folded">
-		<a class='sideline' href='concepts.html#basic'>
-			<span class='sidetext'> Basic </span>
-			<span class='sidesign'></span>
-		</a>
-
-		<a class='sideline' href='concepts.html#advanced'>
-			<span class='sidetext'> Advanced </span>
-			<span class='sidesign'></span>
-		</a>
-
-  </span>
   </span>
 	<span class='sideline foldable folded' onclick='toggfold(this);'>
 		<a class='sidetext' onclick='preventbubble(event);'
@@ -851,7 +849,7 @@
 
   </span>
 		<a class='sideline' href='centralized.html#what-is-a-power-bus'>
-			<span class='sidetext'> What is a Power Bus?* </span>
+			<span class='sidetext'> What is a Power Bus? </span>
 			<span class='sidesign'></span>
 		</a>
 
@@ -922,18 +920,24 @@
 <hr />
 <p>These tools take no damage, have a stack size of 1, are default BPs
 and can only be crafted.</p>
-<p>To change the colour of a wire/hose in place, with Wire/Hose Tool in
-hand, hold Reload <code>R</code> to select the colour then look at an IO
-connection and press Reload <code>R</code></p>
-<p>Wire length is limited to 30 meters with 16 anchor points using the
-left mouse button.</p>
-<p>If you miss click and attach a hose/wire to the wall in the wrong
-spot, look away and right click once. It will remove the last anchor
-point. Hold the right mouse button down to clear the hose/wire.</p>
+<p>To change the colour of a wire/hose/pipe in place, with
+Wire/Hose/Pipe Tool in hand, hold Reload <code>R</code> to select the
+colour then look at an IO connection and press Reload <code>R</code></p>
+<p>Wire/Hose/Pipe length is limited to 30 meters with 16 anchor points
+using the left mouse button.</p>
+<p>If you miss click and attach a hose/wire/pipe to the wall in the
+wrong spot, look away and right click once. It will remove the last
+anchor point. Hold the right mouse button down to clear the
+hose/wire.</p>
 <p>To remove a hose/wire from a component, look at the connection point
 and hold down the right mouse button.</p>
+<p>Holding ‘Left Shift’ allows you to place anchor points on deployed
+entities like boxes or chairs (Only Pipes ATM)</p>
 <p>When hoses or wires are placed on walls and the wall is destroyed,
 the hoses and wires will remain in place.</p>
+<p><span id="pipe-break"> But pipes will break ! they can also break
+when doing anything that change the hitbox of the thing they are placed
+on, ie: upgrading walls can break pipe ! </span></p>
 <p>Wire Tracing: If you left click a pre wired connection, only that
 connection will have the wire animation. The animation will return to
 the rest of the wires after you take a couple steps or look at another
@@ -942,8 +946,9 @@ IO connection.</p>
 accuracy, wear Diving Fins.</p>
 <p>To increase or decrease the range of the auto snap when getting close
 to an IO connection, in the F1 console, change
-<code>client.lookatradius</code> from 0.2 to 0.05. This lets you place
-anchor points closer to IO connections.</p>
+<code>client.lookatradius</code> from <code>0.2</code> to
+<code>0.05</code>. This lets you place anchor points closer to IO
+connections.</p>
 <p>If the server has it enabled, turn on Wire Slack by holding your Use
 key, default is <code>E</code>. Hold Sprint, shift, to increase and
 Duck, ctrl, to decrease. This will give your wires some slack rather
@@ -974,10 +979,10 @@ than being straight between 2 points.</p>
 <ul>
 <li>For electrical, this is used to pick up and repair components</li>
 <li>Can be stored in a Tool Cupboard</li>
-<li>All components can be picked up with the exception of the
-Windmill.</li>
-<li>To pick up components, with a hammer in hand, look at the component
-then press and hold Use<code>E</code>.</li>
+<li>All components can be picked up with the exception of the Windmill
+and Modular Car Lift.</li>
+<li>To pick up components, with TC authorization and a hammer in hand,
+look at the component then press and hold Use <code>E</code>.</li>
 <li>Most components take no damage when picked up. Exceptions are the
 Laser Light, Sound Light, Door Controller, Igniter, Auto Turret and
 Tesla Coil. Batteries and Power Sources also take damage when picked
@@ -1011,7 +1016,11 @@ up.</li>
 </table>
 <p>Notes:</p>
 <ul>
-<li>This tool is only used to connect electrical components</li>
+<li>This tool’s primary function is to establish connections between
+electrical components.</li>
+<li>To trace an existing wire, left-click the connection point. This
+action will prompt a wire animation for the selected connection
+only.</li>
 <li>It can be stored in a Tool Cupboard</li>
 <li>Wire colour can be changed by holding Reload <code>R</code>.<br />
 Colour options are :<br />
@@ -1047,7 +1056,7 @@ White and Default(Black)</em></li>
 </table>
 <p>Notes:</p>
 <ul>
-<li>This tool is only used to connect fluid connections.</li>
+<li>This tool is specifically designed to connect fluid components.</li>
 <li>Can be stored in a Tool Cupboard</li>
 <li>Hose colour can be changed by holding Reload <code>R</code>.<br />
 Colour options are :<br />
@@ -1056,12 +1065,12 @@ Default(Green)</em></li>
 </ul>
 <p><img src="images/image81.jpg" /></p>
 <hr />
-<h1 id="pipe-tool">Pipe Tool</h1>
+<h1 id="pipe-tool">Pipe Tool <img src="images/pipe_tool.png" /></h1>
 <table>
 <tbody>
 <tr class="odd">
 <td>Identifier</td>
-<td></td>
+<td>-144513264</td>
 </tr>
 <tr class="even">
 <td>Description</td>
@@ -1082,7 +1091,76 @@ Default(Green)</em></li>
 </tbody>
 </table>
 <p>Notes:</p>
+<ul>
+<li>This tool is specifically designed to connect industrial
+connections.<br />
+</li>
+<li>Can be stored in a Tool Cupboard<br />
+</li>
+<li>The color of the pipe can be customized by holding down the ‘Reload’
+button <code>R</code>.<br />
+Colour options are :<br />
+<em>Red, green, Blue, Yellow and Default(Grey)</em></li>
+</ul>
+<p><img src="images/pipes_color.jpg" /></p>
 <hr />
+<h1 id="garrys-mod-tool-gun">Garry’s Mod Tool Gun <img
+src="images/gun_tool.png" /></h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td>1803831286</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td>An enhanced hammer to pick up or repair components</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>100 Wood, 20 Metal Fragments</td>
+</tr>
+<tr class="even">
+<td>Despawn Time</td>
+<td>5 minutes</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>This tool requires you to own and play Garry’s Mod for 30
+minutes<br />
+</li>
+<li>It is an upgraded hammer. On the screen it will tell you what you
+are looking at. It also has a longer range up to about 2 meters.<br />
+</li>
+<li>For electrical, this is used to pick up and repair components.<br />
+</li>
+<li>With the F1 console command <code>toolgun.classiceffects true</code>
+or <code>toolgun.classiceffects false</code> you can change the color of
+the beam. False will give you the default orange color but True is the
+blue color like it is in Gmod.<br />
+</li>
+<li>Can be stored in a Tool Cupboard<br />
+</li>
+<li>All components can be picked up with the exception of the Windmill
+and Modular Car Lift.<br />
+</li>
+<li>To pick up components, with TC authorization and a hammer in hand,
+look at the component then press and hold Use <code>E</code>.<br />
+</li>
+<li>Most components take no damage when picked up. Exceptions are the
+Laser Light, Sound Light, Door Controller,<br />
+Igniter, Auto Turret and Tesla Coil. Batteries and Power Sources also
+take damage when picked up.<br />
+</li>
+<li>Careful when wielding this powerful tool as it can create problems
+if you accidently start picking up items.</li>
+</ul>
 		</main>
 		</div>
 
