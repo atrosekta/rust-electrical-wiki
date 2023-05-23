@@ -308,7 +308,7 @@ This first example demonstrates decentralizing power with a centralized
 backup. Keep in mind that Root Combiners do not spread the load between
 batteries. This means that a circuit needing 50 power will force all the
 batteries to have an active usage of 50.
-![](images/decentralized-with-centralized-backup.png)
+![](images/dectr-pwr-ctr-bkp.png)
 This kind of configuration is convenient to achieve a lot of power on 1
 line but comes at the cost of not being able to take advantage of game
 mechanics to minimize Active Usage on the batteries. Let's say you want
@@ -329,7 +329,7 @@ In the next example we demonstrate centralizing power while
 decentralizing the battery backup. This gives us the benefit of
 convenience by combining all the power sources into a single line then
 using Splitters, evenly divide that
-![](images/centralized-with-decentralized-backup.png)
+![](images/ctr-pwr-dectr-bkp.png)
 power between all batteries, or, like in the above picture, use an
 Electrical Branch to give priority to 1 battery while evenly dividing
 the remaining power between the other 2. This gives us the ability to
@@ -341,10 +341,10 @@ In our 3rd example, we use a bypass battery backup known as the Nih Core
 which natively is a centralized system but we decentralize the batteries
 by dedicating them to specific systems. This is called the Decentralized
 Nih Core.
-![](images/image81.png)
+![](images/dectr-nih-core.png)
 It gives us the benefit of powering our circuits the majority of the time with the main power source while also providing security but separating the battery backup.  
 In the event that the core or a battery is taken out, not everything goes offline.  
-[ deadman switch link ]()
+<!-- [ deadman switch link ]() -->
 There is also an optional Switch included if the system ever needs to be turned off.  
 The Switch is powered by a small battery limiting the amount of time the system can be off for.  
 This prevents a team mate from turning things off and forgetting to turn
@@ -409,7 +409,7 @@ previously present.
 
 ## Configure Siphon (C-Bus)
 
-![](images/image61.png)
+![](images/multi-c-bus.png)
 
 A configure siphon, known as a C-Bus, is a bypass distributor that is
 only active when required. The idea here is that we only want to use

@@ -92,7 +92,7 @@ Toggle Play on and off, is registering 10 Active Usage for the Branch
 Out, 1 for the Switch and 10 for the Boom Box. If we do the same thing,
 but with the Splitter, we dont have this issue because the Splitter
 controls its power flow DYNAMICALLY.
-![](images/boom-box-opti-drain.png)
+![](images/branch-vs-splitter-active-usage-onoff.png)
 
 This is helpful in situations where you have a few small  
 circuits where you dont want to force an Active Usage when the circuits
@@ -100,7 +100,7 @@ are off. Now because the Electrical Branch only registers the Branch Out
 value as Active Usage and 0 for itself, we can trick batteries into
 thinking less power is being consumed. In the next picture, we have some
 examples using Auto Turrets.
-![](images/turret-opti-bus.png)
+![](images/active-usage-vs-pwr-consuption-turret.png)
 
 Above, we have 1 example using 8 Electrical Branches to power 9 Auto
 Turrets. Every branch is outputting 10 power but also consuming 1 power
@@ -146,7 +146,7 @@ This is because load sharing is not a thing in Rustricity. If the
 circuit only needs 50, both batteries will have an Active Usage of
 50(plus 1 for the Root Combiner).
 
-![](images/image79.png)
+![](images/root-combined-batterys.png)
 
 Due to this being the way it is, if you combine 2 batteries to get 200
 power, try to use all 200 because no matter if the circuit needs 101 or
@@ -161,7 +161,7 @@ are times when it is worth consuming more for a bit of added security.
 In the next picture, Ive used medium batteries for the demonstration,
 and they are root combined powering some Auto Turrets.
 
-![](images/turret-bus-pro-cons.png)
+![](images/power-bus-security-compared-turrets.png)
 
 The top groups are using Electrical Branches. They are consuming more
 power but in the event 1 battery is destroyed, top right, some turrets
@@ -303,7 +303,7 @@ on and off.
 Power Flow is the path electricity takes through a circuit. Using the
 picture below to help illustrate, when we flip the
 
-![](images/powerflowA.png)
+![](images/passtrough-chain.png)
 
 Switch on, light 1 will power on followed by light 2 then light 3 and
 finally light 4. When we flip the Switch off, light 1 will power off
@@ -312,7 +312,7 @@ little more complicated when we introduce components with multiple
 outputs. Starting with the Electrical Branch that has 2 outputs, power
 is first sent
 
-![](images/powerflowB.png)
+![](images/branch-outputs.png)
 
 through Power Out then power gets sent through Branch Out.
 When it is removed,
@@ -320,7 +320,7 @@ it will first be removed from Power Out then Branch Out.
 
 The Splitter is similar but it has 3 outputs.
 
-![](images/powerflowC.png)
+![](images/splitter-out.png)
 
 Power first goes through Power Out 1
 followed by Power Out 2 then Power Out 3.
