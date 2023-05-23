@@ -40,6 +40,8 @@ for new in "${news[@]}"; do
 	[[ -n $cachefile ]] && printf "$fmt" "$new" >> "$cachefile"
 done
 
+# mkdir newimages && cp $(<$cachefile) newimages
+
 [[ -n $outfile ]] && mv "$cachefile" "$outfile" || {
 	echo;echo "output automatically saved as '$cachefile'"
 	read -r -n 1 -p "    delete it ? y/n  " del; echo
