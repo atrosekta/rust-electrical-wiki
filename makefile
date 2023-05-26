@@ -11,7 +11,7 @@ bar:
 html: ${HTMLFILES}
 
 html/%.html: ${MRKDWNDIR}/%.md
-	pandoc -f markdown -t html $< -o $@ --template template.html
+	pandoc -f markdown -t html --lua-filter pages.lua $< -o $@ --template template.html
 
 clean:
 	rm -f ${HTMLFILES}

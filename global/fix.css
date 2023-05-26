@@ -36,6 +36,22 @@ html, body { touch-action:none; overscroll-behavior-y: none; }
 #sidebar, #sidetop, #sidetog, #sidenav
 { touch-action:none; -webkit-overflow-scrolling: touch; }
 
+.anchor-link {
+  position: relative;
+	left: -1rem;
+	font-size: 3rem;
+	text-decoration:none;
+	user-select: none;
+	opacity:0; 
+	transition: opacity .2s ease;
+}
+h1:not(:first-of-type):hover > .anchor-link,
+h2:hover > .anchor-link,
+h3:hover > .anchor-link,
+h4:hover > .anchor-link,
+h5:hover > .anchor-link {
+	opacity:1; 
+}
 
 /* ~= SQUARE SCREEN */
 @media screen and (max-aspect-ratio: 4.5/3 ) {
