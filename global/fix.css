@@ -4,11 +4,15 @@
 { width: 0.8rem; height: 8px; }
 ::-webkit-scrollbar-thumb
 { background: var(--fg2); border-radius: 0px; }
+* { scrollbar-color: grey transparent; scrollbar-width: thin; }
 main { scroll-behavior: instant; }
 main.smooth { scroll-behavior: smooth; }
 
 /* sidebar scrollbar */
 #sidenav { padding-right: 0.75rem; }
+@-moz-document url-prefix() {
+	#sidenav { padding-right: 6px; }
+}
 /* #sidenav::-webkit-scrollbar-thumb { background: var(--bg1); border-radius: 0px; } */
 
 /* opacity load */
