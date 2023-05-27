@@ -16,6 +16,7 @@ html {
 	--fg1: #acacac;
 	--fg2: #cd412b;
 	--fg3: #ffffff1f;
+	--fg4: #606060;
 	font-family: LiberationMono, monospace;
 	font-size: 0.94rem;
 	line-height: 1.3em;
@@ -154,4 +155,7 @@ p + p {
 }
 blockquote + p {
 	padding-top: 0.2em;
+}
+em {
+	color: var(--fg4) !important;
 }

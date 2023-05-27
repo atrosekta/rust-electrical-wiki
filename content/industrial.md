@@ -24,12 +24,36 @@ Power Output        | Input power minus 1
 Transfer Rate       |
 Despawn Time        | 5 minutes
 
-Notes:
-- There is a max of 12 items that can be filtered.
-  You can filter by specific items or by a general filter group.
-  General filter groups: Weapons, Medical, Ammo, Traps, Electrical,
-  Construction, Resources, Clothing, Food, Other, Fun, Tools, Components
+#### Filter settings :  
+`MAX`: conveyor will stop moving this item when target container(s) reach this amount  
+`MIN`: conveyor will only move items in excess of this amount from input container(s)  
+`BUFFER`: conveyor will only move in chunks of this size.
+(Useful for crafting recipes in tandem with MAX to eliminate overfilling and trickle filling)
 
+There is a max of 12 items that can be filtered.  
+You can filter by specific items or by a general filter group (
+Weapons, Medical, Ammo, Traps, Electrical,
+Construction, Resources, Clothing, Food, Other, Fun, Tools, Components )
+
+#### Notes:
+
+- it can "see" a maximum of 32 storage adaptors per side,
+  *you can "cheat" and make it pull from up to 94 boxes but its not explained here for now*
+- there is a maximum of 32 combiners/splitters between each storage adaptors and the conveyor
+- it should move a max of 60 items per 12 stack max at a time, unstackable items count as 1 stack,
+  *but when writting this in may 2023, it is broken,
+  it act weird and in a lot of cases it will move more items than it should,
+  it try to fill 12 slot in the output box no matter how many stack it pull from in the input box,
+  instead of the other way around ...*
+- you can trick a conveyor into seeing the same box multiple times,
+  resulting in a "boosted output" that move a lot more items at a time
+- there is currently a bug when it is depositing into any type of smelter
+  and have a `MAX` filter setting, it will only filter pass on the first item move,
+  then swap to filter fail, while keeping the furnaces topped up.
+  This is unique to furnaces though, and the filter fail/pass outputs work properly on boxes etc.  
+  so to get around it you just need another conveyor that isnt connected to the furnaces,
+  on which you can get a correct filter fail / pass output.  
+  [this rustrician bp](https://www.rustrician.io/?circuit=a80271f0828fc4e2fe342c435f080b87) show it
 
 ---
 
