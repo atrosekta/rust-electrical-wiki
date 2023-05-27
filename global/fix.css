@@ -49,7 +49,8 @@ html, body { touch-action:none; overscroll-behavior-y: none; }
 	opacity:0; 
 	transition: opacity .2s ease;
 }
-h1:not(:first-of-type):hover > .anchor-link,
+/* h1:not(:first-of-type):hover > .anchor-link, */
+h1:hover > .anchor-link,
 h2:hover > .anchor-link,
 h3:hover > .anchor-link,
 h4:hover > .anchor-link,

@@ -1,16 +1,29 @@
 # The RUST Electrical Handbook
 
-All the infos you can find here are comming from a [Google Doc file by @SwiftCoyote](https://docs.google.com/document/d/19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing),
+---
+
+This is a work in progress, everything is subject to change,
+be reorganised or moved to some other sub pages,
+but any info still valid in game wont be removed.
+
+All the infos you can find here are comming from a [Google Doc file by @SwiftCoyote
+](https://docs.google.com/document/d/19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing),  
 so thanks to him and all the people that contributed to it !  
 
 ---
 
-The Electrical Handbook                                                
-                         
+if you want to contribute to this project, there is multiple way you can do it:  
 
-THIS IS A WORK IN PROGRESS
+- you can report if you found a bug or have a suggestion,  
+- you can maybe contribute code that fix or add it,  
+- but the principal thing is informations,  
+  where it is some new sections you want to add,  
+  or some already there that you want to modify,  
+  some reorganisation idea ...  
 
-EVERYTHING IS SUBJECT TO CHANGE
+its made in a way so someone could edit the website content without needing to know html/css/javascript,
+all the content is writen in markdown format (similar to discord messages: \**italic*\*, \*\***bold**\*\*, etc...)
+for now i havnt written something that explains how to do it but you can ask me on discord
 
 ---
 
@@ -18,7 +31,7 @@ EVERYTHING IS SUBJECT TO CHANGE
 
 # Change Log
 
-This is a record of all changes
+This is a record of all changes before starting the website
 
 January 6 2023:
 
