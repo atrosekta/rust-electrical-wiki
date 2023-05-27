@@ -54,6 +54,8 @@ Construction, Resources, Clothing, Food, Other, Fun, Tools, Components )
   so to get around it you just need another conveyor that isnt connected to the furnaces,
   on which you can get a correct filter fail / pass output.  
   [this rustrician bp](https://www.rustrician.io/?circuit=1f0b982f75e15fd1c39def617e7eb9b1) show it
+- another bug currently there is that some items wont be picked up by conveyors ...  
+  it appears to be stackable items that also have health, ladders and fuses for example.
 
 ---
 
