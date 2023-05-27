@@ -241,11 +241,10 @@ Notes:
 - Each floor has 2 inputs, on the right side of each entrance, to call
   the elevator to that floor. 
 - The Maximum height of a single elevator shaft is 6 floors
-- The elevator has an upkeep cost. For the first floor, it costs 1 High
-  Quality Metal and 20 Metal Fragments. It costs an extra 20 Metal
-  Fragments per floor but at the 4th floor, it costs an extra 1 High
-  Quality Metal. 1 max height elevator shaft will cost 2 High Quality
-  Metal and 120 Metal Fragments
+- The elevator has an upkeep cost. For the first floor, it costs 1 HQM
+  and 20 Metal Fragments. It costs an extra 20 Metal
+  Fragments per floor but at the 4th floor, it costs an extra 1 HQM.
+  1 max height elevator shaft will cost 2 HQM and 120 Metal Fragments
 - Standing under the carriage as it descends will kill you
 - The Elevator has a travel time of 1.6 seconds per floor.
 
