@@ -151,6 +151,13 @@
 			<span class='sidesign'></span>
 		</a>
 
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='storage.html#root-combining-batteries'>
+			<span class='sidetext'> Root Combining Batteries </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
 		<a class='sideline' href='storage.html#small-rechargeable-battery'>
 			<span class='sidetext'> Small Rechargeable Battery </span>
 			<span class='sidesign'></span>
@@ -163,6 +170,11 @@
 
 		<a class='sideline' href='storage.html#large-battery'>
 			<span class='sidetext'> Large Battery </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='storage.html#nih-capacitor-unfinished'>
+			<span class='sidetext'> Nih Capacitor (unfinished) </span>
 			<span class='sidesign'></span>
 		</a>
 
@@ -920,26 +932,62 @@
 class="anchor-link">*</a>Power Storage</h1>
 <hr />
 <p>Batteries can accept incoming power at the same time they are sending
-power out. Charging rate is dependent on the amount of power coming in,
-with an efficiency of 80%. Example: 20rW from a Solar Panel * 0.8 = 16rW
-usable through a battery.  Example: If your Medium Battery is supplying
-16rW to a circuit, you want to give the battery a minimum of 20rW so it
-doesn’t lose any charge. It is recommended to supply slightly more than
-you need if you want to charge the battery. 1rW will charge a Large
-Battery in 34 IRL days.</p>
-<p>When a battery is depleted because it is not receiving enough power,
-no power is output until it charges up for a couple seconds before
+power out.<br />
+Charging rate is dependent on the amount of power coming in, with an
+efficiency of 80%.</p>
+<blockquote>
+<p><em>Example:</em> 20rW from a Solar Panel * 0.8 = 16rW usable through
+a battery.</p>
+</blockquote>
+<blockquote>
+<p><em>Example:</em> If your Medium Battery is supplying 16rW to a
+circuit,<br />
+you want to give the battery a minimum of 20rW so it doesn’t lose any
+charge.</p>
+</blockquote>
+<p>It is recommended to supply slightly more than you need if you want
+to charge the battery.</p>
+<p>1rw will charge a Large Battery in 34 IRL days.</p>
+<p>When a battery is depleted because it is not receiving enough
+power,<br />
+no power is outputed until it charges up for a couple seconds before
 outputting to the connected circuit. The battery still not receiving
-enough power will deplete in a second and the process repeats. If the
-circuit after a battery is turning on and off, you do not have enough
-power charging your batteries.</p>
+enough power will deplete in a second and the process repeats.<br />
+If the circuit after a battery is turning on and off, you do not have
+enough power charging your batteries.</p>
 <p>When they get picked up, they lose 25% HP but retain their current
 capacity. This means if a large battery has a full charge, when you pick
 it up and place it back down, it will still have a full charge.</p>
 <p>Batteries have something called Active Usage and components have
-something called Power Consumption. this have <a href="">its own
-section</a>.</p>
+something called Power Consumption. this have <a
+href="concepts.html#battery-active-usage-vs-actual-power-consumed">its
+own section</a>.</p>
 <p><img src="images/battery-footprint.png" /></p>
+<hr />
+<h2 id="root-combining-batteries"><a href="#root-combining-batteries"
+class="anchor-link">*</a>Root Combining Batteries</h2>
+<p><del>it’s a sin</del><br />
+When batteries get root combined, they do not split the load as one
+would expect.<br />
+They cannot see each other, so each tries to power the whole
+circuit.</p>
+<blockquote>
+<p>For example, in a circuit with 2 root combined batteries supporting a
+load of 50,<br />
+it would seem to make sense that 50 power divided by 2 batteries equals
+25 per battery,<br />
+but rustricity doesn’t work like that, those 50 power would be taken and
+seen as Active Usage on both batteries, so both would be draining of 50
+power</p>
+</blockquote>
+<p>This means when we get to circuits that need more than 100 power, all
+the batteries combined will show a max Active Usage, which is used to
+calculate how fast a battery drains. so if we are forcing batteries to
+max drain, then we might as well try to use as much as the combined
+power the batteries will provide.</p>
+<p>when using a <a href="distribution.html#nih-core">Nih core</a>, it
+does not matter as much as the batteries are not supposed to be active
+all the time.</p>
 <hr />
 <h1 id="small-rechargeable-battery"><a
 href="#small-rechargeable-battery" class="anchor-link">*</a>Small
@@ -1203,6 +1251,103 @@ floorspace</li>
 <li>Maximum power input is 400</li>
 <li>They come with a default charge of 200rWM</li>
 </ul>
+<hr />
+<h1 id="nih-capacitor-unfinished"><a href="#nih-capacitor-unfinished"
+class="anchor-link">*</a>Nih Capacitor <em>(unfinished)</em></h1>
+<p><strong>( will probably be fixed and wont work anymore soon
+)</strong></p>
+<p>The Nih Capacitor was first established by Nih, with assistance from
+SwiftCoyote, on September 11, 2022. A Capacitor is a set of components
+that accumulate power, much like rechargeable batteries. However, the
+method for assessing the amount of stored power differs.</p>
+<p>For batteries, the stored power is represented as
+<code>Capacity</code>,<br />
+measured in Rust Watt Minutes (rWm).</p>
+<p>Contrarily, in a Capacitor, we gauge the power storage by examining
+an Input/Output (IO) connection and observing a figure that is typically
+associated with <code>power</code> or the amount of power available for
+use.<br />
+But within the Capacitor, this figure <strong>DOES NOT indicate the
+amount of power that can be utilized</strong>. Rather, this figure is
+what we call <code>Wire Capacity</code>, symbolized as <code>Np</code>.
+For instance, in the image below, the displayed <code>6,492,076</code>
+is <strong>NOT</strong> the amount of power available. Instead, it
+represents <code>6,492,076Np</code> of Wire Capacity.</p>
+<p>Before going into the construction and operation of a Capacitor, it’s
+essential to understand the math conversions between Rust Watt Minutes
+(rWm) and Wire Capacity (Np). Both represent capacity, but they use
+different units of measurement depending on the energy storage
+container, be it a battery or a capacitor.</p>
+<p>The Maths :<br />
+<code>rWm</code>: rust watt minute<br />
+<code>Np</code>: Wire Capacity<br />
+<code>∅</code>: 7.5 (Trust Me Bro)<br />
+<code>S</code>: Seconds<br />
+<code>τ</code>: 60 (The number of seconds in a minute)<br />
+<code>M</code>: Minutes<br />
+<code>P</code>: Max power output for 1 second<br />
+<code>O</code>: The amount of power you want to output<br />
+<code>H</code>: Hours</p>
+<p>To convert rWm into Wire Capacity(Np) we use the following
+equation:<br />
+<code>(rWm × τ = P) × ∅ = N</code></p>
+<p>To convert Wire Capacity(Np) into rWm we use the following
+equation:<br />
+<code>(Np ÷ ∅ = P) ÷ τ = rWm</code></p>
+<p>To figure out how much time a given capacity will run for outputting
+a specific amount of power, we use the following equations:<br />
+<code>Seconds: (rWm ÷ O = M) × τ = S</code><br />
+<code>Minutes: rWm ÷ O = M</code><br />
+<code>Hours: (rWm ÷ O = M) ÷ τ = H</code></p>
+<p>Examples Using Capacity from the battery in the first picture, we can
+figure out the number we would see if we were looking at an IO
+connection in a Capacitor to view Wire Capacity(Np).<br />
+<code>(rWm × τ = P) × ∅ = Np</code><br />
+<code>(271 × 60 = 16,260) × 7.5 = 121,950Np</code></p>
+<p>Therefore a capacity of 271rWm when viewed on an IO connection is
+equal to 121,950Np. We can also see that if the Large Battery did not
+have an output limit of 100, it would be able to output 16,260 power for
+1 second.</p>
+<p>Using the IO connection to view Wire Capacity(Np) from the second
+picture, we can figure out how much rWm of Capacity we would have if
+this was viewed on a battery.<br />
+<code>(Np ÷ ∅ = P) ÷ τ = rWm</code><br />
+<code>(6,492,076 ÷ 7.5 = 865,610.1333) ÷ 60 = 14,426rWm</code></p>
+<p>Therefore a Wire Capacity of 6,492,076Np when viewed on a battery
+represented as Capacity, it is equal to 14,426rWm.<br />
+Without a limited output, the Capacitor is capable of delivering 865,610
+power for 1 second.</p>
+<p>Using both of these examples, we can calculate the length of time
+both the Battery and Capacitor would power a circuit for, given a set
+output.</p>
+<blockquote>
+<p>For our example, let’s say the circuit needs 100 power.</p>
+<p>Battery :<br />
+<code>(rWm ÷ O = M) × τ = S</code><br />
+<code>(271÷ 100 = 2.71 Minutes) × 60 = 162 Seconds</code></p>
+<p>Capacitor : <em>(you will need to convert from Np to rWm
+first)</em><br />
+<code>(rWm ÷ O = M) × τ = S</code><br />
+<code>(14,426 ÷ 100 = 144.26 Minutes) × 60 = 8,655 Seconds</code></p>
+<p>OR :<br />
+<code>(rWm ÷ O = M) ÷ τ = H</code><br />
+<code>(14,426 ÷ 100 = 144.26 Minutes) ÷ 60 = 2.40 Hours</code></p>
+</blockquote>
+<p>Prior to constructing a capacitor, it’s crucial to understand its
+limitations and potential issues. This will clarify misconceptions such
+as the notion of ‘infinite power’ and help identify the appropriate
+contexts for its use.</p>
+<ul>
+<li>It doesn’t survive server restarts. evrytime the server restarts,
+all of the stored power will vanish, poof gone.<br />
+</li>
+<li>When automating energy extraction, it is possible that a flicker
+will be created or worse, all the power vanishes, poof gone.</li>
+<li>It consumes power even when nothing is connected to it, unlike a
+battery that doesn’t lose power if nothing is connected to it.</li>
+<li>It is not portable.</li>
+</ul>
+<p>Now, some of the advantages and benefits of the Capacitor</p>
 <hr />
 		</main>
 		</div>
