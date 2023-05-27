@@ -43,8 +43,8 @@ Notes:
   battery
 - Can be placed on all building surfaces
 - They have a shared error message, ‘Short Circuit/Max Depth’, and that
-  has [its own section]() breaking it down.
-- also see [Root combining batteries]() as it have down side
+  has [its own section](concepts.html#short-circuit-max-depth) breaking it down.
+- also see [Root combining batteries](storage.html#root-combining-batteries) as it have down side
   and isnt recommended in most cases,
 
 ---

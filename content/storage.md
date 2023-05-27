@@ -34,7 +34,7 @@ something called Power Consumption. this have [ its own section
 
 ---
 
-## Root Combining Batteries
+# Root Combining Batteries
 
 ~~it's a sin~~  
 When batteries get root combined, they do not split the load as one would expect.  
@@ -51,7 +51,7 @@ which is used to calculate how fast a battery drains.
 so if we are forcing batteries to max drain,
 then we might as well try to use as much as the combined power the batteries will provide.
 
-when using a [ Nih core ]( distribution.html#nih-core ),
+when using a [ Nih core ]( backup.html#nih-core ),
 it does not matter as much as the batteries are not supposed to be active all the time.
 
 ---
