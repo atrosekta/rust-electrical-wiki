@@ -132,7 +132,7 @@ code {
 	font-family: LiberationMono, monospace;
 	background-color: var(--fg3);
 	display: inline-block;
-	padding: .2em .3em;
+	padding: .0em .2em;
 }
 blockquote {
 	padding: 0.3em 0.4em;

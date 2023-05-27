@@ -146,3 +146,94 @@ Notes:
 
 ---
 
+# Nih Capacitor *(unfinished)*
+
+**( will probably be fixed and wont work anymore soon )**
+
+The Nih Capacitor was first established by Nih, with assistance from SwiftCoyote, on September 11, 2022.
+A Capacitor is a set of components that accumulate power, much like rechargeable batteries.
+However, the method for assessing the amount of stored power differs. 
+
+For batteries, the stored power is represented as `Capacity`,  
+measured in Rust Watt Minutes (rWm).
+
+Contrarily, in a Capacitor, we gauge the power storage by examining an Input/Output (IO) connection
+and observing a figure that is typically associated with `power` or the amount of power available for use.  
+But within the Capacitor, this figure **DOES NOT indicate the amount of power that can be utilized**.
+Rather, this figure is what we call `Wire Capacity`, symbolized as `Np`.
+For instance, in the image below, the displayed `6,492,076` is **NOT** the amount of power available.
+Instead, it represents `6,492,076Np` of Wire Capacity. 
+
+Before going into the construction and operation of a Capacitor,
+it’s essential to understand the math conversions between Rust Watt Minutes (rWm) and Wire Capacity (Np).
+Both represent capacity, but they use different units of measurement depending on the energy storage container, be it a battery or a capacitor. 
+
+The Maths :  
+`rWm`: rust watt minute  
+`Np`: Wire Capacity  
+`∅`: 7.5 (Trust Me Bro)  
+`S`: Seconds  
+`τ`: 60 (The number of seconds in a minute)  
+`M`: Minutes  
+`P`: Max power output for 1 second  
+`O`: The amount of power you want to output  
+`H`: Hours  
+
+
+To convert rWm into Wire Capacity(Np) we use the following equation:  
+`(rWm × τ = P) × ∅ = N`
+
+To convert Wire Capacity(Np) into rWm we use the following equation:  
+`(Np ÷ ∅ = P) ÷ τ = rWm`
+
+To figure out how much time a given capacity will run for outputting a specific amount of power, we use the following equations:  
+`Seconds: (rWm ÷ O = M) × τ = S`  
+`Minutes: rWm ÷ O = M`  
+`Hours: (rWm ÷ O = M) ÷ τ = H`  
+
+Examples
+Using Capacity from the battery in the first picture,
+we can figure out the number we would see if we were looking at an IO connection in a Capacitor to view Wire Capacity(Np).  
+`(rWm × τ = P) × ∅ = Np`  
+`(271 × 60 = 16,260) × 7.5 = 121,950Np`  
+
+Therefore a capacity of 271rWm when viewed on an IO connection is equal to 121,950Np.
+We can also see that if the Large Battery did not have an output limit of 100,
+it would be able to output 16,260 power for 1 second. 
+
+Using the IO connection to view Wire Capacity(Np) from the second picture,
+we can figure out how much rWm of Capacity we would have if this was viewed on a battery.  
+`(Np ÷ ∅ = P) ÷ τ = rWm`  
+`(6,492,076 ÷ 7.5 = 865,610.1333) ÷ 60 = 14,426rWm`  
+
+Therefore a Wire Capacity of 6,492,076Np when viewed on a battery represented as Capacity, it is equal to 14,426rWm.  
+Without a limited output, the Capacitor is capable of delivering 865,610 power for 1 second. 
+
+Using both of these examples, we can calculate the length of time both the Battery and Capacitor would power a circuit for,
+given a set output.
+> For our example, let's say the circuit needs 100 power.  
+>
+Battery :  
+  `(rWm ÷ O = M) × τ = S`  
+  `(271÷ 100 = 2.71 Minutes) × 60 = 162 Seconds`  
+>
+Capacitor : *(you will need to convert from Np to rWm first)*  
+  `(rWm ÷ O = M) × τ = S`  
+  `(14,426 ÷ 100 = 144.26 Minutes) × 60 = 8,655 Seconds`  
+>
+OR :  
+  `(rWm ÷ O = M) ÷ τ = H`  
+  `(14,426 ÷ 100 = 144.26 Minutes) ÷ 60 = 2.40 Hours`  
+
+Prior to constructing a capacitor, it’s crucial to understand its limitations and potential issues.
+This will clarify misconceptions such as the notion of ‘infinite power’ and help identify the appropriate contexts for its use.  
+
+- It doesn’t survive server restarts. evrytime the server restarts, all of the stored power will vanish, poof gone.  
+- When automating energy extraction, it is possible that a flicker will be created or worse, all the power vanishes, poof gone.
+- It consumes power even when nothing is connected to it, unlike a battery that doesn’t lose power if nothing is connected to it.
+- It is not portable.
+
+Now, some of the advantages and benefits of the Capacitor
+
+---
+
