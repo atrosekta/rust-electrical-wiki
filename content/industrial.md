@@ -53,7 +53,7 @@ Construction, Resources, Clothing, Food, Other, Fun, Tools, Components )
   This is unique to furnaces though, and the filter fail/pass outputs work properly on boxes etc.  
   so to get around it you just need another conveyor that isnt connected to the furnaces,
   on which you can get a correct filter fail / pass output.  
-  [this rustrician bp](https://www.rustrician.io/?circuit=a80271f0828fc4e2fe342c435f080b87) show it
+  [this rustrician bp](https://www.rustrician.io/?circuit=1f0b982f75e15fd1c39def617e7eb9b1) show it
 
 ---
 
