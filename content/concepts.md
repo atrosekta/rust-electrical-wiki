@@ -360,8 +360,6 @@ Lets dive a little deeper into this concept by analyzing the Nih Core.
 [Probability Master Class](https://www.rustrician.io/?circuit%3Dca9bdcbc87f0a13ca3a3ce0c8fe4146d)
 
 
-#### Pulse Control (Configure)
-
-[Basic set](https://www.rustrician.io/?circuit%3Dc0487dd792adbd543e8d234a3979bc38)
+[Configure - Basic Pulse Control Set ](https://www.rustrician.io/?circuit%3Dc0487dd792adbd543e8d234a3979bc38)
 
 ---

@@ -58,7 +58,7 @@ Notes:
 - When a switch is off, it will block all the components past it from
   registering active usage on batteries
 - Can only be placed on vertical surfaces
-- Side inputs explained in [its own section]()
+- Side inputs explained in [its own section](#side-inputs)
 - The side inputs block the destruction detectors ability
   to see downstream
 

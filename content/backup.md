@@ -231,9 +231,9 @@ provide battery power before the Memory Cell flips outputs.
 
 Recommended reading:
 
-- [ Battery Active Usage vs Actual Power Consumption ]()
-- [ Short Circuit / Max Depth ]()
-- [ Circuit Delay and Power Flow ]()
+- [ Battery Active Usage vs Actual Power Consumption ](concepts.html#battery-active-usage-vs-actual-power-consumed)
+- [ Short Circuit / Max Depth ](concepts.html#short-circuit-max-depth)
+- [ Circuit Delay and Power Flow ](concepts.html#circuit-delay-and-power-flow)
 
 Pros:
 

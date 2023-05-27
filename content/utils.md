@@ -174,11 +174,11 @@ Notes:
 - They emit an orange light
 - Can only be placed on vertical surfaces
 
-heatbox :
-![](images/heater-range.png)
-![](images/heater-range-profile.png)
+heatbox :  
 
----
+![](images/heater-range.png)  
+
+ --- 
 
 # Modular Car Lift![](images/image131.png)
 

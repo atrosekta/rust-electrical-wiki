@@ -34,9 +34,6 @@ Notes:
 - Can be placed in horizontal surfaces, the ground and some deployable
   items like Work Benches and Tables.
 - They block the destruction detectors ability to see downstream
-
-Side Notes:
-
 - An Electrical Branch set to 10 will show an Active Usage of 10 on a
   battery. If we use the 10 from Branch Out to power a Boom Box, the
   battery will continue to show an Active Usage of 10. If we then make a
@@ -133,6 +130,7 @@ Notes:
 - If receiving connection from a Boom Box or an Microphone Stand, the
   lights will move, flash and pulse to the audio.
 - They block the destruction detectors ability to see downstream
+- too muck of them quickly make the game laggy
 
 ---
 

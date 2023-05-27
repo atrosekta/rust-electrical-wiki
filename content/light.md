@@ -26,7 +26,13 @@ Notes:
 
 - These blink a blue light. 3 fast pulses followed by a pause
 - These can be placed on any angled surfaces
-- Can be placed on other electrical components^([\[b\]](#cmnt2))
+- Can be placed on other electrical components  
+*this is common for all smaller components. But it is
+limited to areas where the components will touch or be really close to a
+wall or the ground, it is effectively tricking them to think they are
+placed on a wall or the ground.*
+
+
 
 ---
 
