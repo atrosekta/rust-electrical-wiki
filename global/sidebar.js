@@ -1,16 +1,13 @@
 
-window.addEventListener("load", loadside);
+setTimeout( loadside , 111);
 
 function loadside() {
 	var sidenav = document.getElementById("sidenav");
 	sidenav.addEventListener("click", portraitClickCloseBar);
 
-	const setLoadedClasses = function() {
-		sidenav.classList.add("loaded");
-		if ( window.matchMedia("(hover:hover) and (pointer:fine)").matches )
-			document.querySelector("main").classList.add("smooth");
-	}
-	setTimeout( setLoadedClasses , 100);
+	sidenav.classList.add("loaded");
+	if ( window.matchMedia("(hover:hover) and (pointer:fine)").matches )
+		document.querySelector("main").classList.add("smooth");
 
 	var unfold = document.querySelectorAll(".unfoldonload");
 	for (var i = 0; i < unfold.length; i++)
