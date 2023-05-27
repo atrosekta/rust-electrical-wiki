@@ -11,7 +11,9 @@ bar:
 html: ${HTMLFILES}
 
 html/%.html: ${MRKDWNDIR}/%.md
-	pandoc -f markdown -t html --lua-filter pages.lua $< -o $@ --template template.html
+	pandoc -f markdown-blank_before_blockquote -t html \
+		--lua-filter pages.lua --template template.html  \
+		$< -o $@ 
 
 clean:
 	rm -f ${HTMLFILES}

@@ -3,28 +3,31 @@
 
 ---
 
-Batteries can accept incoming power at the same time they are sending
-power out. Charging rate is dependent on the amount of power coming in,
-with an efficiency of 80%. Example: 20rW from a Solar Panel \* 0.8 =
-16rW usable through a battery.  Example: If your Medium Battery is
-supplying 16rW to a circuit, you want to give the battery a minimum of
-20rW so it doesn’t lose any charge. It is recommended to supply slightly
-more than you need if you want to charge the battery. 1rW will charge a
-Large Battery in 34 IRL days.
+Batteries can accept incoming power at the same time they are sending power out.  
+Charging rate is dependent on the amount of power coming in, with an efficiency of 80%.  
 
-When a battery is depleted because it is not receiving enough power, no
-power is output until it charges up for a couple seconds before
+> *Example:* 20rW from a Solar Panel \* 0.8 = 16rW usable through a battery.  
+
+> *Example:* If your Medium Battery is supplying 16rW to a circuit,  
+  you want to give the battery a minimum of 20rW so it doesn’t lose any charge.  
+
+It is recommended to supply slightly more than you need if you want to charge the battery.  
+
+1rw will charge a Large Battery in 34 IRL days.
+
+When a battery is depleted because it is not receiving enough power,  
+no power is outputed until it charges up for a couple seconds before
 outputting to the connected circuit. The battery still not receiving
-enough power will deplete in a second and the process repeats. If the
-circuit after a battery is turning on and off, you do not have enough
-power charging your batteries.
+enough power will deplete in a second and the process repeats.  
+If the circuit after a battery is turning on and off,
+you do not have enough power charging your batteries.
 
 When they get picked up, they lose 25% HP but retain their current
 capacity. This means if a large battery has a full charge, when you pick
 it up and place it back down, it will still have a full charge.
 
 Batteries have something called Active Usage and components have
-something called Power Consumption. this have [ its own section ]().
+something called Power Consumption. this have [ its own section ](concepts.html#battery-active-usage-vs-actual-power-consumed).
 
 ![](images/battery-footprint.png)
 
