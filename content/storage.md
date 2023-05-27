@@ -27,9 +27,32 @@ capacity. This means if a large battery has a full charge, when you pick
 it up and place it back down, it will still have a full charge.
 
 Batteries have something called Active Usage and components have
-something called Power Consumption. this have [ its own section ](concepts.html#battery-active-usage-vs-actual-power-consumed).
+something called Power Consumption. this have [ its own section
+](concepts.html#battery-active-usage-vs-actual-power-consumed).
 
 ![](images/battery-footprint.png)
+
+---
+
+## Root Combining Batteries
+
+~~it's a sin~~  
+When batteries get root combined, they do not split the load as one would expect.  
+They cannot see each other, so each tries to power the whole circuit.  
+
+> For example, in a circuit with 2 root combined batteries supporting a load of 50,  
+  it would seem to make sense that 50 power divided by 2 batteries equals 25 per battery,  
+  but rustricity doesn't work like that, those 50 power would be taken and seen as
+  Active Usage on both batteries, so both would be draining of 50 power  
+
+This means when we get to circuits that need more than 100 power,
+all the batteries combined will show a max Active Usage,
+which is used to calculate how fast a battery drains.
+so if we are forcing batteries to max drain,
+then we might as well try to use as much as the combined power the batteries will provide.
+
+when using a [ Nih core ]( distribution.html#nih-core ),
+it does not matter as much as the batteries are not supposed to be active all the time.
 
 ---
 
