@@ -3,6 +3,10 @@ setTimeout( loadside , 111);
 
 function loadside() {
 	var sidenav = document.getElementById("sidenav");
+	if ( sidenav == null ) {
+		setTimeout( loadside , 111 );
+		return;
+	}
 	sidenav.addEventListener("click", portraitClickCloseBar);
 
 	sidenav.classList.add("loaded");
