@@ -60,7 +60,7 @@ it does not matter as much as the batteries are not supposed to be active all th
 
 | | |  
 |-|---|  
-Identifier          | -692338819
+Item ID             | -692338819
 Description         | Storing electricity
 Crafting Recipe     | 5 HQM
 Recycles Into       | 3 HQM
@@ -90,7 +90,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          | 2023888403
+Item ID             | 2023888403
 Description         | Storing electricity
 Crafting Recipe     | 5 HQM/1 Tech Trash
 Recycles Into       | 3 HQM
@@ -121,7 +121,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          | 553270375
+Item ID             | 553270375
 Description         | Storing electricity
 Crafting Recipe     | 10 HQM/2 Tech Trash
 Recycles Into       | 5 HQM/1 Tech Trash

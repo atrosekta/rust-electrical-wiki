@@ -9,7 +9,7 @@
 
 | | |
 |-|--|
-Identifier        |  -295829489
+Item ID           |  -295829489
 Description       | Providing a constant 100rW per Power Output
 Crafting Recipe   | Cannot be crafted
 Recycles Into     | 13 HQM/2 Gears/1 Metal Pipe/2 Fuse
@@ -32,7 +32,7 @@ Notes:
 
 | | |
 |-|--|
-Identifier          | -1819763926
+Item ID             | -1819763926
 Description         | Generating electricity from the wind
 Crafting Recipe     | 500 Wood/10 HQM/3 Gears/3 Sheet Metal
 Recycles Into       | 250 Wood/5 HQM/2 Gears/2 Sheet Metal
@@ -77,7 +77,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          | 2090395347
+Item ID             | 2090395347
 Description         | Generating electricity from the Sun
 Crafting Recipe     | 5 HQM/1 Tech Trash
 Recycles Into       | 3 HQM/50% - 1 Tech Trash
@@ -124,7 +124,7 @@ simplest option.
 
 | | |  
 |-|---|  
-Identifier          | 1849887541
+Item ID             | 1849887541
 Description         | Generating electricity from Low Grade Fuel
 Crafting Recipe     | 5 HQM/2 Gears
 Recycles Into       | 3 HQM/1 Gears

@@ -7,7 +7,7 @@
 
 | | |  
 |-|---|  
-Identifier          |  610102428
+Item ID             |  610102428
 Description         | Moves items through the pipe system
 Crafting Recipe     | 75 Metal Fragments
 Recycles Into       | 38 Metal Fragments
@@ -61,7 +61,7 @@ Construction, Resources, Clothing, Food, Other, Fun, Tools, Components )
 
 | | |  
 |-|---|  
-Identifier          |  1430085198
+Item ID             |  1430085198
 Description         | Attaches to a workbench to allow automated crafting
 Crafting Recipe     | 3 HQM, 2 Tech Trash
 Recycles Into       | 2 HQM, 1 Tech Trash
@@ -85,7 +85,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          |  -1049172752
+Item ID             |  -1049172752
 Description         | Attach to a storage container to allow industrial IO connections
 Crafting Recipe     | 100 Metal Fragments
 Recycles Into       | 50 Metal Fragments
@@ -106,7 +106,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier                |  
+Item ID                   |  
 Description               | An electrical version of a furnace that uses electricity instead of a fuel source
 Crafting Recipe           | 5 HQM, 200 Metal Fragments
 Recycles Into             | 3 HQM, 100 Metal Fragments
@@ -128,7 +128,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier                | 742745918 
+Item ID                   | 742745918 
 Description               | Splits an industrial connection into 3 separate connections
 Crafting Recipe           | 75 Metal Fragments
 Recycles Into             | 38 Metal Fragments
@@ -150,7 +150,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier                | 1538126328
+Item ID                   | 1538126328
 Description               | Combines 3 separate industrial connections into 1 connection
 Crafting Recipe           | 75 Metal Fragments
 Recycles Into             | 38 Metal Fragments

@@ -7,7 +7,7 @@
 
 | | |  
 |-|---|  
-Identifier          |  -690968985
+Item ID             |  -690968985
 Description         | Blocking power passthrough when power is applied to its side input
 Crafting Recipe     | 75 Metal Fragments
 Recycles Into       | 38 Metal Fragments
@@ -35,7 +35,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          |  -746647361
+Item ID             |  -746647361
 Description         | Sending power through 1 of 2 outputs based on side inputs
 Crafting Recipe     | 75 Metal Frags
 Recycles Into       | 38 Metal Frags
@@ -82,7 +82,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          |  665332906
+Item ID             |  665332906
 Description         | Passing power through for a period of time
 Crafting Recipe     | 75 Metal Fragments
 Recycles Into       | 38 Metal Fragments
@@ -115,7 +115,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          |  492357192
+Item ID             |  492357192
 Description         | Achieving a 50% passthrough rate when Set
 Crafting Recipe     | 75 Metal Fragments
 Recycles Into       | 38 Metal Fragments
@@ -145,7 +145,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          | -1286302544
+Item ID             | -1286302544
 Description         | Passing power through from 1 input OR the other
 Crafting Recipe     | 100 Metal Fragments
 Recycles Into       | 50 Metal Fragments
@@ -172,7 +172,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          |  1171735914
+Item ID             |  1171735914
 Description         | Passing power through when both inputs have power
 Crafting Recipe     | 100 Metal Fragments
 Recycles Into       | 50 Metal Fragments
@@ -200,7 +200,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          |  1293102274
+Item ID             |  1293102274
 Description         | Passing power through from only 1 input
 Crafting Recipe     | 100 Metal Fragments
 Recycles Into       | 50 Metal Fragments
@@ -230,7 +230,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          | -216999575
+Item ID             | -216999575
 Description         | Counting or monitoring power levels
 Crafting Recipe     | 75 Metal Fragments
 Recycles Into       | 38 Metal Fragments

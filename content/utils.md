@@ -7,7 +7,7 @@
 
 | | |  
 |-|---|  
-Identifier          |  -502177121
+Item ID             |  -502177121
 Description         | Manipulates the state of the door
 Crafting Recipe     | 75 Metal Fragments
 Recycles Into       | 38 Metal Fragments
@@ -40,7 +40,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          | -44876289
+Item ID             | -44876289
 Description         | Ignites anything that burns
 Crafting Recipe     | 75 Metal Fragments
 Recycles Into       | 38 Metal Fragments
@@ -73,7 +73,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          | 140006625
+Item ID             | 140006625
 Description         | A camera with Pan, Tilt, Zoom function
 Crafting Recipe     | 1 CCTV Camera, 150 Metal Fragments
 Recycles Into       | 50% CCTV Camera, 75 Metal Fragments
@@ -110,7 +110,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier        | 634478325
+Item ID           | 634478325
 Description       | A camera to view from a Computer Station
 Recycles Into     | 2 HQM, 2 Tech Trash
 Stack Size        | 64
@@ -145,7 +145,7 @@ current Camera List.
 
 | | |  
 |-|---|  
-Identifier          |  -784870360
+Item ID             |  -784870360
 Description         | A source of heat
 Crafting Recipe     | 200 Metal Fragments
 Recycles Into       | 100 Metal Fragments
@@ -184,7 +184,7 @@ heatbox :
 
 | | |  
 |-|---|  
-Identifier          |  1696050067
+Item ID             |  1696050067
 Description         | A work platform for modular cars
 Crafting Recipe     | 5 HQM, 200 Metal Fragments, 1 Gear
 Recycles Into       | 3 HQM, 100 Metal Fragments, 50% 1 Gear
@@ -215,7 +215,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          |  1177596584
+Item ID             |  1177596584
 Description         | A powered lift
 Crafting Recipe     | 3 HQM, 200 Metal Fragments, 1 Gear
 Recycles Into       | 2 HQM, 100 Metal Fragments, 50% 1 Gear
@@ -255,7 +255,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          |  1234878710
+Item ID             |  1234878710
 Description         | A telephone for making and receiving calls
 Crafting Recipe     | 50 Wood, 100 Metal Fragments, 1 Tech Trash
 Recycles Into       | 25 Wood, 100 Metal Fragments, 50% 1 Tech Trash
@@ -305,7 +305,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          |  2100007442
+Item ID             |  2100007442
 Description         | A loud warning alarm speaker
 Crafting Recipe     | 75 Metal Fragments
 Recycles Into       | 38 Metal Fragments
@@ -333,7 +333,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          |  -1588628467
+Item ID             |  -1588628467
 Description         | A place to view CCTV cameras
 Crafting Recipe     | 5 HQM, 1 Targeting Computer, 1 RF Broadcaster, 1 RF Receiver
 Recycles Into       | 3 HQM, 50% 1 Targeting Computer, 50% 1 RF Broadcaster, 50% 1 RF Receiver
@@ -365,7 +365,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier                 | -1973785141
+Item ID                    | -1973785141
 Description                | A fog machine that runs on low grade fuel
 Crafting Recipe            | 100 Metal Fragments, 30 Low Grade Fuel, 1 Metal Pipe
 Recycles Into              | 50 Metal Fragments, 15 Low Grade Fuel, 50% 1 Metal Pipe
@@ -428,7 +428,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier                 | 1358643074
+Item ID                    | 1358643074
 Description                | A machine which will blanket the surrounding terrain in snow.
 Crafting Recipe            | 125 Metal Fragments, 30 Low Grade Fuel, 1 Metal Pipe
 Recycles Into              | 63 Metal Fragments, 15 Low Grade Fuel, 50% 1 Metal Pipe

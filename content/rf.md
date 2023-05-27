@@ -18,7 +18,7 @@ Receivers can be set to frequencies between 4960 and 4990
 
 | | |  
 |-|---|  
-Identifier          |  -1044468317
+Item ID             |  -1044468317
 Description         | Sending an RF signal
 Crafting Recipe     | 100 Metal Fragments, 1 Tech Trash
 Recycles Into       | 50 Metal Fragments, 50% 1 Tech Trash
@@ -46,7 +46,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          |  888415708
+Item ID             |  888415708
 Description         |  Receiving an RF signal to output power
 Crafting Recipe     | 100 Metal Fragments, 1 Tech Trash
 Recycles Into       | 50 Metal Fragments, 50% 1 Tech Trash
@@ -77,7 +77,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          |  596469572
+Item ID             |  596469572
 Description         | Transmitting a RF signal from your hand
 Crafting Recipe     | 5 HQM, 1 Tech Trash
 Recycles Into       | 3 HQM, 50% 1 Tech Trash
@@ -101,7 +101,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          | -566907190
+Item ID             | -566907190
 Description         | Receiving a RF signal in your pocket
 Crafting Recipe     | 50 Metal Fragments, 1 Tech Trash
 Recycles Into       | 5 Scrap, 25 Metal Fragments, 50% 1 Tech Trash
@@ -124,7 +124,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          | 1248356124
+Item ID             | 1248356124
 Description         | C4, used to destroy whatever it is attached to. 2 modes, delay and RF detonation
 Crafting Recipe     | 20 Explosives, 5 Cloth, 2 Tech Trash
 Recycles Into       | 10 Explosives, 3 Cloth, 1 Tech Trash

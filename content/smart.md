@@ -18,7 +18,7 @@ Add pictures of the process
 
 | | |  
 |-|---|  
-Identifier          |  1149964039
+Item ID             |  1149964039
 Description         | Monitoring Tool Cupboards, Large Storage Boxes and Vending Machines
 Crafting Recipe     | 3 HQM/1 Tech Trash
 Recycles Into       | 2 HQM/50% - 1 Tech Trash
@@ -48,7 +48,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          |  -695978112
+Item ID             |  -695978112
 Description         | Sends a notification to your phone
 Crafting Recipe     | 3 HQM, 1 Tech Trash
 Recycles Into       | 2 HQM, 50% 1 Tech Trash
@@ -76,7 +76,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          |  988652725
+Item ID             |  988652725
 Description         | A switch requiring TC authorization
 Crafting Recipe     | 3 HQM, 1 Tech Trash
 Recycles Into       | 2 HQM, 50% 1 Tech Trash

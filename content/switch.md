@@ -7,7 +7,7 @@
 
 | | |  
 |-|---|  
-Identifier          |  -1778897469
+Item ID             |  -1778897469
 Description         | Allowing power to pass through when pressed
 Crafting Recipe     | 75 Metal Fragments
 Recycles Into       | 38 Metal Fragments
@@ -37,7 +37,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          |  1951603367
+Item ID             |  1951603367
 Description         | Allowing power to pass through or not
 Crafting Recipe     | 100 Metal Fragments
 Recycles Into       | 50 Metal Fragments

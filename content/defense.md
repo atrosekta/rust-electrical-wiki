@@ -7,7 +7,7 @@
 
 | | |  
 |-|---|  
-Identifier        | -1009359066
+Item ID           | -1009359066
 Description       | Defends against aerial threats
 Recycles Into     | 25 HQM
 Stack Size        | 1
@@ -42,7 +42,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          | -2139580305
+Item ID             | -2139580305
 Description         | A automated sentry turret to neutralize targets
 Crafting Recipe     | 10 HQM, 1 CCTV Camera, 1 Targeting Computer
 Recycles Into       | 5 HQM, 50% 1 CCTV Camera, 50% 1 Targeting Computer
@@ -83,7 +83,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          | 1371909803
+Item ID             | 1371909803
 Description         | An electrical trap that zaps nearby players
 Crafting Recipe     | 3 HQM, 1 Tech Trash
 Recycles Into       | 2 HQM, 50% 1Tech Trash

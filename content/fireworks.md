@@ -41,7 +41,7 @@ finishes.
 
 | | |  
 |-|---|  
-Identifier         | Red -454370658  Violet -1538109120  White 261913429
+Item ID            | Red -454370658  Violet -1538109120  White 261913429
 Description        | Emits a beautiful shower of colored sparks
 Crafting Recipe    | 20 Metal Fragments, 15 Gun Powder
 Recycles Into      | 10 Metal Fragments, 8 Gun Powder
@@ -65,7 +65,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier      | Blue -515830359  Green -1306288356  Red -1486461488  Violet -99886070
+Item ID         | Blue -515830359  Green -1306288356  Red -1486461488  Violet -99886070
 Description     | A small repeating firework, shoots a series of colored balls into the air
 Crafting Recipe | 25 Metal Fragments, 10 Low Grade Fuel
 Recycles Into   | 13 Metal Fragments, 5 Low Grade Fuel
@@ -88,7 +88,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier         |  Blue 1744298439 Green -656349006 Red -1553999294 Violet -280223496 
+Item ID            |  Blue 1744298439 Green -656349006 Red -1553999294 Violet -280223496 
 Description        |  A very large mortar type firework with a colored starburst
 Crafting Recipe    | 25 Metal Fragments, 15 Low Grade Fuel, 30 Gun Powder
 Recycles Into      | 13 Metal Fragments, 8 Low Grade Fuel, 15 Gun Powder
@@ -115,7 +115,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier         | 1324203999
+Item ID            | 1324203999
 Description        | A very large mortar type firework with a massive champagne colored explosion followed by smaller orange starbursts
 Crafting Recipe    | 30 Metal Fragments, 30 Low Grade Fuel, 75 Gun Powder
 Recycles Into      | 15 Metal Fragments, 15 Low Grade Fuel, 38 Gun Powder
@@ -142,7 +142,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier         | -379734527
+Item ID            | -379734527
 Description        | A special boomer which allows you to light up the night sky with a custom pattern that you draw. Multiple colors and altitude settings are available.
 Crafting Recipe    | 50 Metal Fragments, 15 Low Grade Fuel, 30 Gun Powder
 Recycles Into      | 25 Metal Fragments, 8 Low Grade Fuel, 15 Gun Powder

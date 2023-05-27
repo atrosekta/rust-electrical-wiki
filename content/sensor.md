@@ -7,7 +7,7 @@
 
 | | |  
 |-|---|  
-Identifier          |  -1507239837
+Item ID             |  -1507239837
 Description         | Detecting heartbeat, breathing, humidity and footsteps
 Crafting Recipe     | 75 Metal Fragments
 Recycles Into       | 38 Metal Fragments
@@ -43,7 +43,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          |  -798293154
+Item ID             |  -798293154
 Description         | Passing power through when a person is in the beam
 Crafting Recipe     | 75 Metal Fragments
 Recycles Into       | 38 Metal Fragments
@@ -82,7 +82,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          |  -2049214035
+Item ID             |  -2049214035
 Description         | Passing power when a player stands on it
 Crafting Recipe     | 150 Wood/1 Spring/1 Gear
 Recycles Into       | 75 Wood/50% - 1 Spring/50% - 1 Gear
@@ -115,7 +115,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          |  -1736356576
+Item ID             |  -1736356576
 Description         | Target practice and fun
 Crafting Recipe     | 100 Wood, 150 Metal Fragments, 1 Gear
 Recycles Into       | 50 Wood/75 Metal Fragments/50% - 1 Gear

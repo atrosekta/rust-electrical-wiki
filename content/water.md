@@ -34,7 +34,7 @@ chain.
 
 | | |  
 |-|---|  
-Identifier           |  -1100168350
+Item ID              |  -1100168350
 Description          | A large deployable that passively collects water
 Crafting Recipe      | 200 Metal Fragments, 500 Wood, 2 Tarp
 Recycles Into        | 100 Metal Fragments, 250 Wood, 1 Tarp
@@ -65,7 +65,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier           | -132247350
+Item ID              | -132247350
 Description          | A small deployable that passively collects water
 Crafting Recipe      | 50 Metal Fragments, 100 Wood, 1 Tarp
 Recycles Into        | 25 Metal Fragments, 50 Wood, 50% 1 Tarp
@@ -95,7 +95,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier           | -1863559151
+Item ID              | -1863559151
 Description          | A barrel to store water
 Crafting Recipe      | 250 Wood, 1 Tarp
 Recycles Into        | 125 Wood, 50% 1 Tarp
@@ -124,7 +124,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          | -1284169891
+Item ID             | -1284169891
 Description         | Pumps and stores water from rivers or the ocean
 Crafting Recipe     | 200 Metal Fragments, 250 Wood, 1 Gear
 Recycles Into       | 100 Metal Fragments, 125 Wood, 50% 1 Gear
@@ -158,7 +158,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          | -365097295
+Item ID             | -365097295
 Description         | Converts salt water to fresh water when powered
 Crafting Recipe     | 300 Metal Fragments, 100 Wood, 20 Cloth
 Recycles Into       | 150 Metal Fragments, 50 Wood, 10 Cloth
@@ -190,7 +190,7 @@ can handle over 7 pumps but can't handle 8
 
 | | |  
 |-|---|  
-Identifier          | 1186655046
+Item ID             | 1186655046
 Description         | A large water tank for car chassis
 Crafting Recipe     | 175 Metal Fragments, 100 Wood
 Recycles Into       | 88 Metal Fragments, 50 Wood
@@ -216,7 +216,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          | 443432036
+Item ID             | 443432036
 Description         | A switch that lets water through, either manually or with electricity for the pump to send water to a higher floor.
 Crafting Recipe     | 150 Metal Fragments
 Recycles Into       | 75 Metal Fragments
@@ -247,7 +247,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          | -265292885
+Item ID             | -265292885
 Description         | Combines 3 separate fluid connections into 1
 Crafting Recipe     | 75 Metal Fragments
 Recycles Into       | 35 Metal Fragments
@@ -272,7 +272,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          | -1166712463
+Item ID             | -1166712463
 Description         | Splits 1 water connection evenly into 3
 Crafting Recipe     | 75 Metal Fragments
 Recycles Into       | 38 Metal Fragments
@@ -305,7 +305,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          | -781014061
+Item ID             | -781014061
 Description         | A small sprinkler that sprays water around it.
 Crafting Recipe     | 75 Metal Fragments
 Recycles Into       | 38 Metal Fragments

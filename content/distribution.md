@@ -19,7 +19,7 @@ as the error message, short circuit/max depth.
 
 | | |  
 |-|---|  
-Identifier          | -458565393
+Item ID             | -458565393
 Description         | Combining power from power sources
 Crafting Recipe     | 75 Metal Fragments
 Recycles Into       | 38 Metal Fragments
@@ -53,7 +53,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          |  -1448252298
+Item ID             |  -1448252298
 Description         | Branching power off from the main line by a set amount
 Crafting Recipe     | 75 Metal Fragments
 Recycles Into       | 38 Metal Fragments
@@ -90,7 +90,7 @@ Notes:
 
 | | |  
 |-|---|  
-Identifier          |  -563624462
+Item ID             |  -563624462
 Description         | Splitting power evenly between up to 3 outputs
 Crafting Recipe     | 100 Metal Fragments
 Recycles Into       | 50 Metal Fragments
