@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>centralized</title>
+		<title>Centralized vs Decentralized</title>
 		<link rel="stylesheet" href="global/style.css">
 		<link rel="stylesheet" href="global/sidebar.css">
 		<link rel="stylesheet" href="global/fix.css">
@@ -860,28 +860,6 @@
 		</a>
 
   </span>
-		<a class='sideline' href='centralized.html#what-is-a-power-bus'>
-			<span class='sidetext'> What is a Power Bus? </span>
-			<span class='sidesign'></span>
-		</a>
-
-  <span class="sidelist indent3 folded">
-		<a class='sideline' href='centralized.html#fixed-bus-f-bus'>
-			<span class='sidetext'> Fixed Bus (F-Bus) </span>
-			<span class='sidesign'></span>
-		</a>
-
-		<a class='sideline' href='centralized.html#dynamic-bus-d-bus'>
-			<span class='sidetext'> Dynamic Bus (D-Bus) </span>
-			<span class='sidesign'></span>
-		</a>
-
-		<a class='sideline' href='centralized.html#configure-siphon-c-bus'>
-			<span class='sidetext'> Configure Siphon (C-Bus) </span>
-			<span class='sidesign'></span>
-		</a>
-
-  </span>
   </span>
 	<span class='sideline foldable folded' onclick='toggfold(this);'>
 		<a class='sidetext' onclick='preventbubble(event);'
@@ -895,6 +873,12 @@
 			<span class='sidesign'></span>
 		</a>
 
+		<a class='sideline' href='backup.html#battery-backup-systems'>
+			<span class='sidetext'> Battery Backup Systems </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
 		<a class='sideline' href='backup.html#direct-delivery'>
 			<span class='sidetext'> Direct Delivery </span>
 			<span class='sidesign'></span>
@@ -920,6 +904,34 @@
 			<span class='sidesign'></span>
 		</a>
 
+  </span>
+		<a class='sideline' href='backup.html#distribution-systems'>
+			<span class='sidetext'> Distribution Systems </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='backup.html#what-is-a-power-bus'>
+			<span class='sidetext'> What is a Power Bus? </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#fixed-bus-f-bus'>
+			<span class='sidetext'> Fixed Bus (F-Bus) </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#dynamic-bus-d-bus'>
+			<span class='sidetext'> Dynamic Bus (D-Bus) </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='backup.html#configure-siphon-c-bus'>
+			<span class='sidetext'> Configure Siphon (C-Bus) </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
   </span>
   </span>
   </span>			</span>
@@ -1242,121 +1254,6 @@ The Switch is powered by a small battery limiting the amount of time the
 system can be off for.<br />
 This prevents a team mate from turning things off and forgetting to turn
 it back on.</p>
-<hr />
-<h1 id="what-is-a-power-bus"><a href="#what-is-a-power-bus"
-class="anchor-link">*</a>What is a Power Bus?</h1>
-<p><img src="images/image127.png" /></p>
-<p>A power bus is a group of components with the sole purpose of
-directing the flow of electricity to different circuits that perform
-specific tasks such as auto turrets or lighting. This is a lot like the
-breaker panel or fuse panel you have in your home for your electricity.
-Each breaker or fuse is dedicated for a specific room or purpose, like
-the fridge, furnace, bedrooms or garage. A power bus also helps
-prioritize the order in which circuits receive power. In the event you
-are producing less power then you need, you have built in control over
-which circuit is last to go offline. We have 3 types of power buses,
-fixed, dynamic and configurable.</p>
-<hr />
-<h2 id="fixed-bus-f-bus"><a href="#fixed-bus-f-bus"
-class="anchor-link">*</a>Fixed Bus (F-Bus)</h2>
-<p><img src="images/image115.png" /></p>
-<p>A fixed bus, known as an F-Bus, is when you dedicate a specific
-amount of power per output. This type of power bus always consumes the
-amount of power each output is set to even if nothing is attached to
-Branch Out. This will affect Inline battery backups by forcing an Active
-Usage and it will affect a bypass battery backup by always consuming
-power, even when the components connected to Branch Out are offline. A
-fixed bus is an easy way to build in priorities and a bit of security.
-The first Electrical Branch has the highest priority because it’s the
-first to get power and in the event that power levels start falling, it
-will be the last branch to lose power. The security comes from knowing
-that if 50% of the power supply disappears, only some branches will lose
-power and not all.</p>
-<hr />
-<h2 id="dynamic-bus-d-bus"><a href="#dynamic-bus-d-bus"
-class="anchor-link">*</a>Dynamic Bus (D-Bus)</h2>
-<p><img src="images/image51.png" /></p>
-<p>A dynamic bus, known as a D-Bus, is when we let the components evenly
-distribute power between all connected outputs. The only control you
-have over the amount of power available to each output is the amount of
-power you put into it. This is primarily used when the component or
-circuit attached to each output requires the same amount of power or
-when each circuit uses less than the available power and you want to
-avoid the forced Active Usage from an Electrical Branch. If an output
-gets destroyed, the system will evenly redistribute power between the
-remaining outputs. The drawback would be that if the incoming power
-drops too low to support the connected outputs, everything will stop
-working or at least those that require the full amount of power that was
-previously present.</p>
-<hr />
-<h2 id="configure-siphon-c-bus"><a href="#configure-siphon-c-bus"
-class="anchor-link">*</a>Configure Siphon (C-Bus)</h2>
-<p><img src="images/multi-c-bus.png" /></p>
-<p>A configure siphon, known as a C-Bus, is a bypass distributor that is
-only active when required. The idea here is that we only want to use
-power when the C-Bus is active otherwise the power just passes through.
-We can set an Electrical Branch in the siphon to a specific amount of
-power to only be used when the siphon is active. There are multiple
-versions of the C-Bus, and we will dive into each one, but to start, I
-just want to explain the concept.</p>
-<p>All of them are centered around the Memory Cell. The Memory Cell has
-2 outputs, Output and Inverted Output. One output is called the Main
-Line (aka the bypass) and the other output goes to the Circuit that we
-want to power. The Main Line is the default path the electricity takes
-when the siphon is not active. It will pass from a Memory Cell to an OR
-Switch and out. The Circuit path is the route electricity will take when
-the Memory Cell gets triggered. It gets sent to an Electrical Branch
-that is configured to an amount of power the circuit needs while the
-remainder gets sent off to the OR Switch and back onto the Main Line to
-continue powering the circuits past it. While this is the general
-concept, we can get a little more specific.</p>
-<p>There are 2 categories of Configure Siphons. There is the Auto Reset
-which will automatically turn itself on when an input is received and
-off when the input signal is removed. The second is Manual which
-requires you to manually turn it on and off. Within each of these
-categories there are 2 types. There is the standard C-Bus which is to be
-used in a circuit that uses a bypass battery backup like the Nih Core.
-The second type is the Blocked C-Bus meant to be used in a circuit that
-uses an Inline battery backup. The reason 1 has a Blocker is because of
-the nature of components and a battery’s Active Usage. The Blocker has
-the ability to hide Active Usage from a battery when it is actively
-being blocked. Read more about that in the section titled Battery Active
-Usage Vs Actual Power Consumed.</p>
-<p>Now to get very specific. Starting with the Auto Reset siphons, these
-by default will send power out the Inverted Output(left output). Power
-will be passed to an OR Switch then out. In the Blocked version, power
-gets passed to an Electrical Branch that is used to block a Blocker
-before passing power to the OR Switch and out. ‘Out’ could be another
-siphon, another type of power bus or whatever you would like. We are
-using a HBHF Sensor as our input source but it doesnt have to be. All we
-need is a constant source of power to keep the siphon active. When the
-sensor outputs power, it will ‘SET’ the Memory Cell. This will force the
-Memory Cell to flip outputs and send power through Output(right output).
-From Output, power will be sent to an Electrical Branch configured to +2
-over the amount of power your circuit will need. The leftover power will
-pass through Power Out and merge back into the Main Line. The power
-coming out of Branch Out will go to another Electrical Branch that will
-be set to the amount of power the circuit actually needs. The reason for
-+2 is because we need 1 for the second Electrical Branch itself and 1 to
-be sent out Power Out to ‘RESET’ on the Memory Cell. In the blocked
-version, we are simply adding a Blocker before the first Electrical
-Branch so we can hide the Active Usage caused by the Electrical Branches
-from a battery. When the sensor stops sending power to ‘SET’, the power
-going to ‘RESET’ will force the Memory Cell to flip outputs back to
-Inverted Output and return power to the Main Line. In the blocked
-version, because of the Electrical Branch on the Main Line, the Blocker
-will get blocked again to hide the Active Usage.</p>
-<p>The Manual siphons function in a very similar way only instead of
-using ‘SET’ or ‘RESET’ on the Memory Cell, we are using ‘TOGGLE’.
-Everytime ‘TOGGLE’ receives power, the Memory Cell will flip outputs. We
-have used the Button in the pictured examples but it doesnt have to be.
-When it comes to which output on the Memory Cell is the Main Line or the
-Circuit line, it really doesnt matter because you have the ability to
-manually control which output power is actively passing through.</p>
-<p>In all the examples we have used Counters at each output. This is
-only to show you how much power each C-Bus costs to not be active. <a
-href="https://www.rustrician.io/?circuit%3D71c12c6e40d98dea32fb463a773b2f42">Here
-is a Rustrician BP link to explore the C-Bus more</a></p>
 <hr />
 		</main>
 		</div>
