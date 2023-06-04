@@ -99,6 +99,11 @@ end
 function closespan () return pandoc.RawInline('html', '  </span>' ) end
 
 -- maybe fix wsl nil value error ?
-function Doc(body, metadata, variables) 
-    return body
+function Doc(body, metadata, variables)
+	return body
 end
+
+function Space()
+	return " "
+end
+
