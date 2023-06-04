@@ -31,13 +31,6 @@ Pattern Short Fuse | 5 | 5 | 3 | 10 | 35
 Pattern Medium Fuse | 5 | 7 | 3 | 10 | 35
 Pattern Long Fuse | 5 | 10 | 3 | 10 | 35
 
-Type               | Volcano | Candle | Boomer | Champagne | Pattern Short Fuse | Pattern Medium Fuse | Pattern Long Fuse
-| ---              | -       | -      | -      | -         | -                  | -                   | -
-Start Time         | 5       | 5      | 5      | 5         | 5                  | 5                   | 5
-Launch Time 2      |         | 2      | 5      | 5         | 5                  | 7                   | 10
-Number of shots    |         | 12     | 10     | 3         | 3                  | 3                   | 3
-Time between shots |         | 3      | 4      | 10        | 10                 | 10                  | 10
-Active Time        | 40      | 40     | 47     | 35        | 35                 | 35                  | 35
 
 
 
