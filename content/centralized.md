@@ -308,8 +308,9 @@ or turrets.
 This first example demonstrates decentralizing power with a centralized
 backup. Keep in mind that Root Combiners do not spread the load between
 batteries. This means that a circuit needing 50 power will force all the
-batteries to have an active usage of 50.
-![](images/dectr-pwr-ctr-bkp.png)
+batteries to have an active usage of 50. 
+Read the section [Battery Active Usage vs Actual Power Consumed](concepts.html#battery-active-usage-vs-actual-power-consumed) for a more in depth explanation.  
+![](images/dectr-pwr-ctr-bkp.png)  
 This kind of configuration is convenient to achieve a lot of power on 1
 line but comes at the cost of not being able to take advantage of game
 mechanics to minimize Active Usage on the batteries. Let's say you want
@@ -342,7 +343,7 @@ In our 3rd example, we use a bypass battery backup known as the Nih Core
 which natively is a centralized system but we decentralize the batteries
 by dedicating them to specific systems. This is called the Decentralized
 Nih Core.
-![](images/dectr-nih-core.png)
+![](images/dectr-nih-core.png)  
 It gives us the benefit of powering our circuits the majority of the time with the main power source while also providing security but separating the battery backup.  
 In the event that the core or a battery is taken out, not everything goes offline.  
 <!-- [ deadman switch link ]() -->

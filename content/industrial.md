@@ -25,9 +25,9 @@ Transfer Rate       |
 Despawn Time        | 5 minutes
 
 #### Filter settings :  
-`MAX`: conveyor will stop moving this item when target container(s) reach this amount  
-`MIN`: conveyor will only move items in excess of this amount from input container(s)  
-`BUFFER`: conveyor will only move in chunks of this size.
+`MAX`: The Conveyor will stop moving this item when the target container(s) reach this amount.  
+`MIN`: The Conveyor will only move items in excess of this amount from the input container(s)  
+`BUFFER`: The Conveyor will only move in chunks of this size.
 (Useful for crafting recipes in tandem with MAX to eliminate overfilling and trickle filling)
 
 There is a max of 12 items that can be filtered.  
@@ -37,11 +37,11 @@ Construction, Resources, Clothing, Food, Other, Fun, Tools, Components )
 
 #### Notes:
 
-- it can "see" a maximum of 32 storage adaptors per side,
+- It can "see" a maximum of 32 storage adaptors per side,
   *you can "cheat" and make it pull from up to 94 boxes but its not explained here for now*
-- there is a maximum of 32 combiners/splitters between each storage adaptors and the conveyor
+- There is a maximum of 32 combiners/splitters between each storage adaptors and the conveyor
 - it should move a max of 60 items per 12 stack max at a time, unstackable items count as 1 stack,
-  *but when writting this in may 2023, it is broken,
+  *but when writing this in may 2023, it is broken,
   it act weird and in a lot of cases it will move more items than it should,
   it try to fill 12 slot in the output box no matter how many stack it pull from in the input box,
   instead of the other way around ...*
@@ -122,7 +122,8 @@ Transfer Rate             |
 Despawn Time              |
 Decay Time                |
 
-Notes: Can be turned on manually, by sending power to the “Turn on” input, or by a nearby igniter.
+Notes: 
+- Can be turned on manually, by sending power to the “Turn on” input, or by a nearby igniter.
 
 ---
 

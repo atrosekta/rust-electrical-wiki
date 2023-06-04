@@ -31,6 +31,10 @@ in most circuits and if limited to one, placing one after the battery
 backup is probably the best option.
 
 ---
+# Parallel vs Series
+
+
+---
 
 # Battery Active Usage Vs Actual Power Consumed
 
@@ -94,7 +98,7 @@ but with the Splitter, we dont have this issue because the Splitter
 controls its power flow DYNAMICALLY.
 ![](images/branch-vs-splitter-active-usage-onoff.png)
 
-This is helpful in situations where you have a few small  
+This is helpful in situations where you have a few small 
 circuits where you dont want to force an Active Usage when the circuits
 are off. Now because the Electrical Branch only registers the Branch Out
 value as Active Usage and 0 for itself, we can trick batteries into
