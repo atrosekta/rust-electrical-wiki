@@ -96,7 +96,7 @@ Transfer Rate             |
 Despawn Time              |
 Decay Time                |
 
-Notes:
+Notes: Can be turned on manually, by sending power to the “Turn on” input, or by a nearby igniter.
 
 ---
 

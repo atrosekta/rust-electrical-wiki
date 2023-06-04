@@ -60,9 +60,8 @@ Notes:
 - 2rW is only required if you want the visual effect. They will ignite
   things with 1rW but you won't see the spark effect
 - They can be used to ignite the camp fire, carvable pumpkin, chinese
-  lantern, furnace, hobo barrel, jack o lanterns, lanterns, large
-  furnace, small oil refinery, fireplace, tuna can lamp, fireworks, sky
-  lanterns,candles, beancan grenade and satchel charge
+  lantern, hobo barrel, jack o lanterns, lanterns, large
+  furnace, small furnace, electrical furnace, small oil refinery, fireplace, tuna can lamp, fireworks, sky lanterns,candles, beancan grenade and satchel charge
 - They take damage when they are on. They have enough health to last for
   16 to 17 minutes
 - Can be placed on any angled surface and the ground
