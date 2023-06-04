@@ -42,8 +42,9 @@ end
 
 function ParseConf (el)
 	indent = indent + 1
-	local out = pandoc.Inlines{}
-			out:insert( foldlist( indent, 1 ) )
+	-- local out = pandoc.Inlines{}
+			-- out:insert( foldlist( indent, 1 ) )
+	local out = pandoc.Inlines( foldlist( indent, 1 ) )
 	for i, items in ipairs(el.content) do
 		local text = pandoc.utils.stringify( items[1] )
 		local item = items[1].content[1]
