@@ -1,7 +1,8 @@
 # The RUST Electrical Handbook
 
 All of the information you find here is comming from a [Google Doc file by @SwiftCoyote](https://docs.google.com/document/d/19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing),
-so thanks to him and all the people that contributed to it!  
+so thanks to him and all the people in the Rustricity Workshop
+community that contribute to it!  
 
 THIS IS A WORK IN PROGRESS
 
