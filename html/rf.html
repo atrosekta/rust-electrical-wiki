@@ -68,7 +68,12 @@
 		</a>
 
 		<a class='sideline' href='tools.html#pipe-tool'>
-			<span class='sidetext'> Pipe Tool </span>
+			<span class='sidetext'> Pipe Tool  </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#garrys-mod-tool-gun'>
+			<span class='sidetext'> Garry’s Mod Tool Gun  </span>
 			<span class='sidesign'></span>
 		</a>
 
@@ -300,6 +305,11 @@
 			<span class='sidesign'></span>
 		</a>
 
+		<a class='sideline' href='utils.html#ptz-cctv-camera'>
+			<span class='sidetext'> PTZ CCTV Camera </span>
+			<span class='sidesign'></span>
+		</a>
+
 		<a class='sideline' href='utils.html#cctv-camera'>
 			<span class='sidetext'> CCTV Camera </span>
 			<span class='sidesign'></span>
@@ -491,6 +501,11 @@
 
 		<a class='sideline' href='rf.html#rf-pager'>
 			<span class='sidetext'> RF Pager </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#timed-explosive-charge'>
+			<span class='sidetext'> Timed Explosive Charge </span>
 			<span class='sidesign'></span>
 		</a>
 
@@ -729,11 +744,6 @@
 			<span class='sidesign'></span>
 		</a>
 
-		<a class='sideline' href='industrial.html#what-is-the-industrial-system'>
-			<span class='sidetext'> What is the industrial system? </span>
-			<span class='sidesign'></span>
-		</a>
-
   </span>
   </span>
 <span class="sideline foldable folded unfoldonload" onclick="toggfold(this);">
@@ -786,18 +796,6 @@
 			<span class='sidesign'></span>
 		</a>
 
-  <span class="sidelist indent3 folded">
-		<a class='sideline' href='concepts.html#basic'>
-			<span class='sidetext'> Basic </span>
-			<span class='sidesign'></span>
-		</a>
-
-		<a class='sideline' href='concepts.html#advanced'>
-			<span class='sidetext'> Advanced </span>
-			<span class='sidesign'></span>
-		</a>
-
-  </span>
   </span>
 	<span class='sideline foldable folded' onclick='toggfold(this);'>
 		<a class='sidetext' onclick='preventbubble(event);'
@@ -851,7 +849,7 @@
 
   </span>
 		<a class='sideline' href='centralized.html#what-is-a-power-bus'>
-			<span class='sidetext'> What is a Power Bus?* </span>
+			<span class='sidetext'> What is a Power Bus? </span>
 			<span class='sidesign'></span>
 		</a>
 
@@ -921,7 +919,7 @@
 			<h1 id="radio-frequency-rf">Radio Frequency (RF)</h1>
 <hr />
 <p>Radio Frequency or RF for short, is a signal that can be sent or
-received anywhere on the map.  </p>
+received to or from anywhere on the map.  </p>
 <p>Small Oil Rig: 4765 / Large Oil Rig: 4768 / Giant Excavator: 4777</p>
 <p>Transmitters cannot be set to frequencies between 4960 and 4990</p>
 <p>Receivers can be set to frequencies between 4960 and 4990</p>
@@ -1001,6 +999,7 @@ Lab Yellow Crate</td>
 <li>Will send an RF signal as long as it receives power</li>
 <li>They can be placed on most flat surfaces including Workbenches and
 the top of TC</li>
+<li>Takes 0.5 damage when changing frequencies</li>
 </ul>
 <hr />
 <h1 id="rf-receiver">RF Receiver<img src="images/image39.png" /></h1>
@@ -1144,7 +1143,7 @@ Lab Yellow Crate</td>
 <ul>
 <li>This is a hand held tool and will send a RF signal as long as the
 button is pressed</li>
-<li>This tool takes no damage</li>
+<li>This tool takes 0.5 damage when changing frequencies</li>
 <li>Frequency can be changed by holding Right Click while holding
 it.</li>
 </ul>
@@ -1207,6 +1206,99 @@ Lab Yellow Crate</td>
 <li>When the Pager receives a signal, it will start to beep and vibrate.
 It can be placed on Silent Mode</li>
 <li>You can carry it in your inventory or place it in a storage box</li>
+</ul>
+<hr />
+<h1 id="timed-explosive-charge">Timed Explosive Charge<img
+src="images/timed-c4.png" /></h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Identifier</td>
+<td>1248356124</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td>C4, used to destroy whatever it is attached to. 2 modes, delay and
+RF detonation</td>
+</tr>
+<tr class="odd">
+<td>Crafting Recipe</td>
+<td>20 Explosives, 5 Cloth, 2 Tech Trash</td>
+</tr>
+<tr class="even">
+<td>Recycles Into</td>
+<td>10 Explosives, 3 Cloth, 1 Tech Trash</td>
+</tr>
+<tr class="odd">
+<td>Stack Size</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>Workbench Required</td>
+<td>Level 3</td>
+</tr>
+<tr class="odd">
+<td>Research Table Cost</td>
+<td>500 Scrap</td>
+</tr>
+<tr class="even">
+<td>Damage</td>
+<td>550</td>
+</tr>
+<tr class="odd">
+<td>Explosion Radius</td>
+<td>4m</td>
+</tr>
+<tr class="even">
+<td>Explosion Delay</td>
+<td>10 Seconds</td>
+</tr>
+<tr class="odd">
+<td>Explosion Control</td>
+<td>Delay or RF</td>
+</tr>
+<tr class="even">
+<td>Where To Buy</td>
+<td>Outpost for 75 Scrap</td>
+</tr>
+<tr class="odd">
+<td>Where To Find</td>
+<td>APC Crate, Elite Crate, Elite Tier Crate, Heavy Scientist,
+Helicopter Crate, Locked Crate, Supply Drop, Underwater Lab Elite
+Crate</td>
+</tr>
+<tr class="even">
+<td>Despawn Time</td>
+<td>1 hour</td>
+</tr>
+<tr class="odd">
+<td>Decay Time</td>
+<td>24 hours</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>To use it in delay mode, just throw the explosive charge with a left
+click. It will beep for 10 seconds before exploding. The red light will
+be on.</li>
+<li>To use in RF mode, enter your inventory and select the charge. Click
+on ‘Enable RF’ then ‘Set Frequency’. Use left click to throw the
+explosive charge onto something you want to destroy and wait 10 seconds
+for the beeping to stop. The green light will be on. Set a RF
+Broadcaster or RF Transmitter to the same frequency and transmit when
+you want the charge to detonate.</li>
+<li>Due to the introduction of RF mode, RF Broadcasters and Transmitters
+now take 0.5 damage when changing frequencies.</li>
+<li>Anyone can pick up the charge after the beeping stops by looking at
+it and holding USE(E)</li>
+<li>Will survive a server restart</li>
+<li>Decays after 24 hours when outside the TC range of the person that
+threw it</li>
 </ul>
 <hr />
 		</main>

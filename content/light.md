@@ -81,7 +81,9 @@ Notes:
 
 - These hang from ceilings and focus light toward the ground
 - Hanging this at 1.5 floors allows the light to cover more area
-- They are required for farming and will be cover more in that section
+- They are required for farming
+- When given only 1 power, they will work until they don't. When they
+  don't, turn them off and back on and they will work again.
 
 ---
 
@@ -140,6 +142,7 @@ Notes:
 - They have 5 different modes, Steady, Flashing, Chasing, Fade and Slow
   Glow
 - Can be placed underwater
+- Length of light strand does not affect the amount of power consumed.  
 
 ---
 
@@ -173,7 +176,7 @@ Notes:
   foundation is 3m.
 - Can be used through ceilings and walls.
 - The light can be seen through walls if placed close enough. The flash
-  from the light turning on can be see as far away as 1 grid square.
+  from the light turning on can be seen as far away as 1 grid square.
 
 ---
 

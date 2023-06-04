@@ -24,12 +24,9 @@ capacity. This means if a large battery has a full charge, when you pick
 it up and place it back down, it will still have a full charge.
 
 Batteries have something called Active Usage and components have
-something called Power Consumption. Active Usage is supposed to measure
-the total amount of power a circuit is using and is used to calculate
-the batteries discharge rate. What you will notice is that some
-components will not consume any power but still register on a battery’s
-active usage and vice versa, a component might consume power but not
-register on a battery's active usage.
+something called Power Consumption. this have [ its own section ]().
+
+![](images/battery-footprint.png)
 
 ---
 
@@ -57,7 +54,7 @@ Decay Time          |
 Notes:
 
 - Small Batteries are very compact and can be placed on some deployables
-  like work and repair benches
+  like work/repair benches and boxes
 - Maximum power input is 40rW
 - Comes with a default charge of 20rWM
 

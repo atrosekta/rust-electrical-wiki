@@ -47,7 +47,7 @@ Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier 
 Inputs/Outputs      | Power In, Set, Reset, Toggle / Output, Inverted Output
 Active Usage        | 1
 Power Consumption   | 1rW
-Power Output        | Same as input
+Power Output        | Power input minus 1
 Despawn Time        | 20 minutes
 
 Notes:
@@ -73,6 +73,8 @@ Notes:
   by pointing at the outputs with a Wire Tool, it will show the incoming
   power being evenly split between both outputs. This is a visual bug.
   100% of the power is only coming out of 1 of the outputs
+
+[ rustrician.io BP explaining the mem-cell ](https://www.rustrician.io/?circuit=7329b23650674902a215f43e5015d563)
 
 ---
 
@@ -100,9 +102,12 @@ Notes:
 - Everyone can activate the timer
 - Only TC authorized people can set the timer
 - Timer must be powered to set duration
+- Has a default time of 30 seconds
 - Minimum time duration is 0.25 seconds
-- Maximum time duration is at least a week IRL
+- Maximum time duration is at least a 2 weeks IRL
 - Can only be placed on vertical walls
+- When it is not active, it will block all the components past it from
+  registering active usage on batteries
 
 ---
 
@@ -207,7 +212,7 @@ Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier 
 Inputs/Outputs      | Input A, Input B / Power Out
 Active Usage        | 1
 Power Consumption   | 1rW
-Power Output        | Equal to input power
+Power Output        | Power input minus 1
 Despawn Time        | 5 minutes
 
 Notes:

@@ -32,3 +32,9 @@ Pattern Medium Fuse | 5 | 7 | 3 | 10 | 35
 Pattern Long Fuse | 5 | 10 | 3 | 10 | 35
 
 
+
+MAX: conveyor will stop moving this item when target container(s) reach this amount
+
+MIN: conveyor will only move items in excess of this amount from input container(s)
+
+BUFFER: conveyor will only move in chunks of this size. (Useful for crafting recipes in tandem with MAX to eliminate overfilling and trickle filling)

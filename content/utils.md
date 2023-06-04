@@ -69,6 +69,43 @@ Notes:
 
 ---
 
+# PTZ CCTV Camera![](images/ptz-cam.png)
+
+| | |  
+|-|---|  
+Identifier          | 140006625
+Description         | A camera with Pan, Tilt, Zoom function
+Crafting Recipe     | 1 CCTV Camera, 150 Metal Fragments
+Recycles Into       | 50% CCTV Camera, 75 Metal Fragments
+Stack Size          | 5
+Workbench Required  | Level 2
+Research Table Cost | 75 Scrap
+Hit Points          | 150
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Elite Crate, Underwater Lab Yellow Crate, Wagon Military Crate
+Inputs/Outputs      | Power In
+Active Usage        | 3
+Power Consumption   | 3rW
+Despawn Time        | 20 minutes
+Decay Time          | 48 hours
+
+Notes:
+
+- To use cameras, start by placing one on any horizontal surface. With
+  TC authorization, look at the camera and press E to ‘Set ID’.
+- Aim the camera by standing in the direction you want the camera to
+  look. Holding a Hammer, press E to change its position. Hold E to pick
+  them up.
+- View cameras by mounting a Computer Station and in the bottom left,
+  add the ID for the camera. Select the camera from the list on the left
+  and begin viewing.
+- To control the camera when viewing, use your mouse to pan and tilt.
+  Left click will zoom.
+- Anyone can add any camera to any computer station
+- The game has pre-placed cameras at some of the monuments, check the
+  current Camera List.
+
+---
+
 # CCTV Camera![](images/image100.png)
 
 | | |  
@@ -80,23 +117,25 @@ Stack Size        | 64
 Hit Points        | 150
 Where To Find     | APC Crate, Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Helicopter Crate, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Sunken Crate, Tool Box, Treasure Box, Tunnel Dweller, Underwater Dweller, Underwater Lab Elite Crate, Underwater Lab Tech Crate, Underwater Lab Tool Box, Underwater Lab Yellow Crate
 Inputs/Outputs    | Unnamed Input
-Active Usage      | 5
-Power Consumption | 5rW
+Active Usage      | 3
+Power Consumption | 3rW
 Despawn Time      | 60 minutes
 Decay Time        | 48 hours
 
 Notes:
 
-- To use cameras, start by placing one on any vertical surface. Using a
-  wire tool, look at the camera and press E to ‘Set ID’. Aim the camera
-  by standing in the direction you want the camera to look. Holding a
-  Hammer, press E to change its position. Hold E to pick them up.
+- To use cameras, start by placing one on any vertical surface. With TC
+  authorization, look at the camera and press E to ‘Set ID’.
+- Aim the camera by standing in the direction you want the camera to
+  look. Holding a Hammer, press E to change its position. Hold E to pick
+  them up.
 - View cameras by mounting a Computer Station and in the bottom left,
   add the ID for the camera. Select the camera from the list on the left
   and begin viewing.
 - Anyone can add any camera to any computer station
 - The game has pre-placed cameras at some of the monuments, here is the
-  current list.
+- The game has pre-placed cameras at some of the monuments, check the
+current Camera List.
 
 **[Monuments Camera codes](camcodes.html)** *(UNORGAIZED DUMPFILE !)*
 
@@ -128,12 +167,16 @@ Notes:
   diameter covers a 2x2
 - It also provides up to 50% comfort in a sphere that starts about 1m in
   front of the heater and has a diameter of  4 meters or 1 1/3rd square
-  foundations
-- Heaters will dry you off if you are wet
+  foundations as shown in the below picture.
+- Heaters will dry you off if you are wet.
 - They can be used to help regulate the temperature of crops, be careful
-  not to overheat your plants
+  not to overheat your plants.
 - They emit an orange light
 - Can only be placed on vertical surfaces
+
+heatbox :
+![](images/heater-range.png)
+![](images/heater-range-profile.png)
 
 ---
 
@@ -164,6 +207,7 @@ Notes:
 - To access the user interface, look at the control stand and press E.
   TC access is not required to access UI
 - You can store cars on a powered lift to prevent decay
+- Cannot be picked up with a Hammer
 
 ---
 
@@ -197,10 +241,11 @@ Notes:
 - Each floor has 2 inputs, on the right side of each entrance, to call
   the elevator to that floor. 
 - The Maximum height of a single elevator shaft is 6 floors
-- The elevator has an upkeep cost. For the first floor, it costs 1 HQM
-  and 20 Metal Fragments. It costs an extra 20 Metal Fragments per floor
-  but at the 4th floor, it costs an extra 1 HQM. 1 max height elevator
-  shaft will cost 2 HQM and 120 Metal Fragments
+- The elevator has an upkeep cost. For the first floor, it costs 1 High
+  Quality Metal and 20 Metal Fragments. It costs an extra 20 Metal
+  Fragments per floor but at the 4th floor, it costs an extra 1 High
+  Quality Metal. 1 max height elevator shaft will cost 2 High Quality
+  Metal and 120 Metal Fragments
 - Standing under the carriage as it descends will kill you
 - The Elevator has a travel time of 1.6 seconds per floor.
 
@@ -232,25 +277,27 @@ Notes:
   answering machine
 - The answering machine needs a cassette to work. You will require the
   Voice Props DLC to craft cassettes.
+- TC Auth is not required to change the name or access the cassette in
+  the answering machine.
 - There are 3 types of cassettes, Short(10sec), Medium(20sec) and
   Long(30sec). Use a Cassette Recorder to record a message then place
-  the cassette in the answering machine. When someone calls and you dont
-  answer, the caller will hear your message and leave a message of their
-  own for you to play back later.
+  the cassette in the answering machine. When someone calls and you
+  don't answer, the caller will hear your message and leave a message of
+  their own for you to play back later.
 - After 3 rings the answering machine message will begin to play. To
   leave a voicemail, press the spacebar when you hear the answering
-  machines message. To listen to your voicemail, use the phone and at
+  machine's message. To listen to your voicemail, use the phone and at
   the bottom of the screen select voicemail.
 - To use the phone, look at it and when you see MAKE CALL, press E to
   use.
 - You can give your phone a name and it will appear in the Directory.
   All phones are automatically assigned a number.
-- You can add phones to your contacts list by adding the phones number
+- You can add phones to your contacts list by adding the phone number
   or name.
 - Use the Directory to find the phones at monuments or random peoples
   phones.
 - When a call comes in, the phone will output the incoming power and
-  will continue to for as long as the call is active
+  will continue to for as long as the call is active.
 
 ---
 
