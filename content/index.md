@@ -10,20 +10,17 @@ All of the information you find here is comming from a [Google Doc file by @Swif
 so thanks to him and all the people in the Rustricity Workshop
 community that contribute to it!  
 
+A massive Thank You to @3YE#6593 on Discord for creating the website and teaching me (SwiftCoyote) how to update and maintain it. 
+
 ---
 
-if you want to contribute to this project, there is multiple way you can do it:  
+If you want to contribute to this project, there is multiple way you can do it:  
 
-- you can report if you found a bug or have a suggestion,  
-- you can maybe contribute code that fix or add it,  
-- but the principal thing is informations,  
-  where it is some new sections you want to add,  
-  or some already there that you want to modify,  
-  some reorganisation idea ...  
+-  If you find a bug, spelling or grammaitical error, or have a suggestion, please make them on the Google Document - [Google Document](https://docs.google.com/document/d/19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing)  
+- You can contribute code that fix or add to the website, 
 
-its made in a way so someone could edit the website content without needing to know html/css/javascript,
-all the content is writen in markdown format (similar to discord messages: \**italic*\*, \*\***bold**\*\*, etc...)
-for now i havnt written something that explains how to do it but you can ask me on discord
+Its made in a way so someone could edit the website content without needing to know html/css/javascript. All the content is writen in markdown format (similar to discord messages: \**italic*\*, \*\***bold**\*\*, etc...)
+For now i havnt written something that explains how to do it but you can ask me on discord
 
 ---
 

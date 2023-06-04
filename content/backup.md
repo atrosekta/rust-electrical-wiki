@@ -84,33 +84,19 @@ Cons:
 
 ## OR/Blocker 
 
-![](images/image32.png)
+![](images/ORblocker.png)
 
-Stop using this and stop calling it the ‘Infinite Power Loop’. This
-method has been around for a long time and has been carried over from a
-previous version of electricity when batteries could only charge or
-discharge, not both at the same time. During this time batteries forced
-a max power out causing the need to invent the ‘Infinite Power Loop’
-which actually was something, but it was not this circuit. This is an
-OR/Blocker battery backup. It is a ‘Bypass Battery Backup’ because your
-main circuit runs off the main power produced, bypassing the
-battery, while the excess power is used to charge the battery. While
-considered out of date today for use as a primary battery backup system,
-with some small modifications, it is useful as a secondary battery
-backup which we talk about in its own section. The way this method works
-is by sending power into the first Electrical Branch and branching out
-enough power to meet your circuit's needs. That power is passed to an OR
-Switch which sends power to your circuit. The extra electricity from the
-first Electrical Branch is sent to another Electrical Branch. Power is
-branched out to block the Blocker which prevents the battery from
-draining. The extra power is then used to charge the battery. When there
-is not enough power to keep the battery blocked, the battery sends power
-out to the OR Switch to keep your circuits online. Based on the picture
-above, if the windmill only produces 75 power, it is not enough power to
-meet the demand of the first Electrical Branch or block the battery. The
-battery takes over powering your circuit but the 75 power is still
-coming out of the first electrical branch. The power is still there, it
-is just not being used, it is wasted.
+This method has been around for a long time and is often called ‘Infinite Power’. It is not infinite power, it is just a bypass battery backup. It has been carried over from a previous version of electricity when batteries could only charge or discharge, not both at the same time. During this time batteries did not have an Active Usage and forced out max power causing the need to invent the ‘Infinite Power Loop’, which actually was something, but it was not this circuit. 
+
+This is an OR/Blocker battery backup. It is a ‘Bypass Battery Backup’ that powers your main circuit most of the time from the main power source, bypassing the battery, while the excess power is used to charge the battery. When not enough power is produced, it will automatically switch on the battery keeping everything powered. The reason it is now considered out of date is because it doesn’t take advantage of the batteries ability to charge and discharge at the same time. 
+
+The way this method works is by sending power into the first Electrical Branch and branching out enough power to meet your circuit's needs. That power is passed to an OR Switch which sends power to your circuit. The extra electricity from the first Electrical Branch is sent to another Electrical Branch. Power is branched out to block the Blocker which prevents the battery from draining. The extra power is then used to charge the battery. When there is not enough power to keep the battery blocked, the battery sends power out to the OR Switch to keep your circuits online. Based on the picture below, green wire showing what has power, red showing no power and yellow showing wasted power. 
+![](images/orblockerstates.png)
+If the Windmill only produces 75 power, it is not enough power to meet the demand of the first Electrical Branch or block the battery. The battery takes over powering your circuit but the 75 power is still coming out of the first Electrical Branch. The power is still there, it is just not being used, it is wasted. 
+
+While considered out of date today for use as a primary battery backup system, with some small modifications, it is useful as a secondary battery backup which we talk about in its own section.
+
+
 
 Pros:
 
@@ -385,7 +371,7 @@ control which output power is actively passing through.
 
 In all the examples we have used Counters at each output. This is
 only to show you how much power each C-Bus costs to not be active.
-[Here is a Rustrician BP link to explore the C-Bus more ](https://www.rustrician.io/?circuit%3D71c12c6e40d98dea32fb463a773b2f42)
+[Here is a Rustrician BP link to explore the C-Bus more. ](https://www.rustrician.io/?circuit%3D71c12c6e40d98dea32fb463a773b2f42)
 
 ---
 

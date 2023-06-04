@@ -15,8 +15,7 @@ It is recommended to supply slightly more than you need if you want to charge th
 
 1rw will charge a Large Battery in 34 IRL days.
 
-When a battery is depleted because it is not receiving enough power,  
-no power is outputed until it charges up for a couple seconds before
+When a battery is depleted because it is not receiving enough power,  no power is outputed until it charges up for a couple seconds before
 outputting to the connected circuit. The battery still not receiving
 enough power will deplete in a second and the process repeats.  
 If the circuit after a battery is turning on and off,
@@ -34,7 +33,7 @@ something called Power Consumption. this have [ its own section
 
 ---
 
-# Root Combining Batteries
+# Parallel vs Series
 
 ~~it's a sin~~  
 When batteries get root combined, they do not split the load as one would expect.  
@@ -165,11 +164,13 @@ For instance, in the image below, the displayed `6,492,076` is **NOT** the amoun
 Instead, it represents `6,492,076Np` of Wire Capacity. 
 
 Before going into the construction and operation of a Capacitor,
-it’s essential to understand the math conversions between Rust Watt Minutes (rWm) and Wire Capacity (Np).
+it’s essential to understand the math conversions between Rust Watt Minutes (rWm) and Wire Capacity (Np).  
+
 Both represent capacity, but they use different units of measurement depending on the energy storage container, be it a battery or a capacitor. 
 
 The Maths :  
 `rWm`: rust watt minute  
+`rW`: rust watts (commonly referred to as "power")  
 `Np`: Wire Capacity  
 `∅`: 7.5 (Trust Me Bro)  
 `S`: Seconds  
@@ -181,7 +182,7 @@ The Maths :
 
 
 To convert rWm into Wire Capacity(Np) we use the following equation:  
-`(rWm × τ = P) × ∅ = N`
+`(rWm × τ = P) × ∅ = Np`
 
 To convert Wire Capacity(Np) into rWm we use the following equation:  
 `(Np ÷ ∅ = P) ÷ τ = rWm`
