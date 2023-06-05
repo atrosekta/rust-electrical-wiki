@@ -6,10 +6,9 @@
 - Batteries can accept incoming power at the same time they are sending power out.  
 - Charging rate is dependent on the amount of power coming in, with an efficiency of 80%.  
 
-> *Example:* 20rW from a Solar Panel \* 0.8 = 16rW usable through a battery.  
+> *Example:* 20rW from a Solar Panel × 0.8 = 16rW usable through a battery.  
 
-> *Example:* If your Medium Battery is supplying 16rW to a circuit,  
-  you want to give the battery a minimum of 20rW so it doesn’t lose any charge. 
+> *Example:* If your Medium Battery is supplying 16rW to a circuit, 16 ÷ 0.8 = 20rW is the minimum you want to give the battery so it doesn’t lose any charge.
 
 - It is recommended to supply slightly more than you need if you want to charge the battery.  
 - When you combine batteries with Root Combiners, they do not split the load as one would expect. They cannot see each other, so each battery tries to power the whole circuit.  
@@ -37,7 +36,7 @@ you do not have enough power charging your batteries.
 capacity. This means if a large battery has a full charge, when you pick
 it up and place it back down, it will still have a full charge.
 - Batteries have something called Active Usage and components have
-something called Power Consumption. This has its own section called [Battery Active Usage vs Actual Power Consumed
+something called Power Consumption. Read about it in [Battery Active Usage vs Actual Power Consumed
 ](concepts.html#battery-active-usage-vs-actual-power-consumed).
 
 ![](images/battery-footprint.png)

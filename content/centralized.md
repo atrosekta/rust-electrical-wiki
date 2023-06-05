@@ -305,46 +305,30 @@ Battery Backups. In each example, a Counter is used to both show the
 available amount of power but also represents an end circuit like lights
 or turrets.
 
-This first example demonstrates decentralizing power with a centralized
-backup. Keep in mind that Root Combiners do not spread the load between
-batteries. This means that a circuit needing 50 power will force all the
-batteries to have an active usage of 50. 
+This first example demonstrates decentralizing power by having each power source charge its own battery, with a centralized Inline backup by combining the batteries before powering a circuit. This is a less than ideal way to set up your power production and battery backup. Keep in mind that Root Combiners do not share the load between batteries. This means that a circuit needing 100 power or more will force all the batteries to have a max Active Usage of 100. 
 Read the section [Battery Active Usage vs Actual Power Consumed](concepts.html#battery-active-usage-vs-actual-power-consumed) for a more in depth explanation.  
 ![](images/dectr-pwr-ctr-bkp.png)  
-This kind of configuration is convenient to achieve a lot of power on 1
-line but comes at the cost of not being able to take advantage of game
-mechanics to minimize Active Usage on the batteries. Let's say you want
-to power 18 Auto Turrets, it is possible to power 9 from 1 battery and 9
-from the other while each battery only has an Active Usage of 91,
-needing a power supply of 114 per battery for a total of 228. If we want
-to power the same 18 turrets using the example from the picture, each
-battery would be forced to have an Active Usage of 100, needing a power
-supply of 125 per battery for a total of 250 minimum. The larger this is
-scaled up, it is easy to see how much wasted power, time and materials
-there are. That is why it is seen as unsustainable for use in situations
-that are continuously online, however, if you have a circuit that spends
-most of its time offline and there are long enough periods of time
-between activity to let the batteries charge, then it becomes much more
-practical just to get a lot of power on a single line.
+This kind of configuration is convenient to achieve a lot of power on 1 line but because in this example we are using Inline batteries, this becomes progressively more expensive to maintain as you need to be producing a significant amount more power than you need to. This also removes the ability to take advantage of game mechanics to minimize Active Usage on the batteries which should be a primary focus when using an Inline backup. 
 
-In the next example we demonstrate centralizing power while
-decentralizing the battery backup. This gives us the benefit of
-convenience by combining all the power sources into a single line then
-using Splitters, evenly divide that
+Let's say you want to power 18 Auto Turrets. That is 180rW plus the cost of distribution so we are going to need 2 large batteries which give us 200 power, just like in the picture above. With no load sharing between the batteries, they both will have an Active Usage of 100. With the battery’s 80% efficiency, we need to give each battery 125rW. That’s a minimum of 250rW we need to produce all the time so the batteries do not drain.
+
+If you have already read Battery Active Usage vs Actual Power Consumed, you will know it is possible to power 9 turrets from 1 battery. If we power the other 9 from the other battery, this allows each battery to only have an Active Usage of 90.  With the batteries 80%, we only need a power supply of 114rW per battery for a total of 228rW to not lose power. 
+
+The larger this is scaled up, it is easy to see how much wasted power, time and materials there are. That is why it is seen as unsustainable for use in situations that are continuously online, however, if you have a circuit that spends most of its time offline and there are long enough periods of time between activity to let the batteries charge, then it becomes much more practical to just get a lot of power on a single line.  
+
+In the next example we demonstrate centralizing power by combining it before the Inline batteries, while decentralizing the battery backup by letting each battery power its own circuit. This gives us the benefit of convenience by combining all the power sources into a single line then using Splitters to evenly divide that power between all batteries,
+
 ![](images/ctr-pwr-dectr-bkp.png)
-power between all batteries, or, like in the above picture, use an
+or, like in the above picture, use an
 Electrical Branch to give priority to 1 battery while evenly dividing
 the remaining power between the other 2. This gives us the ability to
 prioritize batteries and also take advantage of minimizing Active Usage
 per battery depending on the circuit it is powering. This leads to a
 lower material and labor cost and wastes less power.
 
-In our 3rd example, we use a bypass battery backup known as the Nih Core
-which natively is a centralized system but we decentralize the batteries
-by dedicating them to specific systems. This is called the Decentralized
-Nih Core.
-![](images/dectr-nih-core.png)  
-It gives us the benefit of powering our circuits the majority of the time with the main power source while also providing security but separating the battery backup.  
+Decentralizing the batteries is almost always the better option when creating a hybrid circuit. While the above examples have used Inline battery backups, in our 3rd example, we use a bypass battery backup known as the Nih Core. This battery backup is natively a centralized system but here, we have decentralized the batteries by dedicating them to specific systems. This is called the Decentralized Nih Core.
+![](images/decentnihcore.png)  
+It gives us the benefit of powering our circuits the majority of the time with the main power source while also providing security by separating the battery backup.  
 In the event that the core or a battery is taken out, not everything goes offline.  
 <!-- [ deadman switch link ]() -->
 There is also an optional Switch included if the system ever needs to be turned off.  
