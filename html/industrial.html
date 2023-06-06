@@ -30,11 +30,6 @@
 			<span class='sidesign'></span>
 		</a>
 
-		<a class='sideline' href='index.html#change-log'>
-			<span class='sidetext'> Change Log </span>
-			<span class='sidesign'></span>
-		</a>
-
   </span>
 <span class="sideline foldable folded unfoldonload" onclick="toggfold(this);">
 	<span class="sidetext"> Items Details </span>
@@ -150,11 +145,6 @@
   <span class="sidelist indent2 folded">
 		<a class='sideline' href='storage.html#power-storage'>
 			<span class='sidetext'> Power Storage </span>
-			<span class='sidesign'></span>
-		</a>
-
-		<a class='sideline' href='storage.html#root-combining-batteries'>
-			<span class='sidetext'> Root Combining Batteries </span>
 			<span class='sidesign'></span>
 		</a>
 
@@ -1023,11 +1013,11 @@ Fail, Filter Pass</td>
 </tbody>
 </table>
 <h4 id="filter-settings">Filter settings :</h4>
-<p><code>MAX</code>: conveyor will stop moving this item when target
-container(s) reach this amount<br />
-<code>MIN</code>: conveyor will only move items in excess of this amount
-from input container(s)<br />
-<code>BUFFER</code>: conveyor will only move in chunks of this size.
+<p><code>MAX</code>: The Conveyor will stop moving this item when the
+target container(s) reach this amount.<br />
+<code>MIN</code>: The Conveyor will only move items in excess of this
+amount from the input container(s)<br />
+<code>BUFFER</code>: The Conveyor will only move in chunks of this size.
 (Useful for crafting recipes in tandem with MAX to eliminate overfilling
 and trickle filling)</p>
 <p>There is a max of 12 items that can be filtered.<br />
@@ -1036,13 +1026,13 @@ Medical, Ammo, Traps, Electrical, Construction, Resources, Clothing,
 Food, Other, Fun, Tools, Components )</p>
 <h4 id="notes">Notes:</h4>
 <ul>
-<li>it can “see” a maximum of 32 storage adaptors per side, <em>you can
+<li>It can “see” a maximum of 32 storage adaptors per side, <em>you can
 “cheat” and make it pull from up to 94 boxes but its not explained here
 for now</em></li>
-<li>there is a maximum of 32 combiners/splitters between each storage
+<li>There is a maximum of 32 combiners/splitters between each storage
 adaptors and the conveyor</li>
 <li>it should move a max of 60 items per 12 stack max at a time,
-unstackable items count as 1 stack, <em>but when writting this in may
+unstackable items count as 1 stack, <em>but when writing this in may
 2023, it is broken, it act weird and in a lot of cases it will move more
 items than it should, it try to fill 12 slot in the output box no matter
 how many stack it pull from in the input box, instead of the other way
@@ -1273,7 +1263,8 @@ a fuel source</td>
 </tr>
 </tbody>
 </table>
-<p>Notes:</p>
+<p>Notes: - Can be turned on manually, by sending power to the “Turn on”
+input, or by a nearby igniter.</p>
 <hr />
 <h1 id="industrial-splitter"><a href="#industrial-splitter"
 class="anchor-link">*</a>Industrial Splitter<img

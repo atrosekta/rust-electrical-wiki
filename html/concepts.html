@@ -30,11 +30,6 @@
 			<span class='sidesign'></span>
 		</a>
 
-		<a class='sideline' href='index.html#change-log'>
-			<span class='sidetext'> Change Log </span>
-			<span class='sidesign'></span>
-		</a>
-
   </span>
 <span class="sideline foldable folded unfoldonload" onclick="toggfold(this);">
 	<span class="sidetext"> Items Details </span>
@@ -150,11 +145,6 @@
   <span class="sidelist indent2 folded">
 		<a class='sideline' href='storage.html#power-storage'>
 			<span class='sidetext'> Power Storage </span>
-			<span class='sidesign'></span>
-		</a>
-
-		<a class='sideline' href='storage.html#root-combining-batteries'>
-			<span class='sidetext'> Root Combining Batteries </span>
 			<span class='sidesign'></span>
 		</a>
 
@@ -967,7 +957,6 @@ you want to maximize the use of Consumable Power.</p>
 farms, sensor grids, ect. The Destruction Detection system should be
 included in most circuits and if limited to one, placing one after the
 battery backup is probably the best option.</p>
-<hr />
 <h1 id="battery-active-usage-vs-actual-power-consumed"><a
 href="#battery-active-usage-vs-actual-power-consumed"
 class="anchor-link">*</a>Battery Active Usage Vs Actual Power
@@ -1023,12 +1012,12 @@ Out, 1 for the Switch and 10 for the Boom Box. If we do the same thing,
 but with the Splitter, we dont have this issue because the Splitter
 controls its power flow DYNAMICALLY. <img
 src="images/branch-vs-splitter-active-usage-onoff.png" /></p>
-<p>This is helpful in situations where you have a few small<br />
-circuits where you dont want to force an Active Usage when the circuits
-are off. Now because the Electrical Branch only registers the Branch Out
-value as Active Usage and 0 for itself, we can trick batteries into
-thinking less power is being consumed. In the next picture, we have some
-examples using Auto Turrets. <img
+<p>This is helpful in situations where you have a few small circuits
+where you dont want to force an Active Usage when the circuits are off.
+Now because the Electrical Branch only registers the Branch Out value as
+Active Usage and 0 for itself, we can trick batteries into thinking less
+power is being consumed. In the next picture, we have some examples
+using Auto Turrets. <img
 src="images/active-usage-vs-pwr-consuption-turret.png" /></p>
 <p>Above, we have 1 example using 8 Electrical Branches to power 9 Auto
 Turrets. Every branch is outputting 10 power but also consuming 1 power

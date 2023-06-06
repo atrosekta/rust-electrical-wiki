@@ -30,11 +30,6 @@
 			<span class='sidesign'></span>
 		</a>
 
-		<a class='sideline' href='index.html#change-log'>
-			<span class='sidetext'> Change Log </span>
-			<span class='sidesign'></span>
-		</a>
-
   </span>
 <span class="sideline foldable folded unfoldonload" onclick="toggfold(this);">
 	<span class="sidetext"> Items Details </span>
@@ -150,11 +145,6 @@
   <span class="sidelist indent2 folded">
 		<a class='sideline' href='storage.html#power-storage'>
 			<span class='sidetext'> Power Storage </span>
-			<span class='sidesign'></span>
-		</a>
-
-		<a class='sideline' href='storage.html#root-combining-batteries'>
-			<span class='sidetext'> Root Combining Batteries </span>
 			<span class='sidesign'></span>
 		</a>
 
@@ -943,63 +933,68 @@
 			<h1 id="power-storage"><a href="#power-storage"
 class="anchor-link">*</a>Power Storage</h1>
 <hr />
-<p>Batteries can accept incoming power at the same time they are sending
-power out.<br />
-Charging rate is dependent on the amount of power coming in, with an
-efficiency of 80%.</p>
+<ul>
+<li>Batteries can accept incoming power at the same time they are
+sending power out.<br />
+</li>
+<li>Charging rate is dependent on the amount of power coming in, with an
+efficiency of 80%.</li>
+</ul>
 <blockquote>
-<p><em>Example:</em> 20rW from a Solar Panel * 0.8 = 16rW usable through
+<p><em>Example:</em> 20rW from a Solar Panel × 0.8 = 16rW usable through
 a battery.</p>
 </blockquote>
 <blockquote>
 <p><em>Example:</em> If your Medium Battery is supplying 16rW to a
-circuit,<br />
-you want to give the battery a minimum of 20rW so it doesn’t lose any
-charge.</p>
+circuit, 16 ÷ 0.8 = 20rW is the minimum you want to give the battery so
+it doesn’t lose any charge.</p>
 </blockquote>
-<p>It is recommended to supply slightly more than you need if you want
-to charge the battery.</p>
-<p>1rw will charge a Large Battery in 34 IRL days.</p>
-<p>When a battery is depleted because it is not receiving enough
-power,<br />
-no power is outputed until it charges up for a couple seconds before
-outputting to the connected circuit. The battery still not receiving
-enough power will deplete in a second and the process repeats.<br />
-If the circuit after a battery is turning on and off, you do not have
-enough power charging your batteries.</p>
-<p>When they get picked up, they lose 25% HP but retain their current
-capacity. This means if a large battery has a full charge, when you pick
-it up and place it back down, it will still have a full charge.</p>
-<p>Batteries have something called Active Usage and components have
-something called Power Consumption. this have <a
-href="concepts.html#battery-active-usage-vs-actual-power-consumed">its
-own section</a>.</p>
-<p><img src="images/battery-footprint.png" /></p>
-<hr />
-<h1 id="root-combining-batteries"><a href="#root-combining-batteries"
-class="anchor-link">*</a>Root Combining Batteries</h1>
-<p><del>it’s a sin</del><br />
-When batteries get root combined, they do not split the load as one
-would expect.<br />
-They cannot see each other, so each tries to power the whole
-circuit.</p>
+<ul>
+<li>It is recommended to supply slightly more than you need if you want
+to charge the battery.<br />
+</li>
+<li>When you combine batteries with Root Combiners, they do not split
+the load as one would expect. They cannot see each other, so each
+battery tries to power the whole circuit.</li>
+</ul>
 <blockquote>
 <p>For example, in a circuit with 2 root combined batteries supporting a
-load of 50,<br />
-it would seem to make sense that 50 power divided by 2 batteries equals
-25 per battery,<br />
-but rustricity doesn’t work like that, those 50 power would be taken and
-seen as Active Usage on both batteries, so both would be draining of 50
-power</p>
+load of 50, it would seem to make sense that 50 power divided by 2
+batteries equals 25 per battery.<br />
+Rustricity doesn’t work like that and 50 power is taken from each
+battery and seen as Active Usage on both batteries. This means both
+batteries are draining at a rate of 50.</p>
 </blockquote>
 <p>This means when we get to circuits that need more than 100 power, all
 the batteries combined will show a max Active Usage, which is used to
-calculate how fast a battery drains. so if we are forcing batteries to
+calculate how fast a battery drains. So if we are forcing batteries to
 max drain, then we might as well try to use as much as the combined
 power the batteries will provide.</p>
-<p>when using a <a href="backup.html#nih-core">Nih core</a>, it does not
-matter as much as the batteries are not supposed to be active all the
+<p>When using a bypass battery backup like the <a
+href="backup.html#nih-core">Nih core</a>, Active Usage does not matter
+because the circuits are power from the main power source most of the
 time.</p>
+<ul>
+<li>Rustricity has its own version of <a
+href="concepts.html#parallel-vs-series">Parallel and Series</a> battery
+configurations.</li>
+<li>1rw will charge a Large Battery in 34 IRL days.</li>
+<li>When a battery is depleted because it is not receiving enough power,
+no power is outputed until it charges up for a couple seconds before
+outputting to the connected circuit. The battery still not receiving
+enough power will deplete in a second and the process repeats.<br />
+</li>
+<li>If the circuit after a battery is turning on and off, you do not
+have enough power charging your batteries.</li>
+<li>When they get picked up, they lose 25% HP but retain their current
+capacity. This means if a large battery has a full charge, when you pick
+it up and place it back down, it will still have a full charge.</li>
+<li>Batteries have something called Active Usage and components have
+something called Power Consumption. Read about it in <a
+href="concepts.html#battery-active-usage-vs-actual-power-consumed">Battery
+Active Usage vs Actual Power Consumed</a>.</li>
+</ul>
+<p><img src="images/battery-footprint.png" /></p>
 <hr />
 <h1 id="small-rechargeable-battery"><a
 href="#small-rechargeable-battery" class="anchor-link">*</a>Small
@@ -1287,11 +1282,13 @@ is <strong>NOT</strong> the amount of power available. Instead, it
 represents <code>6,492,076Np</code> of Wire Capacity.</p>
 <p>Before going into the construction and operation of a Capacitor, it’s
 essential to understand the math conversions between Rust Watt Minutes
-(rWm) and Wire Capacity (Np). Both represent capacity, but they use
-different units of measurement depending on the energy storage
-container, be it a battery or a capacitor.</p>
+(rWm) and Wire Capacity (Np).</p>
+<p>Both represent capacity, but they use different units of measurement
+depending on the energy storage container, be it a battery or a
+capacitor.</p>
 <p>The Maths :<br />
 <code>rWm</code>: rust watt minute<br />
+<code>rW</code>: rust watts (commonly referred to as “power”)<br />
 <code>Np</code>: Wire Capacity<br />
 <code>∅</code>: 7.5 (Trust Me Bro)<br />
 <code>S</code>: Seconds<br />
@@ -1302,7 +1299,7 @@ container, be it a battery or a capacitor.</p>
 <code>H</code>: Hours</p>
 <p>To convert rWm into Wire Capacity(Np) we use the following
 equation:<br />
-<code>(rWm × τ = P) × ∅ = N</code></p>
+<code>(rWm × τ = P) × ∅ = Np</code></p>
 <p>To convert Wire Capacity(Np) into rWm we use the following
 equation:<br />
 <code>(Np ÷ ∅ = P) ÷ τ = rWm</code></p>
