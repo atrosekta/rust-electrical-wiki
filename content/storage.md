@@ -3,58 +3,47 @@
 
 ---
 
-Batteries can accept incoming power at the same time they are sending power out.  
-Charging rate is dependent on the amount of power coming in, with an efficiency of 80%.  
+- Batteries can accept incoming power at the same time they are sending power out.  
+- Charging rate is dependent on the amount of power coming in, with an efficiency of 80%.  
 
-> *Example:* 20rW from a Solar Panel \* 0.8 = 16rW usable through a battery.  
+> *Example:* 20rW from a Solar Panel × 0.8 = 16rW usable through a battery.  
 
-> *Example:* If your Medium Battery is supplying 16rW to a circuit,  
-  you want to give the battery a minimum of 20rW so it doesn’t lose any charge.  
+> *Example:* If your Medium Battery is supplying 16rW to a circuit, 16 ÷ 0.8 = 20rW is the minimum you want to give the battery so it doesn’t lose any charge.
 
-It is recommended to supply slightly more than you need if you want to charge the battery.  
+- It is recommended to supply slightly more than you need if you want to charge the battery.  
+- When you combine batteries with Root Combiners, they do not split the load as one would expect. They cannot see each other, so each battery tries to power the whole circuit.  
 
-1rw will charge a Large Battery in 34 IRL days.
+> For example, in a circuit with 2 root combined batteries supporting a load of 50, it would seem to make sense that 50 power divided by 2 batteries equals 25 per battery.  
+Rustricity doesn't work like that and 50 power is taken from each battery and seen as Active Usage on both batteries. This means both batteries are draining at a rate of 50.  
 
-When a battery is depleted because it is not receiving enough power,  
-no power is outputed until it charges up for a couple seconds before
+This means when we get to circuits that need more than 100 power,
+all the batteries combined will show a max Active Usage,
+which is used to calculate how fast a battery drains.
+So if we are forcing batteries to max drain,
+then we might as well try to use as much as the combined power the batteries will provide.
+
+When using a bypass battery backup like the [ Nih core ]( backup.html#nih-core ),
+Active Usage does not matter because the circuits are power from the main power source most of the time.
+
+- Rustricity has its own version of [Parallel and Series](concepts.html#parallel-vs-series) battery configurations.
+- 1rw will charge a Large Battery in 34 IRL days.
+- When a battery is depleted because it is not receiving enough power, no power is outputed until it charges up for a couple seconds before
 outputting to the connected circuit. The battery still not receiving
 enough power will deplete in a second and the process repeats.  
-If the circuit after a battery is turning on and off,
+- If the circuit after a battery is turning on and off,
 you do not have enough power charging your batteries.
-
-When they get picked up, they lose 25% HP but retain their current
+- When they get picked up, they lose 25% HP but retain their current
 capacity. This means if a large battery has a full charge, when you pick
 it up and place it back down, it will still have a full charge.
-
-Batteries have something called Active Usage and components have
-something called Power Consumption. this have [ its own section
+- Batteries have something called Active Usage and components have
+something called Power Consumption. Read about it in [Battery Active Usage vs Actual Power Consumed
 ](concepts.html#battery-active-usage-vs-actual-power-consumed).
 
 ![](images/battery-footprint.png)
 
 ---
 
-# Root Combining Batteries
 
-~~it's a sin~~  
-When batteries get root combined, they do not split the load as one would expect.  
-They cannot see each other, so each tries to power the whole circuit.  
-
-> For example, in a circuit with 2 root combined batteries supporting a load of 50,  
-  it would seem to make sense that 50 power divided by 2 batteries equals 25 per battery,  
-  but rustricity doesn't work like that, those 50 power would be taken and seen as
-  Active Usage on both batteries, so both would be draining of 50 power  
-
-This means when we get to circuits that need more than 100 power,
-all the batteries combined will show a max Active Usage,
-which is used to calculate how fast a battery drains.
-so if we are forcing batteries to max drain,
-then we might as well try to use as much as the combined power the batteries will provide.
-
-when using a [ Nih core ]( backup.html#nih-core ),
-it does not matter as much as the batteries are not supposed to be active all the time.
-
----
 
 # Small Rechargeable Battery![](images/image74.png)
 
@@ -165,11 +154,13 @@ For instance, in the image below, the displayed `6,492,076` is **NOT** the amoun
 Instead, it represents `6,492,076Np` of Wire Capacity. 
 
 Before going into the construction and operation of a Capacitor,
-it’s essential to understand the math conversions between Rust Watt Minutes (rWm) and Wire Capacity (Np).
+it’s essential to understand the math conversions between Rust Watt Minutes (rWm) and Wire Capacity (Np).  
+
 Both represent capacity, but they use different units of measurement depending on the energy storage container, be it a battery or a capacitor. 
 
 The Maths :  
 `rWm`: rust watt minute  
+`rW`: rust watts (commonly referred to as "power")  
 `Np`: Wire Capacity  
 `∅`: 7.5 (Trust Me Bro)  
 `S`: Seconds  
@@ -181,7 +172,7 @@ The Maths :
 
 
 To convert rWm into Wire Capacity(Np) we use the following equation:  
-`(rWm × τ = P) × ∅ = N`
+`(rWm × τ = P) × ∅ = Np`
 
 To convert Wire Capacity(Np) into rWm we use the following equation:  
 `(Np ÷ ∅ = P) ÷ τ = rWm`

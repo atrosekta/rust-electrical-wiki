@@ -42,8 +42,9 @@ end
 
 function ParseConf (el)
 	indent = indent + 1
-	local out = pandoc.Inlines{}
-			out:insert( foldlist( indent, 1 ) )
+	-- local out = pandoc.Inlines{}
+			-- out:insert( foldlist( indent, 1 ) )
+	local out = pandoc.Inlines( foldlist( indent, 1 ) )
 	for i, items in ipairs(el.content) do
 		local text = pandoc.utils.stringify( items[1] )
 		local item = items[1].content[1]
@@ -96,4 +97,13 @@ function foldlist (indentlvl, folded) return pandoc.RawInline('html',
 end
 
 function closespan () return pandoc.RawInline('html', '  </span>' ) end
+
+-- maybe fix wsl nil value error ?
+function Doc(body, metadata, variables)
+	return body
+end
+
+function Space()
+	return " "
+end
 
