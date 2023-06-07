@@ -1,12 +1,13 @@
 
-setTimeout( loadside , 111);
+// setTimeout( loadside , 111);
+window.addEventListener('DOMContentLoaded', loadside )
 
 function loadside() {
 	let sidenav = document.getElementById("sidenav");
-	if ( sidenav == null ) {
-		setTimeout( loadside , 111 );
-		return;
-	}
+	// if ( sidenav == null ) {
+		// setTimeout( loadside , 111 );
+		// return;
+	// }
 	sidenav.addEventListener("click", portraitClickCloseBar);
 
 	sidenav.classList.add("loaded");
@@ -71,3 +72,24 @@ function toggfold(elem, force) {
 	elem.style.height = (folded ? 0 : h+pad ) + "px";
 	elem.addEventListener("transitionend", event => { inanim = false; });
 }
+
+
+var visicnt = null
+
+fetch( "/wiki/counter/counter.php" )
+	.then( ( resp ) => resp.text() )
+	.then( ( text ) => visicnt = text )
+
+window.addEventListener('DOMContentLoaded', setcount )
+
+function setcount() {
+	if ( visicnt == null ) {
+		setTimeout( setcount, 33 )
+		console.log( "visitor count wasnt fetched yet" )
+		return
+	}
+	let counter = document.getElementById("visitorcount").innerHTML
+	if ( counter != null )
+		counter = visicnt
+}
+
