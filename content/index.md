@@ -1,6 +1,6 @@
 # The RUST Electrical Handbook
 
-*you are the <span id="visitorcount"></span>th visitor !*
+*you are the []{#visitorcount}th visitor !*
 
 ---
 
