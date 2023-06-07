@@ -88,8 +88,8 @@ function setcount() {
 		console.log( "visitor count wasnt fetched yet" )
 		return
 	}
-	let counter = document.getElementById("visitorcount").innerHTML
+	let counter = document.getElementById("visitorcount")
 	if ( counter != null )
-		counter = visicnt
+		counter.innerHTML = visicnt
 }
 

@@ -1,8 +1,6 @@
 # The RUST Electrical Handbook
 
----
-
-you are the <p id="visitorcount"></p> visitor !
+*you are the <span id="visitorcount"></span>th visitor !*
 
 ---
 
