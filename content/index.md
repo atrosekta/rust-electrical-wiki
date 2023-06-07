@@ -2,6 +2,10 @@
 
 ---
 
+you are the <p id="visitorcount"></p> visitor !
+
+---
+
 This is a work in progress, everything is subject to change,
 be reorganised or moved to some other sub pages,
 but any info still valid in game wont be removed.
