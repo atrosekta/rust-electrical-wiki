@@ -2,7 +2,7 @@
 setTimeout( loadside , 111);
 
 function loadside() {
-	var sidenav = document.getElementById("sidenav");
+	let sidenav = document.getElementById("sidenav");
 	if ( sidenav == null ) {
 		setTimeout( loadside , 111 );
 		return;
@@ -13,15 +13,15 @@ function loadside() {
 	if ( window.matchMedia("(hover:hover) and (pointer:fine)").matches )
 		document.querySelector("main").classList.add("smooth");
 
-	var unfold = document.querySelectorAll(".unfoldonload");
-	for (var i = 0; i < unfold.length; i++)
+	let unfold = document.querySelectorAll(".unfoldonload");
+	for (let i = 0; i < unfold.length; i++)
 		toggfold( unfold[i], true );
 
-	var cur = curlinkelem();
+	let cur = curlinkelem();
 	if ( !cur ) return;
 	toggfold(cur, true);
 	const scrolltocur = function() {
-		var h = cur.offsetTop - sidenav.offsetTop - (window.innerHeight/8);
+		let h = cur.offsetTop - sidenav.offsetTop - (window.innerHeight/8);
 		sidenav.scrollTo({top:h, behavior:"smooth"});
 	}
 	setTimeout( scrolltocur , 333);
@@ -39,9 +39,9 @@ function portraitClickCloseBar(e) {
 }
 
 function curlinkelem(){
-	var url = window.location.href .split("#")[0];
-	var links = document.querySelectorAll(".foldable > a");
-	for (var i = 0; i < links.length; i++)
+	let url = window.location.href .split("#")[0];
+	let links = document.querySelectorAll(".foldable > a");
+	for (let i = 0; i < links.length; i++)
 		if (url == links[i].href)
 			return links[i].parentElement;
 }
@@ -62,10 +62,10 @@ function toggfold(elem, force) {
 	inanim = true;
 	elem.classList.toggle('folded');
 	elem = elem.nextElementSibling;
-	var folded = elem.classList.toggle('folded');
-	var h = elem.scrollHeight;
-	var par = elem.parentElement;
-	var pad = parseFloat(window.getComputedStyle(par).fontSize);
+	let folded = elem.classList.toggle('folded');
+	let h = elem.scrollHeight;
+	let par = elem.parentElement;
+	let pad = parseFloat(window.getComputedStyle(par).fontSize);
 	if (par.classList.contains("sidelist"))
 		par.style.height = par.scrollHeight + (folded ? -h : h+pad) + "px";
 	elem.style.height = (folded ? 0 : h+pad ) + "px";
