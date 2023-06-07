@@ -40,16 +40,20 @@ html, body { touch-action:none; overscroll-behavior-y: none; }
 #sidebar, #sidetop, #sidetog, #sidenav
 { touch-action:none; -webkit-overflow-scrolling: touch; }
 
+/* headers anchor link */
 .anchor-link {
-  position: relative;
-	left: -1rem;
-	font-size: 3rem;
+	position: relative;
+	left: -0.4ex;
+	font-size: 2.4ex;
+	vertical-align: text-top;
 	text-decoration:none;
 	user-select: none;
 	opacity:0; 
 	transition: opacity .2s ease;
 }
-/* h1:not(:first-of-type):hover > .anchor-link, */
+h1, h2, h3, h4, h5 {
+	text-indent: -1.4ex;
+}
 h1:hover > .anchor-link,
 h2:hover > .anchor-link,
 h3:hover > .anchor-link,
