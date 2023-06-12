@@ -1,5 +1,7 @@
 # The RUST Electrical Handbook
 
+*you are the []{#visitorcount}th visitor !*
+
 ---
 
 This is a work in progress, everything is subject to change,
