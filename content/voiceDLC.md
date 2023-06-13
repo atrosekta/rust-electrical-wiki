@@ -130,7 +130,7 @@ Notes:
 - If receiving connection from a Boom Box or an Microphone Stand, the
   lights will move, flash and pulse to the audio.
 - They block the destruction detectors ability to see downstream
-- too muck of them quickly make the game laggy
+- too much of them quickly make the game laggy
 
 ---
 
