@@ -22,7 +22,7 @@ If you want to contribute to this project, there is multiple way you can do
 it by:  
 
 -  Finding a bug, spelling or grammaitical error, or making a suggestion,
-please make them on the Google Document - [Google Document](https://docs.google.com/documentd19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing)  
+please make them on the Google Document - [Google Document](https://docs.google.com/document/d/19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing)  
 - You could contribute code that fix or add to the website,
 - But the principal thing is the accuracy of the information.  
 
