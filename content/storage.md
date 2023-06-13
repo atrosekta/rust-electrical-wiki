@@ -219,7 +219,7 @@ OR :
 Prior to constructing a capacitor, it’s crucial to understand its limitations and potential issues.
 This will clarify misconceptions such as the notion of ‘infinite power’ and help identify the appropriate contexts for its use.  
 
-- It doesn’t survive server restarts. evrytime the server restarts, all of the stored power will vanish, poof gone.  
+- It doesn’t survive server restarts. everytime the server restarts, all of the stored power will vanish, poof gone.  
 - When automating energy extraction, it is possible that a flicker will be created or worse, all the power vanishes, poof gone.
 - It consumes power even when nothing is connected to it, unlike a battery that doesn’t lose power if nothing is connected to it.
 - It is not portable.
