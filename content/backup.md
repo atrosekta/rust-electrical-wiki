@@ -371,7 +371,7 @@ control which output power is actively passing through.
 
 In all the examples we have used Counters at each output. This is
 only to show you how much power each C-Bus costs to not be active.
-[Here is a Rustrician BP link to explore the C-Bus more. ](https://www.rustrician.io/?circuit%3D71c12c6e40d98dea32fb463a773b2f42)
+[Here is a Rustrician BP link to explore the C-Bus more. ](https://www.rustrician.io/?circuit=71c12c6e40d98dea32fb463a773b2f42)
 
 ---
 

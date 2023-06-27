@@ -9,7 +9,7 @@ be reorganised or moved to some other sub pages,
 but any info still valid in game wont be removed.
 
 All of the information you find here is comming from a [Google Doc file by
-@SwiftCoyote#2007](https://docs.google.com/documentd19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing),
+@SwiftCoyote#2007](https://docs.google.com/document/d/19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing),
 so thanks to him and all the people in the Rustricity Workshop
 community that contribute to it!  
 
@@ -22,7 +22,7 @@ If you want to contribute to this project, there is multiple way you can do
 it by:  
 
 -  Finding a bug, spelling or grammaitical error, or making a suggestion,
-please make them on the Google Document - [Google Document](https://docs.google.com/documentd19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing)  
+please make them on the Google Document - [Google Document](https://docs.google.com/document/d/19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing)  
 - You could contribute code that fix or add to the website,
 - But the principal thing is the accuracy of the information.  
 
