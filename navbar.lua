@@ -3,9 +3,62 @@ traverse = 'topdown'
 
 indent = -1
 
--- local Foreach
--- local ParseBarEntry
--- local ParseTocEntry
+function BulletList (blist)
+
+	local function Foreach (el, func, path)
+		indent = indent + 1
+		local out = pandoc.Inlines( foldlist( indent, 1 ) )
+		for i, item in ipairs( el.content ) do
+			local foo = func( item, path )
+			out:extend( foo )
+		end
+		indent = indent - 1
+		out:insert( closespan() )
+		print ("\nFOREACH::: ",out)
+		return out
+	end
+
+	local function ParseTocEntry( items, path )
+		local item = items[1].content[1]
+		local text = pandoc.utils.stringify( item )
+		local link = path .. item.target
+		if #items == 1 then
+			return pandoc.Inlines( linkline( text, link ) )
+		else
+		return pandoc.Inlines(
+			linkline( text, link ),
+			Foreach( items[2], ParseTocEntry, path )
+		)
+		end
+	end
+
+	local function ParseBarEntry( item )
+		local text = pandoc.utils.stringify( item[1] )
+		if item[1].content[1].t == 'Link' then
+			local htmlpath = item[1].content[1].target
+			local mdpath = 'content/' .. htmlpath:gsub("html","md")
+			return pandoc.Inlines (
+				foldlink( text, htmlpath ),
+				Foreach( FileToc( mdpath ), ParseTocEntry, htmlpath )
+			)
+		else
+		return pandoc.Inlines (
+			foldable( text ),
+			Foreach( item[2], ParseBarEntry )
+		)
+		end
+	end
+
+	local foo = Foreach( blist, ParseBarEntry )
+	print("\nFINAL:", foo )
+	return foo
+end
+
+-- function BulletList (el)
+	-- local foo = Foreach( el, ParseBarEntry )
+	-- print("\nFINAL:", foo )
+	-- return foo
+-- end
 
 function ReadFile ( path )
 	local file = assert(io.open(path, "r"), "Cannot open file '" .. path .. "'\n" )
@@ -71,15 +124,12 @@ local function ParseBarEntry( item )
 		-- ParseConf( item[2] )
 end
 
-function BulletList (el)
-	-- return ParseConf(el)
-	-- local f = Foreach( el, ParseBarEntry )
-	-- local foo = f()
-	local foo = Foreach( el, ParseBarEntry )
-	print("\nFINAL:", foo )
-	return foo
-	-- return Foreach( el, ParseBarEntry )
-end
+
+
+
+
+
+
 
 
 function ParseToc (el, path)
