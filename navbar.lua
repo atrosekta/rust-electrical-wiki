@@ -3,13 +3,9 @@ traverse = 'topdown'
 
 indent = -1
 
-function BulletList (el)
-	-- return ParseConf(el)
-	local foo = Foreach( el, ParseBarEntry )
-	print("\nFINAL:", foo )
-	return foo
-	-- return Foreach( el, ParseBarEntry )
-end
+-- local Foreach
+-- local ParseBarEntry
+-- local ParseTocEntry
 
 function ReadFile ( path )
 	local file = assert(io.open(path, "r"), "Cannot open file '" .. path .. "'\n" )
@@ -22,7 +18,8 @@ function FileToc ( path )
 	return pandoc.structure.table_of_contents( ReadFile( path ) )
 end
 
-function Foreach (el, func, path)
+-- Foreach = function (el, func, path)
+local function Foreach (el, func, path)
 	indent = indent + 1
 	local out = pandoc.Inlines( foldlist( indent, 1 ) )
 	for i, item in ipairs( el.content ) do
@@ -35,7 +32,9 @@ function Foreach (el, func, path)
 	return out
 end
 
-function ParseTocEntry( items, path )
+local function ParseTocEntry( items, path )
+-- function ParseTocEntry( items, path )
+-- ParseTocEntry = function ( items, path )
 	local item = items[1].content[1]
 	local text = pandoc.utils.stringify( item )
 	local link = path .. item.target
@@ -49,9 +48,12 @@ function ParseTocEntry( items, path )
 		-- ParseToc ( items[2], path )
 end
 
-function ParseBarEntry( item )
+local function ParseBarEntry( item )
+-- function ParseBarEntry( item )
+-- ParseBarEntry = function ( item )
 	local text = pandoc.utils.stringify( item[1] )
-	print( item[1].content[1], text )
+	-- print( item[1].content[1], text )
+		-- print ("\ndebut:::: ",Foreach( items[2], ParseTocEntry, path ))
 	-- if item.content[1].t == 'Link' then
 	if item[1].content[1].t == 'Link' then
 		local htmlpath = item[1].content[1].target
@@ -68,6 +70,17 @@ function ParseBarEntry( item )
 	)
 		-- ParseConf( item[2] )
 end
+
+function BulletList (el)
+	-- return ParseConf(el)
+	-- local f = Foreach( el, ParseBarEntry )
+	-- local foo = f()
+	local foo = Foreach( el, ParseBarEntry )
+	print("\nFINAL:", foo )
+	return foo
+	-- return Foreach( el, ParseBarEntry )
+end
+
 
 function ParseToc (el, path)
 	print( path )
