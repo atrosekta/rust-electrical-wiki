@@ -62,7 +62,7 @@ function foldable (text) return pandoc.RawInline('html', [[
 
 function foldlink (text, url) return pandoc.RawInline('html', [[
 	<span class='sideline foldable folded' onclick='toggfold(this);'>
-		<a class='sidetext' onclick='preventbubble(event);'
+		<a class='sidetext' onclick='event.stopPropagation();'
 		href=']] .. url .. [['> ]] .. text .. [[ </a>
 		<span class='sidesign'></span>
 	</span>
