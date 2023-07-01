@@ -3,46 +3,45 @@ traverse = 'topdown'
 
 Indent = -1
 
-function BulletList (blist)
+function BulletList ( elem )
+	return Foreach( nil, elem, ParseBarEntry )
+end
 
-	local function Foreach ( out, elem, func, path)
-		Indent = Indent + 1
-		local list = pandoc.Inlines( foldlist(Indent, 1) )
-		for i, item in ipairs( elem.content ) do
-			func( list, item, path )
-		end
-		Indent = Indent - 1
-		list:insert( closespan() )
-		if out then out:extend( list ) end
-		return list
+function Foreach ( out, elem, func, path)
+	Indent = Indent + 1
+	local list = pandoc.Inlines( foldlist(Indent, 1) )
+	for i, item in ipairs( elem.content ) do
+		func( list, item, path )
 	end
+	Indent = Indent - 1
+	list:insert( closespan() )
+	if out then out:extend( list ) end
+	return list
+end
 
-	local function ParseTocEntry(out, items, path )
-		local item = items[1].content[1]
-		local text = pandoc.utils.stringify( item )
-		local link = path .. item.target
-		if #items == 1 then
-			out:insert( linkline( text, link ) )
-		else
-			out:insert( linkline( text, link ) )
- 			Foreach( out, items[2], ParseTocEntry, path )
-		end
+function ParseTocEntry(out, items, path )
+	local item = items[1].content[1]
+	local text = pandoc.utils.stringify( item )
+	local link = path .. item.target
+	if #items == 1 then
+		out:insert( linkline( text, link ) )
+	else
+		out:insert( linkline( text, link ) )
+		Foreach( out, items[2], ParseTocEntry, path )
 	end
+end
 
-	local function ParseBarEntry( out, item )
-		local text = pandoc.utils.stringify( item[1] )
-		if item[1].content[1].t == 'Link' then
-			local htmlpath = item[1].content[1].target
-			local mdpath = 'content/' .. htmlpath:gsub("html","md")
-			out:insert( foldlink(text, htmlpath) )
-			Foreach( out, FileToc(mdpath), ParseTocEntry, htmlpath )
-		else
-			out:insert( foldable(text) )
-			Foreach( out, item[2], ParseBarEntry )
-		end
+function ParseBarEntry( out, item )
+	local text = pandoc.utils.stringify( item[1] )
+	if item[1].content[1].t == 'Link' then
+		local htmlpath = item[1].content[1].target
+		local mdpath = 'content/' .. htmlpath:gsub("html","md")
+		out:insert( foldlink(text, htmlpath) )
+		Foreach( out, FileToc(mdpath), ParseTocEntry, htmlpath )
+	else
+		out:insert( foldable(text) )
+		Foreach( out, item[2], ParseBarEntry )
 	end
-
-	return Foreach( nil, blist, ParseBarEntry )
 end
 
 function ReadFile ( path )
