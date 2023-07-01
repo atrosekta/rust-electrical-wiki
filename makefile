@@ -3,7 +3,7 @@ MRKDWNDIR := content
 TEXTFILES := $(wildcard ${MRKDWNDIR}/*.md)
 HTMLFILES := $(TEXTFILES:${MRKDWNDIR}/%.md=html/%.html)
 
-all: clean bar html fullbook verify
+all: clean bar fullbook html verify
 
 
 clean:
@@ -11,23 +11,25 @@ clean:
 
 html: ${HTMLFILES}
 
-verify: ;@echo;echo
+verify: ;@echo
 	./verify.sh
 
 
-bar: ;@echo;echo
+fullbook: ;@echo
+	# everything in a single page
+	sed "s/href='.*#/href='#/g" global/navbar.html > global/fullbookbar.html
+	./fullbook.sh
+
+bar: ;@echo
+	# navbar
 	pandoc --lua-filter navbar.lua navbar.md -o global/navbar.html
 
 html/%.html: ${MRKDWNDIR}/%.md ;@echo
-	# $<
-	pandoc -f markdown-blank_before_blockquote -t html \
+	# $(notdir $<)
+	title="$$(grep -F $(notdir $<) pagetitles | \
+		awk '{$$1=""; print substr($$0,2) }' )"; \
+	pandoc -f markdown-blank_before_blockquote-yaml_metadata_block -t html \
 		--lua-filter pages.lua --template template.html  \
+		--metadata title="$$title" \
 		$< -o $@ 
 
-fullbook: ;@echo;echo
-	# everything as a single page
-	sed "s/href='.*#/href='#/g" global/navbar.html > global/fullbookbar.html
-	./fullbook.sh
-	pandoc -f markdown-blank_before_blockquote-yaml_metadata_block -t html \
-		--lua-filter pages.lua --template fullbooktemplate.html  \
-		fullbook.md -o html/fullbook.html
