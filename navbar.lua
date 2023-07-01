@@ -35,8 +35,10 @@ function ParseBarEntry( out, items )
 	if item.content[1].t == 'Link' then
 		local htmlpath = item.content[1].target
 		local mdpath = 'content/' .. htmlpath:gsub("html","md")
-		out:insert( foldlink(text, htmlpath) )
-		Foreach( out, GetFileToc(mdpath), ParseTocEntry, htmlpath )
+		local toc = GetFileToc( mdpath )
+		local anchor = toc.content[1][1].content[1].target
+		out:insert( foldlink(text, htmlpath .. anchor) )
+		Foreach( out, toc, ParseTocEntry, htmlpath )
 	else
 		out:insert( foldable(text) )
 		Foreach( out, items[2], ParseBarEntry )
