@@ -4,7 +4,11 @@ traverse = 'topdown'
 indent = -1
 
 function BulletList (el)
-	return ParseConf(el)
+	-- return ParseConf(el)
+	local foo = Foreach( el, ParseBarEntry )
+	print("\nFINAL:", foo )
+	return foo
+	-- return Foreach( el, ParseBarEntry )
 end
 
 function ReadFile ( path )
@@ -18,7 +22,55 @@ function FileToc ( path )
 	return pandoc.structure.table_of_contents( ReadFile( path ) )
 end
 
+function Foreach (el, func, path)
+	indent = indent + 1
+	local out = pandoc.Inlines( foldlist( indent, 1 ) )
+	for i, item in ipairs( el.content ) do
+		local foo = func( item, path )
+		out:extend( foo )
+	end
+	indent = indent - 1
+	out:insert( closespan() )
+		print ("\nhiiii, ",out)
+	return out
+end
+
+function ParseTocEntry( items, path )
+	local item = items[1].content[1]
+	local text = pandoc.utils.stringify( item )
+	local link = path .. item.target
+	if #items == 1 then
+		return pandoc.Inlines( linkline( text, link ) )
+	end
+	return pandoc.Inlines(
+		linkline( text, link ),
+		Foreach( items[2], ParseTocEntry, path )
+	)
+		-- ParseToc ( items[2], path )
+end
+
+function ParseBarEntry( item )
+	local text = pandoc.utils.stringify( item[1] )
+	print( item[1].content[1], text )
+	-- if item.content[1].t == 'Link' then
+	if item[1].content[1].t == 'Link' then
+		local htmlpath = item[1].content[1].target
+		local mdpath = 'content/' .. htmlpath:gsub("html","md")
+		return pandoc.Inlines (
+			foldlink( text, htmlpath ),
+			Foreach( FileToc( mdpath ), ParseTocEntry, htmlpath )
+		)
+			-- ParseToc( FileToc( mdpath ), htmlpath )
+	end
+	return pandoc.Inlines (
+		foldable( text ),
+		Foreach( item[2], ParseBarEntry )
+	)
+		-- ParseConf( item[2] )
+end
+
 function ParseToc (el, path)
+	print( path )
 	indent = indent + 1
 	local out = pandoc.Inlines( foldlist( indent, 1 ) )
 	for i, items in ipairs(el.content) do
@@ -73,7 +125,6 @@ function foldable (text) return pandoc.RawInline('html', [[
 	<span class="sidesign"></span>
 </span>
 ]] ) end
--- <span class="sidelist indent1">
 
 function foldlink (text, url) return pandoc.RawInline('html', [[
 	<span class='sideline foldable folded' onclick='toggfold(this);'>
@@ -82,8 +133,6 @@ function foldlink (text, url) return pandoc.RawInline('html', [[
 		<span class='sidesign'></span>
 	</span>
 ]] ) end
-	-- <span class='sidelist indent2 folded'>
-
 
 function linkline (text, url) return pandoc.RawInline('html', [[
 		<a class='sideline' href=']] .. url .. [['>
@@ -97,13 +146,4 @@ function foldlist (indentlvl, folded) return pandoc.RawInline('html',
 end
 
 function closespan () return pandoc.RawInline('html', '  </span>' ) end
-
--- maybe fix wsl nil value error ?
-function Doc(body, metadata, variables)
-	return body
-end
-
-function Space()
-	return " "
-end
 
