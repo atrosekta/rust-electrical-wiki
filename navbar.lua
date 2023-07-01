@@ -23,36 +23,32 @@ function ParseTocEntry(out, items, path )
 	local item = items[1].content[1]
 	local text = pandoc.utils.stringify( item )
 	local link = path .. item.target
-	if #items == 1 then
-		out:insert( linkline( text, link ) )
-	else
-		out:insert( linkline( text, link ) )
+	out:insert( linkline(text, link) )
+	if #items ~= 1 then
 		Foreach( out, items[2], ParseTocEntry, path )
 	end
 end
 
-function ParseBarEntry( out, item )
-	local text = pandoc.utils.stringify( item[1] )
-	if item[1].content[1].t == 'Link' then
-		local htmlpath = item[1].content[1].target
+function ParseBarEntry( out, items )
+	local item = items[1]
+	local text = pandoc.utils.stringify( item )
+	if item.content[1].t == 'Link' then
+		local htmlpath = item.content[1].target
 		local mdpath = 'content/' .. htmlpath:gsub("html","md")
 		out:insert( foldlink(text, htmlpath) )
-		Foreach( out, FileToc(mdpath), ParseTocEntry, htmlpath )
+		Foreach( out, GetFileToc(mdpath), ParseTocEntry, htmlpath )
 	else
 		out:insert( foldable(text) )
-		Foreach( out, item[2], ParseBarEntry )
+		Foreach( out, items[2], ParseBarEntry )
 	end
 end
 
-function ReadFile ( path )
-	local file = assert(io.open(path, "r"), "Cannot open file '" .. path .. "'\n" )
+function GetFileToc ( path )
+	local file = assert( io.open( path, "r" ),
+		"Cannot open file '" .. path .. "'\n" )
 	local str = file:read("*all")
-	local doc = pandoc.read( str, 'markdown')
-	return doc
-end
-
-function FileToc ( path )
-	return pandoc.structure.table_of_contents( ReadFile( path ) )
+	local content = pandoc.read( str, 'markdown')
+	return pandoc.structure.table_of_contents( content )
 end
 
 function foldable (text) return pandoc.RawInline('html', [[
