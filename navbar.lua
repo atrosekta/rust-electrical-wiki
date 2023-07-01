@@ -5,11 +5,10 @@ indent = -1
 
 function BulletList (blist)
 
-	local function Foreach (el, func, path)
+	function Foreach (out, el, func, path)
 		indent = indent + 1
-		local out = pandoc.Inlines( foldlist( indent, 1 ) )
 		for i, item in ipairs( el.content ) do
-			local foo = func( item, path )
+			local foo = func(out, item, path )
 			out:extend( foo )
 		end
 		indent = indent - 1
@@ -18,38 +17,42 @@ function BulletList (blist)
 		return out
 	end
 
-	local function ParseTocEntry( items, path )
+	local function ParseTocEntry(out, items, path )
 		local item = items[1].content[1]
 		local text = pandoc.utils.stringify( item )
 		local link = path .. item.target
 		if #items == 1 then
 			return pandoc.Inlines( linkline( text, link ) )
 		else
-		return pandoc.Inlines(
-			linkline( text, link ),
-			Foreach( items[2], ParseTocEntry, path )
-		)
+			local recurse = Foreach(out, items[2], ParseTocEntry, path )
+			return pandoc.Inlines(
+				linkline( text, link ),
+				recurse
+			)
 		end
 	end
 
-	local function ParseBarEntry( item )
+	local function ParseBarEntry(out, item )
 		local text = pandoc.utils.stringify( item[1] )
 		if item[1].content[1].t == 'Link' then
 			local htmlpath = item[1].content[1].target
 			local mdpath = 'content/' .. htmlpath:gsub("html","md")
+			local recurse = Foreach(out, FileToc( mdpath ), ParseTocEntry, htmlpath )
 			return pandoc.Inlines (
 				foldlink( text, htmlpath ),
-				Foreach( FileToc( mdpath ), ParseTocEntry, htmlpath )
+				recurse
 			)
 		else
-		return pandoc.Inlines (
-			foldable( text ),
-			Foreach( item[2], ParseBarEntry )
-		)
+			local recurse = Foreach(out, item[2], ParseBarEntry )
+			return pandoc.Inlines (
+				foldable( text ),
+				recurse
+			)
 		end
 	end
 
-	local foo = Foreach( blist, ParseBarEntry )
+	local out = pandoc.Inlines( foldlist( indent, 1 ) )
+	local foo = Foreach(out, blist, ParseBarEntry )
 	print("\nFINAL:", foo )
 	return foo
 end
