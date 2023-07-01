@@ -1,4 +1,3 @@
-% Centralized vs Decentralized
 
 # Centralized vs Decentralized
 
