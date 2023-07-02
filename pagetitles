@@ -1,0 +1,28 @@
+
+# each line is a file with the corresponding
+# title for the page ( text shown in browser tab )
+# order doesnt matter here
+
+rf.md              RF
+switch.md          Switchs
+voiceDLC.md        Voice Prop DLC
+concepts.md        Concepts
+logic.md           Logic
+industrial.md      Industrial
+camcodes.md        Camera Codes
+sensor.md          Sensors
+light.md           Lights
+tools.md           Tools
+utils.md           Utilities
+sources.md         Power Sources
+backup.md          Battery Backups
+centralized.md     Centralization
+fireworks.md       Fireworks
+distribution.md    Distribution Systems
+defense.md         Defense
+index.md           Home Page
+smart.md           Smart Components
+water.md           Water
+storage.md         Power Storage
+fullbook.md        Whole Book
+

@@ -10,6 +10,6 @@ SO DONT EDIT IT, YOUR CHANGES WILL BE LOST !
 cat $( grep -o -P '(?<=\().*(?=\))' navbar.md \
 	| awk '{gsub("html","md"); print "content/" $1}' )
 
-} > fullbook.md
+} > content/fullbook.md
 
 # - [ View as one big page ]( fullbook.html )

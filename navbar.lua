@@ -1,70 +1,56 @@
 
 traverse = 'topdown'
 
-indent = -1
+Indent = -1
 
-function BulletList (el)
-	return ParseConf(el)
+function BulletList ( elem )
+	return Foreach( nil, elem, ParseBarEntry )
 end
 
-function ReadFile ( path )
-	local file = assert(io.open(path, "r"), "Cannot open file '" .. path .. "'\n" )
+function Foreach ( out, elem, func, path)
+	Indent = Indent + 1
+	local list = pandoc.Inlines( foldlist(Indent, 1) )
+	for i, item in ipairs( elem.content ) do
+		func( list, item, path )
+	end
+	Indent = Indent - 1
+	list:insert( closespan() )
+	if out then out:extend( list ) end
+	return list
+end
+
+function ParseTocEntry(out, items, path )
+	local item = items[1].content[1]
+	local text = pandoc.utils.stringify( item )
+	local link = path .. item.target
+	out:insert( linkline(text, link) )
+	if #items ~= 1 then
+		Foreach( out, items[2], ParseTocEntry, path )
+	end
+end
+
+function ParseBarEntry( out, items )
+	local item = items[1]
+	local text = pandoc.utils.stringify( item )
+	if item.content[1].t == 'Link' then
+		local htmlpath = item.content[1].target
+		local mdpath = 'content/' .. htmlpath:gsub("html","md")
+		local toc = GetFileToc( mdpath )
+		local anchor = toc.content[1][1].content[1].target
+		out:insert( foldlink(text, htmlpath .. anchor) )
+		Foreach( out, toc, ParseTocEntry, htmlpath )
+	else
+		out:insert( foldable(text) )
+		Foreach( out, items[2], ParseBarEntry )
+	end
+end
+
+function GetFileToc ( path )
+	local file = assert( io.open( path, "r" ),
+		"Cannot open file '" .. path .. "'\n" )
 	local str = file:read("*all")
-	local doc = pandoc.read( str, 'markdown')
-	return doc
-end
-
-function FileToc ( path )
-	return pandoc.structure.table_of_contents( ReadFile( path ) )
-end
-
-function ParseToc (el, path)
-	indent = indent + 1
-	local out = pandoc.Inlines( foldlist( indent, 1 ) )
-	for i, items in ipairs(el.content) do
-		local item = items[1].content[1]
-		local text = pandoc.utils.stringify( item )
-		local link = path .. item.target
-		if #items == 1 then
-			local line = linkline( text, link )
-			out:insert(line)
-		else
-			local line = linkline( text, link )
-			local list = ParseToc ( items[2], path )
-			out:insert(line)
-			out:extend(list)
-		end
-	end
-	indent = indent - 1
-	out:insert( closespan() )
-	return out
-end
-
-function ParseConf (el)
-	indent = indent + 1
-	-- local out = pandoc.Inlines{}
-			-- out:insert( foldlist( indent, 1 ) )
-	local out = pandoc.Inlines( foldlist( indent, 1 ) )
-	for i, items in ipairs(el.content) do
-		local text = pandoc.utils.stringify( items[1] )
-		local item = items[1].content[1]
-		local path = (item.t == 'Link') and item.target or nil
-		if path == nil then
-			local line = foldable( text, path )
-			out:insert(line)
-			local sub = ParseConf( items[2] )
-			out:extend(sub)
-		else
-			local line = foldlink( text, path )
-			out:insert(line)
-			local mdpath = 'content/' .. path:gsub("html","md")
-			local toc = ParseToc( FileToc(mdpath), path )
-			out:extend(toc)
-		end
-	end
-	indent = indent - 1
-	out:insert( closespan() )
-	return out
+	local content = pandoc.read( str, 'markdown')
+	return pandoc.structure.table_of_contents( content )
 end
 
 function foldable (text) return pandoc.RawInline('html', [[
@@ -73,17 +59,14 @@ function foldable (text) return pandoc.RawInline('html', [[
 	<span class="sidesign"></span>
 </span>
 ]] ) end
--- <span class="sidelist indent1">
 
 function foldlink (text, url) return pandoc.RawInline('html', [[
 	<span class='sideline foldable folded' onclick='toggfold(this);'>
-		<a class='sidetext' onclick='preventbubble(event);'
+		<a class='sidetext' onclick='event.stopPropagation();'
 		href=']] .. url .. [['> ]] .. text .. [[ </a>
 		<span class='sidesign'></span>
 	</span>
 ]] ) end
-	-- <span class='sidelist indent2 folded'>
-
 
 function linkline (text, url) return pandoc.RawInline('html', [[
 		<a class='sideline' href=']] .. url .. [['>
@@ -97,13 +80,4 @@ function foldlist (indentlvl, folded) return pandoc.RawInline('html',
 end
 
 function closespan () return pandoc.RawInline('html', '  </span>' ) end
-
--- maybe fix wsl nil value error ?
-function Doc(body, metadata, variables)
-	return body
-end
-
-function Space()
-	return " "
-end
 

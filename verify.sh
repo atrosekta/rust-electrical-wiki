@@ -9,6 +9,6 @@ for file in "${files[@]}"; do
 	grep -Fq "$file" navbar.md && continue
 	echo -e "WARNING file is not in sidebar :\t" "$file"
 	cat "${files[@]}" | grep -Fq "$file" && continue;
-	echo -e "neither stated in any other file :\t" "$file"
+	echo -e "\tneither stated in any other file"
 done
 
