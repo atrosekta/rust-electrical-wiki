@@ -1,5 +1,6 @@
 
 # Logic
+These components allow for programming of intelligent systems that will perform and respond to sequences of operations. Systems that use these components will often, but not limited to, follow the rules of Boolean logic.
 
 ---
 
@@ -24,10 +25,9 @@ Despawn Time        | 5 minutes
 
 Notes:
 
-- When power is applied to the Block Passthrough input on the side,
-  power will be prevented from passing though
-- When passthrough is blocked, it will also block any components active
-  usage effectively hiding them from batteries
+- When power is applied to the Block Passthrough input on the side, power will be prevented from passing though.
+- When passthrough is blocked, it will also block any components [Active Usage](powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed), effectively hiding them from batteries when offline.
+
 
 ---
 
@@ -52,29 +52,14 @@ Despawn Time        | 20 minutes
 
 Notes:
 
-- Aka, a D-Type Flip Flop
-
-&nbsp;
-
-- The Reset input will cause the Memory Cell to send power through
-  Inverted Output
-- The Set input will cause the Memory Cell to send power through Output
-- The Toggle input will cause the Memory Cell to switch the output which
-  power is going through
-- The side inputs are prioritized from top to bottom. This means if
-  power is applied to Set when power is applied to Reset or Toggle,
-  nothing will happen. If power is applied to Reset when power is
-  applied to Toggle, nothing will happen, but, if power is applied to
-  Set, it will override Reset and force the Memory Cell to send power
-  through Output
-- When switching from one output to the other, power will pass through
-  the new output first before removing power from the old output
-- The 2 outputs are currently bugged. When you try to see the power info
-  by pointing at the outputs with a Wire Tool, it will show the incoming
-  power being evenly split between both outputs. This is a visual bug.
-  100% of the power is only coming out of 1 of the outputs
-
-[ rustrician.io BP explaining the mem-cell ](https://www.rustrician.io/?circuit=7329b23650674902a215f43e5015d563)
+- Aka, a Flip Flop but has a Set, Reset and Toggle.
+- The Reset input will cause the Memory Cell to send power through Inverted Output.
+- The Set input will cause the Memory Cell to send power through Output.
+- The Toggle input will cause the Memory Cell to flip which output power is going through.
+- The side inputs are prioritized from top to bottom. This means if power is applied to Set then power is applied to Reset or Toggle, nothing will happen. If power is applied to Reset then power is applied to Toggle, nothing will happen. If power is applied to Reset then power is applied to Set, it will force the Memory Cell to send power through Output.
+- When switching from one output to the other, Output will always react before Inverted Output. 
+- The 2 outputs are currently bugged. When you try to see the power info by pointing at the outputs with a Wire Tool, it will show the incoming power being evenly split between both outputs. This is a visual bug. 100% of the power is only coming out of 1 of the outputs.
+- Here is a [ rustrician.io](https://www.rustrician.io/?circuit=7329b23650674902a215f43e5015d563) BP explaining the Memory Cell.
 
 ---
 
@@ -99,15 +84,15 @@ Despawn Time        | 5 minutes
 
 Notes:
 
-- Everyone can activate the timer
-- Only TC authorized people can set the timer
-- Timer must be powered to set duration
-- Has a default time of 30 seconds
-- Minimum time duration is 0.25 seconds
-- Maximum time duration is at least a 2 weeks IRL
-- Can only be placed on vertical walls
-- When it is not active, it will block all the components past it from
-  registering active usage on batteries
+- Everyone can activate the timer but only TC authorized people can set the timer.
+- Timer must be powered to set the duration.
+- It must also be powered first before it can be triggered as per [Power Flow](powerdistribution.html###-Power-Flow).
+- Has a default time of 30 seconds.
+- Minimum time duration is 0.25 seconds. This might be too fast for some servers and must be increased.
+- Maximum time duration has been tested to at least a 2 weeks IRL.
+- Can only be placed on vertical walls.
+- When it is not active, it will block all the components past it from registering [Active Usage](powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed) on batteries.
+
 
 ---
 
@@ -132,12 +117,11 @@ Despawn Time        | 5 minutes
 
 Notes:
 
-- When power is applied to Set, there is a 50% chance the switch will
-  change states. From passing power through to not passing power through
-  or vice versa
-- When power is applied to Reset, the switch will pass power through
-- While not passing power through, it will also block any components
-  active usage effectively hiding them from batteries
+- When power is applied to Set, there is a 50% chance the switch will change states. From passing power through to not passing power through or vice versa.
+- When power is applied to Reset, the switch will pass power through.
+- While not passing power through, it will block any components [Active Usage](powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed), effectively hiding them from batteries when offline.
+- Can be placed on all angled surfaces including the ground.
+
 
 ---
 
@@ -163,8 +147,8 @@ Despawn Time        | 5 minutes
 Notes:
 
 - The switch will pass power through from Input A OR Input B but only
-  the one that has more power avaliable
-- Can only be placed on vertical walls
+  the one that has more power avaliable.
+- Can only be placed on vertical walls.
 
 ---
 
@@ -190,9 +174,9 @@ Despawn Time        | 5 minutes
 Notes:
 
 - Input A and Input B both require power to pass power through but only
-  the input with more power will be the one to pass through
-- Great for amplifying power
-- Can only be placed on vertical walls
+  the input with more power will be the one to pass through.
+- Great for amplifying power.
+- Can only be placed on vertical walls.
 
 ---
 
@@ -218,11 +202,8 @@ Despawn Time        | 5 minutes
 Notes:
 
 - It will pass power through from either Input A or Input B but if power
-  is applied to both inputs, it will block power pass through
-
-&nbsp;
-
-- Can only be placed on vertical walls
+  is applied to both inputs, it will block power pass through.
+- Can only be placed on vertical walls.
 
 ---
 
@@ -248,22 +229,17 @@ Decay Time          | 96 hours
 
 Notes:
 
-- Holding ‘E’ with a wire tool will let you configure the counter. The
-  options are Set Target and Show Passthrough
-- Set Target lets you pick a number between 1 and 100. When the counter
-  is equal to the target number, or greater, the counter will pass power
-  through
+- To configure the Counter, with a Wire Tool in hand, look at it and hold Use(E). The options are Set Target and Show Passthrough.
+- Set Target allows for programming a number between 1 and 100. When the Counter is equal to the target number, or greater, the Counter will pass power through.
 - Show Passthrough will show the amount of incoming power.
 - When power is applied to Increment Counter, the Counter will count up
-  by 1
+  by 1.
 - When power is applied to Decrement Counter, the Counter will count
-  down by 1
+  down by 1.
 - When power is applied to Clear Counter, the Counter will reset back to
-  0
-- The Counter does not need power to count up, down or be cleared
-- When set to Show Passthrough, if it only shows 1, connect the
-  Passthrough (output) to any input on any component. This will cause
-  the counter to actually pass power through so it can show the amount.
+  0.
+- The Counter does not need power to count up, down or be cleared.
+- When set to Show Passthrough, if it only shows 1, connect the output (Passthrough) to any input on any component. This will cause the counter to actually pass power through so it can show the amount.
 - Using a Counter on the floor on its thin side, within a 1 meter
   radius, if an item like a furnace or sleeping bag is removed, the
   Counter will also disappear. When placing or removing building

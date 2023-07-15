@@ -2,15 +2,7 @@
 # Smart
 
 ---
-
-To connect the smart component with the Rust+ app, start by installing
-the app from your app store. Launch the app and sign into Steam. In
-game, join a server that has Rust+ enabled. Once on the server, hit `ESC`
-to enter the main menu. Click on Rust+. Select `Pair With Server` and in
-the app the server's info should pop up. In the app, select `Pair
-Server` and you are done.
-
-Add pictures of the process
+These components can be paired with the Rust+ app and adds a way to interact with rustricity from outside the game.
 
 ---
 
@@ -35,10 +27,8 @@ Despawn Time        | 20 minutes
 
 Notes:
 
-- Will pulse 1rW when an inventory slot changes state. An inventory slot
-  will either need to be filled or emptied for the storage monitor.
-- Can be paired with Rust+ by holding a wire tool and pressing `E` while
-  looking at the component.
+- Will pulse 1rW when an inventory slot changes state. An inventory slot will either need to be filled or emptied for the Storage Monitor to notice a change. It will not notice partial stacksize changes.
+- Can be paired with Rust+ to allow monitoring of Tool Cupboards, Large Boxes and Vending Machines.
 
 ![](images/image16.jpg)
 
@@ -66,9 +56,11 @@ Decay Time          | 48 hours
 
 Notes:
 
-- With TC authorization, look at the alarm with a Wire Tool in hand and
-  press E to set the alarms message
-- Must be placed on flat surfaces
+- Must be placed on flat surfaces.
+- Can be paired with Rust+ to receive pre-programmed messages from in-game when activated.
+- With TC authorization, look at the alarm with a Wire Tool in hand and press E to set the alarms message.
+
+![](images/alarmname.png)
 
 ---
 
@@ -94,18 +86,20 @@ Decay Time          |
 
 Notes:
 
-- Only people with TC authorization can operate the Switch
-- Can be paired with Rust+ and the Rust+ Bot
-- Link to section talking about the side inputs
-- The side inputs block the destruction detectors ability to see
+- Only people with TC authorization can operate the Switch.
+- Can be paired with Rust+ enabling the ability to turn it on and off from outside the game.
+- The [Side Inputs](uncategorizedconcepts.html##-Side-Inputs) block the [Destruction Detectors](https://www.rustrician.io/?circuit%3Dbf38168f0834f7d84fb837ac41d1818e) ability to see downstream.
 
 ---
 
-# Smart Timer
+## Common Traits
 
-Needs work
-
-![](images/image52.png)![](images/image118.png)
+- To connect the smart component with the Rust+ app, start by installing the app from your app store on a tablet or smartphone. 
+- Launch the app and sign into Steam. 
+- In game, join a server that has Rust+ enabled. 
+- Once on the server, hit ESC to enter the main menu. 
+- Click on Rust+. 
+- Select ‘Pair With Server’ and in the app the server's info should pop up. 
+- In the app, select ‘Pair Server’ and you're done. 
 
 ---
-

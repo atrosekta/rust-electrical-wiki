@@ -171,7 +171,7 @@ Where To Find       | Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, 
 Inputs/Outputs      | Power In / Water In, Water Out
 Active Usage        | 5
 Power Consumption   | 5rW
-Conversion Rate     | 5000ml/80 seconds @ 2 | 1 ratio of saltwater to freshwater
+Conversion Rate     | 62.5ml/second @ 2 | 1 ratio of saltwater to freshwater
 Fresh Water Output  | 12mL/second
 Capacity            | 10,000ml total, 5000ml per tank. Black for saltwater and blue for freshwater.  
 Despawn Time        | 20 minutes

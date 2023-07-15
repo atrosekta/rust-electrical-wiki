@@ -122,7 +122,7 @@ Notes:
 
 - There are 2 versions. The difference between the 2 is the size of
   light tiles.  
-- To change the floors settings, with TC Authorization, look at the
+- To change the floor settings, with TC Authorization, look at the
   floor and press USE(E)
 - Settings you can change are the Pattern, the Volume Sensitivity, Speed
   and Gradient.
@@ -130,7 +130,7 @@ Notes:
 - If receiving connection from a Boom Box or an Microphone Stand, the
   lights will move, flash and pulse to the audio.
 - They block the destruction detectors ability to see downstream
-- too muck of them quickly make the game laggy
+- Like all lights, placing a lot of these will cause lag.
 
 ---
 
@@ -225,3 +225,52 @@ Notes:
 
 ---
 
+# Telephone![](images/image125.png)
+
+| | |  
+|-|---|  
+Item ID             |  1234878710
+Description         | A telephone for making and receiving calls
+Crafting Recipe     | 50 Wood, 100 Metal Fragments, 1 Tech Trash
+Recycles Into       | 25 Wood, 100 Metal Fragments, 50% 1 Tech Trash
+Stack Size          | 1
+Workbench Required  | Level 1
+Research Table Cost | 75 Scrap
+Hit Points          | 150
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
+Inputs/Outputs      | Power / Call Passthrough
+Active Usage        | 1
+Power Consumption   | 1rW
+Power Output        | 1rW
+Despawn Time        | 20 minutes
+Decay Time          | 8 hours
+
+Notes:
+
+- This is actually a telephone sitting on top of a tape cassette
+  answering machine
+- The answering machine needs a cassette to work. You will require the
+  Voice Props DLC to craft cassettes.
+- TC Auth is not required to change the name or access the cassette in
+  the answering machine.
+- There are 3 types of cassettes, Short(10sec), Medium(20sec) and
+  Long(30sec). Use a Cassette Recorder to record a message then place
+  the cassette in the answering machine. When someone calls and you
+  don't answer, the caller will hear your message and leave a message of
+  their own for you to play back later.
+- After 3 rings the answering machine message will begin to play. To
+  leave a voicemail, press the spacebar when you hear the answering
+  machine's message. To listen to your voicemail, use the phone and at
+  the bottom of the screen select voicemail.
+- To use the phone, look at it and when you see MAKE CALL, press E to
+  use.
+- You can give your phone a name and it will appear in the Directory.
+  All phones are automatically assigned a number.
+- You can add phones to your contacts list by adding the phone number
+  or name.
+- Use the Directory to find the phones at monuments or random peoples
+  phones.
+- When a call comes in, the phone will output the incoming power and
+  will continue to for as long as the call is active.
+
+---

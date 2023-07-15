@@ -1,9 +1,30 @@
-% Centralized vs Decentralized
+# Getting Started
 
-# Centralized vs Decentralized
 
-# Locations
 
+# The Structure of a Base Circuit
+
+All circuits for a base follow the same basic structure. It doesn't matter if the base has 1 circuit or more, they all contain 4 main parts with an optional 5th part that does not have a static location. We have the Power Source, Battery Backup, Distribution, End Devices/Circuits and the 5th, Destruction Detection. Using the following flow chart we can help illustrate this.
+
+![](images/image38.png)
+
+Moving top to bottom, every circuit needs a power source. You have 3 choices, Windmills, Solar Panels or Small Generators. 
+
+We then take our source power and feed it to a Battery Backup. You have 2 choices, Inlines or Bypasses. Either way, you must ensure you are supplying enough power to keep your batteries charged. 
+
+From the Battery Backup, we will then need to distribute the power to the different systems in the base. There are 3 options, a Fixed or Dynamic Bus or a Configure Siphon. 
+
+The End Devices and Circuits are your turrets, lights, cameras, farms, door controllers, sensor grids, ect. It is these components that will consume the majority of power. Knowing what circuits you want to include will be important to know when deciding how much power you need to produce and how big your Battery Backup will be.
+
+The Destruction Detection system should be included in most circuits and if limited to one, placing one after the Battery Backup is probably the best option.
+
+Recommended reading:  
+[Power Generation](powergeneration.md)  
+[Power Storage](powerstorage.md)  
+[Power Distribution](powerdistribution.md)  
+[Useful Circuits](usefulcircuits.md)
+
+# Centralized vs Decentralized Theory
 When we talk about centralizing or decentralizing electricity, we are
 talking about 1 of 2 things. We are either talking about the physical
 placement of components or we are talking about power flow from a source
@@ -15,14 +36,17 @@ circuits with their own power source, battery backup, and distribution
 located in different rooms/areas for each system and section of a base.
 These 2 concepts exist on the extreme ends of a spectrum. The best
 circuit does not need to be one or the other, it can be located anywhere
-in between. There are several variables including the server, wipe
+in between.  
+
+There are several variables including the server, wipe
 length, group size, the base, server limits and electrical experience
 that will influence the solution that works for your situation. This is
 not a 1 size fits all. The best circuit is the one that does the job you
-need in the time you need it.
+need it to do when you need it to do it.
 
 First we will talk about the physical placement then we will get into
 the electrical circuit(s).
+# Locations
 
 When talking about centralizing or decentralizing the physical location
 of components, it should be understood that we are NOT talking about the
@@ -31,7 +55,7 @@ quality of life improvements of having electric heaters everywhere
 because the build location was in the arctic biome. We are NOT talking
 about the components placed on walls for the purpose of destruction
 detection. What we are talking about is the location of the core
-components. We are talking about all the circuits that power, control
+components. We are talking about the circuits that power, control
 and support the defensive systems, monitoring systems or quality of life
 systems. We are talking about the location of collection points for
 power sources, battery backups, the batteries, power buses and all the
@@ -301,24 +325,31 @@ decentralizes, for security, different parts of the same circuit. While
 it is more common to see hybridization between power sources and battery
 backup, it can also be done with distribution. To help demonstrate this
 concept, we have the following 3 examples. The first 2 are using Inline
-Battery Backups. In each example, a Counter is used to both show the
+Battery Backups because it's the easiest way to demonstrate the concept. In each example, a Counter is used to both show the
 available amount of power but also represents an end circuit like lights
 or turrets.
 
-This first example demonstrates decentralizing power by having each power source charge its own battery, with a centralized Inline backup by combining the batteries before powering a circuit. This is a less than ideal way to set up your power production and battery backup. Keep in mind that Root Combiners do not share the load between batteries. This means that a circuit needing 100 power or more will force all the batteries to have a max Active Usage of 100. 
-Read the section [Battery Active Usage vs Actual Power Consumed](concepts.html#battery-active-usage-vs-actual-power-consumed) for a more in depth explanation.  
+This first example demonstrates decentralizing the main power by having each power source charge its own battery, with a centralized Inline backup by combining the batteries before powering a circuit. This is a less than ideal way to set up your power production and battery backup. Keep in mind that Root Combiners do not share the load between batteries. This means that a circuit needing 100 power or more will force all the batteries to have a max Active Usage of 100. 
+Read the section [Battery Active Usage vs Actual Power Consumed](concepts.html#battery-active-usage-vs-actual-power-consumed) for an in depth explanation into Active Usage.  
+
 ![](images/dectr-pwr-ctr-bkp.png)  
-This kind of configuration is convenient to achieve a lot of power on 1 line but because in this example we are using Inline batteries, this becomes progressively more expensive to maintain as you need to be producing a significant amount more power than you need to. This also removes the ability to take advantage of game mechanics to minimize Active Usage on the batteries which should be a primary focus when using an Inline backup. 
 
-Let's say you want to power 18 Auto Turrets. That is 180rW plus the cost of distribution so we are going to need 2 large batteries which give us 200 power, just like in the picture above. With no load sharing between the batteries, they both will have an Active Usage of 100. With the battery’s 80% efficiency, we need to give each battery 125rW. That’s a minimum of 250rW we need to produce all the time so the batteries do not drain.
+This kind of battery configuration is convenient to achieve a lot of power on 1 line but because in this example we are using Inline batteries, this becomes progressively more expensive to maintain as you need to be producing a significant amount more power than you need to. This also removes the ability to take advantage of game mechanics to minimize Active Usage on the batteries which should be a primary focus when using an Inline backup. 
 
-If you have already read Battery Active Usage vs Actual Power Consumed, you will know it is possible to power 9 turrets from 1 battery. If we power the other 9 from the other battery, this allows each battery to only have an Active Usage of 90.  With the batteries 80%, we only need a power supply of 114rW per battery for a total of 228rW to not lose power. 
+Let's say you want to power 18 Auto Turrets. That is 180rW plus the cost of distribution so we are going to need 2 large batteries which give us 200 power, just like in the picture below. With no load sharing between the batteries, they both will have an Active Usage of 100. With the battery’s 80% efficiency, we need to give each battery 125rW. That’s a minimum of 250rW we need to produce all the time so the batteries do not drain.
 
-The larger this is scaled up, it is easy to see how much wasted power, time and materials there are. That is why it is seen as unsustainable for use in situations that are continuously online, however, if you have a circuit that spends most of its time offline and there are long enough periods of time between activity to let the batteries charge, then it becomes much more practical to just get a lot of power on a single line.  
+![](images/centbat250.png)
+
+If you have already read Battery Active Usage vs Actual Power Consumed, you will know it is possible to power 9 turrets from 1 battery. Pictured below, if we power 9 turrets from 1 battery and the other 9 from the other battery and each battery has its own power source, this allows each battery to only have an Active Usage of 90.  With the batteries 80%, we only need a power supply of 114rW per battery for a total of 228rW to not lose power. 
+
+![](images/decentbat228.png)
+
+The larger this is scaled up, it is easy to see how much wasted power, time and materials there are when trying to centralize the batteries when each battery has its own power source. That is why it is seen as unsustainable for use in situations that are continuously online, however, if you have a circuit that spends most of its time offline and there are long enough periods of time between activity to let the batteries charge, then it becomes much more practical to just get a lot of power on a single line for a shorter period of time.  
 
 In the next example we demonstrate centralizing power by combining it before the Inline batteries, while decentralizing the battery backup by letting each battery power its own circuit. This gives us the benefit of convenience by combining all the power sources into a single line then using Splitters to evenly divide that power between all batteries,
 
 ![](images/ctr-pwr-dectr-bkp.png)
+ 
 or, like in the above picture, use an
 Electrical Branch to give priority to 1 battery while evenly dividing
 the remaining power between the other 2. This gives us the ability to
@@ -326,14 +357,14 @@ prioritize batteries and also take advantage of minimizing Active Usage
 per battery depending on the circuit it is powering. This leads to a
 lower material and labor cost and wastes less power.
 
-Decentralizing the batteries is almost always the better option when creating a hybrid circuit. While the above examples have used Inline battery backups, in our 3rd example, we use a bypass battery backup known as the Nih Core. This battery backup is natively a centralized system but here, we have decentralized the batteries by dedicating them to specific systems. This is called the Decentralized Nih Core.
-![](images/decentnihcore.png)  
-It gives us the benefit of powering our circuits the majority of the time with the main power source while also providing security by separating the battery backup.  
-In the event that the core or a battery is taken out, not everything goes offline.  
-<!-- [ deadman switch link ]() -->
-There is also an optional Switch included if the system ever needs to be turned off.  
-The Switch is powered by a small battery limiting the amount of time the system can be off for.  
-This prevents a team mate from turning things off and forgetting to turn
-it back on.
+Decentralizing the batteries is almost always the better option when creating a hybrid circuit. While the above examples have used Inline battery backups, in our 3rd example, we use a bypass battery backup known as the Nih Core.
 
----
+![](images/decentnihcore.png)  
+
+This battery backup is natively a centralized system but here, we have decentralized the batteries by dedicating them to specific systems. This is called the Decentralized Nih Core. We have combined the power sources before sending power into the Nih Core. Instead of having the batteries combined, which is traditional, we are instead separating the batteries so they each only backup a smaller portion of the circuit. It still gives us the benefit of powering our circuits the majority of the time with a centralized main power source but it is also providing security by decentralizing the battery backup. If the main power source or the core is destroyed, the batteries will take over. If the main power source or the core is not destroyed but a battery is, the circuit will remain powered by the main power source. Only once both are destroyed will a circuit go offline. If you want to build in some prioritization, what circuit is last to kick on to the battery, you can replace the Main Power Splitter with an Electrical Branch.
+
+![](images/hybrid2.png)
+
+Replacing the Splitter with an Electrical Branch allows you more control over what circuit is the first to lose power and kick on to battery vs the last to kick over to battery. On the Electrical Branch, the output Branch Out lets you dedicate a specific amount of power to a circuit while the output Power Out sends out the remaining amount. As power falls, the circuit that is connected to Power Out will be the first to lose main power and switch over to battery backup before the circuit connected to Branch Out switches over to battery backup.
+
+## Distribution
