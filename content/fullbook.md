@@ -43,6 +43,7 @@ ask @3YE#6593 on Discord for more information.
 # Tools
 
 ---
+
 ## Common Traits
 
 These tools take no damage, have a stack size of 1, are default BPs and
@@ -76,6 +77,7 @@ to `0.05`. This lets anchor points be placed closer to IO connections.
 If the server has it enabled, turn on Wire Slack by holding the Wire Tool  and press `USE`, default is `E`. Hold Sprint, shift, to increase and Duck, ctrl, to decrease. This will give wires some slack rather than being straight between 2 points.
 
 ---
+
 # Wire Tool![](images/image72.png)
 
 | | |  
@@ -146,6 +148,7 @@ Notes:
 ![](images/pipes_color.jpg)
 
 ---
+
 # Hammer![](images/image93.png)
 
 | | |  
@@ -170,6 +173,7 @@ Notes :
 - Careful when wielding this powerful tool as it can create problems if you accidently start picking up items.
 
 ---
+
 # Garry's Mod Tool Gun ![](images/gun_tool.png)
 
 | | |  
@@ -257,7 +261,7 @@ Notes:
 - There needs to be a minimum of 15 meters or 5 foundations distance between turbines. This will prevent 1 turbine blocking the wind for another.
 - Requires a single square or 2 triangles to be placed on. 
 - Cannot be picked up with a hammer.
-- Check out Wind Power in the Concepts section under [Power Generation](powergeneration.md).
+- Check out Wind Power in the Concepts section under [Power Generation]( powergeneration.html ).
 
 
 ---
@@ -291,7 +295,7 @@ Notes:
 - They can be placed on the ground or flat building structure.
 - They can be picked up with a hammer but will lose 25% health.
 - 24 hours in game is 1 irl hour.
-- Check out Solar Power in the Concepts section under[Power Generation](powergeneration.md).
+- Check out Solar Power in the Concepts section under [Power Generation]( powergeneration.html ).
 
 
 
@@ -532,24 +536,28 @@ Notes:
 ---
 
 # Cable Tunnel (NOT CRAFTABLE)![](images/electric.cabletunnel.png)
-Item ID: 1835946060
-Description: Allows wires to pass through wall
-Crafting Recipe: Cannot be crafted
-Recycles Into: 5 High Quality Metal
-Stack Size: 1
-Hit Points: ∞
-Inputs/Outputs: Tunnel 1 In, Tunnel 2 In, Tunnel 3 In, Tunnel 4 In/Tunnel 1 Out, Tunnel 2 Out, Tunnel 3 Out, Tunnel 4 Out
-Active Usage: 1
-Power Consumption: 1rW
-Power Output: Input minus 1
-Despawn Time: 20 minutes
+
+Item ID           | 1835946060
+Description       | Allows wires to pass through wall
+Crafting Recipe   | Cannot be crafted
+Recycles Into     | 5 High Quality Metal
+Stack Size        | 1
+Hit Points        | ∞
+Inputs/Outputs    | Tunnel 1 In, Tunnel 2 In, Tunnel 3 In, Tunnel 4 In/Tunnel 1 Out, Tunnel 2 Out, Tunnel 3 Out, Tunnel 4 Out
+Active Usage      | 1
+Power Consumption | 1rW
+Power Output      | Input minus 1
+Despawn Time      | 20 minutes
 
 Notes: 
+
 - This item can only be spawned in by an admin.
 - It has 4 inputs with 4 matching outputs.
 - Was designed to let wires pass through walls when the idea was to not let wires pass through walls.
 
 ---
+
+
 # Switches
 
 Switches are components that, for the most part, require a player to Use(`E`). They can only be operated voluntarily and never by accident. They connect or disconnect the electrical path to a circuit, i.e. turn things on and off.
@@ -1607,6 +1615,7 @@ Notes:
 # Smart
 
 ---
+
 These components can be paired with the Rust+ app and adds a way to interact with rustricity from outside the game.
 
 ---
@@ -3578,10 +3587,10 @@ This battery backup is natively a centralized system but here, we have decentral
 
 Replacing the Splitter with an Electrical Branch allows you more control over what circuit is the first to lose power and kick on to battery vs the last to kick over to battery. On the Electrical Branch, the output Branch Out lets you dedicate a specific amount of power to a circuit while the output Power Out sends out the remaining amount. As power falls, the circuit that is connected to Power Out will be the first to lose main power and switch over to battery backup before the circuit connected to Branch Out switches over to battery backup.
 
-## Distribution
+# Distribution
 # Power Generation
 
-## Wind Power
+# Wind Power
 Generating power from the wind with Wind Turbines is the most common way to generate rustricity.  They are very reliable and can produce anywhere from 0rW up to 150rW. Wind Turbine power is greatly influenced by tower height to buildable ground and surrounding structures.
 
 How close to a Wind Turbine is too close? That answer is 15 meters or 5 square foundations. Wind Turbines are large deployables and need a lot of room. If something is blocking the path of the wind, the turbine will produce zero power until the wind shifts direction. The picture below shows an area called ‘Restricted Build Zone’. Building outside of this area is completely safe. Building within the restricted zone could lead to blocking the wind but if some precautions are taken.
@@ -3629,7 +3638,7 @@ This next image is a very nice breakdown specifically for the Inline battery bac
 
 ---
 
-## Solar Power
+# Solar Power
 
 On Console:
 Point the panels South.
@@ -3708,7 +3717,8 @@ To figure out how much time a given capacity will run for, outputting a specific
 
 
 
----# Power Storage
+---
+# Power Storage
 
 TL:DR
 - Batteries can accept incoming power at the same time they are sending power out.  
@@ -3747,13 +3757,13 @@ something called Power Consumption. Read about it in [Battery Active Usage vs Ac
 
 ---
 
-## Battery Backup
+# Battery Backup
 
 There are 2 types of battery backup systems. There are Inline Backups and there are Bypass Backups. Inline backups include the Inline and the KorrektCore. Bypass backups include the OR/Blocker and the Nih Core. Deciding which backup to use really comes down to preference. They each have their own pros and cons and some may argue that 1 is better than another in different situations. For example, if you only need to power a few turrets and are in a hurry, you might find the simplicity of the Inline backup works for you. Maybe you are working with 300rW to 1000rW and a dozen Windmills, you might find the efficiency of the Nih Core is preferred. At the end of the day, as long as the battery backup you go with, works when you need it to work, that was the right backup to choose.
 
 ---
 
-## Direct Delivery
+# Direct Delivery
 
 ![](images/image86.png)
 
@@ -3773,7 +3783,7 @@ Cons:
 
 ---
 
-## Inline
+# Inline
 
 ![](images/image26.png)
 
@@ -3800,11 +3810,12 @@ Cons:
 - Inefficient use of power at large scale
 
 ---
-## KorrektCore
+
+# KorrektCore
 
 A different kind of inline, will be added soon.
 
-## OR/Blocker 
+# OR/Blocker 
 
 ![](images/ORblocker.png)
 
@@ -3835,7 +3846,7 @@ Cons:
 
 ---
 
-## Nih Core 
+# Nih Core 
 
 ![](images/image87.png)
 
@@ -3890,7 +3901,7 @@ Cons:
 
 ---
 
-## Secondary Battery Backup
+# Secondary Battery Backup
 
 A secondary battery backup is used to provide power to a circuit after the main backup system goes offline. It's a backup of a backup. The chance that a secondary backup battery gets used on a typical day is near 0%, so why use them? Why not? The only drawback is the increased power cost. More backups and redundancy never hurts functionality, it only adds to it.
 
@@ -3933,7 +3944,7 @@ Cons:
 
 ---  
 
-## Battery Active Usage VS Actual Power Consumed
+# Battery Active Usage VS Actual Power Consumed
 
 Simply put, Active Usage is what a battery uses to calculate its charge
 and discharge rate. Power consumed is the amount of power a component
@@ -4072,7 +4083,7 @@ power, in the event a battery is lost, very bottom, all the turrets go
 offline. You will need to weigh the pros and cons and decide what is
 right to fit your needs. Read more in What is a Power Bus? 
 
-## Parallel vs Series
+# Parallel vs Series
 Lets start by learning what Parallel and Series means in real life. Connecting batteries in series increases voltage and connecting batteries in parallel increases capacity.   
 
 V = Volts (power)  
@@ -4095,7 +4106,7 @@ To wire large batteries in parallel becomes a little more complicated.
 
 ---
 
-## Nih Capacitor
+# Nih Capacitor
 
 **( will probably be fixed soon and wont work anymore )**
 
@@ -4185,7 +4196,8 @@ This will clarify misconceptions such as the notion of ‘infinite power’ and 
 
 Now, some of the advantages and benefits of the Capacitor
 
----# Power Distribution
+---
+# Power Distribution
 
 Power distribution is one of the most important things to know and
 understand when it comes to electricity.  
@@ -4199,7 +4211,7 @@ as the error message, short circuit/max depth.
 
 ---
 
-## What is a Power Bus?
+# What is a Power Bus?
 
 ![](images/image127.png)
 
@@ -4216,7 +4228,7 @@ dynamic and configurable.
 
 ---
 
-### Fixed Bus (F-Bus)
+## Fixed Bus (F-Bus)
 
 ![](images/image115.png)
 
@@ -4235,7 +4247,7 @@ power and not all.
 
 ---
 
-### Dynamic Bus (D-Bus)
+## Dynamic Bus (D-Bus)
 
 ![](images/image51.png)
 
@@ -4254,7 +4266,7 @@ previously present.
 
 ---
 
-### Configure Siphon
+## Configure Siphon
 
 ![](images/multi-c-bus.png)
 
@@ -4330,7 +4342,7 @@ only to show you how much power each C-Bus costs to not be active.
 
 ---
 
-## Short Circuit / Max Depth
+# Short Circuit / Max Depth
 
 This is a single message that is displayed for 2 different errors. At
 the time of creating this section, XOR Switches did not consume any
@@ -4338,7 +4350,7 @@ power which is why you will see them used in the pictures. The pictures
 might get remade in time but power consumption is not important when
 discussing and understanding this error.
 
-### Short Circuit
+## Short Circuit
 
 A short circuit happens when you have power feeding back into itself,
 AKA, a loop.  
@@ -4375,7 +4387,7 @@ drain on the battery. There is no advantage to this.
 
 ---
 
-### Max Depth
+## Max Depth
 
 Maximum Depth is referring to the number of components between your
 power source and the  Root Combiner. A Max Depth error will occur when
@@ -4429,9 +4441,9 @@ Batteries with a Nih Core.
 
 ---
 
-## Circuit Delay and Power Flow
+# Circuit Delay and Power Flow
 
-### Circuit Delay
+## Circuit Delay
 
 Circuit Delay at its most basic, is the amount of time it takes power to pass from one component to another. The amount of time we are talking about is incredibly small but a lot of small increases will eventually become a large amount of time. One way to test how fast rustricity is on any server is by stringing a bunch of lights together, the more the better, and watch how long it takes for all of them to turn on and off. For this reason, it is impossible to say the specific amount of time it takes for components to react but some do react slower or faster than others. 
 
@@ -4441,7 +4453,7 @@ Components with multiple outputs have their own delay, 1 for each output. For ex
 
 Batteries also have their own delay. When a battery has an Active Usage of 0, it enters an ‘Off’ state. When the time comes for the battery to power something, it must enter an ‘On’ state which has a delay equal to 2 units of time. Keeping the battery in the ‘On’ state with a Root Combiner or an Industrial Light eliminates the delay so you have power right away. 
 
-### Power Flow
+## Power Flow
 
 Power Flow is the path electricity takes through a circuit and the order of the path, aka the order of operation. We need to remember that Rustricity is nothing more than lines of code that are processed 1 after another. Not only does this create a Circuit Delay, as explained above, it also only allows 1 component at a time to perform an action. This creates the order of operation.  
 
@@ -4522,6 +4534,7 @@ We have covered how power flow is affected by components with multiple outputs. 
 
 The left side shows the order of operation when switching from battery backup to windmill power.  
 `Main Power:`  
+
     1. The amount of power coming into the Nih Core rises above 106.  
     2. Power is sent out Power Out to the next Electrical Branch.  
     3. Power coming out of Branch Out to the Memory Cell rises to its set amount.  
@@ -4540,6 +4553,7 @@ The left side shows the order of operation when switching from battery backup to
 
 The right side is the order of operation when switching from windmill power on to battery backup.  
 `Battery Power:`  
+
     1. The amount of power coming into the Nih Core drops below 106 triggering the flip but must drop below 101 for it to look like the example pictured.  
     2. Power stops coming out of Branch Out to the next Electrical Branch.  
     3. Power coming out of Branch Out to the Memory Cell drops below its set amount.  
@@ -4557,9 +4571,10 @@ The right side is the order of operation when switching from windmill power on t
     15. Power is sent out the Blocker to the OR Switch.  
     16. Power is sent out the OR Switch.  
 
-That wraps up this section. I hope I have explained things in a way that makes sense. Please comment on the [Google Doc](https://docs.google.com/documentd19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing) if you have any suggestions or questions.# Uncategorized Concepts
+That wraps up this section. I hope I have explained things in a way that makes sense. Please comment on the [Google Doc](https://docs.google.com/documentd19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing) if you have any suggestions or questions.
+# Uncategorized Concepts
 
-## Side Inputs
+# Side Inputs
 They are not bugged or broken, you just don't know how to use them yet.
 
 It is not uncommon for people to think of ‘Switch On’ and ‘Switch Off’
@@ -4671,7 +4686,7 @@ input. When moving power from one input to another, it is important
 
 ---
 
-## Smart Timer
+# Smart Timer
 
 Needs work
 
@@ -4681,7 +4696,7 @@ Needs work
 
 ---
 
-## Monuments Camera Codes
+# Monuments Camera Codes
 
 - Abandoned Military Base codes:  
 `COMPOUND****`  
@@ -4745,7 +4760,8 @@ Needs work
 `TECHCABINE****`  
 *Once inside an Underwater Lap, players will need to find a Keycard to open the Underwater Lab's CCTV Station Module since the final 4-digits of these Rust camera codes are randomly generated. With those 4-digits, players can now input the correct code to the corresponding CCTV camera.*
 
----# Useful Circuits
+---
+# Useful Circuits
 
 [Auto Smelter](https://www.rustrician.io/?circuit%3D7411c1893993574b24b6c9c911dbc0e3)
 
