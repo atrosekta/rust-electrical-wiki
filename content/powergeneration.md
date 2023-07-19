@@ -1,6 +1,6 @@
 # Power Generation
 
-## Wind Power
+# Wind Power
 Generating power from the wind with Wind Turbines is the most common way to generate rustricity.  They are very reliable and can produce anywhere from 0rW up to 150rW. Wind Turbine power is greatly influenced by tower height to buildable ground and surrounding structures.
 
 How close to a Wind Turbine is too close? That answer is 15 meters or 5 square foundations. Wind Turbines are large deployables and need a lot of room. If something is blocking the path of the wind, the turbine will produce zero power until the wind shifts direction. The picture below shows an area called ‘Restricted Build Zone’. Building outside of this area is completely safe. Building within the restricted zone could lead to blocking the wind but if some precautions are taken.
@@ -48,7 +48,7 @@ This next image is a very nice breakdown specifically for the Inline battery bac
 
 ---
 
-## Solar Power
+# Solar Power
 
 On Console:
 Point the panels South.

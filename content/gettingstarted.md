@@ -367,4 +367,4 @@ This battery backup is natively a centralized system but here, we have decentral
 
 Replacing the Splitter with an Electrical Branch allows you more control over what circuit is the first to lose power and kick on to battery vs the last to kick over to battery. On the Electrical Branch, the output Branch Out lets you dedicate a specific amount of power to a circuit while the output Power Out sends out the remaining amount. As power falls, the circuit that is connected to Power Out will be the first to lose main power and switch over to battery backup before the circuit connected to Branch Out switches over to battery backup.
 
-## Distribution
+# Distribution

@@ -12,7 +12,7 @@ as the error message, short circuit/max depth.
 
 ---
 
-## What is a Power Bus?
+# What is a Power Bus?
 
 ![](images/image127.png)
 
@@ -29,7 +29,7 @@ dynamic and configurable.
 
 ---
 
-### Fixed Bus (F-Bus)
+## Fixed Bus (F-Bus)
 
 ![](images/image115.png)
 
@@ -48,7 +48,7 @@ power and not all.
 
 ---
 
-### Dynamic Bus (D-Bus)
+## Dynamic Bus (D-Bus)
 
 ![](images/image51.png)
 
@@ -67,7 +67,7 @@ previously present.
 
 ---
 
-### Configure Siphon
+## Configure Siphon
 
 ![](images/multi-c-bus.png)
 
@@ -143,7 +143,7 @@ only to show you how much power each C-Bus costs to not be active.
 
 ---
 
-## Short Circuit / Max Depth
+# Short Circuit / Max Depth
 
 This is a single message that is displayed for 2 different errors. At
 the time of creating this section, XOR Switches did not consume any
@@ -151,7 +151,7 @@ power which is why you will see them used in the pictures. The pictures
 might get remade in time but power consumption is not important when
 discussing and understanding this error.
 
-### Short Circuit
+## Short Circuit
 
 A short circuit happens when you have power feeding back into itself,
 AKA, a loop.  
@@ -188,7 +188,7 @@ drain on the battery. There is no advantage to this.
 
 ---
 
-### Max Depth
+## Max Depth
 
 Maximum Depth is referring to the number of components between your
 power source and the  Root Combiner. A Max Depth error will occur when
@@ -242,9 +242,9 @@ Batteries with a Nih Core.
 
 ---
 
-## Circuit Delay and Power Flow
+# Circuit Delay and Power Flow
 
-### Circuit Delay
+## Circuit Delay
 
 Circuit Delay at its most basic, is the amount of time it takes power to pass from one component to another. The amount of time we are talking about is incredibly small but a lot of small increases will eventually become a large amount of time. One way to test how fast rustricity is on any server is by stringing a bunch of lights together, the more the better, and watch how long it takes for all of them to turn on and off. For this reason, it is impossible to say the specific amount of time it takes for components to react but some do react slower or faster than others. 
 
@@ -254,7 +254,7 @@ Components with multiple outputs have their own delay, 1 for each output. For ex
 
 Batteries also have their own delay. When a battery has an Active Usage of 0, it enters an ‘Off’ state. When the time comes for the battery to power something, it must enter an ‘On’ state which has a delay equal to 2 units of time. Keeping the battery in the ‘On’ state with a Root Combiner or an Industrial Light eliminates the delay so you have power right away. 
 
-### Power Flow
+## Power Flow
 
 Power Flow is the path electricity takes through a circuit and the order of the path, aka the order of operation. We need to remember that Rustricity is nothing more than lines of code that are processed 1 after another. Not only does this create a Circuit Delay, as explained above, it also only allows 1 component at a time to perform an action. This creates the order of operation.  
 
@@ -335,6 +335,7 @@ We have covered how power flow is affected by components with multiple outputs. 
 
 The left side shows the order of operation when switching from battery backup to windmill power.  
 `Main Power:`  
+
     1. The amount of power coming into the Nih Core rises above 106.  
     2. Power is sent out Power Out to the next Electrical Branch.  
     3. Power coming out of Branch Out to the Memory Cell rises to its set amount.  
@@ -353,6 +354,7 @@ The left side shows the order of operation when switching from battery backup to
 
 The right side is the order of operation when switching from windmill power on to battery backup.  
 `Battery Power:`  
+
     1. The amount of power coming into the Nih Core drops below 106 triggering the flip but must drop below 101 for it to look like the example pictured.  
     2. Power stops coming out of Branch Out to the next Electrical Branch.  
     3. Power coming out of Branch Out to the Memory Cell drops below its set amount.  

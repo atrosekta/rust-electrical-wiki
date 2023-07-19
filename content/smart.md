@@ -2,6 +2,7 @@
 # Smart
 
 ---
+
 These components can be paired with the Rust+ app and adds a way to interact with rustricity from outside the game.
 
 ---

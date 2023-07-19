@@ -1,6 +1,6 @@
 # Uncategorized Concepts
 
-## Side Inputs
+# Side Inputs
 They are not bugged or broken, you just don't know how to use them yet.
 
 It is not uncommon for people to think of ‘Switch On’ and ‘Switch Off’
@@ -112,7 +112,7 @@ input. When moving power from one input to another, it is important
 
 ---
 
-## Smart Timer
+# Smart Timer
 
 Needs work
 
@@ -122,7 +122,7 @@ Needs work
 
 ---
 
-## Monuments Camera Codes
+# Monuments Camera Codes
 
 - Abandoned Military Base codes:  
 `COMPOUND****`  

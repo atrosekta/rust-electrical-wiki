@@ -37,13 +37,13 @@ something called Power Consumption. Read about it in [Battery Active Usage vs Ac
 
 ---
 
-## Battery Backup
+# Battery Backup
 
 There are 2 types of battery backup systems. There are Inline Backups and there are Bypass Backups. Inline backups include the Inline and the KorrektCore. Bypass backups include the OR/Blocker and the Nih Core. Deciding which backup to use really comes down to preference. They each have their own pros and cons and some may argue that 1 is better than another in different situations. For example, if you only need to power a few turrets and are in a hurry, you might find the simplicity of the Inline backup works for you. Maybe you are working with 300rW to 1000rW and a dozen Windmills, you might find the efficiency of the Nih Core is preferred. At the end of the day, as long as the battery backup you go with, works when you need it to work, that was the right backup to choose.
 
 ---
 
-## Direct Delivery
+# Direct Delivery
 
 ![](images/image86.png)
 
@@ -63,7 +63,7 @@ Cons:
 
 ---
 
-## Inline
+# Inline
 
 ![](images/image26.png)
 
@@ -90,11 +90,12 @@ Cons:
 - Inefficient use of power at large scale
 
 ---
-## KorrektCore
+
+# KorrektCore
 
 A different kind of inline, will be added soon.
 
-## OR/Blocker 
+# OR/Blocker 
 
 ![](images/ORblocker.png)
 
@@ -125,7 +126,7 @@ Cons:
 
 ---
 
-## Nih Core 
+# Nih Core 
 
 ![](images/image87.png)
 
@@ -180,7 +181,7 @@ Cons:
 
 ---
 
-## Secondary Battery Backup
+# Secondary Battery Backup
 
 A secondary battery backup is used to provide power to a circuit after the main backup system goes offline. It's a backup of a backup. The chance that a secondary backup battery gets used on a typical day is near 0%, so why use them? Why not? The only drawback is the increased power cost. More backups and redundancy never hurts functionality, it only adds to it.
 
@@ -223,7 +224,7 @@ Cons:
 
 ---  
 
-## Battery Active Usage VS Actual Power Consumed
+# Battery Active Usage VS Actual Power Consumed
 
 Simply put, Active Usage is what a battery uses to calculate its charge
 and discharge rate. Power consumed is the amount of power a component
@@ -362,7 +363,7 @@ power, in the event a battery is lost, very bottom, all the turrets go
 offline. You will need to weigh the pros and cons and decide what is
 right to fit your needs. Read more in What is a Power Bus? 
 
-## Parallel vs Series
+# Parallel vs Series
 Lets start by learning what Parallel and Series means in real life. Connecting batteries in series increases voltage and connecting batteries in parallel increases capacity.   
 
 V = Volts (power)  
@@ -385,7 +386,7 @@ To wire large batteries in parallel becomes a little more complicated.
 
 ---
 
-## Nih Capacitor
+# Nih Capacitor
 
 **( will probably be fixed soon and wont work anymore )**
 
