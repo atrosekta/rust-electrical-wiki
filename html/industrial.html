@@ -1037,6 +1037,9 @@ unstackable items count as 1 stack, <em>but when writing this in may
 items than it should, it try to fill 12 slot in the output box no matter
 how many stack it pull from in the input box, instead of the other way
 around …</em></li>
+<li>Powered conveyors retain their on/off state during a server
+restart,<br />
+but unpowered conveyors lose their on/off state.</li>
 <li>you can trick a conveyor into seeing the same box multiple times,
 resulting in a “boosted output” that move a lot more items at a
 time</li>
@@ -1263,8 +1266,15 @@ a fuel source</td>
 </tr>
 </tbody>
 </table>
-<p>Notes: - Can be turned on manually, by sending power to the “Turn on”
-input, or by a nearby igniter.</p>
+<p>Notes:</p>
+<ul>
+<li>Can be turned on manually, by sending power to the “Turn on” input,
+or by a nearby igniter.<br />
+</li>
+<li>Like conveyors, powered furnaces retain their on/off state during a
+server restart,<br />
+but unpowered furnaces lose their on/off state.</li>
+</ul>
 <hr />
 <h1 id="industrial-splitter"><a href="#industrial-splitter"
 class="anchor-link">*</a>Industrial Splitter<img

@@ -45,6 +45,8 @@ Construction, Resources, Clothing, Food, Other, Fun, Tools, Components )
   it act weird and in a lot of cases it will move more items than it should,
   it try to fill 12 slot in the output box no matter how many stack it pull from in the input box,
   instead of the other way around ...*
+- Powered conveyors retain their on/off state during a server restart,  
+  but unpowered conveyors lose their on/off state.
 - you can trick a conveyor into seeing the same box multiple times,
   resulting in a "boosted output" that move a lot more items at a time
 - there is currently a bug when it is depositing into any type of smelter
@@ -122,8 +124,10 @@ Transfer Rate             |
 Despawn Time              |
 Decay Time                |
 
-Notes: 
-- Can be turned on manually, by sending power to the “Turn on” input, or by a nearby igniter.
+Notes:  
+
+- Can be turned on manually, by sending power to the “Turn on” input, or by a nearby igniter.  
+- Like conveyors, powered furnaces retain their on/off state during a server restart, but unpowered furnaces lose their on/off state.  
 
 ---
 

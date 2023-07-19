@@ -1,17 +1,18 @@
 # The RUST Electrical Handbook
 
+*you are the []{#visitorcount}th visitor !*
+
 ---
 
 This is a work in progress, everything is subject to change,
 be reorganised or moved to some other sub pages,
 but any info still valid in game wont be removed.
 
-All of the information you find here is comming from a [Google Doc file by
-@SwiftCoyote](https://docs.google.com/documentd19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing),
+All of the information you find here is comming from a [Google Doc](https://docs.google.com/document/d/19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing) by@SwiftCoyote,
 so thanks to him and all the people in the Rustricity Workshop
 community that contribute to it! The Google Doc will always be a little more update then this website as the website needs to be rebuilt after each change.   
 
-A massive Thank You to @3YE#6593 on Discord for creating the website and
+A massive Thank You to @3YE on Discord for creating the website and
 teaching me (SwiftCoyote) how to update and maintain it. 
 
 ---
@@ -20,7 +21,7 @@ If you want to contribute to this project, there is multiple way you can do
 it by:  
 
 -  Finding a bug, spelling or grammaitical error, or making a suggestion,
-please make them on the Google Document - [Google Document](https://docs.google.com/documentd19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing)  
+please make them on the Google Document - [Google Document](https://docs.google.com/document/d/19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing)  
 - You could contribute code that fix or add to the website,
 - But the principal thing is the accuracy of the information.  
 

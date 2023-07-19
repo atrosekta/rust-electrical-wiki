@@ -47,7 +47,7 @@ body {
 main {
 	overflow-x:hidden;
 	overflow-y:scroll;
-	padding: 0 16vw;
+	padding: 0 14vw;
 	padding-bottom: 16rem;
 }
 .folded main {
