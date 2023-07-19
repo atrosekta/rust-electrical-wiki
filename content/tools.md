@@ -2,6 +2,7 @@
 # Tools
 
 ---
+
 ## Common Traits
 
 These tools take no damage, have a stack size of 1, are default BPs and
@@ -35,6 +36,7 @@ to `0.05`. This lets anchor points be placed closer to IO connections.
 If the server has it enabled, turn on Wire Slack by holding the Wire Tool  and press `USE`, default is `E`. Hold Sprint, shift, to increase and Duck, ctrl, to decrease. This will give wires some slack rather than being straight between 2 points.
 
 ---
+
 # Wire Tool![](images/image72.png)
 
 | | |  
@@ -105,6 +107,7 @@ Notes:
 ![](images/pipes_color.jpg)
 
 ---
+
 # Hammer![](images/image93.png)
 
 | | |  
@@ -129,6 +132,7 @@ Notes :
 - Careful when wielding this powerful tool as it can create problems if you accidently start picking up items.
 
 ---
+
 # Garry's Mod Tool Gun ![](images/gun_tool.png)
 
 | | |  

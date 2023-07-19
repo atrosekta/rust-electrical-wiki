@@ -96,21 +96,24 @@ Notes:
 ---
 
 # Cable Tunnel (NOT CRAFTABLE)![](images/electric.cabletunnel.png)
-Item ID: 1835946060
-Description: Allows wires to pass through wall
-Crafting Recipe: Cannot be crafted
-Recycles Into: 5 High Quality Metal
-Stack Size: 1
-Hit Points: ∞
-Inputs/Outputs: Tunnel 1 In, Tunnel 2 In, Tunnel 3 In, Tunnel 4 In/Tunnel 1 Out, Tunnel 2 Out, Tunnel 3 Out, Tunnel 4 Out
-Active Usage: 1
-Power Consumption: 1rW
-Power Output: Input minus 1
-Despawn Time: 20 minutes
+
+Item ID           | 1835946060
+Description       | Allows wires to pass through wall
+Crafting Recipe   | Cannot be crafted
+Recycles Into     | 5 High Quality Metal
+Stack Size        | 1
+Hit Points        | ∞
+Inputs/Outputs    | Tunnel 1 In, Tunnel 2 In, Tunnel 3 In, Tunnel 4 In/Tunnel 1 Out, Tunnel 2 Out, Tunnel 3 Out, Tunnel 4 Out
+Active Usage      | 1
+Power Consumption | 1rW
+Power Output      | Input minus 1
+Despawn Time      | 20 minutes
 
 Notes: 
+
 - This item can only be spawned in by an admin.
 - It has 4 inputs with 4 matching outputs.
 - Was designed to let wires pass through walls when the idea was to not let wires pass through walls.
 
 ---
+

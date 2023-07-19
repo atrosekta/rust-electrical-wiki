@@ -1,5 +1,6 @@
 
 ign.*
+.creds
 
 # in gitignore so we dont commit those files accidentally
 # but should force commit them in main branch when rebuilding

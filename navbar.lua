@@ -49,7 +49,7 @@ function GetFileToc ( path )
 	local file = assert( io.open( path, "r" ),
 		"Cannot open file '" .. path .. "'\n" )
 	local str = file:read("*all")
-	local content = pandoc.read( str, 'markdown')
+	local content = pandoc.read( str, 'markdown-yaml_metadata_block')
 	return pandoc.structure.table_of_contents( content )
 end
 

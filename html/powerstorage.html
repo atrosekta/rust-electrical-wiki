@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>powerstorage</title>
+		<link rel="stylesheet" href="global/style.css">
+		<link rel="stylesheet" href="global/sidebar.css">
+		<link rel="stylesheet" href="global/fix.css">
+		<script src="global/sidebar.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
+		<meta name="darkreader-lock">
+	</head>
+	<body>
+
+		<div id="sidebar">
+			<span id="sidetop" class="sidelist">
+				<span id="sidetog" class="sidetext" onclick="toggside();"></span>
+			</span>
+			<span id="sidenav">
+				  <span class="sidelist indent0 folded">
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='event.stopPropagation();'
+		href='index.html#the-rust-electrical-handbook'> Home </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent1 folded">
+		<a class='sideline' href='index.html#the-rust-electrical-handbook'>
+			<span class='sidetext'> The RUST Electrical Handbook </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+<span class="sideline foldable folded unfoldonload" onclick="toggfold(this);">
+	<span class="sidetext"> Component Details </span>
+	<span class="sidesign"></span>
+</span>
+
+  <span class="sidelist indent1 folded">
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='event.stopPropagation();'
+		href='tools.html#tools'> Tools </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='tools.html#tools'>
+			<span class='sidetext'> Tools </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='tools.html#common-traits'>
+			<span class='sidetext'> Common Traits </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+		<a class='sideline' href='tools.html#wire-tool'>
+			<span class='sidetext'> Wire Tool </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#hose-tool'>
+			<span class='sidetext'> Hose Tool </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#pipe-tool'>
+			<span class='sidetext'> Pipe Tool  </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#hammer'>
+			<span class='sidetext'> Hammer </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='tools.html#garrys-mod-tool-gun'>
+			<span class='sidetext'> Garry’s Mod Tool Gun  </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='event.stopPropagation();'
+		href='sources.html#power-sources'> Power Sources </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='sources.html#power-sources'>
+			<span class='sidetext'> Power Sources </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sources.html#test-generator'>
+			<span class='sidetext'> Test Generator  </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sources.html#wind-turbine'>
+			<span class='sidetext'> Wind Turbine </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sources.html#large-solar-panel'>
+			<span class='sidetext'> Large Solar Panel </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sources.html#small-generator'>
+			<span class='sidetext'> Small Generator </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='event.stopPropagation();'
+		href='storage.html#power-storage'> Power Storage </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='storage.html#power-storage'>
+			<span class='sidetext'> Power Storage </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='storage.html#small-rechargeable-battery'>
+			<span class='sidetext'> Small Rechargeable Battery </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='storage.html#medium-rechargeable-battery'>
+			<span class='sidetext'> Medium Rechargeable Battery </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='storage.html#large-battery'>
+			<span class='sidetext'> Large Battery </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='event.stopPropagation();'
+		href='distribution.html#power-distribution'> Power Distribution </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='distribution.html#power-distribution'>
+			<span class='sidetext'> Power Distribution </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='distribution.html#root-combiner'>
+			<span class='sidetext'> Root Combiner </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='distribution.html#electrical-branch'>
+			<span class='sidetext'> Electrical Branch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='distribution.html#splitter'>
+			<span class='sidetext'> Splitter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='distribution.html#cable-tunnel-not-craftable'>
+			<span class='sidetext'> Cable Tunnel (NOT CRAFTABLE) </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='event.stopPropagation();'
+		href='switch.html#switches'> Switches </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='switch.html#switches'>
+			<span class='sidetext'> Switches </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='switch.html#switch'>
+			<span class='sidetext'> Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='switch.html#button'>
+			<span class='sidetext'> Button </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='switch.html#reactive-target'>
+			<span class='sidetext'> Reactive Target </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='event.stopPropagation();'
+		href='sensor.html#sensors'> Sensors </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='sensor.html#sensors'>
+			<span class='sidetext'> Sensors </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sensor.html#hbhf-sensor'>
+			<span class='sidetext'> HBHF Sensor </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sensor.html#laser-detector'>
+			<span class='sidetext'> Laser Detector </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='sensor.html#pressure-pad'>
+			<span class='sidetext'> Pressure Pad </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='event.stopPropagation();'
+		href='logic.html#logic'> Logic </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='logic.html#logic'>
+			<span class='sidetext'> Logic </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#blocker'>
+			<span class='sidetext'> Blocker </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#memory-cell'>
+			<span class='sidetext'> Memory Cell </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#timer'>
+			<span class='sidetext'> Timer </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#rand-switch'>
+			<span class='sidetext'> RAND Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#or-switch'>
+			<span class='sidetext'> OR Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#and-switch'>
+			<span class='sidetext'> AND Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#xor-switch'>
+			<span class='sidetext'> XOR Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='logic.html#counter'>
+			<span class='sidetext'> Counter </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='event.stopPropagation();'
+		href='rf.html#radio-frequency-rf'> Radio Frequency RF </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='rf.html#radio-frequency-rf'>
+			<span class='sidetext'> Radio Frequency (RF) </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='rf.html#common-traits'>
+			<span class='sidetext'> Common Traits </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+		<a class='sideline' href='rf.html#rf-broadcaster'>
+			<span class='sidetext'> RF Broadcaster </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#rf-receiver'>
+			<span class='sidetext'> RF Receiver </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#rf-transmitter'>
+			<span class='sidetext'> RF Transmitter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#rf-pager'>
+			<span class='sidetext'> RF Pager </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='rf.html#timed-explosive-charge'>
+			<span class='sidetext'> Timed Explosive Charge </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='event.stopPropagation();'
+		href='light.html#lights'> Lights </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='light.html#lights'>
+			<span class='sidetext'> Lights </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#flasher-light'>
+			<span class='sidetext'> Flasher Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#siren-light'>
+			<span class='sidetext'> Siren Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#ceiling-light'>
+			<span class='sidetext'> Ceiling Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#simple-light'>
+			<span class='sidetext'> Simple Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#deluxe-christmas-lights'>
+			<span class='sidetext'> Deluxe Christmas Lights </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#search-light'>
+			<span class='sidetext'> Search Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#small-neon-sign'>
+			<span class='sidetext'> Small Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#medium-neon-sign'>
+			<span class='sidetext'> Medium Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#medium-animated-neon-sign'>
+			<span class='sidetext'> Medium Animated Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#large-neon-sign'>
+			<span class='sidetext'> Large Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#large-animated-neon-sign'>
+			<span class='sidetext'> Large Animated Neon Sign </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#industrial-wall-light'>
+			<span class='sidetext'> Industrial Wall Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#green-industrial-light'>
+			<span class='sidetext'> Green Industrial Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#red-industrial-light'>
+			<span class='sidetext'> Red Industrial Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='light.html#strobe-light'>
+			<span class='sidetext'> Strobe Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='event.stopPropagation();'
+		href='smart.html#smart'> Smart </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='smart.html#smart'>
+			<span class='sidetext'> Smart </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='smart.html#storage-monitor'>
+			<span class='sidetext'> Storage Monitor </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='smart.html#smart-alarm'>
+			<span class='sidetext'> Smart Alarm </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='smart.html#smart-switch'>
+			<span class='sidetext'> Smart Switch </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='smart.html#common-traits'>
+			<span class='sidetext'> Common Traits </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='event.stopPropagation();'
+		href='utils.html#utilities'> Utilities </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='utils.html#utilities'>
+			<span class='sidetext'> Utilities </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#door-controller'>
+			<span class='sidetext'> Door Controller </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#igniter'>
+			<span class='sidetext'> Igniter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#ptz-cctv-camera'>
+			<span class='sidetext'> PTZ CCTV Camera </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#cctv-camera'>
+			<span class='sidetext'> CCTV Camera </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#electric-heater'>
+			<span class='sidetext'> Electric Heater </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#modular-car-lift'>
+			<span class='sidetext'> Modular Car Lift </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#elevator'>
+			<span class='sidetext'> Elevator </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#audio-alarm'>
+			<span class='sidetext'> Audio Alarm </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#drone'>
+			<span class='sidetext'> Drone </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#computer-station'>
+			<span class='sidetext'> Computer Station </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#fogger-3000'>
+			<span class='sidetext'> Fogger-3000 </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='utils.html#snow-machine'>
+			<span class='sidetext'> Snow Machine </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='event.stopPropagation();'
+		href='defense.html#defense'> Defense </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='defense.html#defense'>
+			<span class='sidetext'> Defense </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='defense.html#sam-site'>
+			<span class='sidetext'> SAM Site </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='defense.html#auto-turret'>
+			<span class='sidetext'> Auto Turret </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='defense.html#tesla-coil'>
+			<span class='sidetext'> Tesla Coil </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='event.stopPropagation();'
+		href='water.html#water'> Water </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='water.html#water'>
+			<span class='sidetext'> Water </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#what-is-the-water-system'>
+			<span class='sidetext'> What is the water system? </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#common-traits'>
+			<span class='sidetext'> Common Traits </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#large-water-catcher'>
+			<span class='sidetext'> Large Water Catcher </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#small-water-catcher'>
+			<span class='sidetext'> Small Water Catcher </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#water-barrel'>
+			<span class='sidetext'> Water Barrel </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#water-pump'>
+			<span class='sidetext'> Water Pump </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#powered-water-purifier'>
+			<span class='sidetext'> Powered Water Purifier </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#fuel-tank-vehicle-module'>
+			<span class='sidetext'> Fuel Tank Vehicle Module </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#fluid-switch-pump'>
+			<span class='sidetext'> Fluid Switch & Pump </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#fluid-combiner'>
+			<span class='sidetext'> Fluid Combiner </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#fluid-splitter'>
+			<span class='sidetext'> Fluid Splitter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='water.html#sprinkler'>
+			<span class='sidetext'> Sprinkler </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='event.stopPropagation();'
+		href='industrial.html#industrial'> Industrial </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='industrial.html#industrial'>
+			<span class='sidetext'> Industrial </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#industrial-conveyor'>
+			<span class='sidetext'> Industrial Conveyor </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#industrial-crafter'>
+			<span class='sidetext'> Industrial Crafter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#storage-adapter'>
+			<span class='sidetext'> Storage Adapter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#electric-furnace'>
+			<span class='sidetext'> Electric Furnace </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#industrial-splitter'>
+			<span class='sidetext'> Industrial Splitter </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='industrial.html#industrial-combiner'>
+			<span class='sidetext'> Industrial Combiner </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='event.stopPropagation();'
+		href='voiceDLC.html#voice-props-pack-dlc'> Voice Props Pack DLC </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='voiceDLC.html#voice-props-pack-dlc'>
+			<span class='sidetext'> Voice Props Pack DLC </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#boom-box'>
+			<span class='sidetext'> Boom Box </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#connected-speaker'>
+			<span class='sidetext'> Connected Speaker </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#disco-ball'>
+			<span class='sidetext'> Disco Ball </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#disco-floor'>
+			<span class='sidetext'> Disco Floor </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#laser-light'>
+			<span class='sidetext'> Laser Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#microphone-stand'>
+			<span class='sidetext'> Microphone Stand </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#sound-light'>
+			<span class='sidetext'> Sound Light </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='voiceDLC.html#telephone'>
+			<span class='sidetext'> Telephone </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='event.stopPropagation();'
+		href='fireworks.html#fireworks'> Fireworks </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='fireworks.html#fireworks'>
+			<span class='sidetext'> Fireworks </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#volcano-firework'>
+			<span class='sidetext'> Volcano Firework </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#roman-candle'>
+			<span class='sidetext'> Roman Candle </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#boomer'>
+			<span class='sidetext'> Boomer </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#champagne-boomer'>
+			<span class='sidetext'> Champagne Boomer </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='fireworks.html#pattern-boomer'>
+			<span class='sidetext'> Pattern Boomer </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+<span class="sideline foldable folded unfoldonload" onclick="toggfold(this);">
+	<span class="sidetext"> Concepts </span>
+	<span class="sidesign"></span>
+</span>
+
+  <span class="sidelist indent1 folded">
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='event.stopPropagation();'
+		href='gettingstarted.html#getting-started'> Getting Started </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='gettingstarted.html#getting-started'>
+			<span class='sidetext'> Getting Started </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='gettingstarted.html#the-structure-of-a-base-circuit'>
+			<span class='sidetext'> The Structure of a Base Circuit </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='gettingstarted.html#centralized-vs-decentralized-theory'>
+			<span class='sidetext'> Centralized vs Decentralized Theory </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='gettingstarted.html#centralized-location'>
+			<span class='sidetext'> Centralized Location </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='gettingstarted.html#decentralized-locations'>
+			<span class='sidetext'> Decentralized Locations </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+		<a class='sideline' href='gettingstarted.html#circuits'>
+			<span class='sidetext'> Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='gettingstarted.html#centralized-circuits'>
+			<span class='sidetext'> Centralized Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='gettingstarted.html#decentralized-circuits'>
+			<span class='sidetext'> Decentralized Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='gettingstarted.html#hybrid-circuits'>
+			<span class='sidetext'> Hybrid Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+		<a class='sideline' href='gettingstarted.html#distribution'>
+			<span class='sidetext'> Distribution </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='event.stopPropagation();'
+		href='powergeneration.html#power-generation'> Power Generation </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='powergeneration.html#power-generation'>
+			<span class='sidetext'> Power Generation </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='powergeneration.html#wind-power'>
+			<span class='sidetext'> Wind Power </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='powergeneration.html#solar-power'>
+			<span class='sidetext'> Solar Power </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='event.stopPropagation();'
+		href='powerstorage.html#power-storage'> Power Storage </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='powerstorage.html#power-storage'>
+			<span class='sidetext'> Power Storage </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='powerstorage.html#battery-backup'>
+			<span class='sidetext'> Battery Backup </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='powerstorage.html#direct-delivery'>
+			<span class='sidetext'> Direct Delivery </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='powerstorage.html#inline'>
+			<span class='sidetext'> Inline </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='powerstorage.html#korrektcore'>
+			<span class='sidetext'> KorrektCore </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='powerstorage.html#orblocker'>
+			<span class='sidetext'> OR/Blocker </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='powerstorage.html#nih-core'>
+			<span class='sidetext'> Nih Core </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='powerstorage.html#secondary-battery-backup'>
+			<span class='sidetext'> Secondary Battery Backup </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='powerstorage.html#battery-active-usage-vs-actual-power-consumed'>
+			<span class='sidetext'> Battery Active Usage VS Actual Power Consumed </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='powerstorage.html#parallel-vs-series'>
+			<span class='sidetext'> Parallel vs Series </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='powerstorage.html#nih-capacitor'>
+			<span class='sidetext'> Nih Capacitor </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='event.stopPropagation();'
+		href='powerdistribution.html#power-distribution'> Power Distribution </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='powerdistribution.html#power-distribution'>
+			<span class='sidetext'> Power Distribution </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='powerdistribution.html#what-is-a-power-bus'>
+			<span class='sidetext'> What is a Power Bus? </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='powerdistribution.html#fixed-bus-f-bus'>
+			<span class='sidetext'> Fixed Bus (F-Bus) </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='powerdistribution.html#dynamic-bus-d-bus'>
+			<span class='sidetext'> Dynamic Bus (D-Bus) </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='powerdistribution.html#configure-siphon'>
+			<span class='sidetext'> Configure Siphon </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+		<a class='sideline' href='powerdistribution.html#short-circuit-max-depth'>
+			<span class='sidetext'> Short Circuit / Max Depth </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='powerdistribution.html#short-circuit'>
+			<span class='sidetext'> Short Circuit </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='powerdistribution.html#max-depth'>
+			<span class='sidetext'> Max Depth </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+		<a class='sideline' href='powerdistribution.html#circuit-delay-and-power-flow'>
+			<span class='sidetext'> Circuit Delay and Power Flow </span>
+			<span class='sidesign'></span>
+		</a>
+
+  <span class="sidelist indent3 folded">
+		<a class='sideline' href='powerdistribution.html#circuit-delay'>
+			<span class='sidetext'> Circuit Delay </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='powerdistribution.html#power-flow'>
+			<span class='sidetext'> Power Flow </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='event.stopPropagation();'
+		href='uncategorizedconcepts.html#uncategorized-concepts'> Uncategorized </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='uncategorizedconcepts.html#uncategorized-concepts'>
+			<span class='sidetext'> Uncategorized Concepts </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='uncategorizedconcepts.html#side-inputs'>
+			<span class='sidetext'> Side Inputs </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='uncategorizedconcepts.html#smart-timer'>
+			<span class='sidetext'> Smart Timer </span>
+			<span class='sidesign'></span>
+		</a>
+
+		<a class='sideline' href='uncategorizedconcepts.html#monuments-camera-codes'>
+			<span class='sidetext'> Monuments Camera Codes </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+<span class="sideline foldable folded unfoldonload" onclick="toggfold(this);">
+	<span class="sidetext"> Blueprints </span>
+	<span class="sidesign"></span>
+</span>
+
+  <span class="sidelist indent1 folded">
+	<span class='sideline foldable folded' onclick='toggfold(this);'>
+		<a class='sidetext' onclick='event.stopPropagation();'
+		href='usefulcircuits.html#useful-circuits'> Useful Circuits </a>
+		<span class='sidesign'></span>
+	</span>
+
+  <span class="sidelist indent2 folded">
+		<a class='sideline' href='usefulcircuits.html#useful-circuits'>
+			<span class='sidetext'> Useful Circuits </span>
+			<span class='sidesign'></span>
+		</a>
+
+  </span>
+  </span>
+  </span>			</span>
+		</div>
+		<span id="sidetogmobile" onclick="toggside();"></span>
+
+		<div id="main-container">
+		<main>
+			<h1 id="power-storage"><a href="#power-storage"
+class="anchor-link">*</a>Power Storage</h1>
+<p>TL:DR - Batteries can accept incoming power at the same time they are
+sending power out.<br />
+- Charging rate is dependent on the amount of power coming in, with an
+efficiency of 80%.</p>
+<blockquote>
+<p><em>Example:</em> 20rW from a Solar Panel × 0.8 = 16rW usable through
+a battery.</p>
+</blockquote>
+<blockquote>
+<p><em>Example:</em> If your Medium Battery is supplying 16rW to a
+circuit, 16 ÷ 0.8 = 20rW is the minimum you want to give the battery so
+it doesn’t lose any charge.</p>
+</blockquote>
+<ul>
+<li>It is recommended to supply slightly more than you need if you want
+to charge the battery.<br />
+</li>
+<li>When you combine batteries with Root Combiners, they do not split
+the load as one would expect. They cannot see each other, so each
+battery tries to power the whole circuit.</li>
+</ul>
+<blockquote>
+<p>For example, in a circuit with 2 root combined batteries supporting a
+load of 50, it would seem to make sense that 50 power divided by 2
+batteries equals 25 per battery. Rustricity doesn’t work like that and
+50 power is taken from each battery and seen as Active Usage on both
+batteries. This means both batteries are draining at a rate of 50.</p>
+</blockquote>
+<p>This means when we get to circuits that need more than 100 power, all
+the batteries combined will show a max Active Usage, which is used to
+calculate how fast a battery drains.<br />
+So if we are forcing batteries to max drain, then we might as well try
+to use as much of the power the combined batteries will provide.</p>
+<p>When using a bypass battery backup like the <a
+href="backup.html#nih-core">Nih core</a>, Active Usage does not matter
+because the circuits are getting power from the main power source most
+of the time and not the battery.</p>
+<ul>
+<li>Rustricity has its own version of <a
+href="concepts.html#parallel-vs-series">Parallel and Series</a> battery
+configurations.</li>
+<li>1rw will charge a Large Battery in 34 IRL days.</li>
+<li>When a battery is depleted because it is not receiving enough power,
+no power is outputed until it charges up for a couple seconds before
+outputting to the connected circuit. The battery still not receiving
+enough power will deplete in a second and the process repeats.<br />
+</li>
+<li>If the circuit after a battery is turning on and off, you do not
+have enough power charging your batteries.</li>
+<li>When they get picked up, they lose 25% HP but retain their current
+capacity. This means if a large battery has a full charge, when you pick
+it up and place it back down, it will still have a full charge.</li>
+<li>Batteries have something called Active Usage and components have
+something called Power Consumption. Read about it in <a
+href="concepts.html#battery-active-usage-vs-actual-power-consumed">Battery
+Active Usage vs Actual Power Consumed</a>.</li>
+</ul>
+<p><img src="images/battery-footprint.png" /></p>
+<hr />
+<h1 id="battery-backup"><a href="#battery-backup"
+class="anchor-link">*</a>Battery Backup</h1>
+<p>There are 2 types of battery backup systems. There are Inline Backups
+and there are Bypass Backups. Inline backups include the Inline and the
+KorrektCore. Bypass backups include the OR/Blocker and the Nih Core.
+Deciding which backup to use really comes down to preference. They each
+have their own pros and cons and some may argue that 1 is better than
+another in different situations. For example, if you only need to power
+a few turrets and are in a hurry, you might find the simplicity of the
+Inline backup works for you. Maybe you are working with 300rW to 1000rW
+and a dozen Windmills, you might find the efficiency of the Nih Core is
+preferred. At the end of the day, as long as the battery backup you go
+with, works when you need it to work, that was the right backup to
+choose.</p>
+<hr />
+<h1 id="direct-delivery"><a href="#direct-delivery"
+class="anchor-link">*</a>Direct Delivery</h1>
+<p><img src="images/image86.png" /></p>
+<p>This is when the power source is directly connected to a circuit. If
+the power source is destroyed or stops producing power for any reason,
+the circuit will go offline. This method is a great solution for short
+term uses like getting some auto turrets asap for your clan or getting
+some water pumps online early for a berry farm. While this method is
+good for a very short time to get an early game advantage, it is not
+recommended to rely on this method for any length of time. Introducing
+batteries to a circuit to create backup power is more suited for long
+term use.</p>
+<p>Pros:</p>
+<ul>
+<li>Easy to wire</li>
+<li>Minimal components</li>
+<li>Early game advantage</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>If power source is destroyed the components turn off</li>
+<li>No backup power</li>
+<li>Short term use only</li>
+</ul>
+<hr />
+<h1 id="inline"><a href="#inline" class="anchor-link">*</a>Inline</h1>
+<p><img src="images/image26.png" /></p>
+<p>This is called an Inline because power must pass through the battery
+before powering something. Inline batteries are the most common and
+easiest way to provide a battery backup. This method is fast to make and
+wire. It is reliable assuming enough power is being produced to keep the
+batteries charged. It is also an easy way to decentralize circuits. When
+a power source is directly connected to a battery, 100% of that power is
+used for the sole purpose of charging that battery. When a battery is
+fully charged, any power above what is needed to maintain the battery’s
+charge, is not being used, which we call wasted.</p>
+<p>Batteries are 80% efficient and have a mechanic called Active Usage.
+There is an entire section about this but for right now, to figure out
+how much power a battery must be given so it doesnt drain, take the
+Active Usage number and divide that by 0.8. Active Usage can be found by
+holding a Wire Tool and looking at a battery.</p>
+<blockquote>
+<p>For example, a large battery with an Active Usage of 100. 100 ÷ 0.8 =
+125. Therefore, 125rW needs to be provided to prevent the battery from
+draining.</p>
+</blockquote>
+<p>If the battery is being given 150rW so it charges, when it is fully
+charged, there is 25rW of power that is not being used. When it needs to
+be charged, that 25rW is better then 1rW because it will charge faster.
+Giving a Large Battery only 1rW, it will take roughly 34 IRL days to
+fully charge. For 1 battery, 25 extra doesn’t seem like a lot, but when
+using 4 or more batteries, that can be 100rW of power being
+“wasted”.</p>
+<p>One of the biggest benefits of an Inline backup is when the power
+source stops making enough or any electricity, the battery will continue
+to supply power, uninterrupted. This means that unlike bypass backs, the
+inline is not prone to a flicker off/on when the power source is not
+producing enough power. The battery will continue to power the circuit
+until it is depleted or destroyed.</p>
+<p>It is recommended to start charging batteries as soon as possible.
+Let them charge to a minimum of 3000rWm before letting them power
+anything. The reason for this is if a Wind Turbine is used, the wind
+could be entering a slow period. When using Solar Panels, night comes
+once an hour. Having some capacity saved up will help get through the
+slow or no times.</p>
+<p>Pros:</p>
+<ul>
+<li>Simple to make with minimal electrical components</li>
+<li>Perfect for decentralizing circuits</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>Inefficient use of power at large scale</li>
+</ul>
+<hr />
+<h1 id="korrektcore"><a href="#korrektcore"
+class="anchor-link">*</a>KorrektCore</h1>
+<p>A different kind of inline, will be added soon.</p>
+<h1 id="orblocker"><a href="#orblocker"
+class="anchor-link">*</a>OR/Blocker</h1>
+<p><img src="images/ORblocker.png" /></p>
+<p>This method has been around for a long time and is often called
+‘Infinite Power’. It is not infinite power, it is just a bypass battery
+backup. It has been carried over from a previous version of electricity
+when batteries could only charge or discharge, not both at the same
+time. During this time batteries did not have an Active Usage and forced
+out max power causing the need to invent the ‘Infinite Power Loop’,
+which actually was something, but it was not this circuit.</p>
+<p>This is an OR/Blocker battery backup. It is a bypass battery backup
+that powers a circuit most of the time from the main power source. Power
+is bypassing the battery to power the circuit, while the excess power is
+used to charge the battery. When not enough power is produced, it will
+automatically switch on the battery keeping everything powered. The
+reason it is now considered out of date is because it doesn’t take
+advantage of the batteries ability to charge and discharge at the same
+time.</p>
+<p>The way this method works is by sending power into the first
+Electrical Branch and branching out enough power to meet a circuit’s
+needs. That power is passed to an OR Switch which sends power to a
+circuit. The extra electricity from the first Electrical Branch is sent
+to another Electrical Branch. Power is branched out to block the Blocker
+which prevents the battery from draining. The extra power is then used
+to charge the battery. When there is not enough power to keep the
+battery blocked, the battery sends power out to the OR Switch to keep
+the circuit online.</p>
+<p>Based on the picture below, green wire showing what has power, red
+showing no power and yellow showing wasted power. If the Windmill only
+produces 75 power, it is not enough power to meet the demand of the
+first</p>
+<p><img src="images/orblockerstates.png" /> Electrical Branch or block
+the battery. The battery takes over powering the circuit but the 75
+power is still coming out of the first Electrical Branch. The power is
+still there, it is just not being used, it is wasted.</p>
+<p>While considered out of date today for use as a primary battery
+backup system, with some small modifications, it is useful as a
+secondary battery backup which we talk about in its own section.</p>
+<p>Pros:</p>
+<ul>
+<li>Easy to understand</li>
+<li>Simple to build</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>Wasteful when using battery power</li>
+<li>Ignores the battery update to allow charging and discharging at the
+same time</li>
+</ul>
+<hr />
+<h1 id="nih-core"><a href="#nih-core" class="anchor-link">*</a>Nih
+Core</h1>
+<p><img src="images/image87.png" /></p>
+<p>The Nih Core is the modern version of, and replacement for, the
+OR/Blocker. When using an inline battery to power a circuit, there is a
+20% loss due to the batteries inefficiency. Bypass battery backups, like
+the Nih Core, are a way around this. Instead of a circuit being powered
+by the battery, the circuit gets power directly from the Wind Turbine
+while the battery gets charged with the excess. The Nih Core will
+automatically switch over to the backup battery when the power source is
+not producing enough.</p>
+<p>The Nih Core becomes more efficient the more batteries it has but
+there is only 1 in the picture because it’s all that is needed to
+demonstrate how the Nih Core functions. The simple explanation is when
+there is not enough power to meet a circuit’s requirements, it redirects
+the insufficient amount of power to the battery and activates it to take
+over powering the circuit. The reason the Nih Core becomes more
+efficient with more batteries is because we are bypassing the 20% hit
+from an inline battery and we don’t care about the battery’s Active
+Usage. We are bypassing the battery therefore removing any restrictions
+or conditions caused by it. Check out the section called ‘Battery Active
+Usage Vs Actual Power Consumed’ for an in depth explanation.</p>
+<p>Using the following picture, it is possible to see where power exists
+and where it doesn’t when the Nih Core is running off of Main Power vs
+Battery Power. The green wires have power and the red wires do not.</p>
+<p><img src="images/nih-core-paths.png" /></p>
+<p>To understand how this works, becoming familiar with the Memory Cell
+and the Splitter will help a lot. The inputs on the side of the Memory
+Cell are prioritized from top to bottom and when the Splitter receives
+power, it sends out power from left to right. This also applies to when
+Splitters lose power, they stop sending power out from left to right.
+The section ‘Circuit Delay and Power Flow’ helps explain in detail how
+rustricity moves around a circuit.</p>
+<p>Based on the picture above, if the windmill only produces 75rW of
+power, it is not enough power to meet the demand of the first Electrical
+Branch, which is set to 100. That first Electrical Branch will still
+send that 75rW to the Memory Cell. This means no power is going to the
+second Electrical Branch, therefore the Splitter loses power. When the
+Splitter loses power, Output 1 first stops sending power to SET on the
+Memory Cell. At that moment, power from Output 2 is still going to
+RESET, so the Memory Cell flips outputs. RESET loses power followed by
+Output 3 going to Block Passthrough on the Blocker. The battery then
+takes over powering the circuit. The 75rW of power that is still going
+through the first Electrical Branch and Memory Cell, is now sent to the
+battery extending its life instead of being wasted. This will take a 4
+hour backup time and extend it.</p>
+<p><img src="images/ctr-nih-core.png" /></p>
+<p>Here is a look at a Nih Core with 4 batteries. Keep in mind Max Depth
+when using large numbers of power sources and batteries. 16 power
+sources and 16 batteries is the most you can connect before hitting the
+Max Depth. Check out the section ‘Short Circuit / Max Depth’ for an in
+depth explanation on that subject.</p>
+<p>If you notice that power is flickering off/on when switching between
+main power and battery power, it is because 1 of 2 issues.</p>
+<p><img src="images/nihcoresolutions.png" /></p>
+<p>Solution 1 - If using only 1 battery, add a Root Combiner between the
+battery and blocker to keep the battery active. If the battery does not
+have something registering Active Usage, it will enter an inactive
+state. This causes a delay when switching on to battery power waiting
+for the battery to wake up.</p>
+<p>Solution 2 - If already using a Root Combiner or using more than 1
+battery, add 1 or 2, maybe even 3 components between the Memory Cells
+‘Output’ and the OR Switch. This will hold power here longer giving the
+circuit a chance to receive power from the battery.</p>
+<p>Recommended reading:</p>
+<ul>
+<li><a
+href="concepts.html#battery-active-usage-vs-actual-power-consumed">Battery
+Active Usage vs Actual Power Consumption</a></li>
+<li><a href="concepts.html#short-circuit-max-depth">Short Circuit / Max
+Depth</a></li>
+<li><a href="concepts.html#circuit-delay-and-power-flow">Circuit Delay
+and Power Flow</a></li>
+</ul>
+<p>Pros:</p>
+<ul>
+<li>Less wasted electricity when on battery</li>
+<li>Utilizes the battery’s ability to charge and discharge at the same
+time</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>More components, more wiring.</li>
+<li>Added complexity</li>
+<li>Power flickers when changing states</li>
+</ul>
+<hr />
+<h1 id="secondary-battery-backup"><a href="#secondary-battery-backup"
+class="anchor-link">*</a>Secondary Battery Backup</h1>
+<p>A secondary battery backup is used to provide power to a circuit
+after the main backup system goes offline. It’s a backup of a backup.
+The chance that a secondary backup battery gets used on a typical day is
+near 0%, so why use them? Why not? The only drawback is the increased
+power cost. More backups and redundancy never hurts functionality, it
+only adds to it.</p>
+<p>There are a couple of different versions of the secondary backup.
+Just like primary battery backups, there is the inline and the bypass.
+Secondary backups can be built into any place in any circuit.</p>
+<p>The first and easiest way is installing an inline battery between a
+circuit and its power bus. Let’s use a picture to illustrate a circuit
+that is using a Nih Core as a primary battery backup with Inline
+batteries for the secondary backup.</p>
+<p><img src="images/secbatbkup.png" /></p>
+<p>The secondary batteries are installed between the Electrical Branches
+and what the branch is providing power to. In the case of the Auto
+Turrets, instead of the Electrical Branch sending power straight to the
+Smart Switch, the branch sends power to a battery that then powers the
+switch and all the turrets. It’s the same for the SAM Sites. Power from
+the branch powers a battery and the battery powers the SAMs. Remembering
+that batteries are only 80% efficient, the amount of power each
+Electrical Branch provides is increased to compensate. With a secondary
+battery, the branch sending power to the turrets is set to 115. Without
+the secondary, it only needs to be set to 99. That’s a 16rW difference.
+The branch sending power to the SAM Sites is set to 96 but without the
+secondary battery, it only needs to be set to 76. That’s a 20rW
+difference. For a total cost of 36rW, both the turrets and the SAMs will
+have a runtime of 8 or more hours if the main power source is completely
+destroyed.</p>
+<p>Another thing that should not be forgotten is that it takes 34ish
+days, or over 800 hours, to charge a large battery with only 1rW. In
+other words, precharging secondary batteries should be a requirement.
+Once a battery is fully charged, providing it with any more then exactly
+what it needs to not drain, is wasted power that could maybe be better
+used elsewhere. The maximum input a battery can accept is 4x its output.
+That means 400rW could be sent to a large battery and have it fully
+charged in approximately 1 hour 15ish minutes.</p>
+<p>The inline secondary battery is the easiest but paying the 20% tax
+for the battery can make this version not so attractive. So let’s have a
+look at a bypass secondary backup which has a static tax of only 3rW.
+This is essentially an OR/Blocker backup except the battery gets
+installed precharged and there is no built in way for it to be
+recharged. Let’s use the picture below to help illustrate how it
+works.</p>
+<p><img src="images/secorblk.png" /></p>
+<p>The Test Generator represents static power coming from your main
+battery backup system. This means power levels won’t go up or down like
+wind and solar. When the Electrical Branch loses just 1rW, the battery
+will take over. What is more likely is that power will either be present
+or it will not. This battery should never be used so there is no built
+in recharging system. This saves wasting power recharging a battery that
+will probably never be used so it must be precharged.</p>
+<p>This secondary backup gets installed just like the inline version,
+between the circuit and its power bus. The picture below illustrates the
+same circuit as before using a Nih Core as a primary battery backup but
+now with a bypass battery for the secondary backup.</p>
+<p><img src="images/secbatbkup2.png" /></p>
+<p>The secondary batteries are installed between the Electrical Branches
+and what the branch is providing power to. In the case of the Auto
+Turrets, instead of the Electrical Branch sending power straight to the
+Smart Switch. Power is sent to another Electrical Branch that blocks
+passthrough on a Blocker before sending a specific amount of power on an
+OR Switch. From there, it’s on to the Smart Switch and all the turrets.
+It’s the same for the SAM Sites. Power from the branch goes to another
+Electrical Branch that blocks a Blocker before sending power to an OR
+Switch. From there it’s off to power the SAMs.</p>
+<p>The ability to bypass the battery means the amount of power each
+Electrical Branch provides only needs to be increased by 3rW to
+compensate. With a secondary battery, the branch sending power to the
+turrets is set to 98. Without the secondary, it only needs to be set to
+95. That’s a 3rW difference. The branch sending power to the SAM Sites
+is set to 79 but without the secondary battery, it only needs to be set
+to 76. That’s also a 3rW difference. For a total cost of only 6rW, both
+the turrets and the SAMs will have a runtime of 8 or more hours if the
+main power source is completely destroyed.</p>
+<p>Adding a recharging system can be done. It is just the OR/Blocker
+battery backup. The only drawback is the added power cost. If a player
+is OK with that, then go for it.</p>
+<p>Pros:</p>
+<ul>
+<li>Uses only a few components so it’s easy to build and wire</li>
+<li>Can be efficient for redundant backup power</li>
+<li>Can be inserted into almost any circuit at any point</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>Requires a pre charged battery</li>
+<li>Added costs for redundancy  </li>
+</ul>
+<hr />
+<h1 id="battery-active-usage-vs-actual-power-consumed"><a
+href="#battery-active-usage-vs-actual-power-consumed"
+class="anchor-link">*</a>Battery Active Usage VS Actual Power
+Consumed</h1>
+<p>Simply put, Active Usage is what a battery uses to calculate its
+charge and discharge rate. Power consumed is the amount of power a
+component requires to operate. Active Usage doesn’t always = Power
+Consumed. This is also where the argument of Electrical Branch vs
+Splitter comes from. Once you understand this section, you will know the
+answer to this age-old argument.</p>
+<p>When you look at the battery with a wire tool, you will see Active
+Usage. Active Usage is the amount of power the battery is draining by.
+This is the number you want to use when calculating how much power to
+give a battery for it to remain charged based on the battery’s 80%
+efficiency. Active Usage divided by 0.8 = a battery’s minimum power
+input.</p>
+<p><img src="images/large-battery-ui.png" /></p>
+<p>It is reasonable to think that the number you see is the amount of
+power your circuit is currently consuming, but it’s not always the case.
+Even when some components are turned off and not consuming power, they
+can still add to a battery’s Active Usage. In this next picture, even
+though the Auto Turret is not consuming power, it is still adding to the
+battery’s</p>
+<p><img src="images/turned-off-usage.png" /></p>
+<p>Active Usage and in fact, it will actually consume 14 power. In this
+case even though the AND Switch is not allowing power to pass through,
+it does not have the ability to hide the Active Usage from inactive
+components downstream or past it. In this next picture, if we use
+different components to achieve the same outcome, we can hide</p>
+<p><img src="images/hide-active-usage.png" /></p>
+<p>the Auto Turret’s Active Usage from the battery when it is not
+consuming power. This setup reduces the Active Usage all the way to 6.
+When active, we will get an Active Usage of 16 but it will actually
+consume 18.<br />
+Components like Switches, the Blocker, Timer and RF Transmitter all have
+the ability to hide a component’s Active Usage from batteries when not
+passing power through.</p>
+<p>Every component will only register an Active Usage once and equal to
+the amount of power it consumes with the exception of the Electrical
+Branch. Only the Branch Out value will register Active Usage even though
+it does consume 1 power for itself. An Electrical Branch set to 2 will
+register an Active Usage of 2 but will consume 3. Branch Out is a FIXED
+value. The thing to remember is that it is the Branch Out value that is
+registering Active Usage, not the components connected to Branch Out.
+This means that the components connected to Branch Out, even though it
+is where they are getting their power from, their Active Usage is not
+what is registering on the battery. If there is another path that lets
+the battery see these components, it is possible for their Active Usage
+to register on the battery along with the Branch Out value, effectively
+doubling the power needed. This next picture is a quick example to show
+how a Boom Box that is powered from Branch Out, but using a Switch to
+Toggle Play on and off, is registering 10 Active Usage for the Branch
+Out, 1 for the Switch and 10 for the Boom Box. If we do the same thing,
+but with the Splitter, we dont have this issue because the Splitter
+controls its power flow DYNAMICALLY. <img
+src="images/branch-vs-splitter-active-usage-onoff.png" /></p>
+<p>This is helpful in situations where you have a few small circuits
+where you dont want to force an Active Usage when the circuits are off.
+Now because the Electrical Branch only registers the Branch Out value as
+Active Usage and 0 for itself, we can trick batteries into thinking less
+power is being consumed. In the next picture, we have some examples
+using Auto Turrets. <img
+src="images/active-usage-vs-pwr-consuption-turret.png" /></p>
+<p>Above, we have 1 example using 8 Electrical Branches to power 9 Auto
+Turrets. Every branch is outputting 10 power but also consuming 1 power
+for itself. So in total we are consuming 98 power but the battery’s
+Active Usage is only 90. The 2nd example we are using 4 Splitters to
+power the same number of turrets only this time the Splitters are
+consuming 1 and have an Active Usage of 1 each. This gives us an Active
+Usage and Power Consumption of 94. The example with Electrical Branches
+only has 2 extra power meaning there is enough power available to add a
+single Ceiling Light while the 2nd example has 6 extra power, that’s
+enough power for 3 Ceiling Lights.</p>
+<p>In the situation where an Inline Battery is being used, you want to
+minimize the battery’s Active Usage to minimize the cost of power
+production. Like in the single Auto Turret examples above, there is a
+required input power difference of 9rW just to maintain the battery.
+Batteries are 80% efficient. Take the Active Usage number and divide it
+by 0.8. This will give you the minimum amount of power required to
+maintain the battery and it will not drain. It wont charge either. The
+more power above the minimum, the faster the battery will charge but the
+more you will waste when the battery is full. 1rW will charge a large
+battery but it will take 34 IRL days.</p>
+<p>In a bypass system like the Nih Core, Active Usage doesn’t matter
+because you are not relying on the battery as a main power source. You
+are bypassing the battery. This means that the amount of power consumed
+is more important. If we look at the above picture again with the 9 Auto
+Turrets, we can see that while both examples are accomplishing the same
+goal, 1 is consuming less power then the other. If we look back at the
+single Auto Turret examples, the 1st example with an Active Usage of 13
+will actually consume 14 vs the 2nd with an Active Usage of 6 will
+actually consume 18. So while the 1st example is bad on an Inline
+system, it is better in a bypass system. The less power you can use to
+do something, gives you more power to do other things.</p>
+<p>You can use a bypass system with 1 Large Battery and only use 50
+power to double the life of the battery but, it is more common to see a
+bypass system used for 2 or more batteries to get a larger output. If we
+are using 2 or more batteries to get the higher output, a Root Combiner
+will be used. The moment we combine batteries to power a circuit that
+uses more than 100 power, both batteries will have an Active Usage of
+100. This is because load sharing is not a thing in Rustricity. If the
+circuit only needs 50, both batteries will have an Active Usage of
+50(plus 1 for the Root Combiner).</p>
+<p><img src="images/root-combined-batterys.png" /></p>
+<p>Due to this being the way it is, if you combine 2 batteries to get
+200 power, try to use all 200 because no matter if the circuit needs 101
+or 199, 2 large batteries will only last 4 hours. If they are only going
+to last 4 hours regardless, try to use as much of that 200 as possible
+to make it worth combining the batteries. Otherwise, split the circuit,
+run Inlines and minimize the Active Usage.</p>
+<p>Now, having said you want to consume as little power as possible to
+achieve the desired outcome when using a bypass battery backup, there
+are times when it is worth consuming more for a bit of added security.
+In the next picture, Ive used medium batteries for the demonstration,
+and they are root combined powering some Auto Turrets.</p>
+<p><img src="images/power-bus-security-compared-turrets.png" /></p>
+<p>The top groups are using Electrical Branches. They are consuming more
+power but in the event 1 battery is destroyed, top right, some turrets
+stay active. The bottom groups use Splitters. While they do consume less
+power, in the event a battery is lost, very bottom, all the turrets go
+offline. You will need to weigh the pros and cons and decide what is
+right to fit your needs. Read more in What is a Power Bus?</p>
+<h1 id="parallel-vs-series"><a href="#parallel-vs-series"
+class="anchor-link">*</a>Parallel vs Series</h1>
+<p>Lets start by learning what Parallel and Series means in real life.
+Connecting batteries in series increases voltage and connecting
+batteries in parallel increases capacity.</p>
+<p>V = Volts (power)<br />
+Ah = Amp hour (capacity)</p>
+<p>If we wire two 6V@10Ah batteries in parallel, we will still only have
+6V but have 20Ah of capacity.<br />
+If we wire two 6V@10Ah batteries in series, we will now have twice the
+power at 12V but with only 10Ah of capacity.</p>
+<p><img src="images/paravssers.png" /></p>
+<p>In real life, batteries have positive (+) and negative (-)
+connections. In Rust, our batteries only have 1 input and 1 output. We
+also measure our Volts (V) as Rust Watts (rW) and our capacity, instead
+of Amp hours (Ah) we use Rust Watt Minutes (rWm).</p>
+<p>In Rust, a large battery can give 100rW of power and has a capacity
+of 24000rWm. The outcome of wiring 2 large batteries in series would be
+200rW of power with a capacity of 24000rWm. The outcome of wiring 2
+large batteries in parallel would be 100rW of power with a capacity of
+48000rWm.</p>
+<p>To wire large batteries in series in Rust, just use a Root Combiner.
+The output will be 200rW and because both batteries will drain at the
+same, the total capacity will remain at 24000rWm.</p>
+<p>To wire large batteries in parallel becomes a little more
+complicated.</p>
+<hr />
+<h1 id="nih-capacitor"><a href="#nih-capacitor"
+class="anchor-link">*</a>Nih Capacitor</h1>
+<p><strong>( will probably be fixed soon and wont work anymore
+)</strong></p>
+<p>The Nih Capacitor was first established by Nih, with assistance from
+SwiftCoyote, on September 11, 2022. A Capacitor is a set of components
+that accumulate power, much like rechargeable batteries. However, the
+method for assessing the amount of stored power differs.</p>
+<p>For batteries, the stored power is represented as
+<code>Capacity</code>,<br />
+measured in Rust Watt Minutes (rWm).</p>
+<p>Contrarily, in a Capacitor, we gauge the power storage by examining
+an Input/Output (IO) connection and observing a figure that is typically
+associated with <code>power</code> or the amount of power available for
+use.<br />
+But within the Capacitor, this figure <strong>DOES NOT indicate the
+amount of power that can be utilized</strong>. Rather, this figure is
+what we call <code>Wire Capacity</code>, symbolized as <code>Np</code>.
+For instance, in the image below, the displayed <code>6,492,076</code>
+is <strong>NOT</strong> the amount of power available. Instead, it
+represents <code>6,492,076Np</code> of Wire Capacity.</p>
+<p>Before going into the construction and operation of a Capacitor, it’s
+essential to understand the math conversions between Rust Watt Minutes
+(rWm) and Wire Capacity (Np).</p>
+<p>Both represent capacity, but they use different units of measurement
+depending on the energy storage container, be it a battery or a
+capacitor.</p>
+<p><strong>The Maths:</strong><br />
+<code>rWm</code>: rust watt minutes (capacity)<br />
+<code>rW</code>: rust watts (commonly referred to as “power”)<br />
+<code>Np</code>: Wire Capacity<br />
+<code>∅</code>: 7.5 (Trust Me Bro)<br />
+<code>S</code>: Seconds<br />
+<code>τ</code>: 60 (The number of seconds in a minute, and minutes in an
+hour)<br />
+<code>M</code>: Minutes<br />
+<code>P</code>: Max power output for 1 second<br />
+<code>O</code>: The amount of power you want to output<br />
+<code>H</code>: Hours</p>
+<p>To convert rWm into Wire Capacity(Np), use the following
+equation:<br />
+<code>(rWm × τ = P) × ∅ = Np</code></p>
+<p>To convert Wire Capacity(Np) into rWm, use the following
+equation:<br />
+<code>(Np ÷ ∅ = P) ÷ τ = rWm</code></p>
+<p>To figure out how much time a given capacity will run for outputting
+a specific amount of power, use the following equations:<br />
+<code>Seconds: (rWm ÷ O = M) × τ = S</code><br />
+<code>Minutes: rWm ÷ O = M</code><br />
+<code>Hours: (rWm ÷ O = M) ÷ τ = H</code></p>
+<p>Examples Using Capacity from the battery in the first picture, it is
+possible to figure out the number that would be seen if looking at an IO
+connection in a Capacitor to view Wire Capacity(Np).<br />
+<code>(rWm × τ = P) × ∅ = Np</code><br />
+<code>(271 × 60 = 16,260) × 7.5 = 121,950Np</code></p>
+<p>Therefore a capacity of 271rWm when viewed on an IO connection is
+equal to 121,950Np. We can also see that if the Large Battery did not
+have an output limit of 100, it would be able to output 16,260rW of
+power for 1 second.</p>
+<p>Using the IO connection to view Wire Capacity(Np) from the second
+picture, it is possible to figure out how much rWm of Capacity we would
+have if this was viewed on a battery.<br />
+<code>(Np ÷ ∅ = P) ÷ τ = rWm</code><br />
+<code>(6,492,076 ÷ 7.5 = 865,610.1333) ÷ 60 = 14,426rWm</code></p>
+<p>Therefore a Wire Capacity of 6,492,076Np when viewed on a battery
+represented as Capacity, it is equal to 14,426rWm.<br />
+Without a limited output, the Capacitor is capable of delivering
+865,610rW of power for 1 second.</p>
+<p>Using both of these examples, it’s possible to calculate the length
+of time both the Battery and Capacitor would power a circuit for, given
+a set output.</p>
+<blockquote>
+<p>For our example, let’s say the circuit needs 100 power.</p>
+<p>Battery :<br />
+<code>(rWm ÷ O = M) × τ = S</code><br />
+<code>(271÷ 100 = 2.71 Minutes) × 60 = 162 Seconds</code></p>
+<p>Capacitor : <em>(you will need to convert from Np to rWm
+first)</em><br />
+<code>(rWm ÷ O = M) × τ = S</code><br />
+<code>(14,426 ÷ 100 = 144.26 Minutes) × 60 = 8,655 Seconds</code></p>
+<p>OR :<br />
+<code>(rWm ÷ O = M) ÷ τ = H</code><br />
+<code>(14,426 ÷ 100 = 144.26 Minutes) ÷ 60 = 2.40 Hours</code></p>
+</blockquote>
+<p>Prior to constructing a capacitor, it’s crucial to understand its
+limitations and potential issues. This will clarify misconceptions such
+as the notion of ‘infinite power’ and help identify the appropriate
+contexts for its use.</p>
+<ul>
+<li>It doesn’t survive server restarts. evrytime the server restarts,
+all of the stored power will vanish, poof gone.<br />
+</li>
+<li>When automating energy extraction, it is possible that a flicker
+will be created or worse, all the power vanishes, poof gone.</li>
+<li>It consumes power even when nothing is connected to it, unlike a
+battery that doesn’t lose power if nothing is connected to it.</li>
+<li>It is not portable.</li>
+</ul>
+<p>Now, some of the advantages and benefits of the Capacitor</p>
+<hr />
+		</main>
+		</div>
+
+	</body>
+</html>
