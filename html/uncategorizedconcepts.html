@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Fireworks</title>
+		<title>uncategorizedconcepts</title>
 		<link rel="stylesheet" href="global/style.css">
 		<link rel="stylesheet" href="global/sidebar.css">
 		<link rel="stylesheet" href="global/fix.css">
@@ -1018,462 +1018,168 @@
 
 		<div id="main-container">
 		<main>
-			<h1 id="fireworks"><a href="#fireworks"
-class="anchor-link">*</a>Fireworks</h1>
+			<h1 id="uncategorized-concepts"><a href="#uncategorized-concepts"
+class="anchor-link">*</a>Uncategorized Concepts</h1>
+<h2 id="side-inputs"><a href="#side-inputs"
+class="anchor-link">*</a>Side Inputs</h2>
+<p>They are not bugged or broken, you just don’t know how to use them
+yet.</p>
+<p>It is not uncommon for people to think of ‘Switch On’ and ‘Switch
+Off’ as a toggle like on the side of a Timer. They are not toggles, they
+are inputs with an added function. Just like the ‘Power In’ on the
+bottom, the side inputs also pass power through to the top. The function
+part only functions when power is received, removed or the amount of
+power is updated.</p>
+<p>When ANY input on the Switch receives an “update”, the Switch will
+bind to that input for its source of power that passes through to the
+top. It will remain bound to that input until another input “updates”
+which will force the switch to bind to the new input. An update is
+either losing power or receiving power, 0-1 or 1-0 or power levels
+change up or down.</p>
+<p>The exception to this is when one input is receiving an amount of
+power and another input receives the same amount of power, the Switch
+will not recognize the new source and remain bound to the original
+input.</p>
+<p>The following pictures will help illustrate how it works.</p>
+<p>Starting off, we are using 3 Switches to provide 3 different amounts
+of power each input. Green wire is for Switch On. Red wire is for Switch
+Off. Black wire is for Electric Input on the bottom. Yellow lines mark
+the path power is taking. Red lines mark where power stops. In this
+first picture, we are sending power to the bottom input and the Switch
+sends it out the top, with the expected power loss.</p>
+<p>Next, we leave power going into the bottom and then apply power to
+Switch Off. As we can see, the Switch will flip off.</p>
+<p><img src="images/image41.png" /></p>
+<p><img src="images/image13.png" /></p>
+<p>If we manually flip the Switch back on, we can now see a new amount
+of power displaying on the counter.</p>
+<p><img src="images/image75.png" /></p>
+<p>This is because the Switch is now bound to the Switch Off input for
+the power that passes through to the top. The power going into the
+bottom input is completely ignored. For the next picture, we flip the
+Switch back off and then apply power to Switch On.</p>
+<p><img src="images/image64.png" /></p>
+<p>The Switch will now flip on and once again pass through a new amount
+of power to the counter. The power going to the bottom input or Switch
+Off input is now ignored and the Switch is bound to Switch On. In the
+next picture, we remove power from Switch On while keeping power applied
+to Switch Off and the bottom.</p>
+<p><img src="images/image30.png" /></p>
+<p>We can see here now that power was removed from Switch On, the Switch
+has no power. The green light turns off and the Switch is still in the
+on position. Even though the other 2 inputs have power, the Switch is
+bound to Switch On for its source of power, which was removed. If we
+restore power to Switch On, the Switch will start passing power though
+again like the previous picture. With power restored, for the next
+picture we will remove power from Switch Off.</p>
+<p><img src="images/image44.png" /></p>
+<p>We restored power to Switch On before removing power from Switch Off.
+The green light turns off when power is removed and the Switch binds to
+the Switch Off. This is because that input received an update from
+‘having power’ to ‘not having power’, from 1 to 0. For the next picture,
+we restore power to Switch Off.</p>
+<p><img src="images/image53.png" /></p>
+<p>Restoring power to the Switch Off input, the red light turns on and
+the Switch flips to the off position. When we manually flip it on we can
+see the new amount of power passing through.</p>
+<p><img src="images/image105.png" /></p>
+<p>Seeing that we only have 28 power showing on the counter, it is clear
+power is coming through the Switch Off input. When we remove power from
+the bottom input, the Switch loses power.</p>
+<p><img src="images/image73.png" /></p>
+<p>It loses power because the bottom input was updated, from 1 to 0, so
+the Switch bound to it. Now bound to the bottom input and not receiving
+power, the green light turns off and no power passes through. Restoring
+power to the bottom input, the green light turns back on and the new
+power amount is displayed on the counter.</p>
+<p><img src="images/image126.png" /></p>
+<p>Seeing the power level on the counter confirming power is coming into
+the bottom, we will now adjust the Electrical Branch to send more power
+to Switch On.</p>
+<p><img src="images/image116.png" /></p>
+<p>After increasing the amount of power, we can see an instant change on
+the counter to reflect that the Switch changed the input it was bound to
+from the bottom input to Switch On.</p>
+<p>In conclusion, whichever is the last input to receive an update is
+the input the Switch will bind to for its source of power. Adding power,
+removing power or a change in power levels will update the Switches
+input. When moving power from one input to another, it is important</p>
 <hr />
-<p>They can be ignited with a lit Torch, Flamethrower, Fire Arrows or
-using an electric Igniter.</p>
-<p>They can be placed on flat surfaces or the ground unless stated
-otherwise. They can be picked up with a hammer.</p>
-<p>A firework is active when the fuse on the side of it is sparkling. If
-the fuse is sparkling, it cannot be picked up.</p>
-<p>The default number of Boomers, Patterns and Champagnes that can be
-active at 1 time is 25. Not 25 of each, 25 total.</p>
-<table>
-<colgroup>
-<col style="width: 37%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Type</th>
-<th>Start Time</th>
-<th>Launch Time</th>
-<th>Number of shots</th>
-<th>Time between shots</th>
-<th>Active Time</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Volcano</td>
-<td>5</td>
-<td></td>
-<td></td>
-<td></td>
-<td>40</td>
-</tr>
-<tr class="even">
-<td>Candle</td>
-<td>5</td>
-<td>2</td>
-<td>12</td>
-<td>3</td>
-<td>40</td>
-</tr>
-<tr class="odd">
-<td>Boomer</td>
-<td>5</td>
-<td>5</td>
-<td>10</td>
-<td>4</td>
-<td>47</td>
-</tr>
-<tr class="even">
-<td>Champagne</td>
-<td>5</td>
-<td>5</td>
-<td>3</td>
-<td>10</td>
-<td>35</td>
-</tr>
-<tr class="odd">
-<td>Pattern Short Fuse</td>
-<td>5</td>
-<td>5</td>
-<td>3</td>
-<td>10</td>
-<td>35</td>
-</tr>
-<tr class="even">
-<td>Pattern Medium Fuse</td>
-<td>5</td>
-<td>7</td>
-<td>3</td>
-<td>10</td>
-<td>35</td>
-</tr>
-<tr class="odd">
-<td>Pattern Long Fuse</td>
-<td>5</td>
-<td>10</td>
-<td>3</td>
-<td>10</td>
-<td>35</td>
-</tr>
-</tbody>
-</table>
-<p>Start Time refers to the time between the fuse starting to sparkle
-and the time the firework starts to produce color or launches a
-projectile.</p>
-<p>Launch Time refers to the amount of time it takes a firework to reach
-its maximum height.</p>
-<p>Number Of Shots refers to the number of times a firework will launch
-a projectile.</p>
-<p>Time Between Shots refers to the amount of time between each
-projectile.</p>
-<p>Active Time refers to the total amount of time from a firework
-activating to the time it produces its last color or boom. This is
-written as Start Time + the time it takes from the first projectile to
-launch and the last projectile to reach its maximum height. Ex 5+35
-seconds = 5 seconds to start then 35 more seconds before the firework
-finishes.</p>
+<h2 id="smart-timer"><a href="#smart-timer"
+class="anchor-link">*</a>Smart Timer</h2>
+<p>Needs work</p>
+<p><img src="images/image52.png" /></p>
+<p><img src="images/image118.png" /></p>
 <hr />
-<h1 id="volcano-firework"><a href="#volcano-firework"
-class="anchor-link">*</a>Volcano Firework</h1>
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 75%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Item ID</td>
-<td>Red -454370658  Violet -1538109120  White 261913429</td>
-</tr>
-<tr class="even">
-<td>Description</td>
-<td>Emits a beautiful shower of colored sparks</td>
-</tr>
-<tr class="odd">
-<td>Crafting Recipe</td>
-<td>20 Metal Fragments, 15 Gun Powder</td>
-</tr>
-<tr class="even">
-<td>Recycles Into</td>
-<td>10 Metal Fragments, 8 Gun Powder</td>
-</tr>
-<tr class="odd">
-<td>Stack Size</td>
-<td>20</td>
-</tr>
-<tr class="even">
-<td>Workbench Required</td>
-<td>Level 1</td>
-</tr>
-<tr class="odd">
-<td>Hit Points</td>
-<td>100</td>
-</tr>
-<tr class="even">
-<td>Where To Find</td>
-<td>Requires Steam Item : Small Fireworks Pack</td>
-</tr>
-<tr class="odd">
-<td>Start Time</td>
-<td>5 seconds</td>
-</tr>
-<tr class="even">
-<td>Duration</td>
-<td>5+35 seconds</td>
-</tr>
-<tr class="odd">
-<td>Despawn Time</td>
-<td>5 minutes</td>
-</tr>
-</tbody>
-</table>
-<p>Notes:</p>
+<h2 id="monuments-camera-codes"><a href="#monuments-camera-codes"
+class="anchor-link">*</a>Monuments Camera Codes</h2>
 <ul>
-<li>There are 3 colors, Red, Violet and White.</li>
-<li>Foundations/floors provide 1 launch direction, straight up.</li>
-<li>Ramps provide 2 launch directions, 2 different angles.</li>
-</ul>
-<hr />
-<h1 id="roman-candle"><a href="#roman-candle"
-class="anchor-link">*</a>Roman Candle<img
-src="images/image4.png" /></h1>
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 75%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Item ID</td>
-<td>Blue -515830359  Green -1306288356  Red -1486461488  Violet
--99886070</td>
-</tr>
-<tr class="even">
-<td>Description</td>
-<td>A small repeating firework, shoots a series of colored balls into
-the air</td>
-</tr>
-<tr class="odd">
-<td>Crafting Recipe</td>
-<td>25 Metal Fragments, 10 Low Grade Fuel</td>
-</tr>
-<tr class="even">
-<td>Recycles Into</td>
-<td>13 Metal Fragments, 5 Low Grade Fuel</td>
-</tr>
-<tr class="odd">
-<td>Stack Size</td>
-<td>20</td>
-</tr>
-<tr class="even">
-<td>Hit Points</td>
-<td>100</td>
-</tr>
-<tr class="odd">
-<td>Where To Find</td>
-<td>Requires Steam Item : Small Fireworks Pack</td>
-</tr>
-<tr class="even">
-<td>Start Time</td>
-<td>5 seconds</td>
-</tr>
-<tr class="odd">
-<td>Duration</td>
-<td>2+38 seconds</td>
-</tr>
-<tr class="even">
-<td>Despawn Time</td>
-<td>5 minutes</td>
-</tr>
-</tbody>
-</table>
-<p>Notes:</p>
-<ul>
-<li>There are 4 colors: Blue, Green, Red, Violet.</li>
-<li>Foundations/floors provide 1 launch direction, straight up.</li>
-<li>Ramps provide 2 launch directions, 2 different angles.</li>
-</ul>
-<hr />
-<h1 id="boomer"><a href="#boomer" class="anchor-link">*</a>Boomer<img
-src="images/image96.png" /></h1>
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 75%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Item ID</td>
-<td> Blue 1744298439 Green -656349006 Red -1553999294 Violet
--280223496 </td>
-</tr>
-<tr class="even">
-<td>Description</td>
-<td> A very large mortar type firework with a colored starburst</td>
-</tr>
-<tr class="odd">
-<td>Crafting Recipe</td>
-<td>25 Metal Fragments, 15 Low Grade Fuel, 30 Gun Powder</td>
-</tr>
-<tr class="even">
-<td>Recycles Into</td>
-<td>13 Metal Fragments, 8 Low Grade Fuel, 15 Gun Powder</td>
-</tr>
-<tr class="odd">
-<td>Stack Size</td>
-<td>20</td>
-</tr>
-<tr class="even">
-<td>Hit Points</td>
-<td>100</td>
-</tr>
-<tr class="odd">
-<td>Where To Find</td>
-<td>Requires Steam Item : Large Fireworks Pack</td>
-</tr>
-<tr class="even">
-<td>Start Time</td>
-<td>5 seconds</td>
-</tr>
-<tr class="odd">
-<td>Launch Time</td>
-<td>5 seconds</td>
-</tr>
-<tr class="even">
-<td>Number Of Shots</td>
-<td>10</td>
-</tr>
-<tr class="odd">
-<td>Time Between Shots</td>
-<td>4 seconds</td>
-</tr>
-<tr class="even">
-<td>Duration</td>
-<td>5+42 seconds</td>
-</tr>
-<tr class="odd">
-<td>Despawn Time</td>
-<td>5 minutes</td>
-</tr>
-</tbody>
-</table>
-<p>Notes:</p>
-<ul>
-<li>There are 5 colors: Blue, Green, Red, Violet and Orange.</li>
-<li>Foundations/floors provide 1 launch direction, straight up.</li>
-<li>Ramps provide 2 launch directions, 2 different angles.</li>
-<li>Steps provide 6 launch directions, 5 different angles and straight
-up</li>
-</ul>
-<hr />
-<h1 id="champagne-boomer"><a href="#champagne-boomer"
-class="anchor-link">*</a>Champagne Boomer<img
-src="images/image63.png" /></h1>
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 75%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Item ID</td>
-<td>1324203999</td>
-</tr>
-<tr class="even">
-<td>Description</td>
-<td>A very large mortar type firework with a massive champagne colored
-explosion followed by smaller orange starbursts</td>
-</tr>
-<tr class="odd">
-<td>Crafting Recipe</td>
-<td>30 Metal Fragments, 30 Low Grade Fuel, 75 Gun Powder</td>
-</tr>
-<tr class="even">
-<td>Recycles Into</td>
-<td>15 Metal Fragments, 15 Low Grade Fuel, 38 Gun Powder</td>
-</tr>
-<tr class="odd">
-<td>Stack Size</td>
-<td>20</td>
-</tr>
-<tr class="even">
-<td>Hit Points</td>
-<td>100</td>
-</tr>
-<tr class="odd">
-<td>Where To Find</td>
-<td>Requires Steam Item : Large Fireworks Pack</td>
-</tr>
-<tr class="even">
-<td>Start Time</td>
-<td>5 seconds</td>
-</tr>
-<tr class="odd">
-<td>Launch Time</td>
-<td>5 seconds</td>
-</tr>
-<tr class="even">
-<td>Number Of Shots</td>
-<td>3</td>
-</tr>
-<tr class="odd">
-<td>Time Between Shots</td>
-<td>10 seconds</td>
-</tr>
-<tr class="even">
-<td>Duration</td>
-<td>5+30 seconds</td>
-</tr>
-<tr class="odd">
-<td>Despawn Time</td>
-<td>5 minutes</td>
-</tr>
-</tbody>
-</table>
-<p>Notes:</p>
-<ul>
-<li>There are 5 colors: Blue, Green, Red, Violet and Orange.</li>
-<li>Foundations/floors provide 1 launch direction, straight up.</li>
-<li>Ramps provide 2 launch directions, 2 different angles.</li>
-<li>Steps provide 6 launch directions, 5 different angles and straight
-up</li>
-</ul>
-<hr />
-<h1 id="pattern-boomer"><a href="#pattern-boomer"
-class="anchor-link">*</a>Pattern Boomer<img
-src="images/image84.png" /></h1>
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 75%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Item ID</td>
-<td>-379734527</td>
-</tr>
-<tr class="even">
-<td>Description</td>
-<td>A special boomer which allows you to light up the night sky with a
-custom pattern that you draw. Multiple colors and altitude settings are
-available.</td>
-</tr>
-<tr class="odd">
-<td>Crafting Recipe</td>
-<td>50 Metal Fragments, 15 Low Grade Fuel, 30 Gun Powder</td>
-</tr>
-<tr class="even">
-<td>Recycles Into</td>
-<td>25 Metal Fragments, 8 Low Grade Fuel, 15 Gun Powder</td>
-</tr>
-<tr class="odd">
-<td>Stack Size</td>
-<td>20</td>
-</tr>
-<tr class="even">
-<td>Hit Points</td>
-<td>100</td>
-</tr>
-<tr class="odd">
-<td>Where To Find</td>
-<td>Requires a Steam item purchased from the Item Store</td>
-</tr>
-<tr class="even">
-<td>Start Time</td>
-<td>5 seconds</td>
-</tr>
-<tr class="odd">
-<td>Launch Time</td>
-<td>Short Fuse 5 seconds, Medium Fuse 7 seconds, Long Fuse 10
-seconds</td>
-</tr>
-<tr class="even">
-<td>Number Of Shots</td>
-<td>3</td>
-</tr>
-<tr class="odd">
-<td>Time Between Shots</td>
-<td>10 seconds</td>
-</tr>
-<tr class="even">
-<td>Duration</td>
-<td>5+30 seconds</td>
-</tr>
-<tr class="odd">
-<td>Despawn Time</td>
-<td>5 minutes</td>
-</tr>
-</tbody>
-</table>
-<p>Notes:</p>
-<ul>
-<li>There are 5 colors: Blue, Green, Red, Violet and Orange.</li>
-<li>Foundations/floors provide 1 launch direction, straight up.</li>
-<li>Ramps provide 2 launch directions, 2 different angles.</li>
-<li>Steps provide 6 launch directions, 5 different angles and straight
-up</li>
-<li>There is a default pattern if none is created.</li>
-<li>TC authorization is required to customize firework. Look at the
-firework and press USE(E) to change the use type or Open Designer.</li>
-<li>The designer lets you make your own pattern by placing up to 35 dots
-on the board. There is an option to place or remove dots and clear the
-board. There are 8 colours to choose from, white, yellow, orange, red,
-green, teal, blue and pink. You can name your design and have up to 5
-different patterns saved. Once you hca completed or selected a pattern,
-click Save. This will exit you from the designer and your pattern will
-be displayed when launched.</li>
-<li>If the firework is picked up, the pattern will revert back to
-default.</li>
+<li>Abandoned Military Base codes:<br />
+<code>COMPOUND****</code><br />
+<code>OUTDOOR****</code><br />
+<em>Locate the computer station inside the monument, underground, and
+access it to find the randomly generated codes for the
+cameras.</em></li>
+<li>Airfield camera codes:<br />
+<code>AIRFIELDHELIPAD</code></li>
+<li>Bandit Camp camera codes:<br />
+<code>CASINO</code><br />
+<code>TOWNWEAPONS</code></li>
+<li>Dome camera codes:<br />
+<code>DOME1</code><br />
+<code>DOMETOP</code></li>
+<li>Large Oil Rig camera codes:<br />
+<code>OILRIG2HELI</code><br />
+<code>OILRIG2DOCK</code><br />
+<code>OILRIG2EXHAUST</code><br />
+<code>OILRIG2L1</code><br />
+<code>OILRIG2L2</code><br />
+<code>OILRIG2L3A</code><br />
+<code>OILRIG2L3B</code><br />
+<code>OILRIG2L4</code><br />
+<code>OILRIG2L5</code><br />
+<code>OILRIG2L6A</code><br />
+<code>OILRIG2L6B</code><br />
+<code>OILRIG2L6C</code><br />
+<code>OILRIG2L6D</code></li>
+<li>Nuclear Missle Silo camera codes:<br />
+<code>SILOEXIT1</code><br />
+<code>SILOEXIT2</code><br />
+<code>SILOMISSILE</code><br />
+<code>SILOSHIPPING</code><br />
+<code>SILOTOWER</code></li>
+<li>Outpost camera codes:<br />
+<code>COMPOUNDCHILL</code><br />
+<code>COMPOUNDMUSIC</code><br />
+<code>COMPOUNDCRUDE</code><br />
+<code>COMPOUNDSTREET</code></li>
+<li>Small Oil Rig camera codes:<br />
+<code>OILRIG1HELI</code><br />
+<code>OILRIG1DOCK</code><br />
+<code>OILRIG1EXHAUST</code><br />
+<code>OILRIG1L1</code><br />
+<code>OILRIG1L2</code><br />
+<code>OILRIG1L3</code><br />
+<code>OILRIG1L4</code></li>
+<li>Underwater Labs camera codes:<br />
+<code>AUXPOWER****</code><br />
+<code>BRIG****</code><br />
+<code>CANTINA****</code><br />
+<code>CAPTAINQUARTER****</code><br />
+<code>CLASSIFIED****</code><br />
+<code>CREWQUARTERS****</code><br />
+<code>HALLWAY****</code><br />
+<code>INFIRMARY****</code><br />
+<code>LAB****</code><br />
+<code>LOCKERROOM****</code><br />
+<code>OPERATIONS****</code><br />
+<code>SECURITYHALL****</code><br />
+<code>TECHCABINE****</code><br />
+<em>Once inside an Underwater Lap, players will need to find a Keycard
+to open the Underwater Lab’s CCTV Station Module since the final
+4-digits of these Rust camera codes are randomly generated. With those
+4-digits, players can now input the correct code to the corresponding
+CCTV camera.</em></li>
 </ul>
 <hr />
 		</main>

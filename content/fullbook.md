@@ -13,12 +13,13 @@ This is a work in progress, everything is subject to change,
 be reorganised or moved to some other sub pages,
 but any info still valid in game wont be removed.
 
-All of the information you find here is comming from a [Google Doc file by
-@SwiftCoyote#2007](https://docs.google.com/document/d/19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing),
+All of the information you find here is comming from a [Google Doc](
+https://docs.google.com/document/d/19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing
+) by@SwiftCoyote,
 so thanks to him and all the people in the Rustricity Workshop
-community that contribute to it!  
+community that contribute to it! The Google Doc will always be a little more update then this website as the website needs to be rebuilt after each change.   
 
-A massive Thank You to @3YE#6593 on Discord for creating the website and
+A massive Thank You to @3YE on Discord for creating the website and
 teaching me (SwiftCoyote) how to update and maintain it. 
 
 ---
@@ -42,78 +43,39 @@ ask @3YE#6593 on Discord for more information.
 # Tools
 
 ---
+## Common Traits
 
 These tools take no damage, have a stack size of 1, are default BPs and
 can only be crafted.
 
 To change the colour of a wire/hose/pipe in place, with Wire/Hose/Pipe Tool in
 hand, hold Reload `R` to select the colour then look at an IO connection
-and press Reload `R`
+and press Reload `R`.
 
 Wire/Hose/Pipe length is limited to 30 meters with 16 anchor points using the left
 mouse button.
 
-If you miss click and attach a hose/wire/pipe to the wall in the wrong spot,
-look away and right click once. It will remove the last anchor point.
-Hold the right mouse button down to clear the hose/wire.
+If a hose/wire/pipe is accidentally attached to the wall in the wrong spot, look away and right click once. It will remove the last anchor point. Holding the right mouse button down will clear the wire/hose/pipe.
 
 To remove a hose/wire from a component, look at the connection point and
 hold down the right mouse button.
 
-Holding ‘Left Shift’ allows you to place anchor points on deployed entities
-like boxes or chairs (Only Pipes ATM)
+Holding ‘Left Shift’ allows the placement of anchor points on deployed entities like boxes or chairs (Only Pipes ATM).
 
-When hoses or wires are placed on walls and the wall is destroyed, the
-hoses and wires will remain in place.
+When hoses or wires are placed on walls and the wall is destroyed, the hoses and wires will remain in place, but pipes will break! They can also break when doing anything that changes the hitbox of the thing they are placed on, ie: upgrading walls can break pipes!
 
-<span id="pipe-break">
-But pipes will break ! they can also break when doing anything that change
-the hitbox of the thing they are placed on, ie: upgrading walls can break pipe !
-</span>
+Wear Diving Fins to get cleaner and straighter hose/wire/pipe placement. They force the player to move slower allowing for better accuracy when strafing left and right.
 
-Wire Tracing: If you left click a pre wired connection, only that
-connection will have the wire animation. The animation will return to
-the rest of the wires after you take a couple steps or look at another
-IO connection.
-
-When trying to keep straight to get better hose/wire placement accuracy,
-wear Diving Fins.
+Wire Tracing: Left click a pre wired connection, only that
+connection will have the wire animation making it easier to follow its path.
 
 To increase or decrease the range of the auto snap when getting close to
 an IO connection, in the F1 console, change `client.lookatradius` from `0.2`
-to `0.05`. This lets you place anchor points closer to IO connections.
+to `0.05`. This lets anchor points be placed closer to IO connections.
 
-If the server has it enabled, turn on Wire Slack by holding your Use
-key, default is `E`. Hold Sprint, shift, to increase and Duck, ctrl, to
-decrease. This will give your wires some slack rather than being
-straight between 2 points.
+If the server has it enabled, turn on Wire Slack by holding the Wire Tool  and press `USE`, default is `E`. Hold Sprint, shift, to increase and Duck, ctrl, to decrease. This will give wires some slack rather than being straight between 2 points.
 
 ---
-
-# Hammer![](images/image93.png)
-
-| | |  
-|-|---|  
-Item ID         |  200773292
-Description     | Used to pick up or repair components
-Crafting Recipe | 100 Wood
-Despawn Time    | 5 minutes
-
-Notes :
-
-- For electrical, this is used to pick up and repair components
-- Can be stored in a Tool Cupboard
-- All components can be picked up with the exception of the Windmill
-  and Modular Car Lift.
-- To pick up components, with TC authorization and a hammer in hand,
-  look at the component then press and hold Use `E`.
-- Most components take no damage when picked up. Exceptions are the
-  Laser Light, Sound Light, Door Controller, Igniter, Auto Turret and
-  Tesla Coil. Batteries and Power Sources also take damage when picked
-  up.
-
----
-
 # Wire Tool![](images/image72.png)
 
 | | |  
@@ -130,11 +92,11 @@ Notes:
   electrical components.
 - To trace an existing wire, left-click the connection point. This
   action will prompt a wire animation for the selected connection only.
-- It can be stored in a Tool Cupboard
-- Wire colour can be changed by holding Reload `R`.  
+- It can be stored in a Tool Cupboard.
+- Customize the wire colour by holding Reload `R`.  
 	Colour options are :  
   *Yellow, Red, Light Blue, Blue, Green, Orange, Pink, Purple, White and
-  Default(Black)*
+  Default (Black)*
 
 ![](images/image133.jpg)
 
@@ -153,7 +115,7 @@ Despawn Time       | 5 minutes
 Notes:
 
 - This tool is specifically designed to connect fluid components.
-- Can be stored in a Tool Cupboard
+- Can be stored in a Tool Cupboard.
 - Hose colour can be changed by holding Reload `R`.  
 	Colour options are :  
   *Red, Blue, Yellow, Light Blue, Orange, Pink, Purple, White and
@@ -176,7 +138,7 @@ Despawn Time       | 5 minutes
 Notes:
 
 - This tool is specifically designed to connect industrial connections.  
-- Can be stored in a Tool Cupboard  
+- Can be stored in a Tool Cupboard.  
 - The color of the pipe can be customized by holding down the 'Reload' button `R`.  
     Colour options are :  
   *Red, green, Blue, Yellow and Default(Grey)*
@@ -184,7 +146,30 @@ Notes:
 ![](images/pipes_color.jpg)
 
 ---
+# Hammer![](images/image93.png)
 
+| | |  
+|-|---|  
+Item ID         |  200773292
+Description     | Used to pick up or repair components
+Crafting Recipe | 100 Wood
+Despawn Time    | 5 minutes
+
+Notes :
+
+- For electrical, this is used to pick up and repair components.
+- Can be stored in a Tool Cupboard.
+- All components can be picked up with the exception of the Windmill
+  and Modular Car Lift.
+- To pick up components, with TC authorization and a hammer in hand,
+  look at the component then press and hold Use `E`.
+- Most components take no damage when picked up. Exceptions are the
+  Laser Light, Sound Light, Door Controller, Igniter, Auto Turret and
+  Tesla Coil. Batteries and Power Sources also take damage when picked
+  up.
+- Careful when wielding this powerful tool as it can create problems if you accidently start picking up items.
+
+---
 # Garry's Mod Tool Gun ![](images/gun_tool.png)
 
 | | |  
@@ -196,11 +181,12 @@ Despawn Time       | 5 minutes
 
 Notes:
 
-- This tool requires you to own and play Garry’s Mod for 30 minutes  
-- It is an upgraded hammer. On the screen it will tell you what you are looking at. It also has a longer range up to about 2 meters.  
+- This tool requires owning and have played Garry’s Mod for 30 minutes.  
+- It is an upgraded hammer. It has a small LCD screen on it and will display the name of the item it is pointed at.  
+- It also has a longer range up to about 2 meters.  
 - For electrical, this is used to pick up and repair components.  
-- With the F1 console command `toolgun.classiceffects true` or `toolgun.classiceffects false` you can change the color of the beam. False will give you the default orange color but True is the blue color like it is in Gmod.  
-- Can be stored in a Tool Cupboard  
+- The F1 console command `toolgun.classiceffects true` or `toolgun.classiceffects false` will change the color of the beam. False is the default orange color but True is blue like it is in Gmod.  
+- Can be stored in a Tool Cupboard.  
 - All components can be picked up with the exception of the Windmill and Modular Car Lift.  
 - To pick up components, with TC authorization and a hammer in hand, look at the component then press and hold Use `E`.  
 - Most components take no damage when picked up. Exceptions are the Laser Light, Sound Light, Door Controller,  
@@ -208,6 +194,8 @@ Igniter, Auto Turret and Tesla Coil. Batteries and Power Sources also take damag
 - Careful when wielding this powerful tool as it can create problems if you accidently start picking up items.  
 
 # Power Sources
+
+There is no way around this. If electrical circuits are going to function, power must be generated somehow. These are the components that produce power. For a more in depth explanation, have a look at [Power Generation]( powergeneration.html ) in the Concepts section.
 
 ---
 
@@ -231,7 +219,8 @@ Despawn Time      | 20 minutes
 Notes:
 
 - This item can only be spawned in by an admin.
-- It supplies a constant 100rW per output constantly for free.
+- It supplies a constant 100rW per output for free.
+- It has 3 outputs.
 - Excellent for testing.
 
 ---
@@ -259,25 +248,17 @@ Decay Time          | 8 hours
 
 Notes:
 
-- Wind Turbines operate in both day and night
+- Wind Turbines operate in both day and night.
 - The amount of power they output is heavily influenced by the number of
-  floors above the ground they are, not sea level
-- They will produce more power, more often the more floors above ground
-  you place them
-- Requires a 1x1 to be placed on and cannot be picked up with a hammer
-- Requires a single square or 2 triangles to be placed on
-  and cannot be picked up with a hammer.
-- There is a small area at the base of the turbine, on some sheet metal
-  where you can place components.
-- A turbine made on an iceberg, will calculate its output based on sea
-  level down to the ocean bottom. This means no additional height above
-  sea level will increase its height calculation.
-- There needs to be a minimum of 3 foundations distance between
-  turbines. This will prevent 1 turbine blocking the wind for another.
+  floors above the ground they are, not sea level.
+- They will produce more power, more often the more floors above ground they are placed.
+- There is a small area at the base of the turbine, on some sheet metal where you can place components.
+- A turbine made on an iceberg, will calculate its output based on sea level down to the ocean bottom. This means no additional height above sea level will increase its height calculation.
+- There needs to be a minimum of 15 meters or 5 foundations distance between turbines. This will prevent 1 turbine blocking the wind for another.
+- Requires a single square or 2 triangles to be placed on. 
+- Cannot be picked up with a hammer.
+- Check out Wind Power in the Concepts section under [Power Generation](powergeneration.md).
 
-![](images/image23.png)
-
-![](images/image31.png)
 
 ---
 
@@ -309,22 +290,12 @@ Notes:
   making it to the entire front face.
 - They can be placed on the ground or flat building structure.
 - They can be picked up with a hammer but will lose 25% health.
-- 24 hours in game is 1 irl hour
+- 24 hours in game is 1 irl hour.
+- Check out Solar Power in the Concepts section under[Power Generation](powergeneration.md).
 
-![](images/image111.png)
 
-Depending on the time of year, the Sun will take a different path
-through the sky. In June and July, the Sun reaches its most Northern
-path. In December and January, the Sun reaches its most Southern path.
-The picture above on the right shows how the Sun will traverse the sky
-over 6 Rust months. A day in the game is an hour of real time. This
-means it takes about 15 days for a full Rust Year. Wipe day is always
-May 20th 2024 so depending how long or short your wipe is, and where on
-the map you build, will determine the direction of your Solar Panels. If
-you are only playing the first 3 days of a fresh wipe and you build in
-the South, face the panels North and call it a day, but, if you are
-playing a monthly wipe, placing them facing East and West is the
-simplest option.
+
+
 
 ---
 
@@ -352,185 +323,26 @@ Decay Time          |
 
 Notes:
 
-- Small Generators will output electricity when they are turned on
+- Small Generators will output electricity when they are turned on.
 - You can Start and Stop them manually or use one of the electrical
   inputs.
 - The last input to receive power is the function that is activated,
   even if power is still being applied to the opposite.
-- They must be placed on floors, foundations or the ground
+- They must be placed on floors, foundations or the ground.
 - They still produce max power when damaged
-- They can be picked up with a hammer but lose 20% health
+- They can be picked up with a hammer but lose 20% health.
 - If a battery is feeding power to either of the inputs, components
   connected to Power Out will register an active usage on the battery.
 
 ---
 
-# Power Distribution
-
----
-
-Power distribution is one of the most important things to know and
-understand when it comes to electricity.  
-There are many ways to produce, store and distribute power for your circuits.  
-This section breaks down the components used for distribution and the different types of distribution circuits known as a power bus.  
-It covers the different types of battery backup systems.  
-It covers the difference between the amount of power a circuit consumes versus what a battery thinks it is consuming, aka active usage.  
-This section also covers the theory behind circuit and location centralization, decentralization and hybridization.  
-It covers the game mechanics behind circuit delay and power flow as well
-as the error message, short circuit/max depth.
-
----
-
-# Root Combiner![](images/image67.png)
-
-| | |  
-|-|---|  
-Item ID             | -458565393
-Description         | Combining power from power sources
-Crafting Recipe     | 75 Metal Fragments
-Recycles Into       | 38 Metal Fragments
-Stack Size          | 5
-Workbench Required  | Level 1
-Research Table Cost | 75 Scrap
-Hit Points          | 200
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
-Inputs/Outputs      | Root Power 1, Root Power 2 / Combined Power Out
-Active Usage        | 1
-Power Consumption   | 0rW
-Power Output        | Same as input
-Despawn Time        | 20 minutes
-
-Notes:
-
-- These allow you to combine Power Sources and batteries to produce
-  higher amounts of available power. Power Sources are Wind Turbines,
-  Large Solar Panels and Small Generators
-- It does not consume any power but it will register 1 active usage on a
-  battery
-- Can be placed on all building surfaces
-- They have a shared error message, ‘Short Circuit/Max Depth’, and that
-  has [its own section](concepts.html#short-circuit-max-depth) breaking it down.
-- also see [Root combining batteries](storage.html#root-combining-batteries) as it have down side
-  and isnt recommended in most cases,
-
----
-
-# Electrical Branch![](images/image82.png)
-
-| | |  
-|-|---|  
-Item ID             |  -1448252298
-Description         | Branching power off from the main line by a set amount
-Crafting Recipe     | 75 Metal Fragments
-Recycles Into       | 38 Metal Fragments
-Stack Size          | 5
-Workbench Required  | Level 1
-Research Table Cost | 75 Scrap
-Hit Points          | 200
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
-Inputs/Outputs      | Power In  / Branch Out, Power Out
-Active Usage        | 0 + Branch Out
-Power Consumption   | 1rW + Branch Out
-Power Output        | Branch Out is the amount you configure it to. Power Out is the remaining power.
-Despawn Time        | 5 minutes
-
-Notes:
-
-- These will consume 1 power that passes through it but not register on
-  a battery's active usage for itself
-- Can be configured by pressing `E` while looking directly at the
-  Branch.
-- 2rW is the minimum you can Branch Out
-- What you set the Branch Out to will be the amount to register on a
-  battery’s active usage and will always consume that much power even if
-  the components past it are disabled. More explained in ‘link to
-  battery active usage vs actual power usage’
-- When an Electrical Branch sends power out, it will first send power
-  through Power Out then send power through Branch Out. Check out the
-  section on Circuit Delay and Power Flow.
-- Can be placed on all angled surfaces.
-
----
-
-# Splitter![](images/image71.png)
-
-| | |  
-|-|---|  
-Item ID             |  -563624462
-Description         | Splitting power evenly between up to 3 outputs
-Crafting Recipe     | 100 Metal Fragments
-Recycles Into       | 50 Metal Fragments
-Stack Size          | 5
-Workbench Required  | Level 1
-Research Table Cost | 20 Scrap
-Hit Points          | 500
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
-Inputs/Outputs      | Power In  / Power Out 1, Power Out 2, Power Out 3
-Active Usage        | 1
-Power Consumption   | 1rW
-Power Output        | Input amount divided by the number of used outputs, minus 1
-Despawn Time        | 5 minutes
-
-Notes:
-
-- When the Splitter receives power it does not pass power through all
-  connected outputs at the same time. Power outputs in the order of
-  Output 1, Output 2 then Output 3. Check out the section on Circuit
-  Delay and Power Flow.
-- Can only be placed on vertical walls
-- When an output is destroyed, it will redistribute power between the
-  remaining outputs.
-- Outputs can connect to the inputs of Root Combiners
-
----
-
 # Power Storage
 
----
-
-- Batteries can accept incoming power at the same time they are sending power out.  
-- Charging rate is dependent on the amount of power coming in, with an efficiency of 80%.  
-
-> *Example:* 20rW from a Solar Panel × 0.8 = 16rW usable through a battery.  
-
-> *Example:* If your Medium Battery is supplying 16rW to a circuit, 16 ÷ 0.8 = 20rW is the minimum you want to give the battery so it doesn’t lose any charge.
-
-- It is recommended to supply slightly more than you need if you want to charge the battery.  
-- When you combine batteries with Root Combiners, they do not split the load as one would expect. They cannot see each other, so each battery tries to power the whole circuit.  
-
-> For example, in a circuit with 2 root combined batteries supporting a load of 50, it would seem to make sense that 50 power divided by 2 batteries equals 25 per battery.  
-Rustricity doesn't work like that and 50 power is taken from each battery and seen as Active Usage on both batteries. This means both batteries are draining at a rate of 50.  
-
-This means when we get to circuits that need more than 100 power,
-all the batteries combined will show a max Active Usage,
-which is used to calculate how fast a battery drains.
-So if we are forcing batteries to max drain,
-then we might as well try to use as much as the combined power the batteries will provide.
-
-When using a bypass battery backup like the [ Nih core ]( backup.html#nih-core ),
-Active Usage does not matter because the circuits are power from the main power source most of the time.
-
-- Rustricity has its own version of [Parallel and Series](concepts.html#parallel-vs-series) battery configurations.
-- 1rw will charge a Large Battery in 34 IRL days.
-- When a battery is depleted because it is not receiving enough power, no power is outputed until it charges up for a couple seconds before
-outputting to the connected circuit. The battery still not receiving
-enough power will deplete in a second and the process repeats.  
-- If the circuit after a battery is turning on and off,
-you do not have enough power charging your batteries.
-- When they get picked up, they lose 25% HP but retain their current
-capacity. This means if a large battery has a full charge, when you pick
-it up and place it back down, it will still have a full charge.
-- Batteries have something called Active Usage and components have
-something called Power Consumption. Read about it in [Battery Active Usage vs Actual Power Consumed
-](concepts.html#battery-active-usage-vs-actual-power-consumed).
-
-![](images/battery-footprint.png)
+Storing power for use at a later time is a great way at preventing circuits from going offline should the main power source reduce or stop producing power. For a more detailed explanation, check out [Power Storage]( powerstorage.html ) in the Concepts section.
 
 ---
 
-
-
-# Small Rechargeable Battery![](images/image74.png)
+## Small Rechargeable Battery![](images/image74.png)
 
 | | |  
 |-|---|  
@@ -554,13 +366,13 @@ Decay Time          |
 Notes:
 
 - Small Batteries are very compact and can be placed on some deployables
-  like work/repair benches and boxes
-- Maximum power input is 40rW
-- Comes with a default charge of 20rWM
+  like work/repair benches and boxes.
+- Maximum power input is 40rW.
+- Comes with a default charge of 20rWm.
 
 ---
 
-# Medium Rechargeable Battery![](images/image48.png)
+## Medium Rechargeable Battery![](images/image48.png)
 
 | | |  
 |-|---|  
@@ -585,13 +397,13 @@ Decay Time          |
 Notes:
 
 - These batteries are significantly larger than the small battery and
-  take up 2sq meters or 2 squares on a stone foundation
-- Maximum power input is 200rW
-- Comes with a default charge of 100rWM
+  take up 2sq meters or 2 squares on a stone foundation.
+- Maximum power input is 200rW.
+- Comes with a default charge of 100rWm.
 
 ---
 
-# Large Battery![](images/image56.png)
+## Large Battery![](images/image56.png)
 
 | | |  
 |-|---|  
@@ -614,220 +426,744 @@ Decay Time          |
 
 Notes:
 
-- They need 2sq meters or 2 squares on a stone foundation of floorspace
-- Maximum power input is 400
-- They come with a default charge of 200rWM
-
----
-
-# Nih Capacitor *(unfinished)*
-
-**( will probably be fixed and wont work anymore soon )**
-
-The Nih Capacitor was first established by Nih, with assistance from SwiftCoyote, on September 11, 2022.
-A Capacitor is a set of components that accumulate power, much like rechargeable batteries.
-However, the method for assessing the amount of stored power differs. 
-
-For batteries, the stored power is represented as `Capacity`,  
-measured in Rust Watt Minutes (rWm).
-
-Contrarily, in a Capacitor, we gauge the power storage by examining an Input/Output (IO) connection
-and observing a figure that is typically associated with `power` or the amount of power available for use.  
-But within the Capacitor, this figure **DOES NOT indicate the amount of power that can be utilized**.
-Rather, this figure is what we call `Wire Capacity`, symbolized as `Np`.
-For instance, in the image below, the displayed `6,492,076` is **NOT** the amount of power available.
-Instead, it represents `6,492,076Np` of Wire Capacity. 
-
-Before going into the construction and operation of a Capacitor,
-it’s essential to understand the math conversions between Rust Watt Minutes (rWm) and Wire Capacity (Np).  
-
-Both represent capacity, but they use different units of measurement depending on the energy storage container, be it a battery or a capacitor. 
-
-The Maths :  
-`rWm`: rust watt minute  
-`rW`: rust watts (commonly referred to as "power")  
-`Np`: Wire Capacity  
-`∅`: 7.5 (Trust Me Bro)  
-`S`: Seconds  
-`τ`: 60 (The number of seconds in a minute)  
-`M`: Minutes  
-`P`: Max power output for 1 second  
-`O`: The amount of power you want to output  
-`H`: Hours  
-
-
-To convert rWm into Wire Capacity(Np) we use the following equation:  
-`(rWm × τ = P) × ∅ = Np`
-
-To convert Wire Capacity(Np) into rWm we use the following equation:  
-`(Np ÷ ∅ = P) ÷ τ = rWm`
-
-To figure out how much time a given capacity will run for outputting a specific amount of power, we use the following equations:  
-`Seconds: (rWm ÷ O = M) × τ = S`  
-`Minutes: rWm ÷ O = M`  
-`Hours: (rWm ÷ O = M) ÷ τ = H`  
-
-Examples
-Using Capacity from the battery in the first picture,
-we can figure out the number we would see if we were looking at an IO connection in a Capacitor to view Wire Capacity(Np).  
-`(rWm × τ = P) × ∅ = Np`  
-`(271 × 60 = 16,260) × 7.5 = 121,950Np`  
-
-Therefore a capacity of 271rWm when viewed on an IO connection is equal to 121,950Np.
-We can also see that if the Large Battery did not have an output limit of 100,
-it would be able to output 16,260 power for 1 second. 
-
-Using the IO connection to view Wire Capacity(Np) from the second picture,
-we can figure out how much rWm of Capacity we would have if this was viewed on a battery.  
-`(Np ÷ ∅ = P) ÷ τ = rWm`  
-`(6,492,076 ÷ 7.5 = 865,610.1333) ÷ 60 = 14,426rWm`  
-
-Therefore a Wire Capacity of 6,492,076Np when viewed on a battery represented as Capacity, it is equal to 14,426rWm.  
-Without a limited output, the Capacitor is capable of delivering 865,610 power for 1 second. 
-
-Using both of these examples, we can calculate the length of time both the Battery and Capacitor would power a circuit for,
-given a set output.
-> For our example, let's say the circuit needs 100 power.  
->
-Battery :  
-  `(rWm ÷ O = M) × τ = S`  
-  `(271÷ 100 = 2.71 Minutes) × 60 = 162 Seconds`  
->
-Capacitor : *(you will need to convert from Np to rWm first)*  
-  `(rWm ÷ O = M) × τ = S`  
-  `(14,426 ÷ 100 = 144.26 Minutes) × 60 = 8,655 Seconds`  
->
-OR :  
-  `(rWm ÷ O = M) ÷ τ = H`  
-  `(14,426 ÷ 100 = 144.26 Minutes) ÷ 60 = 2.40 Hours`  
-
-Prior to constructing a capacitor, it’s crucial to understand its limitations and potential issues.
-This will clarify misconceptions such as the notion of ‘infinite power’ and help identify the appropriate contexts for its use.  
-
-- It doesn’t survive server restarts. everytime the server restarts, all of the stored power will vanish, poof gone.  
-- When automating energy extraction, it is possible that a flicker will be created or worse, all the power vanishes, poof gone.
-- It consumes power even when nothing is connected to it, unlike a battery that doesn’t lose power if nothing is connected to it.
-- It is not portable.
-
-Now, some of the advantages and benefits of the Capacitor
+- They need 2sq meters or 2 squares on a stone foundation of floorspace.
+- Maximum power input is 400.
+- They come with a default charge of 200rWm.
 
 ---
 
 
-# Defense
+
+
+# Power Distribution
+
+After electricity is generated, it needs a way to get to the different end devices or circuits. The primary job of these components is to create the paths for power to flow, and/or control the amount of power feeding the end devices/circuits. There is a breakdown of different distribution systems located in [Power Distribution]( powerdistribution.html ) under the Concepts section.
 
 ---
 
-# SAM Site![](images/image92.png)
+# Root Combiner![](images/image67.png)
 
 | | |  
 |-|---|  
-Item ID           | -1009359066
-Description       | Defends against aerial threats
-Recycles Into     | 25 HQM
-Stack Size        | 1
-Hit Points        | 1000
-Where To Buy      | Outpost for 500 Scrap
-Inputs/Outputs    | Power In / Has Target, Low Ammo, No Ammo, Passthrough
-Active Usage      | 25
-Power Consumption | 25rW
-Power Output      | 1rw
-Power Passthrough | Input power minus 25
-Despawn Time      | 5 minutes
-Decay Time        | 12 hours
+Item ID             | -458565393
+Description         | Combining power from power sources
+Crafting Recipe     | 75 Metal Fragments
+Recycles Into       | 38 Metal Fragments
+Stack Size          | 5
+Workbench Required  | Level 1
+Research Table Cost | 75 Scrap
+Hit Points          | 200
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
+Inputs/Outputs      | Root Power 1, Root Power 2 / Combined Power Out
+Active Usage        | 1
+Power Consumption   | 0rW
+Power Output        | Same as input
+Despawn Time        | 20 minutes
 
 Notes:
 
-- You can enable and disable Defender Mode by looking at the SAM and
-  pressing and holding E. In defender mode it will only target incoming
-  MLRS rockets, else it will target all flying vehicles.
-- 1rW will pulse out of Has Target if it takes damage and will release a
-  constant 1rW if it locks a target.
-- Low Ammo will start to output 1rW when there is 10 SAM Ammo or less.
-  When it has no more ammo it will stop outputting power.
-- No ammo will output 1rW constantly when there is no more ammo.
-- If 100 power is given to the SAM, 75 will come out Passthrough.
-- Must be placed on flat surfaces
-- Try to place them in a way they cannot be baited and used to destroy
-  your own stuff.
+- These allow Power Sources and batteries to be combined to produce higher amounts of available power. [Power Sources](sources.html#-Power-Sources) are Wind Turbines, Large Solar Panels and Small Generators.
+- Can be placed on all building surfaces.
+- It has a max depth of 16 components between a power source and the combiner. If max depth is reached, going any deeper will result in a shared error message, [Short Circuit/Max Depth](powerdistribution.html##-Short-Circuit-/-Max-Depth).
+- It does not consume any power but will register 1 [Active Usage](powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed) on a battery.
+- Combining batteries with a Root Combiner to get a larger amount of power is wiring the batteries in [Series](powerstorage.html##-Parallel-vs-Series). The load is not evenly shared. For example, 2 batteries connected to a Root Combiner feeding a circuit that needs 50 power. Each battery will show an Active Usage of 50, not 25/25 to = 50.
 
 ---
 
-# Auto Turret![](images/image91.png)
+# Electrical Branch![](images/image82.png)
 
 | | |  
 |-|---|  
-Item ID             | -2139580305
-Description         | A automated sentry turret to neutralize targets
-Crafting Recipe     | 10 HQM, 1 CCTV Camera, 1 Targeting Computer
-Recycles Into       | 5 HQM, 50% 1 CCTV Camera, 50% 1 Targeting Computer
-Stack Size          | 1
-Workbench Required  | Level 2
-Research Table Cost | 500 Scrap
-Hit Points          | 1000
-Where To Buy        | Outpost for 400 Scrap
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
-Inputs/Outputs      | Power In / Has Target, Low Ammo, No ammo
-Active Usage        | 10
-Power Consumption   | 10rW +1 if outputs are used
-Power Output        | 1rW
-Despawn Time        | 60 minutes
-
-Notes:
-
-- There are 2 modes, Peacekeeper and Attack All.
-- You can enable and disable Peacekeeper mode by looking at the turret
-  and pressing and holding E. In peace keeper mode it will only attack
-  someone if they become aggressive. In Attack All mode it will kill
-  anyone not on its authorization list.
-- 1rW will pulse out of Has Target if it takes damage and will release a
-  constant 1rW if it locks a target.
-- Low Ammo will start to output 1rW when there is 50 ammo or less. When
-  it has no more ammo it will stop outputting power.
-- No ammo will output 1rW constantly when there is no more ammo.
-- Range is 30 meters or 10 square foundations
-- Must be placed on flat surfaces
-- Try to place them in a way they cannot be baited to be drained
-- They contain their own authorization list
-- The turret has just over a 180 degree detection arch
-- They can shoot through 2 layers of Chainlink Fence.
-
----
-
-# Tesla Coil![](images/image117.png)
-
-| | |  
-|-|---|  
-Item ID             | 1371909803
-Description         | An electrical trap that zaps nearby players
-Crafting Recipe     | 3 HQM, 1 Tech Trash
-Recycles Into       | 2 HQM, 50% 1Tech Trash
-Stack Size          | 3
-Workbench Required  | Level 2
-Research Table Cost | 20 Scrap
-Hit Points          | 250
-Where To Buy        | Outpost for 75 Scrap
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
-Inputs/Outputs      | Power In
-Active Usage        | 35
-Power Consumption   | 1-35rW
+Item ID             |  -1448252298
+Description         | Branching power off from the main line by a set amount
+Crafting Recipe     | 75 Metal Fragments
+Recycles Into       | 38 Metal Fragments
+Stack Size          | 5
+Workbench Required  | Level 1
+Research Table Cost | 75 Scrap
+Hit Points          | 200
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
+Inputs/Outputs      | Power In  / Branch Out, Power Out
+Active Usage        | 0 + Branch Out
+Power Consumption   | 1rW + Branch Out
+Power Output        | Branch Out is the amount you configure it to. Power Out is the remaining power.
 Despawn Time        | 5 minutes
 
 Notes:
 
-- Tesla Coil damage is the amount of input power per second up to a max
-  of 35. This means if you give a tesla coil 5rW, it will do 5 damage
-  per second. Give it 35rW and it will do 35 damage a second.
-- Their damage is stackable. 100 Tesla Coils given 1rW will kill a
-  person in 1 second.
-- The range is just over 1 foundation or 3.5 meters
-- Can be placed on all surfaces including the ground
-- With a building trick, a tesla coil can zap people through walls,
-  floors and roofs.
-- They damage themselves at a rate of 2hp/sec
-- They will not turn on if their health is at or below 62
+- Can be placed on all angled surfaces.
+- Can be configured by pressing Use(`E`) while looking directly at the Branch.
+- 2rW is the minimum Branch Out can be set to.
+- These will consume 1 power but not register on a battery's [Active Usage](powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed).
+- What Branch Out is set to will be the amount that registers on a battery’s Active Usage.
+- Branch Out will always consume the amount of power it is set to, even if the components past it are disabled. 
+- When an Electrical Branch sends power out, it will first send power through Power Out then send power through Branch Out. Check out the section on [Circuit Delay and Power Flow](powerdistribution.html##-Circuit-Delay-and-Power-Flow).
+- Is a key component to create a [Fixed Bus](powerdistribution.html###-Fixed-Bus-(F-Bus))
 
 ---
+
+# Splitter![](images/image71.png)
+
+| | |  
+|-|---|  
+Item ID             |  -563624462
+Description         | Splitting power evenly between up to 3 outputs
+Crafting Recipe     | 100 Metal Fragments
+Recycles Into       | 50 Metal Fragments
+Stack Size          | 5
+Workbench Required  | Level 1
+Research Table Cost | 20 Scrap
+Hit Points          | 500
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
+Inputs/Outputs      | Power In  / Power Out 1, Power Out 2, Power Out 3
+Active Usage        | 1
+Power Consumption   | 1rW
+Power Output        | Input amount divided by the number of used outputs, minus 1
+Despawn Time        | 5 minutes
+
+Notes:
+
+- Can only be placed on vertical walls.
+- When the Splitter receives power it does not pass power through all connected outputs at the same time. Power outputs in the order of Output 1, Output 2 then Output 3. Check out the section on [Circuit Delay and Power Flow](powerdistribution.html##-Circuit-Delay-and-Power-Flow).
+- When an output is destroyed, it will redistribute power between the remaining outputs.
+- Outputs can connect to the inputs of Root Combiners.
+- Is a key component of a [Dynamid Bus](powerdistribution.html###-Dynamic-Bus-(D-Bus)).
+
+---
+
+# Cable Tunnel (NOT CRAFTABLE)![](images/electric.cabletunnel.png)
+Item ID: 1835946060
+Description: Allows wires to pass through wall
+Crafting Recipe: Cannot be crafted
+Recycles Into: 5 High Quality Metal
+Stack Size: 1
+Hit Points: ∞
+Inputs/Outputs: Tunnel 1 In, Tunnel 2 In, Tunnel 3 In, Tunnel 4 In/Tunnel 1 Out, Tunnel 2 Out, Tunnel 3 Out, Tunnel 4 Out
+Active Usage: 1
+Power Consumption: 1rW
+Power Output: Input minus 1
+Despawn Time: 20 minutes
+
+Notes: 
+- This item can only be spawned in by an admin.
+- It has 4 inputs with 4 matching outputs.
+- Was designed to let wires pass through walls when the idea was to not let wires pass through walls.
+
+---
+# Switches
+
+Switches are components that, for the most part, require a player to Use(`E`). They can only be operated voluntarily and never by accident. They connect or disconnect the electrical path to a circuit, i.e. turn things on and off.
+
+---
+# Switch![](images/image9.png)
+
+| | |  
+|-|---|  
+Item ID             |  1951603367
+Description         | Allowing power to pass through or not
+Crafting Recipe     | 100 Metal Fragments
+Recycles Into       | 50 Metal Fragments
+Stack Size          | 5
+Workbench Required  | Level 1
+Research Table Cost | 20 Scrap
+Hit Points          | 200
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
+Inputs/Outputs      | Electric Input, Switch On, Switch Off  / Output
+Active Usage        | 1
+Power Consumption   | 1rW
+Power Output        | Power input minus 1
+Despawn Time        | 5 minutes
+Decay Time          |
+
+Notes:
+
+- To operate the Switch, look at it and press Use(`E`).
+- Does not need TC auth to operate it. 
+- Can only be placed on vertical surfaces.
+- When the Switch is off, it will block all the components past it from registering [Active Usage](powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed) on batteries.
+- [Side Inputs](uncatagorizedconcepts.html##-Side-Inputs) are inputs, not toggles and are explained in their own section, currently in Uncategorized under Concepts.
+- The side inputs block the [Component Destruction Detectors](https://www.rustrician.io/?circuit%3Dbf38168f0834f7d84fb837ac41d1818e) ability to see downstream.
+
+---
+
+# Button![](images/image83.png)
+
+| | |  
+|-|---|  
+Item ID             |  -1778897469
+Description         | Allowing power to pass through when pressed
+Crafting Recipe     | 75 Metal Fragments
+Recycles Into       | 38 Metal Fragments
+Stack Size          | 5
+Workbench Required  | Level 1
+Research Table Cost | 20 Scrap
+Hit Points          | 200
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
+Inputs/Outputs      | Electric Input  / Output
+Active Usage        | 1
+Power Consumption   | 1rW
+Power Output        | Power input minus 1
+Despawn Time        | 5 minutes
+Decay Time          |
+
+Notes:
+
+- Can only be placed on vertical surfaces.
+- Will generate 2rW for 0.25 seconds when pressed.
+- When the button is supplied with power, it will pulse 2rW first then output the incoming power.
+- Stays pressed for 5 seconds and cannot be changed.
+
+---
+
+# Reactive Target![](images/image119.png)
+
+| | |  
+|-|---|  
+Item ID             |  -1736356576
+Description         | Target practice and fun
+Crafting Recipe     | 100 Wood, 150 Metal Fragments, 1 Gear
+Recycles Into       | 50 Wood/75 Metal Fragments/50% - 1 Gear
+Stack Size          | 1
+Workbench Required  | Level 1
+Research Table Cost | 20 Scrap
+Hit Points          | 250
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
+Inputs/Outputs      | Power In, Reset, Lower / Power Out
+Active Usage        | 1
+Power Consumption   | 1rW
+Power Output        | 1rW
+Despawn Time        | 5 minutes
+Decay Time          | 48 hours
+
+Notes:
+
+- Can be placed on floors, foundations or the ground.
+- When the target is lowered for any reason, it will pulse out 1rW.
+- When the target is supplied with power, when lowered for any reason,
+  it will pulse 1rW first then output the incoming power constantly
+  until it stands back up.
+- There is no priority between Reset and Lower. Whichever input is given
+  power last is the function that will take place.
+- Can be connected to Root Combiners.
+
+---
+
+
+
+# Sensors
+Sensors are components that players do not Use(E). Sensors detect or respond to the presence of a player's character model. 
+
+---
+
+# HBHF Sensor![](images/image6.png)
+
+| | |  
+|-|---|  
+Item ID             |  -1507239837
+Description         | Detecting heartbeat, breathing, humidity and footsteps
+Crafting Recipe     | 75 Metal Fragments
+Recycles Into       | 38 Metal Fragments
+Stack Size          | 1
+Workbench Required  | Level 2
+Research Table Cost | 75 Scrap
+Hit Points          | 200
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Dweller, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
+Inputs/Outputs      | Power In  / Power Out
+Active Usage        | 1
+Power Consumption   | 1rW
+Power Output        | 1 per person detected
+Despawn Time        | 20 minutes
+Decay Time          |
+
+Notes:
+
+- Can be placed on all angled surfaces and the ground.
+- Detection range is about 11m or 3.5 square foundation.
+- Can be set to Include/Exclude Authorized and Others. With TC auth, look at the sensor and hold Use(E).
+- Requires line of sight, except a player crouching under a half height floor can be seen by the sensor from above. It can also be built to see through walls, floors and roofs. 
+- Only outputs an amount of power equal to the number of people it detects, meaning if Power Out is connected to a Counter, set to Show Passthrough, the Counter will display the number of people the HBHF is detecting.
+- Will detect all scientist types including ones riding in the CH47.
+
+
+---
+
+# Laser Detector![](images/image19.png)
+
+| | |  
+|-|---|  
+Item ID             |  -798293154
+Description         | Passing power through when a person is in the beam
+Crafting Recipe     | 75 Metal Fragments
+Recycles Into       | 38 Metal Fragments
+Stack Size          | 5
+Workbench Required  | Level 2
+Research Table Cost | 75 Scrap
+Hit Points          | 200
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
+Inputs/Outputs      | Power In / Power Out
+Active Usage        | 1
+Power Consumption   | 1rW
+Power Output        | Power input minus 1
+Despawn Time        | 20 minutes
+
+Notes:
+
+- Can only be placed on vertical surfaces.
+- Can be placed on a foundation before upgrading.
+- The maximum detection distance is 4.5m or 1.5 square foundations.
+- Laser will not detect if approached straight on.
+- Placing the laser closer than .5m meters to a single door will not detect a player passing through from the opposite side.
+- If a laser is detecting someone and a door closes in the path of the laser, it will continue to detect the player until they move out of range.
+- If a player remains in the beam, it will continue to hold detection for 12m or 4 square foundations.
+- Can be crouched under and jumped over.
+- Can be placed in floors before upgrading to detect players walking above.
+- The visual laser can be blocked with any deployable item and rideable horses.
+- The laser will detect drones, land, sea and air vehicles including NPC helicopters excluding horses.
+
+
+---
+
+# Pressure Pad![](images/image129.png)
+
+| | |  
+|-|---|  
+Item ID             |  -2049214035
+Description         | Passing power when a player stands on it
+Crafting Recipe     | 150 Wood/1 Spring/1 Gear
+Recycles Into       | 75 Wood/50% - 1 Spring/50% - 1 Gear
+Stack Size          | 1
+Workbench Required  | Level 1
+Research Table Cost | 20 Scrap
+Hit Points          | 200
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
+Inputs/Outputs      | Power In / Power Out
+Active Usage        | 1
+Power Consumption   | 1rW
+Power Output        | Power in minus 1
+Despawn Time        | 5 minutes
+Decay Time          |
+
+Notes:
+
+- Can only be placed on floors or foundations.
+- Will generate 1rW briefly when pressed.
+- When the pad is supplied with power, it will pulse 1rW first then
+  output the incoming power.
+- Detects land, sea and air vehicles, this includes horses.
+- Can be triggered through half height floors from below or ramps from
+  above.
+- Many items can be placed on top of the pad, including but not limited to, sleeping bags, chairs and planter boxes.
+- Can be connected to Root Combiners.
+
+---
+
+
+
+# Logic
+These components allow for programming of intelligent systems that will perform and respond to sequences of operations. Systems that use these components will often, but not limited to, follow the rules of Boolean logic.
+
+---
+
+# Blocker![](images/image122.png)
+
+| | |  
+|-|---|  
+Item ID             |  -690968985
+Description         | Blocking power passthrough when power is applied to its side input
+Crafting Recipe     | 75 Metal Fragments
+Recycles Into       | 38 Metal Fragments
+Stack Size          | 5
+Workbench Required  | Level 1
+Research Table Cost | 20 Scrap
+Hit Points          | 200
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Underwater Dweller, Underwater Lab Blue Crate
+Inputs/Outputs      | Power In, Block Passthrough / Power Out
+Active Usage        | 1
+Power Consumption   | 1rW
+Power Output        | Power input minus 1
+Despawn Time        | 5 minutes
+
+Notes:
+
+- When power is applied to the Block Passthrough input on the side, power will be prevented from passing though.
+- When passthrough is blocked, it will also block any components [Active Usage](powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed), effectively hiding them from batteries when offline.
+
+
+---
+
+# Memory Cell![](images/image68.png)
+
+| | |  
+|-|---|  
+Item ID             |  -746647361
+Description         | Sending power through 1 of 2 outputs based on side inputs
+Crafting Recipe     | 75 Metal Frags
+Recycles Into       | 38 Metal Frags
+Stack Size          | 5
+Workbench Required  | Level 2
+Research Table Cost | 75 Scrap
+Hit Points          | 200
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
+Inputs/Outputs      | Power In, Set, Reset, Toggle / Output, Inverted Output
+Active Usage        | 1
+Power Consumption   | 1rW
+Power Output        | Power input minus 1
+Despawn Time        | 20 minutes
+
+Notes:
+
+- Aka, a Flip Flop but has a Set, Reset and Toggle.
+- The Reset input will cause the Memory Cell to send power through Inverted Output.
+- The Set input will cause the Memory Cell to send power through Output.
+- The Toggle input will cause the Memory Cell to flip which output power is going through.
+- The side inputs are prioritized from top to bottom. This means if power is applied to Set then power is applied to Reset or Toggle, nothing will happen. If power is applied to Reset then power is applied to Toggle, nothing will happen. If power is applied to Reset then power is applied to Set, it will force the Memory Cell to send power through Output.
+- When switching from one output to the other, Output will always react before Inverted Output. 
+- The 2 outputs are currently bugged. When you try to see the power info by pointing at the outputs with a Wire Tool, it will show the incoming power being evenly split between both outputs. This is a visual bug. 100% of the power is only coming out of 1 of the outputs.
+- Here is a [ rustrician.io](https://www.rustrician.io/?circuit=7329b23650674902a215f43e5015d563) BP explaining the Memory Cell.
+
+---
+
+# Timer![](images/image104.png)
+
+| | |  
+|-|---|  
+Item ID             |  665332906
+Description         | Passing power through for a period of time
+Crafting Recipe     | 75 Metal Fragments
+Recycles Into       | 38 Metal Fragments
+Stack Size          | 5
+Workbench Required  | Level 1
+Research Table Cost | 20 Scrap
+Hit Points          | 200
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
+Inputs/Outputs      | Electric Input, Toggle On / Output
+Active Usage        | 1
+Power Consumption   | 1rW
+Power Output        | Input power minus 1
+Despawn Time        | 5 minutes
+
+Notes:
+
+- Everyone can activate the timer but only TC authorized people can set the timer.
+- Timer must be powered to set the duration.
+- It must also be powered first before it can be triggered as per [Power Flow](powerdistribution.html###-Power-Flow).
+- Has a default time of 30 seconds.
+- Minimum time duration is 0.25 seconds. This might be too fast for some servers and must be increased.
+- Maximum time duration has been tested to at least a 2 weeks IRL.
+- Can only be placed on vertical walls.
+- When it is not active, it will block all the components past it from registering [Active Usage](powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed) on batteries.
+
+
+---
+
+# RAND Switch![](images/image123.png)
+
+| | |  
+|-|---|  
+Item ID             |  492357192
+Description         | Achieving a 50% passthrough rate when Set
+Crafting Recipe     | 75 Metal Fragments
+Recycles Into       | 38 Metal Fragments
+Stack Size          | 5
+Workbench Required  | Level 2
+Research Table Cost | 20 Scrap
+Hit Points          | 200
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
+Inputs/Outputs      | Power In, Set, Reset / Power Out
+Active Usage        | 1
+Power Consumption   | 1rW
+Power Output        | Input power minus 1
+Despawn Time        | 5 minutes
+
+Notes:
+
+- When power is applied to Set, there is a 50% chance the switch will change states. From passing power through to not passing power through or vice versa.
+- When power is applied to Reset, the switch will pass power through.
+- While not passing power through, it will block any components [Active Usage](powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed), effectively hiding them from batteries when offline.
+- Can be placed on all angled surfaces including the ground.
+
+
+---
+
+# OR Switch![](images/image1.png)
+
+| | |  
+|-|---|  
+Item ID             | -1286302544
+Description         | Passing power through from 1 input OR the other
+Crafting Recipe     | 100 Metal Fragments
+Recycles Into       | 50 Metal Fragments
+Stack Size          | 5
+Workbench Required  | Level 1
+Research Table Cost | 20 Scrap
+Hit Points          | 200
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
+Inputs/Outputs      | Input A, Input B / Power Out
+Active Usage        | 1
+Power Consumption   | 1rW
+Power Output        | It will pass through whichever input has more power, minus 1
+Despawn Time        | 5 minutes
+
+Notes:
+
+- The switch will pass power through from Input A OR Input B but only
+  the one that has more power avaliable.
+- Can only be placed on vertical walls.
+
+---
+
+# AND Switch![](images/image98.png)
+
+| | |  
+|-|---|  
+Item ID             |  1171735914
+Description         | Passing power through when both inputs have power
+Crafting Recipe     | 100 Metal Fragments
+Recycles Into       | 50 Metal Fragments
+Stack Size          | 5
+Workbench Required  | Level 2
+Research Table Cost | 20 Scrap
+Hit Points          | 200
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
+Inputs/Outputs      | Input A, Input B / Power Out
+Active Usage        | 1
+Power Consumption   | 0rW
+Power Output        |  It will pass through whichever input has more power.
+Despawn Time        | 5 minutes
+
+Notes:
+
+- Input A and Input B both require power to pass power through but only
+  the input with more power will be the one to pass through.
+- Great for amplifying power.
+- Can only be placed on vertical walls.
+
+---
+
+# XOR Switch![](images/image85.png)
+
+| | |  
+|-|---|  
+Item ID             |  1293102274
+Description         | Passing power through from only 1 input
+Crafting Recipe     | 100 Metal Fragments
+Recycles Into       | 50 Metal Fragments
+Stack Size          | 5
+Workbench Required  | Level 1
+Research Table Cost | 20 Scrap
+Hit Points          | 200
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
+Inputs/Outputs      | Input A, Input B / Power Out
+Active Usage        | 1
+Power Consumption   | 1rW
+Power Output        | Power input minus 1
+Despawn Time        | 5 minutes
+
+Notes:
+
+- It will pass power through from either Input A or Input B but if power
+  is applied to both inputs, it will block power pass through.
+- Can only be placed on vertical walls.
+
+---
+
+# Counter![](images/image97.png)
+
+| | |  
+|-|---|  
+Item ID             | -216999575
+Description         | Counting or monitoring power levels
+Crafting Recipe     | 75 Metal Fragments
+Recycles Into       | 38 Metal Fragments
+Stack Size          | 5
+Workbench Required  | Level 2
+Research Table Cost | 75 Scrap
+Hit Points          | 100
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
+Inputs/Outputs      | Power In, Increment Counter, Decrement Counter, Clear Counter / Passthrough
+Active Usage        | 1
+Power Consumption   | 1rW
+Power Output        | Input power minus 1
+Despawn Time        | 20 minutes
+Decay Time          | 96 hours
+
+Notes:
+
+- To configure the Counter, with a Wire Tool in hand, look at it and hold Use(E). The options are Set Target and Show Passthrough.
+- Set Target allows for programming a number between 1 and 100. When the Counter is equal to the target number, or greater, the Counter will pass power through.
+- Show Passthrough will show the amount of incoming power.
+- When power is applied to Increment Counter, the Counter will count up
+  by 1.
+- When power is applied to Decrement Counter, the Counter will count
+  down by 1.
+- When power is applied to Clear Counter, the Counter will reset back to
+  0.
+- The Counter does not need power to count up, down or be cleared.
+- When set to Show Passthrough, if it only shows 1, connect the output (Passthrough) to any input on any component. This will cause the counter to actually pass power through so it can show the amount.
+- Using a Counter on the floor on its thin side, within a 1 meter
+  radius, if an item like a furnace or sleeping bag is removed, the
+  Counter will also disappear. When placing or removing building
+  structures, the Counter will also disappear.
+- The following items can be placed on top of a counter that is placed
+  down on its thin side: Lantern, Jackolanterns, carvable pumpkins,
+  sandbag and concrete barricades, pookie bear, twitch trophy, eggs and
+  the small candle. Placing multiple counters together to create a
+  larger pad, you can put larger things like a small battery on top.
+
+---
+
+# Radio Frequency (RF)
+
+## Common Traits
+
+Radio Frequency or RF for short, is a signal that can be sent or
+received to or from anywhere on the map.  
+
+Small Oil Rig: 4765 / Large Oil Rig: 4768 / Giant Excavator: 4777
+
+Transmitters cannot be set to frequencies between 4960 and 4990
+
+Receivers can be set to frequencies between 4960 and 4990
+
+
+---
+
+# RF Broadcaster![](images/image5.png)
+
+| | |  
+|-|---|  
+Item ID             |  -1044468317
+Description         | Sending an RF signal
+Crafting Recipe     | 100 Metal Fragments, 1 Tech Trash
+Recycles Into       | 50 Metal Fragments, 50% 1 Tech Trash
+Stack Size          | 1
+Workbench Required  | Level 2
+Research Table Cost | 20 Scrap
+Hit Points          | 50
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
+Inputs/Outputs      | Power In
+Active Usage        | 1
+Power Consumption   | 1rW
+Despawn Time        | 5 minutes
+Decay Time          | 48 Hours
+
+Notes:
+
+- Will send an RF signal as long as it receives power.
+- They can be placed on most flat surfaces including Workbenches and the
+  top of TC.
+- Takes 0.5 damage when changing frequencies.
+
+---
+
+# RF Receiver![](images/image39.png)
+
+| | |  
+|-|---|  
+Item ID             |  888415708
+Description         |  Receiving an RF signal to output power
+Crafting Recipe     | 100 Metal Fragments, 1 Tech Trash
+Recycles Into       | 50 Metal Fragments, 50% 1 Tech Trash
+Stack Size          | 1
+Workbench Required  | Level 2
+Research Table Cost | 20 Scrap
+Hit Points          | 50
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
+Inputs/Outputs      | Power In / Power Out
+Active Usage        | 1
+Power Consumption   | 1rW
+Power Output        | Input power minus 1
+Despawn Time        | 5 minutes
+Decay Time          | 48 Hours
+
+Notes:
+
+- When it receives a signal, it will output power and continue to do so
+  until it stops receiving a signal.
+- They can be placed on most flat surfaces including Workbenches and the
+  top of TC.
+- While not passing power through, it will block any components [Active Usage](powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed) connected to it, effectively hiding them from batteries when offline.
+
+---
+
+# RF Transmitter![](images/image112.png)
+
+| | |  
+|-|---|  
+Item ID             |  596469572
+Description         | Transmitting a RF signal from your hand
+Crafting Recipe     | 5 HQM, 1 Tech Trash
+Recycles Into       | 3 HQM, 50% 1 Tech Trash
+Stack Size          | 1
+Workbench Required  | Level 2
+Research Table Cost | 20 Scrap
+Where To Buy        | Outpost for 75 Scrap
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
+Despawn Time        | 5 minutes
+
+Notes:
+
+- This is a hand held tool and will send a RF signal as long as the
+  button is pressed.
+- This tool takes 0.5 damage when changing frequencies.
+- Frequency can be changed by holding Right Click while holding it.
+
+---
+
+# RF Pager![](images/image79.png)
+
+| | |  
+|-|---|  
+Item ID             | -566907190
+Description         | Receiving a RF signal in your pocket
+Crafting Recipe     | 50 Metal Fragments, 1 Tech Trash
+Recycles Into       | 5 Scrap, 25 Metal Fragments, 50% 1 Tech Trash
+Stack Size          | 1
+Workbench Required  | Level 2
+Research Table Cost | 20 Scrap
+Where To Buy        | Outpost for 75 Scrap
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
+Despawn Time        | 5 minutes
+
+Notes:
+
+- When the Pager receives a signal, it will start to beep and vibrate. It can be placed in Silent Mode.
+- It can be carried in a person's inventory or placed in a storage box.
+
+
+---
+
+# Timed Explosive Charge![](images/timed-c4.png)
+
+| | |  
+|-|---|  
+Item ID             | 1248356124
+Description         | C4, used to destroy whatever it is attached to. 2 modes, delay and RF detonation
+Crafting Recipe     | 20 Explosives, 5 Cloth, 2 Tech Trash
+Recycles Into       | 10 Explosives, 3 Cloth, 1 Tech Trash
+Stack Size          | 10
+Workbench Required  | Level 3
+Research Table Cost | 500 Scrap
+Damage              | 550
+Explosion Radius    | 4m
+Explosion Delay     | 10 Seconds
+Explosion Control   | Delay or RF
+Where To Buy        | Outpost for 75 Scrap
+Where To Find       | APC Crate, Elite Crate, Elite Tier Crate, Heavy Scientist, Helicopter Crate, Locked Crate, Supply Drop, Underwater Lab Elite Crate
+Despawn Time        | 1 hour
+Decay Time          | 24 hours
+
+Notes:
+
+- To use it in delay mode, just throw the explosive charge with a left click. It will beep for 10 seconds before exploding. The red light will be on.
+- To use in RF mode, enter your inventory and select the charge. Click on ‘Enable RF’ then ‘Set Frequency’. Use left click to throw the explosive charge onto something and wait 10 seconds for the beeping to stop. The green light will be on. Set a RF Broadcaster or RF Transmitter to the same frequency and transmit when you want the charge to detonate.
+- Due to the introduction of RF mode, RF Broadcasters and Transmitters now take 0.5 damage when changing frequencies.
+- Anyone can pick up the charge after the beeping stops by looking at it and holding Use(E).
+- Will survive a server restart.
+- Decays after 24 hours when outside the TC range of the person that threw it.
+
+---
+
 
 
 # Lights
@@ -855,15 +1191,8 @@ Despawn Time        | 5 minutes
 
 Notes:
 
-- These blink a blue light. 3 fast pulses followed by a pause
-- These can be placed on any angled surfaces
-- Can be placed on other electrical components  
-*this is common for all smaller components. But it is
-limited to areas where the components will touch or be really close to a
-wall or the ground, it is effectively tricking them to think they are
-placed on a wall or the ground.*
-
-
+- These blink a blue light. 3 fast pulses followed by a pause.
+- These can be placed on any angled surfaces.
 
 ---
 
@@ -889,8 +1218,8 @@ Despawn Time        | 5 minutes
 Notes:
 
 - These emit 2 red lights 180 degree from each other and spin in a
-  circle
-- Can be place on any angles surfaces
+  circle.
+- Can be placed on any angled surfaces.
 
 ---
 
@@ -916,9 +1245,9 @@ Despawn Time        | 5 minutes
 
 Notes:
 
-- These hang from ceilings and focus light toward the ground
-- Hanging this at 1.5 floors allows the light to cover more area
-- They are required for farming
+- These hang from ceilings and focus light toward the ground.
+- Hanging this at 1.5 floors allows the light to cover more area.
+- They are the only light that can be used for farming.
 - When given only 1 power, they will work until they don't. When they
   don't, turn them off and back on and they will work again.
 
@@ -942,9 +1271,9 @@ Despawn Time      | 5 minutes
 
 Notes:
 
-- These can only be spawned in by an admin or using plugins
-- They take no damage
-- They can only be placed on vertical surfaces
+- These can only be spawned in by an admin or using plugins.
+- They take no damage.
+- They can only be placed on vertical surfaces.
 
 ---
 
@@ -968,17 +1297,14 @@ Despawn Time      | 5 minutes
 Notes:
 
 - This item can only be crafted if you have the item in your Steam
-  Inventory. It must be purchased from the community market
-
-&nbsp;
-
+  Inventory. It must be purchased from the community market.
 - 1 foundation is supposed to be 3 meters. 3 meters is 9.8ft. 1
-  foundation length worth of these lights is only 8ft
+  foundation length worth of these lights is only 8ft.
 - Left click to place the first piece. Run the lights anywhere you want
-  and right click to end placement
+  and right click to end placement.
 - They have 5 different modes, Steady, Flashing, Chasing, Fade and Slow
-  Glow
-- Can be placed underwater
+  Glow.
+- Can be placed underwater.
 - Length of light strand does not affect the amount of power consumed.  
 
 ---
@@ -1005,10 +1331,8 @@ Decay Time          | 8 hours
 
 Notes:
 
-- Use the light by looking at it and pressing E. Adjust where the light
-  is shining. Once in position, if you can see ‘Stop Using’, press E or
-  walk far enough away to stop using
-- Has 360 degree rotation
+- Use the light by looking at it and pressing Use(`E`). Adjust where the light is shining. Once in position, if you can see ‘Stop Using’, press Use(`E`) or walk far enough away to stop using.
+- Has 360 degree rotation.
 - Maximum distance light can travel is 96m or 32 foundations. 1 square
   foundation is 3m.
 - Can be used through ceilings and walls.
@@ -1037,10 +1361,10 @@ Despawn Time      | 5 minutes
 Notes:
 
 - This item can only be crafted if you have the item in your Steam
-  Inventory. It must be purchased from the community market
-- Maximum image size is 128x128
-- Can be placed on vertical and angled surfaces
-- Can be placed underwater
+  Inventory. It must be purchased from the community market.
+- Maximum image size is 128x128.
+- Can be placed on vertical and angled surfaces.
+- Can be placed underwater.
 
 ---
 
@@ -1065,10 +1389,10 @@ Despawn Time       | 5 minutes
 Notes:
 
 - This item can only be crafted if you have the item in your Steam
-  Inventory. It must be purchased from the community market
-- Maximum image size is 256x128
-- Can be placed on vertical and angled surfaces
-- Can be placed underwater
+  Inventory. It must be purchased from the community market.
+- Maximum image size is 256x128.
+- Can be placed on vertical and angled surfaces.
+- Can be placed underwater.
 
 ---
 
@@ -1093,12 +1417,12 @@ Despawn Time       | 5 minutes
 Notes:
 
 - This item can only be crafted if you have the item in your Steam
-  Inventory. It must be purchased from the community market
-- There are 5 pages you can paint and the sign will flip between them
-- You can choose between 3 flipping speeds, Slow, Medium and Fast
-- Maximum image size is 256x128
-- Can be placed on vertical and angled surfaces
-- Can be placed underwater
+  Inventory. It must be purchased from the community market.
+- There are 5 pages you can paint and the sign will automatically flip between them.
+- You can choose between 3 flipping speeds, Slow, Medium and Fast.
+- Maximum image size is 256x128.
+- Can be placed on vertical and angled surfaces.
+- Can be placed underwater.
 
 ---
 
@@ -1123,13 +1447,13 @@ Despawn Time       | 5 minutes
 Notes:
 
 - This item can only be crafted if you have the item in your Steam
-  Inventory. It must be purchased from the community market
-- Can be placed on vertical and angled surfaces
-- Maximum image size is 256x256
+  Inventory. It must be purchased from the community market.
+- Can be placed on vertical and angled surfaces.
+- Maximum image size is 256x256.
 - Using a low or half wall above a window with bars or glass, you can
   pull one of these down over the window to cover it. When the sign is
-  painted, you can't see through the front but can through the back
-- Can be placed underwater
+  painted, you can't see through the front but can through the back.
+- Can be placed underwater.
 
 ---
 
@@ -1154,15 +1478,15 @@ Despawn Time       | 5 minutes
 Notes:
 
 - This item can only be crafted if you have the item in your Steam
-  Inventory. It must be purchased from the community market
-- Can be placed on vertical and angled surfaces
-- There are 5 pages you can paint and the sign will flip between them
-- You can choose between 3 flipping speeds, Slow, Medium and Fast
-- Maximum image size is 256x256
+  Inventory. It must be purchased from the community market.
+- Can be placed on vertical and angled surfaces.
+- There are 5 pages you can paint and the sign will automatically flip between them.
+- You can choose between 3 flipping speeds, Slow, Medium and Fast.
+- Maximum image size is 256x256.
 - Using a low or half wall above a window with bars or glass, you can
   pull one of these down over the window to cover it. When the sign is
-  painted, you can't see through the front but can through the back
-- Can be placed underwater
+  painted, you can't see through the front but can through the back.
+- Can be placed underwater.
 
 ---
 
@@ -1187,8 +1511,9 @@ Despawn Time       | 5 minutes
 Notes:
 
 - This item can only be crafted if you have the item in your Steam
-  Inventory. It must be purchased from the in game Item Store
-- Can be placed on all angled surfaces
+  Inventory. It must be purchased from the in game Item Store.
+  - These are the cheapest components to build and only consume 1rW.
+- Can be placed on all angled surfaces.
 
 ---
 
@@ -1213,8 +1538,9 @@ Despawn Time       | 5 minutes
 Notes:
 
 - This item can only be crafted if you have the item in your Steam
-  Inventory. It must be purchased from the in game Item Store
-- Can be placed on all angled surfaces
+  Inventory. It must be purchased from the in game Item Store.
+- These are the cheapest component to build and only consume 1rW.
+- Can be placed on all angled surfaces.
 
 ---
 
@@ -1239,8 +1565,9 @@ Despawn Time       | 5 minutes
 Notes:
 
 - This item can only be crafted if you have the item in your Steam
-  Inventory. It must be purchased from the in game Item Store
-- Can be placed on all angled surfaces
+  Inventory. It must be purchased from the in game Item Store.
+- These are the cheapest components to build and only consume 1rW.
+- Can be placed on all angled surfaces.
 
 ---
 
@@ -1263,35 +1590,127 @@ Despawn Time      | 5 minutes
 Notes:
 
 - This item can only be crafted if you have the item in your Steam
-  Inventory. It must be purchased from the community market
+  Inventory. It must be purchased from the community market.
 - Requires TC authorization to change strobe settings. Look at the light
-  and hold USE(E) to change the frequency of the strobe between 10hz,
+  and hold USE(`E`) to change the frequency of the strobe between 10hz,
   20hz and 40hz or to manually turn it on.
-- Whichever input is the last to be activated is the input that dictates
-  the state of the light. For example, if you send constant power to
-  TURN ON, the light turns on. Then send power to TURN OFF, the light
-  will turn off. When you remove power from TURN OFF, the light will not
-  turn back on even with power still going to TURN ON. You will need to
-  remove and reapply power to TURN ON for the light to turn back on.
-- The TOGGLE input will turn the light on when it receives power and
-  turn off when power is removed. This does not change the previous
-  bullet point. If you apply power to TOGGLE, the light will turn on.
-  While the light is on, if you send power to TURN OFF, the light will
-  turn off. When you remove power from TURN OFF with power still going
-  to TOGGLE, the light will not turn back on. On the other hand if you
-  send power to TURN ON, the light will turn on. Then send power to
-  TOGGLE and the light will stay on. With power still going to TURN ON,
-  we remove power from TOGGLE and the light will turn off. This is
-  because when you remove power from TOGGLE, it tells the light to turn
-  off.
-- They take damage when active at a rate of 1hp/3min42sec
-- They can be placed on flat and angled surfaces as well as the ground
-- Can be picked up with a hammer but loses 10hp
+- Whichever input is the last to be activated is the input that dictates the state of the light. For example, if power is constantly sent to TURN ON, the light turns on. Then send power to TURN OFF, the light will turn off. When power is removed from TURN OFF, the light will not turn back on even with power still going to TURN ON. Power will need to be removed then reapplied power to TURN ON for the light to turn back on.
+- The TOGGLE input will turn the light on when it receives power and turn off when power is removed. This does not change the previous bullet point. If power is applied to TOGGLE, the light will turn on. While the light is on, if power is sent to TURN OFF, the light will turn off. When power is removed from TURN OFF with power still going to TOGGLE, the light will not turn back on. On the other hand if power is sent to TURN ON, the light will turn on. Then send power to TOGGLE and the light will stay on. With power still going to TURN ON, if power is removed from TOGGLE and the light will turn off. This is because when power is removed from TOGGLE, it tells the light to turn off. 
+- They take damage when active at a rate of 1hp/3min42sec.
+- They can be placed on flat and angled surfaces as well as the ground.
+- Can be picked up with a hammer but loses 10hp.
 
 ---
 
 
-# Utilities / Quality Of Life
+# Smart
+
+---
+These components can be paired with the Rust+ app and adds a way to interact with rustricity from outside the game.
+
+---
+
+# Storage Monitor![](images/image8.png)
+
+| | |  
+|-|---|  
+Item ID             |  1149964039
+Description         | Monitoring Tool Cupboards, Large Storage Boxes and Vending Machines
+Crafting Recipe     | 3 HQM/1 Tech Trash
+Recycles Into       | 2 HQM/50% - 1 Tech Trash
+Stack Size          | 1
+Workbench Required  | Level 2
+Research Table Cost | 75 Scrap
+Hit Points          | Has no hit points
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
+Inputs/Outputs      | Power In / Output
+Active Usage        | 1
+Power Consumption   | 1rW
+Power Output        | 1rW
+Despawn Time        | 20 minutes
+
+Notes:
+
+- Will pulse 1rW when an inventory slot changes state. An inventory slot will either need to be filled or emptied for the Storage Monitor to notice a change. It will not notice partial stacksize changes.
+- Can be paired with Rust+ to allow monitoring of Tool Cupboards, Large Boxes and Vending Machines.
+
+![](images/image16.jpg)
+
+---
+
+# Smart Alarm![](images/image29.png)
+
+| | |  
+|-|---|  
+Item ID             |  -695978112
+Description         | Sends a notification to your phone
+Crafting Recipe     | 3 HQM, 1 Tech Trash
+Recycles Into       | 2 HQM, 50% 1 Tech Trash
+Stack Size          | 5
+Workbench Required  | Level 2
+Research Table Cost | 75 Scrap
+Hit Points          | 50
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
+Inputs/Outputs      | Power In / Power Out
+Active Usage        | 1
+Power Consumption   | 1rW
+Power Output        | Input power minus 1
+Despawn Time        | 20 minutes
+Decay Time          | 48 hours
+
+Notes:
+
+- Must be placed on flat surfaces.
+- Can be paired with Rust+ to receive pre-programmed messages from in-game when activated.
+- With TC authorization, look at the alarm with a Wire Tool in hand and press E to set the alarms message.
+
+![](images/alarmname.png)
+
+---
+
+# Smart Switch![](images/image28.png)
+
+| | |  
+|-|---|  
+Item ID             |  988652725
+Description         | A switch requiring TC authorization
+Crafting Recipe     | 3 HQM, 1 Tech Trash
+Recycles Into       | 2 HQM, 50% 1 Tech Trash
+Stack Size          | 5
+Workbench Required  | Level 2
+Research Table Cost | 20 Scrap
+Hit Points          | 200
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
+Inputs/Outputs      | Electric Input, Switch On, Switch Off / Output
+Active Usage        | 1
+Power Consumption   | 1rW
+Power Output        | Input power minus 1
+Despawn Time        | 5 minutes
+Decay Time          |
+
+Notes:
+
+- Only people with TC authorization can operate the Switch.
+- Can be paired with Rust+ enabling the ability to turn it on and off from outside the game.
+- The [Side Inputs](uncategorizedconcepts.html##-Side-Inputs) block the [Destruction Detectors](https://www.rustrician.io/?circuit%3Dbf38168f0834f7d84fb837ac41d1818e) ability to see downstream.
+
+---
+
+## Common Traits
+
+- To connect the smart component with the Rust+ app, start by installing the app from your app store on a tablet or smartphone. 
+- Launch the app and sign into Steam. 
+- In game, join a server that has Rust+ enabled. 
+- Once on the server, hit ESC to enter the main menu. 
+- Click on Rust+. 
+- Select ‘Pair With Server’ and in the app the server's info should pop up. 
+- In the app, select ‘Pair Server’ and you're done. 
+
+---
+
+# Utilities
+
+These are components that can enhance a player’s quality of life and Rust experience. They will also have a wide variety of applications.
 
 ---
 
@@ -1316,15 +1735,15 @@ Despawn Time        | 20 minutes
 
 Notes:
 
-- Used to open and close single and double doors, garage doors, window
+- They can be used to open and close single and double doors, garage doors, window
   shutters, wooden shop front, prison cell gates, chainlink fence gate,
-  ladder hatches and high external gates  
-- Place the controller within about 1 meter of the door model to be able
-  to pair
+  ladder hatches and high external gates.
+- Place the controller within 1 meter of the door model to be able
+  to pair them.
 - After placing the door and controller, pair them together by looking
-  at the controller and press E. If successful, the bottom green light
+  at the controller and press Use(`E`). If successful, the bottom green light
   will turn on.
-- The door must be unlocked to pair with the controller
+- The door must be unlocked to pair with the controller.
 
 ---
 
@@ -1349,14 +1768,13 @@ Despawn Time        | 5 minutes
 
 Notes:
 
-- 2rW is only required if you want the visual effect. They will ignite
-  things with 1rW but you won't see the spark effect
+- 2rW is only required for the visual sparking effect. They will ignite things with only 1rW.
 - They can be used to ignite the camp fire, carvable pumpkin, chinese
   lantern, hobo barrel, jack o lanterns, lanterns, large
-  furnace, small furnace, electrical furnace, small oil refinery, fireplace, tuna can lamp, fireworks, sky lanterns,candles, beancan grenade and satchel charge
+  furnace, small furnace, electrical furnace, small oil refinery, fireplace, tuna can lamp, fireworks, sky lanterns,candles, beancan grenade and satchel charge.
 - They take damage when they are on. They have enough health to last for
-  16 to 17 minutes
-- Can be placed on any angled surface and the ground
+  16 to 17 minutes.
+- Can be placed on any angled surface and the ground.
 
 ---
 
@@ -1381,19 +1799,17 @@ Decay Time          | 48 hours
 
 Notes:
 
-- To use cameras, start by placing one on any horizontal surface. With
-  TC authorization, look at the camera and press E to ‘Set ID’.
+- To use cameras, start by placing one on a flat ceiling. With TC authorization, look at the camera and press Use(E) to ‘Set ID’.
 - Aim the camera by standing in the direction you want the camera to
-  look. Holding a Hammer, press E to change its position. Hold E to pick
-  them up.
+  look. Holding a Hammer, press Use(`E`) to change its position. Hold Use(`E`) to pick them up.
 - View cameras by mounting a Computer Station and in the bottom left,
   add the ID for the camera. Select the camera from the list on the left
   and begin viewing.
 - To control the camera when viewing, use your mouse to pan and tilt.
   Left click will zoom.
-- Anyone can add any camera to any computer station
+- Anyone can add any camera to any computer station.
 - The game has pre-placed cameras at some of the monuments, check the
-  current Camera List.
+  current [Camera List](uncategorizedconcepts.html##-Monuments-Camera-Codes).
 
 ---
 
@@ -1416,19 +1832,15 @@ Decay Time        | 48 hours
 Notes:
 
 - To use cameras, start by placing one on any vertical surface. With TC
-  authorization, look at the camera and press E to ‘Set ID’.
+  authorization, look at the camera and press Use(`E`) to ‘Set ID’.
 - Aim the camera by standing in the direction you want the camera to
-  look. Holding a Hammer, press E to change its position. Hold E to pick
-  them up.
+  look. Holding a Hammer, press Use(`E`) to change its position. Hold Use(`E`) to pick them up.
 - View cameras by mounting a Computer Station and in the bottom left,
   add the ID for the camera. Select the camera from the list on the left
   and begin viewing.
-- Anyone can add any camera to any computer station
-- The game has pre-placed cameras at some of the monuments, here is the
-- The game has pre-placed cameras at some of the monuments, check the
-current Camera List.
-
-**[Monuments Camera codes](camcodes.html)** *(UNORGAIZED DUMPFILE !)*
+- Anyone can add any camera to any computer station.
+- The game has pre-placed cameras at some of the monuments, check the
+  current [Camera List](uncategorizedconcepts.html##-Monuments-Camera-Codes).
 
 ---
 
@@ -1454,18 +1866,15 @@ Despawn Time        | 20 minutes
 
 Notes:
 
-- This item provides heat in the shape of a sphere that at its largest
-  diameter covers a 2x2
-- It also provides up to 50% comfort in a sphere that starts about 1m in
-  front of the heater and has a diameter of  4 meters or 1 1/3rd square
-  foundations as shown in the below picture.
 - Heaters will dry you off if you are wet.
 - They can be used to help regulate the temperature of crops, be careful
   not to overheat your plants.
 - They emit an orange light
 - Can only be placed on vertical surfaces
+- It provides up to 50% comfort in a sphere that starts about 1m in front of the heater. This sphere has a diameter of roughly 4 meters or 1 1/3rd square foundations.
+- his item provides heat in the shape of a sphere that at its largest diameter covers a 2x2, pictured below.
 
-heatbox :  
+Heat Sphere :  
 
 ![](images/heater-range.png)  
 
@@ -1493,12 +1902,12 @@ Decay Time          | 16 hours
 
 Notes:
 
-- These allow you to modify modular cars. You can add or remove empty
-  modules. Add or remove locks and craft keys.
-- To access the user interface, look at the control stand and press E.
-  TC access is not required to access UI
-- You can store cars on a powered lift to prevent decay
-- Cannot be picked up with a Hammer
+- To access the user interface, look at the control stand and press Use(E). TC access is not required to access UI.
+- These allow for modification of modular cars by adding or removing modules. 
+- Lets anyone add or remove code locks.
+- Store cars on a powered lift to prevent decay.
+- Cannot be picked up with a Hammer.
+
 
 ---
 
@@ -1523,71 +1932,15 @@ Decay Time          | 8 hours
 
 Notes:
 
-- The elevator consists of 2 parts, the shaft and the carriage
-- At the top of the shaft there is a light and the motor for the
-  carriage. This motor requires 5rW in order for the carriage to move
-- The carriage has a control panel that allows a user to press a button
-  and move all the way to the top or bottom floors. Holding USE(E) will
-  let you move up or down 1 floor at a time.
-- Each floor has 2 inputs, on the right side of each entrance, to call
-  the elevator to that floor. 
-- The Maximum height of a single elevator shaft is 6 floors
-- The elevator has an upkeep cost. For the first floor, it costs 1 HQM
-  and 20 Metal Fragments. It costs an extra 20 Metal
-  Fragments per floor but at the 4th floor, it costs an extra 1 HQM.
-  1 max height elevator shaft will cost 2 HQM and 120 Metal Fragments
-- Standing under the carriage as it descends will kill you
+- The elevator consists of 2 parts, the shaft and the carriage.
+- At the top of the shaft there is a light and the motor for the carriage. This motor requires 5rW in order for the carriage to move.
+- The carriage has a control panel that allows a user to press a button and move all the way to the top or bottom floors. Hold Use(E) to move up or down 1 floor at a time.
+- Each floor has 2 inputs, on the right side of each entrance, to call the elevator to that floor. 
+- The Maximum height of a single elevator shaft is 6 floors.
+- The elevator has an upkeep cost. For the first floor, it costs 1 High Quality Metal and 20 Metal Fragments. It costs an extra 20 Metal Fragments per floor but at the 4th floor, it costs an extra 1 High Quality Metal. A max height elevator shaft will have an upkeep cost 2 High Quality Metal and 120 Metal Fragments.
+- If someone is standing under the carriage as it descends, they will die.
 - The Elevator has a travel time of 1.6 seconds per floor.
 
----
-
-# Telephone![](images/image125.png)
-
-| | |  
-|-|---|  
-Item ID             |  1234878710
-Description         | A telephone for making and receiving calls
-Crafting Recipe     | 50 Wood, 100 Metal Fragments, 1 Tech Trash
-Recycles Into       | 25 Wood, 100 Metal Fragments, 50% 1 Tech Trash
-Stack Size          | 1
-Workbench Required  | Level 1
-Research Table Cost | 75 Scrap
-Hit Points          | 150
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
-Inputs/Outputs      | Power / Call Passthrough
-Active Usage        | 1
-Power Consumption   | 1rW
-Power Output        | 1rW
-Despawn Time        | 20 minutes
-Decay Time          | 8 hours
-
-Notes:
-
-- This is actually a telephone sitting on top of an tape cassette
-  answering machine
-- The answering machine needs a cassette to work. You will require the
-  Voice Props DLC to craft cassettes.
-- TC Auth is not required to change the name or access the cassette in
-  the answering machine.
-- There are 3 types of cassettes, Short(10sec), Medium(20sec) and
-  Long(30sec). Use a Cassette Recorder to record a message then place
-  the cassette in the answering machine. When someone calls and you
-  don't answer, the caller will hear your message and leave a message of
-  their own for you to play back later.
-- After 3 rings the answering machine message will begin to play. To
-  leave a voicemail, press the spacebar when you hear the answering
-  machine's message. To listen to your voicemail, use the phone and at
-  the bottom of the screen select voicemail.
-- To use the phone, look at it and when you see MAKE CALL, press E to
-  use.
-- You can give your phone a name and it will appear in the Directory.
-  All phones are automatically assigned a number.
-- You can add phones to your contacts list by adding the phone number
-  or name.
-- Use the Directory to find the phones at monuments or random peoples
-  phones.
-- When a call comes in, the phone will output the incoming power and
-  will continue to for as long as the call is active.
 
 ---
 
@@ -1619,6 +1972,36 @@ Notes:
 
 ---
 
+# Drone![](images/drone.png)
+| | |  
+|-|---|  
+Item ID             | 1588492232
+Description         | A remote controlled drone
+Crafting Recipe     | 200 Metal Fragments, 2 Tech Trash, 1 CCTV Camera
+Recycles Into       | 100 Metal Fragments, 1 Tech Trash, 50% 1 CCTV Camera
+Stack Size          | 1
+Workbench Required  | Level 2
+Research Table Cost | 125 Scrap
+Hit Points          | 100
+Where To Buy        | Outpost for 300 Scrap
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, NVG Scientist, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Elite Crate, Underwater Lab Yellow Crate, Wagon Military Crate
+Power Consumption   | Requires zero electricity
+Despawn Time        | 40 minutes
+
+Notes:
+- Using a Computer Station, a player is able to remotely fly the drone.
+- Assign an ID to the drone by deploying it on the ground, looking at it and pressing Use(`E`). Hold Use(`E`) to pick up a drone.
+- Mount a Computer Station and in the bottom left, add the ID for the Drone.
+- Select the ID from the list and start flying.
+- Use W, A, S, D to move. Use the mouse to look around. Shift and Ctrl to go up and down.
+- It is damaged easily from impacts.
+- Logging out of the drone mid flight will cause it to fall to the ground.
+- It has a limited range of around 500 meters or 3.33 grid squares.
+
+![](images/dronerange.png)
+
+---
+
 # Computer Station![](images/image60.png)
 
 | | |  
@@ -1633,21 +2016,19 @@ Research Table Cost | 75 Scrap
 Hit Points          | 500
 Where To Buy        | Outpost for 300 Scrap
 Where To Find       | Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
-Inputs/Outputs      |
 Power Consumption   | Requires zero electricity
 Despawn Time        | 20 minutes
 
 Notes:
 
-- View cameras by mounting a Computer Station and in the bottom left,
-  add the ID for the camera. Select the camera from the list on the left
-  and begin viewing.
-- Anyone can add any camera to any computer station
+- Use the Computer Station to view CCTV Camera, control the PTZ Camera or fly the Drone.
+- Mount a Computer Station and in the bottom left, add an ID for a camera or drone. Select the ID from the list on the left and begin viewing or operating.
+- Anyone can add any camera to any computer station.
 - The maximum number of cameras you can add to a computer is 20.
 - The game has pre-placed cameras at some of the monuments, here is the
   current list.
-
-**[Monuments Camera codes](camcodes.html)** *(UNORGAIZED DUMPFILE !)*
+- The game has pre-placed cameras at some of the monuments, check the
+  current [Camera List](uncategorizedconcepts.html##-Monuments-Camera-Codes).
 
 ---
 
@@ -1673,7 +2054,7 @@ Decay Time                 | 96 hours
 Notes:
 
 - This item can only be crafted if you have the item in your Steam
-  Inventory. It must be purchased from the community market
+  Inventory. It must be purchased from the community market.
 - When Active, it creates a fog cloud in front of it that covers an area
   equal to a 2x2 and is thickest below half height walls. Consumes low
   grade fuel at 1 per minute.
@@ -1691,26 +2072,11 @@ Notes:
 - Fog will fall toward the ground and accumulate on any horizontal
   surface. The higher the fogger the thinner the cloud.
 - Requires TC authorization to change settings. Look at the light and
-  hold USE(E) to Activate, Open or turn on Motion.
-- Whichever input is the last to be activated is the input that dictates
-  the state of the fogger. For example, if you send constant power to
-  TURN ON, the fogger turns on. Then send power to TURN OFF, the fogger
-  will turn off. When you remove power from TURN OFF, the fogger will
-  not turn back on even with power still going to TURN ON. You will need
-  to remove and reapply power to TURN ON for the fogger to turn back on.
-- The TOGGLE input will turn the fogger on when it receives power and
-  turn off when power is removed. This does not change the previous
-  bullet point. If you apply power to TOGGLE, the fogger will turn on.
-  While the fogger is on, if you send power to TURN OFF, the fogger will
-  turn off. When you remove power from TURN OFF with power still going
-  to TOGGLE, the fogger will not turn back on. On the other hand if you
-  send power to TURN ON, the fogger will turn on. Then send power to
-  TOGGLE and the fogger will stay on. With power still going to TURN ON,
-  we remove power from TOGGLE and the fogger will turn off. This is
-  because when you remove power from TOGGLE, it tells the fogger to turn
-  off.
-- They can be placed on flat and angled surfaces as well as the ground
-- Can be picked up with a hammer but loses 10hp
+  hold Use(`E`) to Activate, Open or turn on Motion.
+- Whichever input is the last to be activated is the input that dictates the state of the fogger. For example, if  constant power is sent to TURN ON, the fogger turns on. Then send power to TURN OFF, the fogger will turn off. When power is removed from TURN OFF, the fogger will not turn back on, even with power still going to TURN ON. Power will need to be removed and reapplied to TURN ON for the fogger to turn back on.
+- The TOGGLE input will turn the fogger on when it receives power and turn off when power is removed. This does not change the previous bullet point. If power is applied to TOGGLE, the fogger will turn on. While the fogger is on, if power is sent to TURN OFF, the fogger will turn off. When power is removed from TURN OFF with power still going to TOGGLE, the fogger will not turn back on. On the other hand if power is sent to TURN ON, the fogger will turn on. Then send power to TOGGLE and the fogger will stay on. With power still going to TURN ON, when power is removed from TOGGLE, the fogger will turn off. This is because when power is removed from TOGGLE, it tells the fogger to turn off.
+- They can be placed on flat and angled surfaces as well as the ground.
+- Can be picked up with a hammer but loses 10hp.
 
 ---
 
@@ -1736,17 +2102,17 @@ Despawn Time               | 5 minutes
 Notes:
 
 - This item can only be crafted if you have the item in your Steam
-  Inventory. It must be purchased from the community market
+  Inventory. It must be purchased from the community market.
 - When Active, it creates a patch of snow in front of the machine with a
   radius of 3.5 square foundations.
 - The snow pile takes 1 second to form and 2 minutes 45 seconds to
   disappear.
 - The snow at its deepest goes halfway up a character's chin.
 - Increasing the number of machines does not increase the depth of the
-  snow
-- Snowfall is 3.5 floors high
+  snow.
+- Snowfall is 3.5 floors high.
 - Requires TC authorization to change settings. Look at the light and
-  hold USE(E) to Activate, Open or Stop.
+  hold Use(`E`) to Activate, Open or Stop.
 - The TOGGLE input will turn the machine on when it receives power and
   turn off when power is removed. When TURN ON receives power, the
   machine will turn on and stay on when TURN ON loses power. When TURN
@@ -1756,1294 +2122,118 @@ Notes:
 - When the machine turns on, there is a 10 second window where it cannot
   be turned off.
 - They can only be placed on the ground.
-- Can be picked up with a hammer but loses 75hp
+- Can be picked up with a hammer but loses 75hp.
 
 ---
 
 
-# Logic
+# Defense
+
+These components are designed to kill players.
 
 ---
 
-# Blocker![](images/image122.png)
+# SAM Site![](images/image92.png)
 
 | | |  
 |-|---|  
-Item ID             |  -690968985
-Description         | Blocking power passthrough when power is applied to its side input
-Crafting Recipe     | 75 Metal Fragments
-Recycles Into       | 38 Metal Fragments
-Stack Size          | 5
-Workbench Required  | Level 1
-Research Table Cost | 20 Scrap
-Hit Points          | 200
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Underwater Dweller, Underwater Lab Blue Crate
-Inputs/Outputs      | Power In, Block Passthrough / Power Out
-Active Usage        | 1
-Power Consumption   | 1rW
-Power Output        | Power input minus 1
-Despawn Time        | 5 minutes
+Item ID           | -1009359066
+Description       | Defends against aerial threats
+Recycles Into     | 25 HQM
+Stack Size        | 1
+Hit Points        | 1000
+Where To Buy      | Outpost for 500 Scrap
+Inputs/Outputs    | Power In / Has Target, Low Ammo, No Ammo, Passthrough
+Active Usage      | 25
+Power Consumption | 25rW
+Power Output      | 1rw
+Power Passthrough | Input power minus 25
+Despawn Time      | 5 minutes
+Decay Time        | 12 hours
 
 Notes:
 
-- When power is applied to the Block Passthrough input on the side,
-  power will be prevented from passing though
-- When passthrough is blocked, it will also block any components active
-  usage effectively hiding them from batteries
+- They are used for destroying player flown aircraft, i.e. minicopter, scrap heli and hot air balloon. It doesnt matter if there is a pilot or if the pilot has TC auth. They shoot the craft, not the player, unless in Defender Mode.
+- Looking at the SAM and holding Use(E) allows a player to enable and disable Defender Mode. In Defender Mode it will only target incoming MLRS rockets.
+- To successfully defend from an MLRS attack, it is recommended placing 3 SAM Sites on the side of the base that is nearest the Abandoned Military Base and build them as high as the base is tall. 
+- Has a range of 150 meters, or 1 grid square.
+- It will not target anything below its own height.
+- **Has Target** will pulse out 1rW if it takes damage and will release a constant 1rW if it locks a target.
+- **Low Ammo** will start to output 1rW when there is 10 SAM Ammo or less. When it has no more ammo it will stop outputting power.
+- **No Ammo** will output 1rW constantly when there is no more ammo.
+- If 100 power is given to the SAM, 75 will come out Passthrough. 
+- Must be placed on flat surfaces.
+- Try to place them in a way they cannot be baited and used to destroy surrounding structures.
+
 
 ---
 
-# Memory Cell![](images/image68.png)
+# Auto Turret![](images/image91.png)
 
 | | |  
 |-|---|  
-Item ID             |  -746647361
-Description         | Sending power through 1 of 2 outputs based on side inputs
-Crafting Recipe     | 75 Metal Frags
-Recycles Into       | 38 Metal Frags
-Stack Size          | 5
-Workbench Required  | Level 2
-Research Table Cost | 75 Scrap
-Hit Points          | 200
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
-Inputs/Outputs      | Power In, Set, Reset, Toggle / Output, Inverted Output
-Active Usage        | 1
-Power Consumption   | 1rW
-Power Output        | Power input minus 1
-Despawn Time        | 20 minutes
-
-Notes:
-
-- Aka, a D-Type Flip Flop
-
-&nbsp;
-
-- The Reset input will cause the Memory Cell to send power through
-  Inverted Output
-- The Set input will cause the Memory Cell to send power through Output
-- The Toggle input will cause the Memory Cell to switch the output which
-  power is going through
-- The side inputs are prioritized from top to bottom. This means if
-  power is applied to Set when power is applied to Reset or Toggle,
-  nothing will happen. If power is applied to Reset when power is
-  applied to Toggle, nothing will happen, but, if power is applied to
-  Set, it will override Reset and force the Memory Cell to send power
-  through Output
-- When switching from one output to the other, power will pass through
-  the new output first before removing power from the old output
-- The 2 outputs are currently bugged. When you try to see the power info
-  by pointing at the outputs with a Wire Tool, it will show the incoming
-  power being evenly split between both outputs. This is a visual bug.
-  100% of the power is only coming out of 1 of the outputs
-
-[ rustrician.io BP explaining the mem-cell ](https://www.rustrician.io/?circuit=7329b23650674902a215f43e5015d563)
-
----
-
-# Timer![](images/image104.png)
-
-| | |  
-|-|---|  
-Item ID             |  665332906
-Description         | Passing power through for a period of time
-Crafting Recipe     | 75 Metal Fragments
-Recycles Into       | 38 Metal Fragments
-Stack Size          | 5
-Workbench Required  | Level 1
-Research Table Cost | 20 Scrap
-Hit Points          | 200
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
-Inputs/Outputs      | Electric Input, Toggle On / Output
-Active Usage        | 1
-Power Consumption   | 1rW
-Power Output        | Input power minus 1
-Despawn Time        | 5 minutes
-
-Notes:
-
-- Everyone can activate the timer
-- Only TC authorized people can set the timer
-- Timer must be powered to set duration
-- Has a default time of 30 seconds
-- Minimum time duration is 0.25 seconds
-- Maximum time duration is at least a 2 weeks IRL
-- Can only be placed on vertical walls
-- When it is not active, it will block all the components past it from
-  registering active usage on batteries
-
----
-
-# RAND Switch![](images/image123.png)
-
-| | |  
-|-|---|  
-Item ID             |  492357192
-Description         | Achieving a 50% passthrough rate when Set
-Crafting Recipe     | 75 Metal Fragments
-Recycles Into       | 38 Metal Fragments
-Stack Size          | 5
-Workbench Required  | Level 2
-Research Table Cost | 20 Scrap
-Hit Points          | 200
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
-Inputs/Outputs      | Power In, Set, Reset / Power Out
-Active Usage        | 1
-Power Consumption   | 1rW
-Power Output        | Input power minus 1
-Despawn Time        | 5 minutes
-
-Notes:
-
-- When power is applied to Set, there is a 50% chance the switch will
-  change states. From passing power through to not passing power through
-  or vice versa
-- When power is applied to Reset, the switch will pass power through
-- While not passing power through, it will also block any components
-  active usage effectively hiding them from batteries
-
----
-
-# OR Switch![](images/image1.png)
-
-| | |  
-|-|---|  
-Item ID             | -1286302544
-Description         | Passing power through from 1 input OR the other
-Crafting Recipe     | 100 Metal Fragments
-Recycles Into       | 50 Metal Fragments
-Stack Size          | 5
-Workbench Required  | Level 1
-Research Table Cost | 20 Scrap
-Hit Points          | 200
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
-Inputs/Outputs      | Input A, Input B / Power Out
-Active Usage        | 1
-Power Consumption   | 1rW
-Power Output        | It will pass through whichever input has more power, minus 1
-Despawn Time        | 5 minutes
-
-Notes:
-
-- The switch will pass power through from Input A OR Input B but only
-  the one that has more power avaliable
-- Can only be placed on vertical walls
-
----
-
-# AND Switch![](images/image98.png)
-
-| | |  
-|-|---|  
-Item ID             |  1171735914
-Description         | Passing power through when both inputs have power
-Crafting Recipe     | 100 Metal Fragments
-Recycles Into       | 50 Metal Fragments
-Stack Size          | 5
-Workbench Required  | Level 2
-Research Table Cost | 20 Scrap
-Hit Points          | 200
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
-Inputs/Outputs      | Input A, Input B / Power Out
-Active Usage        | 1
-Power Consumption   | 0rW
-Power Output        |  It will pass through whichever input has more power.
-Despawn Time        | 5 minutes
-
-Notes:
-
-- Input A and Input B both require power to pass power through but only
-  the input with more power will be the one to pass through
-- Great for amplifying power
-- Can only be placed on vertical walls
-
----
-
-# XOR Switch![](images/image85.png)
-
-| | |  
-|-|---|  
-Item ID             |  1293102274
-Description         | Passing power through from only 1 input
-Crafting Recipe     | 100 Metal Fragments
-Recycles Into       | 50 Metal Fragments
-Stack Size          | 5
-Workbench Required  | Level 1
-Research Table Cost | 20 Scrap
-Hit Points          | 200
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
-Inputs/Outputs      | Input A, Input B / Power Out
-Active Usage        | 1
-Power Consumption   | 1rW
-Power Output        | Power input minus 1
-Despawn Time        | 5 minutes
-
-Notes:
-
-- It will pass power through from either Input A or Input B but if power
-  is applied to both inputs, it will block power pass through
-
-&nbsp;
-
-- Can only be placed on vertical walls
-
----
-
-# Counter![](images/image97.png)
-
-| | |  
-|-|---|  
-Item ID             | -216999575
-Description         | Counting or monitoring power levels
-Crafting Recipe     | 75 Metal Fragments
-Recycles Into       | 38 Metal Fragments
-Stack Size          | 5
-Workbench Required  | Level 2
-Research Table Cost | 75 Scrap
-Hit Points          | 100
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
-Inputs/Outputs      | Power In, Increment Counter, Decrement Counter, Clear Counter / Passthrough
-Active Usage        | 1
-Power Consumption   | 1rW
-Power Output        | Input power minus 1
-Despawn Time        | 20 minutes
-Decay Time          | 96 hours
-
-Notes:
-
-- Holding ‘E’ with a wire tool will let you configure the counter. The
-  options are Set Target and Show Passthrough
-- Set Target lets you pick a number between 1 and 100. When the counter
-  is equal to the target number, or greater, the counter will pass power
-  through
-- Show Passthrough will show the amount of incoming power.
-- When power is applied to Increment Counter, the Counter will count up
-  by 1
-- When power is applied to Decrement Counter, the Counter will count
-  down by 1
-- When power is applied to Clear Counter, the Counter will reset back to
-  0
-- The Counter does not need power to count up, down or be cleared
-- When set to Show Passthrough, if it only shows 1, connect the
-  Passthrough (output) to any input on any component. This will cause
-  the counter to actually pass power through so it can show the amount.
-- Using a Counter on the floor on its thin side, within a 1 meter
-  radius, if an item like a furnace or sleeping bag is removed, the
-  Counter will also disappear. When placing or removing building
-  structures, the Counter will also disappear.
-- The following items can be placed on top of a counter that is placed
-  down on its thin side: Lantern, Jackolanterns, carvable pumpkins,
-  sandbag and concrete barricades, pookie bear, twitch trophy, eggs and
-  the small candle. Placing multiple counters together to create a
-  larger pad, you can put larger things like a small battery on top.
-
----
-
-# Switches
-
----
-
-# Button![](images/image83.png)
-
-| | |  
-|-|---|  
-Item ID             |  -1778897469
-Description         | Allowing power to pass through when pressed
-Crafting Recipe     | 75 Metal Fragments
-Recycles Into       | 38 Metal Fragments
-Stack Size          | 5
-Workbench Required  | Level 1
-Research Table Cost | 20 Scrap
-Hit Points          | 200
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
-Inputs/Outputs      | Electric Input  / Output
-Active Usage        | 1
-Power Consumption   | 1rW
-Power Output        | Power input minus 1
-Despawn Time        | 5 minutes
-Decay Time          |
-
-Notes:
-
-- Will generate 2rW for 0.25 seconds when pressed
-- When the button is supplied with power, it will pulse 2rW first then
-  output the incoming power.
-- Stays pressed for 5 seconds and cannot be changed
-- Can only be placed on vertical surfaces
-
----
-
-# Switch![](images/image9.png)
-
-| | |  
-|-|---|  
-Item ID             |  1951603367
-Description         | Allowing power to pass through or not
-Crafting Recipe     | 100 Metal Fragments
-Recycles Into       | 50 Metal Fragments
-Stack Size          | 5
-Workbench Required  | Level 1
-Research Table Cost | 20 Scrap
-Hit Points          | 200
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
-Inputs/Outputs      | Electric Input, Switch On, Switch Off  / Output
-Active Usage        | 1
-Power Consumption   | 1rW
-Power Output        | Power input minus 1
-Despawn Time        | 5 minutes
-Decay Time          |
-
-Notes:
-
-- When a switch is off, it will block all the components past it from
-  registering active usage on batteries
-- Can only be placed on vertical surfaces
-- Side inputs explained in [its own section](#side-inputs)
-- The side inputs block the destruction detectors ability
-  to see downstream
-
----
-
-## Side Inputs
-
-They are not bugged or broken, you just don't know how to use them yet.
-
-It is not uncommon for people to think of ‘Switch On’ and ‘Switch Off’
-as a toggle like on the side of a Timer. They are not toggles, they are
-inputs with an added function. Just like the ‘Power In’ on the bottom,
-the side inputs also pass power through to the top. The function part
-only functions when power is received, removed or the amount of power is
-updated.
-
-When ANY input on the Switch receives an "update", the Switch will bind
-to that input for its source of power that passes through to the top. It
-will remain bound to that input until another input "updates" which will
-force the switch to bind to the new input. An update is either losing
-power or receiving power, 0-1 or 1-0 or power levels change up or down.
-
-The exception to this is when one input is receiving an amount of power
-and another input receives the same amount of power, the Switch will not
-recognize the new source and remain bound to the original input.
-
-The following pictures will help illustrate how it works.
-
-Starting off, we are using 3 Switches to provide 3 different amounts of
-power each input. Green wire is for Switch On. Red wire is for Switch
-Off. Black wire is for Electric Input on the bottom. Yellow lines mark
-the path power is taking. Red lines mark where power stops. In this
-first picture, we are sending power to the bottom input and the Switch
-sends it out the top, with the expected power loss.
-
-Next, we leave power going into the bottom and then apply power to
-Switch Off. As we can see, the Switch will flip
-off.
-
-![](images/image41.png)
-
-![](images/image13.png)
-
-If we manually flip the Switch back on, we can now see a new amount of
-power displaying on the counter.
-
-![](images/image75.png)
-
-This is because the Switch is now bound to the Switch Off input for the
-power that passes through to the top. The power going into the bottom
-input is completely ignored. For the next picture, we flip the Switch
-back off and then apply power to Switch On.
-
-![](images/image64.png)
-
-The Switch will now flip on and once again pass through a new amount of
-power to the counter. The power going to the bottom input or Switch Off
-input is now ignored and the Switch is bound to Switch On. In the next
-picture, we remove power from Switch On while keeping power applied to
-Switch Off and the bottom.
-
-![](images/image30.png)
-
-We can see here now that power was removed from Switch On, the Switch
-has no power. The green light turns off and the Switch is still in the
-on position. Even though the other 2 inputs have power, the Switch is
-bound to Switch On for its source of power, which was removed. If we
-restore power to Switch On, the Switch will start passing power though
-again like the previous picture. With power restored, for the next
-picture we will remove power from Switch Off.
-
-![](images/image44.png)
-
-We restored power to Switch On before removing power from Switch Off.
-The green light turns off when power is removed and the Switch binds to
-the Switch Off. This is because that input received an update from
-‘having power’ to ‘not having power’, from 1 to 0. For the next picture,
-we restore power to Switch Off.
-
-![](images/image53.png)
-
-Restoring power to the Switch Off input, the red light turns on and the
-Switch flips to the off position. When we manually flip it on we can see
-the new amount of power passing through.
-
-![](images/image105.png)
-
-Seeing that we only have 28 power showing on the counter, it is clear
-power is coming through the Switch Off input. When we remove power from
-the bottom input, the Switch loses power.
-
-![](images/image73.png)
-
-It loses power because the bottom input was updated, from 1 to 0, so the
-Switch bound to it. Now bound to the bottom input and not receiving
-power, the green light turns off and no power passes through. Restoring
-power to the bottom input, the green light turns back on and the new
-power amount is displayed on the counter.
-
-![](images/image126.png)
-
-Seeing the power level on the counter confirming power is coming into
-the bottom, we will now adjust the Electrical Branch to send more power
-to Switch On.
-
-![](images/image116.png)
-
-After increasing the amount of power, we can see an instant change on
-the counter to reflect that the Switch changed the input it was bound to
-from the bottom input to Switch On.
-
-In conclusion, whichever is the last input to receive an update is the
-input the Switch will bind to for its source of power. Adding power,
-removing power or a change in power levels will update the Switches
-input. When moving power from one input to another, it is important
-
----
-
-
-# Sensors
-
----
-
-# HBHF Sensor![](images/image6.png)
-
-| | |  
-|-|---|  
-Item ID             |  -1507239837
-Description         | Detecting heartbeat, breathing, humidity and footsteps
-Crafting Recipe     | 75 Metal Fragments
-Recycles Into       | 38 Metal Fragments
+Item ID             | -2139580305
+Description         | A automated sentry turret to neutralize targets
+Crafting Recipe     | 10 HQM, 1 CCTV Camera, 1 Targeting Computer
+Recycles Into       | 5 HQM, 50% 1 CCTV Camera, 50% 1 Targeting Computer
 Stack Size          | 1
 Workbench Required  | Level 2
-Research Table Cost | 75 Scrap
-Hit Points          | 200
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Dweller, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
-Inputs/Outputs      | Power In  / Power Out
-Active Usage        | 1
-Power Consumption   | 1rW
-Power Output        | 1 per person detected
-Despawn Time        | 20 minutes
-Decay Time          |
+Research Table Cost | 500 Scrap
+Hit Points          | 1000
+Where To Buy        | Outpost for 400 Scrap
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
+Inputs/Outputs      | Power In / Has Target, Low Ammo, No ammo
+Active Usage        | 10
+Power Consumption   | 10rW +1 if outputs are used
+Power Output        | 1rW
+Despawn Time        | 60 minutes
 
 Notes:
 
-- Detection range is about 11m or 3.5 square foundation
-- Requires line of sight. A player crouching under a half height floor
-  can be seen by the sensor from above. Can also be built to see through
-  walls, floors and roofs.
-- Only outputs an amount of power equal to the number of people it
-  detects, meaning if you connect Power Out to a Counter set to Show
-  Passthrough, you can see the number of people the HBHF is detecting
-- Can be set to Include/Exclude Authorized and Others by looking at
-  Sensor
-- Will detect all scientist types including ones riding in the CH47
-- Can be placed on all angled surfaces and the ground
+- There are 2 modes, Peacekeeper and Attack All.
+- Enable and disable Peacekeeper mode by looking at the turret and holding Use(`E`). In peace keeper mode it will only attack a player if they become aggressive. In Attack All mode it will kill anyone not on its authorization list.
+- Add people to the authorization list by looking at the turret and holding Use(`E`) and accessing the user interface.
+- **Has Target** will pulse out 1rW if it takes damage and will release a constant 1rW if it locks a target.
+- **Low Ammo** will start to output 1rW when there is 50 ammo or less. When it has no more ammo it will stop outputting power.
+- **No Ammo** will output 1rW constantly when there is no more ammo.
+- Range is 30 meters or 10 square foundations.
+- The turret has just over a 180 degree detection arch.
+- Must be placed on flat surfaces.
+- Try to place them in a way they cannot be baited and drained.
+- They can shoot through 2 layers of Chainlink Fence.
+
 
 ---
 
-# Laser Detector![](images/image19.png)
+# Tesla Coil![](images/image117.png)
 
 | | |  
 |-|---|  
-Item ID             |  -798293154
-Description         | Passing power through when a person is in the beam
-Crafting Recipe     | 75 Metal Fragments
-Recycles Into       | 38 Metal Fragments
-Stack Size          | 5
+Item ID             | 1371909803
+Description         | An electrical trap that zaps nearby players
+Crafting Recipe     | 3 HQM, 1 Tech Trash
+Recycles Into       | 2 HQM, 50% 1Tech Trash
+Stack Size          | 3
 Workbench Required  | Level 2
-Research Table Cost | 75 Scrap
-Hit Points          | 200
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
-Inputs/Outputs      | Power In / Power Out
-Active Usage        | 1
-Power Consumption   | 1rW
-Power Output        | Power input minus 1
-Despawn Time        | 20 minutes
-
-Notes:
-
-- The maximum detection distance is 4.5m or 1.5 square foundations
-- Laser will not detect if approached straight on
-- Placing the laser closer than .5m meters to a single door will not
-  detect a player passing through from the opposite side
-- If a player remains in the beam, it will continue to hold detection
-  for 12m or 4 square foundations
-- Can be crouched under and jumped over
-- Can be placed in floors before upgrading to detect players walking
-  above
-- The visual laser can be blocked with any deployable item and rideable
-  horses
-- The laser will detect land, sea and air vehicles including NPC
-  helicopters excluding horses
-- Can only be placed on vertical surfaces
-- Can be placed on a foundation before upgrading
-
----
-
-# Pressure Pad![](images/image129.png)
-
-| | |  
-|-|---|  
-Item ID             |  -2049214035
-Description         | Passing power when a player stands on it
-Crafting Recipe     | 150 Wood/1 Spring/1 Gear
-Recycles Into       | 75 Wood/50% - 1 Spring/50% - 1 Gear
-Stack Size          | 1
-Workbench Required  | Level 1
-Research Table Cost | 20 Scrap
-Hit Points          | 200
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
-Inputs/Outputs      | Power In / Power Out
-Active Usage        | 1
-Power Consumption   | 1rW
-Power Output        | Power in minus 1
-Despawn Time        | 5 minutes
-Decay Time          |
-
-Notes:
-
-- Will generate 1rW briefly when pressed.
-- When the pad is supplied with power, it will pulse 1rW first then
-  output the incoming power.
-- Detects land, sea and air vehicles, this includes horses
-- Can be triggered through half height floors from below or ramps from
-  above
-- Can only be placed on floors or foundations
-- Can be connected to Root Combiners
-
----
-
-# Reactive Target![](images/image119.png)
-
-| | |  
-|-|---|  
-Item ID             |  -1736356576
-Description         | Target practice and fun
-Crafting Recipe     | 100 Wood, 150 Metal Fragments, 1 Gear
-Recycles Into       | 50 Wood/75 Metal Fragments/50% - 1 Gear
-Stack Size          | 1
-Workbench Required  | Level 1
 Research Table Cost | 20 Scrap
 Hit Points          | 250
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
-Inputs/Outputs      | Power In, Reset, Lower / Power Out
-Active Usage        | 1
-Power Consumption   | 1rW
-Power Output        | 1rW
-Despawn Time        | 5 minutes
-Decay Time          | 48 hours
-
-Notes:
-
-- When the target is lowered for any reason, it will pulse out 1rW
-- Can be connected to Root Combiners
-- When the target is supplied with power, when lowered for any reason,
-  it will pulse 1rW first then output the incoming power constantly
-  until it stands back up
-- There is no priority between Reset and Lower. Whichever input is given
-  power last is the function that will take place
-- Can be placed on floors, foundations or the ground
-
----
-
-# Radio Frequency (RF)
-
----
-
-Radio Frequency or RF for short, is a signal that can be sent or
-received to or from anywhere on the map.  
-
-Small Oil Rig: 4765 / Large Oil Rig: 4768 / Giant Excavator: 4777
-
-Transmitters cannot be set to frequencies between 4960 and 4990
-
-Receivers can be set to frequencies between 4960 and 4990
-
----
-
-# RF Broadcaster![](images/image5.png)
-
-| | |  
-|-|---|  
-Item ID             |  -1044468317
-Description         | Sending an RF signal
-Crafting Recipe     | 100 Metal Fragments, 1 Tech Trash
-Recycles Into       | 50 Metal Fragments, 50% 1 Tech Trash
-Stack Size          | 1
-Workbench Required  | Level 2
-Research Table Cost | 20 Scrap
-Hit Points          | 50
+Where To Buy        | Outpost for 75 Scrap
 Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
 Inputs/Outputs      | Power In
-Active Usage        | 1
-Power Consumption   | 1rW
-Despawn Time        | 5 minutes
-Decay Time          | 48 Hours
-
-Notes:
-
-- Will send an RF signal as long as it receives power
-- They can be placed on most flat surfaces including Workbenches and the
-  top of TC
-- Takes 0.5 damage when changing frequencies
-
----
-
-# RF Receiver![](images/image39.png)
-
-| | |  
-|-|---|  
-Item ID             |  888415708
-Description         |  Receiving an RF signal to output power
-Crafting Recipe     | 100 Metal Fragments, 1 Tech Trash
-Recycles Into       | 50 Metal Fragments, 50% 1 Tech Trash
-Stack Size          | 1
-Workbench Required  | Level 2
-Research Table Cost | 20 Scrap
-Hit Points          | 50
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
-Inputs/Outputs      | Power In / Power Out
-Active Usage        | 1
-Power Consumption   | 1rW
-Power Output        | Input power minus 1
-Despawn Time        | 5 minutes
-Decay Time          | 48 Hours
-
-Notes:
-
-- When it receives a signal, it will output power and continue to do so
-  until it stops receiving a signal.
-- They can be placed on most flat surfaces including Workbenches and the
-  top of TC
-- While not passing power through, it will block any components active
-  usage effectively hiding them from batteries.
-
----
-
-# RF Transmitter![](images/image112.png)
-
-| | |  
-|-|---|  
-Item ID             |  596469572
-Description         | Transmitting a RF signal from your hand
-Crafting Recipe     | 5 HQM, 1 Tech Trash
-Recycles Into       | 3 HQM, 50% 1 Tech Trash
-Stack Size          | 1
-Workbench Required  | Level 2
-Research Table Cost | 20 Scrap
-Where To Buy        | Outpost for 75 Scrap
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
+Active Usage        | 35
+Power Consumption   | 1-35rW
 Despawn Time        | 5 minutes
 
 Notes:
 
-- This is a hand held tool and will send a RF signal as long as the
-  button is pressed
-- This tool takes 0.5 damage when changing frequencies
-- Frequency can be changed by holding Right Click while holding it.
+- Tesla Coil deals damage at a rate of 1hp/second per rust watt up to a max of 35rW. This means if you give a tesla coil 5rW, it will do 5hp of damage per second. Give it 35rW and it will do 35hp of damage per second.
+- Their damage is stackable. 100 Tesla Coils given 1rW will kill a person in 1 second.
+- The range is just over 1 square foundation or 3.5 meters.
+- Can be placed on all surfaces including the ground.
+- With a building trick, a tesla coil can zap people through walls, floors and roofs.
+- They damage themselves at a rate of 2hp/second. 
+- They will not turn on if their health is at or below 62hp.
 
----
-
-# RF Pager![](images/image79.png)
-
-| | |  
-|-|---|  
-Item ID             | -566907190
-Description         | Receiving a RF signal in your pocket
-Crafting Recipe     | 50 Metal Fragments, 1 Tech Trash
-Recycles Into       | 5 Scrap, 25 Metal Fragments, 50% 1 Tech Trash
-Stack Size          | 1
-Workbench Required  | Level 2
-Research Table Cost | 20 Scrap
-Where To Buy        | Outpost for 75 Scrap
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
-Despawn Time        | 5 minutes
-
-Notes:
-
-- When the Pager receives a signal, it will start to beep and vibrate.
-  It can be placed on Silent Mode
-- You can carry it in your inventory or place it in a storage box
-
----
-
-# Timed Explosive Charge![](images/timed-c4.png)
-
-| | |  
-|-|---|  
-Item ID             | 1248356124
-Description         | C4, used to destroy whatever it is attached to. 2 modes, delay and RF detonation
-Crafting Recipe     | 20 Explosives, 5 Cloth, 2 Tech Trash
-Recycles Into       | 10 Explosives, 3 Cloth, 1 Tech Trash
-Stack Size          | 10
-Workbench Required  | Level 3
-Research Table Cost | 500 Scrap
-Damage              | 550
-Explosion Radius    | 4m
-Explosion Delay     | 10 Seconds
-Explosion Control   | Delay or RF
-Where To Buy        | Outpost for 75 Scrap
-Where To Find       | APC Crate, Elite Crate, Elite Tier Crate, Heavy Scientist, Helicopter Crate, Locked Crate, Supply Drop, Underwater Lab Elite Crate
-Despawn Time        | 1 hour
-Decay Time          | 24 hours
-
-Notes:
-
-- To use it in delay mode, just throw the explosive charge with a left
-  click. It will beep for 10 seconds before exploding. The red light
-  will be on.
-- To use in RF mode, enter your inventory and select the charge. Click
-  on ‘Enable RF’ then ‘Set Frequency’. Use left click to throw the
-  explosive charge onto something you want to destroy and wait 10
-  seconds for the beeping to stop. The green light will be on. Set a RF
-  Broadcaster or RF Transmitter to the same frequency and transmit when
-  you want the charge to detonate.
-- Due to the introduction of RF mode, RF Broadcasters and Transmitters
-  now take 0.5 damage when changing frequencies.
-- Anyone can pick up the charge after the beeping stops by looking at it
-  and holding USE(E)
-- Will survive a server restart
-- Decays after 24 hours when outside the TC range of the person that
-  threw it
-
-------------------------------------------------------------------------
-
-
-# Smart
-
----
-
-To connect the smart component with the Rust+ app, start by installing
-the app from your app store. Launch the app and sign into Steam. In
-game, join a server that has Rust+ enabled. Once on the server, hit `ESC`
-to enter the main menu. Click on Rust+. Select `Pair With Server` and in
-the app the server's info should pop up. In the app, select `Pair
-Server` and you are done.
-
-Add pictures of the process
-
----
-
-# Storage Monitor![](images/image8.png)
-
-| | |  
-|-|---|  
-Item ID             |  1149964039
-Description         | Monitoring Tool Cupboards, Large Storage Boxes and Vending Machines
-Crafting Recipe     | 3 HQM/1 Tech Trash
-Recycles Into       | 2 HQM/50% - 1 Tech Trash
-Stack Size          | 1
-Workbench Required  | Level 2
-Research Table Cost | 75 Scrap
-Hit Points          | Has no hit points
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
-Inputs/Outputs      | Power In / Output
-Active Usage        | 1
-Power Consumption   | 1rW
-Power Output        | 1rW
-Despawn Time        | 20 minutes
-
-Notes:
-
-- Will pulse 1rW when an inventory slot changes state. An inventory slot
-  will either need to be filled or emptied for the storage monitor.
-- Can be paired with Rust+ by holding a wire tool and pressing `E` while
-  looking at the component.
-
-![](images/image16.jpg)
-
----
-
-# Smart Alarm![](images/image29.png)
-
-| | |  
-|-|---|  
-Item ID             |  -695978112
-Description         | Sends a notification to your phone
-Crafting Recipe     | 3 HQM, 1 Tech Trash
-Recycles Into       | 2 HQM, 50% 1 Tech Trash
-Stack Size          | 5
-Workbench Required  | Level 2
-Research Table Cost | 75 Scrap
-Hit Points          | 50
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
-Inputs/Outputs      | Power In / Power Out
-Active Usage        | 1
-Power Consumption   | 1rW
-Power Output        | Input power minus 1
-Despawn Time        | 20 minutes
-Decay Time          | 48 hours
-
-Notes:
-
-- With TC authorization, look at the alarm with a Wire Tool in hand and
-  press E to set the alarms message
-- Must be placed on flat surfaces
-
----
-
-# Smart Switch![](images/image28.png)
-
-| | |  
-|-|---|  
-Item ID             |  988652725
-Description         | A switch requiring TC authorization
-Crafting Recipe     | 3 HQM, 1 Tech Trash
-Recycles Into       | 2 HQM, 50% 1 Tech Trash
-Stack Size          | 5
-Workbench Required  | Level 2
-Research Table Cost | 20 Scrap
-Hit Points          | 200
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
-Inputs/Outputs      | Electric Input, Switch On, Switch Off / Output
-Active Usage        | 1
-Power Consumption   | 1rW
-Power Output        | Input power minus 1
-Despawn Time        | 5 minutes
-Decay Time          |
-
-Notes:
-
-- Only people with TC authorization can operate the Switch
-- Can be paired with Rust+ and the Rust+ Bot
-- Link to section talking about the side inputs
-- The side inputs block the destruction detectors ability to see
-
----
-
-# Smart Timer
-
-Needs work
-
-![](images/image52.png)![](images/image118.png)
-
----
-
-
-# Fireworks
-
----
-
-They can be ignited with a lit Torch, Flamethrower, Fire Arrows or using
-an electric Igniter.
-
-They can be placed on flat surfaces or the ground unless stated
-otherwise. They can be picked up with a hammer.
-
-A firework is active when the fuse on the side of it is sparkling. If
-the fuse is sparkling, it cannot be picked up.
-
-The default number of Boomers, Patterns and Champagnes that can be
-active at 1 time is 25. Not 25 of each, 25 total.
-
-Type | Start Time | Launch Time | Number of shots | Time between shots | Active Time 
-|---|-|-|-|-|-|
-Volcano | 5 |||| 40
-Candle | 5 | 2 | 12 | 3 | 40
-Boomer | 5 | 5 | 10 | 4 | 47
-Champagne | 5 | 5 | 3 | 10 | 35
-Pattern Short Fuse | 5 | 5 | 3 | 10 | 35
-Pattern Medium Fuse | 5 | 7 | 3 | 10 | 35
-Pattern Long Fuse | 5 | 10 | 3 | 10 | 35
-
-Start Time refers to the time between the fuse starting to sparkle and
-the time the firework starts to produce color or launches a projectile.
-
-Launch Time refers to the amount of time it takes a firework to reach
-its maximum height.
-
-Number Of Shots refers to the number of times a firework will launch a
-projectile.
-
-Time Between Shots refers to the amount of time between each projectile.
-
-Active Time refers to the total amount of time from a firework
-activating to the time it produces its last color or boom. This is
-written as Start Time + the time it takes from the first projectile to
-launch and the last projectile to reach its maximum height. Ex 5+35
-seconds = 5 seconds to start then 35 more seconds before the firework
-finishes.
-
----
-
-# Volcano Firework
-
-| | |  
-|-|---|  
-Item ID            | Red -454370658  Violet -1538109120  White 261913429
-Description        | Emits a beautiful shower of colored sparks
-Crafting Recipe    | 20 Metal Fragments, 15 Gun Powder
-Recycles Into      | 10 Metal Fragments, 8 Gun Powder
-Stack Size         | 20
-Workbench Required | Level 1
-Hit Points         | 100
-Where To Find      | Requires Steam Item : Small Fireworks Pack
-Start Time         | 5 seconds
-Duration           | 5+35 seconds
-Despawn Time       | 5 minutes
-
-Notes:
-
-- There are 3 colors, Red, Violet and White.
-- Foundations/floors provide 1 launch direction, straight up.
-- Ramps provide 2 launch directions, 2 different angles.
-
----
-
-# Roman Candle![](images/image4.png)
-
-| | |  
-|-|---|  
-Item ID         | Blue -515830359  Green -1306288356  Red -1486461488  Violet -99886070
-Description     | A small repeating firework, shoots a series of colored balls into the air
-Crafting Recipe | 25 Metal Fragments, 10 Low Grade Fuel
-Recycles Into   | 13 Metal Fragments, 5 Low Grade Fuel
-Stack Size      | 20
-Hit Points      | 100
-Where To Find   | Requires Steam Item : Small Fireworks Pack
-Start Time      | 5 seconds
-Duration        | 2+38 seconds
-Despawn Time    | 5 minutes
-
-Notes:
-
-- There are 4 colors: Blue, Green, Red, Violet.
-- Foundations/floors provide 1 launch direction, straight up.
-- Ramps provide 2 launch directions, 2 different angles.
-
----
-
-# Boomer![](images/image96.png)
-
-| | |  
-|-|---|  
-Item ID            |  Blue 1744298439 Green -656349006 Red -1553999294 Violet -280223496 
-Description        |  A very large mortar type firework with a colored starburst
-Crafting Recipe    | 25 Metal Fragments, 15 Low Grade Fuel, 30 Gun Powder
-Recycles Into      | 13 Metal Fragments, 8 Low Grade Fuel, 15 Gun Powder
-Stack Size         | 20
-Hit Points         | 100
-Where To Find      | Requires Steam Item : Large Fireworks Pack
-Start Time         | 5 seconds
-Launch Time        | 5 seconds
-Number Of Shots    | 10
-Time Between Shots | 4 seconds
-Duration           | 5+42 seconds
-Despawn Time       | 5 minutes
-
-Notes:
-
-- There are 5 colors: Blue, Green, Red, Violet and Orange.
-- Foundations/floors provide 1 launch direction, straight up.
-- Ramps provide 2 launch directions, 2 different angles.
-- Steps provide 6 launch directions, 5 different angles and straight up
-
----
-
-# Champagne Boomer![](images/image63.png)
-
-| | |  
-|-|---|  
-Item ID            | 1324203999
-Description        | A very large mortar type firework with a massive champagne colored explosion followed by smaller orange starbursts
-Crafting Recipe    | 30 Metal Fragments, 30 Low Grade Fuel, 75 Gun Powder
-Recycles Into      | 15 Metal Fragments, 15 Low Grade Fuel, 38 Gun Powder
-Stack Size         | 20
-Hit Points         | 100
-Where To Find      | Requires Steam Item : Large Fireworks Pack
-Start Time         | 5 seconds
-Launch Time        | 5 seconds
-Number Of Shots    | 3
-Time Between Shots | 10 seconds
-Duration           | 5+30 seconds
-Despawn Time       | 5 minutes
-
-Notes:
-
-- There are 5 colors: Blue, Green, Red, Violet and Orange.
-- Foundations/floors provide 1 launch direction, straight up.
-- Ramps provide 2 launch directions, 2 different angles.
-- Steps provide 6 launch directions, 5 different angles and straight up
-
----
-
-# Pattern Boomer![](images/image84.png)
-
-| | |  
-|-|---|  
-Item ID            | -379734527
-Description        | A special boomer which allows you to light up the night sky with a custom pattern that you draw. Multiple colors and altitude settings are available.
-Crafting Recipe    | 50 Metal Fragments, 15 Low Grade Fuel, 30 Gun Powder
-Recycles Into      | 25 Metal Fragments, 8 Low Grade Fuel, 15 Gun Powder
-Stack Size         | 20
-Hit Points         | 100
-Where To Find      | Requires a Steam item purchased from the Item Store
-Start Time         | 5 seconds
-Launch Time        | Short Fuse 5 seconds, Medium Fuse 7 seconds, Long Fuse 10 seconds
-Number Of Shots    | 3
-Time Between Shots | 10 seconds
-Duration           | 5+30 seconds
-Despawn Time       | 5 minutes
-
-Notes:
-
-- There are 5 colors: Blue, Green, Red, Violet and Orange.
-- Foundations/floors provide 1 launch direction, straight up.
-- Ramps provide 2 launch directions, 2 different angles.
-- Steps provide 6 launch directions, 5 different angles and straight up
-- There is a default pattern if none is created.
-- TC authorization is required to customize firework. Look at the
-  firework and press USE(E) to change the use type or Open Designer.
-- The designer lets you make your own pattern by placing up to 35 dots
-  on the board. There is an option to place or remove dots and clear the
-  board. There are 8 colours to choose from, white, yellow, orange, red,
-  green, teal, blue and pink. You can name your design and have up to 5
-  different patterns saved. Once you hca completed or selected a
-  pattern, click Save. This will exit you from the designer and your
-  pattern will be displayed when launched.
-- If the firework is picked up, the pattern will revert back to default.
-
----
-
-# Voice Props Pack DLC
-
----
-
-# Boom Box![](images/image106.png)
-
-| | |  
-|-|---|  
-Item ID            | -1113501606
-Description        | A large speaker to play recorded cassette tapes and also stream audio from the internet
-Crafting Recipe    | 100 Metal Fragments, 200 Wood, 20 Cloth
-Recycles Into      | 50 Metal Fragments, 100 Wood, 10 Cloth
-Stack Size         | 1
-Workbench Required | Level 1
-Hit Points         | 100
-Where To Find      | Requires a DLC purchase
-Inputs/Outputs     | Power, Toggle Play / Audio Out
-Active Usage       | 10 only when turned on \*
-Power Consumption  | 1-9rW or 10rW when using the Audio Out connection
-Power Output       | Input power minus 10rW
-Despawn Time       | 5 minutes
-Decay Time         | 96 hours
-
-Notes:
-
-- Requires TC Authorization to change settings. Look at the speaker and
-  hold USE(E). You can access Radio Settings or Open. Open allows you to
-  insert a cassette. Radio Settings lets you select a Radio Station.
-- The Audio Out connection lets you send an audio signal to other
-  components in the DLC that can interact with sound.
-- Can be picked up with a hammer, but not with a cassette. Will not take
-  damage when picked up.
-- Can be placed in horizontal surfaces, the ground and some deployable
-  items like Work Benches and Tables.
-- They block the destruction detectors ability to see downstream
-- An Electrical Branch set to 10 will show an Active Usage of 10 on a
-  battery. If we use the 10 from Branch Out to power a Boom Box, the
-  battery will continue to show an Active Usage of 10. If we then make a
-  connection between Power Out on the Electrical Branch and Toggle Play
-  on the Boom Box, the battery will now register an Active Usage of 20.
-  This only appears to happen with the Electrical Branch, 10 for the
-  Branch and 10 for the Boom Box Toggle. If you replace it with a
-  Splitter, the battery will only register 11 Active Usage, 10 for the
-	Boom Box and 1 for the Splitter.
-	![](images/image90.jpg)
-
----
-
-# Connected Speaker![](images/image33.png)
-
-| | |  
-|-|---|  
-Item ID            | 968421290
-Description        | A small speaker that will play any audio from a connected Boom Box
-Crafting Recipe    | 75 Metal Fragments
-Recycles Into      | 38 Metal Fragments
-Stack Size         | 5
-Workbench Required | Level 1
-Hit Points         | 50
-Where To Find      | Requires a DLC purchase
-Inputs/Outputs     | Power/Audio In / Audio Passthrough
-Active Usage       | 1
-Power Consumption  | 1rW
-Power Output       | Input power minus 1
-Despawn Time       | 5 minutes
-Decay Time         | 96 hours
-
-Notes:
-
-- This speaker will play audio from Boom Boxs and Microphone Stands
-- The audio quality is not as good at the Boom Box
-
----
-
-# Disco Ball![](images/image135.png)
-
-| | |  
-|-|---|  
-Item ID            | 1895235349
-Description        | Get groovy with this stunning disco ball.
-Crafting Recipe    | 50 Metal Fragments
-Recycles Into      | 25 Metal Fragments
-Stack Size         | 5
-Workbench Required | Level 1
-Hit Points         | 25
-Where To Find      | Requires a DLC purchase
-Inputs/Outputs     | Power / Passthrough
-Active Usage       | 1
-Power Consumption  | 1rW
-Power Output       | Input power minus 1
-Despawn Time       | 5 minutes
-
-Notes:
-
-- Acts like a light, does not need to be connected to a component from
-  the DLC.
-- The lighting effect it creates will go through walls.
-
----
-
-# Disco Floor![](images/image121.png)![](images/image40.png)
-
-| | |  
-|-|---|  
-Item ID            | First Picture - 286648290 - Default <br>Second Picture - 1735402444 - Disco Floor
-Description        | A vibrant flashing floor that pulses in time to music
-Crafting Recipe    | 75 Metal Fragments
-Recycles Into      | 38 Metal Fragments
-Stack Size         | 5
-Workbench Required | Level 1
-Hit Points         | 50
-Where To Find      | Requires a DLC purchase
-Inputs/Outputs     | Audio In / Audio Passthrough
-Active Usage       | 1
-Power Consumption  | 1rW
-Power Output       | Input power minus 1
-Despawn Time       | 5 minutes
-Decay Time         | 8 hours
-
-Notes:
-
-- There are 2 versions. The difference between the 2 is the size of
-  light tiles.  
-- To change the floors settings, with TC Authorization, look at the
-  floor and press USE(E)
-- Settings you can change are the Pattern, the Volume Sensitivity, Speed
-  and Gradient.
-- Can only be placed on floors and nothing can be placed on top of them.
-- If receiving connection from a Boom Box or an Microphone Stand, the
-  lights will move, flash and pulse to the audio.
-- They block the destruction detectors ability to see downstream
-- too much of them quickly make the game laggy
-
----
-
-# Laser Light![](images/image132.png)
-
-| | |  
-|-|---|  
-Item ID            | 853471967
-Description        | A small device that shoots out visible lasers in time to music
-Crafting Recipe    | 100 Metal Fragments
-Recycles Into      | 50 Metal Fragments
-Stack Size         | 5
-Workbench Required | Level 1
-Hit Points         | 50
-Where To Find      | Requires a DLC purchase
-Inputs/Outputs     | Power/Audio In / Audio Passthrough
-Active Usage       | 1
-Power Consumption  | 1rW
-Power Output       | Input power minus 1
-Despawn Time       | 5 minutes
-Decay Time         | 96 hours
-
-Notes:
-
-- Can be placed on all angled surfaces including the ground.
-- It shoots out 3 lasers.
-- If receiving a connection from a Boom Box, the lasers will move to the
-  audio.
-- It will only bind to 1 Boom Box. You cannot connect 2 Boom Boxes to 1
-  Laser Light
-- Can be picked up with a hammer but loses 25% hit points.
-
----
-
-# Microphone Stand![](images/image88.png)
-
-| | |  
-|-|---|  
-Item ID            |  39600618
-Description        | A powered microphone that lets you broadcast your voice.
-Crafting Recipe    | 75 Metal Fragments
-Recycles Into      | 38 Metal Fragments
-Stack Size         | 5
-Workbench Required | Level 1
-Hit Points         | 25
-Where To Find      | Requires a DLC purchase
-Inputs/Outputs     | Power / Audio Out
-Active Usage       | 5
-Power Consumption  | 5rW
-Power Output       | Input power minus 5
-Despawn Time       | 5 minutes
-
-Notes:
-
-- Anyone can use the microphone by looking at it and pressing USE(E).
-  Hold the right mouse button to change voice modes between Normal, High
-  and Low pitch.
-- Can be placed on flat surfaces or the ground.
-- Attach to a Connected Speaker to broadcast your voice over a larger
-  area.
-- They block the destruction detectors ability to see downstream
-
----
-
-# Sound Light![](images/image113.png)
-
-| | |  
-|-|---|  
-Item ID            | -343857907
-Description        | A light that will pulse in time to music
-Crafting Recipe    | 100 Metal Fragments
-Recycles Into      | 50 Metal Fragments
-Stack Size         | 5
-Workbench Required | Level 1
-Hit Points         | 50
-Where To Find      | Requires a DLC purchase
-Inputs/Outputs     | Power/Audio In / Audio Passthrough
-Active Usage       | 1
-Power Consumption  | 1rW
-Power Output       | Input power minus 1
-Despawn Time       | 5 minutes
-Decay Time         | 96 hours
-
-Notes:
-
-- If receiving a connection from a Boom Box the light will flash and
-  pulse to the music.
-- It will only bind to 1 Boom Box. You cannot connect 2 Boom Boxes to 1
-  Sound Light.
-- Can be picked up with a hammer but loses 25% hit points.
-- Can be placed on vertical and underside of angled surfaces.
 
 ---
 
@@ -3220,7 +2410,7 @@ Where To Find       | Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, 
 Inputs/Outputs      | Power In / Water In, Water Out
 Active Usage        | 5
 Power Consumption   | 5rW
-Conversion Rate     | 5000ml/80 seconds @ 2 | 1 ratio of saltwater to freshwater
+Conversion Rate     | 62.5ml/second @ 2 | 1 ratio of saltwater to freshwater
 Fresh Water Output  | 12mL/second
 Capacity            | 10,000ml total, 5000ml per tank. Black for saltwater and blue for freshwater.  
 Despawn Time        | 20 minutes
@@ -3509,7 +2699,7 @@ Decay Time                |
 Notes:  
 
 - Can be turned on manually, by sending power to the “Turn on” input, or by a nearby igniter.  
-- Like conveyors, powered furnaces retain their on/off state during a server restart,  
+- Like conveyors, powered furnaces retain their on/off state during a server restart,
   but unpowered furnaces lose their on/off state.  
 
 ---
@@ -3558,380 +2748,493 @@ Notes:
 
 ---
 
+# Voice Props Pack DLC
+
+---
+
+# Boom Box![](images/image106.png)
+
+| | |  
+|-|---|  
+Item ID            | -1113501606
+Description        | A large speaker to play recorded cassette tapes and also stream audio from the internet
+Crafting Recipe    | 100 Metal Fragments, 200 Wood, 20 Cloth
+Recycles Into      | 50 Metal Fragments, 100 Wood, 10 Cloth
+Stack Size         | 1
+Workbench Required | Level 1
+Hit Points         | 100
+Where To Find      | Requires a DLC purchase
+Inputs/Outputs     | Power, Toggle Play / Audio Out
+Active Usage       | 10 only when turned on \*
+Power Consumption  | 1-9rW or 10rW when using the Audio Out connection
+Power Output       | Input power minus 10rW
+Despawn Time       | 5 minutes
+Decay Time         | 96 hours
+
+Notes:
+
+- Requires TC Authorization to change settings. Look at the speaker and
+  hold USE(E). You can access Radio Settings or Open. Open allows you to
+  insert a cassette. Radio Settings lets you select a Radio Station.
+- The Audio Out connection lets you send an audio signal to other
+  components in the DLC that can interact with sound.
+- Can be picked up with a hammer, but not with a cassette. Will not take
+  damage when picked up.
+- Can be placed in horizontal surfaces, the ground and some deployable
+  items like Work Benches and Tables.
+- They block the destruction detectors ability to see downstream
+- An Electrical Branch set to 10 will show an Active Usage of 10 on a
+  battery. If we use the 10 from Branch Out to power a Boom Box, the
+  battery will continue to show an Active Usage of 10. If we then make a
+  connection between Power Out on the Electrical Branch and Toggle Play
+  on the Boom Box, the battery will now register an Active Usage of 20.
+  This only appears to happen with the Electrical Branch, 10 for the
+  Branch and 10 for the Boom Box Toggle. If you replace it with a
+  Splitter, the battery will only register 11 Active Usage, 10 for the
+	Boom Box and 1 for the Splitter.
+	![](images/image90.jpg)
+
+---
+
+# Connected Speaker![](images/image33.png)
+
+| | |  
+|-|---|  
+Item ID            | 968421290
+Description        | A small speaker that will play any audio from a connected Boom Box
+Crafting Recipe    | 75 Metal Fragments
+Recycles Into      | 38 Metal Fragments
+Stack Size         | 5
+Workbench Required | Level 1
+Hit Points         | 50
+Where To Find      | Requires a DLC purchase
+Inputs/Outputs     | Power/Audio In / Audio Passthrough
+Active Usage       | 1
+Power Consumption  | 1rW
+Power Output       | Input power minus 1
+Despawn Time       | 5 minutes
+Decay Time         | 96 hours
+
+Notes:
+
+- This speaker will play audio from Boom Boxs and Microphone Stands
+- The audio quality is not as good at the Boom Box
+
+---
+
+# Disco Ball![](images/image135.png)
+
+| | |  
+|-|---|  
+Item ID            | 1895235349
+Description        | Get groovy with this stunning disco ball.
+Crafting Recipe    | 50 Metal Fragments
+Recycles Into      | 25 Metal Fragments
+Stack Size         | 5
+Workbench Required | Level 1
+Hit Points         | 25
+Where To Find      | Requires a DLC purchase
+Inputs/Outputs     | Power / Passthrough
+Active Usage       | 1
+Power Consumption  | 1rW
+Power Output       | Input power minus 1
+Despawn Time       | 5 minutes
+
+Notes:
+
+- Acts like a light, does not need to be connected to a component from
+  the DLC.
+- The lighting effect it creates will go through walls.
+
+---
+
+# Disco Floor![](images/image121.png)![](images/image40.png)
+
+| | |  
+|-|---|  
+Item ID            | First Picture - 286648290 - Default <br>Second Picture - 1735402444 - Disco Floor
+Description        | A vibrant flashing floor that pulses in time to music
+Crafting Recipe    | 75 Metal Fragments
+Recycles Into      | 38 Metal Fragments
+Stack Size         | 5
+Workbench Required | Level 1
+Hit Points         | 50
+Where To Find      | Requires a DLC purchase
+Inputs/Outputs     | Audio In / Audio Passthrough
+Active Usage       | 1
+Power Consumption  | 1rW
+Power Output       | Input power minus 1
+Despawn Time       | 5 minutes
+Decay Time         | 8 hours
+
+Notes:
+
+- There are 2 versions. The difference between the 2 is the size of
+  light tiles.  
+- To change the floor settings, with TC Authorization, look at the
+  floor and press USE(E)
+- Settings you can change are the Pattern, the Volume Sensitivity, Speed
+  and Gradient.
+- Can only be placed on floors and nothing can be placed on top of them.
+- If receiving connection from a Boom Box or an Microphone Stand, the
+  lights will move, flash and pulse to the audio.
+- They block the destruction detectors ability to see downstream
+- Like all lights, placing a lot of these will cause lag.
+
+---
+
+# Laser Light![](images/image132.png)
+
+| | |  
+|-|---|  
+Item ID            | 853471967
+Description        | A small device that shoots out visible lasers in time to music
+Crafting Recipe    | 100 Metal Fragments
+Recycles Into      | 50 Metal Fragments
+Stack Size         | 5
+Workbench Required | Level 1
+Hit Points         | 50
+Where To Find      | Requires a DLC purchase
+Inputs/Outputs     | Power/Audio In / Audio Passthrough
+Active Usage       | 1
+Power Consumption  | 1rW
+Power Output       | Input power minus 1
+Despawn Time       | 5 minutes
+Decay Time         | 96 hours
+
+Notes:
+
+- Can be placed on all angled surfaces including the ground.
+- It shoots out 3 lasers.
+- If receiving a connection from a Boom Box, the lasers will move to the
+  audio.
+- It will only bind to 1 Boom Box. You cannot connect 2 Boom Boxes to 1
+  Laser Light
+- Can be picked up with a hammer but loses 25% hit points.
+
+---
+
+# Microphone Stand![](images/image88.png)
+
+| | |  
+|-|---|  
+Item ID            |  39600618
+Description        | A powered microphone that lets you broadcast your voice.
+Crafting Recipe    | 75 Metal Fragments
+Recycles Into      | 38 Metal Fragments
+Stack Size         | 5
+Workbench Required | Level 1
+Hit Points         | 25
+Where To Find      | Requires a DLC purchase
+Inputs/Outputs     | Power / Audio Out
+Active Usage       | 5
+Power Consumption  | 5rW
+Power Output       | Input power minus 5
+Despawn Time       | 5 minutes
+
+Notes:
+
+- Anyone can use the microphone by looking at it and pressing USE(E).
+  Hold the right mouse button to change voice modes between Normal, High
+  and Low pitch.
+- Can be placed on flat surfaces or the ground.
+- Attach to a Connected Speaker to broadcast your voice over a larger
+  area.
+- They block the destruction detectors ability to see downstream
+
+---
+
+# Sound Light![](images/image113.png)
+
+| | |  
+|-|---|  
+Item ID            | -343857907
+Description        | A light that will pulse in time to music
+Crafting Recipe    | 100 Metal Fragments
+Recycles Into      | 50 Metal Fragments
+Stack Size         | 5
+Workbench Required | Level 1
+Hit Points         | 50
+Where To Find      | Requires a DLC purchase
+Inputs/Outputs     | Power/Audio In / Audio Passthrough
+Active Usage       | 1
+Power Consumption  | 1rW
+Power Output       | Input power minus 1
+Despawn Time       | 5 minutes
+Decay Time         | 96 hours
+
+Notes:
+
+- If receiving a connection from a Boom Box the light will flash and
+  pulse to the music.
+- It will only bind to 1 Boom Box. You cannot connect 2 Boom Boxes to 1
+  Sound Light.
+- Can be picked up with a hammer but loses 25% hit points.
+- Can be placed on vertical and underside of angled surfaces.
+
+---
+
+# Telephone![](images/image125.png)
+
+| | |  
+|-|---|  
+Item ID             |  1234878710
+Description         | A telephone for making and receiving calls
+Crafting Recipe     | 50 Wood, 100 Metal Fragments, 1 Tech Trash
+Recycles Into       | 25 Wood, 100 Metal Fragments, 50% 1 Tech Trash
+Stack Size          | 1
+Workbench Required  | Level 1
+Research Table Cost | 75 Scrap
+Hit Points          | 150
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
+Inputs/Outputs      | Power / Call Passthrough
+Active Usage        | 1
+Power Consumption   | 1rW
+Power Output        | 1rW
+Despawn Time        | 20 minutes
+Decay Time          | 8 hours
+
+Notes:
+
+- This is actually a telephone sitting on top of a tape cassette
+  answering machine
+- The answering machine needs a cassette to work. You will require the
+  Voice Props DLC to craft cassettes.
+- TC Auth is not required to change the name or access the cassette in
+  the answering machine.
+- There are 3 types of cassettes, Short(10sec), Medium(20sec) and
+  Long(30sec). Use a Cassette Recorder to record a message then place
+  the cassette in the answering machine. When someone calls and you
+  don't answer, the caller will hear your message and leave a message of
+  their own for you to play back later.
+- After 3 rings the answering machine message will begin to play. To
+  leave a voicemail, press the spacebar when you hear the answering
+  machine's message. To listen to your voicemail, use the phone and at
+  the bottom of the screen select voicemail.
+- To use the phone, look at it and when you see MAKE CALL, press E to
+  use.
+- You can give your phone a name and it will appear in the Directory.
+  All phones are automatically assigned a number.
+- You can add phones to your contacts list by adding the phone number
+  or name.
+- Use the Directory to find the phones at monuments or random peoples
+  phones.
+- When a call comes in, the phone will output the incoming power and
+  will continue to for as long as the call is active.
+
+---
+
+# Fireworks
+
+---
+
+They can be ignited with a lit Torch, Flamethrower, Fire Arrows or using
+an electric Igniter.
+
+They can be placed on flat surfaces or the ground unless stated
+otherwise. They can be picked up with a hammer.
+
+A firework is active when the fuse on the side of it is sparkling. If
+the fuse is sparkling, it cannot be picked up.
+
+The default number of Boomers, Patterns and Champagnes that can be
+active at 1 time is 25. Not 25 of each, 25 total.
+
+Type | Start Time | Launch Time | Number of shots | Time between shots | Active Time 
+|---|-|-|-|-|-|
+Volcano | 5 |||| 40
+Candle | 5 | 2 | 12 | 3 | 40
+Boomer | 5 | 5 | 10 | 4 | 47
+Champagne | 5 | 5 | 3 | 10 | 35
+Pattern Short Fuse | 5 | 5 | 3 | 10 | 35
+Pattern Medium Fuse | 5 | 7 | 3 | 10 | 35
+Pattern Long Fuse | 5 | 10 | 3 | 10 | 35
+
+Start Time refers to the time between the fuse starting to sparkle and
+the time the firework starts to produce color or launches a projectile.
+
+Launch Time refers to the amount of time it takes a firework to reach
+its maximum height.
+
+Number Of Shots refers to the number of times a firework will launch a
+projectile.
+
+Time Between Shots refers to the amount of time between each projectile.
+
+Active Time refers to the total amount of time from a firework
+activating to the time it produces its last color or boom. This is
+written as Start Time + the time it takes from the first projectile to
+launch and the last projectile to reach its maximum height. Ex 5+35
+seconds = 5 seconds to start then 35 more seconds before the firework
+finishes.
+
+---
+
+# Volcano Firework
+
+| | |  
+|-|---|  
+Item ID            | Red -454370658  Violet -1538109120  White 261913429
+Description        | Emits a beautiful shower of colored sparks
+Crafting Recipe    | 20 Metal Fragments, 15 Gun Powder
+Recycles Into      | 10 Metal Fragments, 8 Gun Powder
+Stack Size         | 20
+Workbench Required | Level 1
+Hit Points         | 100
+Where To Find      | Requires Steam Item : Small Fireworks Pack
+Start Time         | 5 seconds
+Duration           | 5+35 seconds
+Despawn Time       | 5 minutes
+
+Notes:
+
+- There are 3 colors, Red, Violet and White.
+- Foundations/floors provide 1 launch direction, straight up.
+- Ramps provide 2 launch directions, 2 different angles.
+
+---
+
+# Roman Candle![](images/image4.png)
+
+| | |  
+|-|---|  
+Item ID         | Blue -515830359  Green -1306288356  Red -1486461488  Violet -99886070
+Description     | A small repeating firework, shoots a series of colored balls into the air
+Crafting Recipe | 25 Metal Fragments, 10 Low Grade Fuel
+Recycles Into   | 13 Metal Fragments, 5 Low Grade Fuel
+Stack Size      | 20
+Hit Points      | 100
+Where To Find   | Requires Steam Item : Small Fireworks Pack
+Start Time      | 5 seconds
+Duration        | 2+38 seconds
+Despawn Time    | 5 minutes
+
+Notes:
+
+- There are 4 colors: Blue, Green, Red, Violet.
+- Foundations/floors provide 1 launch direction, straight up.
+- Ramps provide 2 launch directions, 2 different angles.
+
+---
+
+# Boomer![](images/image96.png)
+
+| | |  
+|-|---|  
+Item ID            |  Blue 1744298439 Green -656349006 Red -1553999294 Violet -280223496 
+Description        |  A very large mortar type firework with a colored starburst
+Crafting Recipe    | 25 Metal Fragments, 15 Low Grade Fuel, 30 Gun Powder
+Recycles Into      | 13 Metal Fragments, 8 Low Grade Fuel, 15 Gun Powder
+Stack Size         | 20
+Hit Points         | 100
+Where To Find      | Requires Steam Item : Large Fireworks Pack
+Start Time         | 5 seconds
+Launch Time        | 5 seconds
+Number Of Shots    | 10
+Time Between Shots | 4 seconds
+Duration           | 5+42 seconds
+Despawn Time       | 5 minutes
+
+Notes:
+
+- There are 5 colors: Blue, Green, Red, Violet and Orange.
+- Foundations/floors provide 1 launch direction, straight up.
+- Ramps provide 2 launch directions, 2 different angles.
+- Steps provide 6 launch directions, 5 different angles and straight up
+
+---
+
+# Champagne Boomer![](images/image63.png)
+
+| | |  
+|-|---|  
+Item ID            | 1324203999
+Description        | A very large mortar type firework with a massive champagne colored explosion followed by smaller orange starbursts
+Crafting Recipe    | 30 Metal Fragments, 30 Low Grade Fuel, 75 Gun Powder
+Recycles Into      | 15 Metal Fragments, 15 Low Grade Fuel, 38 Gun Powder
+Stack Size         | 20
+Hit Points         | 100
+Where To Find      | Requires Steam Item : Large Fireworks Pack
+Start Time         | 5 seconds
+Launch Time        | 5 seconds
+Number Of Shots    | 3
+Time Between Shots | 10 seconds
+Duration           | 5+30 seconds
+Despawn Time       | 5 minutes
+
+Notes:
+
+- There are 5 colors: Blue, Green, Red, Violet and Orange.
+- Foundations/floors provide 1 launch direction, straight up.
+- Ramps provide 2 launch directions, 2 different angles.
+- Steps provide 6 launch directions, 5 different angles and straight up
+
+---
+
+# Pattern Boomer![](images/image84.png)
+
+| | |  
+|-|---|  
+Item ID            | -379734527
+Description        | A special boomer which allows you to light up the night sky with a custom pattern that you draw. Multiple colors and altitude settings are available.
+Crafting Recipe    | 50 Metal Fragments, 15 Low Grade Fuel, 30 Gun Powder
+Recycles Into      | 25 Metal Fragments, 8 Low Grade Fuel, 15 Gun Powder
+Stack Size         | 20
+Hit Points         | 100
+Where To Find      | Requires a Steam item purchased from the Item Store
+Start Time         | 5 seconds
+Launch Time        | Short Fuse 5 seconds, Medium Fuse 7 seconds, Long Fuse 10 seconds
+Number Of Shots    | 3
+Time Between Shots | 10 seconds
+Duration           | 5+30 seconds
+Despawn Time       | 5 minutes
+
+Notes:
+
+- There are 5 colors: Blue, Green, Red, Violet and Orange.
+- Foundations/floors provide 1 launch direction, straight up.
+- Ramps provide 2 launch directions, 2 different angles.
+- Steps provide 6 launch directions, 5 different angles and straight up
+- There is a default pattern if none is created.
+- TC authorization is required to customize firework. Look at the
+  firework and press USE(E) to change the use type or Open Designer.
+- The designer lets you make your own pattern by placing up to 35 dots
+  on the board. There is an option to place or remove dots and clear the
+  board. There are 8 colours to choose from, white, yellow, orange, red,
+  green, teal, blue and pink. You can name your design and have up to 5
+  different patterns saved. Once you hca completed or selected a
+  pattern, click Save. This will exit you from the designer and your
+  pattern will be displayed when launched.
+- If the firework is picked up, the pattern will revert back to default.
+
+---
+# Getting Started
+
+
+
 # The Structure of a Base Circuit
 
-All circuits for a base follow the same basic structure.  
-It doesn't matter if the base has 1 circuit or more,
-they all contain 4 main parts with an optional 5th part
-that does not have a static location.  
-We have the Power Source, Battery Backup, Distribution, End Devices/Circuits and the 5th, Destruction Detection.  
-Using the following flow chart we can help illustrate this.
+All circuits for a base follow the same basic structure. It doesn't matter if the base has 1 circuit or more, they all contain 4 main parts with an optional 5th part that does not have a static location. We have the Power Source, Battery Backup, Distribution, End Devices/Circuits and the 5th, Destruction Detection. Using the following flow chart we can help illustrate this.
 
 ![](images/image38.png)
 
-Moving top to bottom, every circuit needs a power source. You have 3
-choices, Windmills, Solar Panels or Small Generators.
+Moving top to bottom, every circuit needs a power source. You have 3 choices, Windmills, Solar Panels or Small Generators. 
 
-We then take our source power and feed it to a Battery Backup. You have
-2 choices, the Inline or Bypass(Nih Core). Either way, you must ensure
-you are supplying enough power to keep your batteries charged.
+We then take our source power and feed it to a Battery Backup. You have 2 choices, Inlines or Bypasses. Either way, you must ensure you are supplying enough power to keep your batteries charged. 
 
-From the battery backup, we will then need to distribute the power to
-the different systems in the base. There are 3 options, a Fixed or
-Dynamic Bus or a Configure Siphon.
+From the Battery Backup, we will then need to distribute the power to the different systems in the base. There are 3 options, a Fixed or Dynamic Bus or a Configure Siphon. 
 
-If you are working with Inline Battery Backup, you want to minimize a
-battery’s Active Usage. If you are working with a Bypass Battery Backup,
-you want to maximize the use of Consumable Power.
+The End Devices and Circuits are your turrets, lights, cameras, farms, door controllers, sensor grids, ect. It is these components that will consume the majority of power. Knowing what circuits you want to include will be important to know when deciding how much power you need to produce and how big your Battery Backup will be.
 
-The End Devices and Circuits are your turrets, lights, cameras, farms,
-sensor grids, ect. The Destruction Detection system should be included
-in most circuits and if limited to one, placing one after the battery
-backup is probably the best option.
+The Destruction Detection system should be included in most circuits and if limited to one, placing one after the Battery Backup is probably the best option.
 
----
-# Parallel vs Series
+Recommended reading:  
+[Power Generation](powergeneration.md)  
+[Power Storage](powerstorage.md)  
+[Power Distribution](powerdistribution.md)  
+[Useful Circuits](usefulcircuits.md)
 
-
----
-
-# Battery Active Usage Vs Actual Power Consumed
-
-Simply put, active usage is what a battery uses to calculate its charge
-and discharge rate. Power consumed is the amount of power a component
-requires to operate. Active Usage doesn't always = Power Consumed. This
-is also where the argument of Electrical Branch vs Splitter comes from.
-Once you understand this section, you will know the answer to this
-age-old argument.
-
-When you look at the battery with a wire tool, you will see Active
-Usage. Active Usage is the amount of power the battery is draining by.
-This is the number you want to use when calculating how much power to
-give a battery for it to remain charged based on the battery's 80%
-efficiency. Active Usage divided by 0.8 = a battery's minimum power
-input.
-![](images/large-battery-ui.png)
-
-It is reasonable to think that the number you see is the amount of power
-your circuit is currently consuming, but it’s not always the case. Even
-when some components are turned off and not consuming power, they can
-still add to a battery's Active Usage. In this next picture, even though
-the Auto Turret is not consuming power, it is still adding to the
-battery’s
-
-![](images/turned-off-usage.png)
-
-Active Usage and in fact, it will actually consume 14 power. In this
-case even though the AND Switch is not allowing power to pass through,
-it does not have the ability to hide the Active Usage from inactive
-components downstream or past it. In this next picture, if we use
-different components to achieve the same outcome, we can hide
-
-![](images/hide-active-usage.png)
-
-the Auto Turret’s Active Usage from the battery when it is not consuming
-power. This setup reduces the Active Usage all the way to 6. When
-active, we will get an Active Usage of 16
-but it will actually consume 18.  
-Components like Switches, the Blocker, Timer and RF Transmitter all
-have the ability to hide a component's Active Usage from batteries when
-not passing power through.
-
-Every component will only register an Active Usage once and equal to the
-amount of power it consumes with the exception of the Electrical Branch.
-Only the Branch Out value will register Active Usage even though it does
-consume 1 power for itself. An Electrical Branch set to 2 will register
-an Active Usage of 2 but will consume 3. Branch Out is a FIXED value.
-The thing to remember is that it is the Branch Out value that is
-registering Active Usage, not the components connected to Branch Out.
-This means that the components connected to Branch Out, even though it
-is where they are getting their power from, their Active Usage is not
-what is registering on the battery. If there is another path that lets
-the battery see these components, it is possible for their Active Usage
-to register on the battery along with the Branch Out value, effectively
-doubling the power needed. This next picture is a quick example to show
-how a Boom Box that is powered from Branch Out, but using a Switch to
-Toggle Play on and off, is registering 10 Active Usage for the Branch
-Out, 1 for the Switch and 10 for the Boom Box. If we do the same thing,
-but with the Splitter, we dont have this issue because the Splitter
-controls its power flow DYNAMICALLY.
-![](images/branch-vs-splitter-active-usage-onoff.png)
-
-This is helpful in situations where you have a few small 
-circuits where you dont want to force an Active Usage when the circuits
-are off. Now because the Electrical Branch only registers the Branch Out
-value as Active Usage and 0 for itself, we can trick batteries into
-thinking less power is being consumed. In the next picture, we have some
-examples using Auto Turrets.
-![](images/active-usage-vs-pwr-consuption-turret.png)
-
-Above, we have 1 example using 8 Electrical Branches to power 9 Auto
-Turrets. Every branch is outputting 10 power but also consuming 1 power
-for itself. So in total we are consuming 98 power but the battery’s
-Active Usage is only 90. The 2nd example we are using 4 Splitters to
-power the same number of turrets only this time the Splitters are
-consuming 1 and have an Active Usage of 1 each. This gives us an Active
-Usage and Power Consumption of 94. The example with Electrical Branches
-only has 2 extra power meaning there is enough power available to add a
-single Ceiling Light while the 2nd example has 6 extra power, that’s
-enough power for 3 Ceiling Lights.
-
-In the situation where an Inline Battery is being used, you want to
-minimize the battery's Active Usage to minimize the cost of power
-production. Like in the single Auto Turret examples above, there is a
-required input power difference of 9rW just to maintain the battery.
-Batteries are 80% efficient. Take the Active Usage number and divide it
-by 0.8. This will give you the minimum amount of power required to
-maintain the battery and it will not drain. It wont charge either. The
-more power above the minimum, the faster the battery will charge but the
-more you will waste when the battery is full. 1rW will charge a large
-battery but it will take 34 IRL days.
-
-In a bypass system like the Nih Core, Active Usage doesn't matter
-because you are not relying on the battery as a main power source. You
-are bypassing the battery. This means that the amount of power consumed
-is more important. If we look at the above picture again with the 9 Auto
-Turrets, we can see that while both examples are accomplishing the same
-goal, 1 is consuming less power then the other. If we look back at the
-single Auto Turret examples, the 1st example with an Active Usage of 13
-will actually consume 14 vs the 2nd with an Active Usage of 6 will
-actually consume 18. So while the 1st example is bad on an Inline
-system, it is better in a bypass system. The less power you can use to
-do something, gives you more power to do other things.
-
-You can use a bypass system with 1 Large Battery and only use 50 power
-to double the life of the battery but, it is more common to see a bypass
-system used for 2 or more batteries to get a larger output. If we are
-using 2 or more batteries to get the higher output, a Root Combiner will
-be used. The moment we combine batteries to power a circuit that uses
-more than 100 power, both batteries will have an Active Usage of 100.
-This is because load sharing is not a thing in Rustricity. If the
-circuit only needs 50, both batteries will have an Active Usage of
-50(plus 1 for the Root Combiner).
-
-![](images/root-combined-batterys.png)
-
-Due to this being the way it is, if you combine 2 batteries to get 200
-power, try to use all 200 because no matter if the circuit needs 101 or
-199, 2 large batteries will only last 4 hours. If they are only going to
-last 4 hours regardless, try to use as much of that 200 as possible to
-make it worth combining the batteries. Otherwise, split the circuit, run
-Inlines and minimize the Active Usage.
-
-Now, having said you want to consume as little power as possible to
-achieve the desired outcome when using a bypass battery backup, there
-are times when it is worth consuming more for a bit of added security.
-In the next picture, Ive used medium batteries for the demonstration,
-and they are root combined powering some Auto Turrets.
-
-![](images/power-bus-security-compared-turrets.png)
-
-The top groups are using Electrical Branches. They are consuming more
-power but in the event 1 battery is destroyed, top right, some turrets
-stay active. The bottom groups use Splitters. While they do consume less
-power, in the event a battery is lost, very bottom, all the turrets go
-offline. You will need to weigh the pros and cons and decide what is
-right to fit your needs. Read more in What is a Power Bus?  
-
----
-
-# Short Circuit / Max Depth
-
-This is a single message that is displayed for 2 different errors. At
-the time of creating this section, XOR Switches did not consume any
-power which is why you will see them used in the pictures. The pictures
-might get remade in time but power consumption is not important when
-discussing and understanding this error.
-
-## Short Circuit
-
-A short circuit happens when you have power feeding back into itself,
-AKA, a loop.  
-
-![](images/image124.png)
-
-Why would you do this? You wouldn’t. In the past, batteries functioned
-differently and there was a need to create the “Infinite Power Loop”.
-Today, batteries have something called “Active Usage”. This breaks the
-infinite loop and eliminates a need for it to exist.
-
-You can circumvent a short circuit by increasing the number of
-components in the loop to be 9 or greater.
-
-![](images/image10.png)
-
-In the next picture we show a battery feeding power back into
-itself.
-
-![](images/image62.png)
-
-There is no reason to do this anymore. There was a time when batteries
-could only exist in 1 state at a time. They were either charging or
-discharging and when they were discharging, they were always doing it at
-their max. Back then, people found a way to use the extra power and send
-it back to the battery. For example, a large battery was always
-outputting 100 power whereas today, they calculate an active usage and
-only drain the amount of power a circuit needs, up to 100. Today, if the
-circuit only needs 50, the battery only gives 50.
-
-The other thing to note is batteries also cause an active usage. For a
-large battery, it is 400, so in the above loop, you are forcing a max
-drain on the battery. There is no advantage to this.
-
-## Max Depth
-
-Maximum Depth is referring to the number of components between your
-power source and the  Root Combiner. A Max Depth error will occur when
-we exceed 16 components.
-
-![](images/image101.png)
-
-It is important to understand this mechanic and how to calculate it.
-This becomes important when combining multiple power sources including a
-battery backup with multiple combined batteries. If you experience this
-error, to calculate the depth of a circuit, we start with the last Root
-Combiner or the combiner that is furthest away from the power source and
-count the number of components power must pass through all the way back
-to the power source. This limits where in a circuit you can use Root
-Combiners.
-
-The below images are 2 ways root combiners can be stacked. The group on
-the left is known as pyramid stacking and the group on the right is
-known as a daisy chain. While both groups are possible, you can see that
-the group on the left is only 4 components deep whereas the right side
-is 8 deep. This is important when working with a large amount of
-centralized power because you can quickly use up the depth and then not
-be able to have the number of batteries you want or need.
-
-![](images/image7.png)
-
-In this next image, we have 8 Windmills combined into a Nih Core with a
-battery backup containing 6 Large Batteries. This circuit has a total
-depth of 13 components. The trick to counting depth is counting the
-components in the longest route from the last Root Combiner, \#1 back to
-the Windmill, \#13.  
-
-![](images/image99.png)
-
-In the next example, we have 2 isolated power sources. The first source
-is the cluster of Windmills. The second is the combined Solar Panels for
-the Component Destruction Detector. This means that we have 2 paths we
-must consider when calculating the depth. The first path to look at is
-the one that goes from the Root Combiner \#1 back to the Windmill \#14.
-This path is the main power path. The second path goes from Root
-Combiner \#1 back to the Solar Panel \#16. If one of these paths exceed
-the Max Depth limit of 16 components, you will start to see the error
-message at Root Combiner \#1.
-
-![](images/image50.png)
-
-The next image shows a Max Depth using an equal number of Windmills and
-Batteries with a Nih Core.
-
-![](images/image21.png)
-
----
-
-# Circuit Delay and Power Flow
-
-NEEDS WORK
-
-A simple explanation for now:
-
-Circuit Delay at its most basic is the amount of time it takes power to
-pass from one component to another. The reason there is circuit delay is
-because we are dealing with lines of code. Specifically we are dealing
-with lines of code for electricity in Rust, aka rustricity. Rustricity
-is a single threaded system. This means that everything happens 1 line
-of code at a time for the entire server. It doesn’t matter how many
-circuits are running on a server at 1 time. The server will process
-everything rustricity, every  activation, deactivation, action,
-reaction, transfer etcetera, 1 at a time. Now this doesn't need to be
-said but just to make sure we are all on the same page, the server you
-login to to play on is running or hosted on a computer. That computer is
-also referred to as a server. The faster the hardware of this server is
-and the more dedicated this hardware is to running the game server, the
-better rustricity will perform.
-
-The best rustricity will perform on any server is when it is solely
-hosting a vanilla game. The more programs running on the server or the
-more plugins installed for the game, the slower the rustricity will
-function therefore increasing circuit delay. The amount of time we are
-talking about is incredibly small but a lot of small increases will
-eventually become a large amount of time. One way to test how fast
-rustricity is on any server is by stringing a bunch of lights together,
-the more the better, and watch how long it takes for all of them to turn
-on and off.
-
-Power Flow is the path electricity takes through a circuit. Using the
-picture below to help illustrate, when we flip the
-
-![](images/passtrough-chain.png)
-
-Switch on, light 1 will power on followed by light 2 then light 3 and
-finally light 4. When we flip the Switch off, light 1 will power off
-followed by light 2 then light 3 and finally light 4. Power flow gets a
-little more complicated when we introduce components with multiple
-outputs. Starting with the Electrical Branch that has 2 outputs, power
-is first sent
-
-![](images/branch-outputs.png)
-
-through Power Out then power gets sent through Branch Out.
-When it is removed,
-it will first be removed from Power Out then Branch Out.
-
-The Splitter is similar but it has 3 outputs.
-
-![](images/splitter-out.png)
-
-Power first goes through Power Out 1
-followed by Power Out 2 then Power Out 3.
-When power is removed,
-it will be removed first from Power Out 1 followed by Power
-Out 2 then Power Out 3. On the small scale, this is easy to follow but
-as we start to build larger circuits it can be a little more complicated
-but is absolutely crucial to understand when you start integrating logic
-or having multiple circuits interacting with each other.
-
-Lets dive a little deeper into this concept by analyzing the Nih Core.
-
----
-
-# Useful Circuits
-
-[Auto Smelter](https://www.rustrician.io/?circuit=7411c1893993574b24b6c9c911dbc0e3)
-
-[Blocker Chain](https://www.rustrician.io/?circuit=773b599014deb161fc173f295727be77)
-
-[Configure Siphon](https://www.rustrician.io/?circuit=e7c8a8ccc9ce2da68095cca2560da002)
-
-[Delay Timer](https://www.rustrician.io/?circuit=fa8ba5c2e3974185c6f01273eab653f1)
-
-[Destruction Detection](https://www.rustrician.io/?circuit=bf38168f0834f7d84fb837ac41d1818e)
-
-[Logic Gates](https://www.rustrician.io/?circuit=64810508602bc0cd1baa954d1a1da539)
-
-[Memory Cell Explained](https://www.rustrician.io/?circuit=b64e3a0f6f9d6d456ead9821abf9d7d7)
-
-[Nih Core](https://www.rustrician.io/?circuit=d131cf1233742ebd0acb8ebaaf3b9d1a)
-
-[Nih Core - 4 Large Batteries](https://www.rustrician.io/?circuit=60fc05f187614f131aa5565be42a6687)
-
-[Nih Core - Decentralized](https://www.rustrician.io/?circuit=1d0b869c046f6d05ee75ab0f841fc150)
-
-[Probability Master Class](https://www.rustrician.io/?circuit=ca9bdcbc87f0a13ca3a3ce0c8fe4146d)
-
-
-[Configure - Basic Pulse Control Set ](https://www.rustrician.io/?circuit=c0487dd792adbd543e8d234a3979bc38)
-
----
-
-
-# Centralized vs Decentralized
-
-# Locations
-
+# Centralized vs Decentralized Theory
 When we talk about centralizing or decentralizing electricity, we are
 talking about 1 of 2 things. We are either talking about the physical
 placement of components or we are talking about power flow from a source
@@ -3943,14 +3246,17 @@ circuits with their own power source, battery backup, and distribution
 located in different rooms/areas for each system and section of a base.
 These 2 concepts exist on the extreme ends of a spectrum. The best
 circuit does not need to be one or the other, it can be located anywhere
-in between. There are several variables including the server, wipe
+in between.  
+
+There are several variables including the server, wipe
 length, group size, the base, server limits and electrical experience
 that will influence the solution that works for your situation. This is
 not a 1 size fits all. The best circuit is the one that does the job you
-need in the time you need it.
+need it to do when you need it to do it.
 
 First we will talk about the physical placement then we will get into
 the electrical circuit(s).
+# Locations
 
 When talking about centralizing or decentralizing the physical location
 of components, it should be understood that we are NOT talking about the
@@ -3959,7 +3265,7 @@ quality of life improvements of having electric heaters everywhere
 because the build location was in the arctic biome. We are NOT talking
 about the components placed on walls for the purpose of destruction
 detection. What we are talking about is the location of the core
-components. We are talking about all the circuits that power, control
+components. We are talking about the circuits that power, control
 and support the defensive systems, monitoring systems or quality of life
 systems. We are talking about the location of collection points for
 power sources, battery backups, the batteries, power buses and all the
@@ -4229,24 +3535,31 @@ decentralizes, for security, different parts of the same circuit. While
 it is more common to see hybridization between power sources and battery
 backup, it can also be done with distribution. To help demonstrate this
 concept, we have the following 3 examples. The first 2 are using Inline
-Battery Backups. In each example, a Counter is used to both show the
+Battery Backups because it's the easiest way to demonstrate the concept. In each example, a Counter is used to both show the
 available amount of power but also represents an end circuit like lights
 or turrets.
 
-This first example demonstrates decentralizing power by having each power source charge its own battery, with a centralized Inline backup by combining the batteries before powering a circuit. This is a less than ideal way to set up your power production and battery backup. Keep in mind that Root Combiners do not share the load between batteries. This means that a circuit needing 100 power or more will force all the batteries to have a max Active Usage of 100. 
-Read the section [Battery Active Usage vs Actual Power Consumed](concepts.html#battery-active-usage-vs-actual-power-consumed) for a more in depth explanation.  
+This first example demonstrates decentralizing the main power by having each power source charge its own battery, with a centralized Inline backup by combining the batteries before powering a circuit. This is a less than ideal way to set up your power production and battery backup. Keep in mind that Root Combiners do not share the load between batteries. This means that a circuit needing 100 power or more will force all the batteries to have a max Active Usage of 100. 
+Read the section [Battery Active Usage vs Actual Power Consumed](concepts.html#battery-active-usage-vs-actual-power-consumed) for an in depth explanation into Active Usage.  
+
 ![](images/dectr-pwr-ctr-bkp.png)  
-This kind of configuration is convenient to achieve a lot of power on 1 line but because in this example we are using Inline batteries, this becomes progressively more expensive to maintain as you need to be producing a significant amount more power than you need to. This also removes the ability to take advantage of game mechanics to minimize Active Usage on the batteries which should be a primary focus when using an Inline backup. 
 
-Let's say you want to power 18 Auto Turrets. That is 180rW plus the cost of distribution so we are going to need 2 large batteries which give us 200 power, just like in the picture above. With no load sharing between the batteries, they both will have an Active Usage of 100. With the battery’s 80% efficiency, we need to give each battery 125rW. That’s a minimum of 250rW we need to produce all the time so the batteries do not drain.
+This kind of battery configuration is convenient to achieve a lot of power on 1 line but because in this example we are using Inline batteries, this becomes progressively more expensive to maintain as you need to be producing a significant amount more power than you need to. This also removes the ability to take advantage of game mechanics to minimize Active Usage on the batteries which should be a primary focus when using an Inline backup. 
 
-If you have already read Battery Active Usage vs Actual Power Consumed, you will know it is possible to power 9 turrets from 1 battery. If we power the other 9 from the other battery, this allows each battery to only have an Active Usage of 90.  With the batteries 80%, we only need a power supply of 114rW per battery for a total of 228rW to not lose power. 
+Let's say you want to power 18 Auto Turrets. That is 180rW plus the cost of distribution so we are going to need 2 large batteries which give us 200 power, just like in the picture below. With no load sharing between the batteries, they both will have an Active Usage of 100. With the battery’s 80% efficiency, we need to give each battery 125rW. That’s a minimum of 250rW we need to produce all the time so the batteries do not drain.
 
-The larger this is scaled up, it is easy to see how much wasted power, time and materials there are. That is why it is seen as unsustainable for use in situations that are continuously online, however, if you have a circuit that spends most of its time offline and there are long enough periods of time between activity to let the batteries charge, then it becomes much more practical to just get a lot of power on a single line.  
+![](images/centbat250.png)
+
+If you have already read Battery Active Usage vs Actual Power Consumed, you will know it is possible to power 9 turrets from 1 battery. Pictured below, if we power 9 turrets from 1 battery and the other 9 from the other battery and each battery has its own power source, this allows each battery to only have an Active Usage of 90.  With the batteries 80%, we only need a power supply of 114rW per battery for a total of 228rW to not lose power. 
+
+![](images/decentbat228.png)
+
+The larger this is scaled up, it is easy to see how much wasted power, time and materials there are when trying to centralize the batteries when each battery has its own power source. That is why it is seen as unsustainable for use in situations that are continuously online, however, if you have a circuit that spends most of its time offline and there are long enough periods of time between activity to let the batteries charge, then it becomes much more practical to just get a lot of power on a single line for a shorter period of time.  
 
 In the next example we demonstrate centralizing power by combining it before the Inline batteries, while decentralizing the battery backup by letting each battery power its own circuit. This gives us the benefit of convenience by combining all the power sources into a single line then using Splitters to evenly divide that power between all batteries,
 
 ![](images/ctr-pwr-dectr-bkp.png)
+ 
 or, like in the above picture, use an
 Electrical Branch to give priority to 1 battery while evenly dividing
 the remaining power between the other 2. This gives us the ability to
@@ -4254,32 +3567,188 @@ prioritize batteries and also take advantage of minimizing Active Usage
 per battery depending on the circuit it is powering. This leads to a
 lower material and labor cost and wastes less power.
 
-Decentralizing the batteries is almost always the better option when creating a hybrid circuit. While the above examples have used Inline battery backups, in our 3rd example, we use a bypass battery backup known as the Nih Core. This battery backup is natively a centralized system but here, we have decentralized the batteries by dedicating them to specific systems. This is called the Decentralized Nih Core.
+Decentralizing the batteries is almost always the better option when creating a hybrid circuit. While the above examples have used Inline battery backups, in our 3rd example, we use a bypass battery backup known as the Nih Core.
+
 ![](images/decentnihcore.png)  
-It gives us the benefit of powering our circuits the majority of the time with the main power source while also providing security by separating the battery backup.  
-In the event that the core or a battery is taken out, not everything goes offline.  
-<!-- [ deadman switch link ]() -->
-There is also an optional Switch included if the system ever needs to be turned off.  
-The Switch is powered by a small battery limiting the amount of time the system can be off for.  
-This prevents a team mate from turning things off and forgetting to turn
-it back on.
+
+This battery backup is natively a centralized system but here, we have decentralized the batteries by dedicating them to specific systems. This is called the Decentralized Nih Core. We have combined the power sources before sending power into the Nih Core. Instead of having the batteries combined, which is traditional, we are instead separating the batteries so they each only backup a smaller portion of the circuit. It still gives us the benefit of powering our circuits the majority of the time with a centralized main power source but it is also providing security by decentralizing the battery backup. If the main power source or the core is destroyed, the batteries will take over. If the main power source or the core is not destroyed but a battery is, the circuit will remain powered by the main power source. Only once both are destroyed will a circuit go offline. If you want to build in some prioritization, what circuit is last to kick on to the battery, you can replace the Main Power Splitter with an Electrical Branch.
+
+![](images/hybrid2.png)
+
+Replacing the Splitter with an Electrical Branch allows you more control over what circuit is the first to lose power and kick on to battery vs the last to kick over to battery. On the Electrical Branch, the output Branch Out lets you dedicate a specific amount of power to a circuit while the output Power Out sends out the remaining amount. As power falls, the circuit that is connected to Power Out will be the first to lose main power and switch over to battery backup before the circuit connected to Branch Out switches over to battery backup.
+
+## Distribution
+# Power Generation
+
+## Wind Power
+Generating power from the wind with Wind Turbines is the most common way to generate rustricity.  They are very reliable and can produce anywhere from 0rW up to 150rW. Wind Turbine power is greatly influenced by tower height to buildable ground and surrounding structures.
+
+How close to a Wind Turbine is too close? That answer is 15 meters or 5 square foundations. Wind Turbines are large deployables and need a lot of room. If something is blocking the path of the wind, the turbine will produce zero power until the wind shifts direction. The picture below shows an area called ‘Restricted Build Zone’. Building outside of this area is completely safe. Building within the restricted zone could lead to blocking the wind but if some precautions are taken.
+ 
+![](images/windbuildarea.png)
+
+Building within the restricted zone is possible and it’s easier than people think. There is an invisible beam that sticks out the front of the turbine, at the intersection of the blades. It is inline with the horizontal drive shaft and sticks out 15 meters, or 5 square foundations. If this beam gets blocked by something a player deploys or builds, the turbine will stop spinning and stop producing power.
+
+![](images/windbuildbeam.png)
+
+This beam is not very thick and its height is just over 2 floors high. As long as there are no obstructions out to 15 meters, the turbine will continue to produce power. Obstructions are anything from building structures to deployable items.This next picture shows where walls and floors can be placed below the beam without interfering with power production.
+
+
+![](images/windbuildrestrict.png)
+
+It is technically possible that something could be built in the area that would be the 3rd floor, but floors can’t be suspended. Using double door frames to support the floor from below will block the wind from time to time. Also, using angled roofs on the 2nd floor will block the wind. 
+
+`Fun fact`, the turbine always rotates clockwise and it takes 1 hour to complete a full 360 degrees.
+
+![](images/windbuildrocation.png)
+
+Knowing how close to the Wind Turbine structures and deployables can be placed is the first step. The next part is knowing how high they need to be built. The higher a turbine is placed, the more power it will produce on average. Height is referring to the distance between the turbine and the buildable ground below it. This means there is no difference between a turbine built on ground level at the beach or on the top of a mountain. If they are built at the same height off the ground, they will both produce the same amount of power. The next image is showing us how much average power can be expected when it is built above ground level.
+
+![](images/windbuildhight.png)
+
+When measuring height, people will regularly refer to how tall or high their Wind Turbines are by counting the number of floors down to the foundations. This is a very easy way to relay information to everyone that plays Rust but if it was necessary to be more accurate, the height of the foundation could be taken into account.
+
+![](images/windbuildfoundations.png)
+
+The strength of the wind varies over time. This means the amount of power a Wind Turbine produces fluctuates up and down. It is the reason why an average is used when talking about how much power a Wind Turbine produces. To help illustrate this, in the picture below, the blue line shows the amount of power a turbine at ground level was producing over the period of an hour. It consists of approximately 180 data points. The red line is what is said to be the average output for a turbine at ground level.  
+
+![](images/windaveragetime.png)
+
+The picture above is from a random hour and its purpose is to show the randomness of wind. During this hour, the turbine's max output was only 113rW and its lowest output was 39rW. If this graph was stretched out to 100+ hours, it would show that the most common fluctuations are about 50rW + or - the average output. However, at some point, if the graph was stretched out long enough, we would see the turbine max out and produce 150rW. Likewise, we would also see its production drop to 0rW. The higher the turbine is, the more often it will max out at 150rW. The lower the turbine is, the less often it will max out at 150rW. At all heights, they have an equal chance to hit 0rW though it is very rare. Due to this fluctuation, the most reliable thing to do was find the average over a long period of time and that is how 93rW on the 6th floor became the number that is used today. 
+
+If average output means that 50% of the time the turbine is producing more or less power, then with the same data points, it's also possible to find out the amount of time a turbine will be producing a specific amount of power or more for. For example, let’s say there was a need for a turbine to produce 30rW but it had to produce that much 99.9% of the time. How high would this turbine need to be? In this next picture, there are examples of the 2nd, 6th and 9th floors. Using this data, a turbine built 6 floors or more high, would be able to supply 30rW, 99.9% of the time. If anyone would like to collect the data for the remaining floors, I'd happily add it.
+
+![](<images/unknown (3).png>)
+
+Knowing this detailed information is not a necessity but if it is understood, it will help prevent running out of power, or better yet, being more efficient. Knowing how much power a circuit needs will help determine how many turbines need to be built and at what height they should be placed. The inverse of that is also true. If the number of turbines and their height is limited, knowing how much power that can be reliably produced will determine how big the circuit can be.
+
+This next image is a very nice breakdown specifically for the Inline battery backup. It shows the turbines average power per floor and the usable amount of power from a battery. It also shows how many Auto Turrets a single Wind Turbine and Large Battery combo could support. It even shows how much stone each Rust Watt costs when building dedicated Wind Turbine towers. The stone calculations are now a little low. There was an update to the game that prevents turbines from being built on the tops of double door frames. Now a floor is needed under them which adds to the stone cost.  
+
+![](images/image23.png)
 
 ---
-% Backup & Distribution Systems
 
-# Battery Backup and Distribution Systems
+## Solar Power
 
-There are 2 types of battery backup systems. There is the Inline and
-there are bypass backups like the OR/Blocker and the Nih Core.  
-When deciding which backup to choose,
-there are a few factors you may want to consider.
+On Console:
+Point the panels South.
 
-There are 3 main types of distribution systems which we call a Power
-Bus. These are the Fixed, Dynamic and Configure.
+On PC:
+Depending on the time of year, the Sun will take a different path through the sky. Most Rust players live in the northern hemisphere. Places like Europe and North America. It is normal to have summers in June and winters in December. Rust island is located in the southern hemisphere, like Australia. This means winters are in June and summers are in December. 
 
---- 
+- The winter solstice is the shortest day of the year. The Sun will travel its most Northern path. On this day, the sunrise is the latest and sunset is the earliest. During the winter months, solar panels capture less power.
+- The summer solstice is the longest day of the year. The Sun will travel its most Southern path. On this day, the sunrise is the earliest and the sunset is the latest. During the summer months, solar panels capture more power.
 
-# Battery Backup Systems
+In the picture below, it shows how the Sun will traverse the sky over 6 Rust months or 7ish real days. A day in the game is an hour of real time. This means it takes about 15ish days for a full Rust Year. 
+
+![](images/chart.png)
+
+Wipe day is always May 20th 2024. Depending how long or short the wipe is, and where on the map a Solar Panel is located, might determine the direction the Solar Panel is placed. If the wipe is 5 days or less and the panel is located on the southern tip of the island, facing it North would be acceptable. However, if the wipe is any longer than that, the idea of having to pick up the panels to reangle them does not sound like fun. Placing a panel facing East and a panel facing West is the best way to set it and forget it. 
+
+Solar Panels will produce power when the face of the panel can see the Sun. The Sun rises in the East and sets in the West. To take full advantage of a Solar Panel, try to capture the Sun in the morning the moment it rises above the horizon, and all the way to the moment the Sun drops below the horizon at night. In order to accomplish this, line of sight to each horizon is required. 
+
+Things like the ground, cliffs, trees and building structures can all block the Sun. Avoid placing solar panels in their shadows. Solar Panels need an unobstructed view of the Sun as much as possible. Deployables do not appear to block the Sun.  
+
+The best chance of achieving line of sight to both horizons is by building on top of the highest mountain.
+![](images/SwiftMountain_Export_1.png)
+Otherwise, in the mornings, Eastward facing panels on the West side of the map will need to wait for the Sun to get high enough in the sky to clear the hills and mountains. The panels on the East side could catch the sun the moment it peaks above the horizon.
+
+![](images/SwiftMountain_Export_2.png)
+In the evenings, Westward facinging panels on the East side of the map will have the amount of time they could produce power cut short as the Sun moves behind the hills and mountains. The panels on the West side could catch the sun up to the moment it drops below the horizon.
+
+![](images/SwiftMountain_Export_3.png)
+
+Only an admin can get the exact date and time. This is what players cannot see.
+![](images/admintool.png)  
+Watching where the Sun rises and sets on the horizon can give a player an idea of the time of year. Some modded servers will have a plugin that gives players a clock and might show the sun up and down times. Some might even show the date.
+
+If a pair of panels are placed so each could see either the East or West horizons, the following could reasonably be expected, within a reasonable margin or error.
+
+The Winter Solstice (June 20 2024):   
+- Solar Panels facing East can start to capture the Sun around 7:10am. Power levels will slowly increase until around 9:05am when they will be producing a full 20rW. This lasts until about 1:30pm. Around this time, it will slowly start decreasing power production until around 3:45pm when it stops.  
+- The panel facing West can start to capture the Sun around 11:40am. A few minutes later at around 1:45pm, it will start producing a full 20rW. Around 6:15pm the panel will start decreasing the amount of power produced until about 8:15pm when it stops.  
+- During the winter solstice, 2 combined panels, 1 facing East and 1 facing West, can collect around 940rWm of power.
+
+The Summer Solstice (December 21 2024):  
+- Solar Panels facing East can start to capture the Sun around 6:30am. Power levels will slowly increase until around 8:20am when they will be producing a full 20rW. This lasts until about 2:30pm. Around this time, it will slowly start decreasing power production until around 4:15pm when it stops.
+- The panel facing West can start to capture the Sun around 11am. A few minutes later at around 1pm, it will start producing a full 20rW. Around 7pm the panel will start decreasing the amount of power produced until about 9pm when it stops.
+- During the summer solstice, 2 combined panels, 1 facing East and 1 facing West, can collect around 1075rWm of power.
+
+When working with solar panels for a primary source of power, it is very helpful to know how to calculate how much capacity a circuit needs to last 1 in game day. Knowing the capacity will dictate how many panels are needed. Base the number of panels used on the lowest amount of power they will produce on the shortest day of the year.
+
+**The Maths:**  
+`rWm`: rust watt minutes (capacity)  
+`rW`: Rust Watt (aka power)  
+`S`: Seconds  
+`τ`: 60 (The number of seconds in a minute, and minutes in an hour)  
+`M`: Minutes  
+`O`: The amount of power(rW) you want to output  
+`H`: Hours  
+
+To figure out how much capacity is needed to support a circuit of a specific load, use the following equation:  
+`O × τ = rWm`
+
+To figure out how many pairs of panels are needed to support a specific amount to power, use the following equation:
+`rWm ÷ 940rWm = Solar Panel pairs`
+
+Example: A circuit with an active load of 64rW.  
+`O × τ = rWm`  
+`64 × 60 = 3840rWm`  
+Therefore a circuit needing a constant 64rW over the course of 1 hour will consume 3840rWm worth of power.   
+`rWm ÷ 940rW = Solar Panel pairs`  
+`3840rWm ÷ 940rW = 4.08`  
+Therefore 5 pairs of panels are needed to capture enough rWm to cover the power cost of a 64rW circuit. 2 solar panels make a pair, so 10 panels total.
+
+To figure out how much time a given capacity will run for, outputting a specific amount of power, we use the following equations:
+`Seconds: (rWm ÷ O = M) × τ = S`  
+`Minutes: rWm ÷ O = M`  
+`Hours: (rWm ÷ O = M) ÷ τ = H`
+
+
+
+
+---# Power Storage
+
+TL:DR
+- Batteries can accept incoming power at the same time they are sending power out.  
+- Charging rate is dependent on the amount of power coming in, with an efficiency of 80%.  
+
+> *Example:* 20rW from a Solar Panel × 0.8 = 16rW usable through a battery.  
+
+> *Example:* If your Medium Battery is supplying 16rW to a circuit, 16 ÷ 0.8 = 20rW is the minimum you want to give the battery so it doesn’t lose any charge.
+
+- It is recommended to supply slightly more than you need if you want to charge the battery.  
+- When you combine batteries with Root Combiners, they do not split the load as one would expect. They cannot see each other, so each battery tries to power the whole circuit.  
+
+> For example, in a circuit with 2 root combined batteries supporting a load of 50, it would seem to make sense that 50 power divided by 2 batteries equals 25 per battery. Rustricity doesn't work like that and 50 power is taken from each battery and seen as Active Usage on both batteries. This means both batteries are draining at a rate of 50.  
+
+This means when we get to circuits that need more than 100 power, all the batteries combined will show a max Active Usage, which is used to calculate how fast a battery drains.  
+So if we are forcing batteries to max drain, then we might as well try to use as much of the power the combined batteries will provide.
+
+When using a bypass battery backup like the [ Nih core ]( backup.html#nih-core ),
+Active Usage does not matter because the circuits are getting power from the main power source most of the time and not the battery.
+
+- Rustricity has its own version of [Parallel and Series](concepts.html#parallel-vs-series) battery configurations.
+- 1rw will charge a Large Battery in 34 IRL days.
+- When a battery is depleted because it is not receiving enough power, no power is outputed until it charges up for a couple seconds before
+outputting to the connected circuit. The battery still not receiving
+enough power will deplete in a second and the process repeats.  
+- If the circuit after a battery is turning on and off,
+you do not have enough power charging your batteries.
+- When they get picked up, they lose 25% HP but retain their current
+capacity. This means if a large battery has a full charge, when you pick
+it up and place it back down, it will still have a full charge.
+- Batteries have something called Active Usage and components have
+something called Power Consumption. Read about it in [Battery Active Usage vs Actual Power Consumed
+](concepts.html#battery-active-usage-vs-actual-power-consumed).
+
+![](images/battery-footprint.png)
+
+---
+
+## Battery Backup
+
+There are 2 types of battery backup systems. There are Inline Backups and there are Bypass Backups. Inline backups include the Inline and the KorrektCore. Bypass backups include the OR/Blocker and the Nih Core. Deciding which backup to use really comes down to preference. They each have their own pros and cons and some may argue that 1 is better than another in different situations. For example, if you only need to power a few turrets and are in a hurry, you might find the simplicity of the Inline backup works for you. Maybe you are working with 300rW to 1000rW and a dozen Windmills, you might find the efficiency of the Nih Core is preferred. At the end of the day, as long as the battery backup you go with, works when you need it to work, that was the right backup to choose.
 
 ---
 
@@ -4287,15 +3756,7 @@ Bus. These are the Fixed, Dynamic and Configure.
 
 ![](images/image86.png)
 
-This is when you directly connect what generates power to your circuits.
-If your power source is destroyed or stops producing power for any
-reason, your circuits will go offline. This method is a great solution
-for short term uses like getting some auto turrets asap for your clan or
-getting some water pumps online early for a berry farm. While this
-method is good for a short time to get an early game advantage, it is
-not recommended to rely on this method for any length of time. We can
-introduce batteries to our circuits to create backup power more suited
-for long term use.
+This is when the power source is directly connected to a circuit. If the power source is destroyed or stops producing power for any reason, the circuit will go offline. This method is a great solution for short term uses like getting some auto turrets asap for your clan or getting some water pumps online early for a berry farm. While this method is good for a very short time to get an early game advantage, it is not recommended to rely on this method for any length of time. Introducing batteries to a circuit to create backup power is more suited for long term use.
 
 Pros:
 
@@ -4309,34 +3770,24 @@ Cons:
 - No backup power
 - Short term use only
 
-There are 3 main types of battery backups. Below we have the Inline,
-OR/Blocker and Nih Core.
-
 ---
 
 ## Inline
 
 ![](images/image26.png)
 
-This is called Inline because power must pass through the battery before
-powering something. Inline is the easiest way to give yourself a battery
-backup. This method is fast to make and wire. It is reliable assuming
-you are producing enough power to keep the batteries charged and it is
-an easy way to decentralize your circuits. When you connect your power
-source directly to your battery, 100% of that power is used for the sole
-purpose of charging your battery. When your battery is fully charged,
-any power above what is needed to maintain your battery’s charge is not
-being used, which we call wasted. For example, a large battery with an
-Active Usage of 100, needs to be given 125 to prevent it from draining.
-If you are giving your battery 150 so it charges, when it is fully
-charged, there is 25 power that is not being used. When it needs to be
-charged, that 25 power is better then 1 power because it will charge
-faster. For 1 battery it doesn't seem like a lot, but when you get into
-4 or more batteries, that is 100 power being wasted. When the power
-source stops making enough electricity, the battery will continue to
-supply power until they are depleted or destroyed. It is recommended to
-let the battery charge to a minimum of 3000rWm before letting it power
-anything.
+This is called an Inline because power must pass through the battery before powering something. Inline batteries are the most common and easiest way to provide a battery backup. This method is fast to make and wire. It is reliable assuming enough power is being produced to keep the batteries charged. It is also an easy way to decentralize circuits. When a power source is directly connected to a battery, 100% of that power is used for the sole purpose of charging that battery. When a battery is fully charged, any power above what is needed to maintain the battery’s charge, is not being used, which we call wasted. 
+
+Batteries are 80% efficient and have a mechanic called Active Usage. There is an entire section about this but for right now, to figure out how much power a battery must be given so it doesnt drain, take the Active Usage number and divide that by 0.8. Active Usage can be found by holding a Wire Tool and looking at a battery. 
+
+> For example, a large battery with an Active Usage of 100. 100 ÷ 0.8 = 125. Therefore, 125rW needs to be provided to prevent the battery from draining. 
+
+If the battery is being given 150rW so it charges, when it is fully charged, there is 25rW of power that is not being used. When it needs to be charged, that 25rW is better then 1rW because it will charge faster. Giving a Large Battery only 1rW, it will take roughly 34 IRL days to fully charge. For 1 battery, 25 extra doesn't seem like a lot, but when using 4 or more batteries, that can be 100rW of power being “wasted”. 
+
+One of the biggest benefits of an Inline backup is when the power source stops making enough or any electricity, the battery will continue to supply power, uninterrupted. This means that unlike bypass backs, the inline is not prone to a flicker off/on when the power source is not producing enough power. The battery will continue to power the circuit until it is depleted or destroyed. 
+
+It is recommended to start charging batteries as soon as possible. Let them charge to a minimum of 3000rWm before letting them power anything. The reason for this is if a Wind Turbine is used, the wind could be entering a slow period. When using Solar Panels, night comes once an hour. Having some capacity saved up will help get through the slow or no times.
+ 
 
 Pros:
 
@@ -4348,6 +3799,9 @@ Cons:
 - Inefficient use of power at large scale
 
 ---
+## KorrektCore
+
+A different kind of inline, will be added soon.
 
 ## OR/Blocker 
 
@@ -4355,14 +3809,16 @@ Cons:
 
 This method has been around for a long time and is often called ‘Infinite Power’. It is not infinite power, it is just a bypass battery backup. It has been carried over from a previous version of electricity when batteries could only charge or discharge, not both at the same time. During this time batteries did not have an Active Usage and forced out max power causing the need to invent the ‘Infinite Power Loop’, which actually was something, but it was not this circuit. 
 
-This is an OR/Blocker battery backup. It is a ‘Bypass Battery Backup’ that powers your main circuit most of the time from the main power source, bypassing the battery, while the excess power is used to charge the battery. When not enough power is produced, it will automatically switch on the battery keeping everything powered. The reason it is now considered out of date is because it doesn’t take advantage of the batteries ability to charge and discharge at the same time. 
+This is an OR/Blocker battery backup. It is a bypass battery backup that powers a circuit most of the time from the main power source. Power is bypassing the battery to power the circuit, while the excess power is used to charge the battery. When not enough power is produced, it will automatically switch on the battery keeping everything powered. The reason it is now considered out of date is because it doesn’t take advantage of the batteries ability to charge and discharge at the same time. 
 
-The way this method works is by sending power into the first Electrical Branch and branching out enough power to meet your circuit's needs. That power is passed to an OR Switch which sends power to your circuit. The extra electricity from the first Electrical Branch is sent to another Electrical Branch. Power is branched out to block the Blocker which prevents the battery from draining. The extra power is then used to charge the battery. When there is not enough power to keep the battery blocked, the battery sends power out to the OR Switch to keep your circuits online. Based on the picture below, green wire showing what has power, red showing no power and yellow showing wasted power. 
+The way this method works is by sending power into the first Electrical Branch and branching out enough power to meet a circuit's needs. That power is passed to an OR Switch which sends power to a circuit. The extra electricity from the first Electrical Branch is sent to another Electrical Branch. Power is branched out to block the Blocker which prevents the battery from draining. The extra power is then used to charge the battery. When there is not enough power to keep the battery blocked, the battery sends power out to the OR Switch to keep the circuit online. 
+
+Based on the picture below, green wire showing what has power, red showing no power and yellow showing wasted power. If the Windmill only produces 75 power, it is not enough power to meet the demand of the first
+ 
 ![](images/orblockerstates.png)
-If the Windmill only produces 75 power, it is not enough power to meet the demand of the first Electrical Branch or block the battery. The battery takes over powering your circuit but the 75 power is still coming out of the first Electrical Branch. The power is still there, it is just not being used, it is wasted. 
+Electrical Branch or block the battery. The battery takes over powering the circuit but the 75 power is still coming out of the first Electrical Branch. The power is still there, it is just not being used, it is wasted. 
 
-While considered out of date today for use as a primary battery backup system, with some small modifications, it is useful as a secondary battery backup which we talk about in its own section.
-
+While considered out of date today for use as a primary battery backup system, with some small modifications, it is useful as a secondary battery backup which we talk about in its own section. 
 
 
 Pros:
@@ -4378,114 +3834,40 @@ Cons:
 
 ---
 
-## Secondary Battery Backup
-
-A secondary battery backup is a way to provide power to a circuit after
-the main backup system goes offline. It's a backup of a backup so the
-chance that it gets used on a typical day is near 0. Using the picture
-below, we will break down how it works.
-
-![](images/image109.png) 
-
-We are using a Test Generator to represent a static power source
-meaning power levels won’t go up or down like wind and solar. The power
-will either be there or it will not so we install the battery pre
-charged. It should never be used so we don’t plan on recharging it. The
-static amount of power from your main circuit, which already has a
-built-in battery backup already, makes this battery a secondary backup.
-So because the incoming power does not fluctuate, it is either present
-or it is not, when the power is no longer present, this battery takes
-over. The only reason this battery is ever used is because the main
-power sources are no longer supplying enough power and the main battery
-backup has also failed. The chance this battery is needed should be 0 so
-we dont bother building in recharging.
-
-Pros:
-
-- Uses only a few components so it's easy to build and wire
-- Efficient for redundant backup power
-- Can be inserted into almost any circuit at any point
-
-Cons:
-
-- Wasteful when using a dynamic power source
-- Requires a pre charged battery
-- Added costs for redundancy  
-
----
-
 ## Nih Core 
 
 ![](images/image87.png)
 
-The Nih Core is the modern version of and replacement for the
-OR/Blocker. When using a battery to power your main circuit, like the
-Inline battery backup, you lose 20% of the power it receives. Bypass
-battery backups, like the Nih Core, are a way around this. Instead of
-your main circuit being powered by the battery, it gets power directly
-from the Wind Turbine while the battery gets charged with the excess.
-The Nih Core will automatically switch over to battery backup when the
-power source is not producing enough.
+The Nih Core is the modern version of, and replacement for, the OR/Blocker. When using an inline battery to power a circuit, there is a 20% loss due to the batteries inefficiency. Bypass battery backups, like the Nih Core, are a way around this. Instead of a circuit being powered by the battery, the circuit gets power directly from the Wind Turbine while the battery gets charged with the excess. The Nih Core will automatically switch over to the backup battery when the power source is not producing enough. 
 
-The Nih Core is meant to be used with 2 or more batteries but we only
-have 1 in the picture because it's all we need to demonstrate how it
-functions. The simple explanation is when there is not enough power to
-meet your circuit's requirements, it redirects the insufficient amount
-of power to the battery and activates it to take over powering the
-circuit. The reason the Nih Core is meant for 2 or more batteries is
-because when running off windmill power, we don’t care about the
-battery’s Active Usage. We are bypassing the battery therefore removing
-any restrictions or conditions caused by it. Check out the section
-called ‘Battery Active Usage Vs Actual Power Consumed’ for an in depth
-explanation.
+The Nih Core becomes more efficient the more batteries it has but there is only 1 in the picture because it's all that is needed to demonstrate how the Nih Core functions. The simple explanation is when there is not enough power to meet a circuit's requirements, it redirects the insufficient amount of power to the battery and activates it to take over powering the circuit. The reason the Nih Core becomes more efficient with more batteries is because we are bypassing the 20% hit from an inline battery and we don’t care about the battery’s Active Usage. We are bypassing the battery therefore removing any restrictions or conditions caused by it. Check out the section called ‘Battery Active Usage Vs Actual Power Consumed’ for an in depth explanation.
 
-Using the following picture, we can see where power exists and where it
-doesn’t when the Nih Core is running off of Main Power vs Battery Power.
-The green wires have power and the red wires do not.
+Using the following picture, it is possible to see where power exists and where it doesn’t when the Nih Core is running off of Main Power vs Battery Power. The green wires have power and the red wires do not.
 
 ![](images/nih-core-paths.png)
 
-To understand how this works, we need to understand the Memory Cell and
-the Splitter. The inputs on the side of the Memory Cell are prioritized
-from top to bottom and the Splitter when it receives power, it sends out
-power from left to right. This also applies to when Splitters lose
-power, they stop sending power out from left to right. The section
-‘Circuit Delay and Power Flow’ helps explain in detail how rustricity
-moves around a circuit.
+To understand how this works, becoming familiar with the Memory Cell and the Splitter will help a lot. The inputs on the side of the Memory Cell are prioritized from top to bottom and when the Splitter receives power, it sends out power from left to right. This also applies to when Splitters lose power, they stop sending power out from left to right. The section ‘Circuit Delay and Power Flow’ helps explain in detail how rustricity moves around a circuit.
 
-Based on the picture above, if the windmill only produces 75 power, it
-is not enough power to meet the demand of the first Electrical Branch
-which is set to 100. That first Electrical Branch will still send that
-75 power to the Memory Cell, but this means no power is going to the
-second Electrical Branch therefore the Splitter loses power. When the
-Splitter loses power, Output 1 first stops sending power to SET on the
-Memory Cell. At that moment, power from Output 2 is still going to
-RESET, so the Memory Cell flips outputs. RESET loses power followed by
-Output 3 going to Block Passthrough on the Blocker. The battery takes
-over powering your circuit and the 75 power that is still going through
-the first Electrical Branch and Memory Cell is now sent to the battery
-extending its life instead of being wasted. This will take a 4 hour
-backup time and extend it.
+Based on the picture above, if the windmill only produces 75rW of power, it is not enough power to meet the demand of the first Electrical Branch, which is set to 100. That first Electrical Branch will still send that 75rW to the Memory Cell. This means no power is going to the second Electrical Branch, therefore the Splitter loses power. When the Splitter loses power, Output 1 first stops sending power to SET on the Memory Cell. At that moment, power from Output 2 is still going to RESET, so the Memory Cell flips outputs. RESET loses power followed by Output 3 going to Block Passthrough on the Blocker. The battery then takes over powering the circuit. The 75rW of power that is still going through the first Electrical Branch and Memory Cell, is now sent to the battery extending its life instead of being wasted. This will take a 4 hour backup time and extend it.
 
-Here is a look at a Nih Core with 4 batteries. Keep in mind Max Depth
-when using large numbers of power sources and
+
 
 ![](images/ctr-nih-core.png)
 
-batteries. 16 power sources and 16 batteries is the most you can connect
+Here is a look at a Nih Core with 4 batteries. Keep in mind Max Depth
+when using large numbers of power sources and batteries. 16 power sources and 16 batteries is the most you can connect
 before hitting the Max Depth. Check out the section ‘Short Circuit / Max
 Depth’ for an in depth explanation on that subject.
 
 If you notice that power is flickering off/on when switching between
-main power and battery power, it is because 1 of 2
+main power and battery power, it is because 1 of 2 issues.
 
-![](images/nih-core-flicker-fix.png)
+![](images/nihcoresolutions.png)
 
-issues. If using only 1 battery, Solution 1, add a Root Combiner between
-the battery and blocker to keep the battery active. If using more than 1
-battery,  Solution 2, add 1 or 2 components between the Memory Cells
-`Power Out` and the OR Switch. This will give the circuit a chance to
-provide battery power before the Memory Cell flips outputs.
+Solution 1 - If using only 1 battery, add a Root Combiner between the battery and blocker to keep the battery active. If the battery does not have something registering Active Usage, it will enter an inactive state. This causes a delay when switching on to battery power waiting for the battery to wake up. 
+
+Solution 2 - If already using a Root Combiner or using more than 1 battery, add 1 or 2, maybe even 3 components between the Memory Cells ‘Output’ and the OR Switch. This will hold power here longer giving the circuit a chance to receive power from the battery.
+
 
 Recommended reading:
 
@@ -4507,7 +3889,312 @@ Cons:
 
 ---
 
-# Distribution Systems
+## Secondary Battery Backup
+
+A secondary battery backup is used to provide power to a circuit after the main backup system goes offline. It's a backup of a backup. The chance that a secondary backup battery gets used on a typical day is near 0%, so why use them? Why not? The only drawback is the increased power cost. More backups and redundancy never hurts functionality, it only adds to it.
+
+There are a couple of different versions of the secondary backup. Just like primary battery backups, there is the inline and the bypass. Secondary backups can be built into any place in any circuit. 
+
+The first and easiest way is installing an inline battery between a circuit and its power bus. Let's use a picture to illustrate a circuit that is using a Nih Core as a primary battery backup with Inline batteries for the secondary backup.
+
+![](images/secbatbkup.png)  
+
+The secondary batteries are installed between the Electrical Branches and what the branch is providing power to. In the case of the Auto Turrets, instead of the Electrical Branch sending power straight to the Smart Switch, the branch sends power to a battery that then powers the switch and all the turrets. It’s the same for the SAM Sites. Power from the branch powers a battery and the battery powers the SAMs. Remembering that batteries are only 80% efficient, the amount of power each Electrical Branch provides is increased to compensate. With a secondary battery, the branch sending power to the turrets is set to 115. Without the secondary, it only needs to be set to 99. That's a 16rW  difference. The branch sending power to the SAM Sites is set to 96 but without the secondary battery, it only needs to be set to 76. That's a 20rW difference. For a total cost of 36rW, both the turrets and the SAMs will have a runtime of 8 or more hours if the main power source is completely destroyed. 
+
+Another thing that should not be forgotten is that it takes 34ish days, or over 800 hours, to charge a large battery with  only 1rW. In other words, precharging secondary batteries should be a requirement. Once a battery is fully charged, providing it with any more then exactly what it needs to not drain, is wasted power that could maybe be better used elsewhere. The maximum input a battery can accept is 4x its output. That means 400rW could be sent to a large battery and have it fully charged in approximately 1 hour 15ish minutes.
+
+The inline secondary battery is the easiest but paying the 20% tax for the battery can make this version not so attractive. So let’s have a look at a bypass secondary backup which has a static tax of only 3rW. This is essentially an OR/Blocker backup except the battery gets installed precharged and there is no built in way for it to be recharged. Let’s use the picture below to help illustrate how it works. 
+
+![](images/secorblk.png)
+
+The Test Generator represents static power coming from your main battery backup system. This means power levels won’t go up or down like wind and solar. When the Electrical Branch loses just 1rW, the battery will take over. What is more likely is that power will either be present or it will not. This battery should never be used so there is no built in recharging system. This saves wasting power recharging a battery that will probably never be used so it must be precharged. 
+
+This secondary backup gets installed just like the inline version, between the circuit and its power bus. The picture below illustrates the same circuit as before using a Nih Core as a primary battery backup but now with a bypass battery for the secondary backup.
+
+![](images/secbatbkup2.png)  
+
+The secondary batteries are installed between the Electrical Branches and what the branch is providing power to. In the case of the Auto Turrets, instead of the Electrical Branch sending power straight to the Smart Switch. Power is sent to another Electrical Branch that blocks passthrough on a Blocker before sending a specific amount of power on an OR Switch. From there, it’s on to the Smart Switch and all the turrets. It’s the same for the SAM Sites. Power from the branch goes to another Electrical Branch that blocks a Blocker before sending power to an OR Switch. From there it's off to power the SAMs. 
+
+The ability to bypass the battery means the amount of power each Electrical Branch provides only needs to be increased by 3rW to compensate. With a secondary battery, the branch sending power to the turrets is set to 98. Without the secondary, it only needs to be set to 95. That's a 3rW difference. The branch sending power to the SAM Sites is set to 79 but without the secondary battery, it only needs to be set to 76. That's also a 3rW difference. For a total cost of only 6rW, both the turrets and the SAMs will have a runtime of 8 or more hours if the main power source is completely destroyed.
+
+Adding a recharging system can be done. It is just the OR/Blocker battery backup. The only drawback is the added power cost. If a player is OK with that, then go for it. 
+
+Pros:
+
+- Uses only a few components so it's easy to build and wire
+- Can be efficient for redundant backup power
+- Can be inserted into almost any circuit at any point
+
+Cons:
+
+- Requires a pre charged battery
+- Added costs for redundancy  
+
+---  
+
+## Battery Active Usage VS Actual Power Consumed
+
+Simply put, Active Usage is what a battery uses to calculate its charge
+and discharge rate. Power consumed is the amount of power a component
+requires to operate. Active Usage doesn't always = Power Consumed. This
+is also where the argument of Electrical Branch vs Splitter comes from.
+Once you understand this section, you will know the answer to this
+age-old argument.
+
+When you look at the battery with a wire tool, you will see Active
+Usage. Active Usage is the amount of power the battery is draining by.
+This is the number you want to use when calculating how much power to
+give a battery for it to remain charged based on the battery's 80%
+efficiency. Active Usage divided by 0.8 = a battery's minimum power
+input.
+
+![](images/large-battery-ui.png)
+
+It is reasonable to think that the number you see is the amount of power
+your circuit is currently consuming, but it’s not always the case. Even
+when some components are turned off and not consuming power, they can
+still add to a battery's Active Usage. In this next picture, even though
+the Auto Turret is not consuming power, it is still adding to the
+battery’s
+
+![](images/turned-off-usage.png)
+
+Active Usage and in fact, it will actually consume 14 power. In this
+case even though the AND Switch is not allowing power to pass through,
+it does not have the ability to hide the Active Usage from inactive
+components downstream or past it. In this next picture, if we use
+different components to achieve the same outcome, we can hide
+
+![](images/hide-active-usage.png)
+
+the Auto Turret’s Active Usage from the battery when it is not consuming
+power. This setup reduces the Active Usage all the way to 6. When
+active, we will get an Active Usage of 16
+but it will actually consume 18.  
+Components like Switches, the Blocker, Timer and RF Transmitter all
+have the ability to hide a component's Active Usage from batteries when
+not passing power through.
+
+Every component will only register an Active Usage once and equal to the
+amount of power it consumes with the exception of the Electrical Branch.
+Only the Branch Out value will register Active Usage even though it does
+consume 1 power for itself. An Electrical Branch set to 2 will register
+an Active Usage of 2 but will consume 3. Branch Out is a FIXED value.
+The thing to remember is that it is the Branch Out value that is
+registering Active Usage, not the components connected to Branch Out.
+This means that the components connected to Branch Out, even though it
+is where they are getting their power from, their Active Usage is not
+what is registering on the battery. If there is another path that lets
+the battery see these components, it is possible for their Active Usage
+to register on the battery along with the Branch Out value, effectively
+doubling the power needed. This next picture is a quick example to show
+how a Boom Box that is powered from Branch Out, but using a Switch to
+Toggle Play on and off, is registering 10 Active Usage for the Branch
+Out, 1 for the Switch and 10 for the Boom Box. If we do the same thing,
+but with the Splitter, we dont have this issue because the Splitter
+controls its power flow DYNAMICALLY.
+![](images/branch-vs-splitter-active-usage-onoff.png)
+
+This is helpful in situations where you have a few small 
+circuits where you dont want to force an Active Usage when the circuits
+are off. Now because the Electrical Branch only registers the Branch Out
+value as Active Usage and 0 for itself, we can trick batteries into
+thinking less power is being consumed. In the next picture, we have some
+examples using Auto Turrets.
+![](images/active-usage-vs-pwr-consuption-turret.png)
+
+Above, we have 1 example using 8 Electrical Branches to power 9 Auto
+Turrets. Every branch is outputting 10 power but also consuming 1 power
+for itself. So in total we are consuming 98 power but the battery’s
+Active Usage is only 90. The 2nd example we are using 4 Splitters to
+power the same number of turrets only this time the Splitters are
+consuming 1 and have an Active Usage of 1 each. This gives us an Active
+Usage and Power Consumption of 94. The example with Electrical Branches
+only has 2 extra power meaning there is enough power available to add a
+single Ceiling Light while the 2nd example has 6 extra power, that’s
+enough power for 3 Ceiling Lights.
+
+In the situation where an Inline Battery is being used, you want to
+minimize the battery's Active Usage to minimize the cost of power
+production. Like in the single Auto Turret examples above, there is a
+required input power difference of 9rW just to maintain the battery.
+Batteries are 80% efficient. Take the Active Usage number and divide it
+by 0.8. This will give you the minimum amount of power required to
+maintain the battery and it will not drain. It wont charge either. The
+more power above the minimum, the faster the battery will charge but the
+more you will waste when the battery is full. 1rW will charge a large
+battery but it will take 34 IRL days.
+
+In a bypass system like the Nih Core, Active Usage doesn't matter
+because you are not relying on the battery as a main power source. You
+are bypassing the battery. This means that the amount of power consumed
+is more important. If we look at the above picture again with the 9 Auto
+Turrets, we can see that while both examples are accomplishing the same
+goal, 1 is consuming less power then the other. If we look back at the
+single Auto Turret examples, the 1st example with an Active Usage of 13
+will actually consume 14 vs the 2nd with an Active Usage of 6 will
+actually consume 18. So while the 1st example is bad on an Inline
+system, it is better in a bypass system. The less power you can use to
+do something, gives you more power to do other things.
+
+You can use a bypass system with 1 Large Battery and only use 50 power
+to double the life of the battery but, it is more common to see a bypass
+system used for 2 or more batteries to get a larger output. If we are
+using 2 or more batteries to get the higher output, a Root Combiner will
+be used. The moment we combine batteries to power a circuit that uses
+more than 100 power, both batteries will have an Active Usage of 100.
+This is because load sharing is not a thing in Rustricity. If the
+circuit only needs 50, both batteries will have an Active Usage of
+50(plus 1 for the Root Combiner).
+
+![](images/root-combined-batterys.png)
+
+Due to this being the way it is, if you combine 2 batteries to get 200
+power, try to use all 200 because no matter if the circuit needs 101 or
+199, 2 large batteries will only last 4 hours. If they are only going to
+last 4 hours regardless, try to use as much of that 200 as possible to
+make it worth combining the batteries. Otherwise, split the circuit, run
+Inlines and minimize the Active Usage.
+
+Now, having said you want to consume as little power as possible to
+achieve the desired outcome when using a bypass battery backup, there
+are times when it is worth consuming more for a bit of added security.
+In the next picture, Ive used medium batteries for the demonstration,
+and they are root combined powering some Auto Turrets.
+
+![](images/power-bus-security-compared-turrets.png)
+
+The top groups are using Electrical Branches. They are consuming more
+power but in the event 1 battery is destroyed, top right, some turrets
+stay active. The bottom groups use Splitters. While they do consume less
+power, in the event a battery is lost, very bottom, all the turrets go
+offline. You will need to weigh the pros and cons and decide what is
+right to fit your needs. Read more in What is a Power Bus? 
+
+## Parallel vs Series
+Lets start by learning what Parallel and Series means in real life. Connecting batteries in series increases voltage and connecting batteries in parallel increases capacity.   
+
+V = Volts (power)  
+Ah = Amp hour (capacity)  
+
+If we wire two 6V@10Ah batteries in parallel, we will still only have 6V but have 20Ah of capacity.  
+If we wire two 6V@10Ah batteries in series, we will now have twice the power at 12V but with only 10Ah of capacity.  
+
+![](images/paravssers.png)
+
+In real life, batteries have positive (+) and negative (-) connections. In Rust, our batteries only have 1 input and 1 output. We also measure our Volts (V) as Rust Watts (rW) and our capacity, instead of Amp hours (Ah) we use Rust Watt Minutes (rWm).
+
+In Rust, a large battery can give 100rW of power and has a capacity of 24000rWm. The outcome of wiring 2 large batteries in series would be 200rW of power with a capacity of 24000rWm. The outcome of wiring 2 large batteries in parallel would be 100rW of power with a capacity of 48000rWm.
+
+To wire large batteries in series in Rust, just use a Root Combiner. The output will be 200rW and because both batteries will drain at the same, the total capacity will remain at 24000rWm. 
+
+To wire large batteries in parallel becomes a little more complicated.
+
+ 
+
+---
+
+## Nih Capacitor
+
+**( will probably be fixed soon and wont work anymore )**
+
+The Nih Capacitor was first established by Nih, with assistance from SwiftCoyote, on September 11, 2022.
+A Capacitor is a set of components that accumulate power, much like rechargeable batteries.
+However, the method for assessing the amount of stored power differs. 
+
+For batteries, the stored power is represented as `Capacity`,  
+measured in Rust Watt Minutes (rWm).
+
+Contrarily, in a Capacitor, we gauge the power storage by examining an Input/Output (IO) connection
+and observing a figure that is typically associated with `power` or the amount of power available for use.  
+But within the Capacitor, this figure **DOES NOT indicate the amount of power that can be utilized**.
+Rather, this figure is what we call `Wire Capacity`, symbolized as `Np`.
+For instance, in the image below, the displayed `6,492,076` is **NOT** the amount of power available.
+Instead, it represents `6,492,076Np` of Wire Capacity. 
+
+Before going into the construction and operation of a Capacitor,
+it’s essential to understand the math conversions between Rust Watt Minutes (rWm) and Wire Capacity (Np).  
+
+Both represent capacity, but they use different units of measurement depending on the energy storage container, be it a battery or a capacitor. 
+
+**The Maths:**  
+`rWm`: rust watt minutes (capacity)  
+`rW`: rust watts (commonly referred to as "power")  
+`Np`: Wire Capacity  
+`∅`: 7.5 (Trust Me Bro)  
+`S`: Seconds  
+`τ`: 60 (The number of seconds in a minute, and minutes in an hour)  
+`M`: Minutes  
+`P`: Max power output for 1 second  
+`O`: The amount of power you want to output  
+`H`: Hours  
+
+
+To convert rWm into Wire Capacity(Np), use the following equation:  
+`(rWm × τ = P) × ∅ = Np`
+
+To convert Wire Capacity(Np) into rWm, use the following equation:  
+`(Np ÷ ∅ = P) ÷ τ = rWm`
+
+To figure out how much time a given capacity will run for outputting a specific amount of power, use the following equations:  
+`Seconds: (rWm ÷ O = M) × τ = S`  
+`Minutes: rWm ÷ O = M`  
+`Hours: (rWm ÷ O = M) ÷ τ = H`  
+
+Examples
+Using Capacity from the battery in the first picture, it is possible to figure out the number that would be seen if looking at an IO connection in a Capacitor to view Wire Capacity(Np).  
+`(rWm × τ = P) × ∅ = Np`  
+`(271 × 60 = 16,260) × 7.5 = 121,950Np`  
+
+Therefore a capacity of 271rWm when viewed on an IO connection is equal to 121,950Np.
+We can also see that if the Large Battery did not have an output limit of 100,
+it would be able to output 16,260rW of power for 1 second. 
+
+Using the IO connection to view Wire Capacity(Np) from the second picture,
+it is possible to figure out how much rWm of Capacity we would have if this was viewed on a battery.  
+`(Np ÷ ∅ = P) ÷ τ = rWm`  
+`(6,492,076 ÷ 7.5 = 865,610.1333) ÷ 60 = 14,426rWm`  
+
+Therefore a Wire Capacity of 6,492,076Np when viewed on a battery represented as Capacity, it is equal to 14,426rWm.  
+Without a limited output, the Capacitor is capable of delivering 865,610rW of power for 1 second. 
+
+Using both of these examples, it's possible to calculate the length of time both the Battery and Capacitor would power a circuit for,
+given a set output.
+> For our example, let's say the circuit needs 100 power.  
+>
+Battery :  
+  `(rWm ÷ O = M) × τ = S`  
+  `(271÷ 100 = 2.71 Minutes) × 60 = 162 Seconds`  
+>
+Capacitor : *(you will need to convert from Np to rWm first)*  
+  `(rWm ÷ O = M) × τ = S`  
+  `(14,426 ÷ 100 = 144.26 Minutes) × 60 = 8,655 Seconds`  
+>
+OR :  
+  `(rWm ÷ O = M) ÷ τ = H`  
+  `(14,426 ÷ 100 = 144.26 Minutes) ÷ 60 = 2.40 Hours`  
+
+Prior to constructing a capacitor, it’s crucial to understand its limitations and potential issues.
+This will clarify misconceptions such as the notion of ‘infinite power’ and help identify the appropriate contexts for its use.  
+
+- It doesn’t survive server restarts. evrytime the server restarts, all of the stored power will vanish, poof gone.  
+- When automating energy extraction, it is possible that a flicker will be created or worse, all the power vanishes, poof gone.
+- It consumes power even when nothing is connected to it, unlike a battery that doesn’t lose power if nothing is connected to it.
+- It is not portable.
+
+Now, some of the advantages and benefits of the Capacitor
+
+---# Power Distribution
+
+Power distribution is one of the most important things to know and
+understand when it comes to electricity.  
+There are many ways to produce, store and distribute power for your circuits.  
+This section breaks down the components used for distribution and the different types of distribution circuits known as a power bus.  
+It covers the different types of battery backup systems.  
+It covers the difference between the amount of power a circuit consumes versus what a battery thinks it is consuming, aka active usage.  
+This section also covers the theory behind circuit and location centralization, decentralization and hybridization.  
+It covers the game mechanics behind circuit delay and power flow as well
+as the error message, short circuit/max depth.
 
 ---
 
@@ -4528,7 +4215,7 @@ dynamic and configurable.
 
 ---
 
-## Fixed Bus (F-Bus)
+### Fixed Bus (F-Bus)
 
 ![](images/image115.png)
 
@@ -4547,7 +4234,7 @@ power and not all.
 
 ---
 
-## Dynamic Bus (D-Bus)
+### Dynamic Bus (D-Bus)
 
 ![](images/image51.png)
 
@@ -4566,7 +4253,7 @@ previously present.
 
 ---
 
-## Configure Siphon (C-Bus)
+### Configure Siphon
 
 ![](images/multi-c-bus.png)
 
@@ -4638,7 +4325,455 @@ control which output power is actively passing through.
 
 In all the examples we have used Counters at each output. This is
 only to show you how much power each C-Bus costs to not be active.
-[Here is a Rustrician BP link to explore the C-Bus more. ](https://www.rustrician.io/?circuit=71c12c6e40d98dea32fb463a773b2f42)
+[Here is a Rustrician BP link to explore the C-Bus more. ](https://www.rustrician.io/?circuit%3D71c12c6e40d98dea32fb463a773b2f42)
 
 ---
 
+## Short Circuit / Max Depth
+
+This is a single message that is displayed for 2 different errors. At
+the time of creating this section, XOR Switches did not consume any
+power which is why you will see them used in the pictures. The pictures
+might get remade in time but power consumption is not important when
+discussing and understanding this error.
+
+### Short Circuit
+
+A short circuit happens when you have power feeding back into itself,
+AKA, a loop.  
+
+![](images/image124.png)
+
+Why would you do this? You wouldn’t. In the past, batteries functioned
+differently and there was a need to create the “Infinite Power Loop”.
+Today, batteries have something called “Active Usage”. This breaks the
+infinite loop and eliminates a need for it to exist.
+
+You can circumvent a short circuit by increasing the number of
+components in the loop to be 9 or greater.
+
+![](images/image10.png)
+
+In the next picture we show a battery feeding power back into
+itself.
+
+![](images/image62.png)
+
+There is no reason to do this anymore. There was a time when batteries
+could only exist in 1 state at a time. They were either charging or
+discharging and when they were discharging, they were always doing it at
+their max. Back then, people found a way to use the extra power and send
+it back to the battery. For example, a large battery was always
+outputting 100 power whereas today, they calculate an active usage and
+only drain the amount of power a circuit needs, up to 100. Today, if the
+circuit only needs 50, the battery only gives 50.
+
+The other thing to note is batteries also cause an active usage. For a
+large battery, it is 400, so in the above loop, you are forcing a max
+drain on the battery. There is no advantage to this.
+
+---
+
+### Max Depth
+
+Maximum Depth is referring to the number of components between your
+power source and the  Root Combiner. A Max Depth error will occur when
+we exceed 16 components.
+
+![](images/image101.png)
+
+It is important to understand this mechanic and how to calculate it.
+This becomes important when combining multiple power sources including a
+battery backup with multiple combined batteries. If you experience this
+error, to calculate the depth of a circuit, we start with the last Root
+Combiner or the combiner that is furthest away from the power source and
+count the number of components power must pass through all the way back
+to the power source. This limits where in a circuit you can use Root
+Combiners.
+
+The below images are 2 ways root combiners can be stacked. The group on
+the left is known as pyramid stacking and the group on the right is
+known as a daisy chain. While both groups are possible, you can see that
+the group on the left is only 4 components deep whereas the right side
+is 8 deep. This is important when working with a large amount of
+centralized power because you can quickly use up the depth and then not
+be able to have the number of batteries you want or need.
+
+![](images/image7.png)
+
+In this next image, we have 8 Windmills combined into a Nih Core with a
+battery backup containing 6 Large Batteries. This circuit has a total
+depth of 13 components. The trick to counting depth is counting the
+components in the longest route from the last Root Combiner, \#1 back to
+the Windmill, \#13.  
+
+![](images/image99.png)
+
+In the next example, we have 2 isolated power sources. The first source
+is the cluster of Windmills. The second is the combined Solar Panels for
+the Component Destruction Detector. This means that we have 2 paths we
+must consider when calculating the depth. The first path to look at is
+the one that goes from the Root Combiner \#1 back to the Windmill \#14.
+This path is the main power path. The second path goes from Root
+Combiner \#1 back to the Solar Panel \#16. If one of these paths exceed
+the Max Depth limit of 16 components, you will start to see the error
+message at Root Combiner \#1.
+
+![](images/image50.png)
+
+The next image shows a Max Depth using an equal number of Windmills and
+Batteries with a Nih Core.
+
+![](images/image21.png)
+
+---
+
+## Circuit Delay and Power Flow
+
+### Circuit Delay
+
+Circuit Delay at its most basic, is the amount of time it takes power to pass from one component to another. The amount of time we are talking about is incredibly small but a lot of small increases will eventually become a large amount of time. One way to test how fast rustricity is on any server is by stringing a bunch of lights together, the more the better, and watch how long it takes for all of them to turn on and off. For this reason, it is impossible to say the specific amount of time it takes for components to react but some do react slower or faster than others. 
+
+All components that only have a power input and a passthrough power output, will react at or around the same speed. These would be components like lights. From the moment the light receives power to the moment it sends power out, we will call this 1 unit of time. If power passes through 2 lights, from the moment the first light receives power to the moment the second light sends power out, we can call this 2 units of time. The time it takes to pass through 3 lights, we call 3 units of time.  
+
+Components with multiple outputs have their own delay, 1 for each output. For example, the Splitter, it has 3 outputs. Power is sent out 1 output at a time. The amount of time from the moment the Splitter receives power to the time the last output sends power out is equal to 1 unit of time. The Electrical Branch sends power through Power Out first then Branch Out and this is equal to 2 units of time. On the Memory Cell, it needs 3 units of time to flip outputs.
+
+Batteries also have their own delay. When a battery has an Active Usage of 0, it enters an ‘Off’ state. When the time comes for the battery to power something, it must enter an ‘On’ state which has a delay equal to 2 units of time. Keeping the battery in the ‘On’ state with a Root Combiner or an Industrial Light eliminates the delay so you have power right away. 
+
+### Power Flow
+
+Power Flow is the path electricity takes through a circuit and the order of the path, aka the order of operation. We need to remember that Rustricity is nothing more than lines of code that are processed 1 after another. Not only does this create a Circuit Delay, as explained above, it also only allows 1 component at a time to perform an action. This creates the order of operation.  
+
+Using the picture below to help illustrate, when we flip on the Switch, light 1 will power on followed by light 2 then light 3 and finally light 4. When we flip the Switch off, light 1 will power offfollowed by light 2 then light 3 and finally light 4. Power flow gets alittle more complicated when we introduce components with multipleoutputs.  
+
+![](images/passtrough-chain.png)
+
+Starting with the Electrical Branch that has 2 outputs, power
+is first sent through Power Out then power gets sent through Branch Out.
+When it is removed, it will first be removed from Power Out then Branch Out.
+
+![](images/branch-outputs.png)
+
+The Splitter is similar but it has 3 outputs. Power first goes through Power Out 1
+followed by Power Out 2 then Power Out 3. When power is removed,
+it will be removed first from Power Out 1 followed by Power
+Out 2 then Power Out 3.
+
+![](images/splitter-out.png)
+
+The Memory Cell is another component that has 2 outputs. Even though it only sends power through 1 output at a time, Output will always react before Inverted Output. This means that when we apply power to ‘Set’, power will be sent out the Output first before we lose power from the Inverted Output. When we apply power to ‘Reset’, we will first lose power from Output before power is sent out the Inverted Output. 
+
+![](images/powerflowmemcell.png)  
+
+Looking at these components at the individual level should be fairly easy to understand. When we combine components with multiple outputs, we will start to create a semi-predictable path. Using the below image, we know that the Electrical Branch will send power through Power Out first before sending power through Branch Out. It will do this before either Splitter attached to them will react. This gives us the following order of operation, 1 through 8.
+
+![](images/powerflueebsplit.png)
+
+The Memory Cell acts similarly to the Electrical Branch. 1 output will react before the other, the only difference is 1 output is losing power while the other is gaining power. Let's say we are going to flip power from the Inverted Output to the Output. 1- Output will send out power first. 2- Inverted Output will lose power next. 3, 4 and 5 will send out power one at a time in order, followed by 6, 7 and 8 losing power one at a time, in order. The order of operation is the exact same when flipping power back over to Inverted Output from Output.
+ 
+ ![](images/powerflowmemsplit.png)
+
+So far we have been talking about components sending power or losing power. There is another side to Power Flow and that is the order in which a component receives power. Some components require power first before getting toggled while with others, it doesn't matter what input gets power first, they will react once powered on. 
+
+Let's start with components that will react no matter what input gets power first. 
+
+`Memory Cell` - It doesn't matter if the side inputs or the main input gets power first. Once the main input receives power, it will put itself into the correct configuration based on what side inputs are receiving power.
+
+![](images/memcellpwrflw.png)
+
+`Counter` - Sending power to the side inputs, it will count up or down and clear with no power provided to the main input. Only once power is provided to the main input will the screen turn on to display the number. If the number shown is the same as the target number, power will be sent through. 
+
+![](images/cntrpwrflw.png)
+
+`RAND Switch` - Sending power to the side inputs will Set and Reset the RAND Switch with no power provided to the main input. Only once power is provided to the main input will power pass through or not depending on the state of the switch. The side inputs only react when they are provided with power. Having constant power on them when the main power is removed or received will not affect the switch and it will remain in the same state.
+
+![](images/randpwrflw.png)
+
+`Blocker` -  Sending power to the side input before sending power to the main input will block power from passing through. However, if you send power to the main input first and the very next operation, send power to the side input, it should still block power from passing through. If the delay between sending power to the main input then to the side input is long enough, power will get sent through before it gets blocked.
+
+![](images/blckrpwrflw.png)
+
+The following components require power to their main input first before sending power to their secondary inputs.
+
+`Electric Furnace` - If you want to use the secondary inputs to turn the furnace on or off, you must send power to the main input first. If you send power to the secondary input first, when the main input receives power, the furnace will remain in whatever state it was in before the main input lost power. 
+
+![](images/frncpwrflw.png)
+
+`Conveyor` - If you want to use the secondary inputs to turn the conveyor on or off, you must send power to the main input first. If you send power to the secondary input first, when the main input receives power, the conveyor will remain in whatever state it was in before the main input lost power.
+
+![](images/cnvyrpwrflw.png)
+
+`Timer` - If you want to use the secondary input to toggle the timer on, you must first send power to the main input. If you send power to the secondary input first, when the main input receives power, the timer will not toggle on.
+
+![](images/tmrpwrflw.png)
+
+`Boom Box` -If you want to use the secondary input to toggle the boom box on to play music, you must first send power to the main input. If you send power to the secondary input first, when the main input receives power, the boom box will not toggle on and not play music.
+
+![](images/mbmxpwrflw.png)
+
+`Elevator` - If you want to use the secondary inputs to call the elevator to a floor, you must first send power to the main input. If you send power to the secondary inputs first, when the main input receives power, the elevator will not be called to a floor.
+
+![](images/lvtrpwrflw.png)
+
+We have covered how power flow is affected by components with multiple outputs. We have covered components that are affected by the order they receive power flow. The last piece of the puzzle is something I don't have enough information to properly explain atm. It appears that the game can prioritize some components over another. I hope to one day be able to explain this in detail but to help illustrate how a complex circuit behaves, I have broken down the Nih Core to show the order of operation.
+
+![](images/nihcorepowbat2.png)
+
+The left side shows the order of operation when switching from battery backup to windmill power.  
+`Main Power:`  
+    1. The amount of power coming into the Nih Core rises above 106.  
+    2. Power is sent out Power Out to the next Electrical Branch.  
+    3. Power coming out of Branch Out to the Memory Cell rises to its set amount.  
+    4. Power is sent out Power Out to the OR Switch.  
+    5. Power is sent out Branch Out to the Splitter.  
+    6. Power is sent out to the Large Battery.  
+    7. Power is sent out to Set on the Memory Cell.  
+    8. Power is sent out the Memory Cells Output.  
+    9. Power is sent out to Reset on the Memory Cell.  
+    10. Power is sent out to Block Passthrough on the Blocker.  
+    11. Power stops coming out of Inverted Output on the Memory Cell.  
+    12. Power stops coming out of Power Out on the Blocker.  
+    13.Power from the Memory Cells Output is now the power passing through the OR Switch.  
+    14. The battery enters its Off state.  
+
+
+The right side is the order of operation when switching from windmill power on to battery backup.  
+`Battery Power:`  
+    1. The amount of power coming into the Nih Core drops below 106 triggering the flip but must drop below 101 for it to look like the example pictured.  
+    2. Power stops coming out of Branch Out to the next Electrical Branch.  
+    3. Power coming out of Branch Out to the Memory Cell drops below its set amount.  
+    4. Power stops coming out of Power Out to the OR Switch.  
+    5. Power stops coming out of Branch Out to the Splitter.  
+    6. Power stops coming out of the OR Switch to the Large Battery.  
+    7. Power stops going to Set on the Memory Cell.  
+    8. Power stops coming out of the Memory Cells Output.  
+    9. Power stops going to Reset on the Memory Cell.  
+    10. Power stops going to Block Passthrough on the Blocker.  
+    11. Power is sent out the Memory Cells Inverted Output.  
+    12. The battery enters its On state and sends power out to the Blocker.  
+    13. Power stops coming out of the OR Switch.  
+    14. Power is sent out the OR Switch to the Large Battery.  
+    15. Power is sent out the Blocker to the OR Switch.  
+    16. Power is sent out the OR Switch.  
+
+That wraps up this section. I hope I have explained things in a way that makes sense. Please comment on the [Google Doc](https://docs.google.com/documentd19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing) if you have any suggestions or questions.# Uncategorized Concepts
+
+## Side Inputs
+They are not bugged or broken, you just don't know how to use them yet.
+
+It is not uncommon for people to think of ‘Switch On’ and ‘Switch Off’
+as a toggle like on the side of a Timer. They are not toggles, they are
+inputs with an added function. Just like the ‘Power In’ on the bottom,
+the side inputs also pass power through to the top. The function part
+only functions when power is received, removed or the amount of power is
+updated.
+
+When ANY input on the Switch receives an "update", the Switch will bind
+to that input for its source of power that passes through to the top. It
+will remain bound to that input until another input "updates" which will
+force the switch to bind to the new input. An update is either losing
+power or receiving power, 0-1 or 1-0 or power levels change up or down.
+
+The exception to this is when one input is receiving an amount of power
+and another input receives the same amount of power, the Switch will not
+recognize the new source and remain bound to the original input.
+
+The following pictures will help illustrate how it works.
+
+Starting off, we are using 3 Switches to provide 3 different amounts of
+power each input. Green wire is for Switch On. Red wire is for Switch
+Off. Black wire is for Electric Input on the bottom. Yellow lines mark
+the path power is taking. Red lines mark where power stops. In this
+first picture, we are sending power to the bottom input and the Switch
+sends it out the top, with the expected power loss.
+
+Next, we leave power going into the bottom and then apply power to
+Switch Off. As we can see, the Switch will flip
+off.
+
+![](images/image41.png)
+
+![](images/image13.png)
+
+If we manually flip the Switch back on, we can now see a new amount of
+power displaying on the counter.
+
+![](images/image75.png)
+
+This is because the Switch is now bound to the Switch Off input for the
+power that passes through to the top. The power going into the bottom
+input is completely ignored. For the next picture, we flip the Switch
+back off and then apply power to Switch On.
+
+![](images/image64.png)
+
+The Switch will now flip on and once again pass through a new amount of
+power to the counter. The power going to the bottom input or Switch Off
+input is now ignored and the Switch is bound to Switch On. In the next
+picture, we remove power from Switch On while keeping power applied to
+Switch Off and the bottom.
+
+![](images/image30.png)
+
+We can see here now that power was removed from Switch On, the Switch
+has no power. The green light turns off and the Switch is still in the
+on position. Even though the other 2 inputs have power, the Switch is
+bound to Switch On for its source of power, which was removed. If we
+restore power to Switch On, the Switch will start passing power though
+again like the previous picture. With power restored, for the next
+picture we will remove power from Switch Off.
+
+![](images/image44.png)
+
+We restored power to Switch On before removing power from Switch Off.
+The green light turns off when power is removed and the Switch binds to
+the Switch Off. This is because that input received an update from
+‘having power’ to ‘not having power’, from 1 to 0. For the next picture,
+we restore power to Switch Off.
+
+![](images/image53.png)
+
+Restoring power to the Switch Off input, the red light turns on and the
+Switch flips to the off position. When we manually flip it on we can see
+the new amount of power passing through.
+
+![](images/image105.png)
+
+Seeing that we only have 28 power showing on the counter, it is clear
+power is coming through the Switch Off input. When we remove power from
+the bottom input, the Switch loses power.
+
+![](images/image73.png)
+
+It loses power because the bottom input was updated, from 1 to 0, so the
+Switch bound to it. Now bound to the bottom input and not receiving
+power, the green light turns off and no power passes through. Restoring
+power to the bottom input, the green light turns back on and the new
+power amount is displayed on the counter.
+
+![](images/image126.png)
+
+Seeing the power level on the counter confirming power is coming into
+the bottom, we will now adjust the Electrical Branch to send more power
+to Switch On.
+
+![](images/image116.png)
+
+After increasing the amount of power, we can see an instant change on
+the counter to reflect that the Switch changed the input it was bound to
+from the bottom input to Switch On.
+
+In conclusion, whichever is the last input to receive an update is the
+input the Switch will bind to for its source of power. Adding power,
+removing power or a change in power levels will update the Switches
+input. When moving power from one input to another, it is important
+
+---
+
+## Smart Timer
+
+Needs work
+
+![](images/image52.png)
+
+![](images/image118.png)
+
+---
+
+## Monuments Camera Codes
+
+- Abandoned Military Base codes:  
+`COMPOUND****`  
+`OUTDOOR****`  
+*Locate the computer station inside the monument, underground, and access it
+  to find the randomly generated codes for the cameras.*
+- Airfield camera codes:  
+`AIRFIELDHELIPAD`
+- Bandit Camp camera codes:  
+`CASINO`  
+`TOWNWEAPONS`
+- Dome camera codes:  
+`DOME1`  
+`DOMETOP`
+- Large Oil Rig camera codes:  
+`OILRIG2HELI`  
+`OILRIG2DOCK`  
+`OILRIG2EXHAUST`  
+`OILRIG2L1`  
+`OILRIG2L2`  
+`OILRIG2L3A`  
+`OILRIG2L3B`  
+`OILRIG2L4`  
+`OILRIG2L5`  
+`OILRIG2L6A`  
+`OILRIG2L6B`  
+`OILRIG2L6C`  
+`OILRIG2L6D`
+- Nuclear Missle Silo camera codes:  
+`SILOEXIT1`  
+`SILOEXIT2`  
+`SILOMISSILE`  
+`SILOSHIPPING`  
+`SILOTOWER`
+- Outpost camera codes:  
+`COMPOUNDCHILL`  
+`COMPOUNDMUSIC`  
+`COMPOUNDCRUDE`  
+`COMPOUNDSTREET`
+- Small Oil Rig camera codes:  
+`OILRIG1HELI`  
+`OILRIG1DOCK`  
+`OILRIG1EXHAUST`  
+`OILRIG1L1`  
+`OILRIG1L2`  
+`OILRIG1L3`  
+`OILRIG1L4`
+- Underwater Labs camera codes:  
+`AUXPOWER****`  
+`BRIG****`  
+`CANTINA****`  
+`CAPTAINQUARTER****`  
+`CLASSIFIED****`  
+`CREWQUARTERS****`  
+`HALLWAY****`  
+`INFIRMARY****`  
+`LAB****`  
+`LOCKERROOM****`  
+`OPERATIONS****`  
+`SECURITYHALL****`  
+`TECHCABINE****`  
+*Once inside an Underwater Lap, players will need to find a Keycard to open the Underwater Lab's CCTV Station Module since the final 4-digits of these Rust camera codes are randomly generated. With those 4-digits, players can now input the correct code to the corresponding CCTV camera.*
+
+---# Useful Circuits
+
+[Auto Smelter](https://www.rustrician.io/?circuit%3D7411c1893993574b24b6c9c911dbc0e3)
+
+[Blocker Chain](https://www.rustrician.io/?circuit%3D773b599014deb161fc173f295727be77)
+
+[Configure Siphon](https://www.rustrician.io/?circuit%3De7c8a8ccc9ce2da68095cca2560da002)
+
+[Delay Timer](https://www.rustrician.io/?circuit%3Dfa8ba5c2e3974185c6f01273eab653f1)
+
+[Destruction Detection](https://www.rustrician.io/?circuit%3Dbf38168f0834f7d84fb837ac41d1818e)
+
+[Every Box is a Drop Box](https://www.rustrician.io/?circuit=8958914d237cd6fce723a5ca2fc4cd8d)
+
+[Logic Gates](https://www.rustrician.io/?circuit%3D64810508602bc0cd1baa954d1a1da539)
+
+[Memory Cell Explained](https://www.rustrician.io/?circuit%3Db64e3a0f6f9d6d456ead9821abf9d7d7)
+
+[Nih Core](https://www.rustrician.io/?circuit%3Dd131cf1233742ebd0acb8ebaaf3b9d1a)
+
+[Nih Core - 4 Large Batteries](https://www.rustrician.io/?circuit%3D60fc05f187614f131aa5565be42a6687)
+
+[Nih Core - Decentralized](https://www.rustrician.io/?circuit%3D1d0b869c046f6d05ee75ab0f841fc150)
+
+[Probability Master Class](https://www.rustrician.io/?circuit%3Dca9bdcbc87f0a13ca3a3ce0c8fe4146d)
+
+
+
+---
+
+[Configure - Basic Pulse Control Set ](https://www.rustrician.io/?circuit%3Dc0487dd792adbd543e8d234a3979bc38)
+
+---
