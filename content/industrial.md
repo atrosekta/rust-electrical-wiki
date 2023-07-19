@@ -127,7 +127,8 @@ Decay Time                |
 Notes:  
 
 - Can be turned on manually, by sending power to the “Turn on” input, or by a nearby igniter.  
-- Like conveyors, powered furnaces retain their on/off state during a server restart, but unpowered furnaces lose their on/off state.  
+- Like conveyors, powered furnaces retain their on/off state during a server restart,
+  but unpowered furnaces lose their on/off state.  
 
 ---
 

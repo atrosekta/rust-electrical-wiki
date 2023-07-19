@@ -47,10 +47,6 @@ function curlinkelem(){
 			return links[i].parentElement;
 }
 
-function nobubble(event) {
-	event.stopPropagation();
-}
-
 function toggside() {
 	document.getElementById("sidebar").classList.toggle('folded');
 	document.getElementById("main-container").classList.toggle('folded');
