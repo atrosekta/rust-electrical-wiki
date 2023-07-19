@@ -24,15 +24,8 @@ Despawn Time        | 5 minutes
 
 Notes:
 
-- These blink a blue light. 3 fast pulses followed by a pause
-- These can be placed on any angled surfaces
-- Can be placed on other electrical components  
-*this is common for all smaller components. But it is
-limited to areas where the components will touch or be really close to a
-wall or the ground, it is effectively tricking them to think they are
-placed on a wall or the ground.*
-
-
+- These blink a blue light. 3 fast pulses followed by a pause.
+- These can be placed on any angled surfaces.
 
 ---
 
@@ -58,8 +51,8 @@ Despawn Time        | 5 minutes
 Notes:
 
 - These emit 2 red lights 180 degree from each other and spin in a
-  circle
-- Can be place on any angles surfaces
+  circle.
+- Can be placed on any angled surfaces.
 
 ---
 
@@ -85,9 +78,9 @@ Despawn Time        | 5 minutes
 
 Notes:
 
-- These hang from ceilings and focus light toward the ground
-- Hanging this at 1.5 floors allows the light to cover more area
-- They are required for farming
+- These hang from ceilings and focus light toward the ground.
+- Hanging this at 1.5 floors allows the light to cover more area.
+- They are the only light that can be used for farming.
 - When given only 1 power, they will work until they don't. When they
   don't, turn them off and back on and they will work again.
 
@@ -111,9 +104,9 @@ Despawn Time      | 5 minutes
 
 Notes:
 
-- These can only be spawned in by an admin or using plugins
-- They take no damage
-- They can only be placed on vertical surfaces
+- These can only be spawned in by an admin or using plugins.
+- They take no damage.
+- They can only be placed on vertical surfaces.
 
 ---
 
@@ -137,17 +130,14 @@ Despawn Time      | 5 minutes
 Notes:
 
 - This item can only be crafted if you have the item in your Steam
-  Inventory. It must be purchased from the community market
-
-&nbsp;
-
+  Inventory. It must be purchased from the community market.
 - 1 foundation is supposed to be 3 meters. 3 meters is 9.8ft. 1
-  foundation length worth of these lights is only 8ft
+  foundation length worth of these lights is only 8ft.
 - Left click to place the first piece. Run the lights anywhere you want
-  and right click to end placement
+  and right click to end placement.
 - They have 5 different modes, Steady, Flashing, Chasing, Fade and Slow
-  Glow
-- Can be placed underwater
+  Glow.
+- Can be placed underwater.
 - Length of light strand does not affect the amount of power consumed.  
 
 ---
@@ -174,10 +164,8 @@ Decay Time          | 8 hours
 
 Notes:
 
-- Use the light by looking at it and pressing E. Adjust where the light
-  is shining. Once in position, if you can see ‘Stop Using’, press E or
-  walk far enough away to stop using
-- Has 360 degree rotation
+- Use the light by looking at it and pressing Use(`E`). Adjust where the light is shining. Once in position, if you can see ‘Stop Using’, press Use(`E`) or walk far enough away to stop using.
+- Has 360 degree rotation.
 - Maximum distance light can travel is 96m or 32 foundations. 1 square
   foundation is 3m.
 - Can be used through ceilings and walls.
@@ -206,10 +194,10 @@ Despawn Time      | 5 minutes
 Notes:
 
 - This item can only be crafted if you have the item in your Steam
-  Inventory. It must be purchased from the community market
-- Maximum image size is 128x128
-- Can be placed on vertical and angled surfaces
-- Can be placed underwater
+  Inventory. It must be purchased from the community market.
+- Maximum image size is 128x128.
+- Can be placed on vertical and angled surfaces.
+- Can be placed underwater.
 
 ---
 
@@ -234,10 +222,10 @@ Despawn Time       | 5 minutes
 Notes:
 
 - This item can only be crafted if you have the item in your Steam
-  Inventory. It must be purchased from the community market
-- Maximum image size is 256x128
-- Can be placed on vertical and angled surfaces
-- Can be placed underwater
+  Inventory. It must be purchased from the community market.
+- Maximum image size is 256x128.
+- Can be placed on vertical and angled surfaces.
+- Can be placed underwater.
 
 ---
 
@@ -262,12 +250,12 @@ Despawn Time       | 5 minutes
 Notes:
 
 - This item can only be crafted if you have the item in your Steam
-  Inventory. It must be purchased from the community market
-- There are 5 pages you can paint and the sign will flip between them
-- You can choose between 3 flipping speeds, Slow, Medium and Fast
-- Maximum image size is 256x128
-- Can be placed on vertical and angled surfaces
-- Can be placed underwater
+  Inventory. It must be purchased from the community market.
+- There are 5 pages you can paint and the sign will automatically flip between them.
+- You can choose between 3 flipping speeds, Slow, Medium and Fast.
+- Maximum image size is 256x128.
+- Can be placed on vertical and angled surfaces.
+- Can be placed underwater.
 
 ---
 
@@ -292,13 +280,13 @@ Despawn Time       | 5 minutes
 Notes:
 
 - This item can only be crafted if you have the item in your Steam
-  Inventory. It must be purchased from the community market
-- Can be placed on vertical and angled surfaces
-- Maximum image size is 256x256
+  Inventory. It must be purchased from the community market.
+- Can be placed on vertical and angled surfaces.
+- Maximum image size is 256x256.
 - Using a low or half wall above a window with bars or glass, you can
   pull one of these down over the window to cover it. When the sign is
-  painted, you can't see through the front but can through the back
-- Can be placed underwater
+  painted, you can't see through the front but can through the back.
+- Can be placed underwater.
 
 ---
 
@@ -323,15 +311,15 @@ Despawn Time       | 5 minutes
 Notes:
 
 - This item can only be crafted if you have the item in your Steam
-  Inventory. It must be purchased from the community market
-- Can be placed on vertical and angled surfaces
-- There are 5 pages you can paint and the sign will flip between them
-- You can choose between 3 flipping speeds, Slow, Medium and Fast
-- Maximum image size is 256x256
+  Inventory. It must be purchased from the community market.
+- Can be placed on vertical and angled surfaces.
+- There are 5 pages you can paint and the sign will automatically flip between them.
+- You can choose between 3 flipping speeds, Slow, Medium and Fast.
+- Maximum image size is 256x256.
 - Using a low or half wall above a window with bars or glass, you can
   pull one of these down over the window to cover it. When the sign is
-  painted, you can't see through the front but can through the back
-- Can be placed underwater
+  painted, you can't see through the front but can through the back.
+- Can be placed underwater.
 
 ---
 
@@ -356,8 +344,9 @@ Despawn Time       | 5 minutes
 Notes:
 
 - This item can only be crafted if you have the item in your Steam
-  Inventory. It must be purchased from the in game Item Store
-- Can be placed on all angled surfaces
+  Inventory. It must be purchased from the in game Item Store.
+  - These are the cheapest components to build and only consume 1rW.
+- Can be placed on all angled surfaces.
 
 ---
 
@@ -382,8 +371,9 @@ Despawn Time       | 5 minutes
 Notes:
 
 - This item can only be crafted if you have the item in your Steam
-  Inventory. It must be purchased from the in game Item Store
-- Can be placed on all angled surfaces
+  Inventory. It must be purchased from the in game Item Store.
+- These are the cheapest component to build and only consume 1rW.
+- Can be placed on all angled surfaces.
 
 ---
 
@@ -408,8 +398,9 @@ Despawn Time       | 5 minutes
 Notes:
 
 - This item can only be crafted if you have the item in your Steam
-  Inventory. It must be purchased from the in game Item Store
-- Can be placed on all angled surfaces
+  Inventory. It must be purchased from the in game Item Store.
+- These are the cheapest components to build and only consume 1rW.
+- Can be placed on all angled surfaces.
 
 ---
 
@@ -432,30 +423,15 @@ Despawn Time      | 5 minutes
 Notes:
 
 - This item can only be crafted if you have the item in your Steam
-  Inventory. It must be purchased from the community market
+  Inventory. It must be purchased from the community market.
 - Requires TC authorization to change strobe settings. Look at the light
-  and hold USE(E) to change the frequency of the strobe between 10hz,
+  and hold USE(`E`) to change the frequency of the strobe between 10hz,
   20hz and 40hz or to manually turn it on.
-- Whichever input is the last to be activated is the input that dictates
-  the state of the light. For example, if you send constant power to
-  TURN ON, the light turns on. Then send power to TURN OFF, the light
-  will turn off. When you remove power from TURN OFF, the light will not
-  turn back on even with power still going to TURN ON. You will need to
-  remove and reapply power to TURN ON for the light to turn back on.
-- The TOGGLE input will turn the light on when it receives power and
-  turn off when power is removed. This does not change the previous
-  bullet point. If you apply power to TOGGLE, the light will turn on.
-  While the light is on, if you send power to TURN OFF, the light will
-  turn off. When you remove power from TURN OFF with power still going
-  to TOGGLE, the light will not turn back on. On the other hand if you
-  send power to TURN ON, the light will turn on. Then send power to
-  TOGGLE and the light will stay on. With power still going to TURN ON,
-  we remove power from TOGGLE and the light will turn off. This is
-  because when you remove power from TOGGLE, it tells the light to turn
-  off.
-- They take damage when active at a rate of 1hp/3min42sec
-- They can be placed on flat and angled surfaces as well as the ground
-- Can be picked up with a hammer but loses 10hp
+- Whichever input is the last to be activated is the input that dictates the state of the light. For example, if power is constantly sent to TURN ON, the light turns on. Then send power to TURN OFF, the light will turn off. When power is removed from TURN OFF, the light will not turn back on even with power still going to TURN ON. Power will need to be removed then reapplied power to TURN ON for the light to turn back on.
+- The TOGGLE input will turn the light on when it receives power and turn off when power is removed. This does not change the previous bullet point. If power is applied to TOGGLE, the light will turn on. While the light is on, if power is sent to TURN OFF, the light will turn off. When power is removed from TURN OFF with power still going to TOGGLE, the light will not turn back on. On the other hand if power is sent to TURN ON, the light will turn on. Then send power to TOGGLE and the light will stay on. With power still going to TURN ON, if power is removed from TOGGLE and the light will turn off. This is because when power is removed from TOGGLE, it tells the light to turn off. 
+- They take damage when active at a rate of 1hp/3min42sec.
+- They can be placed on flat and angled surfaces as well as the ground.
+- Can be picked up with a hammer but loses 10hp.
 
 ---
 

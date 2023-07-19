@@ -1,23 +1,29 @@
 
 - [ Home ]( index.html )
-- Items Details
+- Component Details
 	- [ Tools ]( tools.html )
-	- [ Sources ]( sources.html )
-	- [ Distribution ]( distribution.html )
-	- [ Storage ]( storage.html )
-	- [ Defense ]( defense.html )
-	- [ Lights ]( light.html )
-	- [ Utilities ]( utils.html )
-	- [ Logic ]( logic.html )
-	- [ Switchs ]( switch.html )
+	- [ Power Sources ]( sources.html )
+	- [ Power Storage ]( storage.html )
+	- [ Power Distribution ]( distribution.html )
+	- [ Switches ]( switch.html )
 	- [ Sensors ]( sensor.html )
-	- [ RF ]( rf.html )
+	- [ Logic ]( logic.html )
+	- [ Radio Frequency RF ]( rf.html )
+	- [ Lights ]( light.html )
 	- [ Smart ]( smart.html )
-	- [ Fireworks ]( fireworks.html )
-	- [ Voice DLC ]( voiceDLC.html )
+	- [ Utilities ]( utils.html )
+	- [ Defense ]( defense.html )
 	- [ Water ]( water.html )
 	- [ Industrial ]( industrial.html )
-- Concepts
-	- [ Concepts ]( concepts.html )
-	- [ Centralization ]( centralized.html )
-	- [ Backup & Distribution ]( backup.html )
+	- [ Voice Props Pack DLC ]( voiceDLC.html )
+	- [ Fireworks ]( fireworks.html )  
+
+- Concepts  
+	- [Getting Started]( gettingstarted.html )
+	- [Power Generation]( powergeneration.html )
+	- [Power Storage]( powerstorage.html )
+	- [Power Distribution]( powerdistribution.html )
+	- [Uncategorized]( uncatagorizedconcepts.html )
+
+- Blueprints
+	- [Useful Circuits]( usefulcircuits.html )

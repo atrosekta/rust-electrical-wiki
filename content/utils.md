@@ -1,5 +1,7 @@
 
-# Utilities / Quality Of Life
+# Utilities
+
+These are components that can enhance a player’s quality of life and Rust experience. They will also have a wide variety of applications.
 
 ---
 
@@ -24,15 +26,15 @@ Despawn Time        | 20 minutes
 
 Notes:
 
-- Used to open and close single and double doors, garage doors, window
+- They can be used to open and close single and double doors, garage doors, window
   shutters, wooden shop front, prison cell gates, chainlink fence gate,
-  ladder hatches and high external gates  
-- Place the controller within about 1 meter of the door model to be able
-  to pair
+  ladder hatches and high external gates.
+- Place the controller within 1 meter of the door model to be able
+  to pair them.
 - After placing the door and controller, pair them together by looking
-  at the controller and press E. If successful, the bottom green light
+  at the controller and press Use(`E`). If successful, the bottom green light
   will turn on.
-- The door must be unlocked to pair with the controller
+- The door must be unlocked to pair with the controller.
 
 ---
 
@@ -57,14 +59,13 @@ Despawn Time        | 5 minutes
 
 Notes:
 
-- 2rW is only required if you want the visual effect. They will ignite
-  things with 1rW but you won't see the spark effect
+- 2rW is only required for the visual sparking effect. They will ignite things with only 1rW.
 - They can be used to ignite the camp fire, carvable pumpkin, chinese
   lantern, hobo barrel, jack o lanterns, lanterns, large
-  furnace, small furnace, electrical furnace, small oil refinery, fireplace, tuna can lamp, fireworks, sky lanterns,candles, beancan grenade and satchel charge
+  furnace, small furnace, electrical furnace, small oil refinery, fireplace, tuna can lamp, fireworks, sky lanterns,candles, beancan grenade and satchel charge.
 - They take damage when they are on. They have enough health to last for
-  16 to 17 minutes
-- Can be placed on any angled surface and the ground
+  16 to 17 minutes.
+- Can be placed on any angled surface and the ground.
 
 ---
 
@@ -89,19 +90,17 @@ Decay Time          | 48 hours
 
 Notes:
 
-- To use cameras, start by placing one on any horizontal surface. With
-  TC authorization, look at the camera and press E to ‘Set ID’.
+- To use cameras, start by placing one on a flat ceiling. With TC authorization, look at the camera and press Use(E) to ‘Set ID’.
 - Aim the camera by standing in the direction you want the camera to
-  look. Holding a Hammer, press E to change its position. Hold E to pick
-  them up.
+  look. Holding a Hammer, press Use(`E`) to change its position. Hold Use(`E`) to pick them up.
 - View cameras by mounting a Computer Station and in the bottom left,
   add the ID for the camera. Select the camera from the list on the left
   and begin viewing.
 - To control the camera when viewing, use your mouse to pan and tilt.
   Left click will zoom.
-- Anyone can add any camera to any computer station
+- Anyone can add any camera to any computer station.
 - The game has pre-placed cameras at some of the monuments, check the
-  current Camera List.
+  current [Camera List](uncategorizedconcepts.html##-Monuments-Camera-Codes).
 
 ---
 
@@ -124,19 +123,15 @@ Decay Time        | 48 hours
 Notes:
 
 - To use cameras, start by placing one on any vertical surface. With TC
-  authorization, look at the camera and press E to ‘Set ID’.
+  authorization, look at the camera and press Use(`E`) to ‘Set ID’.
 - Aim the camera by standing in the direction you want the camera to
-  look. Holding a Hammer, press E to change its position. Hold E to pick
-  them up.
+  look. Holding a Hammer, press Use(`E`) to change its position. Hold Use(`E`) to pick them up.
 - View cameras by mounting a Computer Station and in the bottom left,
   add the ID for the camera. Select the camera from the list on the left
   and begin viewing.
-- Anyone can add any camera to any computer station
-- The game has pre-placed cameras at some of the monuments, here is the
-- The game has pre-placed cameras at some of the monuments, check the
-current Camera List.
-
-**[Monuments Camera codes](camcodes.html)** *(UNORGAIZED DUMPFILE !)*
+- Anyone can add any camera to any computer station.
+- The game has pre-placed cameras at some of the monuments, check the
+  current [Camera List](uncategorizedconcepts.html##-Monuments-Camera-Codes).
 
 ---
 
@@ -162,18 +157,15 @@ Despawn Time        | 20 minutes
 
 Notes:
 
-- This item provides heat in the shape of a sphere that at its largest
-  diameter covers a 2x2
-- It also provides up to 50% comfort in a sphere that starts about 1m in
-  front of the heater and has a diameter of  4 meters or 1 1/3rd square
-  foundations as shown in the below picture.
 - Heaters will dry you off if you are wet.
 - They can be used to help regulate the temperature of crops, be careful
   not to overheat your plants.
 - They emit an orange light
 - Can only be placed on vertical surfaces
+- It provides up to 50% comfort in a sphere that starts about 1m in front of the heater. This sphere has a diameter of roughly 4 meters or 1 1/3rd square foundations.
+- his item provides heat in the shape of a sphere that at its largest diameter covers a 2x2, pictured below.
 
-heatbox :  
+Heat Sphere :  
 
 ![](images/heater-range.png)  
 
@@ -201,12 +193,12 @@ Decay Time          | 16 hours
 
 Notes:
 
-- These allow you to modify modular cars. You can add or remove empty
-  modules. Add or remove locks and craft keys.
-- To access the user interface, look at the control stand and press E.
-  TC access is not required to access UI
-- You can store cars on a powered lift to prevent decay
-- Cannot be picked up with a Hammer
+- To access the user interface, look at the control stand and press Use(E). TC access is not required to access UI.
+- These allow for modification of modular cars by adding or removing modules. 
+- Lets anyone add or remove code locks.
+- Store cars on a powered lift to prevent decay.
+- Cannot be picked up with a Hammer.
+
 
 ---
 
@@ -231,71 +223,15 @@ Decay Time          | 8 hours
 
 Notes:
 
-- The elevator consists of 2 parts, the shaft and the carriage
-- At the top of the shaft there is a light and the motor for the
-  carriage. This motor requires 5rW in order for the carriage to move
-- The carriage has a control panel that allows a user to press a button
-  and move all the way to the top or bottom floors. Holding USE(E) will
-  let you move up or down 1 floor at a time.
-- Each floor has 2 inputs, on the right side of each entrance, to call
-  the elevator to that floor. 
-- The Maximum height of a single elevator shaft is 6 floors
-- The elevator has an upkeep cost. For the first floor, it costs 1 HQM
-  and 20 Metal Fragments. It costs an extra 20 Metal
-  Fragments per floor but at the 4th floor, it costs an extra 1 HQM.
-  1 max height elevator shaft will cost 2 HQM and 120 Metal Fragments
-- Standing under the carriage as it descends will kill you
+- The elevator consists of 2 parts, the shaft and the carriage.
+- At the top of the shaft there is a light and the motor for the carriage. This motor requires 5rW in order for the carriage to move.
+- The carriage has a control panel that allows a user to press a button and move all the way to the top or bottom floors. Hold Use(E) to move up or down 1 floor at a time.
+- Each floor has 2 inputs, on the right side of each entrance, to call the elevator to that floor. 
+- The Maximum height of a single elevator shaft is 6 floors.
+- The elevator has an upkeep cost. For the first floor, it costs 1 High Quality Metal and 20 Metal Fragments. It costs an extra 20 Metal Fragments per floor but at the 4th floor, it costs an extra 1 High Quality Metal. A max height elevator shaft will have an upkeep cost 2 High Quality Metal and 120 Metal Fragments.
+- If someone is standing under the carriage as it descends, they will die.
 - The Elevator has a travel time of 1.6 seconds per floor.
 
----
-
-# Telephone![](images/image125.png)
-
-| | |  
-|-|---|  
-Item ID             |  1234878710
-Description         | A telephone for making and receiving calls
-Crafting Recipe     | 50 Wood, 100 Metal Fragments, 1 Tech Trash
-Recycles Into       | 25 Wood, 100 Metal Fragments, 50% 1 Tech Trash
-Stack Size          | 1
-Workbench Required  | Level 1
-Research Table Cost | 75 Scrap
-Hit Points          | 150
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
-Inputs/Outputs      | Power / Call Passthrough
-Active Usage        | 1
-Power Consumption   | 1rW
-Power Output        | 1rW
-Despawn Time        | 20 minutes
-Decay Time          | 8 hours
-
-Notes:
-
-- This is actually a telephone sitting on top of an tape cassette
-  answering machine
-- The answering machine needs a cassette to work. You will require the
-  Voice Props DLC to craft cassettes.
-- TC Auth is not required to change the name or access the cassette in
-  the answering machine.
-- There are 3 types of cassettes, Short(10sec), Medium(20sec) and
-  Long(30sec). Use a Cassette Recorder to record a message then place
-  the cassette in the answering machine. When someone calls and you
-  don't answer, the caller will hear your message and leave a message of
-  their own for you to play back later.
-- After 3 rings the answering machine message will begin to play. To
-  leave a voicemail, press the spacebar when you hear the answering
-  machine's message. To listen to your voicemail, use the phone and at
-  the bottom of the screen select voicemail.
-- To use the phone, look at it and when you see MAKE CALL, press E to
-  use.
-- You can give your phone a name and it will appear in the Directory.
-  All phones are automatically assigned a number.
-- You can add phones to your contacts list by adding the phone number
-  or name.
-- Use the Directory to find the phones at monuments or random peoples
-  phones.
-- When a call comes in, the phone will output the incoming power and
-  will continue to for as long as the call is active.
 
 ---
 
@@ -327,6 +263,36 @@ Notes:
 
 ---
 
+# Drone![](images/drone.png)
+| | |  
+|-|---|  
+Item ID             | 1588492232
+Description         | A remote controlled drone
+Crafting Recipe     | 200 Metal Fragments, 2 Tech Trash, 1 CCTV Camera
+Recycles Into       | 100 Metal Fragments, 1 Tech Trash, 50% 1 CCTV Camera
+Stack Size          | 1
+Workbench Required  | Level 2
+Research Table Cost | 125 Scrap
+Hit Points          | 100
+Where To Buy        | Outpost for 300 Scrap
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, NVG Scientist, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Elite Crate, Underwater Lab Yellow Crate, Wagon Military Crate
+Power Consumption   | Requires zero electricity
+Despawn Time        | 40 minutes
+
+Notes:
+- Using a Computer Station, a player is able to remotely fly the drone.
+- Assign an ID to the drone by deploying it on the ground, looking at it and pressing Use(`E`). Hold Use(`E`) to pick up a drone.
+- Mount a Computer Station and in the bottom left, add the ID for the Drone.
+- Select the ID from the list and start flying.
+- Use W, A, S, D to move. Use the mouse to look around. Shift and Ctrl to go up and down.
+- It is damaged easily from impacts.
+- Logging out of the drone mid flight will cause it to fall to the ground.
+- It has a limited range of around 500 meters or 3.33 grid squares.
+
+![](images/dronerange.png)
+
+---
+
 # Computer Station![](images/image60.png)
 
 | | |  
@@ -341,21 +307,19 @@ Research Table Cost | 75 Scrap
 Hit Points          | 500
 Where To Buy        | Outpost for 300 Scrap
 Where To Find       | Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
-Inputs/Outputs      |
 Power Consumption   | Requires zero electricity
 Despawn Time        | 20 minutes
 
 Notes:
 
-- View cameras by mounting a Computer Station and in the bottom left,
-  add the ID for the camera. Select the camera from the list on the left
-  and begin viewing.
-- Anyone can add any camera to any computer station
+- Use the Computer Station to view CCTV Camera, control the PTZ Camera or fly the Drone.
+- Mount a Computer Station and in the bottom left, add an ID for a camera or drone. Select the ID from the list on the left and begin viewing or operating.
+- Anyone can add any camera to any computer station.
 - The maximum number of cameras you can add to a computer is 20.
 - The game has pre-placed cameras at some of the monuments, here is the
   current list.
-
-**[Monuments Camera codes](camcodes.html)** *(UNORGAIZED DUMPFILE !)*
+- The game has pre-placed cameras at some of the monuments, check the
+  current [Camera List](uncategorizedconcepts.html##-Monuments-Camera-Codes).
 
 ---
 
@@ -381,7 +345,7 @@ Decay Time                 | 96 hours
 Notes:
 
 - This item can only be crafted if you have the item in your Steam
-  Inventory. It must be purchased from the community market
+  Inventory. It must be purchased from the community market.
 - When Active, it creates a fog cloud in front of it that covers an area
   equal to a 2x2 and is thickest below half height walls. Consumes low
   grade fuel at 1 per minute.
@@ -399,26 +363,11 @@ Notes:
 - Fog will fall toward the ground and accumulate on any horizontal
   surface. The higher the fogger the thinner the cloud.
 - Requires TC authorization to change settings. Look at the light and
-  hold USE(E) to Activate, Open or turn on Motion.
-- Whichever input is the last to be activated is the input that dictates
-  the state of the fogger. For example, if you send constant power to
-  TURN ON, the fogger turns on. Then send power to TURN OFF, the fogger
-  will turn off. When you remove power from TURN OFF, the fogger will
-  not turn back on even with power still going to TURN ON. You will need
-  to remove and reapply power to TURN ON for the fogger to turn back on.
-- The TOGGLE input will turn the fogger on when it receives power and
-  turn off when power is removed. This does not change the previous
-  bullet point. If you apply power to TOGGLE, the fogger will turn on.
-  While the fogger is on, if you send power to TURN OFF, the fogger will
-  turn off. When you remove power from TURN OFF with power still going
-  to TOGGLE, the fogger will not turn back on. On the other hand if you
-  send power to TURN ON, the fogger will turn on. Then send power to
-  TOGGLE and the fogger will stay on. With power still going to TURN ON,
-  we remove power from TOGGLE and the fogger will turn off. This is
-  because when you remove power from TOGGLE, it tells the fogger to turn
-  off.
-- They can be placed on flat and angled surfaces as well as the ground
-- Can be picked up with a hammer but loses 10hp
+  hold Use(`E`) to Activate, Open or turn on Motion.
+- Whichever input is the last to be activated is the input that dictates the state of the fogger. For example, if  constant power is sent to TURN ON, the fogger turns on. Then send power to TURN OFF, the fogger will turn off. When power is removed from TURN OFF, the fogger will not turn back on, even with power still going to TURN ON. Power will need to be removed and reapplied to TURN ON for the fogger to turn back on.
+- The TOGGLE input will turn the fogger on when it receives power and turn off when power is removed. This does not change the previous bullet point. If power is applied to TOGGLE, the fogger will turn on. While the fogger is on, if power is sent to TURN OFF, the fogger will turn off. When power is removed from TURN OFF with power still going to TOGGLE, the fogger will not turn back on. On the other hand if power is sent to TURN ON, the fogger will turn on. Then send power to TOGGLE and the fogger will stay on. With power still going to TURN ON, when power is removed from TOGGLE, the fogger will turn off. This is because when power is removed from TOGGLE, it tells the fogger to turn off.
+- They can be placed on flat and angled surfaces as well as the ground.
+- Can be picked up with a hammer but loses 10hp.
 
 ---
 
@@ -444,17 +393,17 @@ Despawn Time               | 5 minutes
 Notes:
 
 - This item can only be crafted if you have the item in your Steam
-  Inventory. It must be purchased from the community market
+  Inventory. It must be purchased from the community market.
 - When Active, it creates a patch of snow in front of the machine with a
   radius of 3.5 square foundations.
 - The snow pile takes 1 second to form and 2 minutes 45 seconds to
   disappear.
 - The snow at its deepest goes halfway up a character's chin.
 - Increasing the number of machines does not increase the depth of the
-  snow
-- Snowfall is 3.5 floors high
+  snow.
+- Snowfall is 3.5 floors high.
 - Requires TC authorization to change settings. Look at the light and
-  hold USE(E) to Activate, Open or Stop.
+  hold Use(`E`) to Activate, Open or Stop.
 - The TOGGLE input will turn the machine on when it receives power and
   turn off when power is removed. When TURN ON receives power, the
   machine will turn on and stay on when TURN ON loses power. When TURN
@@ -464,7 +413,7 @@ Notes:
 - When the machine turns on, there is a 10 second window where it cannot
   be turned off.
 - They can only be placed on the ground.
-- Can be picked up with a hammer but loses 75hp
+- Can be picked up with a hammer but loses 75hp.
 
 ---
 

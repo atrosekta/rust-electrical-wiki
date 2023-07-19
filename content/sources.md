@@ -1,6 +1,8 @@
 
 # Power Sources
 
+There is no way around this. If electrical circuits are going to function, power must be generated somehow. These are the components that produce power. For a more in depth explanation, have a look at [Power Generation]( powergeneration.html ) in the Concepts section.
+
 ---
 
 # Test Generator ![](images/image34.png)
@@ -23,7 +25,8 @@ Despawn Time      | 20 minutes
 Notes:
 
 - This item can only be spawned in by an admin.
-- It supplies a constant 100rW per output constantly for free.
+- It supplies a constant 100rW per output for free.
+- It has 3 outputs.
 - Excellent for testing.
 
 ---
@@ -51,25 +54,17 @@ Decay Time          | 8 hours
 
 Notes:
 
-- Wind Turbines operate in both day and night
+- Wind Turbines operate in both day and night.
 - The amount of power they output is heavily influenced by the number of
-  floors above the ground they are, not sea level
-- They will produce more power, more often the more floors above ground
-  you place them
-- Requires a 1x1 to be placed on and cannot be picked up with a hammer
-- Requires a single square or 2 triangles to be placed on
-  and cannot be picked up with a hammer.
-- There is a small area at the base of the turbine, on some sheet metal
-  where you can place components.
-- A turbine made on an iceberg, will calculate its output based on sea
-  level down to the ocean bottom. This means no additional height above
-  sea level will increase its height calculation.
-- There needs to be a minimum of 3 foundations distance between
-  turbines. This will prevent 1 turbine blocking the wind for another.
+  floors above the ground they are, not sea level.
+- They will produce more power, more often the more floors above ground they are placed.
+- There is a small area at the base of the turbine, on some sheet metal where you can place components.
+- A turbine made on an iceberg, will calculate its output based on sea level down to the ocean bottom. This means no additional height above sea level will increase its height calculation.
+- There needs to be a minimum of 15 meters or 5 foundations distance between turbines. This will prevent 1 turbine blocking the wind for another.
+- Requires a single square or 2 triangles to be placed on. 
+- Cannot be picked up with a hammer.
+- Check out Wind Power in the Concepts section under [Power Generation](powergeneration.md).
 
-![](images/image23.png)
-
-![](images/image31.png)
 
 ---
 
@@ -101,22 +96,12 @@ Notes:
   making it to the entire front face.
 - They can be placed on the ground or flat building structure.
 - They can be picked up with a hammer but will lose 25% health.
-- 24 hours in game is 1 irl hour
+- 24 hours in game is 1 irl hour.
+- Check out Solar Power in the Concepts section under[Power Generation](powergeneration.md).
 
-![](images/image111.png)
 
-Depending on the time of year, the Sun will take a different path
-through the sky. In June and July, the Sun reaches its most Northern
-path. In December and January, the Sun reaches its most Southern path.
-The picture above on the right shows how the Sun will traverse the sky
-over 6 Rust months. A day in the game is an hour of real time. This
-means it takes about 15 days for a full Rust Year. Wipe day is always
-May 20th 2024 so depending how long or short your wipe is, and where on
-the map you build, will determine the direction of your Solar Panels. If
-you are only playing the first 3 days of a fresh wipe and you build in
-the South, face the panels North and call it a day, but, if you are
-playing a monthly wipe, placing them facing East and West is the
-simplest option.
+
+
 
 ---
 
@@ -144,14 +129,14 @@ Decay Time          |
 
 Notes:
 
-- Small Generators will output electricity when they are turned on
+- Small Generators will output electricity when they are turned on.
 - You can Start and Stop them manually or use one of the electrical
   inputs.
 - The last input to receive power is the function that is activated,
   even if power is still being applied to the opposite.
-- They must be placed on floors, foundations or the ground
+- They must be placed on floors, foundations or the ground.
 - They still produce max power when damaged
-- They can be picked up with a hammer but lose 20% health
+- They can be picked up with a hammer but lose 20% health.
 - If a battery is feeding power to either of the inputs, components
   connected to Power Out will register an active usage on the battery.
 

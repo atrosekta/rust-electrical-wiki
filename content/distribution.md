@@ -1,17 +1,7 @@
 
 # Power Distribution
 
----
-
-Power distribution is one of the most important things to know and
-understand when it comes to electricity.  
-There are many ways to produce, store and distribute power for your circuits.  
-This section breaks down the components used for distribution and the different types of distribution circuits known as a power bus.  
-It covers the different types of battery backup systems.  
-It covers the difference between the amount of power a circuit consumes versus what a battery thinks it is consuming, aka active usage.  
-This section also covers the theory behind circuit and location centralization, decentralization and hybridization.  
-It covers the game mechanics behind circuit delay and power flow as well
-as the error message, short circuit/max depth.
+After electricity is generated, it needs a way to get to the different end devices or circuits. The primary job of these components is to create the paths for power to flow, and/or control the amount of power feeding the end devices/circuits. There is a breakdown of different distribution systems located in [Power Distribution]( powerdistribution.html ) under the Concepts section.
 
 ---
 
@@ -36,16 +26,11 @@ Despawn Time        | 20 minutes
 
 Notes:
 
-- These allow you to combine Power Sources and batteries to produce
-  higher amounts of available power. Power Sources are Wind Turbines,
-  Large Solar Panels and Small Generators
-- It does not consume any power but it will register 1 active usage on a
-  battery
-- Can be placed on all building surfaces
-- They have a shared error message, ‘Short Circuit/Max Depth’, and that
-  has [its own section](concepts.html#short-circuit-max-depth) breaking it down.
-- also see [Root combining batteries](storage.html#root-combining-batteries) as it have down side
-  and isnt recommended in most cases,
+- These allow Power Sources and batteries to be combined to produce higher amounts of available power. [Power Sources](sources.html#-Power-Sources) are Wind Turbines, Large Solar Panels and Small Generators.
+- Can be placed on all building surfaces.
+- It has a max depth of 16 components between a power source and the combiner. If max depth is reached, going any deeper will result in a shared error message, [Short Circuit/Max Depth](powerdistribution.html##-Short-Circuit-/-Max-Depth).
+- It does not consume any power but will register 1 [Active Usage](powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed) on a battery.
+- Combining batteries with a Root Combiner to get a larger amount of power is wiring the batteries in [Series](powerstorage.html##-Parallel-vs-Series). The load is not evenly shared. For example, 2 batteries connected to a Root Combiner feeding a circuit that needs 50 power. Each battery will show an Active Usage of 50, not 25/25 to = 50.
 
 ---
 
@@ -70,19 +55,14 @@ Despawn Time        | 5 minutes
 
 Notes:
 
-- These will consume 1 power that passes through it but not register on
-  a battery's active usage for itself
-- Can be configured by pressing `E` while looking directly at the
-  Branch.
-- 2rW is the minimum you can Branch Out
-- What you set the Branch Out to will be the amount to register on a
-  battery’s active usage and will always consume that much power even if
-  the components past it are disabled. More explained in ‘link to
-  battery active usage vs actual power usage’
-- When an Electrical Branch sends power out, it will first send power
-  through Power Out then send power through Branch Out. Check out the
-  section on Circuit Delay and Power Flow.
 - Can be placed on all angled surfaces.
+- Can be configured by pressing Use(`E`) while looking directly at the Branch.
+- 2rW is the minimum Branch Out can be set to.
+- These will consume 1 power but not register on a battery's [Active Usage](powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed).
+- What Branch Out is set to will be the amount that registers on a battery’s Active Usage.
+- Branch Out will always consume the amount of power it is set to, even if the components past it are disabled. 
+- When an Electrical Branch sends power out, it will first send power through Power Out then send power through Branch Out. Check out the section on [Circuit Delay and Power Flow](powerdistribution.html##-Circuit-Delay-and-Power-Flow).
+- Is a key component to create a [Fixed Bus](powerdistribution.html###-Fixed-Bus-(F-Bus))
 
 ---
 
@@ -107,13 +87,30 @@ Despawn Time        | 5 minutes
 
 Notes:
 
-- When the Splitter receives power it does not pass power through all
-  connected outputs at the same time. Power outputs in the order of
-  Output 1, Output 2 then Output 3. Check out the section on Circuit
-  Delay and Power Flow.
-- Can only be placed on vertical walls
-- When an output is destroyed, it will redistribute power between the
-  remaining outputs.
-- Outputs can connect to the inputs of Root Combiners
+- Can only be placed on vertical walls.
+- When the Splitter receives power it does not pass power through all connected outputs at the same time. Power outputs in the order of Output 1, Output 2 then Output 3. Check out the section on [Circuit Delay and Power Flow](powerdistribution.html##-Circuit-Delay-and-Power-Flow).
+- When an output is destroyed, it will redistribute power between the remaining outputs.
+- Outputs can connect to the inputs of Root Combiners.
+- Is a key component of a [Dynamid Bus](powerdistribution.html###-Dynamic-Bus-(D-Bus)).
+
+---
+
+# Cable Tunnel (NOT CRAFTABLE)![](images/electric.cabletunnel.png)
+Item ID: 1835946060
+Description: Allows wires to pass through wall
+Crafting Recipe: Cannot be crafted
+Recycles Into: 5 High Quality Metal
+Stack Size: 1
+Hit Points: ∞
+Inputs/Outputs: Tunnel 1 In, Tunnel 2 In, Tunnel 3 In, Tunnel 4 In/Tunnel 1 Out, Tunnel 2 Out, Tunnel 3 Out, Tunnel 4 Out
+Active Usage: 1
+Power Consumption: 1rW
+Power Output: Input minus 1
+Despawn Time: 20 minutes
+
+Notes: 
+- This item can only be spawned in by an admin.
+- It has 4 inputs with 4 matching outputs.
+- Was designed to let wires pass through walls when the idea was to not let wires pass through walls.
 
 ---
