@@ -10,6 +10,7 @@ end
 function Foreach ( out, elem, func, path)
 	Indent = Indent + 1
 	local list = pandoc.Inlines( foldlist(Indent, 1) )
+	if elem.content == nil then return end
 	for i, item in ipairs( elem.content ) do
 		func( list, item, path )
 	end
@@ -36,8 +37,13 @@ function ParseBarEntry( out, items )
 		local htmlpath = item.content[1].target
 		local mdpath = 'content/' .. htmlpath:gsub("html","md")
 		local toc = GetFileToc( mdpath )
-		local anchor = toc.content[1][1].content[1].target
-		out:insert( foldlink(text, htmlpath .. anchor) )
+		-- local anchor = toc.content[1][1].content[1].target
+		if toc.content == nil then return end
+		if toc.content[1][1].content then
+			htmlpath = htmlpath .. toc.content[1][1].content[1].target
+		end
+		out:insert( foldlink(text, htmlpath ) )
+		-- out:insert( foldlink(text, htmlpath .. anchor) )
 		Foreach( out, toc, ParseTocEntry, htmlpath )
 	else
 		out:insert( foldable(text) )
@@ -49,8 +55,9 @@ function GetFileToc ( path )
 	local file = assert( io.open( path, "r" ),
 		"Cannot open file '" .. path .. "'\n" )
 	local str = file:read("*all")
-	local content = pandoc.read( str, 'markdown')
-	return pandoc.structure.table_of_contents( content )
+	local content = pandoc.read( str, 'markdown-yaml_metadata_block')
+	return content
+	-- return pandoc.structure.table_of_contents( content )
 end
 
 function foldable (text) return pandoc.RawInline('html', [[

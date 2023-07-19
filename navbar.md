@@ -23,7 +23,7 @@
 	- [Power Generation]( powergeneration.html )
 	- [Power Storage]( powerstorage.html )
 	- [Power Distribution]( powerdistribution.html )
-	- [Uncategorized]( uncatagorizedconcepts.html )
+	- [Uncategorized]( uncategorizedconcepts.html )
 
 - Blueprints
 	- [Useful Circuits]( usefulcircuits.html )
