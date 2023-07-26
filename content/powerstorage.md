@@ -91,9 +91,13 @@ Cons:
 
 ---
 
-# KorrektCore
+# The Kore
 
-A different kind of inline, will be added soon.
+This is an Inline backup, but different. The battery still powers the circuit all of the time until the battery gets destroyed. When that happens, the circuit will switch over to main power. 
+ 
+![Alt text](images/WLmFo7p.png)
+
+---
 
 # OR/Blocker 
 
