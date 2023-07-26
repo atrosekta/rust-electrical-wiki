@@ -394,6 +394,8 @@ The Nih Capacitor was first established by Nih, with assistance from SwiftCoyote
 A Capacitor is a set of components that accumulate power, much like rechargeable batteries.
 However, the method for assessing the amount of stored power differs. 
 
+![](images/batteryui2.png)
+
 For batteries, the stored power is represented as `Capacity`,  
 measured in Rust Watt Minutes (rWm).
 
@@ -403,6 +405,8 @@ But within the Capacitor, this figure **DOES NOT indicate the amount of power th
 Rather, this figure is what we call `Wire Capacity`, symbolized as `Np`.
 For instance, in the image below, the displayed `6,492,076` is **NOT** the amount of power available.
 Instead, it represents `6,492,076Np` of Wire Capacity. 
+
+![Alt text](images/capacitor2.png)
 
 Before going into the construction and operation of a Capacitor,
 it’s essential to understand the math conversions between Rust Watt Minutes (rWm) and Wire Capacity (Np).  
