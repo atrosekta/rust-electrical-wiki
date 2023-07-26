@@ -39,7 +39,7 @@ something called Power Consumption. Read about it in [Battery Active Usage vs Ac
 
 # Battery Backup
 
-There are 2 types of battery backup systems. There are Inline Backups and there are Bypass Backups. Inline backups include the Inline and the KorrektCore. Bypass backups include the OR/Blocker and the Nih Core. Deciding which backup to use really comes down to preference. They each have their own pros and cons and some may argue that 1 is better than another in different situations. For example, if you only need to power a few turrets and are in a hurry, you might find the simplicity of the Inline backup works for you. Maybe you are working with 300rW to 1000rW and a dozen Windmills, you might find the efficiency of the Nih Core is preferred. At the end of the day, as long as the battery backup you go with, works when you need it to work, that was the right backup to choose.
+There are 2 types of battery backup systems. There are Inline Backups and there are Bypass Backups. Inline backups include the Inline and The Kore. Bypass backups include the OR/Blocker and the Nih Core. Deciding which backup to use really comes down to preference. They each have their own pros and cons and some may argue that 1 is better than another in different situations. For example, if you only need to power a few turrets and are in a hurry, you might find the simplicity of the Inline backup works for you. Maybe you are working with 300rW to 1000rW and a dozen Windmills, you might find the efficiency of the Nih Core is preferred. At the end of the day, as long as the battery backup you go with, works when you need it to work, that was the right backup to choose.
 
 ---
 

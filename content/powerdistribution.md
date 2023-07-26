@@ -1,14 +1,6 @@
 # Power Distribution
 
-Power distribution is one of the most important things to know and
-understand when it comes to electricity.  
-There are many ways to produce, store and distribute power for your circuits.  
-This section breaks down the components used for distribution and the different types of distribution circuits known as a power bus.  
-It covers the different types of battery backup systems.  
-It covers the difference between the amount of power a circuit consumes versus what a battery thinks it is consuming, aka active usage.  
-This section also covers the theory behind circuit and location centralization, decentralization and hybridization.  
-It covers the game mechanics behind circuit delay and power flow as well
-as the error message, short circuit/max depth.
+
 
 ---
 
