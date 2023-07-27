@@ -62,18 +62,25 @@ Despawn Time        | 60 minutes
 
 Notes:
 
-- There are 2 modes, Peacekeeper and Attack All.
-- Enable and disable Peacekeeper mode by looking at the turret and holding Use(`E`). In peace keeper mode it will only attack a player if they become aggressive. In Attack All mode it will kill anyone not on its authorization list.
-- Add people to the authorization list by looking at the turret and holding Use(`E`) and accessing the user interface.
-- **Has Target** will pulse out 1rW if it takes damage and will release a constant 1rW if it locks a target.
-- **Low Ammo** will start to output 1rW when there is 50 ammo or less. When it has no more ammo it will stop outputting power.
-- **No Ammo** will output 1rW constantly when there is no more ammo.
+- A player must be authorized to open the menu by looking at it and holding Use(`E`). There are 7 options to choose from.
+    - `Open -` This opens the inventory where guns and ammo can be placed. This includes all weapons that fire Pistol Bullets, 5.56 Rifle Ammo or 12 Gauge Buckshot as well as the Nailgun and Trumpet. 
+    - `Peacekeeper mode -` It will never attack an authorized player. It won't attack an unauthorized player unless they become aggressive. This mode also disables players from being able to control them from a Computer Station or the Rust+ app.
+    - `Attack All -`  Is the default mode and can only be selected if the turret was placed into Peacekeeper mode. This mode is required for remote control from a Computer Station.
+    - `Rotate -` Rotates the turret by 180 degrees.
+    - `Authorize friend -` Search or select a player to authorize them. Once authorized, the turret will never shoot them.
+    - `Clear Authorization List -` Removes all players from being authorized.
+    - `Deauthorize -` Removes the player selecting it from being authorized.
+    - `Set ID -` Naming the turret allows for player control. Give the turret a name, then enter that name into a Computer Station and take control. Move with the mouse and left click to shoot. Anyone can add the ID to any computer station and take control. Make the ID something other won’t guess and restrict access to any Computer Station with these IDs to trusted individuals only. 
+- There are 3 outputs:
+    - `Has Target` will pulse out 1rW if the turret takes damage and will release a constant 1rW if it locks a target.
+    - `Low Ammo` will start to output 1rW when there is 50 ammo or less. When it has no more ammo it will stop outputting power.
+    - `No Ammo` will output 1rW constantly when there is no ammo.
 - Range is 30 meters or 10 square foundations.
-- The turret has just over a 180 degree detection arch.
+- When controlled by a player, the visual range is approximately 21 square foundations or 63 meters. 
+- The turret has a 180 degree detection arch.
 - Must be placed on flat surfaces.
 - Try to place them in a way they cannot be baited and drained.
-- They can shoot through 2 layers of Chainlink Fence.
-
+- They can shoot through 2 layers of Chainlink Fence. 
 
 ---
 

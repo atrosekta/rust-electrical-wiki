@@ -86,12 +86,12 @@ Watching where the Sun rises and sets on the horizon can give a player an idea o
 
 If a pair of panels are placed so each could see either the East or West horizons, the following could reasonably be expected, within a reasonable margin or error.
 
-The Winter Solstice (June 20 2024):   
+**The Winter Solstice (June 20 2024):**   
 - Solar Panels facing East can start to capture the Sun around 7:10am. Power levels will slowly increase until around 9:05am when they will be producing a full 20rW. This lasts until about 1:30pm. Around this time, it will slowly start decreasing power production until around 3:45pm when it stops.  
 - The panel facing West can start to capture the Sun around 11:40am. A few minutes later at around 1:45pm, it will start producing a full 20rW. Around 6:15pm the panel will start decreasing the amount of power produced until about 8:15pm when it stops.  
 - During the winter solstice, 2 combined panels, 1 facing East and 1 facing West, can collect around 940rWm of power.
 
-The Summer Solstice (December 21 2024):  
+**The Summer Solstice (December 21 2024):**  
 - Solar Panels facing East can start to capture the Sun around 6:30am. Power levels will slowly increase until around 8:20am when they will be producing a full 20rW. This lasts until about 2:30pm. Around this time, it will slowly start decreasing power production until around 4:15pm when it stops.
 - The panel facing West can start to capture the Sun around 11am. A few minutes later at around 1pm, it will start producing a full 20rW. Around 7pm the panel will start decreasing the amount of power produced until about 9pm when it stops.
 - During the summer solstice, 2 combined panels, 1 facing East and 1 facing West, can collect around 1075rWm of power.
