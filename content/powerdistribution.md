@@ -328,40 +328,42 @@ We have covered how power flow is affected by components with multiple outputs. 
 The left side shows the order of operation when switching from battery backup to windmill power.  
 `Main Power:`  
 
-    1. The amount of power coming into the Nih Core rises above 106.  
-    2. Power is sent out Power Out to the next Electrical Branch.  
-    3. Power coming out of Branch Out to the Memory Cell rises to its set amount.  
-    4. Power is sent out Power Out to the OR Switch.  
-    5. Power is sent out Branch Out to the Splitter.  
-    6. Power is sent out to the Large Battery.  
-    7. Power is sent out to Set on the Memory Cell.  
-    8. Power is sent out the Memory Cells Output.  
-    9. Power is sent out to Reset on the Memory Cell.  
-    10. Power is sent out to Block Passthrough on the Blocker.  
-    11. Power stops coming out of Inverted Output on the Memory Cell.  
-    12. Power stops coming out of Power Out on the Blocker.  
-    13.Power from the Memory Cells Output is now the power passing through the OR Switch.  
-    14. The battery enters its Off state.  
+
+**1 -** The amount of power coming into the Nih Core rises above 106.  
+**2 -** Power is sent out Power Out to the next Electrical Branch.  
+**3 -** Power coming out of Branch Out to the Memory Cell rises to its set amount.  
+**4 -** Power is sent out Power Out to the OR Switch.  
+**5 -** Power is sent out Branch Out to the Splitter.  
+**6 -** Power is sent out to the Large Battery.  
+**7 -** Power is sent out to Set on the Memory Cell.  
+**8 -** Power is sent out the Memory Cells Output.  
+**9 -** Power is sent out to Reset on the Memory Cell.  
+**10 -** Power is sent out to Block Passthrough on the Blocker.  
+**11 -** Power stops coming out of Inverted Output on the Memory Cell.  
+**12 -** Power stops coming out of Power Out on the Blocker.  
+**13 -** Power from the Memory Cells Output is now the power passing through the OR   Switch.  
+**14 -** The battery enters its Off state.  
 
 
 The right side is the order of operation when switching from windmill power on to battery backup.  
+
 `Battery Power:`  
 
-    1. The amount of power coming into the Nih Core drops below 106 triggering the flip but must drop below 101 for it to look like the example pictured.  
-    2. Power stops coming out of Branch Out to the next Electrical Branch.  
-    3. Power coming out of Branch Out to the Memory Cell drops below its set amount.  
-    4. Power stops coming out of Power Out to the OR Switch.  
-    5. Power stops coming out of Branch Out to the Splitter.  
-    6. Power stops coming out of the OR Switch to the Large Battery.  
-    7. Power stops going to Set on the Memory Cell.  
-    8. Power stops coming out of the Memory Cells Output.  
-    9. Power stops going to Reset on the Memory Cell.  
-    10. Power stops going to Block Passthrough on the Blocker.  
-    11. Power is sent out the Memory Cells Inverted Output.  
-    12. The battery enters its On state and sends power out to the Blocker.  
-    13. Power stops coming out of the OR Switch.  
-    14. Power is sent out the OR Switch to the Large Battery.  
-    15. Power is sent out the Blocker to the OR Switch.  
-    16. Power is sent out the OR Switch.  
+**1 -** The amount of power coming into the Nih Core drops below 106 triggering the flip but must drop below 101 for it to look like the example pictured.  
+**2 -** Power stops coming out of Branch Out to the next Electrical Branch.  
+**3 -** Power coming out of Branch Out to the Memory Cell drops below its set amount.  
+**4 -** Power stops coming out of Power Out to the OR Switch.  
+**5 -** Power stops coming out of Branch Out to the Splitter.  
+**6 -** Power stops coming out of the OR Switch to the Large Battery.  
+**7 -** Power stops going to Set on the Memory Cell.  
+**8 -** Power stops coming out of the Memory Cells Output.  
+**9 -** Power stops going to Reset on the Memory Cell.  
+**10 -** Power stops going to Block Passthrough on the Blocker.  
+**11 -** Power is sent out the Memory Cells Inverted Output.  
+**12 -** The battery enters its On state and sends power out to the Blocker.  
+**13 -** Power stops coming out of the OR Switch.  
+**14 -** Power is sent out the OR Switch to the Large Battery.  
+**15 -** Power is sent out the Blocker to the OR Switch.  
+**16 -** Power is sent out the OR Switch.  
 
 That wraps up this section. I hope I have explained things in a way that makes sense. Please comment on the [Google Doc](https://docs.google.com/documentd19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing) if you have any suggestions or questions.

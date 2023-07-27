@@ -2,7 +2,7 @@
 # Industrial
 
 **What is the industrial system?**  
-The industrial system is a series of pipes that can connect many different containers together for the purpose of automating the movement, crafting and smelting of items.
+The industrial system is a series of pipes that can connect many different containers together for the purpose of automating the movement, crafting and smelting of items. Have a look at the [Industrial Concepts]( industrialconcepts.html ) section where there are breakdowns of different systems using these components. 
 
 ---
 
