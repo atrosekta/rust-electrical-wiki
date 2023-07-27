@@ -99,7 +99,7 @@ Notes:
 - To control the camera when viewing, use your mouse to pan and tilt.
   Left click will zoom.
 - Anyone can add any camera to any Computer Station.
-- Add the ID to the Rust+ app to view the camera from outside the game.
+- Add the ID to the `Rust+` app to view the camera from outside the game. The player must disconnect from the server before remote access is allowed.
 - The game has pre-placed cameras at some of the monuments, check the
   current [Camera List](uncategorizedconcepts.html##-Monuments-Camera-Codes).
 
@@ -131,7 +131,7 @@ Notes:
   add the ID for the camera. Select the camera from the list on the left
   and begin viewing.
 - Anyone can add any camera to any Computer Station.
-- Add the ID to the Rust+ app to view the camera from outside the game.
+- Add the ID to the `Rust+` app to view the camera from outside the game. The player must disconnect from the server before remote access is allowed.
 - The game has pre-placed cameras at some of the monuments, check the
   current [Camera List](uncategorizedconcepts.html##-Monuments-Camera-Codes).
 
@@ -288,6 +288,7 @@ Notes:
 - Mount a Computer Station and in the bottom left, add the ID for the Drone.
 - Select the ID from the list and start flying.
 - Use W, A, S, D to move. Use the mouse to look around. Shift and Ctrl to go up and down.
+- Add the ID to the `Rust+` app to control the Drone from outside the game. The player must disconnect from the server before remote access is allowed.
 - It is damaged easily from impacts.
 - Logging out of the drone mid flight will cause it to fall to the ground.
 - It has a limited range of around 500 meters or 3.33 grid squares.

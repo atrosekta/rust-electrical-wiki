@@ -77,7 +77,7 @@ Notes:
     - `No Ammo` will output 1rW constantly when there is no ammo.
 - Range is 30 meters or 10 square foundations.
 - When controlled by a player from a Computer Station, the visual range is approximately 21 square foundations or 63 meters. 
-- Can be controlled from the `Rust+` app. Go to the camera area in the app and add the ID. The turret will be able to control the turret as long as they are not connected to the server. In other words, the player must disconnect from the server before they can take control.
+- Add the ID to the `Rust+` app to control the turret from outside the game. The player must disconnect from the server before remote access is allowed.
 - The turret has a 180 degree detection arch.
 - Must be placed on flat surfaces.
 - Try to place them in a way they cannot be baited and drained.
