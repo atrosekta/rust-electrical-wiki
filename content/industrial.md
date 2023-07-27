@@ -24,7 +24,7 @@ Industrial Inputs/Outputs | Industrial Input / Industrial Output
 Active Usage        | 1
 Power Consumption   | 1rw
 Power Output        | Input power minus 1
-Transfer Rate       | Up to 60 items per stack from 12 stacks.
+Transfer Rate       | Up to 60 items per stack from 12 stacks per 5 seconds.
 Despawn Time        | 5 minutes
 
 Notes:
