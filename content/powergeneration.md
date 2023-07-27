@@ -78,8 +78,10 @@ In the evenings, Westward facinging panels on the East side of the map will have
 
 ![](images/SwiftMountain_Export_3.png)
 
-Only an admin can get the exact date and time. This is what players cannot see.
+Only an admin can get the exact date and time. This is what players cannot see.  
+
 ![](images/admintool.png)  
+
 Watching where the Sun rises and sets on the horizon can give a player an idea of the time of year. Some modded servers will have a plugin that gives players a clock and might show the sun up and down times. Some might even show the date.
 
 If a pair of panels are placed so each could see either the East or West horizons, the following could reasonably be expected, within a reasonable margin or error.

@@ -78,8 +78,8 @@ Notes:
 |-|---|  
 Item ID             |  -2049214035
 Description         | Passing power when a player stands on it
-Crafting Recipe     | 150 Wood/1 Spring/1 Gear
-Recycles Into       | 75 Wood/50% - 1 Spring/50% - 1 Gear
+Crafting Recipe     | 150 Wood, 1 Spring, 1 Gear
+Recycles Into       | 75 Wood, 50% 1 Spring, 50% 1 Gear
 Stack Size          | 1
 Workbench Required  | Level 1
 Research Table Cost | 20 Scrap

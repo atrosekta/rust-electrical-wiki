@@ -43,7 +43,7 @@ If the server has it enabled, turn on Wire Slack by holding the Wire Tool  and p
 |-|---|  
 Item ID            | -144417939
 Description        | Connecting electrical components
-Crafting Recipe    | 2 HQM
+Crafting Recipe    | 2 High Quality Metal
 Workbench Required | Level 1
 Despawn Time       | 5 minutes
 
@@ -69,7 +69,7 @@ Notes:
 |-|---|  
 Item ID            | 363163265
 Description        | Connecting fluid components
-Crafting Recipe    | 2 HQM
+Crafting Recipe    | 2 High Quality Metal
 Workbench Required | Level 1
 Despawn Time       | 5 minutes
 
@@ -92,7 +92,7 @@ Notes:
 |-|---|  
 Item ID            | -144513264
 Description        | Connecting industrial components
-Crafting Recipe    | 2 HQM
+Crafting Recipe    | 2 High Quality Metal
 Workbench Required | Level 1
 Despawn Time       | 5 minutes
 

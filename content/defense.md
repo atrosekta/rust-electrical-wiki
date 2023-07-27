@@ -11,7 +11,7 @@ These components are designed to kill players.
 |-|---|  
 Item ID           | -1009359066
 Description       | Defends against aerial threats
-Recycles Into     | 25 HQM
+Recycles Into     | 25 High Quality Metal
 Stack Size        | 1
 Hit Points        | 1000
 Where To Buy      | Outpost for 500 Scrap
@@ -46,8 +46,8 @@ Notes:
 |-|---|  
 Item ID             | -2139580305
 Description         | A automated sentry turret to neutralize targets
-Crafting Recipe     | 10 HQM, 1 CCTV Camera, 1 Targeting Computer
-Recycles Into       | 5 HQM, 50% 1 CCTV Camera, 50% 1 Targeting Computer
+Crafting Recipe     | 10 High Quality Metal, 1 CCTV Camera, 1 Targeting Computer
+Recycles Into       | 5 High Quality Metal, 50% 1 CCTV Camera, 50% 1 Targeting Computer
 Stack Size          | 1
 Workbench Required  | Level 2
 Research Table Cost | 500 Scrap
@@ -83,8 +83,8 @@ Notes:
 |-|---|  
 Item ID             | 1371909803
 Description         | An electrical trap that zaps nearby players
-Crafting Recipe     | 3 HQM, 1 Tech Trash
-Recycles Into       | 2 HQM, 50% 1Tech Trash
+Crafting Recipe     | 3 High Quality Metal, 1 Tech Trash
+Recycles Into       | 2 High Quality Metal, 50% 1Tech Trash
 Stack Size          | 3
 Workbench Required  | Level 2
 Research Table Cost | 20 Scrap

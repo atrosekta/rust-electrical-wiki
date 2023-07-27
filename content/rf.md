@@ -79,8 +79,8 @@ Notes:
 |-|---|  
 Item ID             |  596469572
 Description         | Transmitting a RF signal from your hand
-Crafting Recipe     | 5 HQM, 1 Tech Trash
-Recycles Into       | 3 HQM, 50% 1 Tech Trash
+Crafting Recipe     | 5 High Quality Metal, 1 Tech Trash
+Recycles Into       | 3 High Quality Metal, 50% 1 Tech Trash
 Stack Size          | 1
 Workbench Required  | Level 2
 Research Table Cost | 20 Scrap
