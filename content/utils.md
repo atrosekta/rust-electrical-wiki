@@ -98,7 +98,8 @@ Notes:
   and begin viewing.
 - To control the camera when viewing, use your mouse to pan and tilt.
   Left click will zoom.
-- Anyone can add any camera to any computer station.
+- Anyone can add any camera to any Computer Station.
+- Add the ID to the Rust+ app to view the camera from outside the game.
 - The game has pre-placed cameras at some of the monuments, check the
   current [Camera List](uncategorizedconcepts.html##-Monuments-Camera-Codes).
 
@@ -129,7 +130,8 @@ Notes:
 - View cameras by mounting a Computer Station and in the bottom left,
   add the ID for the camera. Select the camera from the list on the left
   and begin viewing.
-- Anyone can add any camera to any computer station.
+- Anyone can add any camera to any Computer Station.
+- Add the ID to the Rust+ app to view the camera from outside the game.
 - The game has pre-placed cameras at some of the monuments, check the
   current [Camera List](uncategorizedconcepts.html##-Monuments-Camera-Codes).
 
@@ -313,9 +315,9 @@ Despawn Time        | 20 minutes
 
 Notes:
 
-- Use the Computer Station to view CCTV Camera, control the PTZ Camera or fly the Drone.
+- Use the Computer Station to view CCTV Camera, control the PTZ Camera, fly the Drone or control an Auto Turret.
 - Mount a Computer Station and in the bottom left, add an ID for a camera or drone. Select the ID from the list on the left and begin viewing or operating.
-- Anyone can add any camera to any computer station.
+- Anyone can add any camera or turret to any computer station.
 - The maximum number of cameras you can add to a computer is 20.
 - The game has pre-placed cameras at some of the monuments, here is the
   current list.
