@@ -87,6 +87,10 @@ h1 > img {
 	width: 4em;
 	max-width:4em;
 }
+h4 {
+	color: var(--fg2);
+	padding-top:2em;
+}
 
 /* LISTS */
 ul {

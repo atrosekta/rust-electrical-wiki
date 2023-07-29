@@ -326,7 +326,8 @@ We have covered how power flow is affected by components with multiple outputs. 
 ![](images/nihcorepowbat2.png)
 
 The left side shows the order of operation when switching from battery backup to windmill power.  
-`Main Power:`  
+
+#### Main Power:  
 
 1.  The amount of power coming into the Nih Core rises above 106.  
 2.  Power is sent out Power Out to the next Electrical Branch.  
@@ -345,7 +346,7 @@ The left side shows the order of operation when switching from battery backup to
 
 The right side is the order of operation when switching from windmill power on to battery backup.  
 
-`Battery Power:`  
+#### Battery Power:  
 
 1.  The amount of power coming into the Nih Core drops below 106 triggering
     the flip but must drop below 101 for it to look like the example pictured.  
