@@ -64,6 +64,9 @@ hr {
 	background-color: var(--fg2);
 	height: 2px;
 }
+hr + hr {
+	margin: -2em 0 6em;
+}
 h1:first-of-type {
 	color: var(--fg2);
 	font-size : 3rem;
@@ -84,21 +87,29 @@ h1 > img {
 	width: 4em;
 	max-width:4em;
 }
+h4 {
+	color: var(--fg2);
+	padding-top:2em;
+}
 
 /* LISTS */
 ul {
 	padding: 0 1ex;
 }
-li {
+ul li {
 	padding: 0.4em 2ex;
 	font-size: 1em;
 	list-style: none;
 }
-li::before {
+ul li::before {
 	content: "• ";
 	margin-left : -2.5ex;
 	/* margin-left : 0; */
 	color: var(--fg2);
+}
+ol li::marker {
+	color: var(--fg2);
+	font-weight:bold;
 }
 
 /* TABLES */
