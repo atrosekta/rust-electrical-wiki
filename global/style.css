@@ -92,16 +92,20 @@ h1 > img {
 ul {
 	padding: 0 1ex;
 }
-li {
+ul li {
 	padding: 0.4em 2ex;
 	font-size: 1em;
 	list-style: none;
 }
-li::before {
+ul li::before {
 	content: "• ";
 	margin-left : -2.5ex;
 	/* margin-left : 0; */
 	color: var(--fg2);
+}
+ol li::marker {
+	color: var(--fg2);
+	font-weight:bold;
 }
 
 /* TABLES */
