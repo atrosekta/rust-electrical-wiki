@@ -97,6 +97,8 @@ Notes:
 
 # Cable Tunnel (NOT CRAFTABLE)![](images/electric.cabletunnel.png)
 
+| | |  
+|-|---|  
 Item ID           | 1835946060
 Description       | Allows wires to pass through wall
 Crafting Recipe   | Cannot be crafted
