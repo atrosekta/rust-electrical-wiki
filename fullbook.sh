@@ -11,6 +11,7 @@ for file in $( grep -o -P '(?<=\().*(?=\))' navbar.md \
 	| awk '{gsub("html","md"); print "content/" $1}' )
 do
 	echo -e "$(<$file)\n"
+	echo -e "---\n"
 done
 
 } > content/fullbook.md

@@ -64,6 +64,9 @@ hr {
 	background-color: var(--fg2);
 	height: 2px;
 }
+hr + hr {
+	margin: -2em 0 6em;
+}
 h1:first-of-type {
 	color: var(--fg2);
 	font-size : 3rem;
