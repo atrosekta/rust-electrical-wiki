@@ -1,6 +1,6 @@
 # The RUST Electrical Handbook
 
-*you are the []{#visitorcount}th visitor !*
+*You are the []{#visitorcount}th visitor !*
 
 ---
 
@@ -31,6 +31,6 @@ Its made in a way so someone could edit the website content without needing
 to know html/css/javascript. All the content is writen in markdown format
 (similar to discord messages: \**italic*\*, \*\***bold**\*\*, etc...)
 For now, I havent written something that explains how to do it but you can
-ask @3YE#6593 on Discord for more information.
+ask @3YE on Discord for more information.
 
 ---
