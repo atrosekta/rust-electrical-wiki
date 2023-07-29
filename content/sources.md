@@ -14,7 +14,7 @@ There is no way around this. If electrical circuits are going to function, power
 Item ID           |  -295829489
 Description       | Providing a constant 100rW per Power Output
 Crafting Recipe   | Cannot be crafted
-Recycles Into     | 13 HQM/2 Gears/1 Metal Pipe/2 Fuse
+Recycles Into     | 13 High Quality Metal, 2 Gears, 1 Metal Pipe, 2 Fuse
 Stack Size        | 1
 Hit Points        | 1000
 Outputs           | Power Output 1, Power Output 2, Power Output 3
@@ -37,8 +37,8 @@ Notes:
 |-|--|
 Item ID             | -1819763926
 Description         | Generating electricity from the wind
-Crafting Recipe     | 500 Wood/10 HQM/3 Gears/3 Sheet Metal
-Recycles Into       | 250 Wood/5 HQM/2 Gears/2 Sheet Metal
+Crafting Recipe     | 500 Wood, 10 High Quality Metal, 3 Gears, 3 Sheet Meta, 
+Recycles Into       | 250 Wood, 5 High Quality Metal, 2 Gears, 2 Sheet Meta, 
 Stack Size          | 1
 Workbench Required  | Level 2
 Research Table Cost | 125 Scrap
@@ -74,9 +74,9 @@ Notes:
 |-|---|  
 Item ID             | 2090395347
 Description         | Generating electricity from the Sun
-Crafting Recipe     | 5 HQM/1 Tech Trash
-Recycles Into       | 3 HQM/50% - 1 Tech Trash
-Stack Size          | 3
+Crafting Recipe     | 5 High Quality Metal, 1 Tech Trash
+Recycles Into       | 3 High Quality Metal, 50% 1 Tech Trash
+Sack Size          | 3
 Workbench Required  | Level 1
 Research Table Cost | 75 Scrap
 Hit Points          | 100
@@ -111,8 +111,8 @@ Notes:
 |-|---|  
 Item ID             | 1849887541
 Description         | Generating electricity from Low Grade Fuel
-Crafting Recipe     | 5 HQM/2 Gears
-Recycles Into       | 3 HQM/1 Gears
+Crafting Recipe     | 5 High Quality Metal, 2 Gears
+Recycles Into       | 3 High Quality Metal, 1 Gear
 Stack Size          | 1
 Workbench Required  | Level 2
 Research Table Cost | 75 Scrap
@@ -125,7 +125,6 @@ Fuel Consumption    | 500 Low Grade Fuel/2hr
 Power Output        | 40rW
 Active Usage        | 0
 Despawn Time        | 20 minutes
-Decay Time          |
 
 Notes:
 
@@ -135,7 +134,7 @@ Notes:
 - The last input to receive power is the function that is activated,
   even if power is still being applied to the opposite.
 - They must be placed on floors, foundations or the ground.
-- They still produce max power when damaged
+- They still produce max power when damaged.
 - They can be picked up with a hammer but lose 20% health.
 - If a battery is feeding power to either of the inputs, components
   connected to Power Out will register an active usage on the battery.

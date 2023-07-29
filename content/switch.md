@@ -72,7 +72,7 @@ Notes:
 Item ID             |  -1736356576
 Description         | Target practice and fun
 Crafting Recipe     | 100 Wood, 150 Metal Fragments, 1 Gear
-Recycles Into       | 50 Wood/75 Metal Fragments/50% - 1 Gear
+Recycles Into       | 50 Wood, 75 Metal Fragments 50% 1 Gear
 Stack Size          | 1
 Workbench Required  | Level 1
 Research Table Cost | 20 Scrap

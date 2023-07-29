@@ -39,7 +39,7 @@ something called Power Consumption. Read about it in [Battery Active Usage vs Ac
 
 # Battery Backup
 
-There are 2 types of battery backup systems. There are Inline Backups and there are Bypass Backups. Inline backups include the Inline and the KorrektCore. Bypass backups include the OR/Blocker and the Nih Core. Deciding which backup to use really comes down to preference. They each have their own pros and cons and some may argue that 1 is better than another in different situations. For example, if you only need to power a few turrets and are in a hurry, you might find the simplicity of the Inline backup works for you. Maybe you are working with 300rW to 1000rW and a dozen Windmills, you might find the efficiency of the Nih Core is preferred. At the end of the day, as long as the battery backup you go with, works when you need it to work, that was the right backup to choose.
+There are 2 types of battery backup systems. There are Inline Backups and there are Bypass Backups. Inline backups include the Inline and The Kore. Bypass backups include the OR/Blocker and the Nih Core. Deciding which backup to use really comes down to preference. They each have their own pros and cons and some may argue that 1 is better than another in different situations. For example, if you only need to power a few turrets and are in a hurry, you might find the simplicity of the Inline backup works for you. Maybe you are working with 300rW to 1000rW and a dozen Windmills, you might find the efficiency of the Nih Core is preferred. At the end of the day, as long as the battery backup you go with, works when you need it to work, that was the right backup to choose.
 
 ---
 
@@ -91,9 +91,13 @@ Cons:
 
 ---
 
-# KorrektCore
+# The Kore
 
-A different kind of inline, will be added soon.
+This is an Inline backup, but different. The battery still powers the circuit all of the time until the battery gets destroyed. When that happens, the circuit will switch over to main power. 
+ 
+![Alt text](images/WLmFo7p.png)
+
+---
 
 # OR/Blocker 
 
@@ -394,6 +398,8 @@ The Nih Capacitor was first established by Nih, with assistance from SwiftCoyote
 A Capacitor is a set of components that accumulate power, much like rechargeable batteries.
 However, the method for assessing the amount of stored power differs. 
 
+![](images/batteryui2.png)
+
 For batteries, the stored power is represented as `Capacity`,  
 measured in Rust Watt Minutes (rWm).
 
@@ -403,6 +409,8 @@ But within the Capacitor, this figure **DOES NOT indicate the amount of power th
 Rather, this figure is what we call `Wire Capacity`, symbolized as `Np`.
 For instance, in the image below, the displayed `6,492,076` is **NOT** the amount of power available.
 Instead, it represents `6,492,076Np` of Wire Capacity. 
+
+![Alt text](images/capacitor2.png)
 
 Before going into the construction and operation of a Capacitor,
 it’s essential to understand the math conversions between Rust Watt Minutes (rWm) and Wire Capacity (Np).  
@@ -477,3 +485,5 @@ This will clarify misconceptions such as the notion of ‘infinite power’ and 
 Now, some of the advantages and benefits of the Capacitor
 
 ---
+
+That wraps up this section. I hope I have explained things in a way that makes sense. Please comment on the [Google Doc](https://docs.google.com/documentd19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing) if you have any suggestions or questions.

@@ -13,8 +13,8 @@ These components can be paired with the Rust+ app and adds a way to interact wit
 |-|---|  
 Item ID             |  1149964039
 Description         | Monitoring Tool Cupboards, Large Storage Boxes and Vending Machines
-Crafting Recipe     | 3 HQM/1 Tech Trash
-Recycles Into       | 2 HQM/50% - 1 Tech Trash
+Crafting Recipe     | 3 High Quality Metal, 1 Tech Trash
+Recycles Into       | 2 High Quality Metal, 50% 1 Tech Trash
 Stack Size          | 1
 Workbench Required  | Level 2
 Research Table Cost | 75 Scrap
@@ -41,8 +41,8 @@ Notes:
 |-|---|  
 Item ID             |  -695978112
 Description         | Sends a notification to your phone
-Crafting Recipe     | 3 HQM, 1 Tech Trash
-Recycles Into       | 2 HQM, 50% 1 Tech Trash
+Crafting Recipe     | 3 High Quality Metal, 1 Tech Trash
+Recycles Into       | 2 High Quality Metal, 50% 1 Tech Trash
 Stack Size          | 5
 Workbench Required  | Level 2
 Research Table Cost | 75 Scrap
@@ -71,8 +71,8 @@ Notes:
 |-|---|  
 Item ID             |  988652725
 Description         | A switch requiring TC authorization
-Crafting Recipe     | 3 HQM, 1 Tech Trash
-Recycles Into       | 2 HQM, 50% 1 Tech Trash
+Crafting Recipe     | 3 High Quality Metal, 1 Tech Trash
+Recycles Into       | 2 High Quality Metal, 50% 1 Tech Trash
 Stack Size          | 5
 Workbench Required  | Level 2
 Research Table Cost | 20 Scrap

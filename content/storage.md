@@ -11,8 +11,8 @@ Storing power for use at a later time is a great way at preventing circuits from
 |-|---|  
 Item ID             | -692338819
 Description         | Storing electricity
-Crafting Recipe     | 5 HQM
-Recycles Into       | 3 HQM
+Crafting Recipe     | 5 High Quality Metal
+Recycles Into       | 3 High Quality Metal
 Stack Size          | 1
 Workbench Required  | Level 1
 Research Table Cost | 20 Scrap
@@ -41,8 +41,8 @@ Notes:
 |-|---|  
 Item ID             | 2023888403
 Description         | Storing electricity
-Crafting Recipe     | 5 HQM/1 Tech Trash
-Recycles Into       | 3 HQM
+Crafting Recipe     | 5 High Quality Metal, 1 Tech Trash
+Recycles Into       | 3 High Quality Metal, 50% 1 Tech Trash
 Stack Size          | 1
 Workbench Required  | Level 2
 Research Table Cost | 75 Scrap
@@ -55,7 +55,6 @@ Power Capacity      | 9000rWM
 Power Output/Time   | 50rW/3hrs
 Active Usage        | 200
 Despawn Time        | 20 minutes
-Decay Time          |
 
 Notes:
 
@@ -72,8 +71,8 @@ Notes:
 |-|---|  
 Item ID             | 553270375
 Description         | Storing electricity
-Crafting Recipe     | 10 HQM/2 Tech Trash
-Recycles Into       | 5 HQM/1 Tech Trash
+Crafting Recipe     | 10 High Quality Metal/2 Tech Trash
+Recycles Into       | 5 High Quality Metal/1 Tech Trash
 Stack Size          | 1
 Workbench Required  | Level 2
 Research Table Cost | 75 Scrap
@@ -85,7 +84,6 @@ Power Capacity      | 24000rWM
 Power Output/Time   | 100rW/4hrs
 Active Usage        | 400
 Despawn Time        | 20 minutes
-Decay Time          |
 
 Notes:
 

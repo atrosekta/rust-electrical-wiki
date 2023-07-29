@@ -1,7 +1,5 @@
 # Getting Started
 
-
-
 # The Structure of a Base Circuit
 
 All circuits for a base follow the same basic structure. It doesn't matter if the base has 1 circuit or more, they all contain 4 main parts with an optional 5th part that does not have a static location. We have the Power Source, Battery Backup, Distribution, End Devices/Circuits and the 5th, Destruction Detection. Using the following flow chart we can help illustrate this.
@@ -368,3 +366,13 @@ This battery backup is natively a centralized system but here, we have decentral
 Replacing the Splitter with an Electrical Branch allows you more control over what circuit is the first to lose power and kick on to battery vs the last to kick over to battery. On the Electrical Branch, the output Branch Out lets you dedicate a specific amount of power to a circuit while the output Power Out sends out the remaining amount. As power falls, the circuit that is connected to Power Out will be the first to lose main power and switch over to battery backup before the circuit connected to Branch Out switches over to battery backup.
 
 # Distribution
+
+Needs explaining, but for now, it is the ability to supply an end device or circuit with power from more than 1 power source and/or battery backup. It is not recommended to do this with a battery backup, just use a proper secondary backup instead. 
+
+Centralized distribution is how 99.9% of circuits are wires. All end devices or circuits are fed from a single source of power using a single path. 
+
+Decentralized distribution at its simplest is using an OR Switch to send power to an end device or circuit from 2 or more power sources. 
+
+---
+
+That wraps up this section. I hope I have explained things in a way that makes sense. Please comment on the [Google Doc](https://docs.google.com/documentd19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing) if you have any suggestions or questions.

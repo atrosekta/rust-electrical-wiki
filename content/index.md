@@ -10,7 +10,7 @@ but any info still valid in game wont be removed.
 
 All of the information you find here is comming from a [Google Doc](
 https://docs.google.com/document/d/19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing
-) by@SwiftCoyote,
+) by @SwiftCoyote,
 so thanks to him and all the people in the Rustricity Workshop
 community that contribute to it! The Google Doc will always be a little more update then this website as the website needs to be rebuilt after each change.   
 

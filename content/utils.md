@@ -98,7 +98,8 @@ Notes:
   and begin viewing.
 - To control the camera when viewing, use your mouse to pan and tilt.
   Left click will zoom.
-- Anyone can add any camera to any computer station.
+- Anyone can add any camera to any Computer Station.
+- Add the ID to the `Rust+` app to view the camera from outside the game. The player must disconnect from the server before remote access is allowed.
 - The game has pre-placed cameras at some of the monuments, check the
   current [Camera List](uncategorizedconcepts.html##-Monuments-Camera-Codes).
 
@@ -110,7 +111,7 @@ Notes:
 |-|---|  
 Item ID           | 634478325
 Description       | A camera to view from a Computer Station
-Recycles Into     | 2 HQM, 2 Tech Trash
+Recycles Into     | 2 High Quality Metal, 2 Tech Trash
 Stack Size        | 64
 Hit Points        | 150
 Where To Find     | APC Crate, Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Helicopter Crate, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Sunken Crate, Tool Box, Treasure Box, Tunnel Dweller, Underwater Dweller, Underwater Lab Elite Crate, Underwater Lab Tech Crate, Underwater Lab Tool Box, Underwater Lab Yellow Crate
@@ -129,7 +130,8 @@ Notes:
 - View cameras by mounting a Computer Station and in the bottom left,
   add the ID for the camera. Select the camera from the list on the left
   and begin viewing.
-- Anyone can add any camera to any computer station.
+- Anyone can add any camera to any Computer Station.
+- Add the ID to the `Rust+` app to view the camera from outside the game. The player must disconnect from the server before remote access is allowed.
 - The game has pre-placed cameras at some of the monuments, check the
   current [Camera List](uncategorizedconcepts.html##-Monuments-Camera-Codes).
 
@@ -177,8 +179,8 @@ Heat Sphere :
 |-|---|  
 Item ID             |  1696050067
 Description         | A work platform for modular cars
-Crafting Recipe     | 5 HQM, 200 Metal Fragments, 1 Gear
-Recycles Into       | 3 HQM, 100 Metal Fragments, 50% 1 Gear
+Crafting Recipe     | 5 High Quality Metal, 200 Metal Fragments, 1 Gear
+Recycles Into       | 3 High Quality Metal, 100 Metal Fragments, 50% 1 Gear
 Stack Size          | 1
 Workbench Required  | Level 2
 Research Table Cost | 125 Scrap
@@ -208,8 +210,8 @@ Notes:
 |-|---|  
 Item ID             |  1177596584
 Description         | A powered lift
-Crafting Recipe     | 3 HQM, 200 Metal Fragments, 1 Gear
-Recycles Into       | 2 HQM, 100 Metal Fragments, 50% 1 Gear
+Crafting Recipe     | 3 High Quality Metal, 200 Metal Fragments, 1 Gear
+Recycles Into       | 2 High Quality Metal, 100 Metal Fragments, 50% 1 Gear
 Stack Size          | 5
 Workbench Required  | Level 2
 Research Table Cost | 125 Scrap
@@ -231,6 +233,7 @@ Notes:
 - The elevator has an upkeep cost. For the first floor, it costs 1 High Quality Metal and 20 Metal Fragments. It costs an extra 20 Metal Fragments per floor but at the 4th floor, it costs an extra 1 High Quality Metal. A max height elevator shaft will have an upkeep cost 2 High Quality Metal and 120 Metal Fragments.
 - If someone is standing under the carriage as it descends, they will die.
 - The Elevator has a travel time of 1.6 seconds per floor.
+- Elevators cannot be placed next to each other or in a way that would have them touching the same intersection.
 
 
 ---
@@ -285,6 +288,7 @@ Notes:
 - Mount a Computer Station and in the bottom left, add the ID for the Drone.
 - Select the ID from the list and start flying.
 - Use W, A, S, D to move. Use the mouse to look around. Shift and Ctrl to go up and down.
+- Add the ID to the `Rust+` app to control the Drone from outside the game. The player must disconnect from the server before remote access is allowed.
 - It is damaged easily from impacts.
 - Logging out of the drone mid flight will cause it to fall to the ground.
 - It has a limited range of around 500 meters or 3.33 grid squares.
@@ -299,8 +303,8 @@ Notes:
 |-|---|  
 Item ID             |  -1588628467
 Description         | A place to view CCTV cameras
-Crafting Recipe     | 5 HQM, 1 Targeting Computer, 1 RF Broadcaster, 1 RF Receiver
-Recycles Into       | 3 HQM, 50% 1 Targeting Computer, 50% 1 RF Broadcaster, 50% 1 RF Receiver
+Crafting Recipe     | 5 High Quality Metal, 1 Targeting Computer, 1 RF Broadcaster, 1 RF Receiver
+Recycles Into       | 3 High Quality Metal, 50% 1 Targeting Computer, 50% 1 RF Broadcaster, 50% 1 RF Receiver
 Stack Size          | 1
 Workbench Required  | Level 2
 Research Table Cost | 75 Scrap
@@ -312,9 +316,9 @@ Despawn Time        | 20 minutes
 
 Notes:
 
-- Use the Computer Station to view CCTV Camera, control the PTZ Camera or fly the Drone.
+- Use the Computer Station to view CCTV Camera, control the PTZ Camera, fly the Drone or control an Auto Turret.
 - Mount a Computer Station and in the bottom left, add an ID for a camera or drone. Select the ID from the list on the left and begin viewing or operating.
-- Anyone can add any camera to any computer station.
+- Anyone can add any camera or turret to any computer station.
 - The maximum number of cameras you can add to a computer is 20.
 - The game has pre-placed cameras at some of the monuments, here is the
   current list.

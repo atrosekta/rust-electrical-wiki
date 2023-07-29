@@ -235,8 +235,8 @@ Notes:
 |-|---|  
 Item ID            |  42535890
 Description        |  An animated neon sign!
-Crafting Recipe    | 2 HQM, 300 Metal Fragments
-Recycles Into      | 1 HQM, 150 Metal Fragments
+Crafting Recipe    | 2 High Quality Metal, 300 Metal Fragments
+Recycles Into      | 1 High Quality Metal, 150 Metal Fragments
 Stack Size         | 1
 Workbench Required | Level 2
 Hit Points         | 300
@@ -296,7 +296,7 @@ Notes:
 |-|---|  
 Item ID            |  1643667218
 Description        |  A large, animated neon sign!
-Crafting Recipe    | 5 HQM, 350 Metal Fragments
+Crafting Recipe    | 5 High Quality Metal, 350 Metal Fragments
 Recycles Into      | 125 Metal Fragments
 Stack Size         | 5
 Workbench Required | Level 2
@@ -410,8 +410,8 @@ Notes:
 |-|---|  
 Item ID           |  2104517339
 Description       | A flashing light with 3 speeds
-Crafting Recipe   | 2 HQM, 100 Metal Fragments
-Recycles Into     | 1 HQM, 50 Metal Fragments
+Crafting Recipe   | 2 High Quality Metal, 100 Metal Fragments
+Recycles Into     | 1 High Quality Metal, 50 Metal Fragments
 Stack Size        | 1
 Hit Points        | 100
 Where To Find     | Requires a Steam item purchased from the market
