@@ -882,8 +882,8 @@
 			<span class='sidesign'></span>
 		</a>
 
-		<a class='sideline' href='powerstorage.html#korrektcore'>
-			<span class='sidetext'> KorrektCore </span>
+		<a class='sideline' href='powerstorage.html#the-kore'>
+			<span class='sidetext'> The Kore </span>
 			<span class='sidesign'></span>
 		</a>
 
@@ -1044,6 +1044,12 @@
 		<main>
 			<h1 id="industrial"><a href="#industrial"
 class="anchor-link">*</a>Industrial</h1>
+<p><strong>What is the industrial system?</strong><br />
+The industrial system is a series of pipes that can connect many
+different containers together for the purpose of automating the
+movement, crafting and smelting of items. Have a look at the <a
+href="industrialconcepts.html">Industrial Concepts</a> section where
+there are breakdowns of different systems using these components.</p>
 <hr />
 <h1 id="industrial-conveyor"><a href="#industrial-conveyor"
 class="anchor-link">*</a>Industrial Conveyor<img
@@ -1090,8 +1096,8 @@ src="images/industrial-conveyor.png" /></h1>
 <td>Where To Find</td>
 <td>Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist,
 Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken
-Chest, Tunnel Dweller, Underwater Dweller, Wagon Crate, Underwater Lab
-Blue Crate</td>
+Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate,
+Wagon Crate</td>
 </tr>
 <tr class="even">
 <td>Electrical Inputs/Outputs</td>
@@ -1116,7 +1122,7 @@ Fail, Filter Pass</td>
 </tr>
 <tr class="odd">
 <td>Transfer Rate</td>
-<td></td>
+<td>Up to 60 items per stack from 12 stacks per 5 seconds.</td>
 </tr>
 <tr class="even">
 <td>Despawn Time</td>
@@ -1124,52 +1130,111 @@ Fail, Filter Pass</td>
 </tr>
 </tbody>
 </table>
-<h4 id="filter-settings">Filter settings :</h4>
-<p><code>MAX</code>: The Conveyor will stop moving this item when the
-target container(s) reach this amount.<br />
-<code>MIN</code>: The Conveyor will only move items in excess of this
-amount from the input container(s)<br />
-<code>BUFFER</code>: The Conveyor will only move in chunks of this size.
-(Useful for crafting recipes in tandem with MAX to eliminate overfilling
-and trickle filling)</p>
-<p>There is a max of 12 items that can be filtered.<br />
-You can filter by specific items or by a general filter group ( Weapons,
-Medical, Ammo, Traps, Electrical, Construction, Resources, Clothing,
-Food, Other, Fun, Tools, Components )</p>
-<h4 id="notes">Notes:</h4>
+<p>Notes:</p>
 <ul>
-<li>It can “see” a maximum of 32 storage adaptors per side, <em>you can
-“cheat” and make it pull from up to 94 boxes but its not explained here
-for now</em></li>
-<li>There is a maximum of 32 combiners/splitters between each storage
-adaptors and the conveyor</li>
-<li>it should move a max of 60 items per 12 stack max at a time,
-unstackable items count as 1 stack, <em>but when writing this in may
-2023, it is broken, it act weird and in a lot of cases it will move more
-items than it should, it try to fill 12 slot in the output box no matter
-how many stack it pull from in the input box, instead of the other way
-around …</em></li>
-<li>Powered conveyors retain their on/off state during a server
-restart,<br />
-but unpowered conveyors lose their on/off state.</li>
-<li>you can trick a conveyor into seeing the same box multiple times,
-resulting in a “boosted output” that move a lot more items at a
-time</li>
-<li>there is currently a bug when it is depositing into any type of
-smelter and have a <code>MAX</code> filter setting, it will only filter
-pass on the first item move, then swap to filter fail, while keeping the
-furnaces topped up. This is unique to furnaces though, and the filter
-fail/pass outputs work properly on boxes etc.<br />
-so to get around it you just need another conveyor that isnt connected
-to the furnaces, on which you can get a correct filter fail / pass
-output.<br />
-<a
-href="https://www.rustrician.io/?circuit=1f0b982f75e15fd1c39def617e7eb9b1">this
-rustrician bp</a> show it</li>
-<li>another bug currently there is that some items wont be picked up by
-conveyors …<br />
-it appears to be stackable items that also have health, ladders and
-fuses for example.</li>
+<li>The 5 second rule. From turning on to the first transfer is 5
+seconds. Between each transfer is 5 seconds. This is often referred to
+as a tick.</li>
+<li>Has 3 outputs. A passthrough, Filter Pass and Filter Fail.</li>
+<li>It will display an image of the item being transferred as it
+transfers.</li>
+<li>2 Conveyors cannot be connected together in a row. They must be
+separated by a Storage Adapter.</li>
+<li>Outputs filter pass and fail, do not consume power. This is 1 free
+1rW.</li>
+<li><code>Filter Pass</code> will send out 1rW constantly when the
+conditions of the filter are met. It will continue to send power for 5
+seconds when the Conveyor will check to see if the conditions are still
+met. If they are, Filter Pass will continue to send out power. If the
+conditions are not met, it will stop sending out power.</li>
+<li><code>Filter Fail</code> will send out 1rW constantly when the
+conditions of the filter are not met. It will continue to send power for
+5 seconds when the Conveyor will check to see if the conditions are
+still not being met. If they are still not met, Filter Fail will
+continue to send out power. If the conditions are met, it will stop
+sending out power.</li>
+<li>Both the Filter Pass and Fail outputs will allow the Active Usage of
+inactive components through. This means if the circuit is using an
+Inline backup, the offline components will register Active Usage on the
+battery causing drain.</li>
+<li>There is a max of 12 items that can be filtered.</li>
+<li>You can filter by specific items or by a general filter groups (
+Ammo, Clothing, Components, Construction, Electrical, Food, Fun,
+Medical, Other, Resources, Tools, Traps, Weapons )</li>
+<li><code>Filter Item settings:</code>
+<ul>
+<li><code>MAX:</code> conveyor will stop moving this item when all
+target containers reach this amount.</li>
+<li><code>MIN:</code> conveyor will only move items in excess of this
+amount from all input containers.</li>
+<li><code>BUFFER:</code> conveyor will only move in chunks of this size.
+(When used in tandem with the MAX setting, it is useful for crafting
+recipes with blue prints to help eliminate overfilling and trickle
+filling of Industrial Crafters.)</li>
+</ul></li>
+<li><code>Filter Mode settings:</code>
+<ul>
+<li><code>ANY ITEM:</code> This is the default setting. It will move all
+items unless there are Item Filters being used.</li>
+<li><code>REQUIRE ALL:</code> All item filters must be satisfied before
+transferring materials will begin.
+<ul>
+<li>Used for requiring more than 1 item to begin transfer.</li>
+<li>This filter works as expected if only using 1 storage adapter on a
+single container.</li>
+<li>When all items are present, Conveyor will set Filter Pass and
+transfer.</li>
+<li>When using multiple containers with a single adapter on each, all of
+each item type must be contained to a single box. The single box can
+contain all of more than 1 item.</li>
+<li><code>Bug:</code> When using 2 storage adapters, either on a single
+container to 2 containers, it won’t transfer anything unless it is only
+1 item in 1 box. If all the items in the filter list are present,
+Conveyor will set Filter Fail and not transfer.</li>
+</ul></li>
+<li><code>EXCLUDE LISTED ITEMS:</code> Only items not listed will be
+moved.</li>
+<li>Items in the filter list will be prevented from transferring.</li>
+<li>When using more than 1 filter type, the conveyor will set Filter
+Pass even when the item in the container is on the exclusion list.</li>
+</ul></li>
+<li>If it has power when the server restoots, it will remain powered on
+after the restart.</li>
+<li>There is an Industrial Max Depth of 32 components on either side
+(input/output) of the Conveyor.</li>
+<li>There is a max of 32 Storage Adapters on either side (input/output)
+of the Conveyor.</li>
+<li>It will move stackable items in groups of 60 items from up to 12
+stacks at a time.</li>
+<li>Unstackable items count as 1 stack each so it will move up to 12
+items at a time.</li>
+<li>Every additional Storage Adapter added to a container will increase
+the number of stacks the conveyor can take by 12.</li>
+<li>They can be placed on all surfaces and the ground.</li>
+<li>Has the ability to be rotated using Reload(R).</li>
+<li><code>As of 7/16/2023,</code> stackable items that also have health,
+like Ladders, Solar Panels, Fuses for example, will brick the Conveyor
+if their health has been decreased and are unable to stack. The Conveyor
+will remain in a Filter Pass state because the item could be moved, but
+because it is unable to be placed in an existing stack, it wont move the
+item. Do not place these broken or damaged items in the sorting
+system.</li>
+<li>The term <code>Item</code> is specifically referring to the
+<code>Item ID</code> number. For example, the hazmat suit has different
+skins but they actually have different ID’s. This should not be an issue
+but some items will still be transferred even though the MAX item filter
+has been met. One example is the Arctic and Lumberjack suits. They are
+hazmats but even with a MAX filter of 1, 1 of each will be sent. The
+default skin will always fulfill the MAX requirement and block the
+remodeled versions, but the remodeled versions will not block each
+other. This issue also exists with the following items:
+<ul>
+<li>Hazmat Suit</li>
+<li>Sky Lanterns</li>
+<li>AK</li>
+<li>Metal Tools</li>
+<li>Torches</li>
+</ul></li>
 </ul>
 <hr />
 <h1 id="industrial-crafter"><a href="#industrial-crafter"
@@ -1191,11 +1256,11 @@ src="images/industrial-crafter.png" /></h1>
 </tr>
 <tr class="odd">
 <td>Crafting Recipe</td>
-<td>3 HQM, 2 Tech Trash</td>
+<td>3 High Quality Metal, 2 Tech Trash</td>
 </tr>
 <tr class="even">
 <td>Recycles Into</td>
-<td>2 HQM, 1 Tech Trash</td>
+<td>2 High Quality Metal, 1 Tech Trash</td>
 </tr>
 <tr class="odd">
 <td>Stack Size</td>
@@ -1238,16 +1303,35 @@ Crate</td>
 <td>1rW</td>
 </tr>
 <tr class="even">
-<td>Transfer Rate</td>
-<td></td>
-</tr>
-<tr class="odd">
 <td>Despawn Time</td>
-<td></td>
+<td>20 minutes</td>
 </tr>
 </tbody>
 </table>
 <p>Notes:</p>
+<ul>
+<li>These get installed onto workbenches. Max 2 per bench.</li>
+<li>The crafting speed for items is the same on all workbenches, unlike
+when a person crafts a level 1 item in front of a level 3 bench.</li>
+<li>They have inventory space for Blueprints, Inputs and Outputs.</li>
+<li>The blueprints spot only holds BPs.</li>
+<li>Blueprints craft in order from left to right.</li>
+<li>Items can only be crafted on the required workbench or higher.</li>
+<li>The Input spots hold items that will be used in the crafting
+process. Items can only go in. There is no way to clear these spots
+without doing it manually.</li>
+<li>The Output spots hold the crafted items. No items can be put into
+these spots unless done manually.</li>
+<li>Input items have their one industrial connection, Industrial
+In.</li>
+<li>Output items have their own industrial connection, Industrial
+Out.</li>
+<li>Blueprints have their own industrial in and outputs, Blueprint In
+and Blueprint Out.</li>
+<li>Has 4 electrical connections. The last IO that receives power is the
+action that is performed, with the exception of the Toggle. When power
+is removed from Toggle, the crafter will turn off.</li>
+</ul>
 <hr />
 <h1 id="storage-adapter"><a href="#storage-adapter"
 class="anchor-link">*</a>Storage Adapter<img
@@ -1303,16 +1387,35 @@ Wagon Crate</td>
 <td>Industrial In / Industrial Out</td>
 </tr>
 <tr class="odd">
-<td>Transfer Rate</td>
-<td></td>
-</tr>
-<tr class="even">
 <td>Despawn Time</td>
 <td>5 minutes</td>
 </tr>
 </tbody>
 </table>
 <p>Notes:</p>
+<ul>
+<li>Used to connect containers to the industrial system to automatically
+move items in and out.</li>
+<li>The number of adapters and the containers they can be placed on a
+include:
+<ul>
+<li>Fridge - 1</li>
+<li>Coffin - 1</li>
+<li>Small Box - 2</li>
+<li>Large Box - 4</li>
+<li>Small Furnace - 1</li>
+<li>Electric Furnace - 2</li>
+<li>Large Furnace - 4</li>
+<li>Refinery - 1</li>
+<li>Drop Box - 1</li>
+<li>Lockers - 3</li>
+<li>Vending Machine - 1</li>
+<li>Tool Cupboard - 2</li>
+</ul></li>
+<li>Adding multiple adapters to a container causes Conveyors to see the
+container multiple times.</li>
+<li>Their health is separate from the container it is attached to.</li>
+</ul>
 <hr />
 <h1 id="electric-furnace"><a href="#electric-furnace"
 class="anchor-link">*</a>Electric Furnace<img
@@ -1325,7 +1428,7 @@ src="images/electrical-furnace.png" /></h1>
 <tbody>
 <tr class="odd">
 <td>Item ID</td>
-<td> </td>
+<td> -1196547867</td>
 </tr>
 <tr class="even">
 <td>Description</td>
@@ -1334,11 +1437,11 @@ a fuel source</td>
 </tr>
 <tr class="odd">
 <td>Crafting Recipe</td>
-<td>5 HQM, 200 Metal Fragments</td>
+<td>5 High Quality Metal, 200 Metal Fragments</td>
 </tr>
 <tr class="even">
 <td>Recycles Into</td>
-<td>3 HQM, 100 Metal Fragments</td>
+<td>3 High Quality Metal, 100 Metal Fragments</td>
 </tr>
 <tr class="odd">
 <td>Stack Size</td>
@@ -1358,33 +1461,47 @@ a fuel source</td>
 </tr>
 <tr class="odd">
 <td>Where To Find</td>
-<td></td>
+<td>Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, Excavator
+Scientist, Heavy Scientist, Locked Crate, Military Base Scientist,
+Military Crate, NVG Scientist, Oil Rig Scientist, Patrol Scientist,
+Treasure Box, Underwater Lab Elite Crate, Underwater Lab Yellow Crate,
+Wagon Military Crate</td>
 </tr>
 <tr class="even">
 <td>Electrical Inputs</td>
 <td>Power, Turn On, Turn Off</td>
 </tr>
 <tr class="odd">
-<td>Transfer Rate</td>
-<td></td>
+<td>Smelt Rate</td>
+<td>66% faster then a Small Furnace</td>
 </tr>
 <tr class="even">
 <td>Despawn Time</td>
-<td></td>
+<td>40 minutes</td>
 </tr>
 <tr class="odd">
 <td>Decay Time</td>
-<td></td>
+<td>96 hours</td>
 </tr>
 </tbody>
 </table>
 <p>Notes:</p>
 <ul>
-<li>Can be turned on manually, by sending power to the “Turn on” input,
-or by a nearby igniter.<br />
-</li>
-<li>Like conveyors, powered furnaces retain their on/off state during a
-server restart, but unpowered furnaces lose their on/off state.</li>
+<li>If they are receiving power when the server reboots, it will remain
+in the same state power reboot.</li>
+<li>Can be turned on manually or by sending power to the “Turn on”
+input, or by a nearby Igniter.</li>
+<li>Can be turned off manually or by sending power to the ‘Turn Off’
+input.</li>
+<li>The furnace cannot be turned off with a Sprinkler.</li>
+<li>The Input inventory spots hold raw ore and empty cans. Items can
+only go in</li>
+<li>There is no way to clear these spots without doing it manually.</li>
+<li>The Output inventory spots hold smelted ore. No items can be put
+into these spots unless done manually.</li>
+<li>Is 66% faster than a Small Furnace.</li>
+<li>They cannot burn wood.</li>
+<li>Has the ability to be rotated using Reload(<code>R</code>).</li>
 </ul>
 <hr />
 <h1 id="industrial-splitter"><a href="#industrial-splitter"
@@ -1430,7 +1547,10 @@ src="images/industrial-splitter.png" /></h1>
 </tr>
 <tr class="odd">
 <td>Where To Find</td>
-<td></td>
+<td>Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist,
+Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken
+Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate,
+Wagon Crate</td>
 </tr>
 <tr class="even">
 <td>Industrial Inputs/Outputs</td>
@@ -1438,20 +1558,19 @@ src="images/industrial-splitter.png" /></h1>
 3</td>
 </tr>
 <tr class="odd">
-<td>Transfer Rate</td>
-<td></td>
-</tr>
-<tr class="even">
 <td>Despawn Time</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Decay Time</td>
-<td></td>
+<td>5 minutes</td>
 </tr>
 </tbody>
 </table>
 <p>Notes:</p>
+<ul>
+<li>They split pipes allowing a Conveyor to send items to multiple
+containers.</li>
+<li>If pipes are split in a way that is not divisible into 60, it will
+cause Conveyors to pull less than 60 items per group per stack.</li>
+<li>Has the ability to be rotated using Reload(<code>R</code>).</li>
+</ul>
 <hr />
 <h1 id="industrial-combiner"><a href="#industrial-combiner"
 class="anchor-link">*</a>Industrial Combiner<img
@@ -1496,7 +1615,10 @@ src="images/industrial-combiner.png" /></h1>
 </tr>
 <tr class="odd">
 <td>Where To Find</td>
-<td></td>
+<td>Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist,
+Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken
+Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate,
+Wagon Crate</td>
 </tr>
 <tr class="even">
 <td>Industrial Inputs/Outputs</td>
@@ -1504,20 +1626,17 @@ src="images/industrial-combiner.png" /></h1>
 Out</td>
 </tr>
 <tr class="odd">
-<td>Transfer Rate</td>
-<td></td>
-</tr>
-<tr class="even">
 <td>Despawn Time</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Decay Time</td>
-<td></td>
+<td>5 minutes</td>
 </tr>
 </tbody>
 </table>
 <p>Notes:</p>
+<ul>
+<li>It combines multiple pipes which allows a Conveyor to see multiple
+containers.</li>
+<li>Has the ability to be rotated using Reload(<code>R</code>).</li>
+</ul>
 <hr />
 		</main>
 		</div>

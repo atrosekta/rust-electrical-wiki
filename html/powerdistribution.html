@@ -882,8 +882,8 @@
 			<span class='sidesign'></span>
 		</a>
 
-		<a class='sideline' href='powerstorage.html#korrektcore'>
-			<span class='sidetext'> KorrektCore </span>
+		<a class='sideline' href='powerstorage.html#the-kore'>
+			<span class='sidetext'> The Kore </span>
 			<span class='sidesign'></span>
 		</a>
 
@@ -1044,19 +1044,6 @@
 		<main>
 			<h1 id="power-distribution"><a href="#power-distribution"
 class="anchor-link">*</a>Power Distribution</h1>
-<p>Power distribution is one of the most important things to know and
-understand when it comes to electricity.<br />
-There are many ways to produce, store and distribute power for your
-circuits.<br />
-This section breaks down the components used for distribution and the
-different types of distribution circuits known as a power bus.<br />
-It covers the different types of battery backup systems.<br />
-It covers the difference between the amount of power a circuit consumes
-versus what a battery thinks it is consuming, aka active usage.<br />
-This section also covers the theory behind circuit and location
-centralization, decentralization and hybridization.<br />
-It covers the game mechanics behind circuit delay and power flow as well
-as the error message, short circuit/max depth.</p>
 <hr />
 <h1 id="what-is-a-power-bus"><a href="#what-is-a-power-bus"
 class="anchor-link">*</a>What is a Power Bus?</h1>
@@ -1407,44 +1394,83 @@ circuit behaves, I have broken down the Nih Core to show the order of
 operation.</p>
 <p><img src="images/nihcorepowbat2.png" /></p>
 <p>The left side shows the order of operation when switching from
-battery backup to windmill power.<br />
-<code>Main Power:</code></p>
-<pre><code>1. The amount of power coming into the Nih Core rises above 106.  
-2. Power is sent out Power Out to the next Electrical Branch.  
-3. Power coming out of Branch Out to the Memory Cell rises to its set amount.  
-4. Power is sent out Power Out to the OR Switch.  
-5. Power is sent out Branch Out to the Splitter.  
-6. Power is sent out to the Large Battery.  
-7. Power is sent out to Set on the Memory Cell.  
-8. Power is sent out the Memory Cells Output.  
-9. Power is sent out to Reset on the Memory Cell.  
-10. Power is sent out to Block Passthrough on the Blocker.  
-11. Power stops coming out of Inverted Output on the Memory Cell.  
-12. Power stops coming out of Power Out on the Blocker.  
-13.Power from the Memory Cells Output is now the power passing through the OR Switch.  
-14. The battery enters its Off state.  </code></pre>
+battery backup to windmill power.</p>
+<h4 id="main-power">Main Power:</h4>
+<ol type="1">
+<li>The amount of power coming into the Nih Core rises above 106.<br />
+</li>
+<li>Power is sent out Power Out to the next Electrical Branch.<br />
+</li>
+<li>Power coming out of Branch Out to the Memory Cell rises to its set
+amount.<br />
+</li>
+<li>Power is sent out Power Out to the OR Switch.<br />
+</li>
+<li>Power is sent out Branch Out to the Splitter.<br />
+</li>
+<li>Power is sent out to the Large Battery.<br />
+</li>
+<li>Power is sent out to Set on the Memory Cell.<br />
+</li>
+<li>Power is sent out the Memory Cells Output.<br />
+</li>
+<li>Power is sent out to Reset on the Memory Cell.<br />
+</li>
+<li>Power is sent out to Block Passthrough on the Blocker.<br />
+</li>
+<li>Power stops coming out of Inverted Output on the Memory Cell.<br />
+</li>
+<li>Power stops coming out of Power Out on the Blocker.<br />
+</li>
+<li>Power from the Memory Cells Output is now the power passing through
+the OR Switch.<br />
+</li>
+<li>The battery enters its Off state.</li>
+</ol>
 <p>The right side is the order of operation when switching from windmill
-power on to battery backup.<br />
-<code>Battery Power:</code></p>
-<pre><code>1. The amount of power coming into the Nih Core drops below 106 triggering the flip but must drop below 101 for it to look like the example pictured.  
-2. Power stops coming out of Branch Out to the next Electrical Branch.  
-3. Power coming out of Branch Out to the Memory Cell drops below its set amount.  
-4. Power stops coming out of Power Out to the OR Switch.  
-5. Power stops coming out of Branch Out to the Splitter.  
-6. Power stops coming out of the OR Switch to the Large Battery.  
-7. Power stops going to Set on the Memory Cell.  
-8. Power stops coming out of the Memory Cells Output.  
-9. Power stops going to Reset on the Memory Cell.  
-10. Power stops going to Block Passthrough on the Blocker.  
-11. Power is sent out the Memory Cells Inverted Output.  
-12. The battery enters its On state and sends power out to the Blocker.  
-13. Power stops coming out of the OR Switch.  
-14. Power is sent out the OR Switch to the Large Battery.  
-15. Power is sent out the Blocker to the OR Switch.  
-16. Power is sent out the OR Switch.  </code></pre>
+power on to battery backup.</p>
+<h4 id="battery-power">Battery Power:</h4>
+<ol type="1">
+<li>The amount of power coming into the Nih Core drops below 106
+triggering the flip but must drop below 101 for it to look like the
+example pictured.<br />
+</li>
+<li>Power stops coming out of Branch Out to the next Electrical
+Branch.<br />
+</li>
+<li>Power coming out of Branch Out to the Memory Cell drops below its
+set amount.<br />
+</li>
+<li>Power stops coming out of Power Out to the OR Switch.<br />
+</li>
+<li>Power stops coming out of Branch Out to the Splitter.<br />
+</li>
+<li>Power stops coming out of the OR Switch to the Large Battery.<br />
+</li>
+<li>Power stops going to Set on the Memory Cell.<br />
+</li>
+<li>Power stops coming out of the Memory Cells Output.<br />
+</li>
+<li>Power stops going to Reset on the Memory Cell.<br />
+</li>
+<li>Power stops going to Block Passthrough on the Blocker.<br />
+</li>
+<li>Power is sent out the Memory Cells Inverted Output.<br />
+</li>
+<li>The battery enters its On state and sends power out to the
+Blocker.<br />
+</li>
+<li>Power stops coming out of the OR Switch.<br />
+</li>
+<li>Power is sent out the OR Switch to the Large Battery.<br />
+</li>
+<li>Power is sent out the Blocker to the OR Switch.<br />
+</li>
+<li>Power is sent out the OR Switch.</li>
+</ol>
 <p>That wraps up this section. I hope I have explained things in a way
 that makes sense. Please comment on the <a
-href="https://docs.google.com/documentd19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing">Google
+href="https://docs.google.com/document/d/19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing">Google
 Doc</a> if you have any suggestions or questions.</p>
 		</main>
 		</div>

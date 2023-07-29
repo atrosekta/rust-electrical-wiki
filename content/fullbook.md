@@ -15,7 +15,7 @@ but any info still valid in game wont be removed.
 
 All of the information you find here is comming from a [Google Doc](
 https://docs.google.com/document/d/19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing
-) by@SwiftCoyote,
+) by @SwiftCoyote,
 so thanks to him and all the people in the Rustricity Workshop
 community that contribute to it! The Google Doc will always be a little more update then this website as the website needs to be rebuilt after each change.   
 
@@ -39,6 +39,9 @@ For now, I havent written something that explains how to do it but you can
 ask @3YE#6593 on Discord for more information.
 
 ---
+
+---
+
 
 # Tools
 
@@ -84,7 +87,7 @@ If the server has it enabled, turn on Wire Slack by holding the Wire Tool  and p
 |-|---|  
 Item ID            | -144417939
 Description        | Connecting electrical components
-Crafting Recipe    | 2 HQM
+Crafting Recipe    | 2 High Quality Metal
 Workbench Required | Level 1
 Despawn Time       | 5 minutes
 
@@ -110,7 +113,7 @@ Notes:
 |-|---|  
 Item ID            | 363163265
 Description        | Connecting fluid components
-Crafting Recipe    | 2 HQM
+Crafting Recipe    | 2 High Quality Metal
 Workbench Required | Level 1
 Despawn Time       | 5 minutes
 
@@ -133,7 +136,7 @@ Notes:
 |-|---|  
 Item ID            | -144513264
 Description        | Connecting industrial components
-Crafting Recipe    | 2 HQM
+Crafting Recipe    | 2 High Quality Metal
 Workbench Required | Level 1
 Despawn Time       | 5 minutes
 
@@ -197,6 +200,9 @@ Notes:
 Igniter, Auto Turret and Tesla Coil. Batteries and Power Sources also take damage when picked up.  
 - Careful when wielding this powerful tool as it can create problems if you accidently start picking up items.  
 
+---
+
+
 # Power Sources
 
 There is no way around this. If electrical circuits are going to function, power must be generated somehow. These are the components that produce power. For a more in depth explanation, have a look at [Power Generation]( powergeneration.html ) in the Concepts section.
@@ -212,7 +218,7 @@ There is no way around this. If electrical circuits are going to function, power
 Item ID           |  -295829489
 Description       | Providing a constant 100rW per Power Output
 Crafting Recipe   | Cannot be crafted
-Recycles Into     | 13 HQM/2 Gears/1 Metal Pipe/2 Fuse
+Recycles Into     | 13 High Quality Metal, 2 Gears, 1 Metal Pipe, 2 Fuse
 Stack Size        | 1
 Hit Points        | 1000
 Outputs           | Power Output 1, Power Output 2, Power Output 3
@@ -235,8 +241,8 @@ Notes:
 |-|--|
 Item ID             | -1819763926
 Description         | Generating electricity from the wind
-Crafting Recipe     | 500 Wood/10 HQM/3 Gears/3 Sheet Metal
-Recycles Into       | 250 Wood/5 HQM/2 Gears/2 Sheet Metal
+Crafting Recipe     | 500 Wood, 10 High Quality Metal, 3 Gears, 3 Sheet Meta, 
+Recycles Into       | 250 Wood, 5 High Quality Metal, 2 Gears, 2 Sheet Meta, 
 Stack Size          | 1
 Workbench Required  | Level 2
 Research Table Cost | 125 Scrap
@@ -272,9 +278,9 @@ Notes:
 |-|---|  
 Item ID             | 2090395347
 Description         | Generating electricity from the Sun
-Crafting Recipe     | 5 HQM/1 Tech Trash
-Recycles Into       | 3 HQM/50% - 1 Tech Trash
-Stack Size          | 3
+Crafting Recipe     | 5 High Quality Metal, 1 Tech Trash
+Recycles Into       | 3 High Quality Metal, 50% 1 Tech Trash
+Sack Size          | 3
 Workbench Required  | Level 1
 Research Table Cost | 75 Scrap
 Hit Points          | 100
@@ -309,8 +315,8 @@ Notes:
 |-|---|  
 Item ID             | 1849887541
 Description         | Generating electricity from Low Grade Fuel
-Crafting Recipe     | 5 HQM/2 Gears
-Recycles Into       | 3 HQM/1 Gears
+Crafting Recipe     | 5 High Quality Metal, 2 Gears
+Recycles Into       | 3 High Quality Metal, 1 Gear
 Stack Size          | 1
 Workbench Required  | Level 2
 Research Table Cost | 75 Scrap
@@ -323,7 +329,6 @@ Fuel Consumption    | 500 Low Grade Fuel/2hr
 Power Output        | 40rW
 Active Usage        | 0
 Despawn Time        | 20 minutes
-Decay Time          |
 
 Notes:
 
@@ -333,12 +338,15 @@ Notes:
 - The last input to receive power is the function that is activated,
   even if power is still being applied to the opposite.
 - They must be placed on floors, foundations or the ground.
-- They still produce max power when damaged
+- They still produce max power when damaged.
 - They can be picked up with a hammer but lose 20% health.
 - If a battery is feeding power to either of the inputs, components
   connected to Power Out will register an active usage on the battery.
 
 ---
+
+---
+
 
 # Power Storage
 
@@ -352,8 +360,8 @@ Storing power for use at a later time is a great way at preventing circuits from
 |-|---|  
 Item ID             | -692338819
 Description         | Storing electricity
-Crafting Recipe     | 5 HQM
-Recycles Into       | 3 HQM
+Crafting Recipe     | 5 High Quality Metal
+Recycles Into       | 3 High Quality Metal
 Stack Size          | 1
 Workbench Required  | Level 1
 Research Table Cost | 20 Scrap
@@ -382,8 +390,8 @@ Notes:
 |-|---|  
 Item ID             | 2023888403
 Description         | Storing electricity
-Crafting Recipe     | 5 HQM/1 Tech Trash
-Recycles Into       | 3 HQM
+Crafting Recipe     | 5 High Quality Metal, 1 Tech Trash
+Recycles Into       | 3 High Quality Metal, 50% 1 Tech Trash
 Stack Size          | 1
 Workbench Required  | Level 2
 Research Table Cost | 75 Scrap
@@ -396,7 +404,6 @@ Power Capacity      | 9000rWM
 Power Output/Time   | 50rW/3hrs
 Active Usage        | 200
 Despawn Time        | 20 minutes
-Decay Time          |
 
 Notes:
 
@@ -413,8 +420,8 @@ Notes:
 |-|---|  
 Item ID             | 553270375
 Description         | Storing electricity
-Crafting Recipe     | 10 HQM/2 Tech Trash
-Recycles Into       | 5 HQM/1 Tech Trash
+Crafting Recipe     | 10 High Quality Metal/2 Tech Trash
+Recycles Into       | 5 High Quality Metal/1 Tech Trash
 Stack Size          | 1
 Workbench Required  | Level 2
 Research Table Cost | 75 Scrap
@@ -426,7 +433,6 @@ Power Capacity      | 24000rWM
 Power Output/Time   | 100rW/4hrs
 Active Usage        | 400
 Despawn Time        | 20 minutes
-Decay Time          |
 
 Notes:
 
@@ -436,7 +442,7 @@ Notes:
 
 ---
 
-
+---
 
 
 # Power Distribution
@@ -537,6 +543,8 @@ Notes:
 
 # Cable Tunnel (NOT CRAFTABLE)![](images/electric.cabletunnel.png)
 
+| | |  
+|-|---|  
 Item ID           | 1835946060
 Description       | Allows wires to pass through wall
 Crafting Recipe   | Cannot be crafted
@@ -554,6 +562,8 @@ Notes:
 - This item can only be spawned in by an admin.
 - It has 4 inputs with 4 matching outputs.
 - Was designed to let wires pass through walls when the idea was to not let wires pass through walls.
+
+---
 
 ---
 
@@ -631,7 +641,7 @@ Notes:
 Item ID             |  -1736356576
 Description         | Target practice and fun
 Crafting Recipe     | 100 Wood, 150 Metal Fragments, 1 Gear
-Recycles Into       | 50 Wood/75 Metal Fragments/50% - 1 Gear
+Recycles Into       | 50 Wood, 75 Metal Fragments 50% 1 Gear
 Stack Size          | 1
 Workbench Required  | Level 1
 Research Table Cost | 20 Scrap
@@ -657,6 +667,7 @@ Notes:
 
 ---
 
+---
 
 
 # Sensors
@@ -738,8 +749,8 @@ Notes:
 |-|---|  
 Item ID             |  -2049214035
 Description         | Passing power when a player stands on it
-Crafting Recipe     | 150 Wood/1 Spring/1 Gear
-Recycles Into       | 75 Wood/50% - 1 Spring/50% - 1 Gear
+Crafting Recipe     | 150 Wood, 1 Spring, 1 Gear
+Recycles Into       | 75 Wood, 50% 1 Spring, 50% 1 Gear
 Stack Size          | 1
 Workbench Required  | Level 1
 Research Table Cost | 20 Scrap
@@ -766,6 +777,7 @@ Notes:
 
 ---
 
+---
 
 
 # Logic
@@ -1021,6 +1033,9 @@ Notes:
 
 ---
 
+---
+
+
 # Radio Frequency (RF)
 
 ## Common Traits
@@ -1101,8 +1116,8 @@ Notes:
 |-|---|  
 Item ID             |  596469572
 Description         | Transmitting a RF signal from your hand
-Crafting Recipe     | 5 HQM, 1 Tech Trash
-Recycles Into       | 3 HQM, 50% 1 Tech Trash
+Crafting Recipe     | 5 High Quality Metal, 1 Tech Trash
+Recycles Into       | 3 High Quality Metal, 50% 1 Tech Trash
 Stack Size          | 1
 Workbench Required  | Level 2
 Research Table Cost | 20 Scrap
@@ -1173,6 +1188,7 @@ Notes:
 
 ---
 
+---
 
 
 # Lights
@@ -1411,8 +1427,8 @@ Notes:
 |-|---|  
 Item ID            |  42535890
 Description        |  An animated neon sign!
-Crafting Recipe    | 2 HQM, 300 Metal Fragments
-Recycles Into      | 1 HQM, 150 Metal Fragments
+Crafting Recipe    | 2 High Quality Metal, 300 Metal Fragments
+Recycles Into      | 1 High Quality Metal, 150 Metal Fragments
 Stack Size         | 1
 Workbench Required | Level 2
 Hit Points         | 300
@@ -1472,7 +1488,7 @@ Notes:
 |-|---|  
 Item ID            |  1643667218
 Description        |  A large, animated neon sign!
-Crafting Recipe    | 5 HQM, 350 Metal Fragments
+Crafting Recipe    | 5 High Quality Metal, 350 Metal Fragments
 Recycles Into      | 125 Metal Fragments
 Stack Size         | 5
 Workbench Required | Level 2
@@ -1586,8 +1602,8 @@ Notes:
 |-|---|  
 Item ID           |  2104517339
 Description       | A flashing light with 3 speeds
-Crafting Recipe   | 2 HQM, 100 Metal Fragments
-Recycles Into     | 1 HQM, 50 Metal Fragments
+Crafting Recipe   | 2 High Quality Metal, 100 Metal Fragments
+Recycles Into     | 1 High Quality Metal, 50 Metal Fragments
 Stack Size        | 1
 Hit Points        | 100
 Where To Find     | Requires a Steam item purchased from the market
@@ -1611,6 +1627,8 @@ Notes:
 
 ---
 
+---
+
 
 # Smart
 
@@ -1626,8 +1644,8 @@ These components can be paired with the Rust+ app and adds a way to interact wit
 |-|---|  
 Item ID             |  1149964039
 Description         | Monitoring Tool Cupboards, Large Storage Boxes and Vending Machines
-Crafting Recipe     | 3 HQM/1 Tech Trash
-Recycles Into       | 2 HQM/50% - 1 Tech Trash
+Crafting Recipe     | 3 High Quality Metal, 1 Tech Trash
+Recycles Into       | 2 High Quality Metal, 50% 1 Tech Trash
 Stack Size          | 1
 Workbench Required  | Level 2
 Research Table Cost | 75 Scrap
@@ -1654,8 +1672,8 @@ Notes:
 |-|---|  
 Item ID             |  -695978112
 Description         | Sends a notification to your phone
-Crafting Recipe     | 3 HQM, 1 Tech Trash
-Recycles Into       | 2 HQM, 50% 1 Tech Trash
+Crafting Recipe     | 3 High Quality Metal, 1 Tech Trash
+Recycles Into       | 2 High Quality Metal, 50% 1 Tech Trash
 Stack Size          | 5
 Workbench Required  | Level 2
 Research Table Cost | 75 Scrap
@@ -1684,8 +1702,8 @@ Notes:
 |-|---|  
 Item ID             |  988652725
 Description         | A switch requiring TC authorization
-Crafting Recipe     | 3 HQM, 1 Tech Trash
-Recycles Into       | 2 HQM, 50% 1 Tech Trash
+Crafting Recipe     | 3 High Quality Metal, 1 Tech Trash
+Recycles Into       | 2 High Quality Metal, 50% 1 Tech Trash
 Stack Size          | 5
 Workbench Required  | Level 2
 Research Table Cost | 20 Scrap
@@ -1717,6 +1735,9 @@ Notes:
 - In the app, select ‘Pair Server’ and you're done. 
 
 ---
+
+---
+
 
 # Utilities
 
@@ -1817,7 +1838,8 @@ Notes:
   and begin viewing.
 - To control the camera when viewing, use your mouse to pan and tilt.
   Left click will zoom.
-- Anyone can add any camera to any computer station.
+- Anyone can add any camera to any Computer Station.
+- Add the ID to the `Rust+` app to view the camera from outside the game. The player must disconnect from the server before remote access is allowed.
 - The game has pre-placed cameras at some of the monuments, check the
   current [Camera List](uncategorizedconcepts.html##-Monuments-Camera-Codes).
 
@@ -1829,7 +1851,7 @@ Notes:
 |-|---|  
 Item ID           | 634478325
 Description       | A camera to view from a Computer Station
-Recycles Into     | 2 HQM, 2 Tech Trash
+Recycles Into     | 2 High Quality Metal, 2 Tech Trash
 Stack Size        | 64
 Hit Points        | 150
 Where To Find     | APC Crate, Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Helicopter Crate, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Sunken Crate, Tool Box, Treasure Box, Tunnel Dweller, Underwater Dweller, Underwater Lab Elite Crate, Underwater Lab Tech Crate, Underwater Lab Tool Box, Underwater Lab Yellow Crate
@@ -1848,7 +1870,8 @@ Notes:
 - View cameras by mounting a Computer Station and in the bottom left,
   add the ID for the camera. Select the camera from the list on the left
   and begin viewing.
-- Anyone can add any camera to any computer station.
+- Anyone can add any camera to any Computer Station.
+- Add the ID to the `Rust+` app to view the camera from outside the game. The player must disconnect from the server before remote access is allowed.
 - The game has pre-placed cameras at some of the monuments, check the
   current [Camera List](uncategorizedconcepts.html##-Monuments-Camera-Codes).
 
@@ -1896,8 +1919,8 @@ Heat Sphere :
 |-|---|  
 Item ID             |  1696050067
 Description         | A work platform for modular cars
-Crafting Recipe     | 5 HQM, 200 Metal Fragments, 1 Gear
-Recycles Into       | 3 HQM, 100 Metal Fragments, 50% 1 Gear
+Crafting Recipe     | 5 High Quality Metal, 200 Metal Fragments, 1 Gear
+Recycles Into       | 3 High Quality Metal, 100 Metal Fragments, 50% 1 Gear
 Stack Size          | 1
 Workbench Required  | Level 2
 Research Table Cost | 125 Scrap
@@ -1927,8 +1950,8 @@ Notes:
 |-|---|  
 Item ID             |  1177596584
 Description         | A powered lift
-Crafting Recipe     | 3 HQM, 200 Metal Fragments, 1 Gear
-Recycles Into       | 2 HQM, 100 Metal Fragments, 50% 1 Gear
+Crafting Recipe     | 3 High Quality Metal, 200 Metal Fragments, 1 Gear
+Recycles Into       | 2 High Quality Metal, 100 Metal Fragments, 50% 1 Gear
 Stack Size          | 5
 Workbench Required  | Level 2
 Research Table Cost | 125 Scrap
@@ -1950,6 +1973,7 @@ Notes:
 - The elevator has an upkeep cost. For the first floor, it costs 1 High Quality Metal and 20 Metal Fragments. It costs an extra 20 Metal Fragments per floor but at the 4th floor, it costs an extra 1 High Quality Metal. A max height elevator shaft will have an upkeep cost 2 High Quality Metal and 120 Metal Fragments.
 - If someone is standing under the carriage as it descends, they will die.
 - The Elevator has a travel time of 1.6 seconds per floor.
+- Elevators cannot be placed next to each other or in a way that would have them touching the same intersection.
 
 
 ---
@@ -2004,6 +2028,7 @@ Notes:
 - Mount a Computer Station and in the bottom left, add the ID for the Drone.
 - Select the ID from the list and start flying.
 - Use W, A, S, D to move. Use the mouse to look around. Shift and Ctrl to go up and down.
+- Add the ID to the `Rust+` app to control the Drone from outside the game. The player must disconnect from the server before remote access is allowed.
 - It is damaged easily from impacts.
 - Logging out of the drone mid flight will cause it to fall to the ground.
 - It has a limited range of around 500 meters or 3.33 grid squares.
@@ -2018,8 +2043,8 @@ Notes:
 |-|---|  
 Item ID             |  -1588628467
 Description         | A place to view CCTV cameras
-Crafting Recipe     | 5 HQM, 1 Targeting Computer, 1 RF Broadcaster, 1 RF Receiver
-Recycles Into       | 3 HQM, 50% 1 Targeting Computer, 50% 1 RF Broadcaster, 50% 1 RF Receiver
+Crafting Recipe     | 5 High Quality Metal, 1 Targeting Computer, 1 RF Broadcaster, 1 RF Receiver
+Recycles Into       | 3 High Quality Metal, 50% 1 Targeting Computer, 50% 1 RF Broadcaster, 50% 1 RF Receiver
 Stack Size          | 1
 Workbench Required  | Level 2
 Research Table Cost | 75 Scrap
@@ -2031,9 +2056,9 @@ Despawn Time        | 20 minutes
 
 Notes:
 
-- Use the Computer Station to view CCTV Camera, control the PTZ Camera or fly the Drone.
+- Use the Computer Station to view CCTV Camera, control the PTZ Camera, fly the Drone or control an Auto Turret.
 - Mount a Computer Station and in the bottom left, add an ID for a camera or drone. Select the ID from the list on the left and begin viewing or operating.
-- Anyone can add any camera to any computer station.
+- Anyone can add any camera or turret to any computer station.
 - The maximum number of cameras you can add to a computer is 20.
 - The game has pre-placed cameras at some of the monuments, here is the
   current list.
@@ -2136,6 +2161,8 @@ Notes:
 
 ---
 
+---
+
 
 # Defense
 
@@ -2149,7 +2176,7 @@ These components are designed to kill players.
 |-|---|  
 Item ID           | -1009359066
 Description       | Defends against aerial threats
-Recycles Into     | 25 HQM
+Recycles Into     | 25 High Quality Metal
 Stack Size        | 1
 Hit Points        | 1000
 Where To Buy      | Outpost for 500 Scrap
@@ -2184,8 +2211,8 @@ Notes:
 |-|---|  
 Item ID             | -2139580305
 Description         | A automated sentry turret to neutralize targets
-Crafting Recipe     | 10 HQM, 1 CCTV Camera, 1 Targeting Computer
-Recycles Into       | 5 HQM, 50% 1 CCTV Camera, 50% 1 Targeting Computer
+Crafting Recipe     | 10 High Quality Metal, 1 CCTV Camera, 1 Targeting Computer
+Recycles Into       | 5 High Quality Metal, 50% 1 CCTV Camera, 50% 1 Targeting Computer
 Stack Size          | 1
 Workbench Required  | Level 2
 Research Table Cost | 500 Scrap
@@ -2200,18 +2227,26 @@ Despawn Time        | 60 minutes
 
 Notes:
 
-- There are 2 modes, Peacekeeper and Attack All.
-- Enable and disable Peacekeeper mode by looking at the turret and holding Use(`E`). In peace keeper mode it will only attack a player if they become aggressive. In Attack All mode it will kill anyone not on its authorization list.
-- Add people to the authorization list by looking at the turret and holding Use(`E`) and accessing the user interface.
-- **Has Target** will pulse out 1rW if it takes damage and will release a constant 1rW if it locks a target.
-- **Low Ammo** will start to output 1rW when there is 50 ammo or less. When it has no more ammo it will stop outputting power.
-- **No Ammo** will output 1rW constantly when there is no more ammo.
+- A player must be authorized to open the menu by looking at it and holding Use(`E`). There are 7 options to choose from.
+    - `Open -` This opens the inventory where guns and ammo can be placed. This includes all weapons that fire Pistol Bullets, 5.56 Rifle Ammo or 12 Gauge Buckshot as well as the Nailgun and Trumpet. 
+    - `Peacekeeper mode -` It will never attack an authorized player. It won't attack an unauthorized player unless they become aggressive. This mode also disables players from being able to control them from a Computer Station or the Rust+ app.
+    - `Attack All -`  Is the default mode and can only be selected if the turret was placed into Peacekeeper mode. This mode is required for remote control.
+    - `Rotate -` Rotates the turret by 180 degrees.
+    - `Authorize friend -` Search or select a player to authorize them. Once authorized, the turret will never shoot them.
+    - `Clear Authorization List -` Removes all players from being authorized.
+    - `Deauthorize -` Removes the player selecting it from being authorized.
+    - `Set ID -` Naming the turret allows for player control. Give the turret a name, then enter that name into a Computer Station or the Rust+ app and take control. Move with the mouse and left click to shoot. Anyone can add the ID to any Computer Station and take control. Make the ID something other won’t guess and restrict access to any Computer Station with these IDs to trusted individuals only. 
+- There are 3 outputs:
+    - `Has Target` will pulse out 1rW if the turret takes damage and will release a constant 1rW if it locks a target.
+    - `Low Ammo` will start to output 1rW when there is 50 ammo or less. When it has no more ammo it will stop outputting power.
+    - `No Ammo` will output 1rW constantly when there is no ammo.
 - Range is 30 meters or 10 square foundations.
-- The turret has just over a 180 degree detection arch.
+- When controlled by a player from a Computer Station, the visual range is approximately 21 square foundations or 63 meters. 
+- Add the ID to the `Rust+` app to control the turret from outside the game. The player must disconnect from the server before remote access is allowed.
+- The turret has a 180 degree detection arch.
 - Must be placed on flat surfaces.
 - Try to place them in a way they cannot be baited and drained.
-- They can shoot through 2 layers of Chainlink Fence.
-
+- They can shoot through 2 layers of Chainlink Fence. 
 
 ---
 
@@ -2221,8 +2256,8 @@ Notes:
 |-|---|  
 Item ID             | 1371909803
 Description         | An electrical trap that zaps nearby players
-Crafting Recipe     | 3 HQM, 1 Tech Trash
-Recycles Into       | 2 HQM, 50% 1Tech Trash
+Crafting Recipe     | 3 High Quality Metal, 1 Tech Trash
+Recycles Into       | 2 High Quality Metal, 50% 1Tech Trash
 Stack Size          | 3
 Workbench Required  | Level 2
 Research Table Cost | 20 Scrap
@@ -2244,6 +2279,8 @@ Notes:
 - They damage themselves at a rate of 2hp/second. 
 - They will not turn on if their health is at or below 62hp.
 
+
+---
 
 ---
 
@@ -2581,7 +2618,13 @@ Notes:
 
 ---
 
+---
+
+
 # Industrial
+
+**What is the industrial system?**  
+The industrial system is a series of pipes that can connect many different containers together for the purpose of automating the movement, crafting and smelting of items. Have a look at the [Industrial Concepts]( industrialconcepts.html ) section where there are breakdowns of different systems using these components. 
 
 ---
 
@@ -2597,49 +2640,57 @@ Stack Size          | 5
 Workbench Required  | Level 1
 Research Table Cost | 20 Scrap
 Hit Points          | 200
-Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Wagon Crate, Underwater Lab Blue Crate
+Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate, Wagon Crate
 Electrical Inputs/Outputs | Power Input, Turn On, Turn Off / Electrical Passthrough, Filter Fail, Filter Pass
 Industrial Inputs/Outputs | Industrial Input / Industrial Output
 Active Usage        | 1
 Power Consumption   | 1rw
 Power Output        | Input power minus 1
-Transfer Rate       |
+Transfer Rate       | Up to 60 items per stack from 12 stacks per 5 seconds.
 Despawn Time        | 5 minutes
 
-#### Filter settings :  
-`MAX`: The Conveyor will stop moving this item when the target container(s) reach this amount.  
-`MIN`: The Conveyor will only move items in excess of this amount from the input container(s)  
-`BUFFER`: The Conveyor will only move in chunks of this size.
-(Useful for crafting recipes in tandem with MAX to eliminate overfilling and trickle filling)
+Notes:
 
-There is a max of 12 items that can be filtered.  
-You can filter by specific items or by a general filter group (
-Weapons, Medical, Ammo, Traps, Electrical,
-Construction, Resources, Clothing, Food, Other, Fun, Tools, Components )
-
-#### Notes:
-
-- It can "see" a maximum of 32 storage adaptors per side,
-  *you can "cheat" and make it pull from up to 94 boxes but its not explained here for now*
-- There is a maximum of 32 combiners/splitters between each storage adaptors and the conveyor
-- it should move a max of 60 items per 12 stack max at a time, unstackable items count as 1 stack,
-  *but when writing this in may 2023, it is broken,
-  it act weird and in a lot of cases it will move more items than it should,
-  it try to fill 12 slot in the output box no matter how many stack it pull from in the input box,
-  instead of the other way around ...*
-- Powered conveyors retain their on/off state during a server restart,  
-  but unpowered conveyors lose their on/off state.
-- you can trick a conveyor into seeing the same box multiple times,
-  resulting in a "boosted output" that move a lot more items at a time
-- there is currently a bug when it is depositing into any type of smelter
-  and have a `MAX` filter setting, it will only filter pass on the first item move,
-  then swap to filter fail, while keeping the furnaces topped up.
-  This is unique to furnaces though, and the filter fail/pass outputs work properly on boxes etc.  
-  so to get around it you just need another conveyor that isnt connected to the furnaces,
-  on which you can get a correct filter fail / pass output.  
-  [this rustrician bp](https://www.rustrician.io/?circuit=1f0b982f75e15fd1c39def617e7eb9b1) show it
-- another bug currently there is that some items wont be picked up by conveyors ...  
-  it appears to be stackable items that also have health, ladders and fuses for example.
+- The 5 second rule. From turning on to the first transfer is 5 seconds. Between each transfer is 5 seconds. This is often referred to as a tick. 
+- Has 3 outputs. A passthrough, Filter Pass and Filter Fail.
+- It will display an image of the item being transferred as it transfers.
+- 2 Conveyors cannot be connected together in a row. They must be separated by a Storage Adapter.
+- Outputs filter pass and fail, do not consume power. This is 1 free 1rW.
+- `Filter Pass` will send out 1rW constantly when the conditions of the filter are met. It will continue to send power for 5 seconds when the Conveyor will check to see if the conditions are still met. If they are, Filter Pass will continue to send out power. If the conditions are not met, it will stop sending out power.
+- `Filter Fail` will send out 1rW constantly when the conditions of the filter are not met. It will continue to send power for 5 seconds when the Conveyor will check to see if the conditions are still not being met. If they are still not met, Filter Fail will continue to send out power. If the conditions are met, it will stop sending out power.
+- Both the Filter Pass and Fail outputs will allow the Active Usage of inactive components through. This means if the circuit is using an Inline backup, the offline components will register Active Usage on the battery causing drain.
+- There is a max of 12 items that can be filtered.
+- You can filter by specific items or by a general filter groups ( Ammo, Clothing, Components, Construction, Electrical, Food, Fun, Medical, Other, Resources, Tools, Traps, Weapons )
+- `Filter Item settings:`
+    - `MAX:` conveyor will stop moving this item when all target containers reach this amount.
+    - `MIN:` conveyor will only move items in excess of this amount from all input containers.
+    - `BUFFER:` conveyor will only move in chunks of this size. (When used in tandem with the MAX setting, it is useful for crafting recipes with blue prints to help eliminate overfilling and trickle filling of Industrial Crafters.)
+- `Filter Mode settings:`
+    - `ANY ITEM:` This is the default setting. It will move all items unless there are Item Filters being used.
+    - `REQUIRE ALL:` All item filters must be satisfied before transferring materials will begin. 
+        - Used for requiring more than 1 item to begin transfer.
+        - This filter works as expected if only using 1 storage adapter on a single container.
+        - When all items are present, Conveyor will set Filter Pass and transfer.
+        - When using multiple containers with a single adapter on each, all of each item type must be contained to a single box. The single box can contain all of more than 1 item.
+        - `Bug:` When using 2 storage adapters, either on a single container to 2 containers, it won't transfer anything unless it is only 1 item in 1 box. If all the items in the filter list are present, Conveyor will set Filter Fail and not transfer. 
+    - `EXCLUDE LISTED ITEMS:` Only items not listed will be moved.
+    - Items in the filter list will be prevented from transferring.
+    - When using more than 1 filter type, the conveyor will set Filter Pass even when the item in the container is on the exclusion list.
+- If it has power when the server restoots, it will remain powered on after the restart.
+- There is an Industrial Max Depth of 32 components on either side (input/output) of the Conveyor.
+- There is a max of 32 Storage Adapters on either side (input/output) of the Conveyor.
+- It will move stackable items in groups of 60 items from up to 12 stacks at a time. 
+- Unstackable items count as 1 stack each so it will move up to 12 items at a time.
+- Every additional Storage Adapter added to a container will increase the number of stacks the conveyor can take by 12.
+- They can be placed on all surfaces and the ground.
+- Has the ability to be rotated using Reload(R).
+- `As of 7/16/2023,` stackable items that also have health, like Ladders, Solar Panels, Fuses for example, will brick the Conveyor if their health has been decreased and are unable to stack. The Conveyor will remain in a Filter Pass state because the item could be moved, but because it is unable to be placed in an existing stack, it wont move the item. Do not place these broken or damaged items in the sorting system. 
+- The term `Item` is specifically referring to the `Item ID` number. For example, the hazmat suit has different skins but they actually have different ID’s. This should not be an issue but some items will still be transferred even though the MAX item filter has been met. One example is the Arctic and Lumberjack suits. They are hazmats but even with a MAX filter of 1, 1 of each will be sent. The default skin will always fulfill the MAX requirement and block the remodeled versions, but the remodeled versions will not block each other. This issue also exists with the following items:
+    - Hazmat Suit
+    - Sky Lanterns
+    - AK
+    - Metal Tools
+    - Torches
 
 ---
 
@@ -2649,8 +2700,8 @@ Construction, Resources, Clothing, Food, Other, Fun, Tools, Components )
 |-|---|  
 Item ID             |  1430085198
 Description         | Attaches to a workbench to allow automated crafting
-Crafting Recipe     | 3 HQM, 2 Tech Trash
-Recycles Into       | 2 HQM, 1 Tech Trash
+Crafting Recipe     | 3 High Quality Metal, 2 Tech Trash
+Recycles Into       | 2 High Quality Metal, 1 Tech Trash
 Stack Size          | 5
 Workbench Required  | Level 2
 Research Table Cost | 75 Scrap
@@ -2660,10 +2711,22 @@ Electrical Inputs   | Power In, Toggle, Turn On, Turn Off
 Industrial Inputs/Outputs | Industrial In, Blueprints In / Industrial Out, Blueprint Out
 Active Usage        | 0
 Power Consumption   | 1rW
-Transfer Rate       |
-Despawn Time        |
+Despawn Time        | 20 minutes
 
 Notes:
+
+- These get installed onto workbenches. Max 2 per bench.
+- The crafting speed for items is the same on all workbenches, unlike when a person crafts a level 1 item in front of a level 3 bench.
+- They have inventory space for Blueprints, Inputs and Outputs. 
+- The blueprints spot only holds BPs.
+- Blueprints craft in order from left to right.
+- Items can only be crafted on the required workbench or higher. 
+- The Input spots hold items that will be used in the crafting process. Items can only go in. There is no way to clear these spots without doing it manually.
+- The Output spots hold the crafted items. No items can be put into these spots unless done manually.
+- Input items have their one industrial connection, Industrial In.
+- Output items have their own industrial connection, Industrial Out.
+- Blueprints have their own industrial in and outputs, Blueprint In and Blueprint Out.
+- Has 4 electrical connections. The last IO that receives power is the action that is performed, with the exception of the Toggle. When power is removed from Toggle, the crafter will turn off.
 
 ---
 
@@ -2681,10 +2744,26 @@ Research Table Cost | 20 Scrap
 Hit Points          | 30
 Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate, Wagon Crate
 Industrial Inputs/Outputs | Industrial In / Industrial Out
-Transfer Rate       |
 Despawn Time        | 5 minutes
 
 Notes:
+
+- Used to connect containers to the industrial system to automatically move items in and out.
+- The number of adapters and the containers they can be placed on a include:
+    - Fridge - 1
+    - Coffin - 1
+    - Small Box - 2
+    - Large Box - 4
+    - Small Furnace - 1
+    - Electric Furnace - 2
+    - Large Furnace - 4
+    - Refinery - 1
+    - Drop Box - 1
+    - Lockers - 3
+    - Vending Machine - 1
+    - Tool Cupboard - 2
+- Adding multiple adapters to a container causes Conveyors to see the container multiple times.
+- Their health is separate from the container it is attached to.
 
 ---
 
@@ -2692,25 +2771,33 @@ Notes:
 
 | | |  
 |-|---|  
-Item ID                   |  
+Item ID                   |  -1196547867
 Description               | An electrical version of a furnace that uses electricity instead of a fuel source
-Crafting Recipe           | 5 HQM, 200 Metal Fragments
-Recycles Into             | 3 HQM, 100 Metal Fragments
+Crafting Recipe           | 5 High Quality Metal, 200 Metal Fragments
+Recycles Into             | 3 High Quality Metal, 100 Metal Fragments
 Stack Size                | 1
 Workbench Required        | Level 2
 Research Table Cost       | 75 Metal Fragments
 Hit Points                | 500
-Where To Find             |
+Where To Find             | Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, NVG Scientist, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Elite Crate, Underwater Lab Yellow Crate, Wagon Military Crate
 Electrical Inputs         | Power, Turn On, Turn Off
-Transfer Rate             |
-Despawn Time              |
-Decay Time                |
+Smelt Rate                | 66% faster then a Small Furnace
+Despawn Time              | 40 minutes
+Decay Time                | 96 hours
 
 Notes:  
 
-- Can be turned on manually, by sending power to the “Turn on” input, or by a nearby igniter.  
-- Like conveyors, powered furnaces retain their on/off state during a server restart,
-  but unpowered furnaces lose their on/off state.  
+- If they are receiving power when the server reboots, it will remain in the same state power reboot.
+- Can be turned on manually or by sending power to the “Turn on” input, or by a nearby Igniter.
+- Can be turned off manually or by sending power to the ‘Turn Off’ input. 
+- The furnace cannot be turned off with a Sprinkler.
+- The Input inventory spots hold raw ore and empty cans. Items can only go in
+- There is no way to clear these spots without doing it manually.
+- The Output inventory spots hold smelted ore. No items can be put into these spots unless done manually.
+- Is 66% faster than a Small Furnace. 
+- They cannot burn wood.
+- Has the ability to be rotated using Reload(`R`).
+ 
 
 ---
 
@@ -2726,13 +2813,15 @@ Stack Size                | 5
 Workbench Required        | Level 1
 Research Table Cost       | 20 Scrap
 Hit Points                | 200
-Where To Find             |
+Where To Find             | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate, Wagon Crate
 Industrial Inputs/Outputs | Industrial In / Industrial Out 1, Industrial Out 2, Industrial Out 3
-Transfer Rate             |
-Despawn Time              |
-Decay Time                |
+Despawn Time              | 5 minutes
 
 Notes:
+
+- They split pipes allowing a Conveyor to send items to multiple containers.
+- If pipes are split in a way that is not divisible into 60, it will cause Conveyors to pull less than 60 items per group per stack.
+- Has the ability to be rotated using Reload(`R`).
 
 ---
 
@@ -2748,15 +2837,19 @@ Stack Size                | 5
 Workbench Required        | Level 1
 Research Table Cost       | 20 Scrap
 Hit Points                | 200
-Where To Find             |
+Where To Find             | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate, Wagon Crate
 Industrial Inputs/Outputs | Industrial In 1, Industrial In 2, Industrial In 3 / Industrial Out
-Transfer Rate             |
-Despawn Time              |
-Decay Time                |
+Despawn Time              | 5 minutes
 
 Notes:
 
+- It combines multiple pipes which allows a Conveyor to see multiple containers.
+- Has the ability to be rotated using Reload(`R`).
+
 ---
+
+---
+
 
 # Voice Props Pack DLC
 
@@ -3034,6 +3127,9 @@ Notes:
 
 ---
 
+---
+
+
 # Fireworks
 
 ---
@@ -3218,9 +3314,10 @@ Notes:
 - If the firework is picked up, the pattern will revert back to default.
 
 ---
+
+---
+
 # Getting Started
-
-
 
 # The Structure of a Base Circuit
 
@@ -3588,6 +3685,19 @@ This battery backup is natively a centralized system but here, we have decentral
 Replacing the Splitter with an Electrical Branch allows you more control over what circuit is the first to lose power and kick on to battery vs the last to kick over to battery. On the Electrical Branch, the output Branch Out lets you dedicate a specific amount of power to a circuit while the output Power Out sends out the remaining amount. As power falls, the circuit that is connected to Power Out will be the first to lose main power and switch over to battery backup before the circuit connected to Branch Out switches over to battery backup.
 
 # Distribution
+
+Needs explaining, but for now, it is the ability to supply an end device or circuit with power from more than 1 power source and/or battery backup. It is not recommended to do this with a battery backup, just use a proper secondary backup instead. 
+
+Centralized distribution is how 99.9% of circuits are wires. All end devices or circuits are fed from a single source of power using a single path. 
+
+Decentralized distribution at its simplest is using an OR Switch to send power to an end device or circuit from 2 or more power sources. 
+
+---
+
+That wraps up this section. I hope I have explained things in a way that makes sense. Please comment on the [Google Doc](https://docs.google.com/documentd19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing) if you have any suggestions or questions.
+
+---
+
 # Power Generation
 
 # Wind Power
@@ -3668,18 +3778,20 @@ In the evenings, Westward facinging panels on the East side of the map will have
 
 ![](images/SwiftMountain_Export_3.png)
 
-Only an admin can get the exact date and time. This is what players cannot see.
+Only an admin can get the exact date and time. This is what players cannot see.  
+
 ![](images/admintool.png)  
+
 Watching where the Sun rises and sets on the horizon can give a player an idea of the time of year. Some modded servers will have a plugin that gives players a clock and might show the sun up and down times. Some might even show the date.
 
 If a pair of panels are placed so each could see either the East or West horizons, the following could reasonably be expected, within a reasonable margin or error.
 
-The Winter Solstice (June 20 2024):   
+**The Winter Solstice (June 20 2024):**   
 - Solar Panels facing East can start to capture the Sun around 7:10am. Power levels will slowly increase until around 9:05am when they will be producing a full 20rW. This lasts until about 1:30pm. Around this time, it will slowly start decreasing power production until around 3:45pm when it stops.  
 - The panel facing West can start to capture the Sun around 11:40am. A few minutes later at around 1:45pm, it will start producing a full 20rW. Around 6:15pm the panel will start decreasing the amount of power produced until about 8:15pm when it stops.  
 - During the winter solstice, 2 combined panels, 1 facing East and 1 facing West, can collect around 940rWm of power.
 
-The Summer Solstice (December 21 2024):  
+**The Summer Solstice (December 21 2024):**  
 - Solar Panels facing East can start to capture the Sun around 6:30am. Power levels will slowly increase until around 8:20am when they will be producing a full 20rW. This lasts until about 2:30pm. Around this time, it will slowly start decreasing power production until around 4:15pm when it stops.
 - The panel facing West can start to capture the Sun around 11am. A few minutes later at around 1pm, it will start producing a full 20rW. Around 7pm the panel will start decreasing the amount of power produced until about 9pm when it stops.
 - During the summer solstice, 2 combined panels, 1 facing East and 1 facing West, can collect around 1075rWm of power.
@@ -3715,9 +3827,12 @@ To figure out how much time a given capacity will run for, outputting a specific
 `Hours: (rWm ÷ O = M) ÷ τ = H`
 
 
+---
 
+That wraps up this section. I hope I have explained things in a way that makes sense. Please comment on the [Google Doc](https://docs.google.com/documentd19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing) if you have any suggestions or questions.
 
 ---
+
 # Power Storage
 
 TL:DR
@@ -3759,7 +3874,7 @@ something called Power Consumption. Read about it in [Battery Active Usage vs Ac
 
 # Battery Backup
 
-There are 2 types of battery backup systems. There are Inline Backups and there are Bypass Backups. Inline backups include the Inline and the KorrektCore. Bypass backups include the OR/Blocker and the Nih Core. Deciding which backup to use really comes down to preference. They each have their own pros and cons and some may argue that 1 is better than another in different situations. For example, if you only need to power a few turrets and are in a hurry, you might find the simplicity of the Inline backup works for you. Maybe you are working with 300rW to 1000rW and a dozen Windmills, you might find the efficiency of the Nih Core is preferred. At the end of the day, as long as the battery backup you go with, works when you need it to work, that was the right backup to choose.
+There are 2 types of battery backup systems. There are Inline Backups and there are Bypass Backups. Inline backups include the Inline and The Kore. Bypass backups include the OR/Blocker and the Nih Core. Deciding which backup to use really comes down to preference. They each have their own pros and cons and some may argue that 1 is better than another in different situations. For example, if you only need to power a few turrets and are in a hurry, you might find the simplicity of the Inline backup works for you. Maybe you are working with 300rW to 1000rW and a dozen Windmills, you might find the efficiency of the Nih Core is preferred. At the end of the day, as long as the battery backup you go with, works when you need it to work, that was the right backup to choose.
 
 ---
 
@@ -3811,9 +3926,13 @@ Cons:
 
 ---
 
-# KorrektCore
+# The Kore
 
-A different kind of inline, will be added soon.
+This is an Inline backup, but different. The battery still powers the circuit all of the time until the battery gets destroyed. When that happens, the circuit will switch over to main power. 
+ 
+![Alt text](images/WLmFo7p.png)
+
+---
 
 # OR/Blocker 
 
@@ -4114,6 +4233,8 @@ The Nih Capacitor was first established by Nih, with assistance from SwiftCoyote
 A Capacitor is a set of components that accumulate power, much like rechargeable batteries.
 However, the method for assessing the amount of stored power differs. 
 
+![](images/batteryui2.png)
+
 For batteries, the stored power is represented as `Capacity`,  
 measured in Rust Watt Minutes (rWm).
 
@@ -4123,6 +4244,8 @@ But within the Capacitor, this figure **DOES NOT indicate the amount of power th
 Rather, this figure is what we call `Wire Capacity`, symbolized as `Np`.
 For instance, in the image below, the displayed `6,492,076` is **NOT** the amount of power available.
 Instead, it represents `6,492,076Np` of Wire Capacity. 
+
+![Alt text](images/capacitor2.png)
 
 Before going into the construction and operation of a Capacitor,
 it’s essential to understand the math conversions between Rust Watt Minutes (rWm) and Wire Capacity (Np).  
@@ -4197,17 +4320,14 @@ This will clarify misconceptions such as the notion of ‘infinite power’ and 
 Now, some of the advantages and benefits of the Capacitor
 
 ---
+
+That wraps up this section. I hope I have explained things in a way that makes sense. Please comment on the [Google Doc](https://docs.google.com/documentd19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing) if you have any suggestions or questions.
+
+---
+
 # Power Distribution
 
-Power distribution is one of the most important things to know and
-understand when it comes to electricity.  
-There are many ways to produce, store and distribute power for your circuits.  
-This section breaks down the components used for distribution and the different types of distribution circuits known as a power bus.  
-It covers the different types of battery backup systems.  
-It covers the difference between the amount of power a circuit consumes versus what a battery thinks it is consuming, aka active usage.  
-This section also covers the theory behind circuit and location centralization, decentralization and hybridization.  
-It covers the game mechanics behind circuit delay and power flow as well
-as the error message, short circuit/max depth.
+
 
 ---
 
@@ -4533,45 +4653,50 @@ We have covered how power flow is affected by components with multiple outputs. 
 ![](images/nihcorepowbat2.png)
 
 The left side shows the order of operation when switching from battery backup to windmill power.  
-`Main Power:`  
 
-    1. The amount of power coming into the Nih Core rises above 106.  
-    2. Power is sent out Power Out to the next Electrical Branch.  
-    3. Power coming out of Branch Out to the Memory Cell rises to its set amount.  
-    4. Power is sent out Power Out to the OR Switch.  
-    5. Power is sent out Branch Out to the Splitter.  
-    6. Power is sent out to the Large Battery.  
-    7. Power is sent out to Set on the Memory Cell.  
-    8. Power is sent out the Memory Cells Output.  
-    9. Power is sent out to Reset on the Memory Cell.  
-    10. Power is sent out to Block Passthrough on the Blocker.  
-    11. Power stops coming out of Inverted Output on the Memory Cell.  
-    12. Power stops coming out of Power Out on the Blocker.  
-    13.Power from the Memory Cells Output is now the power passing through the OR Switch.  
-    14. The battery enters its Off state.  
+#### Main Power:  
 
+1.  The amount of power coming into the Nih Core rises above 106.  
+2.  Power is sent out Power Out to the next Electrical Branch.  
+3.  Power coming out of Branch Out to the Memory Cell rises to its set amount.  
+4.  Power is sent out Power Out to the OR Switch.  
+5.  Power is sent out Branch Out to the Splitter.  
+6.  Power is sent out to the Large Battery.  
+7.  Power is sent out to Set on the Memory Cell.  
+8.  Power is sent out the Memory Cells Output.  
+9.  Power is sent out to Reset on the Memory Cell.  
+10. Power is sent out to Block Passthrough on the Blocker.  
+11. Power stops coming out of Inverted Output on the Memory Cell.  
+12. Power stops coming out of Power Out on the Blocker.  
+13. Power from the Memory Cells Output is now the power passing through the OR Switch.  
+14. The battery enters its Off state.  
 
 The right side is the order of operation when switching from windmill power on to battery backup.  
-`Battery Power:`  
 
-    1. The amount of power coming into the Nih Core drops below 106 triggering the flip but must drop below 101 for it to look like the example pictured.  
-    2. Power stops coming out of Branch Out to the next Electrical Branch.  
-    3. Power coming out of Branch Out to the Memory Cell drops below its set amount.  
-    4. Power stops coming out of Power Out to the OR Switch.  
-    5. Power stops coming out of Branch Out to the Splitter.  
-    6. Power stops coming out of the OR Switch to the Large Battery.  
-    7. Power stops going to Set on the Memory Cell.  
-    8. Power stops coming out of the Memory Cells Output.  
-    9. Power stops going to Reset on the Memory Cell.  
-    10. Power stops going to Block Passthrough on the Blocker.  
-    11. Power is sent out the Memory Cells Inverted Output.  
-    12. The battery enters its On state and sends power out to the Blocker.  
-    13. Power stops coming out of the OR Switch.  
-    14. Power is sent out the OR Switch to the Large Battery.  
-    15. Power is sent out the Blocker to the OR Switch.  
-    16. Power is sent out the OR Switch.  
+#### Battery Power:  
 
-That wraps up this section. I hope I have explained things in a way that makes sense. Please comment on the [Google Doc](https://docs.google.com/documentd19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing) if you have any suggestions or questions.
+1.  The amount of power coming into the Nih Core drops below 106 triggering
+    the flip but must drop below 101 for it to look like the example pictured.  
+2.  Power stops coming out of Branch Out to the next Electrical Branch.  
+3.  Power coming out of Branch Out to the Memory Cell drops below its set amount.  
+4.  Power stops coming out of Power Out to the OR Switch.  
+5.  Power stops coming out of Branch Out to the Splitter.  
+6.  Power stops coming out of the OR Switch to the Large Battery.  
+7.  Power stops going to Set on the Memory Cell.  
+8.  Power stops coming out of the Memory Cells Output.  
+9.  Power stops going to Reset on the Memory Cell.  
+10. Power stops going to Block Passthrough on the Blocker.  
+11. Power is sent out the Memory Cells Inverted Output.  
+12. The battery enters its On state and sends power out to the Blocker.  
+13. Power stops coming out of the OR Switch.  
+14. Power is sent out the OR Switch to the Large Battery.  
+15. Power is sent out the Blocker to the OR Switch.  
+16. Power is sent out the OR Switch.  
+
+That wraps up this section. I hope I have explained things in a way that makes sense. Please comment on the [Google Doc](https://docs.google.com/document/d/19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing) if you have any suggestions or questions.
+
+---
+
 # Uncategorized Concepts
 
 # Side Inputs
@@ -4761,6 +4886,9 @@ Needs work
 *Once inside an Underwater Lap, players will need to find a Keycard to open the Underwater Lab's CCTV Station Module since the final 4-digits of these Rust camera codes are randomly generated. With those 4-digits, players can now input the correct code to the corresponding CCTV camera.*
 
 ---
+
+---
+
 # Useful Circuits
 
 [Auto Smelter](https://www.rustrician.io/?circuit%3D7411c1893993574b24b6c9c911dbc0e3)
@@ -4794,3 +4922,6 @@ Needs work
 [Configure - Basic Pulse Control Set ](https://www.rustrician.io/?circuit%3Dc0487dd792adbd543e8d234a3979bc38)
 
 ---
+
+---
+

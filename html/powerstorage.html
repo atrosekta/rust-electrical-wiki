@@ -882,8 +882,8 @@
 			<span class='sidesign'></span>
 		</a>
 
-		<a class='sideline' href='powerstorage.html#korrektcore'>
-			<span class='sidetext'> KorrektCore </span>
+		<a class='sideline' href='powerstorage.html#the-kore'>
+			<span class='sidetext'> The Kore </span>
 			<span class='sidesign'></span>
 		</a>
 
@@ -1106,14 +1106,14 @@ Active Usage vs Actual Power Consumed</a>.</li>
 <h1 id="battery-backup"><a href="#battery-backup"
 class="anchor-link">*</a>Battery Backup</h1>
 <p>There are 2 types of battery backup systems. There are Inline Backups
-and there are Bypass Backups. Inline backups include the Inline and the
-KorrektCore. Bypass backups include the OR/Blocker and the Nih Core.
-Deciding which backup to use really comes down to preference. They each
-have their own pros and cons and some may argue that 1 is better than
-another in different situations. For example, if you only need to power
-a few turrets and are in a hurry, you might find the simplicity of the
-Inline backup works for you. Maybe you are working with 300rW to 1000rW
-and a dozen Windmills, you might find the efficiency of the Nih Core is
+and there are Bypass Backups. Inline backups include the Inline and The
+Kore. Bypass backups include the OR/Blocker and the Nih Core. Deciding
+which backup to use really comes down to preference. They each have
+their own pros and cons and some may argue that 1 is better than another
+in different situations. For example, if you only need to power a few
+turrets and are in a hurry, you might find the simplicity of the Inline
+backup works for you. Maybe you are working with 300rW to 1000rW and a
+dozen Windmills, you might find the efficiency of the Nih Core is
 preferred. At the end of the day, as long as the battery backup you go
 with, works when you need it to work, that was the right backup to
 choose.</p>
@@ -1193,9 +1193,16 @@ slow or no times.</p>
 <li>Inefficient use of power at large scale</li>
 </ul>
 <hr />
-<h1 id="korrektcore"><a href="#korrektcore"
-class="anchor-link">*</a>KorrektCore</h1>
-<p>A different kind of inline, will be added soon.</p>
+<h1 id="the-kore"><a href="#the-kore" class="anchor-link">*</a>The
+Kore</h1>
+<p>This is an Inline backup, but different. The battery still powers the
+circuit all of the time until the battery gets destroyed. When that
+happens, the circuit will switch over to main power.</p>
+<figure>
+<img src="images/WLmFo7p.png" alt="Alt text" />
+<figcaption aria-hidden="true">Alt text</figcaption>
+</figure>
+<hr />
 <h1 id="orblocker"><a href="#orblocker"
 class="anchor-link">*</a>OR/Blocker</h1>
 <p><img src="images/ORblocker.png" /></p>
@@ -1582,6 +1589,7 @@ class="anchor-link">*</a>Nih Capacitor</h1>
 SwiftCoyote, on September 11, 2022. A Capacitor is a set of components
 that accumulate power, much like rechargeable batteries. However, the
 method for assessing the amount of stored power differs.</p>
+<p><img src="images/batteryui2.png" /></p>
 <p>For batteries, the stored power is represented as
 <code>Capacity</code>,<br />
 measured in Rust Watt Minutes (rWm).</p>
@@ -1595,6 +1603,10 @@ what we call <code>Wire Capacity</code>, symbolized as <code>Np</code>.
 For instance, in the image below, the displayed <code>6,492,076</code>
 is <strong>NOT</strong> the amount of power available. Instead, it
 represents <code>6,492,076Np</code> of Wire Capacity.</p>
+<figure>
+<img src="images/capacitor2.png" alt="Alt text" />
+<figcaption aria-hidden="true">Alt text</figcaption>
+</figure>
 <p>Before going into the construction and operation of a Capacitor, it’s
 essential to understand the math conversions between Rust Watt Minutes
 (rWm) and Wire Capacity (Np).</p>
@@ -1674,6 +1686,10 @@ battery that doesn’t lose power if nothing is connected to it.</li>
 </ul>
 <p>Now, some of the advantages and benefits of the Capacitor</p>
 <hr />
+<p>That wraps up this section. I hope I have explained things in a way
+that makes sense. Please comment on the <a
+href="https://docs.google.com/documentd19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing">Google
+Doc</a> if you have any suggestions or questions.</p>
 		</main>
 		</div>
 
