@@ -26,7 +26,7 @@ Decay Time        | 12 hours
 Notes:
 
 - They are used for destroying player flown aircraft, i.e. minicopter, scrap heli and hot air balloon. It doesnt matter if there is a pilot or if the pilot has TC auth. They shoot the craft, not the player, unless in Defender Mode.
-- Looking at the SAM and holding Use(E) allows a player to enable and disable Defender Mode. In Defender Mode it will only target incoming MLRS rockets.
+- Looking at the SAM and holding Use(`E`) allows a player to enable and disable Defender Mode. In Defender Mode it will only target incoming MLRS rockets.
 - To successfully defend from an MLRS attack, it is recommended placing 3 SAM Sites on the side of the base that is nearest the Abandoned Military Base and build them as high as the base is tall. 
 - Has a range of 150 meters, or 1 grid square.
 - It will not target anything below its own height.
