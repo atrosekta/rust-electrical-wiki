@@ -1049,7 +1049,7 @@ SO DONT EDIT IT, YOUR CHANGES WILL BE LOST !
 <h1 id="the-rust-electrical-handbook"><a
 href="#the-rust-electrical-handbook" class="anchor-link">*</a>The RUST
 Electrical Handbook</h1>
-<p><em>you are the <span id="visitorcount"></span>th visitor !</em></p>
+<p><em>You are the <span id="visitorcount"></span>th visitor !</em></p>
 <hr />
 <p>This is a work in progress, everything is subject to change, be
 reorganised or moved to some other sub pages, but any info still valid
@@ -1081,8 +1081,7 @@ needing to know html/css/javascript. All the content is writen in
 markdown format (similar to discord messages: *<em>italic</em>*,
 **<strong>bold</strong>**, etc…) For now, I havent written something
 that explains how to do it but you can ask <span class="citation"
-data-cites="3YE#6593">@3YE#6593</span> on Discord for more
-information.</p>
+data-cites="3YE">@3YE</span> on Discord for more information.</p>
 <hr />
 <hr />
 <h1 id="tools"><a href="#tools" class="anchor-link">*</a>Tools</h1>
@@ -10415,17 +10414,17 @@ essential to understand the math conversions between Rust Watt Minutes
 depending on the energy storage container, be it a battery or a
 capacitor.</p>
 <p><strong>The Maths:</strong><br />
-<code>rWm</code>: rust watt minutes (capacity)<br />
-<code>rW</code>: rust watts (commonly referred to as “power”)<br />
-<code>Np</code>: Wire Capacity<br />
-<code>∅</code>: 7.5 (Trust Me Bro)<br />
-<code>S</code>: Seconds<br />
-<code>τ</code>: 60 (The number of seconds in a minute, and minutes in an
-hour)<br />
-<code>M</code>: Minutes<br />
-<code>P</code>: Max power output for 1 second<br />
-<code>O</code>: The amount of power you want to output<br />
-<code>H</code>: Hours</p>
+<code>rWm :</code> rust watt minutes (capacity)<br />
+<code>rW :</code> rust watts (commonly referred to as “power”)<br />
+<code>Np :</code> Wire Capacity<br />
+<code>∅ :</code> 7.5 (Trust Me Bro)<br />
+<code>S :</code> Seconds<br />
+<code>τ :</code> 60 (The number of seconds in a minute, and minutes in
+an hour)<br />
+<code>M :</code> Minutes<br />
+<code>P :</code> Max power output for 1 second<br />
+<code>O :</code> The amount of power you want to output<br />
+<code>H :</code> Hours</p>
 <p>To convert rWm into Wire Capacity(Np), use the following
 equation:<br />
 <code>(rWm × τ = P) × ∅ = Np</code></p>
@@ -10437,9 +10436,10 @@ a specific amount of power, use the following equations:<br />
 <code>Seconds: (rWm ÷ O = M) × τ = S</code><br />
 <code>Minutes: rWm ÷ O = M</code><br />
 <code>Hours: (rWm ÷ O = M) ÷ τ = H</code></p>
-<p>Examples Using Capacity from the battery in the first picture, it is
-possible to figure out the number that would be seen if looking at an IO
-connection in a Capacitor to view Wire Capacity(Np).<br />
+<p><strong>Examples</strong><br />
+Using Capacity from the battery in the first picture, it is possible to
+figure out the number that would be seen if looking at an IO connection
+in a Capacitor to view Wire Capacity(Np).<br />
 <code>(rWm × τ = P) × ∅ = Np</code><br />
 <code>(271 × 60 = 16,260) × 7.5 = 121,950Np</code></p>
 <p>Therefore a capacity of 271rWm when viewed on an IO connection is
@@ -10452,14 +10452,15 @@ have if this was viewed on a battery.<br />
 <code>(Np ÷ ∅ = P) ÷ τ = rWm</code><br />
 <code>(6,492,076 ÷ 7.5 = 865,610.1333) ÷ 60 = 14,426rWm</code></p>
 <p>Therefore a Wire Capacity of 6,492,076Np when viewed on a battery
-represented as Capacity, it is equal to 14,426rWm.<br />
-Without a limited output, the Capacitor is capable of delivering
+represented as Capacity, it is equal to 14,426rWm.</p>
+<p>Without a limited output, the Capacitor is capable of delivering
 865,610rW of power for 1 second.</p>
 <p>Using both of these examples, it’s possible to calculate the length
 of time both the Battery and Capacitor would power a circuit for, given
 a set output.</p>
 <blockquote>
 <p>For our example, let’s say the circuit needs 100 power.</p>
+</blockquote>
 <p>Battery :<br />
 <code>(rWm ÷ O = M) × τ = S</code><br />
 <code>(271÷ 100 = 2.71 Minutes) × 60 = 162 Seconds</code></p>
@@ -10470,7 +10471,6 @@ first)</em><br />
 <p>OR :<br />
 <code>(rWm ÷ O = M) ÷ τ = H</code><br />
 <code>(14,426 ÷ 100 = 144.26 Minutes) ÷ 60 = 2.40 Hours</code></p>
-</blockquote>
 <p>Prior to constructing a capacitor, it’s crucial to understand its
 limitations and potential issues. This will clarify misconceptions such
 as the notion of ‘infinite power’ and help identify the appropriate
@@ -11091,40 +11091,40 @@ CCTV camera.</em></li>
 <h1 id="useful-circuits"><a href="#useful-circuits"
 class="anchor-link">*</a>Useful Circuits</h1>
 <p><a
-href="https://www.rustrician.io/?circuit%3D7411c1893993574b24b6c9c911dbc0e3">Auto
+href="https://www.rustrician.io/?circuit=7411c1893993574b24b6c9c911dbc0e3">Auto
 Smelter</a></p>
 <p><a
-href="https://www.rustrician.io/?circuit%3D773b599014deb161fc173f295727be77">Blocker
+href="https://www.rustrician.io/?circuit=773b599014deb161fc173f295727be77">Blocker
 Chain</a></p>
 <p><a
-href="https://www.rustrician.io/?circuit%3De7c8a8ccc9ce2da68095cca2560da002">Configure
+href="https://www.rustrician.io/?circuit=e7c8a8ccc9ce2da68095cca2560da002">Configure
 Siphon</a></p>
 <p><a
-href="https://www.rustrician.io/?circuit%3Dfa8ba5c2e3974185c6f01273eab653f1">Delay
+href="https://www.rustrician.io/?circuit=fa8ba5c2e3974185c6f01273eab653f1">Delay
 Timer</a></p>
 <p><a
-href="https://www.rustrician.io/?circuit%3Dbf38168f0834f7d84fb837ac41d1818e">Destruction
+href="https://www.rustrician.io/?circuit=bf38168f0834f7d84fb837ac41d1818e">Destruction
 Detection</a></p>
 <p><a
 href="https://www.rustrician.io/?circuit=8958914d237cd6fce723a5ca2fc4cd8d">Every
 Box is a Drop Box</a></p>
 <p><a
-href="https://www.rustrician.io/?circuit%3D64810508602bc0cd1baa954d1a1da539">Logic
+href="https://www.rustrician.io/?circuit=64810508602bc0cd1baa954d1a1da539">Logic
 Gates</a></p>
 <p><a
-href="https://www.rustrician.io/?circuit%3Db64e3a0f6f9d6d456ead9821abf9d7d7">Memory
+href="https://www.rustrician.io/?circuit=b64e3a0f6f9d6d456ead9821abf9d7d7">Memory
 Cell Explained</a></p>
 <p><a
-href="https://www.rustrician.io/?circuit%3Dd131cf1233742ebd0acb8ebaaf3b9d1a">Nih
+href="https://www.rustrician.io/?circuit=d131cf1233742ebd0acb8ebaaf3b9d1a">Nih
 Core</a></p>
 <p><a
-href="https://www.rustrician.io/?circuit%3D60fc05f187614f131aa5565be42a6687">Nih
+href="https://www.rustrician.io/?circuit=60fc05f187614f131aa5565be42a6687">Nih
 Core - 4 Large Batteries</a></p>
 <p><a
-href="https://www.rustrician.io/?circuit%3D1d0b869c046f6d05ee75ab0f841fc150">Nih
+href="https://www.rustrician.io/?circuit=1d0b869c046f6d05ee75ab0f841fc150">Nih
 Core - Decentralized</a></p>
 <p><a
-href="https://www.rustrician.io/?circuit%3Dca9bdcbc87f0a13ca3a3ce0c8fe4146d">Probability
+href="https://www.rustrician.io/?circuit=ca9bdcbc87f0a13ca3a3ce0c8fe4146d">Probability
 Master Class</a></p>
 <hr />
 <p><a

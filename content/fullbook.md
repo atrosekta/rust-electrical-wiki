@@ -5,7 +5,7 @@ SO DONT EDIT IT, YOUR CHANGES WILL BE LOST !
 
 # The RUST Electrical Handbook
 
-*you are the []{#visitorcount}th visitor !*
+*You are the []{#visitorcount}th visitor !*
 
 ---
 
@@ -36,7 +36,7 @@ Its made in a way so someone could edit the website content without needing
 to know html/css/javascript. All the content is writen in markdown format
 (similar to discord messages: \**italic*\*, \*\***bold**\*\*, etc...)
 For now, I havent written something that explains how to do it but you can
-ask @3YE#6593 on Discord for more information.
+ask @3YE on Discord for more information.
 
 ---
 
@@ -4253,16 +4253,16 @@ it’s essential to understand the math conversions between Rust Watt Minutes (r
 Both represent capacity, but they use different units of measurement depending on the energy storage container, be it a battery or a capacitor. 
 
 **The Maths:**  
-`rWm`: rust watt minutes (capacity)  
-`rW`: rust watts (commonly referred to as "power")  
-`Np`: Wire Capacity  
-`∅`: 7.5 (Trust Me Bro)  
-`S`: Seconds  
-`τ`: 60 (The number of seconds in a minute, and minutes in an hour)  
-`M`: Minutes  
-`P`: Max power output for 1 second  
-`O`: The amount of power you want to output  
-`H`: Hours  
+`rWm :` rust watt minutes (capacity)  
+`rW :` rust watts (commonly referred to as "power")  
+`Np :` Wire Capacity  
+`∅ :` 7.5 (Trust Me Bro)  
+`S :` Seconds  
+`τ :` 60 (The number of seconds in a minute, and minutes in an hour)  
+`M :` Minutes  
+`P :` Max power output for 1 second  
+`O :` The amount of power you want to output  
+`H :` Hours  
 
 
 To convert rWm into Wire Capacity(Np), use the following equation:  
@@ -4276,7 +4276,7 @@ To figure out how much time a given capacity will run for outputting a specific 
 `Minutes: rWm ÷ O = M`  
 `Hours: (rWm ÷ O = M) ÷ τ = H`  
 
-Examples
+**Examples**  
 Using Capacity from the battery in the first picture, it is possible to figure out the number that would be seen if looking at an IO connection in a Capacitor to view Wire Capacity(Np).  
 `(rWm × τ = P) × ∅ = Np`  
 `(271 × 60 = 16,260) × 7.5 = 121,950Np`  
@@ -4291,20 +4291,21 @@ it is possible to figure out how much rWm of Capacity we would have if this was 
 `(6,492,076 ÷ 7.5 = 865,610.1333) ÷ 60 = 14,426rWm`  
 
 Therefore a Wire Capacity of 6,492,076Np when viewed on a battery represented as Capacity, it is equal to 14,426rWm.  
+
 Without a limited output, the Capacitor is capable of delivering 865,610rW of power for 1 second. 
 
 Using both of these examples, it's possible to calculate the length of time both the Battery and Capacitor would power a circuit for,
 given a set output.
 > For our example, let's say the circuit needs 100 power.  
->
+
 Battery :  
   `(rWm ÷ O = M) × τ = S`  
   `(271÷ 100 = 2.71 Minutes) × 60 = 162 Seconds`  
->
+
 Capacitor : *(you will need to convert from Np to rWm first)*  
   `(rWm ÷ O = M) × τ = S`  
   `(14,426 ÷ 100 = 144.26 Minutes) × 60 = 8,655 Seconds`  
->
+
 OR :  
   `(rWm ÷ O = M) ÷ τ = H`  
   `(14,426 ÷ 100 = 144.26 Minutes) ÷ 60 = 2.40 Hours`  
@@ -4891,29 +4892,29 @@ Needs work
 
 # Useful Circuits
 
-[Auto Smelter](https://www.rustrician.io/?circuit%3D7411c1893993574b24b6c9c911dbc0e3)
+[Auto Smelter](https://www.rustrician.io/?circuit=7411c1893993574b24b6c9c911dbc0e3)
 
-[Blocker Chain](https://www.rustrician.io/?circuit%3D773b599014deb161fc173f295727be77)
+[Blocker Chain](https://www.rustrician.io/?circuit=773b599014deb161fc173f295727be77)
 
-[Configure Siphon](https://www.rustrician.io/?circuit%3De7c8a8ccc9ce2da68095cca2560da002)
+[Configure Siphon](https://www.rustrician.io/?circuit=e7c8a8ccc9ce2da68095cca2560da002)
 
-[Delay Timer](https://www.rustrician.io/?circuit%3Dfa8ba5c2e3974185c6f01273eab653f1)
+[Delay Timer](https://www.rustrician.io/?circuit=fa8ba5c2e3974185c6f01273eab653f1)
 
-[Destruction Detection](https://www.rustrician.io/?circuit%3Dbf38168f0834f7d84fb837ac41d1818e)
+[Destruction Detection](https://www.rustrician.io/?circuit=bf38168f0834f7d84fb837ac41d1818e)
 
 [Every Box is a Drop Box](https://www.rustrician.io/?circuit=8958914d237cd6fce723a5ca2fc4cd8d)
 
-[Logic Gates](https://www.rustrician.io/?circuit%3D64810508602bc0cd1baa954d1a1da539)
+[Logic Gates](https://www.rustrician.io/?circuit=64810508602bc0cd1baa954d1a1da539)
 
-[Memory Cell Explained](https://www.rustrician.io/?circuit%3Db64e3a0f6f9d6d456ead9821abf9d7d7)
+[Memory Cell Explained](https://www.rustrician.io/?circuit=b64e3a0f6f9d6d456ead9821abf9d7d7)
 
-[Nih Core](https://www.rustrician.io/?circuit%3Dd131cf1233742ebd0acb8ebaaf3b9d1a)
+[Nih Core](https://www.rustrician.io/?circuit=d131cf1233742ebd0acb8ebaaf3b9d1a)
 
-[Nih Core - 4 Large Batteries](https://www.rustrician.io/?circuit%3D60fc05f187614f131aa5565be42a6687)
+[Nih Core - 4 Large Batteries](https://www.rustrician.io/?circuit=60fc05f187614f131aa5565be42a6687)
 
-[Nih Core - Decentralized](https://www.rustrician.io/?circuit%3D1d0b869c046f6d05ee75ab0f841fc150)
+[Nih Core - Decentralized](https://www.rustrician.io/?circuit=1d0b869c046f6d05ee75ab0f841fc150)
 
-[Probability Master Class](https://www.rustrician.io/?circuit%3Dca9bdcbc87f0a13ca3a3ce0c8fe4146d)
+[Probability Master Class](https://www.rustrician.io/?circuit=ca9bdcbc87f0a13ca3a3ce0c8fe4146d)
 
 
 
