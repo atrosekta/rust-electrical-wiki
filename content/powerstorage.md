@@ -418,16 +418,16 @@ it’s essential to understand the math conversions between Rust Watt Minutes (r
 Both represent capacity, but they use different units of measurement depending on the energy storage container, be it a battery or a capacitor. 
 
 **The Maths:**  
-`rWm`: rust watt minutes (capacity)  
-`rW`: rust watts (commonly referred to as "power")  
-`Np`: Wire Capacity  
-`∅`: 7.5 (Trust Me Bro)  
-`S`: Seconds  
-`τ`: 60 (The number of seconds in a minute, and minutes in an hour)  
-`M`: Minutes  
-`P`: Max power output for 1 second  
-`O`: The amount of power you want to output  
-`H`: Hours  
+`rWm :` rust watt minutes (capacity)  
+`rW :` rust watts (commonly referred to as "power")  
+`Np :` Wire Capacity  
+`∅ :` 7.5 (Trust Me Bro)  
+`S :` Seconds  
+`τ :` 60 (The number of seconds in a minute, and minutes in an hour)  
+`M :` Minutes  
+`P :` Max power output for 1 second  
+`O :` The amount of power you want to output  
+`H :` Hours  
 
 
 To convert rWm into Wire Capacity(Np), use the following equation:  
@@ -441,7 +441,7 @@ To figure out how much time a given capacity will run for outputting a specific 
 `Minutes: rWm ÷ O = M`  
 `Hours: (rWm ÷ O = M) ÷ τ = H`  
 
-Examples
+**Examples**  
 Using Capacity from the battery in the first picture, it is possible to figure out the number that would be seen if looking at an IO connection in a Capacitor to view Wire Capacity(Np).  
 `(rWm × τ = P) × ∅ = Np`  
 `(271 × 60 = 16,260) × 7.5 = 121,950Np`  
@@ -456,20 +456,21 @@ it is possible to figure out how much rWm of Capacity we would have if this was 
 `(6,492,076 ÷ 7.5 = 865,610.1333) ÷ 60 = 14,426rWm`  
 
 Therefore a Wire Capacity of 6,492,076Np when viewed on a battery represented as Capacity, it is equal to 14,426rWm.  
+
 Without a limited output, the Capacitor is capable of delivering 865,610rW of power for 1 second. 
 
 Using both of these examples, it's possible to calculate the length of time both the Battery and Capacitor would power a circuit for,
 given a set output.
 > For our example, let's say the circuit needs 100 power.  
->
+
 Battery :  
   `(rWm ÷ O = M) × τ = S`  
   `(271÷ 100 = 2.71 Minutes) × 60 = 162 Seconds`  
->
+
 Capacitor : *(you will need to convert from Np to rWm first)*  
   `(rWm ÷ O = M) × τ = S`  
   `(14,426 ÷ 100 = 144.26 Minutes) × 60 = 8,655 Seconds`  
->
+
 OR :  
   `(rWm ÷ O = M) ÷ τ = H`  
   `(14,426 ÷ 100 = 144.26 Minutes) ÷ 60 = 2.40 Hours`  
