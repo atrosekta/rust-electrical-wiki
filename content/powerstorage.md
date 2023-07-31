@@ -160,9 +160,13 @@ main power and battery power, it is because 1 of 2 issues.
 
 ![](images/nihcoresolutions.png)
 
-Solution 1 - If using only 1 battery, add a Root Combiner between the battery and blocker to keep the battery active. If the battery does not have something registering Active Usage, it will enter an inactive state. This causes a delay when switching on to battery power waiting for the battery to wake up. 
+**Solution 1 -** If using only 1 battery, add a Root Combiner between the battery and blocker to keep the battery active. If the battery does not have something registering Active Usage, it will enter an inactive state. This causes a delay when switching on to battery power waiting for the battery to wake up. 
 
-Solution 2 - If already using a Root Combiner or using more than 1 battery, add 1 or 2, maybe even 3 components between the Memory Cells ‘Output’ and the OR Switch. This will hold power here longer giving the circuit a chance to receive power from the battery.
+**Solution 2 -** If already using a Root Combiner or using more than 1 battery, add 1 or 2, maybe even 3 components between the Memory Cells ‘Output’ and the OR Switch. This will hold power here longer giving the circuit a chance to receive power from the battery.
+
+**Solution 3 -** Use a secondary inline battery backup to buffer against the flicker on circuits that need stability. In the picture below, the purple wires are representing a destruction detection system on some walls. Then the flicker happens, the Smart Alarm gets triggered. Adding the battery prevents that from happening. It does cost 20% more power for that circuit because of the battery, but it is 100% stable. The yellow wires represent circuits that do not need 100% stability. It could be deemed acceptable if these circuits turn off and on once in a while.
+
+![](images/solution3.png)
 
 
 Recommended reading:
