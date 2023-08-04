@@ -377,9 +377,6 @@ Decentralized distribution at its simplest is using OR Switches (outlined by pur
 
 ![Alt text](images/decentdist.png)
 
-This current configuration is the most extreme way of decentralizing distribution. It is just a demonstration and would not be a practical example, unless the goal is redundancy beyond a secondary backup battery. Doubling the amount of power produced, stored and sent to the end devices is very expensive especially when both systems are constantly active. 
-
-Needs completing…….
 
 ---
 
