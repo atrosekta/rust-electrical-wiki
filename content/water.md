@@ -288,13 +288,11 @@ Despawn Time        | 5 minutes
 
 Notes:
 
-- The water input is evenly divided between all connected outputs. 100
-  in divided by 2 equals 50 per output. 100 in divided by 3 equals 33
-  for each output.
-- Can be placed on all surfaces including the ground
+- The water input is evenly divided between all connected outputs. 100 ÷ 2 = 50 per output. 100 ÷ 3 = 33 for each output.
+- Can be placed on all surfaces including the ground.
 - Each connected output shows it consumes 1 water from the input amount.
   If we give the splitter 12 and have a connection on each output, each
-  output only gets 3. This appears to be a visual bug. If we create the
+  output only gets 3. This is a visual bug. If we create the
   below picture in game, we can see there is no water loss.
 
 ![](images/image47.png)
@@ -325,9 +323,9 @@ Notes:
 
 - Sprinklers have a radius of 1 foundation or 3 meters. Anything that
   water can affect within this range will be affected.
-- Primarily used for indoor plant farms using planter boxes
-- Will get people wet if they are in range
+- Primarily used for indoor plant farms using planter boxes.
+- Will get people wet if they are in range.
 - Will extinguish campfires, lanterns, furnaces and other similar items.
-- Will not extinguish fire from the flamethrower or molotov cocktail
+- Will not extinguish fire from the flamethrower or molotov cocktail.
 
 ---

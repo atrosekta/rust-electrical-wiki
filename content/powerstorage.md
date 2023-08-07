@@ -245,8 +245,7 @@ When you look at the battery with a wire tool, you will see Active
 Usage. Active Usage is the amount of power the battery is draining by.
 This is the number you want to use when calculating how much power to
 give a battery for it to remain charged based on the battery's 80%
-efficiency. Active Usage divided by 0.8 = a battery's minimum power
-input.
+efficiency. Active Usage ÷ 0.8 or Active Usage × 1.25 gives you the minimum power input to remain neutral.
 
 ![](images/large-battery-ui.png)
 

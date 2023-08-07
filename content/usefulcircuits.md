@@ -4,6 +4,8 @@
 
 [Blocker Chain](https://www.rustrician.io/?circuit=773b599014deb161fc173f295727be77)
 
+[Close All Doors with a Red Button](https://www.rustrician.io/?circuit=43eca6c525fb723146cc0fc7ca45a730)
+
 [Configure Siphon](https://www.rustrician.io/?circuit=e7c8a8ccc9ce2da68095cca2560da002)
 
 [Delay Timer](https://www.rustrician.io/?circuit=fa8ba5c2e3974185c6f01273eab653f1)
