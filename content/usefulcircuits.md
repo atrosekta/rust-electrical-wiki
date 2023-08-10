@@ -24,6 +24,8 @@
 
 [Nih Core - Decentralized](https://www.rustrician.io/?circuit=1d0b869c046f6d05ee75ab0f841fc150)
 
+[Parallel vs Series](https://www.rustrician.io/?circuit=0191b550a1c45104ce7129c15ba13d4f)
+
 [Probability Master Class](https://www.rustrician.io/?circuit=ca9bdcbc87f0a13ca3a3ce0c8fe4146d)
 
 

@@ -171,9 +171,9 @@ main power and battery power, it is because 1 of 2 issues.
 
 Recommended reading:
 
-- [ Battery Active Usage vs Actual Power Consumption ](concepts.html#battery-active-usage-vs-actual-power-consumed)
-- [ Short Circuit / Max Depth ](concepts.html#short-circuit-max-depth)
-- [ Circuit Delay and Power Flow ](concepts.html#circuit-delay-and-power-flow)
+- [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#-Battery-Active-Usage-vs-Actual-Power-Consumed)
+- [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)
+- [ Circuit Delay and Power Flow ](powerdistribution.html#circuit-delay-and-power-flow)
 
 Pros:
 

@@ -1,6 +1,6 @@
 # Power Distribution
 
-
+Power always needs a way to get from point A to point B. That could be from a Wind Turbine to an Auto Turret or from a Solar Panel to a Light. The most difficult part of deciding how to distribute power is knowing how the components that are specifically made for this job function. There are 2 main components, the Electrical Branch and the Splitter and its recommended reading about them specifically in the Power Distribution section under Component Details.
 
 ---
 
@@ -8,16 +8,10 @@
 
 ![](images/image127.png)
 
-A power bus is a group of components with the sole purpose of directing
-the flow of electricity to different circuits that perform specific
-tasks such as auto turrets or lighting. This is a lot like the breaker
-panel or fuse panel you have in your home for your electricity. Each
-breaker or fuse is dedicated for a specific room or purpose, like the
-fridge, furnace, bedrooms or garage. A power bus also helps prioritize
-the order in which circuits receive power. In the event you are
-producing less power then you need, you have built in control over which
-circuit is last to go offline. We have 3 types of power buses, fixed,
-dynamic and configurable.
+A power bus is a single or group of components with the sole purpose of directing the flow of electricity to different circuits that perform specific tasks such as auto turrets or lighting. This is a lot like the breaker panel or fuse panel you have in your home for your electricity. Each breaker or fuse is dedicated for a specific room or purpose, like the fridge, furnace, bedrooms or garage. These breakers or fuses limit how much power each circuit can use and in Rust, this is no different. Instead of breakers or fuses, its Electrical Branches and Splitters.
+
+ The most difficult part of deciding how to distribute power is knowing how the components that are specifically made for this job function. There are 2 main components, the Electrical Branch and the Splitter and its recommended reading about them specifically in the Power Distribution section under Component Details. There are 3 types of power buses, fixed, dynamic and configurable. 
+
 
 ---
 
@@ -25,18 +19,10 @@ dynamic and configurable.
 
 ![](images/image115.png)
 
-A fixed bus, known as an F-Bus, is when you dedicate a specific amount
-of power per output. This type of power bus always consumes the amount
-of power each output is set to even if nothing is attached to Branch
-Out. This will affect Inline battery backups by forcing an Active Usage
-and it will affect a bypass battery backup by always consuming power,
-even when the components connected to Branch Out are offline. A fixed
-bus is an easy way to build in priorities and a bit of security. The
-first Electrical Branch has the highest priority because it's the first
-to get power and in the event that power levels start falling, it will
-be the last branch to lose power. The security comes from knowing that
-if 50% of the power supply disappears, only some branches will lose
-power and not all.
+A fixed bus, known as an F-Bus, is when you dedicate a specific amount of power per output. This can be just a single Electrical Branch or a group of them. This type of power bus always consumes the amount of power each output is set to, even if nothing is attached to Branch Out. This will affect Inline battery backups by forcing an Active Usage and it will affect a bypass battery backup by always consuming power, even when the components connected to Branch Out are offline. 
+
+A fixed bus is an easy way to build in priorities and a bit of security. The first Electrical Branch has the highest priority because it's the first to get power and in the event that power levels start falling, it will be the last branch to lose power. The security comes from knowing that if 50% of the power supply disappears, only some branches will lose power and not all. 
+
 
 ---
 
@@ -44,18 +30,12 @@ power and not all.
 
 ![](images/image51.png)
 
-A dynamic bus, known as a D-Bus, is when we let the components evenly
-distribute power between all connected outputs. The only control you
-have over the amount of power available to each output is the amount of
-power you put into it. This is primarily used when the component or
-circuit attached to each output requires the same amount of power or
-when each circuit uses less than the available power and you want to
-avoid the forced Active Usage from an Electrical Branch. If an output
-gets destroyed, the system will evenly redistribute power between the
-remaining outputs. The drawback would be that if the incoming power
-drops too low to support the connected outputs, everything will stop
-working or at least those that require the full amount of power that was
-previously present.
+A dynamic bus, known as a D-Bus, is when the components evenly distribute power between all connected outputs. This can be just a single Splitter or a group of them and the only control over the amount of power available at each output is the amount of power that is put into it. 
+
+This is great when the component or circuit attached to each output requires the same amount of power. It is a power efficient way to supply the same amount of power to multiple components or circuits. When using a bypass battery backup, it can free up some power to be used somewhere else. When using an Inline battery backup, only the Active Usage from the Splitter is forced onto the battery. Only when the components connected to each output are online will their Active Usage be reflected on the battery. This is good in situations where a player wants to use a Switch to turn things off before they logout. 
+
+If an output gets destroyed, the system will evenly redistribute power between the remaining outputs. The drawback would be that if the incoming power drops too low to support the connected outputs, everything will stop working or at least those that require the full amount of power that was previously present.
+
 
 ---
 
@@ -63,74 +43,18 @@ previously present.
 
 ![](images/multi-c-bus.png)
 
-A configure siphon, known as a C-Bus, is a bypass distributor that is
-only active when required. The idea here is that we only want to use
-power when the C-Bus is active otherwise the power just passes through.
-We can set an Electrical Branch in the siphon to a specific amount of
-power to only be used when the siphon is active. There are multiple
-versions of the C-Bus, and we will dive into each one, but to start, I
-just want to explain the concept.
+A configure siphon, known as a C-Bus, is a bypass distributor that is only active when required. The idea is only when power is needed will the C-Bus become active, otherwise the power just passes through. Set the Electrical Branches in the siphon to a specific amount of power to only be used when the siphon is active. There are multiple versions of the siphon based on if there is a need for manual or automatic operation and what kind of battery backup is being used. 
 
-All of them are centered around the Memory Cell. The Memory Cell has 2
-outputs, Output and Inverted Output. One output is called the Main Line
-(aka the bypass) and the other output goes to the Circuit that we want
-to power. The Main Line is the default path the electricity takes when
-the siphon is not active. It will pass from a Memory Cell to an OR
-Switch and out. The Circuit path is the route electricity will take when
-the Memory Cell gets triggered. It gets sent to an Electrical Branch
-that is configured to an amount of power the circuit needs while the
-remainder gets sent off to the OR Switch and back onto the Main Line to
-continue powering the circuits past it. While this is the general
-concept, we can get a little more specific.
+All of them are centered around the Memory Cell. The Memory Cell has 2 outputs, Output and Inverted Output. One output is called the Main Line (aka the bypass) and the other output goes to the Circuit that we want to power. The Main Line is the default path the electricity takes when the siphon is not active. It will pass from a Memory Cell to an OR Switch and out. The Circuit path is the route electricity will take when the Memory Cell gets triggered. It gets sent to an Electrical Branch that is configured to an amount of power the circuit needs while the remainder gets sent off to the OR Switch and back onto the Main Line to continue powering the circuits past it. While this is the general concept, let's get a little more specific.
 
-There are 2 categories of Configure Siphons. There is the Auto Reset
-which will automatically turn itself on when an input is received and
-off when the input signal is removed. The second is Manual which
-requires you to manually turn it on and off. Within each of these
-categories there are 2 types. There is the standard C-Bus which is to be
-used in a circuit that uses a bypass battery backup like the Nih Core.
-The second type is the Blocked C-Bus meant to be used in a circuit that
-uses an Inline battery backup. The reason 1 has a Blocker is because of
-the nature of components and a battery's Active Usage. The Blocker has
-the ability to hide Active Usage from a battery when it is actively
-being blocked. Read more about that in the section titled Battery Active
-Usage Vs Actual Power Consumed.
+There are **2 categories** of Configure Siphons. There is the **Auto Reset** which will automatically turn itself on when an input is received and off when the input signal is removed. The second is **Manual** which requires a player to manually turn it on and off. Within each of these categories there are **2 types**. There is the **Standard C-Bus** which is to be used in a circuit that uses a bypass battery backup like the [Nih Core](powerstorage.html#Nih-Core). The second type is the Blocked C-Bus meant to be used in a circuit that uses an [Inline](powerstorage.html#Nih-Core) battery backup. The reason 1 has a Blocker is because of the nature of components and a battery's Active Usage. The Blocker has the ability to hide Active Usage from a battery when it is actively being blocked. Read more about that in the section titled [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#-Battery-Active-Usage-vs-Actual-Power-Consumed) located in Power Storage under Concepts.
 
-Now to get very specific. Starting with the Auto Reset siphons, these by
-default will send power out the Inverted Output(left output). Power will
-be passed to an OR Switch then out. In the Blocked version, power gets
-passed to an Electrical Branch that is used to block a Blocker before
-passing power to the OR Switch and out. ‘Out’ could be another siphon,
-another type of power bus or whatever you would like. We are using a
-HBHF Sensor as our input source but it doesnt have to be. All we need is
-a constant source of power to keep the siphon active. When the sensor
-outputs power, it will ‘SET’ the Memory Cell. This will force the Memory
-Cell to flip outputs and send power through Output(right output). From
-Output, power will be sent to an Electrical Branch configured to +2 over
-the amount of power your circuit will need. The leftover power will pass
-through Power Out and merge back into the Main Line. The power coming
-out of Branch Out will go to another Electrical Branch that will be set
-to the amount of power the circuit actually needs. The reason for +2 is
-because we need 1 for the second Electrical Branch itself and 1 to be
-sent out Power Out to ‘RESET’ on the Memory Cell. In the blocked
-version, we are simply adding a Blocker before the first Electrical
-Branch so we can hide the Active Usage caused by the Electrical Branches
-from a battery. When the sensor stops sending power to ‘SET’, the power
-going to ‘RESET’ will force the Memory Cell to flip outputs back to
-Inverted Output and return power to the Main Line. In the blocked
-version, because of the Electrical Branch on the Main Line, the Blocker
-will get blocked again to hide the Active Usage.
+Now to get very specific. Starting with the Auto Reset siphons, these by default will send power out the Inverted Output(left output). Power will be passed to an OR Switch then out. In the Blocked version, power gets passed to an Electrical Branch that is used to block a Blocker before passing power to the OR Switch and out. ‘Out’ could be another siphon, another type of power bus or whatever. A HBHF Sensor is used as the input source but it doesn’t have to be. All that’s needed is a constant source of power to keep the siphon active. When the sensor outputs power, it will ‘SET’ the Memory Cell. This will force the Memory Cell to flip outputs and send power through Output(right output). From Output, power will be sent to an Electrical Branch configured to +2 over the amount of power your circuit will need. The leftover power will pass through Power Out and merge back into the Main Line. The power coming out of Branch Out will go to another Electrical Branch that will be set to the amount of power the circuit actually needs. The reason for +2 is because 1rW is needed for the second Electrical Branch itself and 1rW needs to be sent out Power Out to ‘RESET’ on the Memory Cell. In the blocked version, a Blocker was added before the first Electrical Branch so it can hide the Active Usage caused by the Electrical Branches from a battery. When the sensor stops sending power to ‘SET’, the power going to ‘RESET’ will force the Memory Cell to flip outputs back to Inverted Output and return power to the Main Line. In the blocked version, because of the Electrical Branch on the Main Line, the Blocker will get blocked again to hide the Active Usage.
 
-The Manual siphons function in a very similar way only instead of using
-‘SET’ or ‘RESET’ on the Memory Cell, we are using ‘TOGGLE’. Everytime
-‘TOGGLE’ receives power, the Memory Cell will flip outputs. We have used
-the Button in the pictured examples but it doesnt have to be. When it
-comes to which output on the Memory Cell is the Main Line or the Circuit
-line, it really doesnt matter because you have the ability to manually
-control which output power is actively passing through.
+The Manual siphons function in a very similar way only instead of using ‘SET’ or ‘RESET’ on the Memory Cell, ‘TOGGLE’ is used instead. Everytime ‘TOGGLE’ receives power, the Memory Cell will flip outputs. A Red Button is used in the pictured examples but it doesn't have to be. When it comes to which output on the Memory Cell is the Main Line or the Circuit line, it really doesn't matter because there is the ability to manually control which output power is actively passing through. 
 
 In all the examples we have used Counters at each output. This is
-only to show you how much power each C-Bus costs to not be active.
+only to show how much power each C-Bus costs to not be active.
 [Here is a Rustrician BP link to explore the C-Bus more. ](https://www.rustrician.io/?circuit%3D71c12c6e40d98dea32fb463a773b2f42)
 
 ---
