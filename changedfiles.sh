@@ -50,7 +50,7 @@ do
 exit 1 ;;
 	esac
 
-done
+done > $lstcmdfile
+cat $lstcmdfile
 
-# done > $lstcmdfile
 # cat $lstcmdfile
