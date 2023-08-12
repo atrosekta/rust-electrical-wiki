@@ -11,11 +11,13 @@ but any info still valid in game wont be removed.
 All of the information you find here is comming from a [Google Doc](
 https://docs.google.com/document/d/19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing
 ) by @SwiftCoyote,
-so thanks to him and all the people in the Rustricity Workshop
+so thanks to him and all the people in the [Rustricity Workshop](https://discord.gg/emB98hrupy)
 community that contribute to it! The Google Doc will always be a little more update then this website as the website needs to be rebuilt after each change.   
 
-A massive Thank You to @3YE on Discord for creating the website and
+A massive Thank You to @3YE on [Discord](https://discord.gg/emB98hrupy) for creating the website and
 teaching me (SwiftCoyote) how to update and maintain it. 
+
+
 
 ---
 
@@ -31,6 +33,6 @@ Its made in a way so someone could edit the website content without needing
 to know html/css/javascript. All the content is writen in markdown format
 (similar to discord messages: \**italic*\*, \*\***bold**\*\*, etc...)
 For now, I havent written something that explains how to do it but you can
-ask @3YE on Discord for more information.
+ask @3YE on [Discord](https://discord.gg/emB98hrupy) for more information.
 
 ---
