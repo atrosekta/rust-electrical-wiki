@@ -1009,8 +1009,8 @@
 			<span class='sidesign'></span>
 		</a>
 
-		<a class='sideline' href='uncategorizedconcepts.html#monuments-camera-codes'>
-			<span class='sidetext'> Monuments Camera Codes </span>
+		<a class='sideline' href='uncategorizedconcepts.html#monument-camera-codes'>
+			<span class='sidetext'> Monument Camera Codes </span>
 			<span class='sidesign'></span>
 		</a>
 
@@ -1509,7 +1509,7 @@ another.</li>
 <li>Requires a single square or 2 triangles to be placed on.</li>
 <li>Cannot be picked up with a hammer.</li>
 <li>Check out Wind Power in the Concepts section under <a
-href="powergeneration.html">Power Generation</a>.</li>
+href="powergeneration.html#-Wind-Power">Power Generation</a>.</li>
 </ul>
 <hr />
 <h1 id="large-solar-panel"><a href="#large-solar-panel"
@@ -1599,7 +1599,7 @@ making it to the entire front face.</li>
 <li>They can be picked up with a hammer but will lose 25% health.</li>
 <li>24 hours in game is 1 irl hour.</li>
 <li>Check out Solar Power in the Concepts section under <a
-href="powergeneration.html">Power Generation</a>.</li>
+href="powergeneration.html#-Solar-Power">Power Generation</a>.</li>
 </ul>
 <hr />
 <h1 id="small-generator"><a href="#small-generator"
@@ -2051,15 +2051,15 @@ Large Solar Panels and Small Generators.</li>
 <li>It has a max depth of 16 components between a power source and the
 combiner. If max depth is reached, going any deeper will result in a
 shared error message, <a
-href="powerdistribution.html##-Short-Circuit-/-Max-Depth">Short
+href="powerdistribution.html#-Short-Circuit-/-Max-Depth">Short
 Circuit/Max Depth</a>.</li>
 <li>It does not consume any power but will register 1 <a
-href="powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
 Usage</a> on a battery.</li>
 <li>Combining batteries with a Root Combiner to get a larger amount of
 power is wiring the batteries in <a
-href="powerstorage.html##-Parallel-vs-Series">Series</a>. The load is
-not evenly shared. For example, 2 batteries connected to a Root Combiner
+href="powerstorage.html#-Parallel-vs-Series">Series</a>. The load is not
+evenly shared. For example, 2 batteries connected to a Root Combiner
 feeding a circuit that needs 50 power. Each battery will show an Active
 Usage of 50, not 25/25 to = 50.</li>
 </ul>
@@ -2142,7 +2142,7 @@ remaining power.</td>
 directly at the Branch.</li>
 <li>2rW is the minimum Branch Out can be set to.</li>
 <li>These will consume 1 power but not register on a battery’s <a
-href="powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
 Usage</a>.</li>
 <li>What Branch Out is set to will be the amount that registers on a
 battery’s Active Usage.</li>
@@ -2151,10 +2151,10 @@ even if the components past it are disabled.</li>
 <li>When an Electrical Branch sends power out, it will first send power
 through Power Out then send power through Branch Out. Check out the
 section on <a
-href="powerdistribution.html##-Circuit-Delay-and-Power-Flow">Circuit
+href="powerdistribution.html#-Circuit-Delay-and-Power-Flow">Circuit
 Delay and Power Flow</a>.</li>
 <li>Is a key component to create a <a
-href="powerdistribution.html###-Fixed-Bus-(F-Bus)">Fixed Bus</a></li>
+href="powerdistribution.html##-Fixed-Bus-(F-Bus)">Fixed Bus</a></li>
 </ul>
 <hr />
 <h1 id="splitter"><a href="#splitter"
@@ -2232,13 +2232,13 @@ Crate</td>
 <li>When the Splitter receives power it does not pass power through all
 connected outputs at the same time. Power outputs in the order of Output
 1, Output 2 then Output 3. Check out the section on <a
-href="powerdistribution.html##-Circuit-Delay-and-Power-Flow">Circuit
+href="powerdistribution.html#-Circuit-Delay-and-Power-Flow">Circuit
 Delay and Power Flow</a>.</li>
 <li>When an output is destroyed, it will redistribute power between the
 remaining outputs.</li>
 <li>Outputs can connect to the inputs of Root Combiners.</li>
 <li>Is a key component of a <a
-href="powerdistribution.html###-Dynamic-Bus-(D-Bus)">Dynamid
+href="powerdistribution.html##-Dynamic-Bus-(D-Bus)">Dynamid
 Bus</a>.</li>
 </ul>
 <hr />
@@ -2395,13 +2395,13 @@ Use(<code>E</code>).</li>
 <li>Can only be placed on vertical surfaces.</li>
 <li>When the Switch is off, it will block all the components past it
 from registering <a
-href="powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
 Usage</a> on batteries.</li>
 <li><a href="uncatagorizedconcepts.html##-Side-Inputs">Side Inputs</a>
 are inputs, not toggles and are explained in their own section,
 currently in Uncategorized under Concepts.</li>
 <li>The side inputs block the <a
-href="https://www.rustrician.io/?circuit%3Dbf38168f0834f7d84fb837ac41d1818e">Component
+href="https://www.rustrician.io/?circuit=bf38168f0834f7d84fb837ac41d1818e">Component
 Destruction Detectors</a> ability to see downstream.</li>
 </ul>
 <hr />
@@ -2934,7 +2934,7 @@ Chest, Underwater Dweller, Underwater Lab Blue Crate</td>
 <li>When power is applied to the Block Passthrough input on the side,
 power will be prevented from passing though.</li>
 <li>When passthrough is blocked, it will also block any components <a
-href="powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
 Usage</a>, effectively hiding them from batteries when offline.</li>
 </ul>
 <hr />
@@ -3110,7 +3110,7 @@ Crate</td>
 set the timer.</li>
 <li>Timer must be powered to set the duration.</li>
 <li>It must also be powered first before it can be triggered as per <a
-href="powerdistribution.html###-Power-Flow">Power Flow</a>.</li>
+href="powerdistribution.html##-Power-Flow">Power Flow</a>.</li>
 <li>Has a default time of 30 seconds.</li>
 <li>Minimum time duration is 0.25 seconds. This might be too fast for
 some servers and must be increased.</li>
@@ -3119,7 +3119,7 @@ IRL.</li>
 <li>Can only be placed on vertical walls.</li>
 <li>When it is not active, it will block all the components past it from
 registering <a
-href="powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
 Usage</a> on batteries.</li>
 </ul>
 <hr />
@@ -3202,7 +3202,7 @@ or vice versa.</li>
 <li>When power is applied to Reset, the switch will pass power
 through.</li>
 <li>While not passing power through, it will block any components <a
-href="powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
 Usage</a>, effectively hiding them from batteries when offline.</li>
 <li>Can be placed on all angled surfaces including the ground.</li>
 </ul>
@@ -3716,7 +3716,7 @@ so until it stops receiving a signal.</li>
 <li>They can be placed on most flat surfaces including Workbenches and
 the top of TC.</li>
 <li>While not passing power through, it will block any components <a
-href="powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
 Usage</a> connected to it, effectively hiding them from batteries when
 offline.</li>
 </ul>
@@ -3935,7 +3935,7 @@ detonate.</li>
 <li>Due to the introduction of RF mode, RF Broadcasters and Transmitters
 now take 0.5 damage when changing frequencies.</li>
 <li>Anyone can pick up the charge after the beeping stops by looking at
-it and holding Use(E).</li>
+it and holding Use(<code>E</code>).</li>
 <li>Will survive a server restart.</li>
 <li>Decays after 24 hours when outside the TC range of the person that
 threw it.</li>
@@ -5039,7 +5039,6 @@ ground.</li>
 <hr />
 <hr />
 <h1 id="smart"><a href="#smart" class="anchor-link">*</a>Smart</h1>
-<hr />
 <p>These components can be paired with the Rust+ app and adds a way to
 interact with rustricity from outside the game.</p>
 <hr />
@@ -5289,7 +5288,7 @@ Underwater Lab Elite Crate, Underwater Lab Yellow Crate</td>
 from outside the game.</li>
 <li>The <a href="uncategorizedconcepts.html##-Side-Inputs">Side
 Inputs</a> block the <a
-href="https://www.rustrician.io/?circuit%3Dbf38168f0834f7d84fb837ac41d1818e">Destruction
+href="https://www.rustrician.io/?circuit=0ed49399527de1a33fd851e2d213b1ed">Destruction
 Detectors</a> ability to see downstream.</li>
 </ul>
 <hr />
@@ -5566,7 +5565,7 @@ outside the game. The player must disconnect from the server before
 remote access is allowed.</li>
 <li>The game has pre-placed cameras at some of the monuments, check the
 current <a
-href="uncategorizedconcepts.html##-Monuments-Camera-Codes">Camera
+href="uncategorizedconcepts.html#-Monument-Camera-Codes">Camera
 List</a>.</li>
 </ul>
 <hr />
@@ -5647,7 +5646,7 @@ outside the game. The player must disconnect from the server before
 remote access is allowed.</li>
 <li>The game has pre-placed cameras at some of the monuments, check the
 current <a
-href="uncategorizedconcepts.html##-Monuments-Camera-Codes">Camera
+href="uncategorizedconcepts.html#-Monument-Camera-Codes">Camera
 List</a>.</li>
 </ul>
 <hr />
@@ -6150,7 +6149,7 @@ viewing or operating.</li>
 the current list.</li>
 <li>The game has pre-placed cameras at some of the monuments, check the
 current <a
-href="uncategorizedconcepts.html##-Monuments-Camera-Codes">Camera
+href="uncategorizedconcepts.html#-Monument-Camera-Codes">Camera
 List</a>.</li>
 </ul>
 <hr />
@@ -6664,7 +6663,6 @@ floors and roofs.</li>
 <hr />
 <hr />
 <h1 id="water"><a href="#water" class="anchor-link">*</a>Water</h1>
-<hr />
 <h1 id="what-is-the-water-system"><a href="#what-is-the-water-system"
 class="anchor-link">*</a>What is the water system?</h1>
 <p>It is a system that lets you collect, store, transport and distribute
@@ -8178,25 +8176,16 @@ audio from the internet</td>
 <p>Notes:</p>
 <ul>
 <li>Requires TC Authorization to change settings. Look at the speaker
-and hold USE(E). You can access Radio Settings or Open. Open allows you
-to insert a cassette. Radio Settings lets you select a Radio
-Station.</li>
+and hold USE(<code>E</code>). You can access Radio Settings or Open.
+Open allows you to insert a cassette. Radio Settings lets you select a
+Radio Station.</li>
 <li>The Audio Out connection lets you send an audio signal to other
 components in the DLC that can interact with sound.</li>
 <li>Can be picked up with a hammer, but not with a cassette. Will not
 take damage when picked up.</li>
 <li>Can be placed in horizontal surfaces, the ground and some deployable
 items like Work Benches and Tables.</li>
-<li>They block the destruction detectors ability to see downstream</li>
-<li>An Electrical Branch set to 10 will show an Active Usage of 10 on a
-battery. If we use the 10 from Branch Out to power a Boom Box, the
-battery will continue to show an Active Usage of 10. If we then make a
-connection between Power Out on the Electrical Branch and Toggle Play on
-the Boom Box, the battery will now register an Active Usage of 20. This
-only appears to happen with the Electrical Branch, 10 for the Branch and
-10 for the Boom Box Toggle. If you replace it with a Splitter, the
-battery will only register 11 Active Usage, 10 for the Boom Box and 1
-for the Splitter. <img src="images/image90.jpg" /></li>
+<li>They block the destruction detectors ability to see downstream.</li>
 </ul>
 <hr />
 <h1 id="connected-speaker"><a href="#connected-speaker"
@@ -8412,7 +8401,7 @@ src="images/image121.png" /><img src="images/image40.png" /></h1>
 <li>There are 2 versions. The difference between the 2 is the size of
 light tiles.  </li>
 <li>To change the floor settings, with TC Authorization, look at the
-floor and press USE(E)</li>
+floor and press Use(<code>E</code>).</li>
 <li>Settings you can change are the Pattern, the Volume Sensitivity,
 Speed and Gradient.</li>
 <li>Can only be placed on floors and nothing can be placed on top of
@@ -8497,7 +8486,7 @@ src="images/image132.png" /></h1>
 <li>If receiving a connection from a Boom Box, the lasers will move to
 the audio.</li>
 <li>It will only bind to 1 Boom Box. You cannot connect 2 Boom Boxes to
-1 Laser Light</li>
+1 Laser Light.</li>
 <li>Can be picked up with a hammer but loses 25% hit points.</li>
 </ul>
 <hr />
@@ -8572,7 +8561,7 @@ and Low pitch.</li>
 <li>Can be placed on flat surfaces or the ground.</li>
 <li>Attach to a Connected Speaker to broadcast your voice over a larger
 area.</li>
-<li>They block the destruction detectors ability to see downstream</li>
+<li>They block the destruction detectors ability to see downstream.</li>
 </ul>
 <hr />
 <h1 id="sound-light"><a href="#sound-light"
@@ -8724,7 +8713,7 @@ Crate</td>
 <p>Notes:</p>
 <ul>
 <li>This is actually a telephone sitting on top of a tape cassette
-answering machine</li>
+answering machine.</li>
 <li>The answering machine needs a cassette to work. You will require the
 Voice Props DLC to craft cassettes.</li>
 <li>TC Auth is not required to change the name or access the cassette in
@@ -8738,8 +8727,8 @@ their own for you to play back later.</li>
 leave a voicemail, press the spacebar when you hear the answering
 machine’s message. To listen to your voicemail, use the phone and at the
 bottom of the screen select voicemail.</li>
-<li>To use the phone, look at it and when you see MAKE CALL, press E to
-use.</li>
+<li>To use the phone, look at it and when you see MAKE CALL, press
+Use(<code>E</code>) to use.</li>
 <li>You can give your phone a name and it will appear in the Directory.
 All phones are automatically assigned a number.</li>
 <li>You can add phones to your contacts list by adding the phone number
@@ -8860,7 +8849,8 @@ before the firework finishes.</p>
 </blockquote>
 <hr />
 <h1 id="volcano-firework"><a href="#volcano-firework"
-class="anchor-link">*</a>Volcano Firework</h1>
+class="anchor-link">*</a>Volcano Firework<img
+src="images/firework.volcano.red.png" /></h1>
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -9246,10 +9236,10 @@ to produce and how big your Battery Backup will be.</p>
 and if limited to one, placing one after the Battery Backup is probably
 the best option.</p>
 <p>Recommended reading:<br />
-<a href="powergeneration.md">Power Generation</a><br />
-<a href="powerstorage.md">Power Storage</a><br />
-<a href="powerdistribution.md">Power Distribution</a><br />
-<a href="usefulcircuits.md">Useful Circuits</a></p>
+<a href="powergeneration.html">Power Generation</a><br />
+<a href="powerstorage.html">Power Storage</a><br />
+<a href="powerdistribution.html">Power Distribution</a><br />
+<a href="usefulcircuits.html">Useful Circuits</a></p>
 <h1 id="centralized-vs-decentralized-theory"><a
 href="#centralized-vs-decentralized-theory"
 class="anchor-link">*</a>Centralized vs Decentralized Theory</h1>
@@ -11066,8 +11056,8 @@ class="anchor-link">*</a>Smart Timer</h1>
 <p><img src="images/image52.png" /></p>
 <p><img src="images/image118.png" /></p>
 <hr />
-<h1 id="monuments-camera-codes"><a href="#monuments-camera-codes"
-class="anchor-link">*</a>Monuments Camera Codes</h1>
+<h1 id="monument-camera-codes"><a href="#monument-camera-codes"
+class="anchor-link">*</a>Monument Camera Codes</h1>
 <ul>
 <li>Abandoned Military Base codes:<br />
 <code>COMPOUND****</code><br />

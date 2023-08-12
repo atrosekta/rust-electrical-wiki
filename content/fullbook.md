@@ -269,7 +269,7 @@ Notes:
 - There needs to be a minimum of 15 meters or 5 foundations distance between turbines. This will prevent 1 turbine blocking the wind for another.
 - Requires a single square or 2 triangles to be placed on. 
 - Cannot be picked up with a hammer.
-- Check out Wind Power in the Concepts section under [Power Generation]( powergeneration.html ).
+- Check out Wind Power in the Concepts section under [Power Generation]( powergeneration.html#-Wind-Power ).
 
 
 ---
@@ -303,7 +303,7 @@ Notes:
 - They can be placed on the ground or flat building structure.
 - They can be picked up with a hammer but will lose 25% health.
 - 24 hours in game is 1 irl hour.
-- Check out Solar Power in the Concepts section under [Power Generation]( powergeneration.html ).
+- Check out Solar Power in the Concepts section under [Power Generation]( powergeneration.html#-Solar-Power ).
 
 
 
@@ -476,9 +476,9 @@ Notes:
 
 - These allow Power Sources and batteries to be combined to produce higher amounts of available power. [Power Sources](sources.html#-Power-Sources) are Wind Turbines, Large Solar Panels and Small Generators.
 - Can be placed on all building surfaces.
-- It has a max depth of 16 components between a power source and the combiner. If max depth is reached, going any deeper will result in a shared error message, [Short Circuit/Max Depth](powerdistribution.html##-Short-Circuit-/-Max-Depth).
-- It does not consume any power but will register 1 [Active Usage](powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed) on a battery.
-- Combining batteries with a Root Combiner to get a larger amount of power is wiring the batteries in [Series](powerstorage.html##-Parallel-vs-Series). The load is not evenly shared. For example, 2 batteries connected to a Root Combiner feeding a circuit that needs 50 power. Each battery will show an Active Usage of 50, not 25/25 to = 50.
+- It has a max depth of 16 components between a power source and the combiner. If max depth is reached, going any deeper will result in a shared error message, [Short Circuit/Max Depth](powerdistribution.html#-Short-Circuit-/-Max-Depth).
+- It does not consume any power but will register 1 [Active Usage](powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed) on a battery.
+- Combining batteries with a Root Combiner to get a larger amount of power is wiring the batteries in [Series](powerstorage.html#-Parallel-vs-Series). The load is not evenly shared. For example, 2 batteries connected to a Root Combiner feeding a circuit that needs 50 power. Each battery will show an Active Usage of 50, not 25/25 to = 50.
 
 ---
 
@@ -506,11 +506,11 @@ Notes:
 - Can be placed on all angled surfaces.
 - Can be configured by pressing Use(`E`) while looking directly at the Branch.
 - 2rW is the minimum Branch Out can be set to.
-- These will consume 1 power but not register on a battery's [Active Usage](powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed).
+- These will consume 1 power but not register on a battery's [Active Usage](powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed).
 - What Branch Out is set to will be the amount that registers on a battery’s Active Usage.
 - Branch Out will always consume the amount of power it is set to, even if the components past it are disabled. 
-- When an Electrical Branch sends power out, it will first send power through Power Out then send power through Branch Out. Check out the section on [Circuit Delay and Power Flow](powerdistribution.html##-Circuit-Delay-and-Power-Flow).
-- Is a key component to create a [Fixed Bus](powerdistribution.html###-Fixed-Bus-(F-Bus))
+- When an Electrical Branch sends power out, it will first send power through Power Out then send power through Branch Out. Check out the section on [Circuit Delay and Power Flow](powerdistribution.html#-Circuit-Delay-and-Power-Flow).
+- Is a key component to create a [Fixed Bus](powerdistribution.html##-Fixed-Bus-(F-Bus))
 
 ---
 
@@ -536,10 +536,10 @@ Despawn Time        | 5 minutes
 Notes:
 
 - Can only be placed on vertical walls.
-- When the Splitter receives power it does not pass power through all connected outputs at the same time. Power outputs in the order of Output 1, Output 2 then Output 3. Check out the section on [Circuit Delay and Power Flow](powerdistribution.html##-Circuit-Delay-and-Power-Flow).
+- When the Splitter receives power it does not pass power through all connected outputs at the same time. Power outputs in the order of Output 1, Output 2 then Output 3. Check out the section on [Circuit Delay and Power Flow](powerdistribution.html#-Circuit-Delay-and-Power-Flow).
 - When an output is destroyed, it will redistribute power between the remaining outputs.
 - Outputs can connect to the inputs of Root Combiners.
-- Is a key component of a [Dynamid Bus](powerdistribution.html###-Dynamic-Bus-(D-Bus)).
+- Is a key component of a [Dynamid Bus](powerdistribution.html##-Dynamic-Bus-(D-Bus)).
 
 ---
 
@@ -601,9 +601,9 @@ Notes:
 - To operate the Switch, look at it and press Use(`E`).
 - Does not need TC auth to operate it. 
 - Can only be placed on vertical surfaces.
-- When the Switch is off, it will block all the components past it from registering [Active Usage](powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed) on batteries.
+- When the Switch is off, it will block all the components past it from registering [Active Usage](powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed) on batteries.
 - [Side Inputs](uncatagorizedconcepts.html##-Side-Inputs) are inputs, not toggles and are explained in their own section, currently in Uncategorized under Concepts.
-- The side inputs block the [Component Destruction Detectors](https://www.rustrician.io/?circuit%3Dbf38168f0834f7d84fb837ac41d1818e) ability to see downstream.
+- The side inputs block the [Component Destruction Detectors](https://www.rustrician.io/?circuit=bf38168f0834f7d84fb837ac41d1818e) ability to see downstream.
 
 ---
 
@@ -809,7 +809,7 @@ Despawn Time        | 5 minutes
 Notes:
 
 - When power is applied to the Block Passthrough input on the side, power will be prevented from passing though.
-- When passthrough is blocked, it will also block any components [Active Usage](powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed), effectively hiding them from batteries when offline.
+- When passthrough is blocked, it will also block any components [Active Usage](powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed), effectively hiding them from batteries when offline.
 
 
 ---
@@ -869,12 +869,12 @@ Notes:
 
 - Everyone can activate the timer but only TC authorized people can set the timer.
 - Timer must be powered to set the duration.
-- It must also be powered first before it can be triggered as per [Power Flow](powerdistribution.html###-Power-Flow).
+- It must also be powered first before it can be triggered as per [Power Flow](powerdistribution.html##-Power-Flow).
 - Has a default time of 30 seconds.
 - Minimum time duration is 0.25 seconds. This might be too fast for some servers and must be increased.
 - Maximum time duration has been tested to at least a 2 weeks IRL.
 - Can only be placed on vertical walls.
-- When it is not active, it will block all the components past it from registering [Active Usage](powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed) on batteries.
+- When it is not active, it will block all the components past it from registering [Active Usage](powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed) on batteries.
 
 
 ---
@@ -902,7 +902,7 @@ Notes:
 
 - When power is applied to Set, there is a 50% chance the switch will change states. From passing power through to not passing power through or vice versa.
 - When power is applied to Reset, the switch will pass power through.
-- While not passing power through, it will block any components [Active Usage](powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed), effectively hiding them from batteries when offline.
+- While not passing power through, it will block any components [Active Usage](powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed), effectively hiding them from batteries when offline.
 - Can be placed on all angled surfaces including the ground.
 
 
@@ -1108,7 +1108,7 @@ Notes:
   until it stops receiving a signal.
 - They can be placed on most flat surfaces including Workbenches and the
   top of TC.
-- While not passing power through, it will block any components [Active Usage](powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed) connected to it, effectively hiding them from batteries when offline.
+- While not passing power through, it will block any components [Active Usage](powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed) connected to it, effectively hiding them from batteries when offline.
 
 ---
 
@@ -1184,7 +1184,7 @@ Notes:
 - To use it in delay mode, just throw the explosive charge with a left click. It will beep for 10 seconds before exploding. The red light will be on.
 - To use in RF mode, enter your inventory and select the charge. Click on ‘Enable RF’ then ‘Set Frequency’. Use left click to throw the explosive charge onto something and wait 10 seconds for the beeping to stop. The green light will be on. Set a RF Broadcaster or RF Transmitter to the same frequency and transmit when you want the charge to detonate.
 - Due to the introduction of RF mode, RF Broadcasters and Transmitters now take 0.5 damage when changing frequencies.
-- Anyone can pick up the charge after the beeping stops by looking at it and holding Use(E).
+- Anyone can pick up the charge after the beeping stops by looking at it and holding Use(`E`).
 - Will survive a server restart.
 - Decays after 24 hours when outside the TC range of the person that threw it.
 
@@ -1634,8 +1634,6 @@ Notes:
 
 # Smart
 
----
-
 These components can be paired with the Rust+ app and adds a way to interact with rustricity from outside the game.
 
 ---
@@ -1722,7 +1720,7 @@ Notes:
 
 - Only people with TC authorization can operate the Switch.
 - Can be paired with Rust+ enabling the ability to turn it on and off from outside the game.
-- The [Side Inputs](uncategorizedconcepts.html##-Side-Inputs) block the [Destruction Detectors](https://www.rustrician.io/?circuit%3Dbf38168f0834f7d84fb837ac41d1818e) ability to see downstream.
+- The [Side Inputs](uncategorizedconcepts.html##-Side-Inputs) block the [Destruction Detectors](https://www.rustrician.io/?circuit=0ed49399527de1a33fd851e2d213b1ed) ability to see downstream.
 
 ---
 
@@ -1843,7 +1841,7 @@ Notes:
 - Anyone can add any camera to any Computer Station.
 - Add the ID to the `Rust+` app to view the camera from outside the game. The player must disconnect from the server before remote access is allowed.
 - The game has pre-placed cameras at some of the monuments, check the
-  current [Camera List](uncategorizedconcepts.html##-Monuments-Camera-Codes).
+  current [Camera List](uncategorizedconcepts.html#-Monument-Camera-Codes).
 
 ---
 
@@ -1875,7 +1873,7 @@ Notes:
 - Anyone can add any camera to any Computer Station.
 - Add the ID to the `Rust+` app to view the camera from outside the game. The player must disconnect from the server before remote access is allowed.
 - The game has pre-placed cameras at some of the monuments, check the
-  current [Camera List](uncategorizedconcepts.html##-Monuments-Camera-Codes).
+  current [Camera List](uncategorizedconcepts.html#-Monument-Camera-Codes).
 
 ---
 
@@ -2065,7 +2063,7 @@ Notes:
 - The game has pre-placed cameras at some of the monuments, here is the
   current list.
 - The game has pre-placed cameras at some of the monuments, check the
-  current [Camera List](uncategorizedconcepts.html##-Monuments-Camera-Codes).
+  current [Camera List](uncategorizedconcepts.html#-Monument-Camera-Codes).
 
 ---
 
@@ -2288,8 +2286,6 @@ Notes:
 
 
 # Water
-
----
 
 # What is the water system?
 
@@ -2877,7 +2873,7 @@ Decay Time         | 96 hours
 Notes:
 
 - Requires TC Authorization to change settings. Look at the speaker and
-  hold USE(E). You can access Radio Settings or Open. Open allows you to
+  hold USE(`E`). You can access Radio Settings or Open. Open allows you to
   insert a cassette. Radio Settings lets you select a Radio Station.
 - The Audio Out connection lets you send an audio signal to other
   components in the DLC that can interact with sound.
@@ -2885,17 +2881,7 @@ Notes:
   damage when picked up.
 - Can be placed in horizontal surfaces, the ground and some deployable
   items like Work Benches and Tables.
-- They block the destruction detectors ability to see downstream
-- An Electrical Branch set to 10 will show an Active Usage of 10 on a
-  battery. If we use the 10 from Branch Out to power a Boom Box, the
-  battery will continue to show an Active Usage of 10. If we then make a
-  connection between Power Out on the Electrical Branch and Toggle Play
-  on the Boom Box, the battery will now register an Active Usage of 20.
-  This only appears to happen with the Electrical Branch, 10 for the
-  Branch and 10 for the Boom Box Toggle. If you replace it with a
-  Splitter, the battery will only register 11 Active Usage, 10 for the
-	Boom Box and 1 for the Splitter.
-	![](images/image90.jpg)
+- They block the destruction detectors ability to see downstream.
 
 ---
 
@@ -2975,7 +2961,7 @@ Notes:
 - There are 2 versions. The difference between the 2 is the size of
   light tiles.  
 - To change the floor settings, with TC Authorization, look at the
-  floor and press USE(E)
+  floor and press Use(`E`).
 - Settings you can change are the Pattern, the Volume Sensitivity, Speed
   and Gradient.
 - Can only be placed on floors and nothing can be placed on top of them.
@@ -3012,7 +2998,7 @@ Notes:
 - If receiving a connection from a Boom Box, the lasers will move to the
   audio.
 - It will only bind to 1 Boom Box. You cannot connect 2 Boom Boxes to 1
-  Laser Light
+  Laser Light.
 - Can be picked up with a hammer but loses 25% hit points.
 
 ---
@@ -3043,7 +3029,7 @@ Notes:
 - Can be placed on flat surfaces or the ground.
 - Attach to a Connected Speaker to broadcast your voice over a larger
   area.
-- They block the destruction detectors ability to see downstream
+- They block the destruction detectors ability to see downstream.
 
 ---
 
@@ -3100,7 +3086,7 @@ Decay Time          | 8 hours
 Notes:
 
 - This is actually a telephone sitting on top of a tape cassette
-  answering machine
+  answering machine.
 - The answering machine needs a cassette to work. You will require the
   Voice Props DLC to craft cassettes.
 - TC Auth is not required to change the name or access the cassette in
@@ -3114,7 +3100,7 @@ Notes:
   leave a voicemail, press the spacebar when you hear the answering
   machine's message. To listen to your voicemail, use the phone and at
   the bottom of the screen select voicemail.
-- To use the phone, look at it and when you see MAKE CALL, press E to
+- To use the phone, look at it and when you see MAKE CALL, press Use(`E`) to
   use.
 - You can give your phone a name and it will appear in the Directory.
   All phones are automatically assigned a number.
@@ -3173,7 +3159,7 @@ activating to the time it produces its last color or boom. This is also called `
 
 ---
 
-# Volcano Firework
+# Volcano Firework![](images/firework.volcano.red.png)
 
 | | |  
 |-|---|  
@@ -3329,10 +3315,10 @@ The End Devices and Circuits are your turrets, lights, cameras, farms, door cont
 The Destruction Detection system should be included in most circuits and if limited to one, placing one after the Battery Backup is probably the best option.
 
 Recommended reading:  
-[Power Generation](powergeneration.md)  
-[Power Storage](powerstorage.md)  
-[Power Distribution](powerdistribution.md)  
-[Useful Circuits](usefulcircuits.md)
+[Power Generation](powergeneration.html)  
+[Power Storage](powerstorage.html)  
+[Power Distribution](powerdistribution.html)  
+[Useful Circuits](usefulcircuits.html)
 
 # Centralized vs Decentralized Theory
 When we talk about centralizing or decentralizing electricity, we are
@@ -4746,7 +4732,7 @@ Needs work
 
 ---
 
-# Monuments Camera Codes
+# Monument Camera Codes
 
 - Abandoned Military Base codes:  
 `COMPOUND****`  
