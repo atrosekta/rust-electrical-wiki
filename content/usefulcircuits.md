@@ -4,6 +4,8 @@
 
 [Blocker Chain](https://www.rustrician.io/?circuit=773b599014deb161fc173f295727be77)
 
+[Close All Doors with a Red Button](https://www.rustrician.io/?circuit=43eca6c525fb723146cc0fc7ca45a730)
+
 [Configure Siphon](https://www.rustrician.io/?circuit=e7c8a8ccc9ce2da68095cca2560da002)
 
 [Delay Timer](https://www.rustrician.io/?circuit=fa8ba5c2e3974185c6f01273eab653f1)
@@ -21,6 +23,8 @@
 [Nih Core - 4 Large Batteries](https://www.rustrician.io/?circuit=60fc05f187614f131aa5565be42a6687)
 
 [Nih Core - Decentralized](https://www.rustrician.io/?circuit=1d0b869c046f6d05ee75ab0f841fc150)
+
+[Parallel vs Series](https://www.rustrician.io/?circuit=0191b550a1c45104ce7129c15ba13d4f)
 
 [Probability Master Class](https://www.rustrician.io/?circuit=ca9bdcbc87f0a13ca3a3ce0c8fe4146d)
 

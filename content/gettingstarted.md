@@ -367,11 +367,16 @@ Replacing the Splitter with an Electrical Branch allows you more control over wh
 
 # Distribution
 
-Needs explaining, but for now, it is the ability to supply an end device or circuit with power from more than 1 power source and/or battery backup. It is not recommended to do this with a battery backup, just use a proper secondary backup instead. 
+Incomplete*  
 
-Centralized distribution is how 99.9% of circuits are wires. All end devices or circuits are fed from a single source of power using a single path. 
+Centralized distribution is how 99.9% of all circuits are wired as illustrated in the picture below. All end devices or circuits are fed from a single source of power using a single battery backup following the path of a single distributor.  
 
-Decentralized distribution at its simplest is using an OR Switch to send power to an end device or circuit from 2 or more power sources. 
+![Alt text](images/CentDist.png)  
+
+Decentralized distribution at its simplest is using OR Switches (outlined by purple in the picture below) to send power to each end device (or circuit) from 2 or more power sources, battery backups or distributors.   
+
+![Alt text](images/decentdist.png)
+
 
 ---
 
