@@ -101,7 +101,7 @@ Notes:
 - Anyone can add any camera to any Computer Station.
 - Add the ID to the `Rust+` app to view the camera from outside the game. The player must disconnect from the server before remote access is allowed.
 - The game has pre-placed cameras at some of the monuments, check the
-  current [Camera List](uncategorizedconcepts.html##-Monuments-Camera-Codes).
+  current [Camera List](uncategorizedconcepts.html#-Monument-Camera-Codes).
 
 ---
 
@@ -133,7 +133,7 @@ Notes:
 - Anyone can add any camera to any Computer Station.
 - Add the ID to the `Rust+` app to view the camera from outside the game. The player must disconnect from the server before remote access is allowed.
 - The game has pre-placed cameras at some of the monuments, check the
-  current [Camera List](uncategorizedconcepts.html##-Monuments-Camera-Codes).
+  current [Camera List](uncategorizedconcepts.html#-Monument-Camera-Codes).
 
 ---
 
@@ -323,7 +323,7 @@ Notes:
 - The game has pre-placed cameras at some of the monuments, here is the
   current list.
 - The game has pre-placed cameras at some of the monuments, check the
-  current [Camera List](uncategorizedconcepts.html##-Monuments-Camera-Codes).
+  current [Camera List](uncategorizedconcepts.html#-Monument-Camera-Codes).
 
 ---
 

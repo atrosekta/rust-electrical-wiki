@@ -1,8 +1,6 @@
 
 # Water
 
----
-
 # What is the water system?
 
 It is a system that lets you collect, store, transport and distribute

@@ -1,8 +1,6 @@
 
 # Smart
 
----
-
 These components can be paired with the Rust+ app and adds a way to interact with rustricity from outside the game.
 
 ---
@@ -89,7 +87,7 @@ Notes:
 
 - Only people with TC authorization can operate the Switch.
 - Can be paired with Rust+ enabling the ability to turn it on and off from outside the game.
-- The [Side Inputs](uncategorizedconcepts.html##-Side-Inputs) block the [Destruction Detectors](https://www.rustrician.io/?circuit%3Dbf38168f0834f7d84fb837ac41d1818e) ability to see downstream.
+- The [Side Inputs](uncategorizedconcepts.html##-Side-Inputs) block the [Destruction Detectors](https://www.rustrician.io/?circuit=0ed49399527de1a33fd851e2d213b1ed) ability to see downstream.
 
 ---
 

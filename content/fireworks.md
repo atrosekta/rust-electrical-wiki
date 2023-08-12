@@ -42,7 +42,7 @@ activating to the time it produces its last color or boom. This is also called `
 
 ---
 
-# Volcano Firework
+# Volcano Firework![](images/firework.volcano.red.png)
 
 | | |  
 |-|---|  
