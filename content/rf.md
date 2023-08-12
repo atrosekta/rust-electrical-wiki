@@ -69,7 +69,7 @@ Notes:
   until it stops receiving a signal.
 - They can be placed on most flat surfaces including Workbenches and the
   top of TC.
-- While not passing power through, it will block any components [Active Usage](powerstorage.html##-Battery-Active-Usage-VS-Actual-Power-Consumed) connected to it, effectively hiding them from batteries when offline.
+- While not passing power through, it will block any components [Active Usage](powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed) connected to it, effectively hiding them from batteries when offline.
 
 ---
 
@@ -145,7 +145,7 @@ Notes:
 - To use it in delay mode, just throw the explosive charge with a left click. It will beep for 10 seconds before exploding. The red light will be on.
 - To use in RF mode, enter your inventory and select the charge. Click on ‘Enable RF’ then ‘Set Frequency’. Use left click to throw the explosive charge onto something and wait 10 seconds for the beeping to stop. The green light will be on. Set a RF Broadcaster or RF Transmitter to the same frequency and transmit when you want the charge to detonate.
 - Due to the introduction of RF mode, RF Broadcasters and Transmitters now take 0.5 damage when changing frequencies.
-- Anyone can pick up the charge after the beeping stops by looking at it and holding Use(E).
+- Anyone can pick up the charge after the beeping stops by looking at it and holding Use(`E`).
 - Will survive a server restart.
 - Decays after 24 hours when outside the TC range of the person that threw it.
 

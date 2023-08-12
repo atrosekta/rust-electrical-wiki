@@ -25,7 +25,7 @@ Decay Time         | 96 hours
 Notes:
 
 - Requires TC Authorization to change settings. Look at the speaker and
-  hold USE(E). You can access Radio Settings or Open. Open allows you to
+  hold USE(`E`). You can access Radio Settings or Open. Open allows you to
   insert a cassette. Radio Settings lets you select a Radio Station.
 - The Audio Out connection lets you send an audio signal to other
   components in the DLC that can interact with sound.
@@ -33,17 +33,7 @@ Notes:
   damage when picked up.
 - Can be placed in horizontal surfaces, the ground and some deployable
   items like Work Benches and Tables.
-- They block the destruction detectors ability to see downstream
-- An Electrical Branch set to 10 will show an Active Usage of 10 on a
-  battery. If we use the 10 from Branch Out to power a Boom Box, the
-  battery will continue to show an Active Usage of 10. If we then make a
-  connection between Power Out on the Electrical Branch and Toggle Play
-  on the Boom Box, the battery will now register an Active Usage of 20.
-  This only appears to happen with the Electrical Branch, 10 for the
-  Branch and 10 for the Boom Box Toggle. If you replace it with a
-  Splitter, the battery will only register 11 Active Usage, 10 for the
-	Boom Box and 1 for the Splitter.
-	![](images/image90.jpg)
+- They block the destruction detectors ability to see downstream.
 
 ---
 
@@ -123,7 +113,7 @@ Notes:
 - There are 2 versions. The difference between the 2 is the size of
   light tiles.  
 - To change the floor settings, with TC Authorization, look at the
-  floor and press USE(E)
+  floor and press Use(`E`).
 - Settings you can change are the Pattern, the Volume Sensitivity, Speed
   and Gradient.
 - Can only be placed on floors and nothing can be placed on top of them.
@@ -160,7 +150,7 @@ Notes:
 - If receiving a connection from a Boom Box, the lasers will move to the
   audio.
 - It will only bind to 1 Boom Box. You cannot connect 2 Boom Boxes to 1
-  Laser Light
+  Laser Light.
 - Can be picked up with a hammer but loses 25% hit points.
 
 ---
@@ -191,7 +181,7 @@ Notes:
 - Can be placed on flat surfaces or the ground.
 - Attach to a Connected Speaker to broadcast your voice over a larger
   area.
-- They block the destruction detectors ability to see downstream
+- They block the destruction detectors ability to see downstream.
 
 ---
 
@@ -248,7 +238,7 @@ Decay Time          | 8 hours
 Notes:
 
 - This is actually a telephone sitting on top of a tape cassette
-  answering machine
+  answering machine.
 - The answering machine needs a cassette to work. You will require the
   Voice Props DLC to craft cassettes.
 - TC Auth is not required to change the name or access the cassette in
@@ -262,7 +252,7 @@ Notes:
   leave a voicemail, press the spacebar when you hear the answering
   machine's message. To listen to your voicemail, use the phone and at
   the bottom of the screen select voicemail.
-- To use the phone, look at it and when you see MAKE CALL, press E to
+- To use the phone, look at it and when you see MAKE CALL, press Use(`E`) to
   use.
 - You can give your phone a name and it will appear in the Directory.
   All phones are automatically assigned a number.

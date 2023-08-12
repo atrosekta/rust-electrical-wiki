@@ -122,7 +122,7 @@ Needs work
 
 ---
 
-# Monuments Camera Codes
+# Monument Camera Codes
 
 - Abandoned Military Base codes:  
 `COMPOUND****`  
