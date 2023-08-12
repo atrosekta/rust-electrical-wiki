@@ -16,10 +16,10 @@ TL:DR
 This means when we get to circuits that need more than 100 power, all the batteries combined will show a max Active Usage, which is used to calculate how fast a battery drains.  
 So if we are forcing batteries to max drain, then we might as well try to use as much of the power the combined batteries will provide.
 
-When using a bypass battery backup like the [ Nih core ]( backup.html#nih-core ),
+When using a bypass battery backup like the [ Nih core ]( powerstorage.html#nih-core ),
 Active Usage does not matter because the circuits are getting power from the main power source most of the time and not the battery.
 
-- Rustricity has its own version of [Parallel and Series](concepts.html#parallel-vs-series) battery configurations.
+- Rustricity has its own version of [Parallel and Series](powerstorage.html#parallel-vs-series) battery configurations.
 - 1rw will charge a Large Battery in 34 IRL days.
 - When a battery is depleted because it is not receiving enough power, no power is outputed until it charges up for a couple seconds before
 outputting to the connected circuit. The battery still not receiving
@@ -30,8 +30,7 @@ you do not have enough power charging your batteries.
 capacity. This means if a large battery has a full charge, when you pick
 it up and place it back down, it will still have a full charge.
 - Batteries have something called Active Usage and components have
-something called Power Consumption. Read about it in [Battery Active Usage vs Actual Power Consumed
-](concepts.html#battery-active-usage-vs-actual-power-consumed).
+something called Power Consumption. Read about it in [Battery Active Usage vs Actual Power Consumed](powerstorage.html#battery-active-usage-vs-actual-power-consumed).
 
 ![](images/battery-footprint.png)
 
@@ -171,7 +170,7 @@ main power and battery power, it is because 1 of 2 issues.
 
 Recommended reading:
 
-- [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#-Battery-Active-Usage-vs-Actual-Power-Consumed)
+- [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#Battery-Active-Usage-vs-Actual-Power-Consumed)
 - [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)
 - [ Circuit Delay and Power Flow ](powerdistribution.html#circuit-delay-and-power-flow)
 
