@@ -17,10 +17,10 @@ The End Devices and Circuits are your turrets, lights, cameras, farms, door cont
 The Destruction Detection system should be included in most circuits and if limited to one, placing one after the Battery Backup is probably the best option.
 
 Recommended reading:  
-[Power Generation](powergeneration.md)  
-[Power Storage](powerstorage.md)  
-[Power Distribution](powerdistribution.md)  
-[Useful Circuits](usefulcircuits.md)
+[Power Generation](powergeneration.html)  
+[Power Storage](powerstorage.html)  
+[Power Distribution](powerdistribution.html)  
+[Useful Circuits](usefulcircuits.html)
 
 # Centralized vs Decentralized Theory
 When we talk about centralizing or decentralizing electricity, we are
