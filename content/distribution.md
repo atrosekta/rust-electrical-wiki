@@ -88,10 +88,10 @@ Despawn Time        | 5 minutes
 Notes:
 
 - Can only be placed on vertical walls.
-- When the Splitter receives power it does not pass power through all connected outputs at the same time. Power outputs in the order of Output 1, Output 2 then Output 3. Check out the section on [Circuit Delay and Power Flow](powerdistribution.html#-Circuit-Delay-and-Power-Flow).
+- When the Splitter receives power it does not pass power through all connected outputs at the same time. Power outputs in the order of Output 1, Output 2 then Output 3. Check out the section on [Circuit Delay and Power Flow](powerdistribution.html#Circuit-Delay-and-Power-Flow).
 - When an output is destroyed, it will redistribute power between the remaining outputs.
 - Outputs can connect to the inputs of Root Combiners.
-- Is a key component of a [Dynamid Bus](powerdistribution.html##-Dynamic-Bus-(D-Bus)).
+- Is a key component of a [Dynamid Bus](powerdistribution.html##Dynamic-Bus-(D-Bus)).
 
 ---
 
