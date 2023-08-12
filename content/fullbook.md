@@ -16,11 +16,13 @@ but any info still valid in game wont be removed.
 All of the information you find here is comming from a [Google Doc](
 https://docs.google.com/document/d/19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing
 ) by @SwiftCoyote,
-so thanks to him and all the people in the Rustricity Workshop
+so thanks to him and all the people in the [Rustricity Workshop](https://discord.gg/emB98hrupy)
 community that contribute to it! The Google Doc will always be a little more update then this website as the website needs to be rebuilt after each change.   
 
-A massive Thank You to @3YE on Discord for creating the website and
+A massive Thank You to @3YE on [Discord](https://discord.gg/emB98hrupy) for creating the website and
 teaching me (SwiftCoyote) how to update and maintain it. 
+
+
 
 ---
 
@@ -36,7 +38,7 @@ Its made in a way so someone could edit the website content without needing
 to know html/css/javascript. All the content is writen in markdown format
 (similar to discord messages: \**italic*\*, \*\***bold**\*\*, etc...)
 For now, I havent written something that explains how to do it but you can
-ask @3YE on Discord for more information.
+ask @3YE on [Discord](https://discord.gg/emB98hrupy) for more information.
 
 ---
 
@@ -2191,7 +2193,7 @@ Decay Time        | 12 hours
 Notes:
 
 - They are used for destroying player flown aircraft, i.e. minicopter, scrap heli and hot air balloon. It doesnt matter if there is a pilot or if the pilot has TC auth. They shoot the craft, not the player, unless in Defender Mode.
-- Looking at the SAM and holding Use(E) allows a player to enable and disable Defender Mode. In Defender Mode it will only target incoming MLRS rockets.
+- Looking at the SAM and holding Use(`E`) allows a player to enable and disable Defender Mode. In Defender Mode it will only target incoming MLRS rockets.
 - To successfully defend from an MLRS attack, it is recommended placing 3 SAM Sites on the side of the base that is nearest the Abandoned Military Base and build them as high as the base is tall. 
 - Has a range of 150 meters, or 1 grid square.
 - It will not target anything below its own height.
@@ -2574,13 +2576,11 @@ Despawn Time        | 5 minutes
 
 Notes:
 
-- The water input is evenly divided between all connected outputs. 100
-  in divided by 2 equals 50 per output. 100 in divided by 3 equals 33
-  for each output.
-- Can be placed on all surfaces including the ground
+- The water input is evenly divided between all connected outputs. 100 ÷ 2 = 50 per output. 100 ÷ 3 = 33 for each output.
+- Can be placed on all surfaces including the ground.
 - Each connected output shows it consumes 1 water from the input amount.
   If we give the splitter 12 and have a connection on each output, each
-  output only gets 3. This appears to be a visual bug. If we create the
+  output only gets 3. This is a visual bug. If we create the
   below picture in game, we can see there is no water loss.
 
 ![](images/image47.png)
@@ -2611,10 +2611,10 @@ Notes:
 
 - Sprinklers have a radius of 1 foundation or 3 meters. Anything that
   water can affect within this range will be affected.
-- Primarily used for indoor plant farms using planter boxes
-- Will get people wet if they are in range
+- Primarily used for indoor plant farms using planter boxes.
+- Will get people wet if they are in range.
 - Will extinguish campfires, lanterns, furnaces and other similar items.
-- Will not extinguish fire from the flamethrower or molotov cocktail
+- Will not extinguish fire from the flamethrower or molotov cocktail.
 
 ---
 
@@ -3156,23 +3156,20 @@ Pattern Short Fuse | 5 | 5 | 3 | 10 | 35
 Pattern Medium Fuse | 5 | 7 | 3 | 10 | 35
 Pattern Long Fuse | 5 | 10 | 3 | 10 | 35
 
-Start Time refers to the time between the fuse starting to sparkle and
+`Start Time` refers to the time between the fuse starting to sparkle and
 the time the firework starts to produce color or launches a projectile.
 
-Launch Time refers to the amount of time it takes a firework to reach
+`Launch Time` refers to the amount of time it takes a firework to reach
 its maximum height.
 
-Number Of Shots refers to the number of times a firework will launch a
+`Number Of Shots` refers to the number of times a firework will launch a
 projectile.
 
-Time Between Shots refers to the amount of time between each projectile.
+`Time Between Shots` refers to the amount of time between each projectile.
 
-Active Time refers to the total amount of time from a firework
-activating to the time it produces its last color or boom. This is
-written as Start Time + the time it takes from the first projectile to
-launch and the last projectile to reach its maximum height. Ex 5+35
-seconds = 5 seconds to start then 35 more seconds before the firework
-finishes.
+`Active Time` refers to the total amount of time from a firework
+activating to the time it produces its last color or boom. This is also called `Duration` in the items description and is written as Start Time + the time it takes from the first projectile to launch and the last projectile to reach its maximum height. 
+>Example: 5+35 seconds = 5 seconds to start then 35 more seconds before the firework finishes.
 
 ---
 
@@ -3180,7 +3177,7 @@ finishes.
 
 | | |  
 |-|---|  
-Item ID            | Red -454370658  Violet -1538109120  White 261913429
+Item ID            | Red -454370658 / Violet -1538109120 / White 261913429
 Description        | Emits a beautiful shower of colored sparks
 Crafting Recipe    | 20 Metal Fragments, 15 Gun Powder
 Recycles Into      | 10 Metal Fragments, 8 Gun Powder
@@ -3204,7 +3201,7 @@ Notes:
 
 | | |  
 |-|---|  
-Item ID         | Blue -515830359  Green -1306288356  Red -1486461488  Violet -99886070
+Item ID         | Blue -515830359 / Green -1306288356 / Red -1486461488 / Violet -99886070
 Description     | A small repeating firework, shoots a series of colored balls into the air
 Crafting Recipe | 25 Metal Fragments, 10 Low Grade Fuel
 Recycles Into   | 13 Metal Fragments, 5 Low Grade Fuel
@@ -3227,7 +3224,7 @@ Notes:
 
 | | |  
 |-|---|  
-Item ID            |  Blue 1744298439 Green -656349006 Red -1553999294 Violet -280223496 
+Item ID            |  Blue 1744298439 / Green -656349006 / Red -1553999294 / Violet -280223496 / Orange -7270019
 Description        |  A very large mortar type firework with a colored starburst
 Crafting Recipe    | 25 Metal Fragments, 15 Low Grade Fuel, 30 Gun Powder
 Recycles Into      | 13 Metal Fragments, 8 Low Grade Fuel, 15 Gun Powder
@@ -3270,7 +3267,7 @@ Despawn Time       | 5 minutes
 
 Notes:
 
-- There are 5 colors: Blue, Green, Red, Violet and Orange.
+- There is 1 color, champagne. It is basically yellow.
 - Foundations/floors provide 1 launch direction, straight up.
 - Ramps provide 2 launch directions, 2 different angles.
 - Steps provide 6 launch directions, 5 different angles and straight up
@@ -3297,21 +3294,17 @@ Despawn Time       | 5 minutes
 
 Notes:
 
-- There are 5 colors: Blue, Green, Red, Violet and Orange.
+- There is a default pattern if none is created.
+- TC authorization is required to customize firework. Look at the firework and press USE(`E`) to **Open Designer** or change the **Fuse** type between Short, Medium and Long. 
+- The designer allows for custom patterns by placing up to 35 dots on the board. - There is an option to place or remove dots and clear the board. 
+- There are 8 colors to choose from, white, yellow, orange, red, green, teal, blue and pink. 
+- The pattern can be given a name for saving and have up to 5 different patterns saved. 
+- Select a saved pattern or make a new one and when complete, click Save. This will exit from the designer and the pattern will be displayed when launched. 
+- If the firework is picked up, the pattern will revert back to default.
 - Foundations/floors provide 1 launch direction, straight up.
 - Ramps provide 2 launch directions, 2 different angles.
-- Steps provide 6 launch directions, 5 different angles and straight up
-- There is a default pattern if none is created.
-- TC authorization is required to customize firework. Look at the
-  firework and press USE(E) to change the use type or Open Designer.
-- The designer lets you make your own pattern by placing up to 35 dots
-  on the board. There is an option to place or remove dots and clear the
-  board. There are 8 colours to choose from, white, yellow, orange, red,
-  green, teal, blue and pink. You can name your design and have up to 5
-  different patterns saved. Once you hca completed or selected a
-  pattern, click Save. This will exit you from the designer and your
-  pattern will be displayed when launched.
-- If the firework is picked up, the pattern will revert back to default.
+- Steps provide 6 launch directions, 5 different angles and straight up.
+
 
 ---
 
@@ -3686,11 +3679,16 @@ Replacing the Splitter with an Electrical Branch allows you more control over wh
 
 # Distribution
 
-Needs explaining, but for now, it is the ability to supply an end device or circuit with power from more than 1 power source and/or battery backup. It is not recommended to do this with a battery backup, just use a proper secondary backup instead. 
+Incomplete*  
 
-Centralized distribution is how 99.9% of circuits are wires. All end devices or circuits are fed from a single source of power using a single path. 
+Centralized distribution is how 99.9% of all circuits are wired as illustrated in the picture below. All end devices or circuits are fed from a single source of power using a single battery backup following the path of a single distributor.  
 
-Decentralized distribution at its simplest is using an OR Switch to send power to an end device or circuit from 2 or more power sources. 
+![Alt text](images/CentDist.png)  
+
+Decentralized distribution at its simplest is using OR Switches (outlined by purple in the picture below) to send power to each end device (or circuit) from 2 or more power sources, battery backups or distributors.   
+
+![Alt text](images/decentdist.png)
+
 
 ---
 
@@ -3995,16 +3993,20 @@ main power and battery power, it is because 1 of 2 issues.
 
 ![](images/nihcoresolutions.png)
 
-Solution 1 - If using only 1 battery, add a Root Combiner between the battery and blocker to keep the battery active. If the battery does not have something registering Active Usage, it will enter an inactive state. This causes a delay when switching on to battery power waiting for the battery to wake up. 
+**Solution 1 -** If using only 1 battery, add a Root Combiner between the battery and blocker to keep the battery active. If the battery does not have something registering Active Usage, it will enter an inactive state. This causes a delay when switching on to battery power waiting for the battery to wake up. 
 
-Solution 2 - If already using a Root Combiner or using more than 1 battery, add 1 or 2, maybe even 3 components between the Memory Cells ‘Output’ and the OR Switch. This will hold power here longer giving the circuit a chance to receive power from the battery.
+**Solution 2 -** If already using a Root Combiner or using more than 1 battery, add 1 or 2, maybe even 3 components between the Memory Cells ‘Output’ and the OR Switch. This will hold power here longer giving the circuit a chance to receive power from the battery.
+
+**Solution 3 -** Use a secondary inline battery backup to buffer against the flicker on circuits that need stability. In the picture below, the purple wires are representing a destruction detection system on some walls. Then the flicker happens, the Smart Alarm gets triggered. Adding the battery prevents that from happening. It does cost 20% more power for that circuit because of the battery, but it is 100% stable. The yellow wires represent circuits that do not need 100% stability. It could be deemed acceptable if these circuits turn off and on once in a while.
+
+![](images/solution3.png)
 
 
 Recommended reading:
 
-- [ Battery Active Usage vs Actual Power Consumption ](concepts.html#battery-active-usage-vs-actual-power-consumed)
-- [ Short Circuit / Max Depth ](concepts.html#short-circuit-max-depth)
-- [ Circuit Delay and Power Flow ](concepts.html#circuit-delay-and-power-flow)
+- [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#-Battery-Active-Usage-vs-Actual-Power-Consumed)
+- [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)
+- [ Circuit Delay and Power Flow ](powerdistribution.html#circuit-delay-and-power-flow)
 
 Pros:
 
@@ -4076,8 +4078,7 @@ When you look at the battery with a wire tool, you will see Active
 Usage. Active Usage is the amount of power the battery is draining by.
 This is the number you want to use when calculating how much power to
 give a battery for it to remain charged based on the battery's 80%
-efficiency. Active Usage divided by 0.8 = a battery's minimum power
-input.
+efficiency. Active Usage ÷ 0.8 or Active Usage × 1.25 gives you the minimum power input to remain neutral.
 
 ![](images/large-battery-ui.png)
 
@@ -4329,23 +4330,16 @@ That wraps up this section. I hope I have explained things in a way that makes s
 # Power Distribution
 
 
-
 ---
 
 # What is a Power Bus?
 
 ![](images/image127.png)
 
-A power bus is a group of components with the sole purpose of directing
-the flow of electricity to different circuits that perform specific
-tasks such as auto turrets or lighting. This is a lot like the breaker
-panel or fuse panel you have in your home for your electricity. Each
-breaker or fuse is dedicated for a specific room or purpose, like the
-fridge, furnace, bedrooms or garage. A power bus also helps prioritize
-the order in which circuits receive power. In the event you are
-producing less power then you need, you have built in control over which
-circuit is last to go offline. We have 3 types of power buses, fixed,
-dynamic and configurable.
+Power always needs a way to get from point A to point B. That could be from a Wind Turbine to an Auto Turret or from a Solar Panel to a Light. A power bus is a single or group of components with the sole purpose of directing the flow of electricity to different circuits that perform specific tasks such as auto turrets or lighting. This is a lot like the breaker panel or fuse panel you have in your home for your electricity. Each breaker or fuse is dedicated for a specific room or purpose, like the fridge, furnace, bedrooms or garage. These breakers or fuses limit how much power each circuit can use and in Rust, this is no different. Instead of breakers or fuses, its Electrical Branches and Splitters.
+
+ The most difficult part of deciding how to distribute power is knowing how the components that are specifically made for this job function. There are 2 main components, the Electrical Branch and the Splitter and its recommended reading about them specifically in the Power Distribution section under Component Details. There are 3 types of power buses, fixed, dynamic and configurable. 
+
 
 ---
 
@@ -4353,18 +4347,10 @@ dynamic and configurable.
 
 ![](images/image115.png)
 
-A fixed bus, known as an F-Bus, is when you dedicate a specific amount
-of power per output. This type of power bus always consumes the amount
-of power each output is set to even if nothing is attached to Branch
-Out. This will affect Inline battery backups by forcing an Active Usage
-and it will affect a bypass battery backup by always consuming power,
-even when the components connected to Branch Out are offline. A fixed
-bus is an easy way to build in priorities and a bit of security. The
-first Electrical Branch has the highest priority because it's the first
-to get power and in the event that power levels start falling, it will
-be the last branch to lose power. The security comes from knowing that
-if 50% of the power supply disappears, only some branches will lose
-power and not all.
+A fixed bus, known as an F-Bus, is when you dedicate a specific amount of power per output. This can be just a single Electrical Branch or a group of them. This type of power bus always consumes the amount of power each output is set to, even if nothing is attached to Branch Out. This will affect Inline battery backups by forcing an Active Usage and it will affect a bypass battery backup by always consuming power, even when the components connected to Branch Out are offline. 
+
+A fixed bus is an easy way to build in priorities and a bit of security. The first Electrical Branch has the highest priority because it's the first to get power and in the event that power levels start falling, it will be the last branch to lose power. The security comes from knowing that if 50% of the power supply disappears, only some branches will lose power and not all. 
+
 
 ---
 
@@ -4372,18 +4358,12 @@ power and not all.
 
 ![](images/image51.png)
 
-A dynamic bus, known as a D-Bus, is when we let the components evenly
-distribute power between all connected outputs. The only control you
-have over the amount of power available to each output is the amount of
-power you put into it. This is primarily used when the component or
-circuit attached to each output requires the same amount of power or
-when each circuit uses less than the available power and you want to
-avoid the forced Active Usage from an Electrical Branch. If an output
-gets destroyed, the system will evenly redistribute power between the
-remaining outputs. The drawback would be that if the incoming power
-drops too low to support the connected outputs, everything will stop
-working or at least those that require the full amount of power that was
-previously present.
+A dynamic bus, known as a D-Bus, is when the components evenly distribute power between all connected outputs. This can be just a single Splitter or a group of them and the only control over the amount of power available at each output is the amount of power that is put into it. 
+
+This is great when the component or circuit attached to each output requires the same amount of power. It is a power efficient way to supply the same amount of power to multiple components or circuits. When using a bypass battery backup, it can free up some power to be used somewhere else. When using an Inline battery backup, only the Active Usage from the Splitter is forced onto the battery. Only when the components connected to each output are online will their Active Usage be reflected on the battery. This is good in situations where a player wants to use a Switch to turn things off before they logout. 
+
+If an output gets destroyed, the system will evenly redistribute power between the remaining outputs. The drawback would be that if the incoming power drops too low to support the connected outputs, everything will stop working or at least those that require the full amount of power that was previously present.
+
 
 ---
 
@@ -4391,74 +4371,18 @@ previously present.
 
 ![](images/multi-c-bus.png)
 
-A configure siphon, known as a C-Bus, is a bypass distributor that is
-only active when required. The idea here is that we only want to use
-power when the C-Bus is active otherwise the power just passes through.
-We can set an Electrical Branch in the siphon to a specific amount of
-power to only be used when the siphon is active. There are multiple
-versions of the C-Bus, and we will dive into each one, but to start, I
-just want to explain the concept.
+A configure siphon, known as a C-Bus, is a bypass distributor that is only active when required. The idea is only when power is needed will the C-Bus become active, otherwise the power just passes through. Set the Electrical Branches in the siphon to a specific amount of power to only be used when the siphon is active. There are multiple versions of the siphon based on if there is a need for manual or automatic operation and what kind of battery backup is being used. 
 
-All of them are centered around the Memory Cell. The Memory Cell has 2
-outputs, Output and Inverted Output. One output is called the Main Line
-(aka the bypass) and the other output goes to the Circuit that we want
-to power. The Main Line is the default path the electricity takes when
-the siphon is not active. It will pass from a Memory Cell to an OR
-Switch and out. The Circuit path is the route electricity will take when
-the Memory Cell gets triggered. It gets sent to an Electrical Branch
-that is configured to an amount of power the circuit needs while the
-remainder gets sent off to the OR Switch and back onto the Main Line to
-continue powering the circuits past it. While this is the general
-concept, we can get a little more specific.
+All of them are centered around the Memory Cell. The Memory Cell has 2 outputs, Output and Inverted Output. One output is called the Main Line (aka the bypass) and the other output goes to the Circuit that we want to power. The Main Line is the default path the electricity takes when the siphon is not active. It will pass from a Memory Cell to an OR Switch and out. The Circuit path is the route electricity will take when the Memory Cell gets triggered. It gets sent to an Electrical Branch that is configured to an amount of power the circuit needs while the remainder gets sent off to the OR Switch and back onto the Main Line to continue powering the circuits past it. While this is the general concept, let's get a little more specific.
 
-There are 2 categories of Configure Siphons. There is the Auto Reset
-which will automatically turn itself on when an input is received and
-off when the input signal is removed. The second is Manual which
-requires you to manually turn it on and off. Within each of these
-categories there are 2 types. There is the standard C-Bus which is to be
-used in a circuit that uses a bypass battery backup like the Nih Core.
-The second type is the Blocked C-Bus meant to be used in a circuit that
-uses an Inline battery backup. The reason 1 has a Blocker is because of
-the nature of components and a battery's Active Usage. The Blocker has
-the ability to hide Active Usage from a battery when it is actively
-being blocked. Read more about that in the section titled Battery Active
-Usage Vs Actual Power Consumed.
+There are **2 categories** of Configure Siphons. There is the **Auto Reset** which will automatically turn itself on when an input is received and off when the input signal is removed. The second is **Manual** which requires a player to manually turn it on and off. Within each of these categories there are **2 types**. There is the **Standard C-Bus** which is to be used in a circuit that uses a bypass battery backup like the [Nih Core](powerstorage.html#Nih-Core). The second type is the Blocked C-Bus meant to be used in a circuit that uses an [Inline](powerstorage.html#Nih-Core) battery backup. The reason 1 has a Blocker is because of the nature of components and a battery's Active Usage. The Blocker has the ability to hide Active Usage from a battery when it is actively being blocked. Read more about that in the section titled [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#-Battery-Active-Usage-vs-Actual-Power-Consumed) located in Power Storage under Concepts.
 
-Now to get very specific. Starting with the Auto Reset siphons, these by
-default will send power out the Inverted Output(left output). Power will
-be passed to an OR Switch then out. In the Blocked version, power gets
-passed to an Electrical Branch that is used to block a Blocker before
-passing power to the OR Switch and out. ‘Out’ could be another siphon,
-another type of power bus or whatever you would like. We are using a
-HBHF Sensor as our input source but it doesnt have to be. All we need is
-a constant source of power to keep the siphon active. When the sensor
-outputs power, it will ‘SET’ the Memory Cell. This will force the Memory
-Cell to flip outputs and send power through Output(right output). From
-Output, power will be sent to an Electrical Branch configured to +2 over
-the amount of power your circuit will need. The leftover power will pass
-through Power Out and merge back into the Main Line. The power coming
-out of Branch Out will go to another Electrical Branch that will be set
-to the amount of power the circuit actually needs. The reason for +2 is
-because we need 1 for the second Electrical Branch itself and 1 to be
-sent out Power Out to ‘RESET’ on the Memory Cell. In the blocked
-version, we are simply adding a Blocker before the first Electrical
-Branch so we can hide the Active Usage caused by the Electrical Branches
-from a battery. When the sensor stops sending power to ‘SET’, the power
-going to ‘RESET’ will force the Memory Cell to flip outputs back to
-Inverted Output and return power to the Main Line. In the blocked
-version, because of the Electrical Branch on the Main Line, the Blocker
-will get blocked again to hide the Active Usage.
+Now to get very specific. Starting with the Auto Reset siphons, these by default will send power out the Inverted Output(left output). Power will be passed to an OR Switch then out. In the Blocked version, power gets passed to an Electrical Branch that is used to block a Blocker before passing power to the OR Switch and out. ‘Out’ could be another siphon, another type of power bus or whatever. A HBHF Sensor is used as the input source but it doesn’t have to be. All that’s needed is a constant source of power to keep the siphon active. When the sensor outputs power, it will ‘SET’ the Memory Cell. This will force the Memory Cell to flip outputs and send power through Output(right output). From Output, power will be sent to an Electrical Branch configured to +2 over the amount of power your circuit will need. The leftover power will pass through Power Out and merge back into the Main Line. The power coming out of Branch Out will go to another Electrical Branch that will be set to the amount of power the circuit actually needs. The reason for +2 is because 1rW is needed for the second Electrical Branch itself and 1rW needs to be sent out Power Out to ‘RESET’ on the Memory Cell. In the blocked version, a Blocker was added before the first Electrical Branch so it can hide the Active Usage caused by the Electrical Branches from a battery. When the sensor stops sending power to ‘SET’, the power going to ‘RESET’ will force the Memory Cell to flip outputs back to Inverted Output and return power to the Main Line. In the blocked version, because of the Electrical Branch on the Main Line, the Blocker will get blocked again to hide the Active Usage.
 
-The Manual siphons function in a very similar way only instead of using
-‘SET’ or ‘RESET’ on the Memory Cell, we are using ‘TOGGLE’. Everytime
-‘TOGGLE’ receives power, the Memory Cell will flip outputs. We have used
-the Button in the pictured examples but it doesnt have to be. When it
-comes to which output on the Memory Cell is the Main Line or the Circuit
-line, it really doesnt matter because you have the ability to manually
-control which output power is actively passing through.
+The Manual siphons function in a very similar way only instead of using ‘SET’ or ‘RESET’ on the Memory Cell, ‘TOGGLE’ is used instead. Everytime ‘TOGGLE’ receives power, the Memory Cell will flip outputs. A Red Button is used in the pictured examples but it doesn't have to be. When it comes to which output on the Memory Cell is the Main Line or the Circuit line, it really doesn't matter because there is the ability to manually control which output power is actively passing through. 
 
 In all the examples we have used Counters at each output. This is
-only to show you how much power each C-Bus costs to not be active.
+only to show how much power each C-Bus costs to not be active.
 [Here is a Rustrician BP link to explore the C-Bus more. ](https://www.rustrician.io/?circuit%3D71c12c6e40d98dea32fb463a773b2f42)
 
 ---
@@ -4896,6 +4820,8 @@ Needs work
 
 [Blocker Chain](https://www.rustrician.io/?circuit=773b599014deb161fc173f295727be77)
 
+[Close All Doors with a Red Button](https://www.rustrician.io/?circuit=43eca6c525fb723146cc0fc7ca45a730)
+
 [Configure Siphon](https://www.rustrician.io/?circuit=e7c8a8ccc9ce2da68095cca2560da002)
 
 [Delay Timer](https://www.rustrician.io/?circuit=fa8ba5c2e3974185c6f01273eab653f1)
@@ -4913,6 +4839,8 @@ Needs work
 [Nih Core - 4 Large Batteries](https://www.rustrician.io/?circuit=60fc05f187614f131aa5565be42a6687)
 
 [Nih Core - Decentralized](https://www.rustrician.io/?circuit=1d0b869c046f6d05ee75ab0f841fc150)
+
+[Parallel vs Series](https://www.rustrician.io/?circuit=0191b550a1c45104ce7129c15ba13d4f)
 
 [Probability Master Class](https://www.rustrician.io/?circuit=ca9bdcbc87f0a13ca3a3ce0c8fe4146d)
 
