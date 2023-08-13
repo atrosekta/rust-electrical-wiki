@@ -1509,7 +1509,7 @@ another.</li>
 <li>Requires a single square or 2 triangles to be placed on.</li>
 <li>Cannot be picked up with a hammer.</li>
 <li>Check out Wind Power in the Concepts section under <a
-href="powergeneration.html#-Wind-Power">Power Generation</a>.</li>
+href="powergeneration.html#Wind-Power">Power Generation</a>.</li>
 </ul>
 <hr />
 <h1 id="large-solar-panel"><a href="#large-solar-panel"
@@ -1599,7 +1599,7 @@ making it to the entire front face.</li>
 <li>They can be picked up with a hammer but will lose 25% health.</li>
 <li>24 hours in game is 1 irl hour.</li>
 <li>Check out Solar Power in the Concepts section under <a
-href="powergeneration.html#-Solar-Power">Power Generation</a>.</li>
+href="powergeneration.html#Solar-Power">Power Generation</a>.</li>
 </ul>
 <hr />
 <h1 id="small-generator"><a href="#small-generator"
@@ -2232,14 +2232,13 @@ Crate</td>
 <li>When the Splitter receives power it does not pass power through all
 connected outputs at the same time. Power outputs in the order of Output
 1, Output 2 then Output 3. Check out the section on <a
-href="powerdistribution.html#-Circuit-Delay-and-Power-Flow">Circuit
-Delay and Power Flow</a>.</li>
+href="powerdistribution.html#Circuit-Delay-and-Power-Flow">Circuit Delay
+and Power Flow</a>.</li>
 <li>When an output is destroyed, it will redistribute power between the
 remaining outputs.</li>
 <li>Outputs can connect to the inputs of Root Combiners.</li>
 <li>Is a key component of a <a
-href="powerdistribution.html##-Dynamic-Bus-(D-Bus)">Dynamid
-Bus</a>.</li>
+href="powerdistribution.html##Dynamic-Bus-(D-Bus)">Dynamid Bus</a>.</li>
 </ul>
 <hr />
 <h1 id="cable-tunnel-not-craftable"><a
@@ -9515,7 +9514,7 @@ backup. Keep in mind that Root Combiners do not share the load between
 batteries. This means that a circuit needing 100 power or more will
 force all the batteries to have a max Active Usage of 100. Read the
 section <a
-href="concepts.html#battery-active-usage-vs-actual-power-consumed">Battery
+href="powerstorage.html#battery-active-usage-vs-actual-power-consumed">Battery
 Active Usage vs Actual Power Consumed</a> for an in depth explanation
 into Active Usage.</p>
 <p><img src="images/dectr-pwr-ctr-bkp.png" /></p>
@@ -9847,8 +9846,8 @@ a specific amount of power, we use the following equations:
 <hr />
 <p>That wraps up this section. I hope I have explained things in a way
 that makes sense. Please comment on the <a
-href="https://docs.google.com/documentd19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing">Google
-Doc</a> if you have any suggestions or questions.</p>
+href="https://docs.google.com/document/d/19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing">Google
+Document</a> if you have any suggestions or questions.</p>
 <hr />
 <h1 id="power-storage-1"><a href="#power-storage-1"
 class="anchor-link">*</a>Power Storage</h1>
@@ -9886,13 +9885,13 @@ calculate how fast a battery drains.<br />
 So if we are forcing batteries to max drain, then we might as well try
 to use as much of the power the combined batteries will provide.</p>
 <p>When using a bypass battery backup like the <a
-href="backup.html#nih-core">Nih core</a>, Active Usage does not matter
-because the circuits are getting power from the main power source most
-of the time and not the battery.</p>
+href="powerstorage.html#nih-core">Nih core</a>, Active Usage does not
+matter because the circuits are getting power from the main power source
+most of the time and not the battery.</p>
 <ul>
 <li>Rustricity has its own version of <a
-href="concepts.html#parallel-vs-series">Parallel and Series</a> battery
-configurations.</li>
+href="powerstorage.html#parallel-vs-series">Parallel and Series</a>
+battery configurations.</li>
 <li>1rw will charge a Large Battery in 34 IRL days.</li>
 <li>When a battery is depleted because it is not receiving enough power,
 no power is outputed until it charges up for a couple seconds before
@@ -9906,7 +9905,7 @@ capacity. This means if a large battery has a full charge, when you pick
 it up and place it back down, it will still have a full charge.</li>
 <li>Batteries have something called Active Usage and components have
 something called Power Consumption. Read about it in <a
-href="concepts.html#battery-active-usage-vs-actual-power-consumed">Battery
+href="powerstorage.html#battery-active-usage-vs-actual-power-consumed">Battery
 Active Usage vs Actual Power Consumed</a>.</li>
 </ul>
 <p><img src="images/battery-footprint.png" /></p>
@@ -10139,7 +10138,7 @@ on once in a while.</p>
 <p>Recommended reading:</p>
 <ul>
 <li><a
-href="powerstorage.html#-Battery-Active-Usage-vs-Actual-Power-Consumed">Battery
+href="powerstorage.html#Battery-Active-Usage-vs-Actual-Power-Consumed">Battery
 Active Usage vs Actual Power Consumption</a></li>
 <li><a href="powerdistribution.html#short-circuit-max-depth">Short
 Circuit / Max Depth</a></li>
