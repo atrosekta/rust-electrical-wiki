@@ -54,6 +54,7 @@ Notes:
     - `EXCLUDE LISTED ITEMS:` Only items not listed will be moved.
     - Items in the filter list will be prevented from transferring.
     - When using more than 1 filter type, the conveyor will set Filter Pass even when the item in the container is on the exclusion list.
+- The `Current Items` list can be copied from one conveyor to another using the **Copy** and **Paste** buttons. Holding Sprint(`Shift`) lets a user ***Copy(JSON)***. This can then be pasted into a text file allowing a player to share their conveyor filters outside of the game and between servers. Hold Sprint(`Shift`) to ***Paste(JSON)***. This will not copy the ‘Filter Mode’.  
 - If it has power when the server restoots, it will remain powered on after the restart.
 - There is an Industrial Max Depth of 32 components on either side (input/output) of the Conveyor.
 - There is a max of 32 Storage Adapters on either side (input/output) of the Conveyor.
