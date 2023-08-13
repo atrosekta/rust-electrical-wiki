@@ -269,7 +269,7 @@ Notes:
 - There needs to be a minimum of 15 meters or 5 foundations distance between turbines. This will prevent 1 turbine blocking the wind for another.
 - Requires a single square or 2 triangles to be placed on. 
 - Cannot be picked up with a hammer.
-- Check out Wind Power in the Concepts section under [Power Generation]( powergeneration.html#-Wind-Power ).
+- Check out Wind Power in the Concepts section under [Power Generation](powergeneration.html#Wind-Power).
 
 
 ---
@@ -303,7 +303,7 @@ Notes:
 - They can be placed on the ground or flat building structure.
 - They can be picked up with a hammer but will lose 25% health.
 - 24 hours in game is 1 irl hour.
-- Check out Solar Power in the Concepts section under [Power Generation]( powergeneration.html#-Solar-Power ).
+- Check out Solar Power in the Concepts section under [Power Generation](powergeneration.html#Solar-Power).
 
 
 
@@ -536,10 +536,10 @@ Despawn Time        | 5 minutes
 Notes:
 
 - Can only be placed on vertical walls.
-- When the Splitter receives power it does not pass power through all connected outputs at the same time. Power outputs in the order of Output 1, Output 2 then Output 3. Check out the section on [Circuit Delay and Power Flow](powerdistribution.html#-Circuit-Delay-and-Power-Flow).
+- When the Splitter receives power it does not pass power through all connected outputs at the same time. Power outputs in the order of Output 1, Output 2 then Output 3. Check out the section on [Circuit Delay and Power Flow](powerdistribution.html#Circuit-Delay-and-Power-Flow).
 - When an output is destroyed, it will redistribute power between the remaining outputs.
 - Outputs can connect to the inputs of Root Combiners.
-- Is a key component of a [Dynamid Bus](powerdistribution.html##-Dynamic-Bus-(D-Bus)).
+- Is a key component of a [Dynamid Bus](powerdistribution.html##Dynamic-Bus-(D-Bus)).
 
 ---
 
@@ -3626,7 +3626,7 @@ available amount of power but also represents an end circuit like lights
 or turrets.
 
 This first example demonstrates decentralizing the main power by having each power source charge its own battery, with a centralized Inline backup by combining the batteries before powering a circuit. This is a less than ideal way to set up your power production and battery backup. Keep in mind that Root Combiners do not share the load between batteries. This means that a circuit needing 100 power or more will force all the batteries to have a max Active Usage of 100. 
-Read the section [Battery Active Usage vs Actual Power Consumed](concepts.html#battery-active-usage-vs-actual-power-consumed) for an in depth explanation into Active Usage.  
+Read the section [Battery Active Usage vs Actual Power Consumed](powerstorage.html#battery-active-usage-vs-actual-power-consumed) for an in depth explanation into Active Usage.  
 
 ![](images/dectr-pwr-ctr-bkp.png)  
 
@@ -3813,7 +3813,7 @@ To figure out how much time a given capacity will run for, outputting a specific
 
 ---
 
-That wraps up this section. I hope I have explained things in a way that makes sense. Please comment on the [Google Doc](https://docs.google.com/documentd19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing) if you have any suggestions or questions.
+That wraps up this section. I hope I have explained things in a way that makes sense. Please comment on the [Google Document](https://docs.google.com/document/d/19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/edit?usp=sharing) if you have any suggestions or questions.
 
 ---
 
@@ -3835,10 +3835,10 @@ TL:DR
 This means when we get to circuits that need more than 100 power, all the batteries combined will show a max Active Usage, which is used to calculate how fast a battery drains.  
 So if we are forcing batteries to max drain, then we might as well try to use as much of the power the combined batteries will provide.
 
-When using a bypass battery backup like the [ Nih core ]( backup.html#nih-core ),
+When using a bypass battery backup like the [ Nih core ]( powerstorage.html#nih-core ),
 Active Usage does not matter because the circuits are getting power from the main power source most of the time and not the battery.
 
-- Rustricity has its own version of [Parallel and Series](concepts.html#parallel-vs-series) battery configurations.
+- Rustricity has its own version of [Parallel and Series](powerstorage.html#parallel-vs-series) battery configurations.
 - 1rw will charge a Large Battery in 34 IRL days.
 - When a battery is depleted because it is not receiving enough power, no power is outputed until it charges up for a couple seconds before
 outputting to the connected circuit. The battery still not receiving
@@ -3849,8 +3849,7 @@ you do not have enough power charging your batteries.
 capacity. This means if a large battery has a full charge, when you pick
 it up and place it back down, it will still have a full charge.
 - Batteries have something called Active Usage and components have
-something called Power Consumption. Read about it in [Battery Active Usage vs Actual Power Consumed
-](concepts.html#battery-active-usage-vs-actual-power-consumed).
+something called Power Consumption. Read about it in [Battery Active Usage vs Actual Power Consumed](powerstorage.html#battery-active-usage-vs-actual-power-consumed).
 
 ![](images/battery-footprint.png)
 
@@ -3990,7 +3989,7 @@ main power and battery power, it is because 1 of 2 issues.
 
 Recommended reading:
 
-- [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#-Battery-Active-Usage-vs-Actual-Power-Consumed)
+- [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#Battery-Active-Usage-vs-Actual-Power-Consumed)
 - [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)
 - [ Circuit Delay and Power Flow ](powerdistribution.html#circuit-delay-and-power-flow)
 
