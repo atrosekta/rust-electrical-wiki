@@ -35,4 +35,6 @@ to know html/css/javascript. All the content is writen in markdown format
 For now, I havent written something that explains how to do it but you can
 ask @3YE on [Discord](https://discord.gg/emB98hrupy) for more information.
 
+Track updates to the website by viewing our [commits](https://github.com/atrosekta/rust-electrical-wiki/commits/master).
+
 ---
