@@ -3,6 +3,15 @@
 
 These components can be paired with the Rust+ app and adds a way to interact with rustricity from outside the game.
 
+- To connect the smart component with the Rust+ app, start by installing the app from your app store on a tablet or smartphone. 
+- Launch the app and sign into Steam. 
+- In game, join a server that has Rust+ enabled. 
+- Once on the server, hit ESC to enter the main menu. 
+- Click on Rust+. 
+- Select ‘Pair With Server’ and in the app the server's info should pop up. 
+- In the app, select ‘Pair Server’ and you're done. 
+- Look at the smart component in game and hold Use(`E`) to get the option to pair.
+
 ---
 
 # Storage Monitor![](images/image8.png)
@@ -57,7 +66,7 @@ Notes:
 
 - Must be placed on flat surfaces.
 - Can be paired with Rust+ to receive pre-programmed messages from in-game when activated.
-- With TC authorization, look at the alarm with a Wire Tool in hand and press E to set the alarms message.
+- With TC authorization, look at the alarm with a Wire Tool in hand and press Use(`E`) to set the alarms message.
 
 ![](images/alarmname.png)
 
@@ -87,18 +96,7 @@ Notes:
 
 - Only people with TC authorization can operate the Switch.
 - Can be paired with Rust+ enabling the ability to turn it on and off from outside the game.
-- The [Side Inputs](uncategorizedconcepts.html##-Side-Inputs) block the [Destruction Detectors](https://www.rustrician.io/?circuit=0ed49399527de1a33fd851e2d213b1ed) ability to see downstream.
+- The [Side Inputs](uncategorizedconcepts.html#Side-Inputs) block the [Destruction Detectors](https://www.rustrician.io/?circuit=0ed49399527de1a33fd851e2d213b1ed) ability to see downstream.
 
 ---
 
-## Common Traits
-
-- To connect the smart component with the Rust+ app, start by installing the app from your app store on a tablet or smartphone. 
-- Launch the app and sign into Steam. 
-- In game, join a server that has Rust+ enabled. 
-- Once on the server, hit ESC to enter the main menu. 
-- Click on Rust+. 
-- Select ‘Pair With Server’ and in the app the server's info should pop up. 
-- In the app, select ‘Pair Server’ and you're done. 
-
----

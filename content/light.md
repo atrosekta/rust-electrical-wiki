@@ -345,7 +345,7 @@ Notes:
 
 - This item can only be crafted if you have the item in your Steam
   Inventory. It must be purchased from the in game Item Store.
-  - These are the cheapest components to build and only consume 1rW.
+- These are the cheapest components to build and only consume 1rW.
 - Can be placed on all angled surfaces.
 
 ---

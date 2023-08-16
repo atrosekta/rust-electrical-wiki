@@ -26,7 +26,7 @@ Despawn Time        | 5 minutes
 Notes:
 
 - When power is applied to the Block Passthrough input on the side, power will be prevented from passing though.
-- When passthrough is blocked, it will also block any components [Active Usage](powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed), effectively hiding them from batteries when offline.
+- When passthrough is blocked, it will also block any components [Active Usage](powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed), effectively hiding them from batteries when offline.
 
 
 ---
@@ -86,12 +86,12 @@ Notes:
 
 - Everyone can activate the timer but only TC authorized people can set the timer.
 - Timer must be powered to set the duration.
-- It must also be powered first before it can be triggered as per [Power Flow](powerdistribution.html##-Power-Flow).
+- It must also be powered first before it can be triggered as per [Power Flow](powerdistribution.html##Power-Flow).
 - Has a default time of 30 seconds.
 - Minimum time duration is 0.25 seconds. This might be too fast for some servers and must be increased.
 - Maximum time duration has been tested to at least a 2 weeks IRL.
 - Can only be placed on vertical walls.
-- When it is not active, it will block all the components past it from registering [Active Usage](powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed) on batteries.
+- When it is not active, it will block all the components past it from registering [Active Usage](powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed) on batteries.
 
 
 ---
@@ -119,7 +119,7 @@ Notes:
 
 - When power is applied to Set, there is a 50% chance the switch will change states. From passing power through to not passing power through or vice versa.
 - When power is applied to Reset, the switch will pass power through.
-- While not passing power through, it will block any components [Active Usage](powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed), effectively hiding them from batteries when offline.
+- While not passing power through, it will block any components [Active Usage](powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed), effectively hiding them from batteries when offline.
 - Can be placed on all angled surfaces including the ground.
 
 
@@ -236,8 +236,7 @@ Notes:
   by 1.
 - When power is applied to Decrement Counter, the Counter will count
   down by 1.
-- When power is applied to Clear Counter, the Counter will reset back to
-  0.
+- When power is applied to Clear Counter, the Counter will reset back to 0.
 - The Counter does not need power to count up, down or be cleared.
 - When set to Show Passthrough, if it only shows 1, connect the output (Passthrough) to any input on any component. This will cause the counter to actually pass power through so it can show the amount.
 - Using a Counter on the floor on its thin side, within a 1 meter

@@ -63,7 +63,7 @@ Notes:
 - There needs to be a minimum of 15 meters or 5 foundations distance between turbines. This will prevent 1 turbine blocking the wind for another.
 - Requires a single square or 2 triangles to be placed on. 
 - Cannot be picked up with a hammer.
-- Check out Wind Power in the Concepts section under [Power Generation](powergeneration.html#Wind-Power).
+- Check out **Wind Power** in the Concepts section under [Power Generation](powergeneration.html#Wind-Power).
 
 
 ---
@@ -97,7 +97,7 @@ Notes:
 - They can be placed on the ground or flat building structure.
 - They can be picked up with a hammer but will lose 25% health.
 - 24 hours in game is 1 irl hour.
-- Check out Solar Power in the Concepts section under [Power Generation](powergeneration.html#Solar-Power).
+- Check out **Solar Power** in the Concepts section under [Power Generation](powergeneration.html#Solar-Power).
 
 
 
