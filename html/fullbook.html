@@ -1504,7 +1504,7 @@ another.</li>
 <li>Requires a single square or 2 triangles to be placed on.</li>
 <li>Cannot be picked up with a hammer.</li>
 <li>Check out <strong>Wind Power</strong> in the Concepts section under
-<a href="powergeneration.html#Wind-Power">Power Generation</a>.</li>
+<a href="powergeneration.html#wind-power">Power Generation</a>.</li>
 </ul>
 <hr />
 <h1 id="large-solar-panel"><a href="#large-solar-panel"
@@ -1594,7 +1594,7 @@ making it to the entire front face.</li>
 <li>They can be picked up with a hammer but will lose 25% health.</li>
 <li>24 hours in game is 1 irl hour.</li>
 <li>Check out <strong>Solar Power</strong> in the Concepts section under
-<a href="powergeneration.html#Solar-Power">Power Generation</a>.</li>
+<a href="powergeneration.html#solar-power">Power Generation</a>.</li>
 </ul>
 <hr />
 <h1 id="small-generator"><a href="#small-generator"
@@ -2036,7 +2036,7 @@ Crate</td>
 <ul>
 <li>These allow Power Sources and batteries to be combined to produce
 higher amounts of available power. <a
-href="sources.html#Power-Sources">Power Sources</a> are Wind Turbines,
+href="sources.html#power-sources">Power Sources</a> are Wind Turbines,
 Large Solar Panels and Small Generators.</li>
 <li>Can be placed on all building surfaces.</li>
 <li>It has a max depth of 16 components between a power source and the
@@ -2045,11 +2045,11 @@ shared error message, <a
 href="powerdistribution.html#Short-Circuit-/-Max-Depth">Short
 Circuit/Max Depth</a>.</li>
 <li>It does not consume any power but will register 1 <a
-href="powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#battery-active-usage-vs-actual-power-consumed">Active
 Usage</a> on a battery.</li>
 <li>Combining batteries with a Root Combiner to get a larger amount of
 power is wiring the batteries in <a
-href="powerstorage.html#Parallel-vs-Series">Series</a>. The load is not
+href="powerstorage.html#parallel-vs-series">Series</a>. The load is not
 evenly shared. For example, 2 batteries connected to a Root Combiner
 feeding a circuit that needs 50 power. Each battery will show an Active
 Usage of 50, not 25/25 to = 50.</li>
@@ -2133,7 +2133,7 @@ remaining power.</td>
 directly at the Branch.</li>
 <li>2rW is the minimum Branch Out can be set to.</li>
 <li>These will consume 1 power but not register on a battery’s <a
-href="powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#battery-active-usage-vs-actual-power-consumed">Active
 Usage</a>.</li>
 <li>What Branch Out is set to will be the amount that registers on a
 battery’s Active Usage.</li>
@@ -2142,7 +2142,7 @@ even if the components past it are disabled.</li>
 <li>When an Electrical Branch sends power out, it will first send power
 through Power Out then send power through Branch Out. Check out the
 section on <a
-href="powerdistribution.html#Circuit-Delay-and-Power-Flow">Circuit Delay
+href="powerdistribution.html#circuit-delay-and-power-flow">Circuit Delay
 and Power Flow</a>.</li>
 <li>Is a key component to create a <a
 href="powerdistribution.html##Fixed-Bus-(F-Bus)">Fixed Bus</a></li>
@@ -2223,7 +2223,7 @@ Crate</td>
 <li>When the Splitter receives power it does not pass power through all
 connected outputs at the same time. Power outputs in the order of Output
 1, Output 2 then Output 3. Check out the section on <a
-href="powerdistribution.html#Circuit-Delay-and-Power-Flow">Circuit Delay
+href="powerdistribution.html#circuit-delay-and-power-flow">Circuit Delay
 and Power Flow</a>.</li>
 <li>When an output is destroyed, it will redistribute power between the
 remaining outputs.</li>
@@ -2385,9 +2385,9 @@ Use(<code>E</code>).</li>
 <li>Can only be placed on vertical surfaces.</li>
 <li>When the Switch is off, it will block all the components past it
 from registering <a
-href="powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#battery-active-usage-vs-actual-power-consumed">Active
 Usage</a> on batteries.</li>
-<li><a href="uncatagorizedconcepts.html#Side-Inputs">Side Inputs</a> are
+<li><a href="uncatagorizedconcepts.html#side-inputs">Side Inputs</a> are
 inputs, not toggles and are explained in their own section, currently in
 Uncategorized under Concepts.</li>
 <li>The side inputs block the <a
@@ -2925,7 +2925,7 @@ Chest, Underwater Dweller, Underwater Lab Blue Crate</td>
 <li>When power is applied to the Block Passthrough input on the side,
 power will be prevented from passing though.</li>
 <li>When passthrough is blocked, it will also block any components <a
-href="powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#battery-active-usage-vs-actual-power-consumed">Active
 Usage</a>, effectively hiding them from batteries when offline.</li>
 </ul>
 <hr />
@@ -3101,7 +3101,7 @@ Crate</td>
 set the timer.</li>
 <li>Timer must be powered to set the duration.</li>
 <li>It must also be powered first before it can be triggered as per <a
-href="powerdistribution.html##Power-Flow">Power Flow</a>.</li>
+href="powerdistribution.html##power-flow">Power Flow</a>.</li>
 <li>Has a default time of 30 seconds.</li>
 <li>Minimum time duration is 0.25 seconds. This might be too fast for
 some servers and must be increased.</li>
@@ -3110,7 +3110,7 @@ IRL.</li>
 <li>Can only be placed on vertical walls.</li>
 <li>When it is not active, it will block all the components past it from
 registering <a
-href="powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#battery-active-usage-vs-actual-power-consumed">Active
 Usage</a> on batteries.</li>
 </ul>
 <hr />
@@ -3193,7 +3193,7 @@ or vice versa.</li>
 <li>When power is applied to Reset, the switch will pass power
 through.</li>
 <li>While not passing power through, it will block any components <a
-href="powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#battery-active-usage-vs-actual-power-consumed">Active
 Usage</a>, effectively hiding them from batteries when offline.</li>
 <li>Can be placed on all angled surfaces including the ground.</li>
 </ul>
@@ -3704,7 +3704,7 @@ so until it stops receiving a signal.</li>
 <li>They can be placed on most flat surfaces including Workbenches and
 the top of TC.</li>
 <li>While not passing power through, it will block any components <a
-href="powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#battery-active-usage-vs-actual-power-consumed">Active
 Usage</a> connected to it, effectively hiding them from batteries when
 offline.</li>
 </ul>
@@ -5285,7 +5285,7 @@ Underwater Lab Elite Crate, Underwater Lab Yellow Crate</td>
 <li>Only people with TC authorization can operate the Switch.</li>
 <li>Can be paired with Rust+ enabling the ability to turn it on and off
 from outside the game.</li>
-<li>The <a href="uncategorizedconcepts.html#Side-Inputs">Side Inputs</a>
+<li>The <a href="uncategorizedconcepts.html#side-inputs">Side Inputs</a>
 block the <a
 href="https://www.rustrician.io/?circuit=0ed49399527de1a33fd851e2d213b1ed">Destruction
 Detectors</a> ability to see downstream.</li>
@@ -5551,7 +5551,7 @@ outside the game. The player must disconnect from the server before
 remote access is allowed.</li>
 <li>The game has pre-placed cameras at some of the monuments, check the
 current <a
-href="uncategorizedconcepts.html#Monument-Camera-Codes">Camera
+href="uncategorizedconcepts.html#monument-camera-codes">Camera
 List</a>.</li>
 </ul>
 <hr />
@@ -5632,7 +5632,7 @@ outside the game. The player must disconnect from the server before
 remote access is allowed.</li>
 <li>The game has pre-placed cameras at some of the monuments, check the
 current <a
-href="uncategorizedconcepts.html#Monument-Camera-Codes">Camera
+href="uncategorizedconcepts.html#monument-camera-codes">Camera
 List</a>.</li>
 </ul>
 <hr />
@@ -6139,7 +6139,7 @@ viewing or operating.</li>
 the current list.</li>
 <li>The game has pre-placed cameras at some of the monuments, check the
 current <a
-href="uncategorizedconcepts.html#Monument-Camera-Codes">Camera
+href="uncategorizedconcepts.html#monument-camera-codes">Camera
 List</a>.</li>
 </ul>
 <hr />
@@ -10138,7 +10138,7 @@ on once in a while.</p>
 <p>Recommended reading:</p>
 <ul>
 <li><a
-href="powerstorage.html#Battery-Active-Usage-vs-Actual-Power-Consumed">Battery
+href="powerstorage.html#battery-active-usage-vs-actual-power-consumed">Battery
 Active Usage vs Actual Power Consumption</a></li>
 <li><a href="powerdistribution.html#short-circuit-max-depth">Short
 Circuit / Max Depth</a></li>
@@ -10603,14 +10603,14 @@ The second is <strong>Manual</strong> which requires a player to
 manually turn it on and off. Within each of these categories there are
 <strong>2 types</strong>. There is the <strong>Standard C-Bus</strong>
 which is to be used in a circuit that uses a bypass battery backup like
-the <a href="powerstorage.html#Nih-Core">Nih Core</a>. The second type
+the <a href="powerstorage.html#nih-core">Nih Core</a>. The second type
 is the Blocked C-Bus meant to be used in a circuit that uses an <a
-href="powerstorage.html#Nih-Core">Inline</a> battery backup. The reason
+href="powerstorage.html#nih-core">Inline</a> battery backup. The reason
 1 has a Blocker is because of the nature of components and a battery’s
 Active Usage. The Blocker has the ability to hide Active Usage from a
 battery when it is actively being blocked. Read more about that in the
 section titled <a
-href="powerstorage.html#-Battery-Active-Usage-vs-Actual-Power-Consumed">Battery
+href="powerstorage.html#battery-active-usage-vs-actual-power-consumed">Battery
 Active Usage vs Actual Power Consumption</a> located in Power Storage
 under Concepts.</p>
 <p>Now to get very specific. Starting with the Auto Reset siphons, these
