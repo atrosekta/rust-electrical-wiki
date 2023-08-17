@@ -152,6 +152,5 @@ Notes:
 - Can be stored in a Tool Cupboard.  
 - All components can be picked up with the exception of the Windmill and Modular Car Lift.  
 - To pick up components, with TC authorization and a hammer in hand, look at the component then press and hold Use `E`.  
-- Most components take no damage when picked up. Exceptions are the Laser Light, Sound Light, Door Controller,  
-Igniter, Auto Turret and Tesla Coil. Batteries and Power Sources also take damage when picked up.  
+- Most components take no damage when picked up. Exceptions are the Laser Light, Sound Light, Door Controller, Igniter, Auto Turret and Tesla Coil. Batteries and Power Sources also take damage when picked up.  
 - Careful when wielding this powerful tool as it can create problems if you accidently start picking up items.  

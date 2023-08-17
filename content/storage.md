@@ -24,7 +24,6 @@ Power Capacity      | 150rW
 Power Output/Time   | 10rW/15min
 Active Usage        | 40
 Despawn Time        | 5 minutes
-Decay Time          |
 
 Notes:
 

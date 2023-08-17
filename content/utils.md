@@ -90,7 +90,7 @@ Decay Time          | 48 hours
 
 Notes:
 
-- To use cameras, start by placing one on a flat ceiling. With TC authorization, look at the camera and press Use(E) to ‘Set ID’.
+- To use cameras, start by placing one on a flat ceiling. With TC authorization, look at the camera and press Use(`E`) to ‘Set ID’.
 - Aim the camera by standing in the direction you want the camera to
   look. Holding a Hammer, press Use(`E`) to change its position. Hold Use(`E`) to pick them up.
 - View cameras by mounting a Computer Station and in the bottom left,
@@ -101,7 +101,7 @@ Notes:
 - Anyone can add any camera to any Computer Station.
 - Add the ID to the `Rust+` app to view the camera from outside the game. The player must disconnect from the server before remote access is allowed.
 - The game has pre-placed cameras at some of the monuments, check the
-  current [Camera List](uncategorizedconcepts.html#-Monument-Camera-Codes).
+  current [Camera List](uncategorizedconcepts.html#Monument-Camera-Codes).
 
 ---
 
@@ -133,7 +133,7 @@ Notes:
 - Anyone can add any camera to any Computer Station.
 - Add the ID to the `Rust+` app to view the camera from outside the game. The player must disconnect from the server before remote access is allowed.
 - The game has pre-placed cameras at some of the monuments, check the
-  current [Camera List](uncategorizedconcepts.html#-Monument-Camera-Codes).
+  current [Camera List](uncategorizedconcepts.html#Monument-Camera-Codes).
 
 ---
 
@@ -195,7 +195,7 @@ Decay Time          | 16 hours
 
 Notes:
 
-- To access the user interface, look at the control stand and press Use(E). TC access is not required to access UI.
+- To access the user interface, look at the control stand and press Use(`E`). TC access is not required to access UI.
 - These allow for modification of modular cars by adding or removing modules. 
 - Lets anyone add or remove code locks.
 - Store cars on a powered lift to prevent decay.
@@ -227,7 +227,7 @@ Notes:
 
 - The elevator consists of 2 parts, the shaft and the carriage.
 - At the top of the shaft there is a light and the motor for the carriage. This motor requires 5rW in order for the carriage to move.
-- The carriage has a control panel that allows a user to press a button and move all the way to the top or bottom floors. Hold Use(E) to move up or down 1 floor at a time.
+- The carriage has a control panel that allows a user to press a button and move all the way to the top or bottom floors. Hold Use(`E`) to move up or down 1 floor at a time.
 - Each floor has 2 inputs, on the right side of each entrance, to call the elevator to that floor. 
 - The Maximum height of a single elevator shaft is 6 floors.
 - The elevator has an upkeep cost. For the first floor, it costs 1 High Quality Metal and 20 Metal Fragments. It costs an extra 20 Metal Fragments per floor but at the 4th floor, it costs an extra 1 High Quality Metal. A max height elevator shaft will have an upkeep cost 2 High Quality Metal and 120 Metal Fragments.
@@ -283,15 +283,15 @@ Power Consumption   | Requires zero electricity
 Despawn Time        | 40 minutes
 
 Notes:
-- Using a Computer Station, a player is able to remotely fly the drone.
-- Assign an ID to the drone by deploying it on the ground, looking at it and pressing Use(`E`). Hold Use(`E`) to pick up a drone.
+- Using a Computer Station, a player is able to remotely fly the drone.  
+- Assign an ID to the drone by deploying it on the ground, looking at it and pressing Use(`E`). Hold Use(`E`) to pick up a drone.  
 - Mount a Computer Station and in the bottom left, add the ID for the Drone.
-- Select the ID from the list and start flying.
-- Use W, A, S, D to move. Use the mouse to look around. Shift and Ctrl to go up and down.
-- Add the ID to the `Rust+` app to control the Drone from outside the game. The player must disconnect from the server before remote access is allowed.
-- It is damaged easily from impacts.
-- Logging out of the drone mid flight will cause it to fall to the ground.
-- It has a limited range of around 500 meters or 3.33 grid squares.
+- Select the ID from the list and start flying.  
+- Use W, A, S, D to move. Use the mouse to look around. Shift and Ctrl to go up and down.  
+- Add the ID to the `Rust+` app to control the Drone from outside the game. The player must disconnect from the server before remote access is allowed.  
+- It is damaged easily from impacts.  
+- Logging out of the drone mid flight will cause it to fall to the ground.  
+- It has a limited range of around 500 meters or 3.33 grid squares.  
 
 ![](images/dronerange.png)
 
@@ -323,7 +323,7 @@ Notes:
 - The game has pre-placed cameras at some of the monuments, here is the
   current list.
 - The game has pre-placed cameras at some of the monuments, check the
-  current [Camera List](uncategorizedconcepts.html#-Monument-Camera-Codes).
+  current [Camera List](uncategorizedconcepts.html#Monument-Camera-Codes).
 
 ---
 
