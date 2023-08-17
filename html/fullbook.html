@@ -447,13 +447,6 @@
 			<span class='sidesign'></span>
 		</a>
 
-  <span class="sidelist indent3 folded">
-		<a class='sideline' href='smart.html#common-traits'>
-			<span class='sidetext'> Common Traits </span>
-			<span class='sidesign'></span>
-		</a>
-
-  </span>
   </span>
 	<span class='sideline foldable folded' onclick='toggfold(this);'>
 		<a class='sidetext' onclick='event.stopPropagation();'
@@ -1086,6 +1079,8 @@ that explains how to do it but you can ask <span class="citation"
 data-cites="3YE">@3YE</span> on <a
 href="https://discord.gg/emB98hrupy">Discord</a> for more
 information.</p>
+<p>Track updates to the website by viewing our <a
+href="https://github.com/atrosekta/rust-electrical-wiki/commits/master">commits</a>.</p>
 <hr />
 <hr />
 <h1 id="tools"><a href="#tools" class="anchor-link">*</a>Tools</h1>
@@ -1337,9 +1332,9 @@ and Modular Car Lift.<br />
 look at the component then press and hold Use <code>E</code>.<br />
 </li>
 <li>Most components take no damage when picked up. Exceptions are the
-Laser Light, Sound Light, Door Controller,<br />
-Igniter, Auto Turret and Tesla Coil. Batteries and Power Sources also
-take damage when picked up.<br />
+Laser Light, Sound Light, Door Controller, Igniter, Auto Turret and
+Tesla Coil. Batteries and Power Sources also take damage when picked
+up.<br />
 </li>
 <li>Careful when wielding this powerful tool as it can create problems
 if you accidently start picking up items.</li>
@@ -1508,8 +1503,8 @@ between turbines. This will prevent 1 turbine blocking the wind for
 another.</li>
 <li>Requires a single square or 2 triangles to be placed on.</li>
 <li>Cannot be picked up with a hammer.</li>
-<li>Check out Wind Power in the Concepts section under <a
-href="powergeneration.html#Wind-Power">Power Generation</a>.</li>
+<li>Check out <strong>Wind Power</strong> in the Concepts section under
+<a href="powergeneration.html#Wind-Power">Power Generation</a>.</li>
 </ul>
 <hr />
 <h1 id="large-solar-panel"><a href="#large-solar-panel"
@@ -1598,8 +1593,8 @@ making it to the entire front face.</li>
 <li>They can be placed on the ground or flat building structure.</li>
 <li>They can be picked up with a hammer but will lose 25% health.</li>
 <li>24 hours in game is 1 irl hour.</li>
-<li>Check out Solar Power in the Concepts section under <a
-href="powergeneration.html#Solar-Power">Power Generation</a>.</li>
+<li>Check out <strong>Solar Power</strong> in the Concepts section under
+<a href="powergeneration.html#Solar-Power">Power Generation</a>.</li>
 </ul>
 <hr />
 <h1 id="small-generator"><a href="#small-generator"
@@ -1775,10 +1770,6 @@ Chest, Tunnel Dweller, Underwater Lab Blue Crate</td>
 <tr class="odd">
 <td>Despawn Time</td>
 <td>5 minutes</td>
-</tr>
-<tr class="even">
-<td>Decay Time</td>
-<td></td>
 </tr>
 </tbody>
 </table>
@@ -2045,20 +2036,20 @@ Crate</td>
 <ul>
 <li>These allow Power Sources and batteries to be combined to produce
 higher amounts of available power. <a
-href="sources.html#-Power-Sources">Power Sources</a> are Wind Turbines,
+href="sources.html#Power-Sources">Power Sources</a> are Wind Turbines,
 Large Solar Panels and Small Generators.</li>
 <li>Can be placed on all building surfaces.</li>
 <li>It has a max depth of 16 components between a power source and the
 combiner. If max depth is reached, going any deeper will result in a
 shared error message, <a
-href="powerdistribution.html#-Short-Circuit-/-Max-Depth">Short
+href="powerdistribution.html#Short-Circuit-/-Max-Depth">Short
 Circuit/Max Depth</a>.</li>
 <li>It does not consume any power but will register 1 <a
-href="powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed">Active
 Usage</a> on a battery.</li>
 <li>Combining batteries with a Root Combiner to get a larger amount of
 power is wiring the batteries in <a
-href="powerstorage.html#-Parallel-vs-Series">Series</a>. The load is not
+href="powerstorage.html#Parallel-vs-Series">Series</a>. The load is not
 evenly shared. For example, 2 batteries connected to a Root Combiner
 feeding a circuit that needs 50 power. Each battery will show an Active
 Usage of 50, not 25/25 to = 50.</li>
@@ -2142,7 +2133,7 @@ remaining power.</td>
 directly at the Branch.</li>
 <li>2rW is the minimum Branch Out can be set to.</li>
 <li>These will consume 1 power but not register on a battery’s <a
-href="powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed">Active
 Usage</a>.</li>
 <li>What Branch Out is set to will be the amount that registers on a
 battery’s Active Usage.</li>
@@ -2151,10 +2142,10 @@ even if the components past it are disabled.</li>
 <li>When an Electrical Branch sends power out, it will first send power
 through Power Out then send power through Branch Out. Check out the
 section on <a
-href="powerdistribution.html#-Circuit-Delay-and-Power-Flow">Circuit
-Delay and Power Flow</a>.</li>
+href="powerdistribution.html#Circuit-Delay-and-Power-Flow">Circuit Delay
+and Power Flow</a>.</li>
 <li>Is a key component to create a <a
-href="powerdistribution.html##-Fixed-Bus-(F-Bus)">Fixed Bus</a></li>
+href="powerdistribution.html##Fixed-Bus-(F-Bus)">Fixed Bus</a></li>
 </ul>
 <hr />
 <h1 id="splitter"><a href="#splitter"
@@ -2238,7 +2229,7 @@ and Power Flow</a>.</li>
 remaining outputs.</li>
 <li>Outputs can connect to the inputs of Root Combiners.</li>
 <li>Is a key component of a <a
-href="powerdistribution.html##Dynamic-Bus-(D-Bus)">Dynamid Bus</a>.</li>
+href="powerdistribution.html##Dynamic-Bus-(D-Bus)">Dynamic Bus</a>.</li>
 </ul>
 <hr />
 <h1 id="cable-tunnel-not-craftable"><a
@@ -2394,11 +2385,11 @@ Use(<code>E</code>).</li>
 <li>Can only be placed on vertical surfaces.</li>
 <li>When the Switch is off, it will block all the components past it
 from registering <a
-href="powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed">Active
 Usage</a> on batteries.</li>
-<li><a href="uncatagorizedconcepts.html##-Side-Inputs">Side Inputs</a>
-are inputs, not toggles and are explained in their own section,
-currently in Uncategorized under Concepts.</li>
+<li><a href="uncatagorizedconcepts.html#Side-Inputs">Side Inputs</a> are
+inputs, not toggles and are explained in their own section, currently in
+Uncategorized under Concepts.</li>
 <li>The side inputs block the <a
 href="https://www.rustrician.io/?circuit=bf38168f0834f7d84fb837ac41d1818e">Component
 Destruction Detectors</a> ability to see downstream.</li>
@@ -2576,8 +2567,9 @@ given power last is the function that will take place.</li>
 <hr />
 <h1 id="sensors"><a href="#sensors"
 class="anchor-link">*</a>Sensors</h1>
-<p>Sensors are components that players do not Use(E). Sensors detect or
-respond to the presence of a player’s character model.</p>
+<p>Sensors are components that players do not Use(<code>E</code>).
+Sensors detect or respond to the presence of a player’s character
+model.</p>
 <hr />
 <h1 id="hbhf-sensor"><a href="#hbhf-sensor"
 class="anchor-link">*</a>HBHF Sensor<img src="images/image6.png" /></h1>
@@ -2658,7 +2650,7 @@ Crate, Underwater Lab Yellow Crate</td>
 <li>Can be placed on all angled surfaces and the ground.</li>
 <li>Detection range is about 11m or 3.5 square foundation.</li>
 <li>Can be set to Include/Exclude Authorized and Others. With TC auth,
-look at the sensor and hold Use(E).</li>
+look at the sensor and hold Use(<code>E</code>).</li>
 <li>Requires line of sight, except a player crouching under a half
 height floor can be seen by the sensor from above. It can also be built
 to see through walls, floors and roofs.</li>
@@ -2933,7 +2925,7 @@ Chest, Underwater Dweller, Underwater Lab Blue Crate</td>
 <li>When power is applied to the Block Passthrough input on the side,
 power will be prevented from passing though.</li>
 <li>When passthrough is blocked, it will also block any components <a
-href="powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed">Active
 Usage</a>, effectively hiding them from batteries when offline.</li>
 </ul>
 <hr />
@@ -3109,7 +3101,7 @@ Crate</td>
 set the timer.</li>
 <li>Timer must be powered to set the duration.</li>
 <li>It must also be powered first before it can be triggered as per <a
-href="powerdistribution.html##-Power-Flow">Power Flow</a>.</li>
+href="powerdistribution.html##Power-Flow">Power Flow</a>.</li>
 <li>Has a default time of 30 seconds.</li>
 <li>Minimum time duration is 0.25 seconds. This might be too fast for
 some servers and must be increased.</li>
@@ -3118,7 +3110,7 @@ IRL.</li>
 <li>Can only be placed on vertical walls.</li>
 <li>When it is not active, it will block all the components past it from
 registering <a
-href="powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed">Active
 Usage</a> on batteries.</li>
 </ul>
 <hr />
@@ -3201,7 +3193,7 @@ or vice versa.</li>
 <li>When power is applied to Reset, the switch will pass power
 through.</li>
 <li>While not passing power through, it will block any components <a
-href="powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed">Active
 Usage</a>, effectively hiding them from batteries when offline.</li>
 <li>Can be placed on all angled surfaces including the ground.</li>
 </ul>
@@ -3524,10 +3516,7 @@ up by 1.</li>
 <li>When power is applied to Decrement Counter, the Counter will count
 down by 1.</li>
 <li>When power is applied to Clear Counter, the Counter will reset back
-to
-<ol start="0" type="1">
-<li></li>
-</ol></li>
+to 0.</li>
 <li>The Counter does not need power to count up, down or be
 cleared.</li>
 <li>When set to Show Passthrough, if it only shows 1, connect the output
@@ -3715,7 +3704,7 @@ so until it stops receiving a signal.</li>
 <li>They can be placed on most flat surfaces including Workbenches and
 the top of TC.</li>
 <li>While not passing power through, it will block any components <a
-href="powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed">Active
 Usage</a> connected to it, effectively hiding them from batteries when
 offline.</li>
 </ul>
@@ -4804,11 +4793,9 @@ src="images/image14.png" /></h1>
 <p>Notes:</p>
 <ul>
 <li>This item can only be crafted if you have the item in your Steam
-Inventory. It must be purchased from the in game Item Store.
-<ul>
+Inventory. It must be purchased from the in game Item Store.</li>
 <li>These are the cheapest components to build and only consume
 1rW.</li>
-</ul></li>
 <li>Can be placed on all angled surfaces.</li>
 </ul>
 <hr />
@@ -5040,6 +5027,19 @@ ground.</li>
 <h1 id="smart"><a href="#smart" class="anchor-link">*</a>Smart</h1>
 <p>These components can be paired with the Rust+ app and adds a way to
 interact with rustricity from outside the game.</p>
+<ul>
+<li>To connect the smart component with the Rust+ app, start by
+installing the app from your app store on a tablet or smartphone.</li>
+<li>Launch the app and sign into Steam.</li>
+<li>In game, join a server that has Rust+ enabled.</li>
+<li>Once on the server, hit ESC to enter the main menu.</li>
+<li>Click on Rust+.</li>
+<li>Select ‘Pair With Server’ and in the app the server’s info should
+pop up.</li>
+<li>In the app, select ‘Pair Server’ and you’re done.</li>
+<li>Look at the smart component in game and hold Use(<code>E</code>) to
+get the option to pair.</li>
+</ul>
 <hr />
 <h1 id="storage-monitor"><a href="#storage-monitor"
 class="anchor-link">*</a>Storage Monitor<img
@@ -5202,7 +5202,7 @@ Underwater Lab Elite Crate, Underwater Lab Yellow Crate</td>
 <li>Can be paired with Rust+ to receive pre-programmed messages from
 in-game when activated.</li>
 <li>With TC authorization, look at the alarm with a Wire Tool in hand
-and press E to set the alarms message.</li>
+and press Use(<code>E</code>) to set the alarms message.</li>
 </ul>
 <p><img src="images/alarmname.png" /></p>
 <hr />
@@ -5285,24 +5285,10 @@ Underwater Lab Elite Crate, Underwater Lab Yellow Crate</td>
 <li>Only people with TC authorization can operate the Switch.</li>
 <li>Can be paired with Rust+ enabling the ability to turn it on and off
 from outside the game.</li>
-<li>The <a href="uncategorizedconcepts.html##-Side-Inputs">Side
-Inputs</a> block the <a
+<li>The <a href="uncategorizedconcepts.html#Side-Inputs">Side Inputs</a>
+block the <a
 href="https://www.rustrician.io/?circuit=0ed49399527de1a33fd851e2d213b1ed">Destruction
 Detectors</a> ability to see downstream.</li>
-</ul>
-<hr />
-<h2 id="common-traits-2"><a href="#common-traits-2"
-class="anchor-link">*</a>Common Traits</h2>
-<ul>
-<li>To connect the smart component with the Rust+ app, start by
-installing the app from your app store on a tablet or smartphone.</li>
-<li>Launch the app and sign into Steam.</li>
-<li>In game, join a server that has Rust+ enabled.</li>
-<li>Once on the server, hit ESC to enter the main menu.</li>
-<li>Click on Rust+.</li>
-<li>Select ‘Pair With Server’ and in the app the server’s info should
-pop up.</li>
-<li>In the app, select ‘Pair Server’ and you’re done.</li>
 </ul>
 <hr />
 <hr />
@@ -5549,7 +5535,8 @@ Crate</td>
 <p>Notes:</p>
 <ul>
 <li>To use cameras, start by placing one on a flat ceiling. With TC
-authorization, look at the camera and press Use(E) to ‘Set ID’.</li>
+authorization, look at the camera and press Use(<code>E</code>) to ‘Set
+ID’.</li>
 <li>Aim the camera by standing in the direction you want the camera to
 look. Holding a Hammer, press Use(<code>E</code>) to change its
 position. Hold Use(<code>E</code>) to pick them up.</li>
@@ -5564,7 +5551,7 @@ outside the game. The player must disconnect from the server before
 remote access is allowed.</li>
 <li>The game has pre-placed cameras at some of the monuments, check the
 current <a
-href="uncategorizedconcepts.html#-Monument-Camera-Codes">Camera
+href="uncategorizedconcepts.html#Monument-Camera-Codes">Camera
 List</a>.</li>
 </ul>
 <hr />
@@ -5645,7 +5632,7 @@ outside the game. The player must disconnect from the server before
 remote access is allowed.</li>
 <li>The game has pre-placed cameras at some of the monuments, check the
 current <a
-href="uncategorizedconcepts.html#-Monument-Camera-Codes">Camera
+href="uncategorizedconcepts.html#Monument-Camera-Codes">Camera
 List</a>.</li>
 </ul>
 <hr />
@@ -5816,7 +5803,7 @@ Underwater Lab Elite Crate, Underwater Lab Yellow Crate</td>
 <p>Notes:</p>
 <ul>
 <li>To access the user interface, look at the control stand and press
-Use(E). TC access is not required to access UI.</li>
+Use(<code>E</code>). TC access is not required to access UI.</li>
 <li>These allow for modification of modular cars by adding or removing
 modules.</li>
 <li>Lets anyone add or remove code locks.</li>
@@ -5900,8 +5887,8 @@ Underwater Lab Elite Crate, Underwater Lab Yellow Crate</td>
 carriage. This motor requires 5rW in order for the carriage to
 move.</li>
 <li>The carriage has a control panel that allows a user to press a
-button and move all the way to the top or bottom floors. Hold Use(E) to
-move up or down 1 floor at a time.</li>
+button and move all the way to the top or bottom floors. Hold
+Use(<code>E</code>) to move up or down 1 floor at a time.</li>
 <li>Each floor has 2 inputs, on the right side of each entrance, to call
 the elevator to that floor.</li>
 <li>The Maximum height of a single elevator shaft is 6 floors.</li>
@@ -6058,17 +6045,21 @@ Wagon Military Crate</td>
 </tbody>
 </table>
 <p>Notes: - Using a Computer Station, a player is able to remotely fly
-the drone. - Assign an ID to the drone by deploying it on the ground,
-looking at it and pressing Use(<code>E</code>). Hold Use(<code>E</code>)
-to pick up a drone. - Mount a Computer Station and in the bottom left,
-add the ID for the Drone. - Select the ID from the list and start
-flying. - Use W, A, S, D to move. Use the mouse to look around. Shift
-and Ctrl to go up and down. - Add the ID to the <code>Rust+</code> app
-to control the Drone from outside the game. The player must disconnect
-from the server before remote access is allowed. - It is damaged easily
-from impacts. - Logging out of the drone mid flight will cause it to
-fall to the ground. - It has a limited range of around 500 meters or
-3.33 grid squares.</p>
+the drone.<br />
+- Assign an ID to the drone by deploying it on the ground, looking at it
+and pressing Use(<code>E</code>). Hold Use(<code>E</code>) to pick up a
+drone.<br />
+- Mount a Computer Station and in the bottom left, add the ID for the
+Drone. - Select the ID from the list and start flying.<br />
+- Use W, A, S, D to move. Use the mouse to look around. Shift and Ctrl
+to go up and down.<br />
+- Add the ID to the <code>Rust+</code> app to control the Drone from
+outside the game. The player must disconnect from the server before
+remote access is allowed.<br />
+- It is damaged easily from impacts.<br />
+- Logging out of the drone mid flight will cause it to fall to the
+ground.<br />
+- It has a limited range of around 500 meters or 3.33 grid squares.</p>
 <p><img src="images/dronerange.png" /></p>
 <hr />
 <h1 id="computer-station"><a href="#computer-station"
@@ -6148,7 +6139,7 @@ viewing or operating.</li>
 the current list.</li>
 <li>The game has pre-placed cameras at some of the monuments, check the
 current <a
-href="uncategorizedconcepts.html#-Monument-Camera-Codes">Camera
+href="uncategorizedconcepts.html#Monument-Camera-Codes">Camera
 List</a>.</li>
 </ul>
 <hr />
@@ -6675,7 +6666,7 @@ need to route water up away from the ground, you will require a
 component that can pump and that component will need electricity to
 function.</p>
 <hr />
-<h1 id="common-traits-3"><a href="#common-traits-3"
+<h1 id="common-traits-2"><a href="#common-traits-2"
 class="anchor-link">*</a>Common Traits</h1>
 <p>Tool Cupboard authorization is required to make IO connections with
 the Hose tool.</p>
@@ -7661,6 +7652,15 @@ moved.</li>
 <li>When using more than 1 filter type, the conveyor will set Filter
 Pass even when the item in the container is on the exclusion list.</li>
 </ul></li>
+<li>The <code>Current Items</code> list can be copied from one conveyor
+to another using the <strong>Copy</strong> and <strong>Paste</strong>
+buttons. Holding Sprint(<code>Shift</code>) lets a user
+<strong><em>Copy(JSON)</em></strong>. This can then be pasted into a
+text file allowing a player to share their conveyor filters outside of
+the game and between servers. Hold Sprint(<code>Shift</code>) to
+<strong><em>Paste(JSON)</em></strong>. This will not copy the ‘Filter
+Mode’.<br />
+</li>
 <li>If it has power when the server restoots, it will remain powered on
 after the restart.</li>
 <li>There is an Industrial Max Depth of 32 components on either side

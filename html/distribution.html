@@ -447,13 +447,6 @@
 			<span class='sidesign'></span>
 		</a>
 
-  <span class="sidelist indent3 folded">
-		<a class='sideline' href='smart.html#common-traits'>
-			<span class='sidetext'> Common Traits </span>
-			<span class='sidesign'></span>
-		</a>
-
-  </span>
   </span>
 	<span class='sideline foldable folded' onclick='toggfold(this);'>
 		<a class='sidetext' onclick='event.stopPropagation();'
@@ -1126,20 +1119,20 @@ Crate</td>
 <ul>
 <li>These allow Power Sources and batteries to be combined to produce
 higher amounts of available power. <a
-href="sources.html#-Power-Sources">Power Sources</a> are Wind Turbines,
+href="sources.html#Power-Sources">Power Sources</a> are Wind Turbines,
 Large Solar Panels and Small Generators.</li>
 <li>Can be placed on all building surfaces.</li>
 <li>It has a max depth of 16 components between a power source and the
 combiner. If max depth is reached, going any deeper will result in a
 shared error message, <a
-href="powerdistribution.html#-Short-Circuit-/-Max-Depth">Short
+href="powerdistribution.html#Short-Circuit-/-Max-Depth">Short
 Circuit/Max Depth</a>.</li>
 <li>It does not consume any power but will register 1 <a
-href="powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed">Active
 Usage</a> on a battery.</li>
 <li>Combining batteries with a Root Combiner to get a larger amount of
 power is wiring the batteries in <a
-href="powerstorage.html#-Parallel-vs-Series">Series</a>. The load is not
+href="powerstorage.html#Parallel-vs-Series">Series</a>. The load is not
 evenly shared. For example, 2 batteries connected to a Root Combiner
 feeding a circuit that needs 50 power. Each battery will show an Active
 Usage of 50, not 25/25 to = 50.</li>
@@ -1223,7 +1216,7 @@ remaining power.</td>
 directly at the Branch.</li>
 <li>2rW is the minimum Branch Out can be set to.</li>
 <li>These will consume 1 power but not register on a battery’s <a
-href="powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed">Active
 Usage</a>.</li>
 <li>What Branch Out is set to will be the amount that registers on a
 battery’s Active Usage.</li>
@@ -1232,10 +1225,10 @@ even if the components past it are disabled.</li>
 <li>When an Electrical Branch sends power out, it will first send power
 through Power Out then send power through Branch Out. Check out the
 section on <a
-href="powerdistribution.html#-Circuit-Delay-and-Power-Flow">Circuit
-Delay and Power Flow</a>.</li>
+href="powerdistribution.html#Circuit-Delay-and-Power-Flow">Circuit Delay
+and Power Flow</a>.</li>
 <li>Is a key component to create a <a
-href="powerdistribution.html##-Fixed-Bus-(F-Bus)">Fixed Bus</a></li>
+href="powerdistribution.html##Fixed-Bus-(F-Bus)">Fixed Bus</a></li>
 </ul>
 <hr />
 <h1 id="splitter"><a href="#splitter"
@@ -1319,7 +1312,7 @@ and Power Flow</a>.</li>
 remaining outputs.</li>
 <li>Outputs can connect to the inputs of Root Combiners.</li>
 <li>Is a key component of a <a
-href="powerdistribution.html##Dynamic-Bus-(D-Bus)">Dynamid Bus</a>.</li>
+href="powerdistribution.html##Dynamic-Bus-(D-Bus)">Dynamic Bus</a>.</li>
 </ul>
 <hr />
 <h1 id="cable-tunnel-not-craftable"><a

@@ -40,6 +40,8 @@ to know html/css/javascript. All the content is writen in markdown format
 For now, I havent written something that explains how to do it but you can
 ask @3YE on [Discord](https://discord.gg/emB98hrupy) for more information.
 
+Track updates to the website by viewing our [commits](https://github.com/atrosekta/rust-electrical-wiki/commits/master).
+
 ---
 
 ---
@@ -198,8 +200,7 @@ Notes:
 - Can be stored in a Tool Cupboard.  
 - All components can be picked up with the exception of the Windmill and Modular Car Lift.  
 - To pick up components, with TC authorization and a hammer in hand, look at the component then press and hold Use `E`.  
-- Most components take no damage when picked up. Exceptions are the Laser Light, Sound Light, Door Controller,  
-Igniter, Auto Turret and Tesla Coil. Batteries and Power Sources also take damage when picked up.  
+- Most components take no damage when picked up. Exceptions are the Laser Light, Sound Light, Door Controller, Igniter, Auto Turret and Tesla Coil. Batteries and Power Sources also take damage when picked up.  
 - Careful when wielding this powerful tool as it can create problems if you accidently start picking up items.  
 
 ---
@@ -269,7 +270,7 @@ Notes:
 - There needs to be a minimum of 15 meters or 5 foundations distance between turbines. This will prevent 1 turbine blocking the wind for another.
 - Requires a single square or 2 triangles to be placed on. 
 - Cannot be picked up with a hammer.
-- Check out Wind Power in the Concepts section under [Power Generation](powergeneration.html#Wind-Power).
+- Check out **Wind Power** in the Concepts section under [Power Generation](powergeneration.html#Wind-Power).
 
 
 ---
@@ -303,7 +304,7 @@ Notes:
 - They can be placed on the ground or flat building structure.
 - They can be picked up with a hammer but will lose 25% health.
 - 24 hours in game is 1 irl hour.
-- Check out Solar Power in the Concepts section under [Power Generation](powergeneration.html#Solar-Power).
+- Check out **Solar Power** in the Concepts section under [Power Generation](powergeneration.html#Solar-Power).
 
 
 
@@ -375,7 +376,6 @@ Power Capacity      | 150rW
 Power Output/Time   | 10rW/15min
 Active Usage        | 40
 Despawn Time        | 5 minutes
-Decay Time          |
 
 Notes:
 
@@ -474,11 +474,11 @@ Despawn Time        | 20 minutes
 
 Notes:
 
-- These allow Power Sources and batteries to be combined to produce higher amounts of available power. [Power Sources](sources.html#-Power-Sources) are Wind Turbines, Large Solar Panels and Small Generators.
+- These allow Power Sources and batteries to be combined to produce higher amounts of available power. [Power Sources](sources.html#Power-Sources) are Wind Turbines, Large Solar Panels and Small Generators.
 - Can be placed on all building surfaces.
-- It has a max depth of 16 components between a power source and the combiner. If max depth is reached, going any deeper will result in a shared error message, [Short Circuit/Max Depth](powerdistribution.html#-Short-Circuit-/-Max-Depth).
-- It does not consume any power but will register 1 [Active Usage](powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed) on a battery.
-- Combining batteries with a Root Combiner to get a larger amount of power is wiring the batteries in [Series](powerstorage.html#-Parallel-vs-Series). The load is not evenly shared. For example, 2 batteries connected to a Root Combiner feeding a circuit that needs 50 power. Each battery will show an Active Usage of 50, not 25/25 to = 50.
+- It has a max depth of 16 components between a power source and the combiner. If max depth is reached, going any deeper will result in a shared error message, [Short Circuit/Max Depth](powerdistribution.html#Short-Circuit-/-Max-Depth).
+- It does not consume any power but will register 1 [Active Usage](powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed) on a battery.
+- Combining batteries with a Root Combiner to get a larger amount of power is wiring the batteries in [Series](powerstorage.html#Parallel-vs-Series). The load is not evenly shared. For example, 2 batteries connected to a Root Combiner feeding a circuit that needs 50 power. Each battery will show an Active Usage of 50, not 25/25 to = 50.
 
 ---
 
@@ -506,11 +506,11 @@ Notes:
 - Can be placed on all angled surfaces.
 - Can be configured by pressing Use(`E`) while looking directly at the Branch.
 - 2rW is the minimum Branch Out can be set to.
-- These will consume 1 power but not register on a battery's [Active Usage](powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed).
+- These will consume 1 power but not register on a battery's [Active Usage](powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed).
 - What Branch Out is set to will be the amount that registers on a battery’s Active Usage.
 - Branch Out will always consume the amount of power it is set to, even if the components past it are disabled. 
-- When an Electrical Branch sends power out, it will first send power through Power Out then send power through Branch Out. Check out the section on [Circuit Delay and Power Flow](powerdistribution.html#-Circuit-Delay-and-Power-Flow).
-- Is a key component to create a [Fixed Bus](powerdistribution.html##-Fixed-Bus-(F-Bus))
+- When an Electrical Branch sends power out, it will first send power through Power Out then send power through Branch Out. Check out the section on [Circuit Delay and Power Flow](powerdistribution.html#Circuit-Delay-and-Power-Flow).
+- Is a key component to create a [Fixed Bus](powerdistribution.html##Fixed-Bus-(F-Bus))
 
 ---
 
@@ -539,7 +539,7 @@ Notes:
 - When the Splitter receives power it does not pass power through all connected outputs at the same time. Power outputs in the order of Output 1, Output 2 then Output 3. Check out the section on [Circuit Delay and Power Flow](powerdistribution.html#Circuit-Delay-and-Power-Flow).
 - When an output is destroyed, it will redistribute power between the remaining outputs.
 - Outputs can connect to the inputs of Root Combiners.
-- Is a key component of a [Dynamid Bus](powerdistribution.html##Dynamic-Bus-(D-Bus)).
+- Is a key component of a [Dynamic Bus](powerdistribution.html##Dynamic-Bus-(D-Bus)).
 
 ---
 
@@ -601,8 +601,8 @@ Notes:
 - To operate the Switch, look at it and press Use(`E`).
 - Does not need TC auth to operate it. 
 - Can only be placed on vertical surfaces.
-- When the Switch is off, it will block all the components past it from registering [Active Usage](powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed) on batteries.
-- [Side Inputs](uncatagorizedconcepts.html##-Side-Inputs) are inputs, not toggles and are explained in their own section, currently in Uncategorized under Concepts.
+- When the Switch is off, it will block all the components past it from registering [Active Usage](powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed) on batteries.
+- [Side Inputs](uncatagorizedconcepts.html#Side-Inputs) are inputs, not toggles and are explained in their own section, currently in Uncategorized under Concepts.
 - The side inputs block the [Component Destruction Detectors](https://www.rustrician.io/?circuit=bf38168f0834f7d84fb837ac41d1818e) ability to see downstream.
 
 ---
@@ -673,7 +673,7 @@ Notes:
 
 
 # Sensors
-Sensors are components that players do not Use(E). Sensors detect or respond to the presence of a player's character model. 
+Sensors are components that players do not Use(`E`). Sensors detect or respond to the presence of a player's character model. 
 
 ---
 
@@ -701,7 +701,7 @@ Notes:
 
 - Can be placed on all angled surfaces and the ground.
 - Detection range is about 11m or 3.5 square foundation.
-- Can be set to Include/Exclude Authorized and Others. With TC auth, look at the sensor and hold Use(E).
+- Can be set to Include/Exclude Authorized and Others. With TC auth, look at the sensor and hold Use(`E`).
 - Requires line of sight, except a player crouching under a half height floor can be seen by the sensor from above. It can also be built to see through walls, floors and roofs. 
 - Only outputs an amount of power equal to the number of people it detects, meaning if Power Out is connected to a Counter, set to Show Passthrough, the Counter will display the number of people the HBHF is detecting.
 - Will detect all scientist types including ones riding in the CH47.
@@ -809,7 +809,7 @@ Despawn Time        | 5 minutes
 Notes:
 
 - When power is applied to the Block Passthrough input on the side, power will be prevented from passing though.
-- When passthrough is blocked, it will also block any components [Active Usage](powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed), effectively hiding them from batteries when offline.
+- When passthrough is blocked, it will also block any components [Active Usage](powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed), effectively hiding them from batteries when offline.
 
 
 ---
@@ -869,12 +869,12 @@ Notes:
 
 - Everyone can activate the timer but only TC authorized people can set the timer.
 - Timer must be powered to set the duration.
-- It must also be powered first before it can be triggered as per [Power Flow](powerdistribution.html##-Power-Flow).
+- It must also be powered first before it can be triggered as per [Power Flow](powerdistribution.html##Power-Flow).
 - Has a default time of 30 seconds.
 - Minimum time duration is 0.25 seconds. This might be too fast for some servers and must be increased.
 - Maximum time duration has been tested to at least a 2 weeks IRL.
 - Can only be placed on vertical walls.
-- When it is not active, it will block all the components past it from registering [Active Usage](powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed) on batteries.
+- When it is not active, it will block all the components past it from registering [Active Usage](powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed) on batteries.
 
 
 ---
@@ -902,7 +902,7 @@ Notes:
 
 - When power is applied to Set, there is a 50% chance the switch will change states. From passing power through to not passing power through or vice versa.
 - When power is applied to Reset, the switch will pass power through.
-- While not passing power through, it will block any components [Active Usage](powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed), effectively hiding them from batteries when offline.
+- While not passing power through, it will block any components [Active Usage](powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed), effectively hiding them from batteries when offline.
 - Can be placed on all angled surfaces including the ground.
 
 
@@ -1019,8 +1019,7 @@ Notes:
   by 1.
 - When power is applied to Decrement Counter, the Counter will count
   down by 1.
-- When power is applied to Clear Counter, the Counter will reset back to
-  0.
+- When power is applied to Clear Counter, the Counter will reset back to 0.
 - The Counter does not need power to count up, down or be cleared.
 - When set to Show Passthrough, if it only shows 1, connect the output (Passthrough) to any input on any component. This will cause the counter to actually pass power through so it can show the amount.
 - Using a Counter on the floor on its thin side, within a 1 meter
@@ -1108,7 +1107,7 @@ Notes:
   until it stops receiving a signal.
 - They can be placed on most flat surfaces including Workbenches and the
   top of TC.
-- While not passing power through, it will block any components [Active Usage](powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed) connected to it, effectively hiding them from batteries when offline.
+- While not passing power through, it will block any components [Active Usage](powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed) connected to it, effectively hiding them from batteries when offline.
 
 ---
 
@@ -1539,7 +1538,7 @@ Notes:
 
 - This item can only be crafted if you have the item in your Steam
   Inventory. It must be purchased from the in game Item Store.
-  - These are the cheapest components to build and only consume 1rW.
+- These are the cheapest components to build and only consume 1rW.
 - Can be placed on all angled surfaces.
 
 ---
@@ -1636,6 +1635,15 @@ Notes:
 
 These components can be paired with the Rust+ app and adds a way to interact with rustricity from outside the game.
 
+- To connect the smart component with the Rust+ app, start by installing the app from your app store on a tablet or smartphone. 
+- Launch the app and sign into Steam. 
+- In game, join a server that has Rust+ enabled. 
+- Once on the server, hit ESC to enter the main menu. 
+- Click on Rust+. 
+- Select ‘Pair With Server’ and in the app the server's info should pop up. 
+- In the app, select ‘Pair Server’ and you're done. 
+- Look at the smart component in game and hold Use(`E`) to get the option to pair.
+
 ---
 
 # Storage Monitor![](images/image8.png)
@@ -1690,7 +1698,7 @@ Notes:
 
 - Must be placed on flat surfaces.
 - Can be paired with Rust+ to receive pre-programmed messages from in-game when activated.
-- With TC authorization, look at the alarm with a Wire Tool in hand and press E to set the alarms message.
+- With TC authorization, look at the alarm with a Wire Tool in hand and press Use(`E`) to set the alarms message.
 
 ![](images/alarmname.png)
 
@@ -1720,19 +1728,7 @@ Notes:
 
 - Only people with TC authorization can operate the Switch.
 - Can be paired with Rust+ enabling the ability to turn it on and off from outside the game.
-- The [Side Inputs](uncategorizedconcepts.html##-Side-Inputs) block the [Destruction Detectors](https://www.rustrician.io/?circuit=0ed49399527de1a33fd851e2d213b1ed) ability to see downstream.
-
----
-
-## Common Traits
-
-- To connect the smart component with the Rust+ app, start by installing the app from your app store on a tablet or smartphone. 
-- Launch the app and sign into Steam. 
-- In game, join a server that has Rust+ enabled. 
-- Once on the server, hit ESC to enter the main menu. 
-- Click on Rust+. 
-- Select ‘Pair With Server’ and in the app the server's info should pop up. 
-- In the app, select ‘Pair Server’ and you're done. 
+- The [Side Inputs](uncategorizedconcepts.html#Side-Inputs) block the [Destruction Detectors](https://www.rustrician.io/?circuit=0ed49399527de1a33fd851e2d213b1ed) ability to see downstream.
 
 ---
 
@@ -1830,7 +1826,7 @@ Decay Time          | 48 hours
 
 Notes:
 
-- To use cameras, start by placing one on a flat ceiling. With TC authorization, look at the camera and press Use(E) to ‘Set ID’.
+- To use cameras, start by placing one on a flat ceiling. With TC authorization, look at the camera and press Use(`E`) to ‘Set ID’.
 - Aim the camera by standing in the direction you want the camera to
   look. Holding a Hammer, press Use(`E`) to change its position. Hold Use(`E`) to pick them up.
 - View cameras by mounting a Computer Station and in the bottom left,
@@ -1841,7 +1837,7 @@ Notes:
 - Anyone can add any camera to any Computer Station.
 - Add the ID to the `Rust+` app to view the camera from outside the game. The player must disconnect from the server before remote access is allowed.
 - The game has pre-placed cameras at some of the monuments, check the
-  current [Camera List](uncategorizedconcepts.html#-Monument-Camera-Codes).
+  current [Camera List](uncategorizedconcepts.html#Monument-Camera-Codes).
 
 ---
 
@@ -1873,7 +1869,7 @@ Notes:
 - Anyone can add any camera to any Computer Station.
 - Add the ID to the `Rust+` app to view the camera from outside the game. The player must disconnect from the server before remote access is allowed.
 - The game has pre-placed cameras at some of the monuments, check the
-  current [Camera List](uncategorizedconcepts.html#-Monument-Camera-Codes).
+  current [Camera List](uncategorizedconcepts.html#Monument-Camera-Codes).
 
 ---
 
@@ -1935,7 +1931,7 @@ Decay Time          | 16 hours
 
 Notes:
 
-- To access the user interface, look at the control stand and press Use(E). TC access is not required to access UI.
+- To access the user interface, look at the control stand and press Use(`E`). TC access is not required to access UI.
 - These allow for modification of modular cars by adding or removing modules. 
 - Lets anyone add or remove code locks.
 - Store cars on a powered lift to prevent decay.
@@ -1967,7 +1963,7 @@ Notes:
 
 - The elevator consists of 2 parts, the shaft and the carriage.
 - At the top of the shaft there is a light and the motor for the carriage. This motor requires 5rW in order for the carriage to move.
-- The carriage has a control panel that allows a user to press a button and move all the way to the top or bottom floors. Hold Use(E) to move up or down 1 floor at a time.
+- The carriage has a control panel that allows a user to press a button and move all the way to the top or bottom floors. Hold Use(`E`) to move up or down 1 floor at a time.
 - Each floor has 2 inputs, on the right side of each entrance, to call the elevator to that floor. 
 - The Maximum height of a single elevator shaft is 6 floors.
 - The elevator has an upkeep cost. For the first floor, it costs 1 High Quality Metal and 20 Metal Fragments. It costs an extra 20 Metal Fragments per floor but at the 4th floor, it costs an extra 1 High Quality Metal. A max height elevator shaft will have an upkeep cost 2 High Quality Metal and 120 Metal Fragments.
@@ -2023,15 +2019,15 @@ Power Consumption   | Requires zero electricity
 Despawn Time        | 40 minutes
 
 Notes:
-- Using a Computer Station, a player is able to remotely fly the drone.
-- Assign an ID to the drone by deploying it on the ground, looking at it and pressing Use(`E`). Hold Use(`E`) to pick up a drone.
+- Using a Computer Station, a player is able to remotely fly the drone.  
+- Assign an ID to the drone by deploying it on the ground, looking at it and pressing Use(`E`). Hold Use(`E`) to pick up a drone.  
 - Mount a Computer Station and in the bottom left, add the ID for the Drone.
-- Select the ID from the list and start flying.
-- Use W, A, S, D to move. Use the mouse to look around. Shift and Ctrl to go up and down.
-- Add the ID to the `Rust+` app to control the Drone from outside the game. The player must disconnect from the server before remote access is allowed.
-- It is damaged easily from impacts.
-- Logging out of the drone mid flight will cause it to fall to the ground.
-- It has a limited range of around 500 meters or 3.33 grid squares.
+- Select the ID from the list and start flying.  
+- Use W, A, S, D to move. Use the mouse to look around. Shift and Ctrl to go up and down.  
+- Add the ID to the `Rust+` app to control the Drone from outside the game. The player must disconnect from the server before remote access is allowed.  
+- It is damaged easily from impacts.  
+- Logging out of the drone mid flight will cause it to fall to the ground.  
+- It has a limited range of around 500 meters or 3.33 grid squares.  
 
 ![](images/dronerange.png)
 
@@ -2063,7 +2059,7 @@ Notes:
 - The game has pre-placed cameras at some of the monuments, here is the
   current list.
 - The game has pre-placed cameras at some of the monuments, check the
-  current [Camera List](uncategorizedconcepts.html#-Monument-Camera-Codes).
+  current [Camera List](uncategorizedconcepts.html#Monument-Camera-Codes).
 
 ---
 
@@ -2672,6 +2668,7 @@ Notes:
     - `EXCLUDE LISTED ITEMS:` Only items not listed will be moved.
     - Items in the filter list will be prevented from transferring.
     - When using more than 1 filter type, the conveyor will set Filter Pass even when the item in the container is on the exclusion list.
+- The `Current Items` list can be copied from one conveyor to another using the **Copy** and **Paste** buttons. Holding Sprint(`Shift`) lets a user ***Copy(JSON)***. This can then be pasted into a text file allowing a player to share their conveyor filters outside of the game and between servers. Hold Sprint(`Shift`) to ***Paste(JSON)***. This will not copy the ‘Filter Mode’.  
 - If it has power when the server restoots, it will remain powered on after the restart.
 - There is an Industrial Max Depth of 32 components on either side (input/output) of the Conveyor.
 - There is a max of 32 Storage Adapters on either side (input/output) of the Conveyor.

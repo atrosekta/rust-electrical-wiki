@@ -447,13 +447,6 @@
 			<span class='sidesign'></span>
 		</a>
 
-  <span class="sidelist indent3 folded">
-		<a class='sideline' href='smart.html#common-traits'>
-			<span class='sidetext'> Common Traits </span>
-			<span class='sidesign'></span>
-		</a>
-
-  </span>
   </span>
 	<span class='sideline foldable folded' onclick='toggfold(this);'>
 		<a class='sidetext' onclick='event.stopPropagation();'
@@ -1122,7 +1115,7 @@ Chest, Underwater Dweller, Underwater Lab Blue Crate</td>
 <li>When power is applied to the Block Passthrough input on the side,
 power will be prevented from passing though.</li>
 <li>When passthrough is blocked, it will also block any components <a
-href="powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed">Active
 Usage</a>, effectively hiding them from batteries when offline.</li>
 </ul>
 <hr />
@@ -1298,7 +1291,7 @@ Crate</td>
 set the timer.</li>
 <li>Timer must be powered to set the duration.</li>
 <li>It must also be powered first before it can be triggered as per <a
-href="powerdistribution.html##-Power-Flow">Power Flow</a>.</li>
+href="powerdistribution.html##Power-Flow">Power Flow</a>.</li>
 <li>Has a default time of 30 seconds.</li>
 <li>Minimum time duration is 0.25 seconds. This might be too fast for
 some servers and must be increased.</li>
@@ -1307,7 +1300,7 @@ IRL.</li>
 <li>Can only be placed on vertical walls.</li>
 <li>When it is not active, it will block all the components past it from
 registering <a
-href="powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed">Active
 Usage</a> on batteries.</li>
 </ul>
 <hr />
@@ -1390,7 +1383,7 @@ or vice versa.</li>
 <li>When power is applied to Reset, the switch will pass power
 through.</li>
 <li>While not passing power through, it will block any components <a
-href="powerstorage.html#-Battery-Active-Usage-VS-Actual-Power-Consumed">Active
+href="powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed">Active
 Usage</a>, effectively hiding them from batteries when offline.</li>
 <li>Can be placed on all angled surfaces including the ground.</li>
 </ul>
@@ -1713,10 +1706,7 @@ up by 1.</li>
 <li>When power is applied to Decrement Counter, the Counter will count
 down by 1.</li>
 <li>When power is applied to Clear Counter, the Counter will reset back
-to
-<ol start="0" type="1">
-<li></li>
-</ol></li>
+to 0.</li>
 <li>The Counter does not need power to count up, down or be
 cleared.</li>
 <li>When set to Show Passthrough, if it only shows 1, connect the output
