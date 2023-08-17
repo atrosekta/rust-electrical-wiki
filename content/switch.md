@@ -30,8 +30,8 @@ Notes:
 - To operate the Switch, look at it and press Use(`E`).
 - Does not need TC auth to operate it. 
 - Can only be placed on vertical surfaces.
-- When the Switch is off, it will block all the components past it from registering [Active Usage](powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed) on batteries.
-- [Side Inputs](uncatagorizedconcepts.html#Side-Inputs) are inputs, not toggles and are explained in their own section, currently in Uncategorized under Concepts.
+- When the Switch is off, it will block all the components past it from registering [Active Usage](powerstorage.html#battery-active-usage-vs-actual-power-consumed) on batteries.
+- [Side Inputs](uncatagorizedconcepts.html#side-inputs) are inputs, not toggles and are explained in their own section, currently in Uncategorized under Concepts.
 - The side inputs block the [Component Destruction Detectors](https://www.rustrician.io/?circuit=bf38168f0834f7d84fb837ac41d1818e) ability to see downstream.
 
 ---

@@ -69,7 +69,7 @@ Notes:
   until it stops receiving a signal.
 - They can be placed on most flat surfaces including Workbenches and the
   top of TC.
-- While not passing power through, it will block any components [Active Usage](powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed) connected to it, effectively hiding them from batteries when offline.
+- While not passing power through, it will block any components [Active Usage](powerstorage.html#battery-active-usage-vs-actual-power-consumed) connected to it, effectively hiding them from batteries when offline.
 
 ---
 

@@ -26,11 +26,11 @@ Despawn Time        | 20 minutes
 
 Notes:
 
-- These allow Power Sources and batteries to be combined to produce higher amounts of available power. [Power Sources](sources.html#Power-Sources) are Wind Turbines, Large Solar Panels and Small Generators.
+- These allow Power Sources and batteries to be combined to produce higher amounts of available power. [Power Sources](sources.html#power-sources) are Wind Turbines, Large Solar Panels and Small Generators.
 - Can be placed on all building surfaces.
 - It has a max depth of 16 components between a power source and the combiner. If max depth is reached, going any deeper will result in a shared error message, [Short Circuit/Max Depth](powerdistribution.html#Short-Circuit-/-Max-Depth).
-- It does not consume any power but will register 1 [Active Usage](powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed) on a battery.
-- Combining batteries with a Root Combiner to get a larger amount of power is wiring the batteries in [Series](powerstorage.html#Parallel-vs-Series). The load is not evenly shared. For example, 2 batteries connected to a Root Combiner feeding a circuit that needs 50 power. Each battery will show an Active Usage of 50, not 25/25 to = 50.
+- It does not consume any power but will register 1 [Active Usage](powerstorage.html#battery-active-usage-vs-actual-power-consumed) on a battery.
+- Combining batteries with a Root Combiner to get a larger amount of power is wiring the batteries in [Series](powerstorage.html#parallel-vs-series). The load is not evenly shared. For example, 2 batteries connected to a Root Combiner feeding a circuit that needs 50 power. Each battery will show an Active Usage of 50, not 25/25 to = 50.
 
 ---
 
@@ -58,10 +58,10 @@ Notes:
 - Can be placed on all angled surfaces.
 - Can be configured by pressing Use(`E`) while looking directly at the Branch.
 - 2rW is the minimum Branch Out can be set to.
-- These will consume 1 power but not register on a battery's [Active Usage](powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed).
+- These will consume 1 power but not register on a battery's [Active Usage](powerstorage.html#battery-active-usage-vs-actual-power-consumed).
 - What Branch Out is set to will be the amount that registers on a battery’s Active Usage.
 - Branch Out will always consume the amount of power it is set to, even if the components past it are disabled. 
-- When an Electrical Branch sends power out, it will first send power through Power Out then send power through Branch Out. Check out the section on [Circuit Delay and Power Flow](powerdistribution.html#Circuit-Delay-and-Power-Flow).
+- When an Electrical Branch sends power out, it will first send power through Power Out then send power through Branch Out. Check out the section on [Circuit Delay and Power Flow](powerdistribution.html#circuit-delay-and-power-flow).
 - Is a key component to create a [Fixed Bus](powerdistribution.html##Fixed-Bus-(F-Bus))
 
 ---
@@ -88,7 +88,7 @@ Despawn Time        | 5 minutes
 Notes:
 
 - Can only be placed on vertical walls.
-- When the Splitter receives power it does not pass power through all connected outputs at the same time. Power outputs in the order of Output 1, Output 2 then Output 3. Check out the section on [Circuit Delay and Power Flow](powerdistribution.html#Circuit-Delay-and-Power-Flow).
+- When the Splitter receives power it does not pass power through all connected outputs at the same time. Power outputs in the order of Output 1, Output 2 then Output 3. Check out the section on [Circuit Delay and Power Flow](powerdistribution.html#circuit-delay-and-power-flow).
 - When an output is destroyed, it will redistribute power between the remaining outputs.
 - Outputs can connect to the inputs of Root Combiners.
 - Is a key component of a [Dynamic Bus](powerdistribution.html##Dynamic-Bus-(D-Bus)).

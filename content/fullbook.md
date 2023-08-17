@@ -270,7 +270,7 @@ Notes:
 - There needs to be a minimum of 15 meters or 5 foundations distance between turbines. This will prevent 1 turbine blocking the wind for another.
 - Requires a single square or 2 triangles to be placed on. 
 - Cannot be picked up with a hammer.
-- Check out **Wind Power** in the Concepts section under [Power Generation](powergeneration.html#Wind-Power).
+- Check out **Wind Power** in the Concepts section under [Power Generation](powergeneration.html#wind-power).
 
 
 ---
@@ -304,7 +304,7 @@ Notes:
 - They can be placed on the ground or flat building structure.
 - They can be picked up with a hammer but will lose 25% health.
 - 24 hours in game is 1 irl hour.
-- Check out **Solar Power** in the Concepts section under [Power Generation](powergeneration.html#Solar-Power).
+- Check out **Solar Power** in the Concepts section under [Power Generation](powergeneration.html#solar-power).
 
 
 
@@ -474,11 +474,11 @@ Despawn Time        | 20 minutes
 
 Notes:
 
-- These allow Power Sources and batteries to be combined to produce higher amounts of available power. [Power Sources](sources.html#Power-Sources) are Wind Turbines, Large Solar Panels and Small Generators.
+- These allow Power Sources and batteries to be combined to produce higher amounts of available power. [Power Sources](sources.html#power-sources) are Wind Turbines, Large Solar Panels and Small Generators.
 - Can be placed on all building surfaces.
 - It has a max depth of 16 components between a power source and the combiner. If max depth is reached, going any deeper will result in a shared error message, [Short Circuit/Max Depth](powerdistribution.html#Short-Circuit-/-Max-Depth).
-- It does not consume any power but will register 1 [Active Usage](powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed) on a battery.
-- Combining batteries with a Root Combiner to get a larger amount of power is wiring the batteries in [Series](powerstorage.html#Parallel-vs-Series). The load is not evenly shared. For example, 2 batteries connected to a Root Combiner feeding a circuit that needs 50 power. Each battery will show an Active Usage of 50, not 25/25 to = 50.
+- It does not consume any power but will register 1 [Active Usage](powerstorage.html#battery-active-usage-vs-actual-power-consumed) on a battery.
+- Combining batteries with a Root Combiner to get a larger amount of power is wiring the batteries in [Series](powerstorage.html#parallel-vs-series). The load is not evenly shared. For example, 2 batteries connected to a Root Combiner feeding a circuit that needs 50 power. Each battery will show an Active Usage of 50, not 25/25 to = 50.
 
 ---
 
@@ -506,10 +506,10 @@ Notes:
 - Can be placed on all angled surfaces.
 - Can be configured by pressing Use(`E`) while looking directly at the Branch.
 - 2rW is the minimum Branch Out can be set to.
-- These will consume 1 power but not register on a battery's [Active Usage](powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed).
+- These will consume 1 power but not register on a battery's [Active Usage](powerstorage.html#battery-active-usage-vs-actual-power-consumed).
 - What Branch Out is set to will be the amount that registers on a battery’s Active Usage.
 - Branch Out will always consume the amount of power it is set to, even if the components past it are disabled. 
-- When an Electrical Branch sends power out, it will first send power through Power Out then send power through Branch Out. Check out the section on [Circuit Delay and Power Flow](powerdistribution.html#Circuit-Delay-and-Power-Flow).
+- When an Electrical Branch sends power out, it will first send power through Power Out then send power through Branch Out. Check out the section on [Circuit Delay and Power Flow](powerdistribution.html#circuit-delay-and-power-flow).
 - Is a key component to create a [Fixed Bus](powerdistribution.html##Fixed-Bus-(F-Bus))
 
 ---
@@ -536,7 +536,7 @@ Despawn Time        | 5 minutes
 Notes:
 
 - Can only be placed on vertical walls.
-- When the Splitter receives power it does not pass power through all connected outputs at the same time. Power outputs in the order of Output 1, Output 2 then Output 3. Check out the section on [Circuit Delay and Power Flow](powerdistribution.html#Circuit-Delay-and-Power-Flow).
+- When the Splitter receives power it does not pass power through all connected outputs at the same time. Power outputs in the order of Output 1, Output 2 then Output 3. Check out the section on [Circuit Delay and Power Flow](powerdistribution.html#circuit-delay-and-power-flow).
 - When an output is destroyed, it will redistribute power between the remaining outputs.
 - Outputs can connect to the inputs of Root Combiners.
 - Is a key component of a [Dynamic Bus](powerdistribution.html##Dynamic-Bus-(D-Bus)).
@@ -601,8 +601,8 @@ Notes:
 - To operate the Switch, look at it and press Use(`E`).
 - Does not need TC auth to operate it. 
 - Can only be placed on vertical surfaces.
-- When the Switch is off, it will block all the components past it from registering [Active Usage](powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed) on batteries.
-- [Side Inputs](uncatagorizedconcepts.html#Side-Inputs) are inputs, not toggles and are explained in their own section, currently in Uncategorized under Concepts.
+- When the Switch is off, it will block all the components past it from registering [Active Usage](powerstorage.html#battery-active-usage-vs-actual-power-consumed) on batteries.
+- [Side Inputs](uncatagorizedconcepts.html#side-inputs) are inputs, not toggles and are explained in their own section, currently in Uncategorized under Concepts.
 - The side inputs block the [Component Destruction Detectors](https://www.rustrician.io/?circuit=bf38168f0834f7d84fb837ac41d1818e) ability to see downstream.
 
 ---
@@ -809,7 +809,7 @@ Despawn Time        | 5 minutes
 Notes:
 
 - When power is applied to the Block Passthrough input on the side, power will be prevented from passing though.
-- When passthrough is blocked, it will also block any components [Active Usage](powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed), effectively hiding them from batteries when offline.
+- When passthrough is blocked, it will also block any components [Active Usage](powerstorage.html#battery-active-usage-vs-actual-power-consumed), effectively hiding them from batteries when offline.
 
 
 ---
@@ -869,12 +869,12 @@ Notes:
 
 - Everyone can activate the timer but only TC authorized people can set the timer.
 - Timer must be powered to set the duration.
-- It must also be powered first before it can be triggered as per [Power Flow](powerdistribution.html##Power-Flow).
+- It must also be powered first before it can be triggered as per [Power Flow](powerdistribution.html##power-flow).
 - Has a default time of 30 seconds.
 - Minimum time duration is 0.25 seconds. This might be too fast for some servers and must be increased.
 - Maximum time duration has been tested to at least a 2 weeks IRL.
 - Can only be placed on vertical walls.
-- When it is not active, it will block all the components past it from registering [Active Usage](powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed) on batteries.
+- When it is not active, it will block all the components past it from registering [Active Usage](powerstorage.html#battery-active-usage-vs-actual-power-consumed) on batteries.
 
 
 ---
@@ -902,7 +902,7 @@ Notes:
 
 - When power is applied to Set, there is a 50% chance the switch will change states. From passing power through to not passing power through or vice versa.
 - When power is applied to Reset, the switch will pass power through.
-- While not passing power through, it will block any components [Active Usage](powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed), effectively hiding them from batteries when offline.
+- While not passing power through, it will block any components [Active Usage](powerstorage.html#battery-active-usage-vs-actual-power-consumed), effectively hiding them from batteries when offline.
 - Can be placed on all angled surfaces including the ground.
 
 
@@ -1107,7 +1107,7 @@ Notes:
   until it stops receiving a signal.
 - They can be placed on most flat surfaces including Workbenches and the
   top of TC.
-- While not passing power through, it will block any components [Active Usage](powerstorage.html#Battery-Active-Usage-VS-Actual-Power-Consumed) connected to it, effectively hiding them from batteries when offline.
+- While not passing power through, it will block any components [Active Usage](powerstorage.html#battery-active-usage-vs-actual-power-consumed) connected to it, effectively hiding them from batteries when offline.
 
 ---
 
@@ -1728,7 +1728,7 @@ Notes:
 
 - Only people with TC authorization can operate the Switch.
 - Can be paired with Rust+ enabling the ability to turn it on and off from outside the game.
-- The [Side Inputs](uncategorizedconcepts.html#Side-Inputs) block the [Destruction Detectors](https://www.rustrician.io/?circuit=0ed49399527de1a33fd851e2d213b1ed) ability to see downstream.
+- The [Side Inputs](uncategorizedconcepts.html#side-inputs) block the [Destruction Detectors](https://www.rustrician.io/?circuit=0ed49399527de1a33fd851e2d213b1ed) ability to see downstream.
 
 ---
 
@@ -1837,7 +1837,7 @@ Notes:
 - Anyone can add any camera to any Computer Station.
 - Add the ID to the `Rust+` app to view the camera from outside the game. The player must disconnect from the server before remote access is allowed.
 - The game has pre-placed cameras at some of the monuments, check the
-  current [Camera List](uncategorizedconcepts.html#Monument-Camera-Codes).
+  current [Camera List](uncategorizedconcepts.html#monument-camera-codes).
 
 ---
 
@@ -1869,7 +1869,7 @@ Notes:
 - Anyone can add any camera to any Computer Station.
 - Add the ID to the `Rust+` app to view the camera from outside the game. The player must disconnect from the server before remote access is allowed.
 - The game has pre-placed cameras at some of the monuments, check the
-  current [Camera List](uncategorizedconcepts.html#Monument-Camera-Codes).
+  current [Camera List](uncategorizedconcepts.html#monument-camera-codes).
 
 ---
 
@@ -2059,7 +2059,7 @@ Notes:
 - The game has pre-placed cameras at some of the monuments, here is the
   current list.
 - The game has pre-placed cameras at some of the monuments, check the
-  current [Camera List](uncategorizedconcepts.html#Monument-Camera-Codes).
+  current [Camera List](uncategorizedconcepts.html#monument-camera-codes).
 
 ---
 
@@ -3986,7 +3986,7 @@ main power and battery power, it is because 1 of 2 issues.
 
 Recommended reading:
 
-- [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#Battery-Active-Usage-vs-Actual-Power-Consumed)
+- [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#battery-active-usage-vs-actual-power-consumed)
 - [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)
 - [ Circuit Delay and Power Flow ](powerdistribution.html#circuit-delay-and-power-flow)
 
@@ -4357,7 +4357,7 @@ A configure siphon, known as a C-Bus, is a bypass distributor that is only activ
 
 All of them are centered around the Memory Cell. The Memory Cell has 2 outputs, Output and Inverted Output. One output is called the Main Line (aka the bypass) and the other output goes to the Circuit that we want to power. The Main Line is the default path the electricity takes when the siphon is not active. It will pass from a Memory Cell to an OR Switch and out. The Circuit path is the route electricity will take when the Memory Cell gets triggered. It gets sent to an Electrical Branch that is configured to an amount of power the circuit needs while the remainder gets sent off to the OR Switch and back onto the Main Line to continue powering the circuits past it. While this is the general concept, let's get a little more specific.
 
-There are **2 categories** of Configure Siphons. There is the **Auto Reset** which will automatically turn itself on when an input is received and off when the input signal is removed. The second is **Manual** which requires a player to manually turn it on and off. Within each of these categories there are **2 types**. There is the **Standard C-Bus** which is to be used in a circuit that uses a bypass battery backup like the [Nih Core](powerstorage.html#Nih-Core). The second type is the Blocked C-Bus meant to be used in a circuit that uses an [Inline](powerstorage.html#Nih-Core) battery backup. The reason 1 has a Blocker is because of the nature of components and a battery's Active Usage. The Blocker has the ability to hide Active Usage from a battery when it is actively being blocked. Read more about that in the section titled [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#-Battery-Active-Usage-vs-Actual-Power-Consumed) located in Power Storage under Concepts.
+There are **2 categories** of Configure Siphons. There is the **Auto Reset** which will automatically turn itself on when an input is received and off when the input signal is removed. The second is **Manual** which requires a player to manually turn it on and off. Within each of these categories there are **2 types**. There is the **Standard C-Bus** which is to be used in a circuit that uses a bypass battery backup like the [Nih Core](powerstorage.html#nih-core). The second type is the Blocked C-Bus meant to be used in a circuit that uses an [Inline](powerstorage.html#nih-core) battery backup. The reason 1 has a Blocker is because of the nature of components and a battery's Active Usage. The Blocker has the ability to hide Active Usage from a battery when it is actively being blocked. Read more about that in the section titled [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#-battery-active-usage-vs-actual-power-consumed) located in Power Storage under Concepts.
 
 Now to get very specific. Starting with the Auto Reset siphons, these by default will send power out the Inverted Output(left output). Power will be passed to an OR Switch then out. In the Blocked version, power gets passed to an Electrical Branch that is used to block a Blocker before passing power to the OR Switch and out. ‘Out’ could be another siphon, another type of power bus or whatever. A HBHF Sensor is used as the input source but it doesn’t have to be. All that’s needed is a constant source of power to keep the siphon active. When the sensor outputs power, it will ‘SET’ the Memory Cell. This will force the Memory Cell to flip outputs and send power through Output(right output). From Output, power will be sent to an Electrical Branch configured to +2 over the amount of power your circuit will need. The leftover power will pass through Power Out and merge back into the Main Line. The power coming out of Branch Out will go to another Electrical Branch that will be set to the amount of power the circuit actually needs. The reason for +2 is because 1rW is needed for the second Electrical Branch itself and 1rW needs to be sent out Power Out to ‘RESET’ on the Memory Cell. In the blocked version, a Blocker was added before the first Electrical Branch so it can hide the Active Usage caused by the Electrical Branches from a battery. When the sensor stops sending power to ‘SET’, the power going to ‘RESET’ will force the Memory Cell to flip outputs back to Inverted Output and return power to the Main Line. In the blocked version, because of the Electrical Branch on the Main Line, the Blocker will get blocked again to hide the Active Usage.
 
