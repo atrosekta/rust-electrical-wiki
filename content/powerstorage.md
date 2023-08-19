@@ -92,9 +92,9 @@ Cons:
 
 # The Kore
 
-This is an Inline backup, but different. The battery still powers the circuit all of the time until the battery gets destroyed. When that happens, the circuit will switch over to main power. 
+This is an Inline backup, but different. The battery still powers the circuit all of the time until the battery gets destroyed. When that happens, the circuit will switch over to main power. Check out the [demo here](https://streamable.com/ugrbkl)
  
-![Alt text](images/WLmFo7p.png)
+![Alt text](images/WLmFo7pv2.png)
 
 ---
 
