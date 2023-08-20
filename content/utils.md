@@ -165,7 +165,7 @@ Notes:
 - They emit an orange light
 - Can only be placed on vertical surfaces
 - It provides up to 50% comfort in a sphere that starts about 1m in front of the heater. This sphere has a diameter of roughly 4 meters or 1 1/3rd square foundations.
-- his item provides heat in the shape of a sphere that at its largest diameter covers a 2x2, pictured below.
+- This item provides heat in the shape of a sphere that at its largest diameter covers a 2x2, pictured below.
 
 Heat Sphere :  
 
