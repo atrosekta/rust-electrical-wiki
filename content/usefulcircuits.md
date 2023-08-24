@@ -4,7 +4,7 @@
 
 [Blocker Chain](https://www.rustrician.io/?circuit=773b599014deb161fc173f295727be77)
 
-[Close All Doors with a Red Button](https://www.rustrician.io/?circuit=43eca6c525fb723146cc0fc7ca45a730)
+[Close All Doors with a Red Button](https://www.rustrician.io/?circuit=0101564d3656de1f3bedb87ab2625788)
 
 [Configure Siphon](https://www.rustrician.io/?circuit=e7c8a8ccc9ce2da68095cca2560da002)
 
