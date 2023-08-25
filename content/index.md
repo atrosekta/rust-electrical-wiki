@@ -2,7 +2,7 @@
 
 *You are the []{#visitorcount}th visitor !*
 
----
+A continually updated all inclusive guide to everything electrical in the game Rust. This handbook will include everything you need to find, craft, wire, and utilize different useful circuits in game. These designs have been curated from many community submissions into the simplest, cheapest, and most optimized versions possible.
 
 This is a work in progress, everything is subject to change,
 be reorganised or moved to some other sub pages,
@@ -14,7 +14,7 @@ https://docs.google.com/document/d/19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/
 so thanks to him and all the people in the [Rustricity Workshop](https://discord.gg/emB98hrupy)
 community that contribute to it! The Google Doc will always be a little more update then this website as the website needs to be rebuilt after each change.   
 
-A massive Thank You to @3YE on [Discord](https://discord.gg/emB98hrupy) for creating the website and
+A massive Thank You to @3YE on [Discord](https://discord.rustrician.io/) for creating the website and
 teaching me (SwiftCoyote) how to update and maintain it. 
 
 
