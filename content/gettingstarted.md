@@ -43,8 +43,9 @@ not a 1 size fits all. The best circuit is the one that does the job you
 need it to do when you need it to do it.
 
 First we will talk about the physical placement then we will get into
-the electrical circuit(s).
-# Locations
+the electrical circuit(s).  
+
+# Locations  
 
 When talking about centralizing or decentralizing the physical location
 of components, it should be understood that we are NOT talking about the
