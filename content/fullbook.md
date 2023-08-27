@@ -7,7 +7,7 @@ SO DONT EDIT IT, YOUR CHANGES WILL BE LOST !
 
 *You are the []{#visitorcount}th visitor !*
 
----
+A continually updated all inclusive guide to everything electrical in the game Rust. This handbook will include everything you need to find, craft, wire, and utilize different useful circuits in game. These designs have been curated from many community submissions into the simplest, cheapest, and most optimized versions possible.
 
 This is a work in progress, everything is subject to change,
 be reorganised or moved to some other sub pages,
@@ -19,7 +19,7 @@ https://docs.google.com/document/d/19hr2dKtooN_YDF7TUsTdpLGadEEy9iyEFp12wbPnIas/
 so thanks to him and all the people in the [Rustricity Workshop](https://discord.gg/emB98hrupy)
 community that contribute to it! The Google Doc will always be a little more update then this website as the website needs to be rebuilt after each change.   
 
-A massive Thank You to @3YE on [Discord](https://discord.gg/emB98hrupy) for creating the website and
+A massive Thank You to @3YE on [Discord](https://discord.rustrician.io/) for creating the website and
 teaching me (SwiftCoyote) how to update and maintain it. 
 
 
@@ -703,6 +703,7 @@ Notes:
 - Detection range is about 11m or 3.5 square foundation.
 - Can be set to Include/Exclude Authorized and Others. With TC auth, look at the sensor and hold Use(`E`).
 - Requires line of sight, except a player crouching under a half height floor can be seen by the sensor from above. It can also be built to see through walls, floors and roofs. 
+- The only deployables that can block the HBHF are, Lockers, Vending Machines, Chippy Machine, Large Water Catcher, Oil Refinery and the deck of the Large Pool.
 - Only outputs an amount of power equal to the number of people it detects, meaning if Power Out is connected to a Counter, set to Show Passthrough, the Counter will display the number of people the HBHF is detecting.
 - Will detect all scientist types including ones riding in the CH47.
 
@@ -1901,7 +1902,7 @@ Notes:
 - They emit an orange light
 - Can only be placed on vertical surfaces
 - It provides up to 50% comfort in a sphere that starts about 1m in front of the heater. This sphere has a diameter of roughly 4 meters or 1 1/3rd square foundations.
-- his item provides heat in the shape of a sphere that at its largest diameter covers a 2x2, pictured below.
+- This item provides heat in the shape of a sphere that at its largest diameter covers a 2x2, pictured below.
 
 Heat Sphere :  
 
@@ -3338,8 +3339,9 @@ not a 1 size fits all. The best circuit is the one that does the job you
 need it to do when you need it to do it.
 
 First we will talk about the physical placement then we will get into
-the electrical circuit(s).
-# Locations
+the electrical circuit(s).  
+
+# Locations  
 
 When talking about centralizing or decentralizing the physical location
 of components, it should be understood that we are NOT talking about the
@@ -3908,9 +3910,9 @@ Cons:
 
 # The Kore
 
-This is an Inline backup, but different. The battery still powers the circuit all of the time until the battery gets destroyed. When that happens, the circuit will switch over to main power. 
+This is an Inline backup, but different. The battery still powers the circuit all of the time until the battery gets destroyed. When that happens, the circuit will switch over to main power. Check out the [demo here](https://streamable.com/ugrbkl)
  
-![Alt text](images/WLmFo7p.png)
+![Alt text](images/WLmFo7pv2.png)
 
 ---
 
@@ -4802,7 +4804,7 @@ Needs work
 
 [Blocker Chain](https://www.rustrician.io/?circuit=773b599014deb161fc173f295727be77)
 
-[Close All Doors with a Red Button](https://www.rustrician.io/?circuit=43eca6c525fb723146cc0fc7ca45a730)
+[Close All Doors with a Red Button](https://www.rustrician.io/?circuit=0101564d3656de1f3bedb87ab2625788)
 
 [Configure Siphon](https://www.rustrician.io/?circuit=e7c8a8ccc9ce2da68095cca2560da002)
 
