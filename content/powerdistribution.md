@@ -75,7 +75,7 @@ AKA, a loop.  
 
 Why would you do this? You wouldn’t. In the past, batteries functioned
 differently and there was a need to create the “Infinite Power Loop”.
-Today, batteries have something called “Active Usage”. This breaks the
+Today, batteries have something called “[Active Usage](powerstorage.html#battery-active-usage-vs-actual-power-consumed)”. This breaks the
 infinite loop and eliminates a need for it to exist.
 
 You can circumvent a short circuit by increasing the number of
@@ -93,7 +93,7 @@ could only exist in 1 state at a time. They were either charging or
 discharging and when they were discharging, they were always doing it at
 their max. Back then, people found a way to use the extra power and send
 it back to the battery. For example, a large battery was always
-outputting 100 power whereas today, they calculate an active usage and
+outputting 100 power whereas today, they calculate an [Active Usage](powerstorage.html#battery-active-usage-vs-actual-power-consumed) and
 only drain the amount of power a circuit needs, up to 100. Today, if the
 circuit only needs 50, the battery only gives 50.
 
