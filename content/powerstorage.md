@@ -384,11 +384,27 @@ In real life, batteries have positive (+) and negative (-) connections. In Rust,
 
 In Rust, a large battery can give 100rW of power and has a capacity of 24000rWm. The outcome of wiring 2 large batteries in series would be 200rW of power with a capacity of 24000rWm. The outcome of wiring 2 large batteries in parallel would be 100rW of power with a capacity of 48000rWm.
 
-To wire large batteries in series in Rust, just use a Root Combiner. The output will be 200rW and because both batteries will drain at the same, the total capacity will remain at 24000rWm. 
+## Series
 
-To wire large batteries in parallel becomes a little more complicated.
+To wire large batteries in series in Rust, just use a Root Combiner. The output will be 200rW and because both batteries will drain at the same, the total capacity will remain at 24000rWm. This will give a mimimum runtime of 4 hours.
 
- 
+![](images/series1.png)
+
+Wiring more than 2 batteries into series is not much more complicated. Just add more Root Combiners. This will provide more power for consumption but the capacity will remain the same. For more information as to why the capacity stays the same, it is recommended reading [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#battery-active-usage-vs-actual-power-consumed) in the Power Storage section under Concepts. 
+
+![](images/series2.png)
+
+It is recommended to charge all the batteries wired in series at the same rate. This will help keep power levels equal across all batteries. For example, if there are 2 batteries in series and 1 of them drains empty, 50% of the circuit will go offline because 50% of the power is gone. However, giving priority to 1 battery in series could be a design feature.
+
+## Parallel
+
+To wire 2 large batteries in parallel requires a few more components. 1 battery needs to block the other battery to prevent both from draining at the same time. The output is only 95rW because of the extra components but the capacity will be doubled to 48000rWm. This would provide a minimum runtime of 8 hours.
+
+![](images/parallel.png)
+
+While this technically works for paralleling 2 batteries, consider using a secondary backup instead. 2 parallel batteries costs 5rW but a bypass secondary backup could cost as little as 2rW. This can also be true no matter the number of secondary batteries if there is no built in recharging. If recharging a secondary battery is built in, it adds a minimum of 2rW per battery to the power cost. Check out the section for [Secondary Backups](powerstorage.html#secondary-battery-backup) in Power Storage under Concepts.
+
+Going beyond 2 batteries and tripling the capacity, things get a little more complicated.
 
 ---
 
