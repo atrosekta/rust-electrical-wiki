@@ -188,12 +188,6 @@ Cons:
 
 ---
 
-# PepsiCore
-
-![](images/pepsicore.png)
-
-This will be explained in more detail but for now, here is a [BP](https://www.rustrician.io/?circuit=5b31017e9e3316c7246deb869d56c08b) to examine.
-
 # Secondary Battery Backup
 
 A secondary battery backup is used to provide power to a circuit after the main backup system goes offline. It's a backup of a backup. The chance that a secondary backup battery gets used on a typical day is near 0%, so why use them? Why not? The only drawback is the increased power cost. More backups and redundancy never hurts functionality, it only adds to it.
