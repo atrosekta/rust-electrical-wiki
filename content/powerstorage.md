@@ -428,7 +428,7 @@ Rather, this figure is what we call `Wire Capacity`, symbolized as `Np`.
 For instance, in the image below, the displayed `6,492,076` is **NOT** the amount of power available.
 Instead, it represents `6,492,076Np` of Wire Capacity. 
 
-![Alt text](images/capacitor2.png)
+![](images/capacitor2.png)
 
 Before going into the construction and operation of a Capacitor,
 it’s essential to understand the math conversions between Rust Watt Minutes (rWm) and Wire Capacity (Np).  
