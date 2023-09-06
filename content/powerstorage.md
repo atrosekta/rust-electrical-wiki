@@ -483,7 +483,7 @@ given a set output.
 
 Battery :  
   `(rWm ÷ O = M) × τ = S`  
-  `(271÷ 100 = 2.71 Minutes) × 60 = 162 Seconds`  
+  `(271 ÷ 100 = 2.71 Minutes) × 60 = 162 Seconds`  
 
 Capacitor : *(you will need to convert from Np to rWm first)*  
   `(rWm ÷ O = M) × τ = S`  

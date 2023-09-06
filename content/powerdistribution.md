@@ -133,8 +133,8 @@ be able to have the number of batteries you want or need.
 In this next image, we have 8 Windmills combined into a Nih Core with a
 battery backup containing 6 Large Batteries. This circuit has a total
 depth of 13 components. The trick to counting depth is counting the
-components in the longest route from the last Root Combiner, \#1 back to
-the Windmill, \#13.  
+components in the longest route from the last Root Combiner, **#1** back to
+the Windmill, **#13**.  
 
 ![](images/image99.png)
 
@@ -142,11 +142,11 @@ In the next example, we have 2 isolated power sources. The first source
 is the cluster of Windmills. The second is the combined Solar Panels for
 the Component Destruction Detector. This means that we have 2 paths we
 must consider when calculating the depth. The first path to look at is
-the one that goes from the Root Combiner \#1 back to the Windmill \#14.
+the one that goes from the Root Combiner **#1** back to the Windmill **#14**.
 This path is the main power path. The second path goes from Root
-Combiner \#1 back to the Solar Panel \#16. If one of these paths exceed
+Combiner **#1** back to the Solar Panel **#16**. If one of these paths exceed
 the Max Depth limit of 16 components, you will start to see the error
-message at Root Combiner \#1.
+message at Root Combiner **#1**.
 
 ![](images/image50.png)
 
