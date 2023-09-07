@@ -26,6 +26,8 @@
 
 [Parallel vs Series](https://www.rustrician.io/?circuit=0191b550a1c45104ce7129c15ba13d4f)
 
+[PepsiCore](https://www.rustrician.io/?circuit=5b31017e9e3316c7246deb869d56c08b)
+
 [Probability Master Class](https://www.rustrician.io/?circuit=ca9bdcbc87f0a13ca3a3ce0c8fe4146d)
 
 

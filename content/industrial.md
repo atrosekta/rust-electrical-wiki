@@ -30,6 +30,7 @@ Despawn Time        | 5 minutes
 Notes:
 
 - The 5 second rule. From turning on to the first transfer is 5 seconds. Between each transfer is 5 seconds. This is often referred to as a tick. 
+- Anyone can turn them on or off but only players with TC authorization can access the filters.
 - Has 3 outputs. A passthrough, Filter Pass and Filter Fail.
 - It will display an image of the item being transferred as it transfers.
 - 2 Conveyors cannot be connected together in a row. They must be separated by a Storage Adapter.
