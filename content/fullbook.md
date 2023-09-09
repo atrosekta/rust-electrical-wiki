@@ -2645,6 +2645,7 @@ Despawn Time        | 5 minutes
 Notes:
 
 - The 5 second rule. From turning on to the first transfer is 5 seconds. Between each transfer is 5 seconds. This is often referred to as a tick. 
+- Anyone can turn them on or off but only players with TC authorization can access the filters.
 - Has 3 outputs. A passthrough, Filter Pass and Filter Fail.
 - It will display an image of the item being transferred as it transfers.
 - 2 Conveyors cannot be connected together in a row. They must be separated by a Storage Adapter.
@@ -4202,11 +4203,27 @@ In real life, batteries have positive (+) and negative (-) connections. In Rust,
 
 In Rust, a large battery can give 100rW of power and has a capacity of 24000rWm. The outcome of wiring 2 large batteries in series would be 200rW of power with a capacity of 24000rWm. The outcome of wiring 2 large batteries in parallel would be 100rW of power with a capacity of 48000rWm.
 
-To wire large batteries in series in Rust, just use a Root Combiner. The output will be 200rW and because both batteries will drain at the same, the total capacity will remain at 24000rWm. 
+## Series
 
-To wire large batteries in parallel becomes a little more complicated.
+To wire large batteries in series in Rust, just use a Root Combiner. The output will be 200rW and because both batteries will drain at the same, the total capacity will remain at 24000rWm. This will give a mimimum runtime of 4 hours.
 
- 
+![](images/series1.png)
+
+Wiring more than 2 batteries into series is not much more complicated. Just add more Root Combiners. This will provide more power for consumption but the capacity will remain the same. For more information as to why the capacity stays the same, it is recommended reading [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#battery-active-usage-vs-actual-power-consumed) in the Power Storage section under Concepts. 
+
+![](images/series2.png)
+
+It is recommended to charge all the batteries wired in series at the same rate. This will help keep power levels equal across all batteries. For example, if there are 2 batteries in series and 1 of them drains empty, 50% of the circuit will go offline because 50% of the power is gone. However, giving priority to 1 battery in series could be a design feature.
+
+## Parallel
+
+To wire 2 large batteries in parallel requires a few more components. 1 battery needs to block the other battery to prevent both from draining at the same time. The output is only 95rW because of the extra components but the capacity will be doubled to 48000rWm. This would provide a minimum runtime of 8 hours.
+
+![](images/parallel.png)
+
+While this technically works for paralleling 2 batteries, consider using a secondary backup instead. 2 parallel batteries costs 5rW but a bypass secondary backup could cost as little as 2rW. This can also be true no matter the number of secondary batteries if there is no built in recharging. If recharging a secondary battery is built in, it adds a minimum of 2rW per battery to the power cost. Check out the section for [Secondary Backups](powerstorage.html#secondary-battery-backup) in Power Storage under Concepts.
+
+Going beyond 2 batteries and tripling the capacity, things get a little more complicated.
 
 ---
 
@@ -4230,7 +4247,7 @@ Rather, this figure is what we call `Wire Capacity`, symbolized as `Np`.
 For instance, in the image below, the displayed `6,492,076` is **NOT** the amount of power available.
 Instead, it represents `6,492,076Np` of Wire Capacity. 
 
-![Alt text](images/capacitor2.png)
+![](images/capacitor2.png)
 
 Before going into the construction and operation of a Capacitor,
 it’s essential to understand the math conversions between Rust Watt Minutes (rWm) and Wire Capacity (Np).  
@@ -4285,7 +4302,7 @@ given a set output.
 
 Battery :  
   `(rWm ÷ O = M) × τ = S`  
-  `(271÷ 100 = 2.71 Minutes) × 60 = 162 Seconds`  
+  `(271 ÷ 100 = 2.71 Minutes) × 60 = 162 Seconds`  
 
 Capacitor : *(you will need to convert from Np to rWm first)*  
   `(rWm ÷ O = M) × τ = S`  
@@ -4388,7 +4405,7 @@ AKA, a loop.  
 
 Why would you do this? You wouldn’t. In the past, batteries functioned
 differently and there was a need to create the “Infinite Power Loop”.
-Today, batteries have something called “Active Usage”. This breaks the
+Today, batteries have something called “[Active Usage](powerstorage.html#battery-active-usage-vs-actual-power-consumed)”. This breaks the
 infinite loop and eliminates a need for it to exist.
 
 You can circumvent a short circuit by increasing the number of
@@ -4406,7 +4423,7 @@ could only exist in 1 state at a time. They were either charging or
 discharging and when they were discharging, they were always doing it at
 their max. Back then, people found a way to use the extra power and send
 it back to the battery. For example, a large battery was always
-outputting 100 power whereas today, they calculate an active usage and
+outputting 100 power whereas today, they calculate an [Active Usage](powerstorage.html#battery-active-usage-vs-actual-power-consumed) and
 only drain the amount of power a circuit needs, up to 100. Today, if the
 circuit only needs 50, the battery only gives 50.
 
@@ -4446,8 +4463,8 @@ be able to have the number of batteries you want or need.
 In this next image, we have 8 Windmills combined into a Nih Core with a
 battery backup containing 6 Large Batteries. This circuit has a total
 depth of 13 components. The trick to counting depth is counting the
-components in the longest route from the last Root Combiner, \#1 back to
-the Windmill, \#13.  
+components in the longest route from the last Root Combiner, **#1** back to
+the Windmill, **#13**.  
 
 ![](images/image99.png)
 
@@ -4455,11 +4472,11 @@ In the next example, we have 2 isolated power sources. The first source
 is the cluster of Windmills. The second is the combined Solar Panels for
 the Component Destruction Detector. This means that we have 2 paths we
 must consider when calculating the depth. The first path to look at is
-the one that goes from the Root Combiner \#1 back to the Windmill \#14.
+the one that goes from the Root Combiner **#1** back to the Windmill **#14**.
 This path is the main power path. The second path goes from Root
-Combiner \#1 back to the Solar Panel \#16. If one of these paths exceed
+Combiner **#1** back to the Solar Panel **#16**. If one of these paths exceed
 the Max Depth limit of 16 components, you will start to see the error
-message at Root Combiner \#1.
+message at Root Combiner **#1**.
 
 ![](images/image50.png)
 
@@ -4825,6 +4842,8 @@ Needs work
 [Nih Core - Decentralized](https://www.rustrician.io/?circuit=1d0b869c046f6d05ee75ab0f841fc150)
 
 [Parallel vs Series](https://www.rustrician.io/?circuit=0191b550a1c45104ce7129c15ba13d4f)
+
+[PepsiCore](https://www.rustrician.io/?circuit=5b31017e9e3316c7246deb869d56c08b)
 
 [Probability Master Class](https://www.rustrician.io/?circuit=ca9bdcbc87f0a13ca3a3ce0c8fe4146d)
 
