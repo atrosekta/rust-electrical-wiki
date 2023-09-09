@@ -96,7 +96,7 @@ Notes:
 
 - Only people with TC authorization can operate the Switch.
 - Can be paired with Rust+ enabling the ability to turn it on and off from outside the game.
-- The [Side Inputs](uncategorizedconcepts.html#side-inputs) block the [Destruction Detectors](https://www.rustrician.io/?circuit=0ed49399527de1a33fd851e2d213b1ed) ability to see downstream.
+- The [Side Inputs](uncategorizedconcepts.html#side-inputs) block the [Component Destruction Detectors](https://www.rustrician.io/?circuit=e8a5b617b7d37c08f784b4566110c1e1) ability to see downstream.
 
 ---
 
