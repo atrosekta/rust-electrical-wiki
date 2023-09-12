@@ -1,7 +1,7 @@
 
 # Smart
 
-These components can be paired with the Rust+ app and adds a way to interact with rustricity from outside the game.
+These components can be paired with the Rust+ app and adds a way to interact with Rust from outside the game. Also see Auto Turret, PTZ CCTV Camera and CCTV Camera. They can also be assigned an ID and be paired with Rust+.
 
 - To connect the smart component with the Rust+ app, start by installing the app from your app store on a tablet or smartphone. 
 - Launch the app and sign into Steam. 
@@ -96,7 +96,7 @@ Notes:
 
 - Only people with TC authorization can operate the Switch.
 - Can be paired with Rust+ enabling the ability to turn it on and off from outside the game.
-- The [Side Inputs](uncategorizedconcepts.html#side-inputs) block the [Destruction Detectors](https://www.rustrician.io/?circuit=0ed49399527de1a33fd851e2d213b1ed) ability to see downstream.
+- The [Side Inputs](uncategorizedconcepts.html#side-inputs) block the [Component Destruction Detectors](https://www.rustrician.io/?circuit=e8a5b617b7d37c08f784b4566110c1e1) ability to see downstream.
 
 ---
 
