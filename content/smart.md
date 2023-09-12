@@ -1,7 +1,7 @@
 
 # Smart
 
-These components can be paired with the Rust+ app and adds a way to interact with rustricity from outside the game.
+These components can be paired with the Rust+ app and adds a way to interact with Rust from outside the game. Also see Auto Turret, PTZ CCTV Camera and CCTV Camera. They can also be assigned an ID and be paired with Rust+.
 
 - To connect the smart component with the Rust+ app, start by installing the app from your app store on a tablet or smartphone. 
 - Launch the app and sign into Steam. 
