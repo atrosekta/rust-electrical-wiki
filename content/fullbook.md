@@ -1623,9 +1623,81 @@ Notes:
   20hz and 40hz or to manually turn it on.
 - Whichever input is the last to be activated is the input that dictates the state of the light. For example, if power is constantly sent to TURN ON, the light turns on. Then send power to TURN OFF, the light will turn off. When power is removed from TURN OFF, the light will not turn back on even with power still going to TURN ON. Power will need to be removed then reapplied power to TURN ON for the light to turn back on.
 - The TOGGLE input will turn the light on when it receives power and turn off when power is removed. This does not change the previous bullet point. If power is applied to TOGGLE, the light will turn on. While the light is on, if power is sent to TURN OFF, the light will turn off. When power is removed from TURN OFF with power still going to TOGGLE, the light will not turn back on. On the other hand if power is sent to TURN ON, the light will turn on. Then send power to TOGGLE and the light will stay on. With power still going to TURN ON, if power is removed from TOGGLE and the light will turn off. This is because when power is removed from TOGGLE, it tells the light to turn off. 
-- They take damage when active at a rate of 1hp/3min42sec.
+- They take damage when active at a rate of **1hp/3min42sec**.
 - They can be placed on flat and angled surfaces as well as the ground.
 - Can be picked up with a hammer but loses 10hp.
+
+---
+
+# Horizontal Weapon Rack![](images/WeaponRackHorizontal.png)
+
+| | |  
+|-|---|  
+Item ID           | -246672609
+Description       | A wall mounted weapon rack to display your arsenal
+Crafting Recipe   | 100 Wood, 120 Metal Fragments
+Recycles Into     | 50 Wood, 60 Metal Fragments
+Stack Size        | 10
+Hit Points        | 200
+Where To Find     | Requires a Steam item purchased from the Item Store
+Inputs/Outputs    | Power In / Passthrough
+Active Usage      | 1
+Power Consumption | 1rW
+Despawn Time      | 5 minutes
+
+Notes:
+
+- Weapons and tools can be mounted on and picked up from them by holding the item in your hand, looking at the weapon rack and pressing Use(`E`).
+- Rotate the items using Sprint(`Left Shift`).
+- Grid size is 10x10.
+
+---
+
+# Tall Weapon Rack![](images/WeaponRackTall.png)
+
+| | |  
+|-|---|  
+Item ID           |  240752557
+Description       | A wall mounted weapon rack to display your arsenal
+Crafting Recipe   | 100 Wood, 175 Metal Fragments
+Recycles Into     | 50 Wood, 88 Metal Fragments
+Stack Size        | 10
+Hit Points        | 200
+Where To Find     | Requires a Steam item purchased from the Item Store
+Inputs/Outputs    | Power In / Passthrough
+Active Usage      | 1
+Power Consumption | 1rW
+Despawn Time      | 5 minutes
+
+Notes:
+
+- Weapons and tools can be mounted on and picked up from them by holding the item in your hand, looking at the weapon rack and pressing Use(`E`).
+- Rotate the items using Sprint(`Left Shift`).
+- Grid size is 10x15.
+
+---
+
+# Wide Weapon Rack![](images/WeaponRackWide.png)
+
+| | |  
+|-|---|  
+Item ID           |  -96256997
+Description       | A wall mounted weapon rack to display your arsenal
+Crafting Recipe   | 100 Wood, 175 Metal Fragments
+Recycles Into     | 50 Wood, 88 Metal Fragments
+Stack Size        | 10
+Hit Points        | 200
+Where To Find     | Requires a Steam item purchased from the Item Store
+Inputs/Outputs    | Power In / Passthrough
+Active Usage      | 1
+Power Consumption | 1rW
+Despawn Time      | 5 minutes
+
+Notes:
+
+- Weapons and tools can be mounted on and picked up from them by holding the item in your hand, looking at the weapon rack and pressing Use(`E`).
+- Rotate the items using Sprint(`Left Shift`).
+- Grid size is 17x10.
 
 ---
 
@@ -1634,7 +1706,7 @@ Notes:
 
 # Smart
 
-These components can be paired with the Rust+ app and adds a way to interact with rustricity from outside the game.
+These components can be paired with the Rust+ app and adds a way to interact with Rust from outside the game. Also see Auto Turret, PTZ CCTV Camera and CCTV Camera. They can also be assigned an ID and be paired with Rust+.
 
 - To connect the smart component with the Rust+ app, start by installing the app from your app store on a tablet or smartphone. 
 - Launch the app and sign into Steam. 
@@ -1729,7 +1801,7 @@ Notes:
 
 - Only people with TC authorization can operate the Switch.
 - Can be paired with Rust+ enabling the ability to turn it on and off from outside the game.
-- The [Side Inputs](uncategorizedconcepts.html#side-inputs) block the [Destruction Detectors](https://www.rustrician.io/?circuit=0ed49399527de1a33fd851e2d213b1ed) ability to see downstream.
+- The [Side Inputs](uncategorizedconcepts.html#side-inputs) block the [Component Destruction Detectors](https://www.rustrician.io/?circuit=e8a5b617b7d37c08f784b4566110c1e1) ability to see downstream.
 
 ---
 
