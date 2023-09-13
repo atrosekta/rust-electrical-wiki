@@ -126,7 +126,7 @@ Item ID             | -1284169891
 Description         | Pumps and stores water from rivers or the ocean
 Crafting Recipe     | 200 Metal Fragments, 250 Wood, 1 Gear
 Recycles Into       | 100 Metal Fragments, 125 Wood, 50% 1 Gear
-Stack Size          | 1
+Stack Size          | 3
 Workbench Required  | Level 2
 Research Table Cost | 75 Scrap
 Hit Points          | 250
@@ -160,7 +160,7 @@ Item ID             | -365097295
 Description         | Converts salt water to fresh water when powered
 Crafting Recipe     | 300 Metal Fragments, 100 Wood, 20 Cloth
 Recycles Into       | 150 Metal Fragments, 50 Wood, 10 Cloth
-Stack Size          | 1
+Stack Size          | 3
 Workbench Required  | Level 2
 Research Table Cost | 75 Scrap
 Hit Points          | 300
@@ -218,7 +218,7 @@ Item ID             | 443432036
 Description         | A switch that lets water through, either manually or with electricity for the pump to send water to a higher floor.
 Crafting Recipe     | 150 Metal Fragments
 Recycles Into       | 75 Metal Fragments
-Stack Size          | 1
+Stack Size          | 5
 Workbench Required  | Level 1
 Research Table Cost | 20 Scrap
 Hit Points          | 200
