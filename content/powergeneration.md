@@ -113,7 +113,7 @@ To figure out how much capacity is needed to support a circuit of a specific loa
 To figure out how many pairs of panels are needed to support a specific amount to power, use the following equation:
 `rWm ÷ 940rWm = Solar Panel pairs`
 
-Example: A circuit with an active load of 64rW.  
+> Example: A circuit with an active load of 64rW.  
 `O × τ = rWm`  
 `64 × 60 = 3840rWm`  
 Therefore a circuit needing a constant 64rW over the course of 1 hour will consume 3840rWm worth of power.   
