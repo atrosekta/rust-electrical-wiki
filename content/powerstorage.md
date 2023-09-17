@@ -91,10 +91,13 @@ Cons:
 ---
 
 # The Kore
+![](images/TheKore.png)
 
-This is an Inline backup, but different. The battery still powers the circuit all of the time until the battery gets destroyed. When that happens, the circuit will switch over to main power. Check out the [demo here](https://streamable.com/ugrbkl)
+This is an upgraded Inline battery backup. It is a battery checked Inline backup. The battery still powers the circuit all of the time just like an Inline backup, but if the battery gets destroyed, the Kore will switch over to the Wind Turbine or main power source.  
+
+ Check out the [demo here](https://streamable.com/ugrbkl)
  
-![Alt text](images/WLmFo7pv2.png)
+![](images/WLmFo7pv2.png)
 
 ---
 
@@ -185,6 +188,12 @@ Cons:
 - More components, more wiring.
 - Added complexity
 - Power flickers when changing states
+
+---
+
+# BCN Core
+![](<images/BCN Core.png>)
+
 
 ---
 

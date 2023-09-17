@@ -1,5 +1,7 @@
 # Useful Circuits
 
+[Auto Lights](https://www.rustrician.io/?circuit=dc6bf5e524299bf241b218e2565876d0)
+
 [Auto Smelter](https://www.rustrician.io/?circuit=7411c1893993574b24b6c9c911dbc0e3)
 
 [Blocker Chain](https://www.rustrician.io/?circuit=773b599014deb161fc173f295727be77)
