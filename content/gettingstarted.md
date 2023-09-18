@@ -372,11 +372,11 @@ Incomplete*
 
 Centralized distribution is how 99.9% of all circuits are wired as illustrated in the picture below. All end devices or circuits are fed from a single source of power using a single battery backup following the path of a single distributor.  
 
-![Alt text](images/CentDist.png)  
+![](images/CentDist.png)  
 
 Decentralized distribution at its simplest is using OR Switches (outlined by purple in the picture below) to send power to each end device (or circuit) from 2 or more power sources, battery backups or distributors.   
 
-![Alt text](images/decentdist.png)
+![](images/decentdist.png)
 
 
 ---
