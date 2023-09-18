@@ -18,6 +18,10 @@ This beam is not very thick and its height is just over 2 floors high. As long a
 
 It is technically possible that something could be built in the area that would be the 3rd floor, but floors can’t be suspended. Using double door frames to support the floor from below will block the wind from time to time. Also, using angled roofs on the 2nd floor will block the wind. 
 
+This next picture shows what is required to fully enclose the turbine. Directly above the turbine needs to be 7 floors high. The door frames will also block the wind from time to time.
+
+![](images/TurbineInside.png)
+
 `Fun fact`, the turbine always rotates clockwise and it takes 1 hour to complete a full 360 degrees.
 
 ![](images/windbuildrocation.png)
