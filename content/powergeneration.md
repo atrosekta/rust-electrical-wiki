@@ -16,7 +16,19 @@ This beam is not very thick and its height is just over 2 floors high. As long a
 
 ![](images/windbuildrestrict.png)
 
-It is technically possible that something could be built in the area that would be the 3rd floor, but floors can’t be suspended. Using double door frames to support the floor from below will block the wind from time to time. Also, using angled roofs on the 2nd floor will block the wind. 
+It is technically possible that something could be built in the area that would be the 3rd floor, but floors can’t be suspended. Angled roofs on the 2nd floor will block the wind because they stick up just enough into the 3rd floor to block the beam.
+
+The frame of double door frames will block the wind. The following items can be placed into the double door frame and not block the wind.
+- Chainlink Fence
+- Netting
+- Open Garage Door
+
+This next picture shows a way to fully enclose the turbine inside a building. The 2 requirements to do this are:  
+1 - The 3rd floor needs to be free of obstructions out to 5 square foundations.  
+2 - Directly above the turbine needs to be 7 floors high. 
+
+
+![](images/TurbineInside2.png)
 
 `Fun fact`, the turbine always rotates clockwise and it takes 1 hour to complete a full 360 degrees.
 
@@ -113,7 +125,7 @@ To figure out how much capacity is needed to support a circuit of a specific loa
 To figure out how many pairs of panels are needed to support a specific amount to power, use the following equation:
 `rWm ÷ 940rWm = Solar Panel pairs`
 
-Example: A circuit with an active load of 64rW.  
+> Example: A circuit with an active load of 64rW.  
 `O × τ = rWm`  
 `64 × 60 = 3840rWm`  
 Therefore a circuit needing a constant 64rW over the course of 1 hour will consume 3840rWm worth of power.   

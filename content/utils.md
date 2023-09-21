@@ -35,6 +35,7 @@ Notes:
   at the controller and press Use(`E`). If successful, the bottom green light
   will turn on.
 - The door must be unlocked to pair with the controller.
+- Components can be placed on top of a Door Controller because they are thin enough for the next component to attach to the wall. This can help with space savings. If the controller on the bottom is destroyed, the component on top will not.  
 
 ---
 
