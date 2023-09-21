@@ -1844,6 +1844,7 @@ Notes:
   at the controller and press Use(`E`). If successful, the bottom green light
   will turn on.
 - The door must be unlocked to pair with the controller.
+- Components can be placed on top of a Door Controller because they are thin enough for the next component to attach to the wall. This can help with space savings. If the controller on the bottom is destroyed, the component on top will not.  
 
 ---
 
@@ -2481,7 +2482,7 @@ Item ID             | -1284169891
 Description         | Pumps and stores water from rivers or the ocean
 Crafting Recipe     | 200 Metal Fragments, 250 Wood, 1 Gear
 Recycles Into       | 100 Metal Fragments, 125 Wood, 50% 1 Gear
-Stack Size          | 1
+Stack Size          | 3
 Workbench Required  | Level 2
 Research Table Cost | 75 Scrap
 Hit Points          | 250
@@ -2515,7 +2516,7 @@ Item ID             | -365097295
 Description         | Converts salt water to fresh water when powered
 Crafting Recipe     | 300 Metal Fragments, 100 Wood, 20 Cloth
 Recycles Into       | 150 Metal Fragments, 50 Wood, 10 Cloth
-Stack Size          | 1
+Stack Size          | 3
 Workbench Required  | Level 2
 Research Table Cost | 75 Scrap
 Hit Points          | 300
@@ -2573,7 +2574,7 @@ Item ID             | 443432036
 Description         | A switch that lets water through, either manually or with electricity for the pump to send water to a higher floor.
 Crafting Recipe     | 150 Metal Fragments
 Recycles Into       | 75 Metal Fragments
-Stack Size          | 1
+Stack Size          | 5
 Workbench Required  | Level 1
 Research Table Cost | 20 Scrap
 Hit Points          | 200
@@ -3741,11 +3742,11 @@ Incomplete*
 
 Centralized distribution is how 99.9% of all circuits are wired as illustrated in the picture below. All end devices or circuits are fed from a single source of power using a single battery backup following the path of a single distributor.  
 
-![Alt text](images/CentDist.png)  
+![](images/CentDist.png)  
 
 Decentralized distribution at its simplest is using OR Switches (outlined by purple in the picture below) to send power to each end device (or circuit) from 2 or more power sources, battery backups or distributors.   
 
-![Alt text](images/decentdist.png)
+![](images/decentdist.png)
 
 
 ---
@@ -3772,7 +3773,19 @@ This beam is not very thick and its height is just over 2 floors high. As long a
 
 ![](images/windbuildrestrict.png)
 
-It is technically possible that something could be built in the area that would be the 3rd floor, but floors can’t be suspended. Using double door frames to support the floor from below will block the wind from time to time. Also, using angled roofs on the 2nd floor will block the wind. 
+It is technically possible that something could be built in the area that would be the 3rd floor, but floors can’t be suspended. Angled roofs on the 2nd floor will block the wind because they stick up just enough into the 3rd floor to block the beam.
+
+The frame of double door frames will block the wind. The following items can be placed into the double door frame and not block the wind.
+- Chainlink Fence
+- Netting
+- Open Garage Door
+
+This next picture shows a way to fully enclose the turbine inside a building. The 2 requirements to do this are:  
+1 - The 3rd floor needs to be free of obstructions out to 5 square foundations.  
+2 - Directly above the turbine needs to be 7 floors high. 
+
+
+![](images/TurbineInside2.png)
 
 `Fun fact`, the turbine always rotates clockwise and it takes 1 hour to complete a full 360 degrees.
 
@@ -3869,7 +3882,7 @@ To figure out how much capacity is needed to support a circuit of a specific loa
 To figure out how many pairs of panels are needed to support a specific amount to power, use the following equation:
 `rWm ÷ 940rWm = Solar Panel pairs`
 
-Example: A circuit with an active load of 64rW.  
+> Example: A circuit with an active load of 64rW.  
 `O × τ = rWm`  
 `64 × 60 = 3840rWm`  
 Therefore a circuit needing a constant 64rW over the course of 1 hour will consume 3840rWm worth of power.   
@@ -3929,7 +3942,9 @@ something called Power Consumption. Read about it in [Battery Active Usage vs Ac
 
 # Battery Backup
 
-There are 2 types of battery backup systems. There are Inline Backups and there are Bypass Backups. Inline backups include the Inline and The Kore. Bypass backups include the OR/Blocker and the Nih Core. Deciding which backup to use really comes down to preference. They each have their own pros and cons and some may argue that 1 is better than another in different situations. For example, if you only need to power a few turrets and are in a hurry, you might find the simplicity of the Inline backup works for you. Maybe you are working with 300rW to 1000rW and a dozen Windmills, you might find the efficiency of the Nih Core is preferred. At the end of the day, as long as the battery backup you go with, works when you need it to work, that was the right backup to choose.
+There are 3 types of battery backup systems. There are Inline Backups, there are Bypass Backups and then there are the Battery Checked Backups of both Inline and Bypass. Inline backups include the Inline while The Kore is Battery Checked. Bypass backups include the OR/Blocker and the Nih Core while the BCN Core is Battery Checked.  
+
+Deciding which backup to use really comes down to preference. They each have their own pros and cons and some may argue that 1 is better than another in different situations. For example, if you only need to power a few turrets and are in a hurry, you might find the simplicity of the Inline backup works for you. Maybe you are working with 300rW to 1000rW and a dozen Windmills, you might find the efficiency of the Nih Core is preferred. Having a good understanding of the concept Active Usage Vs Actual Power Consumed will also help you decide on a backup. At the end of the day, as long as the battery backup you go with, works when you need it to work, that was the right backup to choose.
 
 ---
 
@@ -3968,24 +3983,58 @@ If the battery is being given 150rW so it charges, when it is fully charged, the
 One of the biggest benefits of an Inline backup is when the power source stops making enough or any electricity, the battery will continue to supply power, uninterrupted. This means that unlike bypass backs, the inline is not prone to a flicker off/on when the power source is not producing enough power. The battery will continue to power the circuit until it is depleted or destroyed. 
 
 It is recommended to start charging batteries as soon as possible. Let them charge to a minimum of 3000rWm before letting them power anything. The reason for this is if a Wind Turbine is used, the wind could be entering a slow period. When using Solar Panels, night comes once an hour. Having some capacity saved up will help get through the slow or no times.
- 
+
+Recommended reading:
+
+- [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#battery-active-usage-vs-actual-power-consumed)
+- [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)
+- [ What is a Power Bus? ](powerdistribution.html#what-is-a-power-bus)
+
 
 Pros:
 
 - Simple to make with minimal electrical components
-- Perfect for decentralizing circuits
+- Easy for decentralizing circuits
+- No flicker (circuits turning off and on like a bypass backup)
 
 Cons:
 
 - Inefficient use of power at large scale
+- If the battery is destroyed, power from the source is wasted
+
 
 ---
 
 # The Kore
+![](images/TheKore.png)
 
-This is an Inline backup, but different. The battery still powers the circuit all of the time until the battery gets destroyed. When that happens, the circuit will switch over to main power. Check out the [demo here](https://streamable.com/ugrbkl)
- 
-![Alt text](images/WLmFo7pv2.png)
+This is an upgraded Inline battery backup. It is a battery checked Inline backup, aka The Kore. Just like the traditional Inline, power from the main power source is used to charge the battery. The battery still powers the circuit all of the time just like an Inline backup, but if the battery gets destroyed, The Kore will switch over to the Wind Turbine or main power source. This is a huge advantage over the traditional Inline. 
+
+As The Kore is using an inline battery, paying attention to Active Usage is required. Active Usage can be found by holding a Wire Tool and looking at the battery. There is a section that goes into detail about Active Usage but for now, just know that the amount of power an inline system needs is the Active Usage number ÷ by 0.8 (or Active Usage number × 1.25). This is because batteries are 80% efficient. The number that is given from doing this math is the minimum amount of power the battery will require to not drain. Adding more than that number allows the battery to charge. 
+
+The way this system works is by sending power to a Memory Cell first. The left output, `Inverted Output`, is connected to an OR Switch that connects to a circuit. Power moves through the right side output, `Output`, to an Electrical Branch. 2 power is branched off to `RESET` on the Memory Cell and the rest is used to charge the battery. Power from the battery is sent to an Electrical Branch where 2 is branched off to ‘SET’ on the Memory Cell and the rest is sent to the OR Switch which powers the circuit. Due to how side inputs on the Memory Cell work, while `SET` is getting power, it will always send power through the right side output. If the battery is destroyed, power is removed from `SET` while power is still going to `RESET` which causes the Memory Cell to flip outputs. This allows the attached circuit to still receive some power which is better than no power.  
+
+The biggest advantage of this backup system is the ability to continue to send power to the circuit even after the battery is destroyed, no matter how much power is coming in. It is recommended to let the battery charge to a minimum of 3000rWm before letting it power anything providing a buffer when entering a low power protection period of time.  
+
+Recommended Reading:  
+
+- [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#battery-active-usage-vs-actual-power-consumed)
+- [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)
+- [ What is a Power Bus? ](powerdistribution.html#what-is-a-power-bus)
+
+
+Pros:  
+
+- Minimal electrical components  
+- Has a built in backup  
+- Easy for decentralizing circuits  
+
+Cons:
+
+- Inefficient use of power at large scale  
+  
+![](images/WLmFo7pv2.png)
+Check out the [demo here](https://streamable.com/ugrbkl)
 
 ---
 
@@ -4076,6 +4125,13 @@ Cons:
 - More components, more wiring.
 - Added complexity
 - Power flickers when changing states
+
+---
+
+# BCN Core
+![](<images/BCN Core.png>)
+
+The BCN Core is a Battery Checked Nih Core.....
 
 ---
 
@@ -4888,6 +4944,8 @@ Needs work
 ---
 
 # Useful Circuits
+
+[Auto Lights](https://www.rustrician.io/?circuit=dc6bf5e524299bf241b218e2565876d0)
 
 [Auto Smelter](https://www.rustrician.io/?circuit=7411c1893993574b24b6c9c911dbc0e3)
 

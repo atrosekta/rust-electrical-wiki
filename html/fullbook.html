@@ -925,6 +925,11 @@
 			<span class='sidesign'></span>
 		</a>
 
+		<a class='sideline' href='powerstorage.html#bcn-core'>
+			<span class='sidetext'> BCN Core </span>
+			<span class='sidesign'></span>
+		</a>
+
 		<a class='sideline' href='powerstorage.html#secondary-battery-backup'>
 			<span class='sidetext'> Secondary Battery Backup </span>
 			<span class='sidesign'></span>
@@ -5627,6 +5632,10 @@ pair them.</li>
 at the controller and press Use(<code>E</code>). If successful, the
 bottom green light will turn on.</li>
 <li>The door must be unlocked to pair with the controller.</li>
+<li>Components can be placed on top of a Door Controller because they
+are thin enough for the next component to attach to the wall. This can
+help with space savings. If the controller on the bottom is destroyed,
+the component on top will not.</li>
 </ul>
 <hr />
 <h1 id="igniter"><a href="#igniter" class="anchor-link">*</a>Igniter<img
@@ -7196,7 +7205,7 @@ Pump<img src="images/image25.png" /></h1>
 </tr>
 <tr class="odd">
 <td>Stack Size</td>
-<td>1</td>
+<td>3</td>
 </tr>
 <tr class="even">
 <td>Workbench Required</td>
@@ -7293,7 +7302,7 @@ src="images/image130.png" /></h1>
 </tr>
 <tr class="odd">
 <td>Stack Size</td>
-<td>1</td>
+<td>3</td>
 </tr>
 <tr class="even">
 <td>Workbench Required</td>
@@ -7455,7 +7464,7 @@ electricity for the pump to send water to a higher floor.</td>
 </tr>
 <tr class="odd">
 <td>Stack Size</td>
-<td>1</td>
+<td>5</td>
 </tr>
 <tr class="even">
 <td>Workbench Required</td>
@@ -9850,18 +9859,12 @@ class="anchor-link">*</a>Distribution</h1>
 illustrated in the picture below. All end devices or circuits are fed
 from a single source of power using a single battery backup following
 the path of a single distributor.</p>
-<figure>
-<img src="images/CentDist.png" alt="Alt text" />
-<figcaption aria-hidden="true">Alt text</figcaption>
-</figure>
+<p><img src="images/CentDist.png" /></p>
 <p>Decentralized distribution at its simplest is using OR Switches
 (outlined by purple in the picture below) to send power to each end
 device (or circuit) from 2 or more power sources, battery backups or
 distributors.</p>
-<figure>
-<img src="images/decentdist.png" alt="Alt text" />
-<figcaption aria-hidden="true">Alt text</figcaption>
-</figure>
+<p><img src="images/decentdist.png" /></p>
 <hr />
 <p>That wraps up this section. I hope I have explained things in a way
 that makes sense. Please comment on the <a
@@ -9899,10 +9902,18 @@ floors can be placed below the beam without interfering with power
 production.</p>
 <p><img src="images/windbuildrestrict.png" /></p>
 <p>It is technically possible that something could be built in the area
-that would be the 3rd floor, but floors can’t be suspended. Using double
-door frames to support the floor from below will block the wind from
-time to time. Also, using angled roofs on the 2nd floor will block the
-wind.</p>
+that would be the 3rd floor, but floors can’t be suspended. Angled roofs
+on the 2nd floor will block the wind because they stick up just enough
+into the 3rd floor to block the beam.</p>
+<p>The frame of double door frames will block the wind. The following
+items can be placed into the double door frame and not block the wind. -
+Chainlink Fence - Netting - Open Garage Door</p>
+<p>This next picture shows a way to fully enclose the turbine inside a
+building. The 2 requirements to do this are:<br />
+1 - The 3rd floor needs to be free of obstructions out to 5 square
+foundations.<br />
+2 - Directly above the turbine needs to be 7 floors high.</p>
+<p><img src="images/TurbineInside2.png" /></p>
 <p><code>Fun fact</code>, the turbine always rotates clockwise and it
 takes 1 hour to complete a full 360 degrees.</p>
 <p><img src="images/windbuildrocation.png" /></p>
@@ -10081,6 +10092,7 @@ specific load, use the following equation:<br />
 <p>To figure out how many pairs of panels are needed to support a
 specific amount to power, use the following equation:
 <code>rWm ÷ 940rWm = Solar Panel pairs</code></p>
+<blockquote>
 <p>Example: A circuit with an active load of 64rW.<br />
 <code>O × τ = rWm</code><br />
 <code>64 × 60 = 3840rWm</code><br />
@@ -10091,6 +10103,7 @@ will consume 3840rWm worth of power.<br />
 Therefore 5 pairs of panels are needed to capture enough rWm to cover
 the power cost of a 64rW circuit. 2 solar panels make a pair, so 10
 panels total.</p>
+</blockquote>
 <p>To figure out how much time a given capacity will run for, outputting
 a specific amount of power, we use the following equations:
 <code>Seconds: (rWm ÷ O = M) × τ = S</code><br />
@@ -10165,18 +10178,21 @@ Active Usage vs Actual Power Consumed</a>.</li>
 <hr />
 <h1 id="battery-backup"><a href="#battery-backup"
 class="anchor-link">*</a>Battery Backup</h1>
-<p>There are 2 types of battery backup systems. There are Inline Backups
-and there are Bypass Backups. Inline backups include the Inline and The
-Kore. Bypass backups include the OR/Blocker and the Nih Core. Deciding
-which backup to use really comes down to preference. They each have
-their own pros and cons and some may argue that 1 is better than another
-in different situations. For example, if you only need to power a few
-turrets and are in a hurry, you might find the simplicity of the Inline
-backup works for you. Maybe you are working with 300rW to 1000rW and a
-dozen Windmills, you might find the efficiency of the Nih Core is
-preferred. At the end of the day, as long as the battery backup you go
-with, works when you need it to work, that was the right backup to
-choose.</p>
+<p>There are 3 types of battery backup systems. There are Inline
+Backups, there are Bypass Backups and then there are the Battery Checked
+Backups of both Inline and Bypass. Inline backups include the Inline
+while The Kore is Battery Checked. Bypass backups include the OR/Blocker
+and the Nih Core while the BCN Core is Battery Checked.</p>
+<p>Deciding which backup to use really comes down to preference. They
+each have their own pros and cons and some may argue that 1 is better
+than another in different situations. For example, if you only need to
+power a few turrets and are in a hurry, you might find the simplicity of
+the Inline backup works for you. Maybe you are working with 300rW to
+1000rW and a dozen Windmills, you might find the efficiency of the Nih
+Core is preferred. Having a good understanding of the concept Active
+Usage Vs Actual Power Consumed will also help you decide on a backup. At
+the end of the day, as long as the battery backup you go with, works
+when you need it to work, that was the right backup to choose.</p>
 <hr />
 <h1 id="direct-delivery"><a href="#direct-delivery"
 class="anchor-link">*</a>Direct Delivery</h1>
@@ -10243,26 +10259,91 @@ anything. The reason for this is if a Wind Turbine is used, the wind
 could be entering a slow period. When using Solar Panels, night comes
 once an hour. Having some capacity saved up will help get through the
 slow or no times.</p>
+<p>Recommended reading:</p>
+<ul>
+<li><a
+href="powerstorage.html#battery-active-usage-vs-actual-power-consumed">Battery
+Active Usage vs Actual Power Consumption</a></li>
+<li><a href="powerdistribution.html#short-circuit-max-depth">Short
+Circuit / Max Depth</a></li>
+<li><a href="powerdistribution.html#what-is-a-power-bus">What is a Power
+Bus?</a></li>
+</ul>
 <p>Pros:</p>
 <ul>
 <li>Simple to make with minimal electrical components</li>
-<li>Perfect for decentralizing circuits</li>
+<li>Easy for decentralizing circuits</li>
+<li>No flicker (circuits turning off and on like a bypass backup)</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>Inefficient use of power at large scale</li>
+<li>If the battery is destroyed, power from the source is wasted</li>
+</ul>
+<hr />
+<h1 id="the-kore"><a href="#the-kore" class="anchor-link">*</a>The
+Kore</h1>
+<p><img src="images/TheKore.png" /></p>
+<p>This is an upgraded Inline battery backup. It is a battery checked
+Inline backup, aka The Kore. Just like the traditional Inline, power
+from the main power source is used to charge the battery. The battery
+still powers the circuit all of the time just like an Inline backup, but
+if the battery gets destroyed, The Kore will switch over to the Wind
+Turbine or main power source. This is a huge advantage over the
+traditional Inline.</p>
+<p>As The Kore is using an inline battery, paying attention to Active
+Usage is required. Active Usage can be found by holding a Wire Tool and
+looking at the battery. There is a section that goes into detail about
+Active Usage but for now, just know that the amount of power an inline
+system needs is the Active Usage number ÷ by 0.8 (or Active Usage number
+× 1.25). This is because batteries are 80% efficient. The number that is
+given from doing this math is the minimum amount of power the battery
+will require to not drain. Adding more than that number allows the
+battery to charge.</p>
+<p>The way this system works is by sending power to a Memory Cell first.
+The left output, <code>Inverted Output</code>, is connected to an OR
+Switch that connects to a circuit. Power moves through the right side
+output, <code>Output</code>, to an Electrical Branch. 2 power is
+branched off to <code>RESET</code> on the Memory Cell and the rest is
+used to charge the battery. Power from the battery is sent to an
+Electrical Branch where 2 is branched off to ‘SET’ on the Memory Cell
+and the rest is sent to the OR Switch which powers the circuit. Due to
+how side inputs on the Memory Cell work, while <code>SET</code> is
+getting power, it will always send power through the right side output.
+If the battery is destroyed, power is removed from <code>SET</code>
+while power is still going to <code>RESET</code> which causes the Memory
+Cell to flip outputs. This allows the attached circuit to still receive
+some power which is better than no power.</p>
+<p>The biggest advantage of this backup system is the ability to
+continue to send power to the circuit even after the battery is
+destroyed, no matter how much power is coming in. It is recommended to
+let the battery charge to a minimum of 3000rWm before letting it power
+anything providing a buffer when entering a low power protection period
+of time.</p>
+<p>Recommended Reading:</p>
+<ul>
+<li><a
+href="powerstorage.html#battery-active-usage-vs-actual-power-consumed">Battery
+Active Usage vs Actual Power Consumption</a></li>
+<li><a href="powerdistribution.html#short-circuit-max-depth">Short
+Circuit / Max Depth</a></li>
+<li><a href="powerdistribution.html#what-is-a-power-bus">What is a Power
+Bus?</a></li>
+</ul>
+<p>Pros:</p>
+<ul>
+<li>Minimal electrical components<br />
+</li>
+<li>Has a built in backup<br />
+</li>
+<li>Easy for decentralizing circuits</li>
 </ul>
 <p>Cons:</p>
 <ul>
 <li>Inefficient use of power at large scale</li>
 </ul>
-<hr />
-<h1 id="the-kore"><a href="#the-kore" class="anchor-link">*</a>The
-Kore</h1>
-<p>This is an Inline backup, but different. The battery still powers the
-circuit all of the time until the battery gets destroyed. When that
-happens, the circuit will switch over to main power. Check out the <a
+<p><img src="images/WLmFo7pv2.png" /> Check out the <a
 href="https://streamable.com/ugrbkl">demo here</a></p>
-<figure>
-<img src="images/WLmFo7pv2.png" alt="Alt text" />
-<figcaption aria-hidden="true">Alt text</figcaption>
-</figure>
 <hr />
 <h1 id="orblocker"><a href="#orblocker"
 class="anchor-link">*</a>OR/Blocker</h1>
@@ -10412,6 +10493,11 @@ time</li>
 <li>Added complexity</li>
 <li>Power flickers when changing states</li>
 </ul>
+<hr />
+<h1 id="bcn-core"><a href="#bcn-core" class="anchor-link">*</a>BCN
+Core</h1>
+<p><img src="images/BCN%20Core.png" /></p>
+<p>The BCN Core is a Battery Checked Nih Core…..</p>
 <hr />
 <h1 id="secondary-battery-backup"><a href="#secondary-battery-backup"
 class="anchor-link">*</a>Secondary Battery Backup</h1>
@@ -11418,6 +11504,9 @@ CCTV camera.</em></li>
 <hr />
 <h1 id="useful-circuits"><a href="#useful-circuits"
 class="anchor-link">*</a>Useful Circuits</h1>
+<p><a
+href="https://www.rustrician.io/?circuit=dc6bf5e524299bf241b218e2565876d0">Auto
+Lights</a></p>
 <p><a
 href="https://www.rustrician.io/?circuit=7411c1893993574b24b6c9c911dbc0e3">Auto
 Smelter</a></p>
