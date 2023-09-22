@@ -25,5 +25,5 @@
 	- [Power Distribution]( powerdistribution.html )
 	- [Uncategorized]( uncategorizedconcepts.html )
 
-- Blueprints
+- Circuit Diagrams
 	- [Useful Circuits]( usefulcircuits.html )
