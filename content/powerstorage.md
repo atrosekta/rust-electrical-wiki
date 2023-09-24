@@ -102,7 +102,7 @@ Cons:
 ---
 
 # The Kore
-![](images/TheKore.png)
+![](images/thekorenolight.png)
 
 This is an upgraded Inline battery backup. It is a battery checked Inline backup, aka The Kore. Just like the traditional Inline, power from the main power source is used to charge the battery. The battery still powers the circuit all of the time just like an Inline backup, but if the battery gets destroyed, The Kore will switch over to the Wind Turbine or main power source. This is a huge advantage over the traditional Inline. 
 

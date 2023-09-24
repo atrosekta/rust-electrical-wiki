@@ -169,8 +169,8 @@ Hit Points         | 25
 Where To Find      | Requires a DLC purchase
 Inputs/Outputs     | Power / Audio Out
 Active Usage       | 5
-Power Consumption  | 5rW
-Power Output       | Input power minus 5
+Power Consumption  | 1rW
+Power Output       | Input power minus 1
 Despawn Time       | 5 minutes
 
 Notes:
