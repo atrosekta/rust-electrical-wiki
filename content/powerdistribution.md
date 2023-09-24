@@ -38,7 +38,7 @@ If an output gets destroyed, the system will evenly redistribute power between t
 
 ---
 
-## Configure Siphon
+## Configure Siphon (C-Bus)
 
 ![](images/multi-c-bus.png)
 

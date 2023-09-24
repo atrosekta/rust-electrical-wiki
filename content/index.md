@@ -21,7 +21,7 @@ teaching me (SwiftCoyote) how to update and maintain it.
 
 ---
 
-If you want to contribute to this project, there is multiple way you can do
+If you want to contribute to this project, there is multiple ways you can do
 it by:  
 
 -  Finding a bug, spelling or grammaitical error, or making a suggestion,
