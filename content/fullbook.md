@@ -26,7 +26,7 @@ teaching me (SwiftCoyote) how to update and maintain it.
 
 ---
 
-If you want to contribute to this project, there is multiple way you can do
+If you want to contribute to this project, there is multiple ways you can do
 it by:  
 
 -  Finding a bug, spelling or grammaitical error, or making a suggestion,
@@ -3089,8 +3089,8 @@ Hit Points         | 25
 Where To Find      | Requires a DLC purchase
 Inputs/Outputs     | Power / Audio Out
 Active Usage       | 5
-Power Consumption  | 5rW
-Power Output       | Input power minus 5
+Power Consumption  | 1rW
+Power Output       | Input power minus 1
 Despawn Time       | 5 minutes
 
 Notes:
@@ -4006,7 +4006,7 @@ Cons:
 ---
 
 # The Kore
-![](images/TheKore.png)
+![](images/thekorenolight.png)
 
 This is an upgraded Inline battery backup. It is a battery checked Inline backup, aka The Kore. Just like the traditional Inline, power from the main power source is used to charge the battery. The battery still powers the circuit all of the time just like an Inline backup, but if the battery gets destroyed, The Kore will switch over to the Wind Turbine or main power source. This is a huge advantage over the traditional Inline. 
 
@@ -4496,7 +4496,7 @@ If an output gets destroyed, the system will evenly redistribute power between t
 
 ---
 
-## Configure Siphon
+## Configure Siphon (C-Bus)
 
 ![](images/multi-c-bus.png)
 
@@ -4947,7 +4947,7 @@ Needs work
 
 [Auto Lights](https://www.rustrician.io/?circuit=dc6bf5e524299bf241b218e2565876d0)
 
-[Auto Smelter](https://www.rustrician.io/?circuit=7411c1893993574b24b6c9c911dbc0e3)
+[Auto Smelter](https://www.rustrician.io/?circuit=f676cc29884016f3fc11a5aa49505641)
 
 [Blocker Chain](https://www.rustrician.io/?circuit=773b599014deb161fc173f295727be77)
 
