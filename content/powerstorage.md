@@ -296,22 +296,20 @@ your circuit is currently consuming, but it’s not always the case. Even
 when some components are turned off and not consuming power, they can
 still add to a battery's Active Usage. In this next picture, even though
 the Auto Turret is not consuming power, it is still adding to the
-battery’s
+battery’s Active Usage and in fact, it will actually consume 14 power.  
 
 ![](images/turned-off-usage.png)
 
-Active Usage and in fact, it will actually consume 14 power. In this
-case even though the AND Switch is not allowing power to pass through,
+In this case even though the AND Switch is not allowing power to pass through,
 it does not have the ability to hide the Active Usage from inactive
 components downstream or past it. In this next picture, if we use
-different components to achieve the same outcome, we can hide
+different components to achieve the same outcome, we can hide the Auto Turret’s Active Usage from the battery when it is not consuming
+power.  
 
 ![](images/hide-active-usage.png)
 
-the Auto Turret’s Active Usage from the battery when it is not consuming
-power. This setup reduces the Active Usage all the way to 6. When
-active, we will get an Active Usage of 16
-but it will actually consume 18.  
+This setup reduces the Active Usage all the way to 6. When active, we will get an Active Usage of 16 but it will actually consume 18.  
+
 Components like Switches, the Blocker, Timer and RF Transmitter all
 have the ability to hide a component's Active Usage from batteries when
 not passing power through.
