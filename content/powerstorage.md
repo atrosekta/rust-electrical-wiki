@@ -331,7 +331,8 @@ how a Boom Box that is powered from Branch Out, but using a Switch to
 Toggle Play on and off, is registering 10 Active Usage for the Branch
 Out, 1 for the Switch and 10 for the Boom Box. If we do the same thing,
 but with the Splitter, we dont have this issue because the Splitter
-controls its power flow DYNAMICALLY.
+controls its power flow DYNAMICALLY.  
+
 ![](images/branch-vs-splitter-active-usage-onoff.png)
 
 This is helpful in situations where you have a few small 
@@ -339,7 +340,8 @@ circuits where you dont want to force an Active Usage when the circuits
 are off. Now because the Electrical Branch only registers the Branch Out
 value as Active Usage and 0 for itself, we can trick batteries into
 thinking less power is being consumed. In the next picture, we have some
-examples using Auto Turrets.
+examples using Auto Turrets.  
+
 ![](images/active-usage-vs-pwr-consuption-turret.png)
 
 Above, we have 1 example using 8 Electrical Branches to power 9 Auto
@@ -395,11 +397,7 @@ last 4 hours regardless, try to use as much of that 200 as possible to
 make it worth combining the batteries. Otherwise, split the circuit, run
 Inlines and minimize the Active Usage.
 
-Now, having said you want to consume as little power as possible to
-achieve the desired outcome when using a bypass battery backup, there
-are times when it is worth consuming more for a bit of added security.
-In the next picture, Ive used medium batteries for the demonstration,
-and they are root combined powering some Auto Turrets.
+Now having said consuming less power when using a bypass backup is more important, there are times when it is worth consuming more for a bit of added security. In the next picture, for demonstration only, medium batteries have been root combined to power some Auto Turrets.
 
 ![](images/power-bus-security-compared-turrets.png)
 
@@ -408,7 +406,7 @@ power but in the event 1 battery is destroyed, top right, some turrets
 stay active. The bottom groups use Splitters. While they do consume less
 power, in the event a battery is lost, very bottom, all the turrets go
 offline. You will need to weigh the pros and cons and decide what is
-right to fit your needs. Read more in What is a Power Bus? 
+right to fit your needs. Read more in [What is a Power Bus?](powerdistribution.html#what-is-a-power-bus)   
 
 # Parallel vs Series
 Lets start by learning what Parallel and Series means in real life. Connecting batteries in series increases voltage and connecting batteries in parallel increases capacity.   
@@ -416,8 +414,8 @@ Lets start by learning what Parallel and Series means in real life. Connecting b
 V = Volts (power)  
 Ah = Amp hour (capacity)  
 
-If we wire two 6V@10Ah batteries in parallel, we will still only have 6V but have 20Ah of capacity.  
 If we wire two 6V@10Ah batteries in series, we will now have twice the power at 12V but with only 10Ah of capacity.  
+If we wire two 6V@10Ah batteries in parallel, we will still only have 6V but have 20Ah of capacity.  
 
 ![](images/paravssers.png)
 
