@@ -50,6 +50,19 @@ Decay Time           | 8 hours
 
 Notes:
 
+- When placing them down, they will have a default of 1ml.
+- The base level collection rate is 8ml per minute but depending on the weather and biome, collection rates will change. There are 2 weather conditions that contribute to the collection rate, they are fog level and rain level. The closer to 0 they are, the closer the collection rate will be to the default of 8ml per minute.
+- For every 0.1 increase of Rain Level, the collection rate increases by:
+    - Desert - 15ml per minute
+    - Temperate - 30ml per minute 
+    - Arctic - 0ml per minute
+- For every 0.1 increase in the Fog Level, the collection rate increases by:
+    - Desert - 6ml per minute
+    - Temperate - 6ml per minute 
+    - Arctic - 6ml per minute
+- The math:
+    - Biome - Temperate = 1, Desert = 0.5, Arctic = 0
+    - `Collection Rate = 8ml + (Rain Level × (300ml × Biome)) + (Fog Level × 60ml)`
 - Requires an area on the ground roughly equal to a 2x2
 - Can be built inside, but on the ground, with a ceiling at 1.5 floors.
 - It will passively collect water from the air
@@ -81,6 +94,19 @@ Decay Time           | 8 hours
 
 Notes:
 
+- When placing them down, they will have a default of 1ml.
+- The base level collection rate is 3ml per minute but depending on the weather and biome, collection rates will change. There are 2 weather conditions that contribute to the collection rate, they are fog level and rain level. The closer to 0 they are, the closer the collection rate will be to the default of 3ml per minute.
+- For every 0.1 increase of Rain Level, the collection rate increases by:
+    - Desert - 5ml per minute
+    - Temperate - 10ml per minute 
+    - Arctic - 0ml per minute
+- For every 0.1 increase in the Fog Level, the collection rate increases by:
+    - Desert - 2ml per minute
+    - Temperate - 2ml per minute 
+    - Arctic - 2ml per minute
+- The math:
+    - Biome - Temperate = 1, Desert = 0.5, Arctic = 0
+    - `Collection Rate = 2ml + (Rain Level × (100ml × Biome)) + (Fog Level × 20ml)`
 - Can be placed on the ground and floors.
 - You can place them inside and use floor frames with floor grills above
   them but requires 3.5 floors above before you can place a ceiling.
@@ -147,8 +173,8 @@ Notes:
 - It will pump water out of itself to water a barrel, against gravity
   with no power required.
 - It is a pump so it will counter gravity and pump water to an upper
-  floor
-- Can be placed under wooden foundations
+  floor.
+- Can be placed under wooden foundations.
 
 ---
 
@@ -180,7 +206,7 @@ Notes:
 - Must be placed on a floor/foundation or the ground.
 - Blocks water components Active Usage downstream.
 - The smallest perfect salt pump to purifier ratio is 125:17, 1 purifier
-can handle over 7 pumps but can't handle 8
+can handle over 7 pumps but can't handle 8.
 
 ---
 
@@ -204,7 +230,7 @@ Despawn Time        | 40 minutes
 
 Notes:
 
-- Requires a car chassis and takes up 2 slots
+- Requires a car chassis and takes up 2 slots.
 - It is recommended you store the car on a Modular Car Lift to avoid
   decay.
 
@@ -231,10 +257,10 @@ Despawn Time        | 20 minutes
 
 Notes:
 
-- Can be placed on all angled surfaces and the ground
+- Can be placed on all angled surfaces and the ground.
 - Does not need electricity if you are using gravity to bring water down
   floors but will require electricity to push water up floors.
-- You do not need TC auth to manually operate
+- You do not need TC auth to manually operate.
 - As long as electricity is applied to Toggle, the switch will turn on.
   When power is removed, the switch turns off. No power needs to be
   applied to Pump Power for this action.
