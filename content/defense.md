@@ -61,8 +61,8 @@ Power Output        | 1rW
 Despawn Time        | 60 minutes
 
 Notes:
-
-- A player must be authorized to open the menu by looking at it and holding Use(`E`). There are 7 options to choose from.
+- There is a limit of 12 active turrets in a 40 meter radius or 14 square foundation. The 13th turret will not turn on and will have a sparking animation on top of it. 
+- A player must be authorized to open the menu by looking at it and holding Use(`E`). There are 7 options to choose from.  
     - `Open -` This opens the inventory where guns and ammo can be placed. This includes all weapons that fire Pistol Bullets, 5.56 Rifle Ammo or 12 Gauge Buckshot as well as the Nailgun and Trumpet. 
     - `Peacekeeper mode -` It will never attack an authorized player. It won't attack an unauthorized player unless they become aggressive. This mode also disables players from being able to control them from a Computer Station or the Rust+ app.
     - `Attack All -`  Is the default mode and can only be selected if the turret was placed into Peacekeeper mode. This mode is required for remote control.

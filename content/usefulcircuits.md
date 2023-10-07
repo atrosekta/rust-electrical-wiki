@@ -10,6 +10,8 @@
 
 [Configure Siphon](https://www.rustrician.io/?circuit=e7c8a8ccc9ce2da68095cca2560da002)
 
+[Dance Dance Revolution](https://www.rustrician.io/?circuit=e3b55e828700c9c44198bf34d4ccd284)
+
 [Delay Timer](https://www.rustrician.io/?circuit=fa8ba5c2e3974185c6f01273eab653f1)
 
 [Destruction Detection](https://www.rustrician.io/?circuit=bf38168f0834f7d84fb837ac41d1818e)

@@ -19,10 +19,10 @@ Research Table Cost | 20 Scrap
 Hit Points          | 100
 Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Lab Blue Crate
 Inputs/Outputs      | Power In / Power Output
-Power Consumption   | 40rW
-Power Capacity      | 150rW
-Power Output/Time   | 10rW/15min
-Active Usage        | 40
+Power Consumption   | 60rW
+Power Capacity      | 400rWm
+Power Output/Time   | 15rW/26min
+Active Usage        | 60
 Despawn Time        | 5 minutes
 
 Notes:
@@ -30,7 +30,7 @@ Notes:
 - Small Batteries are very compact and can be placed on some deployables
   like work/repair benches and boxes.
 - Maximum power input is 40rW.
-- Comes with a default charge of 20rWm.
+- Comes with a default charge of 37rWm.
 
 ---
 
@@ -50,7 +50,7 @@ Where To Buy        | Bandit Camp for 75 Scrap
 Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
 Inputs/Outputs      | Power In / Power Output
 Power Consumption   | 200rW
-Power Capacity      | 9000rWM
+Power Capacity      | 9000rWm
 Power Output/Time   | 50rW/3hrs
 Active Usage        | 200
 Despawn Time        | 20 minutes
@@ -79,7 +79,7 @@ Hit Points          | 100
 Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
 Inputs/Outputs      | Power In / Power Output
 Power Consumption   | 400rW
-Power Capacity      | 24000rWM
+Power Capacity      | 24000rWm
 Power Output/Time   | 100rW/4hrs
 Active Usage        | 400
 Despawn Time        | 20 minutes

@@ -122,7 +122,7 @@ When working with solar panels for a primary source of power, it is very helpful
 To figure out how much capacity is needed to support a circuit of a specific load, use the following equation:  
 `O × τ = rWm`
 
-To figure out how many pairs of panels are needed to support a specific amount to power, use the following equation:
+To figure out how many pairs of panels are needed to support a specific amount to power, use the following equation:  
 `rWm ÷ 940rWm = Solar Panel pairs`
 
 > Example: A circuit with an active load of 64rW.  
@@ -133,7 +133,7 @@ Therefore a circuit needing a constant 64rW over the course of 1 hour will consu
 `3840rWm ÷ 940rW = 4.08`  
 Therefore 5 pairs of panels are needed to capture enough rWm to cover the power cost of a 64rW circuit. 2 solar panels make a pair, so 10 panels total.
 
-To figure out how much time a given capacity will run for, outputting a specific amount of power, we use the following equations:
+To figure out how much time a given capacity will run for, outputting a specific amount of power, we use the following equations:  
 `Seconds: (rWm ÷ O = M) × τ = S`  
 `Minutes: rWm ÷ O = M`  
 `Hours: (rWm ÷ O = M) ÷ τ = H`
