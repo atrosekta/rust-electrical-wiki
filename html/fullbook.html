@@ -1809,19 +1809,19 @@ Chest, Tunnel Dweller, Underwater Lab Blue Crate</td>
 </tr>
 <tr class="odd">
 <td>Power Consumption</td>
-<td>40rW</td>
+<td>60rW</td>
 </tr>
 <tr class="even">
 <td>Power Capacity</td>
-<td>150rW</td>
+<td>400rWm</td>
 </tr>
 <tr class="odd">
 <td>Power Output/Time</td>
-<td>10rW/15min</td>
+<td>15rW/26min</td>
 </tr>
 <tr class="even">
 <td>Active Usage</td>
-<td>40</td>
+<td>60</td>
 </tr>
 <tr class="odd">
 <td>Despawn Time</td>
@@ -1834,7 +1834,7 @@ Chest, Tunnel Dweller, Underwater Lab Blue Crate</td>
 <li>Small Batteries are very compact and can be placed on some
 deployables like work/repair benches and boxes.</li>
 <li>Maximum power input is 40rW.</li>
-<li>Comes with a default charge of 20rWm.</li>
+<li>Comes with a default charge of 37rWm.</li>
 </ul>
 <hr />
 <h2 id="medium-rechargeable-battery"><a
@@ -1900,7 +1900,7 @@ Lab Yellow Crate</td>
 </tr>
 <tr class="odd">
 <td>Power Capacity</td>
-<td>9000rWM</td>
+<td>9000rWm</td>
 </tr>
 <tr class="even">
 <td>Power Output/Time</td>
@@ -1983,7 +1983,7 @@ Lab Yellow Crate</td>
 </tr>
 <tr class="even">
 <td>Power Capacity</td>
-<td>24000rWM</td>
+<td>24000rWm</td>
 </tr>
 <tr class="odd">
 <td>Power Output/Time</td>
@@ -6773,55 +6773,44 @@ Underwater Lab Elite Crate, Underwater Lab Yellow Crate</td>
 </tr>
 </tbody>
 </table>
-<p>Notes:</p>
-<ul>
-<li>A player must be authorized to open the menu by looking at it and
-holding Use(<code>E</code>). There are 7 options to choose from.
-<ul>
-<li><code>Open -</code> This opens the inventory where guns and ammo can
+<p>Notes: - There is a limit of 12 active turrets in a 40 meter radius
+or 14 square foundation. The 13th turret will not turn on and will have
+a sparking animation on top of it. - A player must be authorized to open
+the menu by looking at it and holding Use(<code>E</code>). There are 7
+options to choose from.<br />
+- <code>Open -</code> This opens the inventory where guns and ammo can
 be placed. This includes all weapons that fire Pistol Bullets, 5.56
-Rifle Ammo or 12 Gauge Buckshot as well as the Nailgun and Trumpet.</li>
-<li><code>Peacekeeper mode -</code> It will never attack an authorized
+Rifle Ammo or 12 Gauge Buckshot as well as the Nailgun and Trumpet. -
+<code>Peacekeeper mode -</code> It will never attack an authorized
 player. It won’t attack an unauthorized player unless they become
 aggressive. This mode also disables players from being able to control
-them from a Computer Station or the Rust+ app.</li>
-<li><code>Attack All -</code> Is the default mode and can only be
-selected if the turret was placed into Peacekeeper mode. This mode is
-required for remote control.</li>
-<li><code>Rotate -</code> Rotates the turret by 180 degrees.</li>
-<li><code>Authorize friend -</code> Search or select a player to
-authorize them. Once authorized, the turret will never shoot them.</li>
-<li><code>Clear Authorization List -</code> Removes all players from
-being authorized.</li>
-<li><code>Deauthorize -</code> Removes the player selecting it from
-being authorized.</li>
-<li><code>Set ID -</code> Naming the turret allows for player control.
-Give the turret a name, then enter that name into a Computer Station or
-the Rust+ app and take control. Move with the mouse and left click to
-shoot. Anyone can add the ID to any Computer Station and take control.
-Make the ID something other won’t guess and restrict access to any
-Computer Station with these IDs to trusted individuals only.</li>
-</ul></li>
-<li>There are 3 outputs:
-<ul>
-<li><code>Has Target</code> will pulse out 1rW if the turret takes
-damage and will release a constant 1rW if it locks a target.</li>
-<li><code>Low Ammo</code> will start to output 1rW when there is 50 ammo
-or less. When it has no more ammo it will stop outputting power.</li>
-<li><code>No Ammo</code> will output 1rW constantly when there is no
-ammo.</li>
-</ul></li>
-<li>Range is 30 meters or 10 square foundations.</li>
-<li>When controlled by a player from a Computer Station, the visual
-range is approximately 21 square foundations or 63 meters.</li>
-<li>Add the ID to the <code>Rust+</code> app to control the turret from
-outside the game. The player must disconnect from the server before
-remote access is allowed.</li>
-<li>The turret has a 180 degree detection arch.</li>
-<li>Must be placed on flat surfaces.</li>
-<li>Try to place them in a way they cannot be baited and drained.</li>
-<li>They can shoot through 2 layers of Chainlink Fence.</li>
-</ul>
+them from a Computer Station or the Rust+ app. -
+<code>Attack All -</code> Is the default mode and can only be selected
+if the turret was placed into Peacekeeper mode. This mode is required
+for remote control. - <code>Rotate -</code> Rotates the turret by 180
+degrees. - <code>Authorize friend -</code> Search or select a player to
+authorize them. Once authorized, the turret will never shoot them. -
+<code>Clear Authorization List -</code> Removes all players from being
+authorized. - <code>Deauthorize -</code> Removes the player selecting it
+from being authorized. - <code>Set ID -</code> Naming the turret allows
+for player control. Give the turret a name, then enter that name into a
+Computer Station or the Rust+ app and take control. Move with the mouse
+and left click to shoot. Anyone can add the ID to any Computer Station
+and take control. Make the ID something other won’t guess and restrict
+access to any Computer Station with these IDs to trusted individuals
+only. - There are 3 outputs: - <code>Has Target</code> will pulse out
+1rW if the turret takes damage and will release a constant 1rW if it
+locks a target. - <code>Low Ammo</code> will start to output 1rW when
+there is 50 ammo or less. When it has no more ammo it will stop
+outputting power. - <code>No Ammo</code> will output 1rW constantly when
+there is no ammo. - Range is 30 meters or 10 square foundations. - When
+controlled by a player from a Computer Station, the visual range is
+approximately 21 square foundations or 63 meters. - Add the ID to the
+<code>Rust+</code> app to control the turret from outside the game. The
+player must disconnect from the server before remote access is allowed.
+- The turret has a 180 degree detection arch. - Must be placed on flat
+surfaces. - Try to place them in a way they cannot be baited and
+drained. - They can shoot through 2 layers of Chainlink Fence.</p>
 <hr />
 <h1 id="tesla-coil"><a href="#tesla-coil" class="anchor-link">*</a>Tesla
 Coil<img src="images/image117.png" /></h1>
@@ -7007,6 +6996,31 @@ Underwater Lab Elite Crate, Underwater Lab Yellow Crate</td>
 </table>
 <p>Notes:</p>
 <ul>
+<li>When placing them down, they will have a default of 1ml.</li>
+<li>The base level collection rate is 8ml per minute but depending on
+the weather and biome, collection rates will change. There are 2 weather
+conditions that contribute to the collection rate, they are fog level
+and rain level. The closer to 0 they are, the closer the collection rate
+will be to the default of 8ml per minute.</li>
+<li>For every 0.1 increase of Rain Level, the collection rate increases
+by:
+<ul>
+<li>Desert - 15ml per minute</li>
+<li>Temperate - 30ml per minute</li>
+<li>Arctic - 0ml per minute</li>
+</ul></li>
+<li>For every 0.1 increase in the Fog Level, the collection rate
+increases by:
+<ul>
+<li>Desert - 6ml per minute</li>
+<li>Temperate - 6ml per minute</li>
+<li>Arctic - 6ml per minute</li>
+</ul></li>
+<li>The math:
+<ul>
+<li>Biome - Temperate = 1, Desert = 0.5, Arctic = 0</li>
+<li><code>Collection Rate = 8ml + (Rain Level × (300ml × Biome)) + (Fog Level × 60ml)</code></li>
+</ul></li>
 <li>Requires an area on the ground roughly equal to a 2x2</li>
 <li>Can be built inside, but on the ground, with a ceiling at 1.5
 floors.</li>
@@ -7092,6 +7106,31 @@ Crate</td>
 </table>
 <p>Notes:</p>
 <ul>
+<li>When placing them down, they will have a default of 1ml.</li>
+<li>The base level collection rate is 3ml per minute but depending on
+the weather and biome, collection rates will change. There are 2 weather
+conditions that contribute to the collection rate, they are fog level
+and rain level. The closer to 0 they are, the closer the collection rate
+will be to the default of 3ml per minute.</li>
+<li>For every 0.1 increase of Rain Level, the collection rate increases
+by:
+<ul>
+<li>Desert - 5ml per minute</li>
+<li>Temperate - 10ml per minute</li>
+<li>Arctic - 0ml per minute</li>
+</ul></li>
+<li>For every 0.1 increase in the Fog Level, the collection rate
+increases by:
+<ul>
+<li>Desert - 2ml per minute</li>
+<li>Temperate - 2ml per minute</li>
+<li>Arctic - 2ml per minute</li>
+</ul></li>
+<li>The math:
+<ul>
+<li>Biome - Temperate = 1, Desert = 0.5, Arctic = 0</li>
+<li><code>Collection Rate = 2ml + (Rain Level × (100ml × Biome)) + (Fog Level × 20ml)</code></li>
+</ul></li>
 <li>Can be placed on the ground and floors.</li>
 <li>You can place them inside and use floor frames with floor grills
 above them but requires 3.5 floors above before you can place a
@@ -7271,8 +7310,8 @@ ocean.</li>
 <li>It will pump water out of itself to water a barrel, against gravity
 with no power required.</li>
 <li>It is a pump so it will counter gravity and pump water to an upper
-floor</li>
-<li>Can be placed under wooden foundations</li>
+floor.</li>
+<li>Can be placed under wooden foundations.</li>
 </ul>
 <hr />
 <h1 id="powered-water-purifier"><a href="#powered-water-purifier"
@@ -7367,7 +7406,7 @@ freshwater.  </td>
 <li>Must be placed on a floor/foundation or the ground.</li>
 <li>Blocks water components Active Usage downstream.</li>
 <li>The smallest perfect salt pump to purifier ratio is 125:17, 1
-purifier can handle over 7 pumps but can’t handle 8</li>
+purifier can handle over 7 pumps but can’t handle 8.</li>
 </ul>
 <hr />
 <h1 id="fuel-tank-vehicle-module"><a href="#fuel-tank-vehicle-module"
@@ -7431,7 +7470,7 @@ src="images/image45.png" /></h1>
 </table>
 <p>Notes:</p>
 <ul>
-<li>Requires a car chassis and takes up 2 slots</li>
+<li>Requires a car chassis and takes up 2 slots.</li>
 <li>It is recommended you store the car on a Modular Car Lift to avoid
 decay.</li>
 </ul>
@@ -7509,10 +7548,10 @@ Crate</td>
 </table>
 <p>Notes:</p>
 <ul>
-<li>Can be placed on all angled surfaces and the ground</li>
+<li>Can be placed on all angled surfaces and the ground.</li>
 <li>Does not need electricity if you are using gravity to bring water
 down floors but will require electricity to push water up floors.</li>
-<li>You do not need TC auth to manually operate</li>
+<li>You do not need TC auth to manually operate.</li>
 <li>As long as electricity is applied to Toggle, the switch will turn
 on. When power is removed, the switch turns off. No power needs to be
 applied to Pump Power for this action.</li>
@@ -10090,7 +10129,7 @@ hour)<br />
 specific load, use the following equation:<br />
 <code>O × τ = rWm</code></p>
 <p>To figure out how many pairs of panels are needed to support a
-specific amount to power, use the following equation:
+specific amount to power, use the following equation:<br />
 <code>rWm ÷ 940rWm = Solar Panel pairs</code></p>
 <blockquote>
 <p>Example: A circuit with an active load of 64rW.<br />
@@ -10105,7 +10144,7 @@ the power cost of a 64rW circuit. 2 solar panels make a pair, so 10
 panels total.</p>
 </blockquote>
 <p>To figure out how much time a given capacity will run for, outputting
-a specific amount of power, we use the following equations:
+a specific amount of power, we use the following equations:<br />
 <code>Seconds: (rWm ÷ O = M) × τ = S</code><br />
 <code>Minutes: rWm ÷ O = M</code><br />
 <code>Hours: (rWm ÷ O = M) ÷ τ = H</code></p>
@@ -10613,21 +10652,21 @@ power your circuit is currently consuming, but it’s not always the case.
 Even when some components are turned off and not consuming power, they
 can still add to a battery’s Active Usage. In this next picture, even
 though the Auto Turret is not consuming power, it is still adding to the
-battery’s</p>
+battery’s Active Usage and in fact, it will actually consume 14
+power.</p>
 <p><img src="images/turned-off-usage.png" /></p>
-<p>Active Usage and in fact, it will actually consume 14 power. In this
-case even though the AND Switch is not allowing power to pass through,
-it does not have the ability to hide the Active Usage from inactive
-components downstream or past it. In this next picture, if we use
-different components to achieve the same outcome, we can hide</p>
+<p>In this case even though the AND Switch is not allowing power to pass
+through, it does not have the ability to hide the Active Usage from
+inactive components downstream or past it. In this next picture, if we
+use different components to achieve the same outcome, we can hide the
+Auto Turret’s Active Usage from the battery when it is not consuming
+power.</p>
 <p><img src="images/hide-active-usage.png" /></p>
-<p>the Auto Turret’s Active Usage from the battery when it is not
-consuming power. This setup reduces the Active Usage all the way to 6.
-When active, we will get an Active Usage of 16 but it will actually
-consume 18.<br />
-Components like Switches, the Blocker, Timer and RF Transmitter all have
-the ability to hide a component’s Active Usage from batteries when not
-passing power through.</p>
+<p>This setup reduces the Active Usage all the way to 6. When active, we
+will get an Active Usage of 16 but it will actually consume 18.</p>
+<p>Components like Switches, the Blocker, Timer and RF Transmitter all
+have the ability to hide a component’s Active Usage from batteries when
+not passing power through.</p>
 <p>Every component will only register an Active Usage once and equal to
 the amount of power it consumes with the exception of the Electrical
 Branch. Only the Branch Out value will register Active Usage even though
@@ -10645,15 +10684,15 @@ how a Boom Box that is powered from Branch Out, but using a Switch to
 Toggle Play on and off, is registering 10 Active Usage for the Branch
 Out, 1 for the Switch and 10 for the Boom Box. If we do the same thing,
 but with the Splitter, we dont have this issue because the Splitter
-controls its power flow DYNAMICALLY. <img
-src="images/branch-vs-splitter-active-usage-onoff.png" /></p>
+controls its power flow DYNAMICALLY.</p>
+<p><img src="images/branch-vs-splitter-active-usage-onoff.png" /></p>
 <p>This is helpful in situations where you have a few small circuits
 where you dont want to force an Active Usage when the circuits are off.
 Now because the Electrical Branch only registers the Branch Out value as
 Active Usage and 0 for itself, we can trick batteries into thinking less
 power is being consumed. In the next picture, we have some examples
-using Auto Turrets. <img
-src="images/active-usage-vs-pwr-consuption-turret.png" /></p>
+using Auto Turrets.</p>
+<p><img src="images/active-usage-vs-pwr-consuption-turret.png" /></p>
 <p>Above, we have 1 example using 8 Electrical Branches to power 9 Auto
 Turrets. Every branch is outputting 10 power but also consuming 1 power
 for itself. So in total we are consuming 98 power but the battery’s
@@ -10701,18 +10740,19 @@ or 199, 2 large batteries will only last 4 hours. If they are only going
 to last 4 hours regardless, try to use as much of that 200 as possible
 to make it worth combining the batteries. Otherwise, split the circuit,
 run Inlines and minimize the Active Usage.</p>
-<p>Now, having said you want to consume as little power as possible to
-achieve the desired outcome when using a bypass battery backup, there
-are times when it is worth consuming more for a bit of added security.
-In the next picture, Ive used medium batteries for the demonstration,
-and they are root combined powering some Auto Turrets.</p>
+<p>Now having said consuming less power when using a bypass backup is
+more important, there are times when it is worth consuming more for a
+bit of added security. In the next picture, for demonstration only,
+medium batteries have been root combined to power some Auto Turrets.</p>
 <p><img src="images/power-bus-security-compared-turrets.png" /></p>
 <p>The top groups are using Electrical Branches. They are consuming more
 power but in the event 1 battery is destroyed, top right, some turrets
 stay active. The bottom groups use Splitters. While they do consume less
 power, in the event a battery is lost, very bottom, all the turrets go
 offline. You will need to weigh the pros and cons and decide what is
-right to fit your needs. Read more in What is a Power Bus?</p>
+right to fit your needs. Read more in <a
+href="powerdistribution.html#what-is-a-power-bus">What is a Power
+Bus?</a></p>
 <h1 id="parallel-vs-series"><a href="#parallel-vs-series"
 class="anchor-link">*</a>Parallel vs Series</h1>
 <p>Lets start by learning what Parallel and Series means in real life.
@@ -10720,10 +10760,10 @@ Connecting batteries in series increases voltage and connecting
 batteries in parallel increases capacity.</p>
 <p>V = Volts (power)<br />
 Ah = Amp hour (capacity)</p>
-<p>If we wire two 6V@10Ah batteries in parallel, we will still only have
-6V but have 20Ah of capacity.<br />
-If we wire two 6V@10Ah batteries in series, we will now have twice the
-power at 12V but with only 10Ah of capacity.</p>
+<p>If we wire two 6V@10Ah batteries in series, we will now have twice
+the power at 12V but with only 10Ah of capacity.<br />
+If we wire two 6V@10Ah batteries in parallel, we will still only have 6V
+but have 20Ah of capacity.</p>
 <p><img src="images/paravssers.png" /></p>
 <p>In real life, batteries have positive (+) and negative (-)
 connections. In Rust, our batteries only have 1 input and 1 output. We
@@ -11519,6 +11559,9 @@ All Doors with a Red Button</a></p>
 <p><a
 href="https://www.rustrician.io/?circuit=e7c8a8ccc9ce2da68095cca2560da002">Configure
 Siphon</a></p>
+<p><a
+href="https://www.rustrician.io/?circuit=e3b55e828700c9c44198bf34d4ccd284">Dance
+Dance Revolution</a></p>
 <p><a
 href="https://www.rustrician.io/?circuit=fa8ba5c2e3974185c6f01273eab653f1">Delay
 Timer</a></p>

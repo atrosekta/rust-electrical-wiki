@@ -371,10 +371,10 @@ Research Table Cost | 20 Scrap
 Hit Points          | 100
 Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Lab Blue Crate
 Inputs/Outputs      | Power In / Power Output
-Power Consumption   | 40rW
-Power Capacity      | 150rW
-Power Output/Time   | 10rW/15min
-Active Usage        | 40
+Power Consumption   | 60rW
+Power Capacity      | 400rWm
+Power Output/Time   | 15rW/26min
+Active Usage        | 60
 Despawn Time        | 5 minutes
 
 Notes:
@@ -382,7 +382,7 @@ Notes:
 - Small Batteries are very compact and can be placed on some deployables
   like work/repair benches and boxes.
 - Maximum power input is 40rW.
-- Comes with a default charge of 20rWm.
+- Comes with a default charge of 37rWm.
 
 ---
 
@@ -402,7 +402,7 @@ Where To Buy        | Bandit Camp for 75 Scrap
 Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
 Inputs/Outputs      | Power In / Power Output
 Power Consumption   | 200rW
-Power Capacity      | 9000rWM
+Power Capacity      | 9000rWm
 Power Output/Time   | 50rW/3hrs
 Active Usage        | 200
 Despawn Time        | 20 minutes
@@ -431,7 +431,7 @@ Hit Points          | 100
 Where To Find       | Arctic Scientist, Cargo Ship Scientist, Crate, Elite Tier Crate, Excavator Scientist, Heavy Scientist, Locked Crate, Military Base Scientist, Military Crate, Oil Rig Scientist, Patrol Scientist, Treasure Box, Underwater Lab Blue Crate, Underwater Lab Elite Crate, Underwater Lab Yellow Crate
 Inputs/Outputs      | Power In / Power Output
 Power Consumption   | 400rW
-Power Capacity      | 24000rWM
+Power Capacity      | 24000rWm
 Power Output/Time   | 100rW/4hrs
 Active Usage        | 400
 Despawn Time        | 20 minutes
@@ -2296,8 +2296,8 @@ Power Output        | 1rW
 Despawn Time        | 60 minutes
 
 Notes:
-
-- A player must be authorized to open the menu by looking at it and holding Use(`E`). There are 7 options to choose from.
+- There is a limit of 12 active turrets in a 40 meter radius or 14 square foundation. The 13th turret will not turn on and will have a sparking animation on top of it. 
+- A player must be authorized to open the menu by looking at it and holding Use(`E`). There are 7 options to choose from.  
     - `Open -` This opens the inventory where guns and ammo can be placed. This includes all weapons that fire Pistol Bullets, 5.56 Rifle Ammo or 12 Gauge Buckshot as well as the Nailgun and Trumpet. 
     - `Peacekeeper mode -` It will never attack an authorized player. It won't attack an unauthorized player unless they become aggressive. This mode also disables players from being able to control them from a Computer Station or the Rust+ app.
     - `Attack All -`  Is the default mode and can only be selected if the turret was placed into Peacekeeper mode. This mode is required for remote control.
@@ -2406,6 +2406,19 @@ Decay Time           | 8 hours
 
 Notes:
 
+- When placing them down, they will have a default of 1ml.
+- The base level collection rate is 8ml per minute but depending on the weather and biome, collection rates will change. There are 2 weather conditions that contribute to the collection rate, they are fog level and rain level. The closer to 0 they are, the closer the collection rate will be to the default of 8ml per minute.
+- For every 0.1 increase of Rain Level, the collection rate increases by:
+    - Desert - 15ml per minute
+    - Temperate - 30ml per minute 
+    - Arctic - 0ml per minute
+- For every 0.1 increase in the Fog Level, the collection rate increases by:
+    - Desert - 6ml per minute
+    - Temperate - 6ml per minute 
+    - Arctic - 6ml per minute
+- The math:
+    - Biome - Temperate = 1, Desert = 0.5, Arctic = 0
+    - `Collection Rate = 8ml + (Rain Level × (300ml × Biome)) + (Fog Level × 60ml)`
 - Requires an area on the ground roughly equal to a 2x2
 - Can be built inside, but on the ground, with a ceiling at 1.5 floors.
 - It will passively collect water from the air
@@ -2437,6 +2450,19 @@ Decay Time           | 8 hours
 
 Notes:
 
+- When placing them down, they will have a default of 1ml.
+- The base level collection rate is 3ml per minute but depending on the weather and biome, collection rates will change. There are 2 weather conditions that contribute to the collection rate, they are fog level and rain level. The closer to 0 they are, the closer the collection rate will be to the default of 3ml per minute.
+- For every 0.1 increase of Rain Level, the collection rate increases by:
+    - Desert - 5ml per minute
+    - Temperate - 10ml per minute 
+    - Arctic - 0ml per minute
+- For every 0.1 increase in the Fog Level, the collection rate increases by:
+    - Desert - 2ml per minute
+    - Temperate - 2ml per minute 
+    - Arctic - 2ml per minute
+- The math:
+    - Biome - Temperate = 1, Desert = 0.5, Arctic = 0
+    - `Collection Rate = 2ml + (Rain Level × (100ml × Biome)) + (Fog Level × 20ml)`
 - Can be placed on the ground and floors.
 - You can place them inside and use floor frames with floor grills above
   them but requires 3.5 floors above before you can place a ceiling.
@@ -2503,8 +2529,8 @@ Notes:
 - It will pump water out of itself to water a barrel, against gravity
   with no power required.
 - It is a pump so it will counter gravity and pump water to an upper
-  floor
-- Can be placed under wooden foundations
+  floor.
+- Can be placed under wooden foundations.
 
 ---
 
@@ -2536,7 +2562,7 @@ Notes:
 - Must be placed on a floor/foundation or the ground.
 - Blocks water components Active Usage downstream.
 - The smallest perfect salt pump to purifier ratio is 125:17, 1 purifier
-can handle over 7 pumps but can't handle 8
+can handle over 7 pumps but can't handle 8.
 
 ---
 
@@ -2560,7 +2586,7 @@ Despawn Time        | 40 minutes
 
 Notes:
 
-- Requires a car chassis and takes up 2 slots
+- Requires a car chassis and takes up 2 slots.
 - It is recommended you store the car on a Modular Car Lift to avoid
   decay.
 
@@ -2587,10 +2613,10 @@ Despawn Time        | 20 minutes
 
 Notes:
 
-- Can be placed on all angled surfaces and the ground
+- Can be placed on all angled surfaces and the ground.
 - Does not need electricity if you are using gravity to bring water down
   floors but will require electricity to push water up floors.
-- You do not need TC auth to manually operate
+- You do not need TC auth to manually operate.
 - As long as electricity is applied to Toggle, the switch will turn on.
   When power is removed, the switch turns off. No power needs to be
   applied to Pump Power for this action.
@@ -3879,7 +3905,7 @@ When working with solar panels for a primary source of power, it is very helpful
 To figure out how much capacity is needed to support a circuit of a specific load, use the following equation:  
 `O × τ = rWm`
 
-To figure out how many pairs of panels are needed to support a specific amount to power, use the following equation:
+To figure out how many pairs of panels are needed to support a specific amount to power, use the following equation:  
 `rWm ÷ 940rWm = Solar Panel pairs`
 
 > Example: A circuit with an active load of 64rW.  
@@ -3890,7 +3916,7 @@ Therefore a circuit needing a constant 64rW over the course of 1 hour will consu
 `3840rWm ÷ 940rW = 4.08`  
 Therefore 5 pairs of panels are needed to capture enough rWm to cover the power cost of a 64rW circuit. 2 solar panels make a pair, so 10 panels total.
 
-To figure out how much time a given capacity will run for, outputting a specific amount of power, we use the following equations:
+To figure out how much time a given capacity will run for, outputting a specific amount of power, we use the following equations:  
 `Seconds: (rWm ÷ O = M) × τ = S`  
 `Minutes: rWm ÷ O = M`  
 `Hours: (rWm ÷ O = M) ÷ τ = H`
@@ -4200,22 +4226,20 @@ your circuit is currently consuming, but it’s not always the case. Even
 when some components are turned off and not consuming power, they can
 still add to a battery's Active Usage. In this next picture, even though
 the Auto Turret is not consuming power, it is still adding to the
-battery’s
+battery’s Active Usage and in fact, it will actually consume 14 power.  
 
 ![](images/turned-off-usage.png)
 
-Active Usage and in fact, it will actually consume 14 power. In this
-case even though the AND Switch is not allowing power to pass through,
+In this case even though the AND Switch is not allowing power to pass through,
 it does not have the ability to hide the Active Usage from inactive
 components downstream or past it. In this next picture, if we use
-different components to achieve the same outcome, we can hide
+different components to achieve the same outcome, we can hide the Auto Turret’s Active Usage from the battery when it is not consuming
+power.  
 
 ![](images/hide-active-usage.png)
 
-the Auto Turret’s Active Usage from the battery when it is not consuming
-power. This setup reduces the Active Usage all the way to 6. When
-active, we will get an Active Usage of 16
-but it will actually consume 18.  
+This setup reduces the Active Usage all the way to 6. When active, we will get an Active Usage of 16 but it will actually consume 18.  
+
 Components like Switches, the Blocker, Timer and RF Transmitter all
 have the ability to hide a component's Active Usage from batteries when
 not passing power through.
@@ -4237,7 +4261,8 @@ how a Boom Box that is powered from Branch Out, but using a Switch to
 Toggle Play on and off, is registering 10 Active Usage for the Branch
 Out, 1 for the Switch and 10 for the Boom Box. If we do the same thing,
 but with the Splitter, we dont have this issue because the Splitter
-controls its power flow DYNAMICALLY.
+controls its power flow DYNAMICALLY.  
+
 ![](images/branch-vs-splitter-active-usage-onoff.png)
 
 This is helpful in situations where you have a few small 
@@ -4245,7 +4270,8 @@ circuits where you dont want to force an Active Usage when the circuits
 are off. Now because the Electrical Branch only registers the Branch Out
 value as Active Usage and 0 for itself, we can trick batteries into
 thinking less power is being consumed. In the next picture, we have some
-examples using Auto Turrets.
+examples using Auto Turrets.  
+
 ![](images/active-usage-vs-pwr-consuption-turret.png)
 
 Above, we have 1 example using 8 Electrical Branches to power 9 Auto
@@ -4301,11 +4327,7 @@ last 4 hours regardless, try to use as much of that 200 as possible to
 make it worth combining the batteries. Otherwise, split the circuit, run
 Inlines and minimize the Active Usage.
 
-Now, having said you want to consume as little power as possible to
-achieve the desired outcome when using a bypass battery backup, there
-are times when it is worth consuming more for a bit of added security.
-In the next picture, Ive used medium batteries for the demonstration,
-and they are root combined powering some Auto Turrets.
+Now having said consuming less power when using a bypass backup is more important, there are times when it is worth consuming more for a bit of added security. In the next picture, for demonstration only, medium batteries have been root combined to power some Auto Turrets.
 
 ![](images/power-bus-security-compared-turrets.png)
 
@@ -4314,7 +4336,7 @@ power but in the event 1 battery is destroyed, top right, some turrets
 stay active. The bottom groups use Splitters. While they do consume less
 power, in the event a battery is lost, very bottom, all the turrets go
 offline. You will need to weigh the pros and cons and decide what is
-right to fit your needs. Read more in What is a Power Bus? 
+right to fit your needs. Read more in [What is a Power Bus?](powerdistribution.html#what-is-a-power-bus)   
 
 # Parallel vs Series
 Lets start by learning what Parallel and Series means in real life. Connecting batteries in series increases voltage and connecting batteries in parallel increases capacity.   
@@ -4322,8 +4344,8 @@ Lets start by learning what Parallel and Series means in real life. Connecting b
 V = Volts (power)  
 Ah = Amp hour (capacity)  
 
-If we wire two 6V@10Ah batteries in parallel, we will still only have 6V but have 20Ah of capacity.  
 If we wire two 6V@10Ah batteries in series, we will now have twice the power at 12V but with only 10Ah of capacity.  
+If we wire two 6V@10Ah batteries in parallel, we will still only have 6V but have 20Ah of capacity.  
 
 ![](images/paravssers.png)
 
@@ -4954,6 +4976,8 @@ Needs work
 [Close All Doors with a Red Button](https://www.rustrician.io/?circuit=0101564d3656de1f3bedb87ab2625788)
 
 [Configure Siphon](https://www.rustrician.io/?circuit=e7c8a8ccc9ce2da68095cca2560da002)
+
+[Dance Dance Revolution](https://www.rustrician.io/?circuit=e3b55e828700c9c44198bf34d4ccd284)
 
 [Delay Timer](https://www.rustrician.io/?circuit=fa8ba5c2e3974185c6f01273eab653f1)
 

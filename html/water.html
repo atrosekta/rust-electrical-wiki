@@ -1184,6 +1184,31 @@ Underwater Lab Elite Crate, Underwater Lab Yellow Crate</td>
 </table>
 <p>Notes:</p>
 <ul>
+<li>When placing them down, they will have a default of 1ml.</li>
+<li>The base level collection rate is 8ml per minute but depending on
+the weather and biome, collection rates will change. There are 2 weather
+conditions that contribute to the collection rate, they are fog level
+and rain level. The closer to 0 they are, the closer the collection rate
+will be to the default of 8ml per minute.</li>
+<li>For every 0.1 increase of Rain Level, the collection rate increases
+by:
+<ul>
+<li>Desert - 15ml per minute</li>
+<li>Temperate - 30ml per minute</li>
+<li>Arctic - 0ml per minute</li>
+</ul></li>
+<li>For every 0.1 increase in the Fog Level, the collection rate
+increases by:
+<ul>
+<li>Desert - 6ml per minute</li>
+<li>Temperate - 6ml per minute</li>
+<li>Arctic - 6ml per minute</li>
+</ul></li>
+<li>The math:
+<ul>
+<li>Biome - Temperate = 1, Desert = 0.5, Arctic = 0</li>
+<li><code>Collection Rate = 8ml + (Rain Level × (300ml × Biome)) + (Fog Level × 60ml)</code></li>
+</ul></li>
 <li>Requires an area on the ground roughly equal to a 2x2</li>
 <li>Can be built inside, but on the ground, with a ceiling at 1.5
 floors.</li>
@@ -1269,6 +1294,31 @@ Crate</td>
 </table>
 <p>Notes:</p>
 <ul>
+<li>When placing them down, they will have a default of 1ml.</li>
+<li>The base level collection rate is 3ml per minute but depending on
+the weather and biome, collection rates will change. There are 2 weather
+conditions that contribute to the collection rate, they are fog level
+and rain level. The closer to 0 they are, the closer the collection rate
+will be to the default of 3ml per minute.</li>
+<li>For every 0.1 increase of Rain Level, the collection rate increases
+by:
+<ul>
+<li>Desert - 5ml per minute</li>
+<li>Temperate - 10ml per minute</li>
+<li>Arctic - 0ml per minute</li>
+</ul></li>
+<li>For every 0.1 increase in the Fog Level, the collection rate
+increases by:
+<ul>
+<li>Desert - 2ml per minute</li>
+<li>Temperate - 2ml per minute</li>
+<li>Arctic - 2ml per minute</li>
+</ul></li>
+<li>The math:
+<ul>
+<li>Biome - Temperate = 1, Desert = 0.5, Arctic = 0</li>
+<li><code>Collection Rate = 2ml + (Rain Level × (100ml × Biome)) + (Fog Level × 20ml)</code></li>
+</ul></li>
 <li>Can be placed on the ground and floors.</li>
 <li>You can place them inside and use floor frames with floor grills
 above them but requires 3.5 floors above before you can place a
@@ -1448,8 +1498,8 @@ ocean.</li>
 <li>It will pump water out of itself to water a barrel, against gravity
 with no power required.</li>
 <li>It is a pump so it will counter gravity and pump water to an upper
-floor</li>
-<li>Can be placed under wooden foundations</li>
+floor.</li>
+<li>Can be placed under wooden foundations.</li>
 </ul>
 <hr />
 <h1 id="powered-water-purifier"><a href="#powered-water-purifier"
@@ -1544,7 +1594,7 @@ freshwater.  </td>
 <li>Must be placed on a floor/foundation or the ground.</li>
 <li>Blocks water components Active Usage downstream.</li>
 <li>The smallest perfect salt pump to purifier ratio is 125:17, 1
-purifier can handle over 7 pumps but can’t handle 8</li>
+purifier can handle over 7 pumps but can’t handle 8.</li>
 </ul>
 <hr />
 <h1 id="fuel-tank-vehicle-module"><a href="#fuel-tank-vehicle-module"
@@ -1608,7 +1658,7 @@ src="images/image45.png" /></h1>
 </table>
 <p>Notes:</p>
 <ul>
-<li>Requires a car chassis and takes up 2 slots</li>
+<li>Requires a car chassis and takes up 2 slots.</li>
 <li>It is recommended you store the car on a Modular Car Lift to avoid
 decay.</li>
 </ul>
@@ -1686,10 +1736,10 @@ Crate</td>
 </table>
 <p>Notes:</p>
 <ul>
-<li>Can be placed on all angled surfaces and the ground</li>
+<li>Can be placed on all angled surfaces and the ground.</li>
 <li>Does not need electricity if you are using gravity to bring water
 down floors but will require electricity to push water up floors.</li>
-<li>You do not need TC auth to manually operate</li>
+<li>You do not need TC auth to manually operate.</li>
 <li>As long as electricity is applied to Toggle, the switch will turn
 on. When power is removed, the switch turns off. No power needs to be
 applied to Pump Power for this action.</li>
