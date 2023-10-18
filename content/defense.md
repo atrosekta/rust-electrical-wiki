@@ -61,27 +61,27 @@ Power Output        | 1rW
 Despawn Time        | 60 minutes
 
 Notes:
-- There is a limit of 12 active turrets in a 40 meter radius or 14 square foundation. The 13th turret will not turn on and will have a sparking animation on top of it. 
+- There is a limit of 12 active turrets in a 40 meter radius or 14 square foundation. The 13th turret will not turn on and will have a sparking animation on top of it.  
 - A player must be authorized to open the menu by looking at it and holding Use(`E`). There are 7 options to choose from.  
-    - `Open -` This opens the inventory where guns and ammo can be placed. This includes all weapons that fire Pistol Bullets, 5.56 Rifle Ammo or 12 Gauge Buckshot as well as the Nailgun and Trumpet. 
-    - `Peacekeeper mode -` It will never attack an authorized player. It won't attack an unauthorized player unless they become aggressive. This mode also disables players from being able to control them from a Computer Station or the Rust+ app.
+    - `Open -` This opens the inventory where guns and ammo can be placed. This includes all weapons that fire Pistol Bullets, 5.56 Rifle Ammo or 12 Gauge Buckshot as well as the Nailgun and Trumpet.  
+    - `Peacekeeper mode -` It will never attack an authorized player. It won't attack an unauthorized player unless they become aggressive. This mode also disables players from being able to control them from a Computer Station or the Rust+ app.  
     - `Attack All -`  Is the default mode and can only be selected if the turret was placed into Peacekeeper mode. This mode is required for remote control.
-    - `Rotate -` Rotates the turret by 180 degrees.
-    - `Authorize friend -` Search or select a player to authorize them. Once authorized, the turret will never shoot them.
+    - `Rotate -` Rotates the turret by 180 degrees.  
+    - `Authorize friend -` Search or select a player to authorize them. Once authorized, the turret will never shoot them.  
     - `Clear Authorization List -` Removes all players from being authorized.
     - `Deauthorize -` Removes the player selecting it from being authorized.
-    - `Set ID -` Naming the turret allows for player control. Give the turret a name, then enter that name into a Computer Station or the Rust+ app and take control. Move with the mouse and left click to shoot. Anyone can add the ID to any Computer Station and take control. Make the ID something other won’t guess and restrict access to any Computer Station with these IDs to trusted individuals only. 
-- There are 3 outputs:
-    - `Has Target` will pulse out 1rW if the turret takes damage and will release a constant 1rW if it locks a target.
-    - `Low Ammo` will start to output 1rW when there is 50 ammo or less. When it has no more ammo it will stop outputting power.
+    - `Set ID -` Naming the turret allows for player control. Give the turret a name, then enter that name into a Computer Station or the Rust+ app and take control. Move with the mouse and left click to shoot. Anyone can add the ID to any Computer Station and take control. Make the ID something other won’t guess and restrict access to any Computer Station with these IDs to trusted individuals only.  
+- There are 3 outputs:  
+    - `Has Target` will pulse out 1rW if the turret takes damage and will release a constant 1rW if it locks a target.  
+    - `Low Ammo` will start to output 1rW when there is 50 ammo or less. When it has no more ammo it will stop outputting power.  
     - `No Ammo` will output 1rW constantly when there is no ammo.
-- Range is 30 meters or 10 square foundations.
-- When controlled by a player from a Computer Station, the visual range is approximately 21 square foundations or 63 meters. 
-- Add the ID to the `Rust+` app to control the turret from outside the game. The player must disconnect from the server before remote access is allowed.
-- The turret has a 180 degree detection arch.
-- Must be placed on flat surfaces.
-- Try to place them in a way they cannot be baited and drained.
-- They can shoot through 2 layers of Chainlink Fence. 
+- Range is 30 meters or 10 square foundations.  
+- When controlled by a player from a Computer Station, the visual range is approximately 21 square foundations or 63 meters.   
+- Add the ID to the `Rust+` app to control the turret from outside the game. The player must disconnect from the server before remote access is allowed.  
+- The turret has a 180 degree detection arch.  
+- Must be placed on flat surfaces.  
+- Try to place them in a way they cannot be baited and drained.  
+- They can shoot through 2 layers of Chainlink Fence.  
 
 ---
 
