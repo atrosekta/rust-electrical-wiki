@@ -4989,6 +4989,8 @@ Needs work
 
 [Memory Cell Explained](https://www.rustrician.io/?circuit=b64e3a0f6f9d6d456ead9821abf9d7d7)
 
+[Morning Light Delay](https://www.rustrician.io/?circuit=c2d4d06371b08c0e63bb8ccf9e975049)
+
 [Nih Core](https://www.rustrician.io/?circuit=d131cf1233742ebd0acb8ebaaf3b9d1a)
 
 [Nih Core - 4 Large Batteries](https://www.rustrician.io/?circuit=60fc05f187614f131aa5565be42a6687)
