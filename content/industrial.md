@@ -168,6 +168,7 @@ Decay Time                | 96 hours
 Notes:  
 
 - If they are receiving power when the server reboots, it will remain in the same state power reboot.
+- If they are turned on and they lose power, when power is returned, they will still be on.
 - Can be turned on manually or by sending power to the “Turn on” input, or by a nearby Igniter.
 - Can be turned off manually or by sending power to the ‘Turn Off’ input. 
 - The furnace cannot be turned off with a Sprinkler.
