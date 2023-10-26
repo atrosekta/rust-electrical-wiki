@@ -1,6 +1,6 @@
 # The RUST Electrical Handbook
 
-*You are the []{#visitorcount}th visitor !*
+*You are visitor: []{#visitorcount}*
 
 A continually updated all inclusive guide to everything electrical in the game Rust. This handbook will include everything you need to find, craft, wire, and utilize different useful circuits in game. These designs have been curated from many community submissions into the simplest, cheapest, and most optimized versions possible.
 
