@@ -17,7 +17,7 @@ Hit Points         | 100
 Where To Find      | Requires a DLC purchase
 Inputs/Outputs     | Power, Toggle Play / Audio Out
 Active Usage       | 10 only when turned on \*
-Power Consumption  | 1-9rW or 10rW when using the Audio Out connection
+Power Consumption  | 1rW or 10rW when using the Audio Out connection
 Power Output       | Input power minus 10rW
 Despawn Time       | 5 minutes
 Decay Time         | 96 hours

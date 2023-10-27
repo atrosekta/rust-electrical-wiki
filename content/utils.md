@@ -55,7 +55,7 @@ Where To Buy        | Outpost for 50 Scrap
 Where To Find       | Barrel, Crate, Primitive Crate, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
 Inputs/Outputs      | Power In
 Active Usage        | 2
-Power Consumption   | 2rW
+Power Consumption   | 1rW
 Despawn Time        | 5 minutes
 
 Notes:
