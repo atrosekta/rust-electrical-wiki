@@ -60,7 +60,7 @@ Notes:
 
 - Can only be placed on vertical surfaces.
 - Will generate 2rW for 0.25 seconds when pressed.
-- When the button is supplied with power, it will pulse 2rW first then output the incoming power.
+- When the button is supplied with power, it will pulse 2rW first then output the incoming power for 1 second.
 - Stays pressed for 5 seconds and cannot be changed.
 
 ---
