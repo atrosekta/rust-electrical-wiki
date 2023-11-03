@@ -51,12 +51,12 @@ Decay Time           | 8 hours
 Notes:
 
 - When placing them down, they will have a default of 1ml.
-- The base level collection rate is 8ml per minute but depending on the weather and biome, collection rates will change. There are 2 weather conditions that contribute to the collection rate, they are fog level and rain level. The closer to 0 they are, the closer the collection rate will be to the default of 8ml per minute.
-- For every 0.1 increase of Rain Level, the collection rate increases by:
+- The base level collection rate is 8ml per minute but depending on the weather and biome, collection rates will change. There are 2 weather conditions that contribute to the collection rate, they are **Fog Level** and **Rain Level**. The closer to 0 they are, the closer the collection rate will be to the default of 8ml per minute.
+- For every 0.1 increase of **Rain Level**, the collection rate increases by:
     - Desert - 15ml per minute
     - Temperate - 30ml per minute 
     - Arctic - 0ml per minute
-- For every 0.1 increase in the Fog Level, the collection rate increases by:
+- For every 0.1 increase in the **Fog Level**, the collection rate increases by:
     - Desert - 6ml per minute
     - Temperate - 6ml per minute 
     - Arctic - 6ml per minute
@@ -86,7 +86,7 @@ Research Table Cost  | 20 Scrap
 Hit Points           | 200
 Where To Find        | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
 Water Inputs/Outputs | Water In / Water Out
-Collection Rate      | 4mL/1min
+Collection Rate      | 3mL/1min
 Water Output         | Up to 6mL/second
 Capacity             | 10,000 mL
 Despawn Time         | 5 minutes
@@ -95,12 +95,12 @@ Decay Time           | 8 hours
 Notes:
 
 - When placing them down, they will have a default of 1ml.
-- The base level collection rate is 3ml per minute but depending on the weather and biome, collection rates will change. There are 2 weather conditions that contribute to the collection rate, they are fog level and rain level. The closer to 0 they are, the closer the collection rate will be to the default of 3ml per minute.
-- For every 0.1 increase of Rain Level, the collection rate increases by:
+- The base level collection rate is 3ml per minute but depending on the weather and biome, collection rates will change. There are 2 weather conditions that contribute to the collection rate, they are **Fog Level** and **Rain Level**. The closer to 0 they are, the closer the collection rate will be to the default of 3ml per minute.
+- For every 0.1 increase of **Rain Level**, the collection rate increases by:
     - Desert - 5ml per minute
     - Temperate - 10ml per minute 
     - Arctic - 0ml per minute
-- For every 0.1 increase in the Fog Level, the collection rate increases by:
+- For every 0.1 increase in the **Fog Level**, the collection rate increases by:
     - Desert - 2ml per minute
     - Temperate - 2ml per minute 
     - Arctic - 2ml per minute
