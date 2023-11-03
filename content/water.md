@@ -61,7 +61,7 @@ Notes:
     - Temperate - 6ml per minute 
     - Arctic - 6ml per minute
 - The math:
-    - Biome - Temperate = 1, Desert = 0.5, Arctic = 0
+    - **Biome**: Temperate = 1, Desert = 0.5, Arctic = 0
     - `Collection Rate = 8ml + (Rain Level × (300ml × Biome)) + (Fog Level × 60ml)`
 - Requires an area on the ground roughly equal to a 2x2
 - Can be built inside, but on the ground, with a ceiling at 1.5 floors.
@@ -105,7 +105,7 @@ Notes:
     - Temperate - 2ml per minute 
     - Arctic - 2ml per minute
 - The math:
-    - Biome - Temperate = 1, Desert = 0.5, Arctic = 0
+    - **Biome**: Temperate = 1, Desert = 0.5, Arctic = 0
     - `Collection Rate = 2ml + (Rain Level × (100ml × Biome)) + (Fog Level × 20ml)`
 - Can be placed on the ground and floors.
 - You can place them inside and use floor frames with floor grills above

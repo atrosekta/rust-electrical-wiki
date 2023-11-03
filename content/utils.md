@@ -260,6 +260,33 @@ Decay Time          | 96 hours
 
 Notes:
 
+- When power is applied to the Unnamed Input the speaker will turn on.
+- The sound will travel approximately 14 foundations or 42ish meters.
+  Behind 1 wall the distance is reduced to approximately 11 foundations
+  or 33ish meters. Adding more walls does not reduce the distance the
+  sound will travel.
+
+---
+
+# Spooky Speaker![](images/image77.png)
+
+| | |  
+|-|---|  
+Item ID             | 1885488976
+Description         | A speaker making creepy and spooky sounds
+Crafting Recipe     | 400 Wood, 100 Metal Fragments, 20 Cloth
+Recycles Into       | 200 Wood, 50 Metal Fragments, 10 Cloth
+Stack Size          | 10
+Hit Points          | 100
+Where To Find       | Requires a Steam item purchased from the market
+Inputs/Outputs      | Turn On, Turn Off
+Active Usage        | 1
+Power Consumption   | 0rW
+Despawn Time        | 5 minutes
+
+Notes:
+
+- Sending power to Turn On will turn the speaker on. Sending power to Turn Off will turn the speaker off. The speaker will only react to the input that last receives power.
 - The sound will travel approximately 14 foundations or 42ish meters.
   Behind 1 wall the distance is reduced to approximately 11 foundations
   or 33ish meters. Adding more walls does not reduce the distance the
