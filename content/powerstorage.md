@@ -460,7 +460,7 @@ Going beyond 2 batteries and tripling the capacity, things get a little more com
 
 # Nih Capacitor
 
-**( will probably be fixed soon and wont work anymore )**
+**( This has been patched out but remains for the historical record )**
 
 The Nih Capacitor was first established by Nih, with assistance from SwiftCoyote, on September 11, 2022.
 A Capacitor is a set of components that accumulate power, much like rechargeable batteries.

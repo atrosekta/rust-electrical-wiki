@@ -48,7 +48,7 @@ Capacity             | 50,000 mL
 Despawn Time         | 20 minutes
 Decay Time           | 8 hours
 
-Notes:
+Notes: There was a buff added on the 2nd of November 2023 that has not been tested
 
 - When placing them down, they will have a default of 1ml.
 - The base level collection rate is 8ml per minute but depending on the weather and biome, collection rates will change. There are 2 weather conditions that contribute to the collection rate, they are **Fog Level** and **Rain Level**. The closer to 0 they are, the closer the collection rate will be to the default of 8ml per minute.
@@ -92,7 +92,7 @@ Capacity             | 10,000 mL
 Despawn Time         | 5 minutes
 Decay Time           | 8 hours
 
-Notes:
+Notes: There was a buff added on the 2nd of November 2023 that has not been tested
 
 - When placing them down, they will have a default of 1ml.
 - The base level collection rate is 3ml per minute but depending on the weather and biome, collection rates will change. There are 2 weather conditions that contribute to the collection rate, they are **Fog Level** and **Rain Level**. The closer to 0 they are, the closer the collection rate will be to the default of 3ml per minute.
