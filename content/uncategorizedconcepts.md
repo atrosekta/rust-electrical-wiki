@@ -1,6 +1,10 @@
 # Uncategorized Concepts
 
 # Side Inputs
+
+The side ports have been changed to toggles as of November 2 2023. What remains below is for the historical record.  
+.......................................................................  
+
 They are not bugged or broken, you just don't know how to use them yet.
 
 It is not uncommon for people to think of ‘Switch On’ and ‘Switch Off’
