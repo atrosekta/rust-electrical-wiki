@@ -2069,6 +2069,33 @@ Decay Time          | 96 hours
 
 Notes:
 
+- When power is applied to the Unnamed Input the speaker will turn on.
+- The sound will travel approximately 14 foundations or 42ish meters.
+  Behind 1 wall the distance is reduced to approximately 11 foundations
+  or 33ish meters. Adding more walls does not reduce the distance the
+  sound will travel.
+
+---
+
+# Spooky Speaker![](images/image77.png)
+
+| | |  
+|-|---|  
+Item ID             | 1885488976
+Description         | A speaker making creepy and spooky sounds
+Crafting Recipe     | 400 Wood, 100 Metal Fragments, 20 Cloth
+Recycles Into       | 200 Wood, 50 Metal Fragments, 10 Cloth
+Stack Size          | 10
+Hit Points          | 100
+Where To Find       | Requires a Steam item purchased from the market
+Inputs/Outputs      | Turn On, Turn Off
+Active Usage        | 1
+Power Consumption   | 0rW
+Despawn Time        | 5 minutes
+
+Notes:
+
+- Sending power to Turn On will turn the speaker on. Sending power to Turn Off will turn the speaker off. The speaker will only react to the input that last receives power.
 - The sound will travel approximately 14 foundations or 42ish meters.
   Behind 1 wall the distance is reduced to approximately 11 foundations
   or 33ish meters. Adding more walls does not reduce the distance the
@@ -2404,20 +2431,20 @@ Capacity             | 50,000 mL
 Despawn Time         | 20 minutes
 Decay Time           | 8 hours
 
-Notes:
+Notes: There was a buff added on the 2nd of November 2023 that has not been tested
 
 - When placing them down, they will have a default of 1ml.
-- The base level collection rate is 8ml per minute but depending on the weather and biome, collection rates will change. There are 2 weather conditions that contribute to the collection rate, they are fog level and rain level. The closer to 0 they are, the closer the collection rate will be to the default of 8ml per minute.
-- For every 0.1 increase of Rain Level, the collection rate increases by:
+- The base level collection rate is 8ml per minute but depending on the weather and biome, collection rates will change. There are 2 weather conditions that contribute to the collection rate, they are **Fog Level** and **Rain Level**. The closer to 0 they are, the closer the collection rate will be to the default of 8ml per minute.
+- For every 0.1 increase of **Rain Level**, the collection rate increases by:
     - Desert - 15ml per minute
     - Temperate - 30ml per minute 
     - Arctic - 0ml per minute
-- For every 0.1 increase in the Fog Level, the collection rate increases by:
+- For every 0.1 increase in the **Fog Level**, the collection rate increases by:
     - Desert - 6ml per minute
     - Temperate - 6ml per minute 
     - Arctic - 6ml per minute
 - The math:
-    - Biome - Temperate = 1, Desert = 0.5, Arctic = 0
+    - **Biome**: Temperate = 1, Desert = 0.5, Arctic = 0
     - `Collection Rate = 8ml + (Rain Level × (300ml × Biome)) + (Fog Level × 60ml)`
 - Requires an area on the ground roughly equal to a 2x2
 - Can be built inside, but on the ground, with a ceiling at 1.5 floors.
@@ -2442,26 +2469,26 @@ Research Table Cost  | 20 Scrap
 Hit Points           | 200
 Where To Find        | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
 Water Inputs/Outputs | Water In / Water Out
-Collection Rate      | 4mL/1min
+Collection Rate      | 3mL/1min
 Water Output         | Up to 6mL/second
 Capacity             | 10,000 mL
 Despawn Time         | 5 minutes
 Decay Time           | 8 hours
 
-Notes:
+Notes: There was a buff added on the 2nd of November 2023 that has not been tested
 
 - When placing them down, they will have a default of 1ml.
-- The base level collection rate is 3ml per minute but depending on the weather and biome, collection rates will change. There are 2 weather conditions that contribute to the collection rate, they are fog level and rain level. The closer to 0 they are, the closer the collection rate will be to the default of 3ml per minute.
-- For every 0.1 increase of Rain Level, the collection rate increases by:
+- The base level collection rate is 3ml per minute but depending on the weather and biome, collection rates will change. There are 2 weather conditions that contribute to the collection rate, they are **Fog Level** and **Rain Level**. The closer to 0 they are, the closer the collection rate will be to the default of 3ml per minute.
+- For every 0.1 increase of **Rain Level**, the collection rate increases by:
     - Desert - 5ml per minute
     - Temperate - 10ml per minute 
     - Arctic - 0ml per minute
-- For every 0.1 increase in the Fog Level, the collection rate increases by:
+- For every 0.1 increase in the **Fog Level**, the collection rate increases by:
     - Desert - 2ml per minute
     - Temperate - 2ml per minute 
     - Arctic - 2ml per minute
 - The math:
-    - Biome - Temperate = 1, Desert = 0.5, Arctic = 0
+    - **Biome**: Temperate = 1, Desert = 0.5, Arctic = 0
     - `Collection Rate = 2ml + (Rain Level × (100ml × Biome)) + (Fog Level × 20ml)`
 - Can be placed on the ground and floors.
 - You can place them inside and use floor frames with floor grills above
@@ -3981,17 +4008,17 @@ Deciding which backup to use really comes down to preference. They each have the
 
 This is when the power source is directly connected to a circuit. If the power source is destroyed or stops producing power for any reason, the circuit will go offline. This method is a great solution for short term uses like getting some auto turrets asap for your clan or getting some water pumps online early for a berry farm. While this method is good for a very short time to get an early game advantage, it is not recommended to rely on this method for any length of time. Introducing batteries to a circuit to create backup power is more suited for long term use.
 
-Pros:
+**Things to note**:
+ - Easy to wire
+ - Uses minimal components
+ - Provides an early game advantage
+ - If the power source is destroyed, the circuit will turn off
+ - There is no backup power
+ - Short term use only
 
-- Easy to wire
-- Minimal components
-- Early game advantage
+**Recommended reading**:
+ - This is not a battery backup but worth mentioning. Check out the rest of this section.
 
-Cons:
-
-- If power source is destroyed the components turn off
-- No backup power
-- Short term use only
 
 ---
 
@@ -4011,23 +4038,19 @@ One of the biggest benefits of an Inline backup is when the power source stops m
 
 It is recommended to start charging batteries as soon as possible. Let them charge to a minimum of 3000rWm before letting them power anything. The reason for this is if a Wind Turbine is used, the wind could be entering a slow period. When using Solar Panels, night comes once an hour. Having some capacity saved up will help get through the slow or no times.
 
-Recommended reading:
+**Things to note**:
+ - Simple to make with minimal electrical components
+ - Easy for decentralizing having different circuits with different power sources/backups
+ - There is no flicker of power because there is no switching between sources
+ - It does require an understanding of Active Usage to take full advantage of
+ - It is not meant to be used with root combined batteries. Requires more power to be produced making it an inefficient use of power
+ - If the battery is destroyed, the circuit will turn off
 
-- [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#battery-active-usage-vs-actual-power-consumed)
-- [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)
-- [ What is a Power Bus? ](powerdistribution.html#what-is-a-power-bus)
+**Recommended Reading**:
+ - [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#battery-active-usage-vs-actual-power-consumed)
+ - [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)
+ - [ What is a Power Bus? ](powerdistribution.html#what-is-a-power-bus)
 
-
-Pros:
-
-- Simple to make with minimal electrical components
-- Easy for decentralizing circuits
-- No flicker (circuits turning off and on like a bypass backup)
-
-Cons:
-
-- Inefficient use of power at large scale
-- If the battery is destroyed, power from the source is wasted
 
 
 ---
@@ -4043,22 +4066,18 @@ The way this system works is by sending power to a Memory Cell first. The left o
 
 The biggest advantage of this backup system is the ability to continue to send power to the circuit even after the battery is destroyed, no matter how much power is coming in. It is recommended to let the battery charge to a minimum of 3000rWm before letting it power anything providing a buffer when entering a low power protection period of time.  
 
-Recommended Reading:  
+**Things to note**:
+ - Simple to make with minimal electrical components
+ - Easy for decentralizing having different circuits with different power sources/backups
+ - There is no flicker of power because there is no switching between sources unless the battery is destroyed
+ - It does require an understanding of Active Usage to take full advantage of
+ - It is not meant to be used with root combined batteries. Requires more power to be produced making it an inefficient use of power
+ - If the battery is destroyed, the circuit will switch over to the power source no matter how much power is coming in
 
-- [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#battery-active-usage-vs-actual-power-consumed)
-- [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)
-- [ What is a Power Bus? ](powerdistribution.html#what-is-a-power-bus)
-
-
-Pros:  
-
-- Minimal electrical components  
-- Has a built in backup  
-- Easy for decentralizing circuits  
-
-Cons:
-
-- Inefficient use of power at large scale  
+**Recommended Reading**:  
+ - [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#battery-active-usage-vs-actual-power-consumed)
+ - [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)
+ - [ What is a Power Bus? ](powerdistribution.html#what-is-a-power-bus)
   
 ![](images/WLmFo7pv2.png)
 Check out the [demo here](https://streamable.com/ugrbkl)
@@ -4082,17 +4101,20 @@ Electrical Branch or block the battery. The battery takes over powering the circ
 
 While considered out of date today for use as a primary battery backup system, with some small modifications, it is useful as a secondary battery backup which we talk about in its own section. 
 
+**Things to note**:
+ - Simple to make with minimal electrical components. Having understanding of the components and Power Flow is advised
+ - Easy for centralizing all circuits to a single power source/backup but is limited in size needing an understanding of Short Circuit/Max Depth
+ - Is an inefficient use of power when running on battery because it does not take advantage of charging and discharging at the same time
+ - Without modification there is a flicker of power when switching between sources
+ - It does require an understanding of Active Usage and Power Consumption to take full advantage of
+ - It can be used with root combined batteries because this circuit is not designed for Active Usage 
+ - If the battery is destroyed, the circuit will only switch over to the power source if enough power is coming in
 
-Pros:
-
-- Easy to understand
-- Simple to build
-
-Cons:
-
-- Wasteful when using battery power
-- Ignores the battery update to allow charging and discharging at the
-  same time
+**Recommended Reading**:
+- [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#battery-active-usage-vs-actual-power-consumed)
+- [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)
+- [ Circuit Delay and Power Flow ](powerdistribution.html#circuit-delay-and-power-flow)
+- [ What is a Power Bus? ](powerdistribution.html#what-is-a-power-bus)
 
 ---
 
@@ -4134,24 +4156,21 @@ main power and battery power, it is because 1 of 2 issues.
 
 ![](images/solution3.png)
 
+**Things to note**:
+ - Added complexity needing multiple components to make requiring an understanding of the components and Power Flow
+ - Great for centralizing all circuits to a single power source/backup but is limited in size needing an understanding of Short Circuit/Max Depth
+ - Is an efficient use of power when running on battery because it takes advantage of charging and discharging at the same time
+ - Without modification there is a flicker of power when switching between sources
+ - It does require an understanding of Active Usage and Power Consumption to take full advantage of
+ - It can be used with root combined batteries because this circuit is not designed for Active Usage 
+ - If the battery is destroyed, the circuit will only switch over to the power source if enough power is coming in
 
-Recommended reading:
 
+**Recommended Reading**:
 - [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#battery-active-usage-vs-actual-power-consumed)
 - [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)
 - [ Circuit Delay and Power Flow ](powerdistribution.html#circuit-delay-and-power-flow)
-
-Pros:
-
-- Less wasted electricity when on battery
-- Utilizes the battery’s ability to charge and discharge at the same
-  time
-
-Cons:
-
-- More components, more wiring.
-- Added complexity
-- Power flickers when changing states
+- [ What is a Power Bus? ](powerdistribution.html#what-is-a-power-bus)
 
 ---
 
@@ -4159,6 +4178,22 @@ Cons:
 ![](<images/BCN Core.png>)
 
 The BCN Core is a Battery Checked Nih Core.....
+
+**Things to note**:
+ - Added complexity needing even more components to make requiring an understanding of the components and Power Flow
+ - Great for centralizing all circuits to a single power source/backup but is limited in size needing an understanding of Short Circuit/Max Depth
+ - Is an efficient use of power when running on battery because it takes advantage of charging and discharging at the same time
+ - There is no flicker of power when switching between sources unless the batteries cannot supply enough power
+ - It does require an understanding of Active Usage and Power Consumption to take full advantage of
+ - It can be used with root combined batteries because this circuit is not designed for Active Usage 
+ - If the battery is destroyed, the circuit switch over to the power source even if not enough power is coming in
+
+
+**Recommended Reading**:
+- [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#battery-active-usage-vs-actual-power-consumed)
+- [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)
+- [ Circuit Delay and Power Flow ](powerdistribution.html#circuit-delay-and-power-flow)
+- [ What is a Power Bus? ](powerdistribution.html#what-is-a-power-bus)
 
 ---
 
@@ -4192,16 +4227,19 @@ The ability to bypass the battery means the amount of power each Electrical Bran
 
 Adding a recharging system can be done. It is just the OR/Blocker battery backup. The only drawback is the added power cost. If a player is OK with that, then go for it. 
 
-Pros:
+**Things to note**:
+ - Simple to make with only a few components
+ - Great for creating a redundant backup for a backup while adding a level of decentralization on a centralized circuit
+ - Is an efficient use of materials if the main backup is properly protected and secured
+ - There is a flicker of power when switching on to this backup
+ - It should not be used with root combined batteries because this circuit can be inserted anywhere in any circuit 
+ - The battery should be fully charged before getting installed
 
-- Uses only a few components so it's easy to build and wire
-- Can be efficient for redundant backup power
-- Can be inserted into almost any circuit at any point
-
-Cons:
-
-- Requires a pre charged battery
-- Added costs for redundancy  
+**Recommended Reading**:
+- [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#battery-active-usage-vs-actual-power-consumed)
+- [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)
+- [ Circuit Delay and Power Flow ](powerdistribution.html#circuit-delay-and-power-flow)
+- [ What is a Power Bus? ](powerdistribution.html#what-is-a-power-bus)  
 
 ---  
 
@@ -4380,7 +4418,7 @@ Going beyond 2 batteries and tripling the capacity, things get a little more com
 
 # Nih Capacitor
 
-**( will probably be fixed soon and wont work anymore )**
+**( This has been patched out with a hotfix on November 4th 2023 but remains here for the historical record )**
 
 The Nih Capacitor was first established by Nih, with assistance from SwiftCoyote, on September 11, 2022.
 A Capacitor is a set of components that accumulate power, much like rechargeable batteries.
@@ -4777,6 +4815,10 @@ That wraps up this section. I hope I have explained things in a way that makes s
 # Uncategorized Concepts
 
 # Side Inputs
+
+The side ports have been changed to toggles as of November 2 2023. What remains below is for the historical record.  
+.......................................................................  
+
 They are not bugged or broken, you just don't know how to use them yet.
 
 It is not uncommon for people to think of ‘Switch On’ and ‘Switch Off’
