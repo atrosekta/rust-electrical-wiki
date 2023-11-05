@@ -48,20 +48,20 @@ Capacity             | 50,000 mL
 Despawn Time         | 20 minutes
 Decay Time           | 8 hours
 
-Notes:
+Notes: There was a buff added on the 2nd of November 2023 that has not been tested
 
 - When placing them down, they will have a default of 1ml.
-- The base level collection rate is 8ml per minute but depending on the weather and biome, collection rates will change. There are 2 weather conditions that contribute to the collection rate, they are fog level and rain level. The closer to 0 they are, the closer the collection rate will be to the default of 8ml per minute.
-- For every 0.1 increase of Rain Level, the collection rate increases by:
+- The base level collection rate is 8ml per minute but depending on the weather and biome, collection rates will change. There are 2 weather conditions that contribute to the collection rate, they are **Fog Level** and **Rain Level**. The closer to 0 they are, the closer the collection rate will be to the default of 8ml per minute.
+- For every 0.1 increase of **Rain Level**, the collection rate increases by:
     - Desert - 15ml per minute
     - Temperate - 30ml per minute 
     - Arctic - 0ml per minute
-- For every 0.1 increase in the Fog Level, the collection rate increases by:
+- For every 0.1 increase in the **Fog Level**, the collection rate increases by:
     - Desert - 6ml per minute
     - Temperate - 6ml per minute 
     - Arctic - 6ml per minute
 - The math:
-    - Biome - Temperate = 1, Desert = 0.5, Arctic = 0
+    - **Biome**: Temperate = 1, Desert = 0.5, Arctic = 0
     - `Collection Rate = 8ml + (Rain Level × (300ml × Biome)) + (Fog Level × 60ml)`
 - Requires an area on the ground roughly equal to a 2x2
 - Can be built inside, but on the ground, with a ceiling at 1.5 floors.
@@ -86,26 +86,26 @@ Research Table Cost  | 20 Scrap
 Hit Points           | 200
 Where To Find        | Arctic Scientist, Cargo Ship Scientist, Crate, Excavator Scientist, Military Base Scientist, Oil Rig Scientist, Patrol Scientist, Sunken Chest, Tunnel Dweller, Underwater Dweller, Underwater Lab Blue Crate
 Water Inputs/Outputs | Water In / Water Out
-Collection Rate      | 4mL/1min
+Collection Rate      | 3mL/1min
 Water Output         | Up to 6mL/second
 Capacity             | 10,000 mL
 Despawn Time         | 5 minutes
 Decay Time           | 8 hours
 
-Notes:
+Notes: There was a buff added on the 2nd of November 2023 that has not been tested
 
 - When placing them down, they will have a default of 1ml.
-- The base level collection rate is 3ml per minute but depending on the weather and biome, collection rates will change. There are 2 weather conditions that contribute to the collection rate, they are fog level and rain level. The closer to 0 they are, the closer the collection rate will be to the default of 3ml per minute.
-- For every 0.1 increase of Rain Level, the collection rate increases by:
+- The base level collection rate is 3ml per minute but depending on the weather and biome, collection rates will change. There are 2 weather conditions that contribute to the collection rate, they are **Fog Level** and **Rain Level**. The closer to 0 they are, the closer the collection rate will be to the default of 3ml per minute.
+- For every 0.1 increase of **Rain Level**, the collection rate increases by:
     - Desert - 5ml per minute
     - Temperate - 10ml per minute 
     - Arctic - 0ml per minute
-- For every 0.1 increase in the Fog Level, the collection rate increases by:
+- For every 0.1 increase in the **Fog Level**, the collection rate increases by:
     - Desert - 2ml per minute
     - Temperate - 2ml per minute 
     - Arctic - 2ml per minute
 - The math:
-    - Biome - Temperate = 1, Desert = 0.5, Arctic = 0
+    - **Biome**: Temperate = 1, Desert = 0.5, Arctic = 0
     - `Collection Rate = 2ml + (Rain Level × (100ml × Biome)) + (Fog Level × 20ml)`
 - Can be placed on the ground and floors.
 - You can place them inside and use floor frames with floor grills above
