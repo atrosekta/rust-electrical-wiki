@@ -530,6 +530,11 @@
 			<span class='sidesign'></span>
 		</a>
 
+		<a class='sideline' href='utils.html#spooky-speaker'>
+			<span class='sidetext'> Spooky Speaker </span>
+			<span class='sidesign'></span>
+		</a>
+
 		<a class='sideline' href='utils.html#drone'>
 			<span class='sidetext'> Drone </span>
 			<span class='sidesign'></span>
@@ -1178,18 +1183,12 @@ good for a very short time to get an early game advantage, it is not
 recommended to rely on this method for any length of time. Introducing
 batteries to a circuit to create backup power is more suited for long
 term use.</p>
-<p>Pros:</p>
-<ul>
-<li>Easy to wire</li>
-<li>Minimal components</li>
-<li>Early game advantage</li>
-</ul>
-<p>Cons:</p>
-<ul>
-<li>If power source is destroyed the components turn off</li>
-<li>No backup power</li>
-<li>Short term use only</li>
-</ul>
+<p><strong>Things to note</strong>: - Easy to wire - Uses minimal
+components - Provides an early game advantage - If the power source is
+destroyed, the circuit will turn off - There is no backup power - Short
+term use only</p>
+<p><strong>Recommended reading</strong>: - This is not a battery backup
+but worth mentioning. Check out the rest of this section.</p>
 <hr />
 <h1 id="inline"><a href="#inline" class="anchor-link">*</a>Inline</h1>
 <p><img src="images/image26.png" /></p>
@@ -1231,27 +1230,21 @@ anything. The reason for this is if a Wind Turbine is used, the wind
 could be entering a slow period. When using Solar Panels, night comes
 once an hour. Having some capacity saved up will help get through the
 slow or no times.</p>
-<p>Recommended reading:</p>
-<ul>
-<li><a
+<p><strong>Things to note</strong>: - Simple to make with minimal
+electrical components - Easy for decentralizing having different
+circuits with different power sources/backups - There is no flicker of
+power because there is no switching between sources - It does require an
+understanding of Active Usage to take full advantage of - It is not
+meant to be used with root combined batteries. Requires more power to be
+produced making it an inefficient use of power - If the battery is
+destroyed, the circuit will turn off</p>
+<p><strong>Recommended Reading</strong>: - <a
 href="powerstorage.html#battery-active-usage-vs-actual-power-consumed">Battery
-Active Usage vs Actual Power Consumption</a></li>
-<li><a href="powerdistribution.html#short-circuit-max-depth">Short
-Circuit / Max Depth</a></li>
-<li><a href="powerdistribution.html#what-is-a-power-bus">What is a Power
-Bus?</a></li>
-</ul>
-<p>Pros:</p>
-<ul>
-<li>Simple to make with minimal electrical components</li>
-<li>Easy for decentralizing circuits</li>
-<li>No flicker (circuits turning off and on like a bypass backup)</li>
-</ul>
-<p>Cons:</p>
-<ul>
-<li>Inefficient use of power at large scale</li>
-<li>If the battery is destroyed, power from the source is wasted</li>
-</ul>
+Active Usage vs Actual Power Consumption</a> - <a
+href="powerdistribution.html#short-circuit-max-depth">Short Circuit /
+Max Depth</a> - <a
+href="powerdistribution.html#what-is-a-power-bus">What is a Power
+Bus?</a></p>
 <hr />
 <h1 id="the-kore"><a href="#the-kore" class="anchor-link">*</a>The
 Kore</h1>
@@ -1292,28 +1285,23 @@ destroyed, no matter how much power is coming in. It is recommended to
 let the battery charge to a minimum of 3000rWm before letting it power
 anything providing a buffer when entering a low power protection period
 of time.</p>
-<p>Recommended Reading:</p>
-<ul>
-<li><a
+<p><strong>Things to note</strong>: - Simple to make with minimal
+electrical components - Easy for decentralizing having different
+circuits with different power sources/backups - There is no flicker of
+power because there is no switching between sources unless the battery
+is destroyed - It does require an understanding of Active Usage to take
+full advantage of - It is not meant to be used with root combined
+batteries. Requires more power to be produced making it an inefficient
+use of power - If the battery is destroyed, the circuit will switch over
+to the power source no matter how much power is coming in</p>
+<p><strong>Recommended Reading</strong>:<br />
+- <a
 href="powerstorage.html#battery-active-usage-vs-actual-power-consumed">Battery
-Active Usage vs Actual Power Consumption</a></li>
-<li><a href="powerdistribution.html#short-circuit-max-depth">Short
-Circuit / Max Depth</a></li>
-<li><a href="powerdistribution.html#what-is-a-power-bus">What is a Power
-Bus?</a></li>
-</ul>
-<p>Pros:</p>
-<ul>
-<li>Minimal electrical components<br />
-</li>
-<li>Has a built in backup<br />
-</li>
-<li>Easy for decentralizing circuits</li>
-</ul>
-<p>Cons:</p>
-<ul>
-<li>Inefficient use of power at large scale</li>
-</ul>
+Active Usage vs Actual Power Consumption</a> - <a
+href="powerdistribution.html#short-circuit-max-depth">Short Circuit /
+Max Depth</a> - <a
+href="powerdistribution.html#what-is-a-power-bus">What is a Power
+Bus?</a></p>
 <p><img src="images/WLmFo7pv2.png" /> Check out the <a
 href="https://streamable.com/ugrbkl">demo here</a></p>
 <hr />
@@ -1355,17 +1343,27 @@ still there, it is just not being used, it is wasted.</p>
 <p>While considered out of date today for use as a primary battery
 backup system, with some small modifications, it is useful as a
 secondary battery backup which we talk about in its own section.</p>
-<p>Pros:</p>
-<ul>
-<li>Easy to understand</li>
-<li>Simple to build</li>
-</ul>
-<p>Cons:</p>
-<ul>
-<li>Wasteful when using battery power</li>
-<li>Ignores the battery update to allow charging and discharging at the
-same time</li>
-</ul>
+<p><strong>Things to note</strong>: - Simple to make with minimal
+electrical components. Having understanding of the components and Power
+Flow is advised - Easy for centralizing all circuits to a single power
+source/backup but is limited in size needing an understanding of Short
+Circuit/Max Depth - Is an inefficient use of power when running on
+battery because it does not take advantage of charging and discharging
+at the same time - Without modification there is a flicker of power when
+switching between sources - It does require an understanding of Active
+Usage and Power Consumption to take full advantage of - It can be used
+with root combined batteries because this circuit is not designed for
+Active Usage - If the battery is destroyed, the circuit will only switch
+over to the power source if enough power is coming in</p>
+<p><strong>Recommended Reading</strong>: - <a
+href="powerstorage.html#battery-active-usage-vs-actual-power-consumed">Battery
+Active Usage vs Actual Power Consumption</a> - <a
+href="powerdistribution.html#short-circuit-max-depth">Short Circuit /
+Max Depth</a> - <a
+href="powerdistribution.html#circuit-delay-and-power-flow">Circuit Delay
+and Power Flow</a> - <a
+href="powerdistribution.html#what-is-a-power-bus">What is a Power
+Bus?</a></p>
 <hr />
 <h1 id="nih-core"><a href="#nih-core" class="anchor-link">*</a>Nih
 Core</h1>
@@ -1442,34 +1440,54 @@ stable. The yellow wires represent circuits that do not need 100%
 stability. It could be deemed acceptable if these circuits turn off and
 on once in a while.</p>
 <p><img src="images/solution3.png" /></p>
-<p>Recommended reading:</p>
-<ul>
-<li><a
+<p><strong>Things to note</strong>: - Added complexity needing multiple
+components to make requiring an understanding of the components and
+Power Flow - Great for centralizing all circuits to a single power
+source/backup but is limited in size needing an understanding of Short
+Circuit/Max Depth - Is an efficient use of power when running on battery
+because it takes advantage of charging and discharging at the same time
+- Without modification there is a flicker of power when switching
+between sources - It does require an understanding of Active Usage and
+Power Consumption to take full advantage of - It can be used with root
+combined batteries because this circuit is not designed for Active Usage
+- If the battery is destroyed, the circuit will only switch over to the
+power source if enough power is coming in</p>
+<p><strong>Recommended Reading</strong>: - <a
 href="powerstorage.html#battery-active-usage-vs-actual-power-consumed">Battery
-Active Usage vs Actual Power Consumption</a></li>
-<li><a href="powerdistribution.html#short-circuit-max-depth">Short
-Circuit / Max Depth</a></li>
-<li><a
+Active Usage vs Actual Power Consumption</a> - <a
+href="powerdistribution.html#short-circuit-max-depth">Short Circuit /
+Max Depth</a> - <a
 href="powerdistribution.html#circuit-delay-and-power-flow">Circuit Delay
-and Power Flow</a></li>
-</ul>
-<p>Pros:</p>
-<ul>
-<li>Less wasted electricity when on battery</li>
-<li>Utilizes the battery’s ability to charge and discharge at the same
-time</li>
-</ul>
-<p>Cons:</p>
-<ul>
-<li>More components, more wiring.</li>
-<li>Added complexity</li>
-<li>Power flickers when changing states</li>
-</ul>
+and Power Flow</a> - <a
+href="powerdistribution.html#what-is-a-power-bus">What is a Power
+Bus?</a></p>
 <hr />
 <h1 id="bcn-core"><a href="#bcn-core" class="anchor-link">*</a>BCN
 Core</h1>
 <p><img src="images/BCN%20Core.png" /></p>
 <p>The BCN Core is a Battery Checked Nih Core…..</p>
+<p><strong>Things to note</strong>: - Added complexity needing even more
+components to make requiring an understanding of the components and
+Power Flow - Great for centralizing all circuits to a single power
+source/backup but is limited in size needing an understanding of Short
+Circuit/Max Depth - Is an efficient use of power when running on battery
+because it takes advantage of charging and discharging at the same time
+- There is no flicker of power when switching between sources unless the
+batteries cannot supply enough power - It does require an understanding
+of Active Usage and Power Consumption to take full advantage of - It can
+be used with root combined batteries because this circuit is not
+designed for Active Usage - If the battery is destroyed, the circuit
+switch over to the power source even if not enough power is coming
+in</p>
+<p><strong>Recommended Reading</strong>: - <a
+href="powerstorage.html#battery-active-usage-vs-actual-power-consumed">Battery
+Active Usage vs Actual Power Consumption</a> - <a
+href="powerdistribution.html#short-circuit-max-depth">Short Circuit /
+Max Depth</a> - <a
+href="powerdistribution.html#circuit-delay-and-power-flow">Circuit Delay
+and Power Flow</a> - <a
+href="powerdistribution.html#what-is-a-power-bus">What is a Power
+Bus?</a></p>
 <hr />
 <h1 id="secondary-battery-backup"><a href="#secondary-battery-backup"
 class="anchor-link">*</a>Secondary Battery Backup</h1>
@@ -1551,17 +1569,23 @@ main power source is completely destroyed.</p>
 <p>Adding a recharging system can be done. It is just the OR/Blocker
 battery backup. The only drawback is the added power cost. If a player
 is OK with that, then go for it.</p>
-<p>Pros:</p>
-<ul>
-<li>Uses only a few components so it’s easy to build and wire</li>
-<li>Can be efficient for redundant backup power</li>
-<li>Can be inserted into almost any circuit at any point</li>
-</ul>
-<p>Cons:</p>
-<ul>
-<li>Requires a pre charged battery</li>
-<li>Added costs for redundancy  </li>
-</ul>
+<p><strong>Things to note</strong>: - Simple to make with only a few
+components - Great for creating a redundant backup for a backup while
+adding a level of decentralization on a centralized circuit - Is an
+efficient use of materials if the main backup is properly protected and
+secured - There is a flicker of power when switching on to this backup -
+It should not be used with root combined batteries because this circuit
+can be inserted anywhere in any circuit - The battery should be fully
+charged before getting installed</p>
+<p><strong>Recommended Reading</strong>: - <a
+href="powerstorage.html#battery-active-usage-vs-actual-power-consumed">Battery
+Active Usage vs Actual Power Consumption</a> - <a
+href="powerdistribution.html#short-circuit-max-depth">Short Circuit /
+Max Depth</a> - <a
+href="powerdistribution.html#circuit-delay-and-power-flow">Circuit Delay
+and Power Flow</a> - <a
+href="powerdistribution.html#what-is-a-power-bus">What is a Power
+Bus?</a>  </p>
 <hr />
 <h1 id="battery-active-usage-vs-actual-power-consumed"><a
 href="#battery-active-usage-vs-actual-power-consumed"
@@ -1749,8 +1773,8 @@ little more complicated.</p>
 <hr />
 <h1 id="nih-capacitor"><a href="#nih-capacitor"
 class="anchor-link">*</a>Nih Capacitor</h1>
-<p><strong>( will probably be fixed soon and wont work anymore
-)</strong></p>
+<p><strong>( This has been patched out with a hotfix on November 4th
+2023 but remains here for the historical record )</strong></p>
 <p>The Nih Capacitor was first established by Nih, with assistance from
 SwiftCoyote, on September 11, 2022. A Capacitor is a set of components
 that accumulate power, much like rechargeable batteries. However, the
