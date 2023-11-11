@@ -64,7 +64,6 @@ Notes:
 - Every additional Storage Adapter added to a container will increase the number of stacks the conveyor can take by 12.
 - They can be placed on all surfaces and the ground.
 - Has the ability to be rotated using Reload(R).
-- `As of 7/16/2023,` stackable items that also have health, like Ladders, Solar Panels, Fuses for example, will brick the Conveyor if their health has been decreased and are unable to stack. The Conveyor will remain in a Filter Pass state because the item could be moved, but because it is unable to be placed in an existing stack, it wont move the item. Do not place these broken or damaged items in the sorting system. 
 - The term `Item` is specifically referring to the `Item ID` number. For example, the hazmat suit has different skins but they actually have different ID’s. This should not be an issue but some items will still be transferred even though the MAX item filter has been met. One example is the Arctic and Lumberjack suits. They are hazmats but even with a MAX filter of 1, 1 of each will be sent. The default skin will always fulfill the MAX requirement and block the remodeled versions, but the remodeled versions will not block each other. This issue also exists with the following items:
     - Hazmat Suit
     - Sky Lanterns
