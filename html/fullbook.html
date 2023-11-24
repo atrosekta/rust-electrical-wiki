@@ -7962,38 +7962,65 @@ Fail, Filter Pass</td>
 </table>
 <p>Notes:</p>
 <ul>
-<li>The 5 second rule. From turning on to the first transfer is 5
+<li><p>The 5 second rule. From turning on to the first transfer is 5
 seconds. Between each transfer is 5 seconds. This is often referred to
-as a tick.</li>
-<li>Anyone can turn them on or off but only players with TC
-authorization can access the filters.</li>
-<li>Has 3 outputs. A passthrough, Filter Pass and Filter Fail.</li>
-<li>It will display an image of the item being transferred as it
-transfers.</li>
-<li>2 Conveyors cannot be connected together in a row. They must be
-separated by a Storage Adapter.</li>
-<li>Outputs filter pass and fail, do not consume power. This is 1 free
-1rW.</li>
-<li><code>Filter Pass</code> will send out 1rW constantly when the
+as a tick.</p></li>
+<li><p>Anyone can turn them on or off but only players with TC
+authorization can access the filters.</p></li>
+<li><p>Has 3 outputs. A passthrough, Filter Pass and Filter
+Fail.</p></li>
+<li><p>It will display an image of the item being transferred as it
+transfers.</p></li>
+<li><p>2 Conveyors cannot be connected together in a row. They must be
+separated by a Storage Adapter.</p></li>
+<li><p>Outputs filter pass and fail, do not consume power. This is 1
+free 1rW.</p></li>
+<li><p><code>Filter Pass</code> will send out 1rW constantly when the
 conditions of the filter are met. It will continue to send power for 5
 seconds when the Conveyor will check to see if the conditions are still
 met. If they are, Filter Pass will continue to send out power. If the
-conditions are not met, it will stop sending out power.</li>
-<li><code>Filter Fail</code> will send out 1rW constantly when the
+conditions are not met, it will stop sending out power.</p></li>
+<li><p><code>Filter Fail</code> will send out 1rW constantly when the
 conditions of the filter are not met. It will continue to send power for
 5 seconds when the Conveyor will check to see if the conditions are
 still not being met. If they are still not met, Filter Fail will
 continue to send out power. If the conditions are met, it will stop
-sending out power.</li>
-<li>Both the Filter Pass and Fail outputs will allow the Active Usage of
-inactive components through. This means if the circuit is using an
+sending out power.</p></li>
+<li><p>Both the Filter Pass and Fail outputs will allow the Active Usage
+of inactive components through. This means if the circuit is using an
 Inline backup, the offline components will register Active Usage on the
-battery causing drain.</li>
-<li>There is a max of 12 items that can be filtered.</li>
-<li>You can filter by specific items or by a general filter groups (
-Ammo, Clothing, Components, Construction, Electrical, Food, Fun,
-Medical, Other, Resources, Tools, Traps, Weapons )</li>
-<li><code>Filter Item settings:</code>
+battery causing drain.</p></li>
+<li><p>There is a max of 12 items that can be filtered.</p></li>
+<li><p>You can filter by specific items or by a general filter groups (
+<strong>Ammo, Clothing, Components, Construction, Electrical, Food, Fun,
+Medical, Other, Resources, Tools, Traps, Weapons</strong> )</p></li>
+<li><p>The <code>Current Items</code> list can be copied from one
+conveyor to another using the <strong>Copy</strong> and
+<strong>Paste</strong> buttons. Holding Sprint(<code>Shift</code>) lets
+a user <strong><em>Copy(JSON)</em></strong>. This can then be pasted
+into a text file allowing a player to share their conveyor filters
+outside of the game and between servers. Hold Sprint(<code>Shift</code>)
+to <strong><em>Paste(JSON)</em></strong>. This will not copy the ‘Filter
+Mode’.<br />
+</p></li>
+<li><p>There is currently no <strong><code>Item</code></strong> category
+filter available through the conveyor search option, but you can paste
+in the JSON text file found below into a conveyor to add an Item
+category filter. (This will overwrite your current filter)</p>
+<blockquote>
+<p>[<br />
+{<br />
+“TargetCategory”: 2,<br />
+“MaxAmountInOutput”: 0,<br />
+“BufferAmount”: 0,<br />
+“MinAmountInInput”: 0,<br />
+“IsBlueprint”: false,<br />
+“BufferTransferRemaining”: 0,<br />
+“TargetItemName”: “”<br />
+}<br />
+]</p>
+</blockquote></li>
+<li><p><code>Filter Item settings:</code></p>
 <ul>
 <li><code>MAX:</code> conveyor will stop moving this item when all
 target containers reach this amount.</li>
@@ -8004,7 +8031,7 @@ amount from all input containers.</li>
 recipes with blue prints to help eliminate overfilling and trickle
 filling of Industrial Crafters.)</li>
 </ul></li>
-<li><code>Filter Mode settings:</code>
+<li><p><code>Filter Mode settings:</code></p>
 <ul>
 <li><code>ANY ITEM:</code> This is the default setting. It will move all
 items unless there are Item Filters being used.</li>
@@ -8030,37 +8057,21 @@ moved.</li>
 <li>When using more than 1 filter type, the conveyor will set Filter
 Pass even when the item in the container is on the exclusion list.</li>
 </ul></li>
-<li>The <code>Current Items</code> list can be copied from one conveyor
-to another using the <strong>Copy</strong> and <strong>Paste</strong>
-buttons. Holding Sprint(<code>Shift</code>) lets a user
-<strong><em>Copy(JSON)</em></strong>. This can then be pasted into a
-text file allowing a player to share their conveyor filters outside of
-the game and between servers. Hold Sprint(<code>Shift</code>) to
-<strong><em>Paste(JSON)</em></strong>. This will not copy the ‘Filter
-Mode’.<br />
-</li>
-<li>If it has power when the server restoots, it will remain powered on
-after the restart.</li>
-<li>There is an Industrial Max Depth of 32 components on either side
-(input/output) of the Conveyor.</li>
-<li>There is a max of 32 Storage Adapters on either side (input/output)
-of the Conveyor.</li>
-<li>It will move stackable items in groups of 60 items from up to 12
-stacks at a time.</li>
-<li>Unstackable items count as 1 stack each so it will move up to 12
-items at a time.</li>
-<li>Every additional Storage Adapter added to a container will increase
-the number of stacks the conveyor can take by 12.</li>
-<li>They can be placed on all surfaces and the ground.</li>
-<li>Has the ability to be rotated using Reload(R).</li>
-<li><code>As of 7/16/2023,</code> stackable items that also have health,
-like Ladders, Solar Panels, Fuses for example, will brick the Conveyor
-if their health has been decreased and are unable to stack. The Conveyor
-will remain in a Filter Pass state because the item could be moved, but
-because it is unable to be placed in an existing stack, it wont move the
-item. Do not place these broken or damaged items in the sorting
-system.</li>
-<li>The term <code>Item</code> is specifically referring to the
+<li><p>If it has power when the server restoots, it will remain powered
+on after the restart.</p></li>
+<li><p>There is an Industrial Max Depth of 32 components on either side
+(input/output) of the Conveyor.</p></li>
+<li><p>There is a max of 32 Storage Adapters on either side
+(input/output) of the Conveyor.</p></li>
+<li><p>It will move stackable items in groups of 60 items from up to 12
+stacks at a time.</p></li>
+<li><p>Unstackable items count as 1 stack each so it will move up to 12
+items at a time.</p></li>
+<li><p>Every additional Storage Adapter added to a container will
+increase the number of stacks the conveyor can take by 12.</p></li>
+<li><p>They can be placed on all surfaces and the ground.</p></li>
+<li><p>Has the ability to be rotated using Reload(R).</p></li>
+<li><p>The term <code>Item</code> is specifically referring to the
 <code>Item ID</code> number. For example, the hazmat suit has different
 skins but they actually have different ID’s. This should not be an issue
 but some items will still be transferred even though the MAX item filter
@@ -8068,7 +8079,7 @@ has been met. One example is the Arctic and Lumberjack suits. They are
 hazmats but even with a MAX filter of 1, 1 of each will be sent. The
 default skin will always fulfill the MAX requirement and block the
 remodeled versions, but the remodeled versions will not block each
-other. This issue also exists with the following items:
+other. This issue also exists with the following items:</p>
 <ul>
 <li>Hazmat Suit</li>
 <li>Sky Lanterns</li>
@@ -8484,6 +8495,14 @@ containers.</li>
 <hr />
 <h1 id="voice-props-pack-dlc"><a href="#voice-props-pack-dlc"
 class="anchor-link">*</a>Voice Props Pack DLC</h1>
+<p>The audio generated by devices like the Boom Box or Mic Stand is
+assigned an Audio ID by the game. This ID is what components like the
+Sound Light, Disco Floor and Laser Light bind to in order to react to
+the sound. These components can only bind to 1 ID. This means that if
+the Audio Out from 2 Boom Box’s were connected to an OR Switch then to a
+Disco Floor, the Disco Floor will bind to the ID of whichever Boom Box
+is the first to send some audio. The only way to remove this bind is to
+disconnect the Boom Box.</p>
 <hr />
 <h1 id="boom-box"><a href="#boom-box" class="anchor-link">*</a>Boom
 Box<img src="images/image106.png" /></h1>
