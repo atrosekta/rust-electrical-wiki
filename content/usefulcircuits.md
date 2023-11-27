@@ -2,6 +2,8 @@
 
 [Auto Lights](https://www.rustrician.io/?circuit=dc6bf5e524299bf241b218e2565876d0)
 
+[Auto Refinery](https://www.rustrician.io/?circuit=0664f79c2fe179678eff13b3ce74a3fd)
+
 [Auto Smelter](https://www.rustrician.io/?circuit=f676cc29884016f3fc11a5aa49505641)
 
 [Blocker Chain](https://www.rustrician.io/?circuit=773b599014deb161fc173f295727be77)
