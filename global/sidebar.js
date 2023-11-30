@@ -46,7 +46,7 @@ window.onload = () => {
 
 
 function curpage_navbar_section() {
-	let phref = window.location.pathname;
+	let phref = window.location.href.split("#")[0]
 	let links = document.querySelectorAll(".foldable > a");
 	for (let i = 0; i < links.length; i++)
 		// need fix in generated html
