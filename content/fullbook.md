@@ -2323,6 +2323,7 @@ Power Output        | 1rW
 Despawn Time        | 60 minutes
 
 Notes:
+
 - There is a limit of 12 active turrets in a 40 meter radius or 14 square foundation. The 13th turret will not turn on and will have a sparking animation on top of it.  
 - A player must be authorized to open the menu by looking at it and holding Use(`E`). There are 7 options to choose from.  
     - `Open -` This opens the inventory where guns and ammo can be placed. This includes all weapons that fire Pistol Bullets, 5.56 Rifle Ammo or 12 Gauge Buckshot as well as the Nailgun and Trumpet.  
@@ -5024,6 +5025,8 @@ Needs work
 # Useful Circuits
 
 [Auto Lights](https://www.rustrician.io/?circuit=dc6bf5e524299bf241b218e2565876d0)
+
+[Auto Refinery](https://www.rustrician.io/?circuit=0664f79c2fe179678eff13b3ce74a3fd)
 
 [Auto Smelter](https://www.rustrician.io/?circuit=f676cc29884016f3fc11a5aa49505641)
 
