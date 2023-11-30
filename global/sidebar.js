@@ -43,7 +43,9 @@ function curlinkelem(){
 	let url = window.location.href .split("#")[0];
 	let links = document.querySelectorAll(".foldable > a");
 	for (let i = 0; i < links.length; i++)
-		if (url == links[i].href)
+		// need fix in generated html
+		// if (url == links[i].href) 
+		if (url == links[i].href.split("#")[0]) 
 			return links[i].parentElement;
 }
 
