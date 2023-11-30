@@ -32,7 +32,7 @@ window.onload = () => {
 	for (let i = 0, lgt = unfold.length; i < lgt; i++)
 		toggfold( unfold[i], true )
 	// fade in navbar to hide construction from last for loop
-	navbar.classList.add("loaded")
+	// navbar.classList.add("loaded")
 
 	// open and scroll to dropdown of current page, 
 	let cur = curpage_navbar_section()

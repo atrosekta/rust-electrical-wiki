@@ -16,8 +16,9 @@ main.smooth { scroll-behavior: smooth; }
 /* #sidenav::-webkit-scrollbar-thumb { background: var(--bg1); border-radius: 0px; } */
 
 /* opacity load */
-#sidenav:not(.loaded) { opacity:0; }
-#sidenav.loaded { opacity:1; }
+/* #sidenav:not(.loaded) { opacity:0; } */
+/* #sidenav.loaded { opacity:1; } */
+#sidenav { opacity:1; }
 
 /* fix unresponsive mobile touch click */
 html { touch-action: manipulation;
