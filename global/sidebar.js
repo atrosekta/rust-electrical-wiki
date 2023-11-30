@@ -1,58 +1,67 @@
 
-// setTimeout( loadside , 111);
-window.addEventListener('DOMContentLoaded', loadside )
 
-function loadside() {
-	let sidenav = document.getElementById("sidenav");
-	// if ( sidenav == null ) {
-		// setTimeout( loadside , 111 );
-		// return;
-	// }
-	sidenav.addEventListener("click", portraitClickCloseBar);
+var vctxt, vcele;
 
-	sidenav.classList.add("loaded");
-	if ( window.matchMedia("(hover:hover) and (pointer:fine)").matches )
-		document.querySelector("main").classList.add("smooth");
+fetch("/wiki/counter/counter.php")
+	.then((resp) => resp.text())
+	.then((text) => { vctxt = text; set_visitor_count(); })
 
-	let unfold = document.querySelectorAll(".unfoldonload");
-	for (let i = 0; i < unfold.length; i++)
-		toggfold( unfold[i], true );
+function set_visitor_count() { if (vctxt && vcele) vcele.innerHTML = vctxt; }
 
-	let cur = curlinkelem();
-	if ( !cur ) return;
-	toggfold(cur, true);
-	const scrolltocur = function() {
-		let h = cur.offsetTop - sidenav.offsetTop - (window.innerHeight/8);
-		sidenav.scrollTo({top:h, behavior:"smooth"});
+
+window.onload = () => {
+
+	// set visitor count text if home page
+	if (window.location.pathname == '/' || window.location.pathname == '/index.html') {
+		vcele = document.getElementById("visitorcount")
+		set_visitor_count()
 	}
-	setTimeout( scrolltocur , 333);
+
+	// set smooth scroll in page content for pc only,
+	// not mobile as it break on mine, not sure why
+	if (window.matchMedia("(hover:hover) and (pointer:fine)").matches)
+		document.querySelector("main").classList.add("smooth")
+
+	let navbar = document.getElementById("sidenav")
+
+	// auto close navbar when clicking section on portrait screen
+	navbar.addEventListener("click", if_portrait_close_navbar)
+
+	// init fold states for each dropdown
+	let unfold = document.querySelectorAll(".unfoldonload")
+	for (let i = 0, lgt = unfold.length; i < lgt; i++)
+		toggfold( unfold[i], true )
+	// fade in navbar to hide construction from last for loop
+	navbar.classList.add("loaded")
+
+	// open and scroll to dropdown of current page, 
+	let cur = curpage_navbar_section()
+	if (cur) setTimeout(() => {
+		toggfold(cur, true)
+		let scrollpos = cur.offsetTop - sidenav.offsetTop - window.innerHeight / 8
+		sidenav.scrollTo({ top: scrollpos, behavior: "smooth" })
+	}, 256)
+
 }
 
-const mobilemediaquery = 
-	"screen and (max-device-aspect-ratio: 2/3) and (orientation:portrait),"
-	 + "screen (orientation:portrait), screen and (max-aspect-ratio: 1)";
-function portraitClickCloseBar(e) {
-	if (! window.matchMedia( mobilemediaquery ).matches)
-		return; // only for portrait screen
-	if (! e.target.closest("a"))
-		return; // only for click on anchor links
-	toggside();
-}
 
-function curlinkelem(){
-	let url = window.location.href .split("#")[0];
+function curpage_navbar_section() {
+	let phref = window.location.pathname;
 	let links = document.querySelectorAll(".foldable > a");
 	for (let i = 0; i < links.length; i++)
 		// need fix in generated html
 		// if (url == links[i].href) 
-		if (url == links[i].href.split("#")[0]) 
+		if (phref == links[i].href.split("#")[0])
 			return links[i].parentElement;
+	console.log("debug: unreachable, current page not found")
 }
+
 
 function toggside() {
 	document.getElementById("sidebar").classList.toggle('folded');
 	document.getElementById("main-container").classList.toggle('folded');
 }
+
 
 var inanim = false;
 
@@ -68,26 +77,20 @@ function toggfold(elem, force) {
 	if (par.classList.contains("sidelist"))
 		par.style.height = par.scrollHeight + (folded ? -h : h+pad) + "px";
 	elem.style.height = (folded ? 0 : h+pad ) + "px";
-	elem.addEventListener("transitionend", event => { inanim = false; });
+	elem.addEventListener("transitionend", event => inanim = false);
 }
 
 
-var visicnt = null
+const mobilemediaquery = 
+	`screen and (max-device-aspect-ratio: 2/3) and (orientation:portrait)," +
+	screen (orientation:portrait), screen and (max-aspect-ratio: 1)`
 
-fetch( "/wiki/counter/counter.php" )
-	.then( ( resp ) => resp.text() )
-	.then( ( text ) => visicnt = text )
-
-window.addEventListener('DOMContentLoaded', setcount )
-
-function setcount() {
-	if ( visicnt == null ) {
-		setTimeout( setcount, 33 )
-		console.log( "visitor count wasnt fetched yet" )
-		return
-	}
-	let counter = document.getElementById("visitorcount")
-	if ( counter != null )
-		counter.innerHTML = visicnt
+function if_portrait_close_navbar(event) {
+	if (!window.matchMedia(mobilemediaquery).matches)
+		return // only for portrait screen
+	if (! event.target.closest("a"))
+		return // only for click on anchor links
+	toggside()
 }
+
 
