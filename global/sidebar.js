@@ -12,7 +12,7 @@ function set_visitor_count() { if (vctxt && vcele) vcele.innerHTML = vctxt; }
 window.onload = () => {
 
 	// set visitor count text if home page
-	if (window.location.pathname == '/' || window.location.pathname == '/index.html') {
+	if (window.location.pathname == '/wiki/' || window.location.pathname == '/wiki/index.html') {
 		vcele = document.getElementById("visitorcount")
 		set_visitor_count()
 	}
@@ -53,7 +53,6 @@ function curpage_navbar_section() {
 		// if (url == links[i].href) 
 		if (phref == links[i].href.split("#")[0])
 			return links[i].parentElement;
-	console.log("debug: unreachable, current page not found")
 }
 
 
