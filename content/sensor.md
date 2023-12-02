@@ -22,7 +22,6 @@ Active Usage        | 1
 Power Consumption   | 1rW
 Power Output        | 1 per person detected
 Despawn Time        | 20 minutes
-Decay Time          |
 
 Notes:
 
@@ -30,7 +29,7 @@ Notes:
 - Detection range is about 11m or 3.5 square foundation.
 - Can be set to Include/Exclude Authorized and Others. With TC auth, look at the sensor and hold Use(`E`).
 - Requires line of sight, except a player crouching under a half height floor can be seen by the sensor from above. It can also be built to see through walls, floors and roofs. 
-- The only deployables that can block the HBHF are, Lockers, Vending Machines, Chippy Machine, Large Water Catcher, Oil Refinery and the deck of the Large Pool.
+- The only deployables that can block the HBHF are, Rustigé Egg - White, Vending Machines, Chippy Machine, Large Water Catcher, Oil Refinery and the deck of the Large Pool.
 - Only outputs an amount of power equal to the number of people it detects, meaning if Power Out is connected to a Counter, set to Show Passthrough, the Counter will display the number of people the HBHF is detecting.
 - Will detect all scientist types including ones riding in the CH47.
 

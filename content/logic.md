@@ -27,7 +27,7 @@ Notes:
 
 - When power is applied to the Block Passthrough input on the side, power will be prevented from passing though.
 - When passthrough is blocked, it will also block any components [Active Usage](powerstorage.html#battery-active-usage-vs-actual-power-consumed), effectively hiding them from batteries when offline.
-
+- Is a NOT logic gate.
 
 ---
 
@@ -87,7 +87,7 @@ Notes:
 - Everyone can activate the timer but only TC authorized people can set the timer.
 - Timer must be powered to set the duration.
 - It must also be powered first before it can be triggered as per [Power Flow](powerdistribution.html##power-flow).
-- Has a default time of 30 seconds.
+- Has a default time of 10 seconds.
 - Minimum time duration is 0.25 seconds. This might be too fast for some servers and must be increased.
 - Maximum time duration has been tested to at least a 2 weeks IRL.
 - Can only be placed on vertical walls.
