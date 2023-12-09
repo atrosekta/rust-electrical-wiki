@@ -251,7 +251,7 @@ Notes:
 
 - This item can only be crafted if you have the item in your Steam
   Inventory. It must be purchased from the community market.
-- There are 5 pages you can paint and the sign will automatically flip between them.
+- There are 3 pages you can paint and the sign will automatically flip between them.
 - You can choose between 3 flipping speeds, Slow, Medium and Fast.
 - Maximum image size is 256x128.
 - Can be placed on vertical and angled surfaces.
