@@ -2103,8 +2103,8 @@ Large Solar Panels and Small Generators.</li>
 <li>It has a max depth of 16 components between a power source and the
 combiner. If max depth is reached, going any deeper will result in a
 shared error message, <a
-href="powerdistribution.html#Short-Circuit-/-Max-Depth">Short
-Circuit/Max Depth</a>.</li>
+href="powerdistribution.html#short-circuit-max-depth">Short Circuit/Max
+Depth</a>.</li>
 <li>It does not consume any power but will register 1 <a
 href="powerstorage.html#battery-active-usage-vs-actual-power-consumed">Active
 Usage</a> on a battery.</li>
@@ -2206,7 +2206,7 @@ section on <a
 href="powerdistribution.html#circuit-delay-and-power-flow">Circuit Delay
 and Power Flow</a>.</li>
 <li>Is a key component to create a <a
-href="powerdistribution.html##Fixed-Bus-(F-Bus)">Fixed Bus</a></li>
+href="powerdistribution.html##fixed-bus-(f-bus)">Fixed Bus</a></li>
 </ul>
 <hr />
 <h1 id="splitter"><a href="#splitter"
@@ -2290,7 +2290,7 @@ and Power Flow</a>.</li>
 remaining outputs.</li>
 <li>Outputs can connect to the inputs of Root Combiners.</li>
 <li>Is a key component of a <a
-href="powerdistribution.html##Dynamic-Bus-(D-Bus)">Dynamic Bus</a>.</li>
+href="powerdistribution.html##dynamic-bus-(d-bus)">Dynamic Bus</a>.</li>
 </ul>
 <hr />
 <h1 id="cable-tunnel-not-craftable"><a
@@ -2700,10 +2700,6 @@ Crate, Underwater Lab Yellow Crate</td>
 <td>Despawn Time</td>
 <td>20 minutes</td>
 </tr>
-<tr class="odd">
-<td>Decay Time</td>
-<td></td>
-</tr>
 </tbody>
 </table>
 <p>Notes:</p>
@@ -2715,9 +2711,9 @@ look at the sensor and hold Use(<code>E</code>).</li>
 <li>Requires line of sight, except a player crouching under a half
 height floor can be seen by the sensor from above. It can also be built
 to see through walls, floors and roofs.</li>
-<li>The only deployables that can block the HBHF are, Lockers, Vending
-Machines, Chippy Machine, Large Water Catcher, Oil Refinery and the deck
-of the Large Pool.</li>
+<li>The only deployables that can block the HBHF are, Rustigé Egg -
+White, Vending Machines, Chippy Machine, Large Water Catcher, Oil
+Refinery and the deck of the Large Pool.</li>
 <li>Only outputs an amount of power equal to the number of people it
 detects, meaning if Power Out is connected to a Counter, set to Show
 Passthrough, the Counter will display the number of people the HBHF is
@@ -2991,6 +2987,7 @@ power will be prevented from passing though.</li>
 <li>When passthrough is blocked, it will also block any components <a
 href="powerstorage.html#battery-active-usage-vs-actual-power-consumed">Active
 Usage</a>, effectively hiding them from batteries when offline.</li>
+<li>Is a NOT logic gate.</li>
 </ul>
 <hr />
 <h1 id="memory-cell"><a href="#memory-cell"
@@ -3166,7 +3163,7 @@ set the timer.</li>
 <li>Timer must be powered to set the duration.</li>
 <li>It must also be powered first before it can be triggered as per <a
 href="powerdistribution.html##power-flow">Power Flow</a>.</li>
-<li>Has a default time of 30 seconds.</li>
+<li>Has a default time of 10 seconds.</li>
 <li>Minimum time duration is 0.25 seconds. This might be too fast for
 some servers and must be increased.</li>
 <li>Maximum time duration has been tested to at least a 2 weeks
@@ -4636,7 +4633,7 @@ src="images/image95.png" /></h1>
 <ul>
 <li>This item can only be crafted if you have the item in your Steam
 Inventory. It must be purchased from the community market.</li>
-<li>There are 5 pages you can paint and the sign will automatically flip
+<li>There are 3 pages you can paint and the sign will automatically flip
 between them.</li>
 <li>You can choose between 3 flipping speeds, Slow, Medium and
 Fast.</li>
@@ -10556,11 +10553,13 @@ Core</h1>
 <p>The Nih Core is the modern version of, and replacement for, the
 OR/Blocker. When using an inline battery to power a circuit, there is a
 20% loss due to the batteries inefficiency. Bypass battery backups, like
-the Nih Core, are a way around this. Instead of a circuit being powered
-by the battery, the circuit gets power directly from the Wind Turbine
-while the battery gets charged with the excess. The Nih Core will
-automatically switch over to the backup battery when the power source is
-not producing enough.</p>
+the Nih Core, are not necessarily a way around this. Instead of a
+circuit being powered by the battery, the circuit gets power directly
+from the Wind Turbine while the battery gets charged with the excess.
+This excess may not be the full 20% but due to the cost of distribution
+and overcoming the small Active Usage from combining batteries, it can
+be most of it. The Nih Core will automatically switch over to the backup
+battery when the power source is not producing enough.</p>
 <p>The Nih Core becomes more efficient the more batteries it has but
 there is only 1 in the picture because it’s all that is needed to
 demonstrate how the Nih Core functions. The simple explanation is when

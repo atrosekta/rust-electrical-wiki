@@ -476,7 +476,7 @@ Notes:
 
 - These allow Power Sources and batteries to be combined to produce higher amounts of available power. [Power Sources](sources.html#power-sources) are Wind Turbines, Large Solar Panels and Small Generators.
 - Can be placed on all building surfaces.
-- It has a max depth of 16 components between a power source and the combiner. If max depth is reached, going any deeper will result in a shared error message, [Short Circuit/Max Depth](powerdistribution.html#Short-Circuit-/-Max-Depth).
+- It has a max depth of 16 components between a power source and the combiner. If max depth is reached, going any deeper will result in a shared error message, [Short Circuit/Max Depth](powerdistribution.html#short-circuit-max-depth).
 - It does not consume any power but will register 1 [Active Usage](powerstorage.html#battery-active-usage-vs-actual-power-consumed) on a battery.
 - Combining batteries with a Root Combiner to get a larger amount of power is wiring the batteries in [Series](powerstorage.html#parallel-vs-series). The load is not evenly shared. For example, 2 batteries connected to a Root Combiner feeding a circuit that needs 50 power. Each battery will show an Active Usage of 50, not 25/25 to = 50.
 
@@ -510,7 +510,7 @@ Notes:
 - What Branch Out is set to will be the amount that registers on a battery’s Active Usage.
 - Branch Out will always consume the amount of power it is set to, even if the components past it are disabled. 
 - When an Electrical Branch sends power out, it will first send power through Power Out then send power through Branch Out. Check out the section on [Circuit Delay and Power Flow](powerdistribution.html#circuit-delay-and-power-flow).
-- Is a key component to create a [Fixed Bus](powerdistribution.html##Fixed-Bus-(F-Bus))
+- Is a key component to create a [Fixed Bus](powerdistribution.html##fixed-bus-(f-bus))
 
 ---
 
@@ -539,7 +539,7 @@ Notes:
 - When the Splitter receives power it does not pass power through all connected outputs at the same time. Power outputs in the order of Output 1, Output 2 then Output 3. Check out the section on [Circuit Delay and Power Flow](powerdistribution.html#circuit-delay-and-power-flow).
 - When an output is destroyed, it will redistribute power between the remaining outputs.
 - Outputs can connect to the inputs of Root Combiners.
-- Is a key component of a [Dynamic Bus](powerdistribution.html##Dynamic-Bus-(D-Bus)).
+- Is a key component of a [Dynamic Bus](powerdistribution.html##dynamic-bus-(d-bus)).
 
 ---
 
@@ -695,7 +695,6 @@ Active Usage        | 1
 Power Consumption   | 1rW
 Power Output        | 1 per person detected
 Despawn Time        | 20 minutes
-Decay Time          |
 
 Notes:
 
@@ -703,7 +702,7 @@ Notes:
 - Detection range is about 11m or 3.5 square foundation.
 - Can be set to Include/Exclude Authorized and Others. With TC auth, look at the sensor and hold Use(`E`).
 - Requires line of sight, except a player crouching under a half height floor can be seen by the sensor from above. It can also be built to see through walls, floors and roofs. 
-- The only deployables that can block the HBHF are, Lockers, Vending Machines, Chippy Machine, Large Water Catcher, Oil Refinery and the deck of the Large Pool.
+- The only deployables that can block the HBHF are, Rustigé Egg - White, Vending Machines, Chippy Machine, Large Water Catcher, Oil Refinery and the deck of the Large Pool.
 - Only outputs an amount of power equal to the number of people it detects, meaning if Power Out is connected to a Counter, set to Show Passthrough, the Counter will display the number of people the HBHF is detecting.
 - Will detect all scientist types including ones riding in the CH47.
 
@@ -811,7 +810,7 @@ Notes:
 
 - When power is applied to the Block Passthrough input on the side, power will be prevented from passing though.
 - When passthrough is blocked, it will also block any components [Active Usage](powerstorage.html#battery-active-usage-vs-actual-power-consumed), effectively hiding them from batteries when offline.
-
+- Is a NOT logic gate.
 
 ---
 
@@ -871,7 +870,7 @@ Notes:
 - Everyone can activate the timer but only TC authorized people can set the timer.
 - Timer must be powered to set the duration.
 - It must also be powered first before it can be triggered as per [Power Flow](powerdistribution.html##power-flow).
-- Has a default time of 30 seconds.
+- Has a default time of 10 seconds.
 - Minimum time duration is 0.25 seconds. This might be too fast for some servers and must be increased.
 - Maximum time duration has been tested to at least a 2 weeks IRL.
 - Can only be placed on vertical walls.
@@ -1445,7 +1444,7 @@ Notes:
 
 - This item can only be crafted if you have the item in your Steam
   Inventory. It must be purchased from the community market.
-- There are 5 pages you can paint and the sign will automatically flip between them.
+- There are 3 pages you can paint and the sign will automatically flip between them.
 - You can choose between 3 flipping speeds, Slow, Medium and Fast.
 - Maximum image size is 256x128.
 - Can be placed on vertical and angled surfaces.
@@ -4136,7 +4135,7 @@ While considered out of date today for use as a primary battery backup system, w
 
 ![](images/image87.png)
 
-The Nih Core is the modern version of, and replacement for, the OR/Blocker. When using an inline battery to power a circuit, there is a 20% loss due to the batteries inefficiency. Bypass battery backups, like the Nih Core, are a way around this. Instead of a circuit being powered by the battery, the circuit gets power directly from the Wind Turbine while the battery gets charged with the excess. The Nih Core will automatically switch over to the backup battery when the power source is not producing enough. 
+The Nih Core is the modern version of, and replacement for, the OR/Blocker. When using an inline battery to power a circuit, there is a 20% loss due to the batteries inefficiency. Bypass battery backups, like the Nih Core, are not necessarily a way around this. Instead of a circuit being powered by the battery, the circuit gets power directly from the Wind Turbine while the battery gets charged with the excess. This excess may not be the full 20% but due to the cost of distribution and overcoming the small Active Usage from combining batteries, it can be most of it. The Nih Core will automatically switch over to the backup battery when the power source is not producing enough. 
 
 The Nih Core becomes more efficient the more batteries it has but there is only 1 in the picture because it's all that is needed to demonstrate how the Nih Core functions. The simple explanation is when there is not enough power to meet a circuit's requirements, it redirects the insufficient amount of power to the battery and activates it to take over powering the circuit. The reason the Nih Core becomes more efficient with more batteries is because we are bypassing the 20% hit from an inline battery and we don’t care about the battery’s Active Usage. We are bypassing the battery therefore removing any restrictions or conditions caused by it. Check out the section called ‘Battery Active Usage Vs Actual Power Consumed’ for an in depth explanation.
 
