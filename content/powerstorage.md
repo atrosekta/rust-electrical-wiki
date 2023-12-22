@@ -321,7 +321,7 @@ power.
 
 This setup reduces the Active Usage all the way to 6. When active, we will get an Active Usage of 16 but it will actually consume 18.  
 
-Components like Switches, the Blocker, Timer and RF Receiver all
+Components like Switches, the Blocker, Timer, HBHF Sensor and RF Receiver all
 have the ability to hide a component's Active Usage from batteries when
 not passing power through.
 
