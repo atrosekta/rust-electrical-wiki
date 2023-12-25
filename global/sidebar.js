@@ -9,7 +9,12 @@ fetch("/wiki/counter/counter.php")
 function set_visitor_count() { if (vctxt && vcele) vcele.innerHTML = vctxt; }
 
 
-window.onload = () => {
+if (document.readyState === "loading")
+  document.addEventListener("DOMContentLoaded", loadbar)
+else
+  loadbar()
+// window.onload = () => {
+function loadbar() {
 
 	// set visitor count text if home page
 	if (window.location.pathname == '/wiki/' || window.location.pathname == '/wiki/index.html') {
