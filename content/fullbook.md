@@ -705,6 +705,7 @@ Notes:
 - The only deployables that can block the HBHF are, Rustigé Egg - White, Vending Machines, Chippy Machine, Large Water Catcher, Oil Refinery and the deck of the Large Pool.
 - Only outputs an amount of power equal to the number of people it detects, meaning if Power Out is connected to a Counter, set to Show Passthrough, the Counter will display the number of people the HBHF is detecting.
 - Will detect all scientist types including ones riding in the CH47.
+- Blocks Active Usage when not detecting players.
 
 
 ---
@@ -4292,7 +4293,7 @@ power.
 
 This setup reduces the Active Usage all the way to 6. When active, we will get an Active Usage of 16 but it will actually consume 18.  
 
-Components like Switches, the Blocker, Timer and RF Receiver all
+Components like Switches, the Blocker, Timer, HBHF Sensor and RF Receiver all
 have the ability to hide a component's Active Usage from batteries when
 not passing power through.
 
