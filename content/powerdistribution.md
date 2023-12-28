@@ -169,6 +169,8 @@ Components with multiple outputs have their own delay, 1 for each output. For ex
 
 Batteries also have their own delay. When a battery has an Active Usage of 0, it enters an ‘Off’ state. When the time comes for the battery to power something, it must enter an ‘On’ state which has a delay equal to 2 units of time. Keeping the battery in the ‘On’ state with a Root Combiner or an Industrial Light eliminates the delay so you have power right away. 
 
+Once a series of connected components exceeds X number, the entire series of components acts as if it is 1 component. For example 1000 lights in series. When turned on, they will all turn on at the same time.
+
 ## Power Flow
 
 Power Flow is the path electricity takes through a circuit and the order of the path, aka the order of operation. We need to remember that Rustricity is nothing more than lines of code that are processed 1 after another. Not only does this create a Circuit Delay, as explained above, it also only allows 1 component at a time to perform an action. This creates the order of operation.  
