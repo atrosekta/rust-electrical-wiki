@@ -25,7 +25,7 @@ Despawn Time        | 5 minutes
 
 Notes:
 
-- When power is applied to the Block Passthrough input on the side, power will be prevented from passing though.
+- When power is applied to the Block Passthrough input on the side, power will be prevented from passing through.
 - When passthrough is blocked, it will also block any components [Active Usage](powerstorage.html#battery-active-usage-vs-actual-power-consumed), effectively hiding them from batteries when offline.
 - Is a NOT logic gate.
 
