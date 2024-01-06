@@ -108,6 +108,7 @@ Despawn Time        | 5 minutes
 Notes:
 
 - Tesla Coil deals damage at a rate of 1hp/second per rust watt up to a max of 35rW. This means if you give a tesla coil 5rW, it will do 5hp of damage per second. Give it 35rW and it will do 35hp of damage per second.
+- Tesla Coils deal damage on a 1 second cycle. During the cycle it emits 1 ⁄ 4 of the input power over 4, 250 ms intervals upon receiving power; 0, 250, 500, 750, ±15 ms. They then enter a rest period of 250 ms before restarting the cycle totaling 1000 msec ie. 1 second. For example, 20rW in will deal 5 damage every 0.25 seconds. Therefore 20 damage over 1 second.  
 - Their damage is stackable. 100 Tesla Coils given 1rW will kill a person in 1 second.
 - The range is just over 1 square foundation or 3.5 meters.
 - Can be placed on all surfaces including the ground.
