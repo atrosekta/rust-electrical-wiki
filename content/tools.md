@@ -102,9 +102,9 @@ Notes:
 - Can be stored in a Tool Cupboard.  
 - The color of the pipe can be customized by holding down the 'Reload' button `R`.  
     Colour options are :  
-  *Red, green, Blue, Yellow and Default(Grey)*
+  *Red, green, Blue, Yellow, Cyan, Orange, Pink, Purple and Default(Grey)*
 
-![](images/pipes_color.jpg)
+![](images/pipecolour.jpg)
 
 ---
 
