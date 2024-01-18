@@ -1650,6 +1650,7 @@ Notes:
 - Weapons and tools can be mounted on and picked up from them by holding the item in your hand, looking at the weapon rack and pressing Use(`E`).
 - Rotate the items using Sprint(`Left Shift`).
 - Grid size is 10x10.
+- Can be used on tugboats.
 
 ---
 
@@ -1674,6 +1675,7 @@ Notes:
 - Weapons and tools can be mounted on and picked up from them by holding the item in your hand, looking at the weapon rack and pressing Use(`E`).
 - Rotate the items using Sprint(`Left Shift`).
 - Grid size is 10x15.
+- Can be used on tugboats.
 
 ---
 
@@ -1698,6 +1700,7 @@ Notes:
 - Weapons and tools can be mounted on and picked up from them by holding the item in your hand, looking at the weapon rack and pressing Use(`E`).
 - Rotate the items using Sprint(`Left Shift`).
 - Grid size is 17x10.
+- Can be used on tugboats.
 
 ---
 
@@ -1742,6 +1745,7 @@ Notes:
 
 - Will pulse 1rW when an inventory slot changes state. An inventory slot will either need to be filled or emptied for the Storage Monitor to notice a change. It will not notice partial stacksize changes.
 - Can be paired with Rust+ to allow monitoring of Tool Cupboards, Large Boxes and Vending Machines.
+- Can be used on tugboats.
 
 ![](images/image16.jpg)
 
@@ -1772,6 +1776,7 @@ Notes:
 - Must be placed on flat surfaces.
 - Can be paired with Rust+ to receive pre-programmed messages from in-game when activated.
 - With TC authorization, look at the alarm with a Wire Tool in hand and press Use(`E`) to set the alarms message.
+
 
 ![](images/alarmname.png)
 
@@ -2161,6 +2166,7 @@ Notes:
   current list.
 - The game has pre-placed cameras at some of the monuments, check the
   current [Camera List](uncategorizedconcepts.html#monument-camera-codes).
+- Can be used on tugboats.
 
 ---
 
@@ -2861,6 +2867,7 @@ Notes:
 - Output items have their own industrial connection, Industrial Out.
 - Blueprints have their own industrial in and outputs, Blueprint In and Blueprint Out.
 - Has 4 electrical connections. The last IO that receives power is the action that is performed, with the exception of the Toggle. When power is removed from Toggle, the crafter will turn off.
+- Can be placed on workbenches on tug boats.
 
 ---
 
@@ -3018,6 +3025,7 @@ Notes:
   insert a cassette. Radio Settings lets you select a Radio Station.
 - The Audio Out connection lets you send an audio signal to other
   components in the DLC that can interact with sound.
+- The Toggle Play input needs constant power to the BoomBox to play. When power   is removed, it will stop playing.  
 - Can be picked up with a hammer, but not with a cassette. Will not take
   damage when picked up.
 - Can be placed in horizontal surfaces, the ground and some deployable
@@ -3260,6 +3268,7 @@ Notes:
 # Fireworks
 
 ---
+They can be used on tugboats.
 
 They can be ignited with a lit Torch, Flamethrower, Fire Arrows or using
 an electric Igniter.
@@ -5046,6 +5055,8 @@ Needs work
 [Destruction Detection](https://www.rustrician.io/?circuit=bf38168f0834f7d84fb837ac41d1818e)
 
 [Every Box is a Drop Box](https://www.rustrician.io/?circuit=8958914d237cd6fce723a5ca2fc4cd8d)
+
+[Industrial Merchant](https://www.rustrician.io/?circuit=f7e8a09e14b5fc547b8d2d580f42fbe4)
 
 [Logic Gates](https://www.rustrician.io/?circuit=64810508602bc0cd1baa954d1a1da539)
 
