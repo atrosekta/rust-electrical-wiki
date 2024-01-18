@@ -37,6 +37,7 @@ Notes:
 
 - Will pulse 1rW when an inventory slot changes state. An inventory slot will either need to be filled or emptied for the Storage Monitor to notice a change. It will not notice partial stacksize changes.
 - Can be paired with Rust+ to allow monitoring of Tool Cupboards, Large Boxes and Vending Machines.
+- Can be used on tugboats.
 
 ![](images/image16.jpg)
 
@@ -67,7 +68,7 @@ Notes:
 - Must be placed on flat surfaces.
 - Can be paired with Rust+ to receive pre-programmed messages from in-game when activated.
 - With TC authorization, look at the alarm with a Wire Tool in hand and press Use(`E`) to set the alarms message.
-- Can be used on tugboats.
+
 
 ![](images/alarmname.png)
 
