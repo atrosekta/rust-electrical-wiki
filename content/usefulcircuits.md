@@ -20,6 +20,8 @@
 
 [Every Box is a Drop Box](https://www.rustrician.io/?circuit=8958914d237cd6fce723a5ca2fc4cd8d)
 
+[Industrial Merchant](https://www.rustrician.io/?circuit=f7e8a09e14b5fc547b8d2d580f42fbe4)
+
 [Logic Gates](https://www.rustrician.io/?circuit=64810508602bc0cd1baa954d1a1da539)
 
 [Memory Cell Explained](https://www.rustrician.io/?circuit=b64e3a0f6f9d6d456ead9821abf9d7d7)

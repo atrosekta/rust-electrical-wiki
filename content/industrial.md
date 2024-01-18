@@ -118,6 +118,7 @@ Notes:
 - Output items have their own industrial connection, Industrial Out.
 - Blueprints have their own industrial in and outputs, Blueprint In and Blueprint Out.
 - Has 4 electrical connections. The last IO that receives power is the action that is performed, with the exception of the Toggle. When power is removed from Toggle, the crafter will turn off.
+- Can be placed on workbenches on tug boats.
 
 ---
 

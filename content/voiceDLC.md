@@ -31,6 +31,7 @@ Notes:
   insert a cassette. Radio Settings lets you select a Radio Station.
 - The Audio Out connection lets you send an audio signal to other
   components in the DLC that can interact with sound.
+- The Toggle Play input needs constant power to the BoomBox to play. When power   is removed, it will stop playing.  
 - Can be picked up with a hammer, but not with a cassette. Will not take
   damage when picked up.
 - Can be placed in horizontal surfaces, the ground and some deployable
