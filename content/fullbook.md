@@ -1650,7 +1650,7 @@ Notes:
 - Weapons and tools can be mounted on and picked up from them by holding the item in your hand, looking at the weapon rack and pressing Use(`E`).
 - Rotate the items using Sprint(`Left Shift`).
 - Grid size is 10x10.
-- Can be used on tugboats.
+- Can be placed on tugboats but cannot be powered.
 
 ---
 
@@ -1675,7 +1675,7 @@ Notes:
 - Weapons and tools can be mounted on and picked up from them by holding the item in your hand, looking at the weapon rack and pressing Use(`E`).
 - Rotate the items using Sprint(`Left Shift`).
 - Grid size is 10x15.
-- Can be used on tugboats.
+- Can be placed on tugboats but cannot be powered.
 
 ---
 
@@ -1700,7 +1700,7 @@ Notes:
 - Weapons and tools can be mounted on and picked up from them by holding the item in your hand, looking at the weapon rack and pressing Use(`E`).
 - Rotate the items using Sprint(`Left Shift`).
 - Grid size is 17x10.
-- Can be used on tugboats.
+- Can be placed on tugboats but cannot be powered.
 
 ---
 
@@ -1745,7 +1745,7 @@ Notes:
 
 - Will pulse 1rW when an inventory slot changes state. An inventory slot will either need to be filled or emptied for the Storage Monitor to notice a change. It will not notice partial stacksize changes.
 - Can be paired with Rust+ to allow monitoring of Tool Cupboards, Large Boxes and Vending Machines.
-- Can be used on tugboats.
+- Can be placed on tugboats but cannot be powered.
 
 ![](images/image16.jpg)
 
@@ -2166,7 +2166,7 @@ Notes:
   current list.
 - The game has pre-placed cameras at some of the monuments, check the
   current [Camera List](uncategorizedconcepts.html#monument-camera-codes).
-- Can be used on tugboats.
+- Can be placed on tugboats.
 
 ---
 
@@ -3055,8 +3055,8 @@ Decay Time         | 96 hours
 
 Notes:
 
-- This speaker will play audio from Boom Boxs and Microphone Stands
-- The audio quality is not as good at the Boom Box
+- This speaker will play audio from Boom Boxs and Microphone Stands.
+- The audio quality is not as good at the Boom Box.
 
 ---
 
@@ -3267,7 +3267,8 @@ Notes:
 
 # Fireworks
 
----
+---  
+
 They can be used on tugboats.
 
 They can be ignited with a lit Torch, Flamethrower, Fire Arrows or using
