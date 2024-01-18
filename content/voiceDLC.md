@@ -61,8 +61,8 @@ Decay Time         | 96 hours
 
 Notes:
 
-- This speaker will play audio from Boom Boxs and Microphone Stands
-- The audio quality is not as good at the Boom Box
+- This speaker will play audio from Boom Boxs and Microphone Stands.
+- The audio quality is not as good at the Boom Box.
 
 ---
 

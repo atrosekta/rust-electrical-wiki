@@ -352,7 +352,7 @@ Notes:
   current list.
 - The game has pre-placed cameras at some of the monuments, check the
   current [Camera List](uncategorizedconcepts.html#monument-camera-codes).
-- Can be used on tugboats.
+- Can be placed on tugboats.
 
 ---
 
