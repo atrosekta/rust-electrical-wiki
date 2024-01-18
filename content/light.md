@@ -456,6 +456,7 @@ Notes:
 - Weapons and tools can be mounted on and picked up from them by holding the item in your hand, looking at the weapon rack and pressing Use(`E`).
 - Rotate the items using Sprint(`Left Shift`).
 - Grid size is 10x10.
+- Can be used on tugboats.
 
 ---
 
@@ -480,6 +481,7 @@ Notes:
 - Weapons and tools can be mounted on and picked up from them by holding the item in your hand, looking at the weapon rack and pressing Use(`E`).
 - Rotate the items using Sprint(`Left Shift`).
 - Grid size is 10x15.
+- Can be used on tugboats.
 
 ---
 
@@ -504,5 +506,6 @@ Notes:
 - Weapons and tools can be mounted on and picked up from them by holding the item in your hand, looking at the weapon rack and pressing Use(`E`).
 - Rotate the items using Sprint(`Left Shift`).
 - Grid size is 17x10.
+- Can be used on tugboats.
 
 ---
