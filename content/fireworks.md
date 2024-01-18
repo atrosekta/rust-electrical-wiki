@@ -2,6 +2,7 @@
 # Fireworks
 
 ---
+They can be used on tugboats.
 
 They can be ignited with a lit Torch, Flamethrower, Fire Arrows or using
 an electric Igniter.
