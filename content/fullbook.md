@@ -150,9 +150,9 @@ Notes:
 - Can be stored in a Tool Cupboard.  
 - The color of the pipe can be customized by holding down the 'Reload' button `R`.  
     Colour options are :  
-  *Red, green, Blue, Yellow and Default(Grey)*
+  *Red, green, Blue, Yellow, Cyan, Orange, Pink, Purple and Default(Grey)*
 
-![](images/pipes_color.jpg)
+![](images/pipecolour.jpg)
 
 ---
 
@@ -809,7 +809,7 @@ Despawn Time        | 5 minutes
 
 Notes:
 
-- When power is applied to the Block Passthrough input on the side, power will be prevented from passing though.
+- When power is applied to the Block Passthrough input on the side, power will be prevented from passing through.
 - When passthrough is blocked, it will also block any components [Active Usage](powerstorage.html#battery-active-usage-vs-actual-power-consumed), effectively hiding them from batteries when offline.
 - Is a NOT logic gate.
 
@@ -2370,6 +2370,7 @@ Despawn Time        | 5 minutes
 Notes:
 
 - Tesla Coil deals damage at a rate of 1hp/second per rust watt up to a max of 35rW. This means if you give a tesla coil 5rW, it will do 5hp of damage per second. Give it 35rW and it will do 35hp of damage per second.
+- Tesla Coils deal damage on a 1 second cycle. During the cycle it emits 1 ⁄ 4 of the input power over 4, 250 ms intervals upon receiving power; 0, 250, 500, 750, ±15 ms. They then enter a rest period of 250 ms before restarting the cycle totaling 1000 msec ie. 1 second. For example, 20rW in will deal 5 damage every 0.25 seconds. Therefore 20 damage over 1 second.  
 - Their damage is stackable. 100 Tesla Coils given 1rW will kill a person in 1 second.
 - The range is just over 1 square foundation or 3.5 meters.
 - Can be placed on all surfaces including the ground.
@@ -4701,6 +4702,8 @@ All components that only have a power input and a passthrough power output, will
 Components with multiple outputs have their own delay, 1 for each output. For example, the Splitter, it has 3 outputs. Power is sent out 1 output at a time. The amount of time from the moment the Splitter receives power to the time the last output sends power out is equal to 1 unit of time. The Electrical Branch sends power through Power Out first then Branch Out and this is equal to 2 units of time. On the Memory Cell, it needs 3 units of time to flip outputs.
 
 Batteries also have their own delay. When a battery has an Active Usage of 0, it enters an ‘Off’ state. When the time comes for the battery to power something, it must enter an ‘On’ state which has a delay equal to 2 units of time. Keeping the battery in the ‘On’ state with a Root Combiner or an Industrial Light eliminates the delay so you have power right away. 
+
+Once a series of connected components exceeds X number, the entire series of components acts as if it is 1 component. For example 1000 lights in series. When turned on, they will all turn on at the same time.
 
 ## Power Flow
 
