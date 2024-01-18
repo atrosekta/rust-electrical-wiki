@@ -67,6 +67,7 @@ Notes:
 - Must be placed on flat surfaces.
 - Can be paired with Rust+ to receive pre-programmed messages from in-game when activated.
 - With TC authorization, look at the alarm with a Wire Tool in hand and press Use(`E`) to set the alarms message.
+- Can be used on tugboats.
 
 ![](images/alarmname.png)
 
