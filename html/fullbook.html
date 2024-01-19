@@ -5149,7 +5149,7 @@ holding the item in your hand, looking at the weapon rack and pressing
 Use(<code>E</code>).</li>
 <li>Rotate the items using Sprint(<code>Left Shift</code>).</li>
 <li>Grid size is 10x10.</li>
-<li>Can be used on tugboats.</li>
+<li>Can be placed on tugboats but cannot be powered.</li>
 </ul>
 <hr />
 <h1 id="tall-weapon-rack"><a href="#tall-weapon-rack"
@@ -5214,7 +5214,7 @@ holding the item in your hand, looking at the weapon rack and pressing
 Use(<code>E</code>).</li>
 <li>Rotate the items using Sprint(<code>Left Shift</code>).</li>
 <li>Grid size is 10x15.</li>
-<li>Can be used on tugboats.</li>
+<li>Can be placed on tugboats but cannot be powered.</li>
 </ul>
 <hr />
 <h1 id="wide-weapon-rack"><a href="#wide-weapon-rack"
@@ -5279,7 +5279,7 @@ holding the item in your hand, looking at the weapon rack and pressing
 Use(<code>E</code>).</li>
 <li>Rotate the items using Sprint(<code>Left Shift</code>).</li>
 <li>Grid size is 17x10.</li>
-<li>Can be used on tugboats.</li>
+<li>Can be placed on tugboats but cannot be powered.</li>
 </ul>
 <hr />
 <hr />
@@ -5380,7 +5380,7 @@ slot will either need to be filled or emptied for the Storage Monitor to
 notice a change. It will not notice partial stacksize changes.</li>
 <li>Can be paired with Rust+ to allow monitoring of Tool Cupboards,
 Large Boxes and Vending Machines.</li>
-<li>Can be used on tugboats.</li>
+<li>Can be placed on tugboats but cannot be powered.</li>
 </ul>
 <p><img src="images/image16.jpg" /></p>
 <hr />
@@ -6471,7 +6471,7 @@ the current list.</li>
 current <a
 href="uncategorizedconcepts.html#monument-camera-codes">Camera
 List</a>.</li>
-<li>Can be used on tugboats.</li>
+<li>Can be placed on tugboats.</li>
 </ul>
 <hr />
 <h1 id="fogger-3000"><a href="#fogger-3000"
@@ -8695,8 +8695,8 @@ Box</td>
 <p>Notes:</p>
 <ul>
 <li>This speaker will play audio from Boom Boxs and Microphone
-Stands</li>
-<li>The audio quality is not as good at the Boom Box</li>
+Stands.</li>
+<li>The audio quality is not as good at the Boom Box.</li>
 </ul>
 <hr />
 <h1 id="disco-ball"><a href="#disco-ball" class="anchor-link">*</a>Disco
@@ -9178,63 +9178,113 @@ will continue to for as long as the call is active.</li>
 <hr />
 <h1 id="fireworks"><a href="#fireworks"
 class="anchor-link">*</a>Fireworks</h1>
-<table style="width:6%;">
+<hr />
+<p>They can be used on tugboats.</p>
+<p>They can be ignited with a lit Torch, Flamethrower, Fire Arrows or
+using an electric Igniter.</p>
+<p>They can be placed on flat surfaces or the ground unless stated
+otherwise. They can be picked up with a hammer.</p>
+<p>A firework is active when the fuse on the side of it is sparkling. If
+the fuse is sparkling, it cannot be picked up.</p>
+<p>The default number of Boomers, Patterns and Champagnes that can be
+active at 1 time is 25. Not 25 of each, 25 total.</p>
+<table>
 <colgroup>
-<col style="width: 5%" />
+<col style="width: 37%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
 </colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Start Time</th>
+<th>Launch Time</th>
+<th>Number of shots</th>
+<th>Time between shots</th>
+<th>Active Time</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
-<td>They can be used on tugboats.</td>
+<td>Volcano</td>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+<td>40</td>
 </tr>
 <tr class="even">
-<td>They can be ignited with a lit Torch, Flamethrower, Fire Arrows or
-using an electric Igniter.</td>
+<td>Candle</td>
+<td>5</td>
+<td>2</td>
+<td>12</td>
+<td>3</td>
+<td>40</td>
 </tr>
 <tr class="odd">
-<td>They can be placed on flat surfaces or the ground unless stated
-otherwise. They can be picked up with a hammer.</td>
+<td>Boomer</td>
+<td>5</td>
+<td>5</td>
+<td>10</td>
+<td>4</td>
+<td>47</td>
 </tr>
 <tr class="even">
-<td>A firework is active when the fuse on the side of it is sparkling.
-If the fuse is sparkling, it cannot be picked up.</td>
+<td>Champagne</td>
+<td>5</td>
+<td>5</td>
+<td>3</td>
+<td>10</td>
+<td>35</td>
 </tr>
 <tr class="odd">
-<td>The default number of Boomers, Patterns and Champagnes that can be
-active at 1 time is 25. Not 25 of each, 25 total.</td>
+<td>Pattern Short Fuse</td>
+<td>5</td>
+<td>5</td>
+<td>3</td>
+<td>10</td>
+<td>35</td>
 </tr>
 <tr class="even">
-<td>Type | Start Time | Launch Time | Number of shots | Time between
-shots | Active Time |—|-|-|-|-|-| Volcano | 5 |||| 40 Candle | 5 | 2 |
-12 | 3 | 40 Boomer | 5 | 5 | 10 | 4 | 47 Champagne | 5 | 5 | 3 | 10 | 35
-Pattern Short Fuse | 5 | 5 | 3 | 10 | 35 Pattern Medium Fuse | 5 | 7 | 3
-| 10 | 35 Pattern Long Fuse | 5 | 10 | 3 | 10 | 35</td>
+<td>Pattern Medium Fuse</td>
+<td>5</td>
+<td>7</td>
+<td>3</td>
+<td>10</td>
+<td>35</td>
 </tr>
 <tr class="odd">
-<td><code>Start Time</code> refers to the time between the fuse starting
-to sparkle and the time the firework starts to produce color or launches
-a projectile.</td>
-</tr>
-<tr class="even">
-<td><code>Launch Time</code> refers to the amount of time it takes a
-firework to reach its maximum height.</td>
-</tr>
-<tr class="odd">
-<td><code>Number Of Shots</code> refers to the number of times a
-firework will launch a projectile.</td>
-</tr>
-<tr class="even">
-<td><code>Time Between Shots</code> refers to the amount of time between
-each projectile.</td>
-</tr>
-<tr class="odd">
-<td><code>Active Time</code> refers to the total amount of time from a
-firework activating to the time it produces its last color or boom. This
-is also called <code>Duration</code> in the items description and is
-written as Start Time + the time it takes from the first projectile to
-launch and the last projectile to reach its maximum height.</td>
+<td>Pattern Long Fuse</td>
+<td>5</td>
+<td>10</td>
+<td>3</td>
+<td>10</td>
+<td>35</td>
 </tr>
 </tbody>
 </table>
+<p><code>Start Time</code> refers to the time between the fuse starting
+to sparkle and the time the firework starts to produce color or launches
+a projectile.</p>
+<p><code>Launch Time</code> refers to the amount of time it takes a
+firework to reach its maximum height.</p>
+<p><code>Number Of Shots</code> refers to the number of times a firework
+will launch a projectile.</p>
+<p><code>Time Between Shots</code> refers to the amount of time between
+each projectile.</p>
+<p><code>Active Time</code> refers to the total amount of time from a
+firework activating to the time it produces its last color or boom. This
+is also called <code>Duration</code> in the items description and is
+written as Start Time + the time it takes from the first projectile to
+launch and the last projectile to reach its maximum height.</p>
+<blockquote>
+<p>Example: 5+35 seconds = 5 seconds to start then 35 more seconds
+before the firework finishes.</p>
+</blockquote>
+<hr />
 <h1 id="volcano-firework"><a href="#volcano-firework"
 class="anchor-link">*</a>Volcano Firework<img
 src="images/firework.volcano.red.png" /></h1>
