@@ -18,14 +18,15 @@ Workbench Required | Level 1
 Hit Points         | 100
 Where To Find      | Requires a DLC purchase
 Inputs/Outputs     | Power, Toggle Play / Audio Out
-Active Usage       | 10 only when turned on \*
-Power Consumption  | 1rW or 10rW when using the Audio Out connection
+Active Usage       | 10 only when turned on but *
+Power Consumption  | 10rW 
 Power Output       | Input power minus 10rW
 Despawn Time       | 5 minutes
 Decay Time         | 96 hours
 
 Notes:
 
+- The Boom Box will register 10 Active Usage for itself on a battery when it is turned on. The Boom Box does not block the Active Usage from any connected components to Audio Out at any time.
 - Requires TC Authorization to change settings. Look at the speaker and
   hold USE(`E`). You can access Radio Settings or Open. Open allows you to
   insert a cassette. Radio Settings lets you select a Radio Station.
@@ -37,6 +38,7 @@ Notes:
 - Can be placed in horizontal surfaces, the ground and some deployable
   items like Work Benches and Tables.
 - They block the destruction detectors ability to see downstream.
+- The audio range from the Boom Box is 30 meters or 10 square foundations.
 
 ---
 
