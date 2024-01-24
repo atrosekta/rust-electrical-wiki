@@ -82,7 +82,7 @@ Notes:
 - The turret has a 180 degree detection arch.  
 - Must be placed on flat surfaces.  
 - Try to place them in a way they cannot be baited and drained.  
-- They can shoot through 2 layers of Chainlink Fence.  
+- They can shoot through 20 layers of Chainlink Fence.  
 
 ---
 
