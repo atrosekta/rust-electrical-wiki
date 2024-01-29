@@ -50,15 +50,15 @@ Deciding which backup to use really comes down to preference. They each have the
 
 This is when the power source is directly connected to a circuit. If the power source is destroyed or stops producing power for any reason, the circuit will go offline. This method is a great solution for short term uses like getting some auto turrets asap for your clan or getting some water pumps online early for a berry farm. While this method is good for a very short time to get an early game advantage, it is not recommended to rely on this method for any length of time. Introducing batteries to a circuit to create backup power is more suited for long term use.
 
-**Things to note**:
- - Easy to wire
- - Uses minimal components
- - Provides an early game advantage
- - If the power source is destroyed, the circuit will turn off
- - There is no backup power
- - Short term use only
+**Things to note**:  
+ - Easy to wire.  
+ - Uses minimal components.  
+ - Provides an early game advantage.  
+ - If the power source is destroyed, the circuit will turn off.  
+ - There is no backup power.  
+ - Short term use only.  
 
-**Recommended reading**:
+**Recommended reading**:  
  - This is not a battery backup but worth mentioning. Check out the rest of this section.
 
 
@@ -80,18 +80,18 @@ One of the biggest benefits of an Inline backup is when the power source stops m
 
 It is recommended to start charging batteries as soon as possible. Let them charge to a minimum of 3000rWm before letting them power anything. The reason for this is if a Wind Turbine is used, the wind could be entering a slow period. When using Solar Panels, night comes once an hour. Having some capacity saved up will help get through the slow or no times.
 
-**Things to note**:
- - Simple to make with minimal electrical components
- - Easy for decentralizing having different circuits with different power sources/backups
- - There is no flicker of power because there is no switching between sources
- - It does require an understanding of Active Usage to take full advantage of
- - It is not meant to be used with root combined batteries. Requires more power to be produced making it an inefficient use of power
- - If the battery is destroyed, the circuit will turn off
+**Things to note**:  
+ - Simple to make with minimal electrical components.  
+ - Easy for decentralizing having different circuits with different power sources/backups.  
+ - There is no flicker of power because there is no switching between sources.  
+ - It does require an understanding of Active Usage to take full advantage of.  
+ - It is not meant to be used with root combined batteries. Requires more power to be produced making it an inefficient use of power.  
+ - If the battery is destroyed, the circuit will turn off.  
 
-**Recommended Reading**:
- - [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#battery-active-usage-vs-actual-power-consumed)
- - [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)
- - [ What is a Power Bus? ](powerdistribution.html#what-is-a-power-bus)
+**Recommended Reading**:  
+ - [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#battery-active-usage-vs-actual-power-consumed)  
+ - [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)  
+ - [ What is a Power Bus? ](powerdistribution.html#what-is-a-power-bus)  
 
 
 
@@ -108,20 +108,23 @@ The way this system works is by sending power to a Memory Cell first. The left o
 
 The biggest advantage of this backup system is the ability to continue to send power to the circuit even after the battery is destroyed, no matter how much power is coming in. It is recommended to let the battery charge to a minimum of 3000rWm before letting it power anything providing a buffer when entering a low power protection period of time.  
 
-**Things to note**:
- - Simple to make with minimal electrical components
- - Easy for decentralizing having different circuits with different power sources/backups
- - There is no flicker of power because there is no switching between sources unless the battery is destroyed
- - It does require an understanding of Active Usage to take full advantage of
- - It is not meant to be used with root combined batteries. Requires more power to be produced making it an inefficient use of power
- - If the battery is destroyed, the circuit will switch over to the power source no matter how much power is coming in
+Read the infographic below for more details.  
+
+**Things to note**:  
+ - Simple to make with minimal electrical components.  
+ - Easy for decentralizing having different circuits with different power sources/backups.  
+ - There is no flicker of power because there is no switching between sources unless the battery is destroyed.  
+ - It does require an understanding of Active Usage to take full advantage of.  
+ - It is not meant to be used with root combined batteries. Requires more power to be produced making it an inefficient use of power.  
+ - If the battery is destroyed, the circuit will switch over to the power source no matter how much power is coming in.  
 
 **Recommended Reading**:  
- - [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#battery-active-usage-vs-actual-power-consumed)
- - [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)
- - [ What is a Power Bus? ](powerdistribution.html#what-is-a-power-bus)
+ - [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#battery-active-usage-vs-actual-power-consumed)  
+ - [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)  
+ - [ What is a Power Bus? ](powerdistribution.html#what-is-a-power-bus)  
   
-![](images/WLmFo7pv2.png)
+![](images/WLmFo7pv2.png)  
+
 Check out the [demo here](https://streamable.com/ugrbkl)
 
 ---
@@ -143,20 +146,20 @@ Electrical Branch or block the battery. The battery takes over powering the circ
 
 While considered out of date today for use as a primary battery backup system, with some small modifications, it is useful as a secondary battery backup which we talk about in its own section. 
 
-**Things to note**:
- - Simple to make with minimal electrical components. Having understanding of the components and Power Flow is advised
- - Easy for centralizing all circuits to a single power source/backup but is limited in size needing an understanding of Short Circuit/Max Depth
- - Is an inefficient use of power when running on battery because it does not take advantage of charging and discharging at the same time
- - Without modification there is a flicker of power when switching between sources
- - It does require an understanding of Active Usage and Power Consumption to take full advantage of
- - It can be used with root combined batteries because this circuit is not designed for Active Usage 
- - If the battery is destroyed, the circuit will only switch over to the power source if enough power is coming in
+**Things to note**:  
+ - Simple to make with minimal electrical components. Having understanding of the components and Power Flow is advised.  
+ - Easy for centralizing all circuits to a single power source/backup but is limited in size needing an understanding of Short Circuit/Max Depth.  
+ - Is an inefficient use of power when running on battery because it does not take advantage of charging and discharging at the same time.  
+ - Without modification there is a flicker of power when switching between sources.  
+ - It does require an understanding of Active Usage and Power Consumption to take full advantage of.  
+ - It can be used with root combined batteries because this circuit is not designed for Active Usage.  
+ - If the battery is destroyed, the circuit will only switch over to the power source if enough power is coming in.  
 
-**Recommended Reading**:
-- [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#battery-active-usage-vs-actual-power-consumed)
-- [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)
-- [ Circuit Delay and Power Flow ](powerdistribution.html#circuit-delay-and-power-flow)
-- [ What is a Power Bus? ](powerdistribution.html#what-is-a-power-bus)
+**Recommended Reading**:  
+- [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#battery-active-usage-vs-actual-power-consumed)  
+- [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)  
+- [ Circuit Delay and Power Flow ](powerdistribution.html#circuit-delay-and-power-flow)  
+- [ What is a Power Bus? ](powerdistribution.html#what-is-a-power-bus)  
 
 ---
 
@@ -198,21 +201,21 @@ main power and battery power, it is because 1 of 2 issues.
 
 ![](images/solution3.png)
 
-**Things to note**:
- - Added complexity needing multiple components to make requiring an understanding of the components and Power Flow
- - Great for centralizing all circuits to a single power source/backup but is limited in size needing an understanding of Short Circuit/Max Depth
- - Is an efficient use of power when running on battery because it takes advantage of charging and discharging at the same time
- - Without modification there is a flicker of power when switching between sources
- - It does require an understanding of Active Usage and Power Consumption to take full advantage of
- - It can be used with root combined batteries because this circuit is not designed for Active Usage 
- - If the battery is destroyed, the circuit will only switch over to the power source if enough power is coming in
+**Things to note**:  
+ - Added complexity needing multiple components to make requiring an understanding of the components and Power Flow.  
+ - Great for centralizing all circuits to a single power source/backup but is limited in size needing an understanding of Short Circuit/Max Depth.  
+ - Is an efficient use of power when running on battery because it takes advantage of charging and discharging at the same time.  
+ - Without modification there is a flicker of power when switching between sources.  
+ - It does require an understanding of Active Usage and Power Consumption to take full advantage of.  
+ - It can be used with root combined batteries because this circuit is not designed for Active Usage.  
+ - If the battery is destroyed, the circuit will only switch over to the power source if enough power is coming in.  
 
 
-**Recommended Reading**:
-- [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#battery-active-usage-vs-actual-power-consumed)
-- [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)
-- [ Circuit Delay and Power Flow ](powerdistribution.html#circuit-delay-and-power-flow)
-- [ What is a Power Bus? ](powerdistribution.html#what-is-a-power-bus)
+**Recommended Reading**:  
+- [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#battery-active-usage-vs-actual-power-consumed)  
+- [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)  
+- [ Circuit Delay and Power Flow ](powerdistribution.html#circuit-delay-and-power-flow)  
+- [ What is a Power Bus? ](powerdistribution.html#what-is-a-power-bus)  
 
 ---
 
@@ -221,21 +224,21 @@ main power and battery power, it is because 1 of 2 issues.
 
 The BCN Core is a Battery Checked Nih Core.....
 
-**Things to note**:
- - Added complexity needing even more components to make requiring an understanding of the components and Power Flow
- - Great for centralizing all circuits to a single power source/backup but is limited in size needing an understanding of Short Circuit/Max Depth
- - Is an efficient use of power when running on battery because it takes advantage of charging and discharging at the same time
- - There is no flicker of power when switching between sources unless the batteries cannot supply enough power
- - It does require an understanding of Active Usage and Power Consumption to take full advantage of
- - It can be used with root combined batteries because this circuit is not designed for Active Usage 
- - If the battery is destroyed, the circuit switch over to the power source even if not enough power is coming in
+**Things to note**:  
+ - Added complexity needing even more components to make requiring an understanding of the components and Power Flow.  
+ - Great for centralizing all circuits to a single power source/backup but is limited in size needing an understanding of Short Circuit/Max Depth.  
+ - Is an efficient use of power when running on battery because it takes advantage of charging and discharging at the same time.  
+ - There is no flicker of power when switching between sources unless the batteries cannot supply enough power.  
+ - It does require an understanding of Active Usage and Power Consumption to take full advantage of.  
+ - It can be used with root combined batteries because this circuit is not designed for Active Usage.  
+ - If the battery is destroyed, the circuit switch over to the power source even if not enough power is coming in.  
 
 
-**Recommended Reading**:
-- [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#battery-active-usage-vs-actual-power-consumed)
-- [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)
-- [ Circuit Delay and Power Flow ](powerdistribution.html#circuit-delay-and-power-flow)
-- [ What is a Power Bus? ](powerdistribution.html#what-is-a-power-bus)
+**Recommended Reading**:  
+- [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#battery-active-usage-vs-actual-power-consumed)  
+- [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)  
+- [ Circuit Delay and Power Flow ](powerdistribution.html#circuit-delay-and-power-flow)  
+- [ What is a Power Bus? ](powerdistribution.html#what-is-a-power-bus)  
 
 ---
 
@@ -269,20 +272,20 @@ The ability to bypass the battery means the amount of power each Electrical Bran
 
 Adding a recharging system can be done. It is just the OR/Blocker battery backup. The only drawback is the added power cost. If a player is OK with that, then go for it. 
 
-**Things to note**:
- - Simple to make with only a few components
- - Great for creating a redundant backup for a backup while adding a level of decentralization on a centralized circuit
- - Is an efficient use of materials if the main backup is properly protected and secured
- - There is a flicker of power when switching on to this backup
- - It should not be used with root combined batteries because this circuit can be inserted anywhere in any circuit 
- - The battery should be fully charged before getting installed
+**Things to note**:  
+ - Simple to make with only a few components  
+ - Great for creating a redundant backup for a backup while adding a level of decentralization on a centralized circuit  
+ - Is an efficient use of materials if the main backup is properly protected and secured  
+ - There is a flicker of power when switching on to this backup  
+ - It should not be used with root combined batteries because this circuit can be inserted anywhere in any circuit  
+ - The battery should be fully charged before getting installed  
 
-**Recommended Reading**:
-- [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#battery-active-usage-vs-actual-power-consumed)
-- [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)
-- [ Circuit Delay and Power Flow ](powerdistribution.html#circuit-delay-and-power-flow)
+**Recommended Reading**:  
+- [ Battery Active Usage vs Actual Power Consumption ](powerstorage.html#battery-active-usage-vs-actual-power-consumed)  
+- [ Short Circuit / Max Depth ](powerdistribution.html#short-circuit-max-depth)  
+- [ Circuit Delay and Power Flow ](powerdistribution.html#circuit-delay-and-power-flow)  
 - [ What is a Power Bus? ](powerdistribution.html#what-is-a-power-bus)  
-
+ 
 ---  
 
 # Battery Active Usage VS Actual Power Consumed
