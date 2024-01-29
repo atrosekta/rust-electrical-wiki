@@ -39,20 +39,8 @@ Notes:
 - `Filter Fail` will send out 1rW constantly when the conditions of the filter are not met. It will continue to send power for 5 seconds when the Conveyor will check to see if the conditions are still not being met. If they are still not met, Filter Fail will continue to send out power. If the conditions are met, it will stop sending out power.
 - Both the Filter Pass and Fail outputs will allow the Active Usage of inactive components through. This means if the circuit is using an Inline backup, the offline components will register Active Usage on the battery causing drain.
 - There is a max of 12 items that can be filtered.
-- You can filter by specific items or by a general filter groups ( **Ammo, Clothing, Components, Construction, Electrical, Food, Fun, Medical, Other, Resources, Tools, Traps, Weapons** )
+- You can filter by specific items or by a general filter groups ( **Items, Ammo, Clothing, Components, Construction, Electrical, Food, Fun, Medical, Other, Resources, Tools, Traps, Weapons** )
 - The `Current Items` list can be copied from one conveyor to another using the **Copy** and **Paste** buttons. Holding Sprint(`Shift`) lets a user ***Copy(JSON)***. This can then be pasted into a text file allowing a player to share their conveyor filters outside of the game and between servers. Hold Sprint(`Shift`) to ***Paste(JSON)***. This will not copy the ‘Filter Mode’.  
-- There is currently no **`Item`** category filter available through the conveyor search option, but you can paste in the JSON text file found below into a conveyor to add an Item category filter. (This will overwrite your current filter)  
->[  
-{  
- "TargetCategory": 2,  
- "MaxAmountInOutput": 0,  
- "BufferAmount": 0,  
- "MinAmountInInput": 0,  
- "IsBlueprint": false,  
- "BufferTransferRemaining": 0,  
- "TargetItemName": ""  
- }  
-]  
 - `Filter Item settings:`
     - `MAX:` conveyor will stop moving this item when all target containers reach this amount.
     - `MIN:` conveyor will only move items in excess of this amount from all input containers.
@@ -64,7 +52,7 @@ Notes:
         - This filter works as expected if only using 1 storage adapter on a single container.
         - When all items are present, Conveyor will set Filter Pass and transfer.
         - When using multiple containers with a single adapter on each, all of each item type must be contained to a single box. The single box can contain all of more than 1 item.
-        - `Bug:` When using 2 storage adapters, either on a single container to 2 containers, it won't transfer anything unless it is only 1 item in 1 box. If all the items in the filter list are present, Conveyor will set Filter Fail and not transfer. 
+        - `Bug:` When either using 2 storage adapters on a single container, or 2 containers that both have the same filtered item(s), it won't transfer anything even if all the items in the filter list are present;The conveyor will set Filter Fail and not transfer.  
     - `EXCLUDE LISTED ITEMS:` Only items not listed will be moved.
     - Items in the filter list will be prevented from transferring.
     - When using more than 1 filter type, the conveyor will set Filter Pass even when the item in the container is on the exclusion list.
@@ -76,12 +64,6 @@ Notes:
 - Every additional Storage Adapter added to a container will increase the number of stacks the conveyor can take by 12.
 - They can be placed on all surfaces and the ground.
 - Has the ability to be rotated using Reload(R).
-- The term `Item` is specifically referring to the `Item ID` number. For example, the hazmat suit has different skins but they actually have different ID’s. This should not be an issue but some items will still be transferred even though the MAX item filter has been met. One example is the Arctic and Lumberjack suits. They are hazmats but even with a MAX filter of 1, 1 of each will be sent. The default skin will always fulfill the MAX requirement and block the remodeled versions, but the remodeled versions will not block each other. This issue also exists with the following items:
-    - Hazmat Suit
-    - Sky Lanterns
-    - AK
-    - Metal Tools
-    - Torches
 
 ---
 
@@ -213,7 +195,7 @@ Despawn Time              | 5 minutes
 Notes:
 
 - They split pipes allowing a Conveyor to send items to multiple containers.
-- If pipes are split in a way that is not divisible into 60, it will cause Conveyors to pull less than 60 items per group per stack.
+- If pipes are split into a number of storage adaptors that is not divisible into 60, it will cause Conveyors to pull less than 60 items per group per stack. (60 ÷ # of Storage Adaptors) Rounded down.
 - Has the ability to be rotated using Reload(`R`).
 
 ---

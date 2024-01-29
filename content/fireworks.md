@@ -3,20 +3,20 @@
 
 ---  
 
-They can be used on tugboats.
-
+They can be used on tugboats.  
+  
 They can be ignited with a lit Torch, Flamethrower, Fire Arrows or using
-an electric Igniter.
-
+an electric Igniter.  
+  
 They can be placed on flat surfaces or the ground unless stated
-otherwise. They can be picked up with a hammer.
-
+otherwise. They can be picked up with a hammer.  
+  
 A firework is active when the fuse on the side of it is sparkling. If
-the fuse is sparkling, it cannot be picked up.
-
+the fuse is sparkling, it cannot be picked up.  
+  
 The default number of Boomers, Patterns and Champagnes that can be
-active at 1 time is 25. Not 25 of each, 25 total.
-
+active at 1 time is 25. Not 25 of each, 25 total.  
+  
 Type | Start Time | Launch Time | Number of shots | Time between shots | Active Time 
 |---|-|-|-|-|-|
 Volcano | 5 |||| 40
