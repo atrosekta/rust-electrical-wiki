@@ -457,6 +457,7 @@ Notes:
 - Rotate the items using Sprint(`Left Shift`).
 - Grid size is 10x10.
 - Can be placed on tugboats but cannot be powered.
+- Can be placed under water.
 
 ---
 
@@ -482,6 +483,7 @@ Notes:
 - Rotate the items using Sprint(`Left Shift`).
 - Grid size is 10x15.
 - Can be placed on tugboats but cannot be powered.
+- Can be placed under water.
 
 ---
 
@@ -507,5 +509,6 @@ Notes:
 - Rotate the items using Sprint(`Left Shift`).
 - Grid size is 17x10.
 - Can be placed on tugboats but cannot be powered.
+- Can be placed under water.
 
 ---
