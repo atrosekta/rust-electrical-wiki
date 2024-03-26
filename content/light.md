@@ -26,6 +26,7 @@ Notes:
 
 - These blink a blue light. 3 fast pulses followed by a pause.
 - These can be placed on any angled surfaces.
+- The light can be seen across 2 grids.
 
 ---
 
@@ -53,6 +54,7 @@ Notes:
 - These emit 2 red lights 180 degree from each other and spin in a
   circle.
 - Can be placed on any angled surfaces.
+- The light can be seen across 2 grids.
 
 ---
 
