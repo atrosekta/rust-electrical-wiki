@@ -36,7 +36,7 @@ Despawn Time        | 20 minutes
 Notes:
 
 - Will pulse 1rW when an inventory slot changes state. An inventory slot will either need to be filled or emptied for the Storage Monitor to notice a change. It will not notice partial stacksize changes.
-- Can be paired with Rust+ to allow monitoring of Tool Cupboards, Large Boxes and Vending Machines.
+- Can be paired with Rust+ to allow monitoring of Tool Cupboards, Large Boxes, Storage Barrels and Vending Machines.
 - Can be placed on tugboats but cannot be powered.
 
 ![](images/image16.jpg)

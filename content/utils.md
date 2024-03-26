@@ -200,7 +200,7 @@ Notes:
 - These allow for modification of modular cars by adding or removing modules. 
 - Lets anyone add or remove code locks.
 - Store cars on a powered lift to prevent decay.
-- Cannot be picked up with a Hammer.
+- Can be picked up with a Hammer.
 
 
 ---
@@ -353,6 +353,7 @@ Notes:
 - The game has pre-placed cameras at some of the monuments, check the
   current [Camera List](uncategorizedconcepts.html#monument-camera-codes).
 - Can be placed on tugboats.
+- Displays the in game time in the bottom right of the UI.
 
 ---
 
