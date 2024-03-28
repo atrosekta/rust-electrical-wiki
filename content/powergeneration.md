@@ -114,19 +114,19 @@ When working with solar panels for a primary source of power, it is very helpful
 `rWm`: rust watt minutes (capacity)  
 `rW`: Rust Watt (aka power)  
 `S`: Seconds  
-`τ`: 60 (The number of seconds in a minute, and minutes in an hour)  
+`τ`: 60 (The number of minutes in an hour)  
 `M`: Minutes  
-`O`: The amount of power(rW) you want to output  
+`A`: The battery's Active Usage  
 `H`: Hours  
 
 To figure out how much capacity is needed to support a circuit of a specific load, use the following equation:  
-`O × τ = rWm`
+`A × τ = rWm`
 
 To figure out how many pairs of panels are needed to support a specific amount to power, use the following equation:  
 `rWm ÷ 940rWm = Solar Panel pairs`
 
-> Example: A circuit with an active load of 64rW.  
-`O × τ = rWm`  
+> Example: A circuit with an Active Usage of 64rW.  
+`A × τ = rWm`  
 `64 × 60 = 3840rWm`  
 Therefore a circuit needing a constant 64rW over the course of 1 hour will consume 3840rWm worth of power.   
 `rWm ÷ 940rW = Solar Panel pairs`  
@@ -134,9 +134,9 @@ Therefore a circuit needing a constant 64rW over the course of 1 hour will consu
 Therefore 5 pairs of panels are needed to capture enough rWm to cover the power cost of a 64rW circuit. 2 solar panels make a pair, so 10 panels total.
 
 To figure out how much time a given capacity will run for, outputting a specific amount of power, we use the following equations:  
-`Seconds: (rWm ÷ O = M) × τ = S`  
-`Minutes: rWm ÷ O = M`  
-`Hours: (rWm ÷ O = M) ÷ τ = H`
+`Seconds: (rWm ÷ A = M) × τ = S`  
+`Minutes: rWm ÷ A = M`  
+`Hours: (rWm ÷ A = M) ÷ τ = H`
 
 
 ---
