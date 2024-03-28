@@ -1220,6 +1220,7 @@ Notes:
 
 - These blink a blue light. 3 fast pulses followed by a pause.
 - These can be placed on any angled surfaces.
+- The light can be seen across 2 grids.
 
 ---
 
@@ -1247,6 +1248,7 @@ Notes:
 - These emit 2 red lights 180 degree from each other and spin in a
   circle.
 - Can be placed on any angled surfaces.
+- The light can be seen across 2 grids.
 
 ---
 
@@ -1651,6 +1653,7 @@ Notes:
 - Rotate the items using Sprint(`Left Shift`).
 - Grid size is 10x10.
 - Can be placed on tugboats but cannot be powered.
+- Can be placed under water.
 
 ---
 
@@ -1676,6 +1679,7 @@ Notes:
 - Rotate the items using Sprint(`Left Shift`).
 - Grid size is 10x15.
 - Can be placed on tugboats but cannot be powered.
+- Can be placed under water.
 
 ---
 
@@ -1701,6 +1705,7 @@ Notes:
 - Rotate the items using Sprint(`Left Shift`).
 - Grid size is 17x10.
 - Can be placed on tugboats but cannot be powered.
+- Can be placed under water.
 
 ---
 
@@ -1744,7 +1749,7 @@ Despawn Time        | 20 minutes
 Notes:
 
 - Will pulse 1rW when an inventory slot changes state. An inventory slot will either need to be filled or emptied for the Storage Monitor to notice a change. It will not notice partial stacksize changes.
-- Can be paired with Rust+ to allow monitoring of Tool Cupboards, Large Boxes and Vending Machines.
+- Can be paired with Rust+ to allow monitoring of Tool Cupboards, Large Boxes, Storage Barrels and Vending Machines.
 - Can be placed on tugboats but cannot be powered.
 
 ![](images/image16.jpg)
@@ -2014,7 +2019,7 @@ Notes:
 - These allow for modification of modular cars by adding or removing modules. 
 - Lets anyone add or remove code locks.
 - Store cars on a powered lift to prevent decay.
-- Cannot be picked up with a Hammer.
+- Can be picked up with a Hammer.
 
 
 ---
@@ -2167,6 +2172,7 @@ Notes:
 - The game has pre-placed cameras at some of the monuments, check the
   current [Camera List](uncategorizedconcepts.html#monument-camera-codes).
 - Can be placed on tugboats.
+- Displays the in game time in the bottom right of the UI.
 
 ---
 
@@ -2586,7 +2592,7 @@ Where To Find       | Arctic Scientist, Cargo Ship Scientist, Elite Tier Crate, 
 Inputs/Outputs      | Power In / Water In, Water Out
 Active Usage        | 5
 Power Consumption   | 5rW
-Conversion Rate     | 62.5ml/second @ 2 | 1 ratio of saltwater to freshwater
+Conversion Rate     | 62.5ml/second @ 2:1 ratio of saltwater to freshwater
 Fresh Water Output  | 12mL/second
 Capacity            | 10,000ml total, 5000ml per tank. Black for saltwater and blue for freshwater.  
 Despawn Time        | 20 minutes
@@ -3934,19 +3940,19 @@ When working with solar panels for a primary source of power, it is very helpful
 `rWm`: rust watt minutes (capacity)  
 `rW`: Rust Watt (aka power)  
 `S`: Seconds  
-`τ`: 60 (The number of seconds in a minute, and minutes in an hour)  
+`τ`: 60 (The number of minutes in an hour)  
 `M`: Minutes  
-`O`: The amount of power(rW) you want to output  
+`A`: The battery's Active Usage  
 `H`: Hours  
 
 To figure out how much capacity is needed to support a circuit of a specific load, use the following equation:  
-`O × τ = rWm`
+`A × τ = rWm`
 
 To figure out how many pairs of panels are needed to support a specific amount to power, use the following equation:  
 `rWm ÷ 940rWm = Solar Panel pairs`
 
-> Example: A circuit with an active load of 64rW.  
-`O × τ = rWm`  
+> Example: A circuit with an Active Usage of 64rW.  
+`A × τ = rWm`  
 `64 × 60 = 3840rWm`  
 Therefore a circuit needing a constant 64rW over the course of 1 hour will consume 3840rWm worth of power.   
 `rWm ÷ 940rW = Solar Panel pairs`  
@@ -3954,9 +3960,9 @@ Therefore a circuit needing a constant 64rW over the course of 1 hour will consu
 Therefore 5 pairs of panels are needed to capture enough rWm to cover the power cost of a 64rW circuit. 2 solar panels make a pair, so 10 panels total.
 
 To figure out how much time a given capacity will run for, outputting a specific amount of power, we use the following equations:  
-`Seconds: (rWm ÷ O = M) × τ = S`  
-`Minutes: rWm ÷ O = M`  
-`Hours: (rWm ÷ O = M) ÷ τ = H`
+`Seconds: (rWm ÷ A = M) × τ = S`  
+`Minutes: rWm ÷ A = M`  
+`Hours: (rWm ÷ A = M) ÷ τ = H`
 
 
 ---
