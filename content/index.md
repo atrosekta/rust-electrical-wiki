@@ -1,5 +1,7 @@
 # The RUST Electrical Handbook
 
+Please be advised, as of April 4th 2024, this version of the handbook will no longer be updated. This version will remain avaliable for players on console. The differences between console and PC electricity are changing dramatically. Thank you to everyone that helped get this book as far as it has come. I look forward to working with you again on the next PC version. 
+
 *You are visitor: []{#visitorcount}*
 
 A continually updated all inclusive guide to everything electrical in the game Rust. This handbook will include everything you need to find, craft, wire, and utilize different useful circuits in game. These designs have been curated from many community submissions into the simplest, cheapest, and most optimized versions possible.
