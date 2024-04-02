@@ -1,4 +1,4 @@
-# The RUST Electrical Handbook
+# The RUST Electrical Handbook (Legacy)
 
 Please be advised, as of April 4th 2024, this version of the handbook will no longer be updated. This version will remain avaliable for players on console. The differences between console and PC electricity are changing dramatically. Thank you to everyone that helped get this book as far as it has come. I look forward to working with you again on the next PC version. 
 
