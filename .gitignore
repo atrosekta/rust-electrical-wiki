@@ -1,7 +1,15 @@
 
-ign.*
 .creds
 
+# already in each html files
 global/navbar.html
+
+# duplicate of ./content/images
 html/images/*
+
+# duplicate of ./global
 html/global/*
+
+# personals
+ign.*
+*.code-workspace
