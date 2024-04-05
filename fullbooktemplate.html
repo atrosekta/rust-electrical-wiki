@@ -17,7 +17,14 @@
 				<span id="sidetog" class="sidetext" onclick="toggside();"></span>
 			</span>
 			<span id="sidenav">
-				$global/fullbookbar.html()$
+
+				<!-- pandoc ... -V fullbook=1 -->
+				$if(fullbook)$
+					$global/fullbookbar.html()$
+				$else$
+					$global/navbar.html()$
+				$endif$
+
 			</span>
 		</div>
 		<span id="sidetogmobile" onclick="toggside();"></span>

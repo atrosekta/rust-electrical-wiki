@@ -1,12 +1,24 @@
 #!/bin/bash
 
-cmdfile=ftp.last
-lstcmtfile=lastuploadedcommit
+ftpcmdfile=ftp.last
+commitfile=lastuploadedcommit
 
-./changedfiles.sh
-[[ -z $(<$cmdfile) ]] && exit
+currcommit=$(git rev-parse HEAD)
+lastcommit=$(<$commitfile)
+
+if [ "$1" == "-n" ]; then
+	commitfile=/dev/null
+else
+	./changedfiles.sh $lastcommit $currcommit > $ftpcmdfile
+fi
+
+[ -z "$(<$ftpcmdfile)" ] && {
+	echo nothing to upload.
+	exit 0
+}
+
 read -r -d '' user host pass < .creds
-export SSHPASS=$pass
-sshpass -e sftp -oBatchMode=no -b - \
-	$user@$host < $cmdfile \
-	&& git rev-parse HEAD > $lstcmtfile
+SSHPASS=$pass sshpass -e sftp -oBatchMode=no -b - \
+	$user@$host < <(grep -v '^#' $ftpcmdfile) \
+	&& echo $currcommit > $commitfile
+

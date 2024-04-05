@@ -1,56 +1,46 @@
 #!/bin/bash
 
-lstcmtfile=lastuploadedcommit
-lstcmdfile=ftp.last
+oldcommit="$1"
+newcommit="$2"
 
-# git rev-parse HEAD > $lstcmtfile ; exit
-cd $(git rev-parse --show-toplevel)
-# read lstcmt <<< $( git rev-parse data )
-read lstcmt < $lstcmtfile
-mapfile gitfiles <<< \
-	"$(git --no-pager diff --name-status $lstcmt HEAD)"
-
-putfile() {
-	target=
-	[[ $1 =~ global/* ]] && target=" global"
-	[[ $1 =~ content/images/* ]] && target=" images"
-	echo "put '$1'$target"
+getremotepath() {
+	case "$1" in
+		html/*.html )      echo "${1#html/}" ;;
+		content/images/* ) echo "${1#content/}" ;;
+		global/* )         echo "${1}" ;;
+		* ) return 1;;
+	esac
 }
 
-rmfile() {
-	file=${1#content/}
-	file=${file#html/}
-	echo "rm  '$file'"
-}
+cd "$(git rev-parse --show-toplevel)" \
+	|| { echo cant find root repo. >&2; exit 1; }
 
-for line in "${gitfiles[@]}"
+while read -r -d '' stat file
 do
-	read -r stat file <<< "$line"
-	case "$file" in
-		html/*.html      | \
-		content/images/* | \
-		global/*         ) ;;
-		* ) continue ;;
-	esac
-	case "${stat:0:1}" in
+	remote="$(getremotepath "$file")" || continue
+	case "$stat" in
 		M | A )
-			putfile "$file" ;;
+			echo "put '$file' '$remote'" ;;
 		D )
-			rmfile "$file" ;;
+			echo "rm '$remote'" ;;
 		R )
-			read -r old new <<< "$file"
-			rmfile "$old"
-			putfile "$new"
-			;;
-		* ) echo "!!! $stat  $file
-| C | copy-edit   | File has been copied and modified
-| R | rename-edit | File has been renamed and modified
-| D | deleted     | File has been deleted
-| U | unmerged    | File has conflicts after a merge"
-exit 1 ;;
+			echo "rm '$remote'"
+			read -r -d '' file
+			remote="$(getremotepath "$file")" || continue
+			echo "put '$file' '$remote'" ;;
+		* )
+			{ cat >&2; exit 1; } <<< "
+ERROR unhandled status: '$stat' '$file'
+	C = copied,
+	T = filetype changed,
+	U = unmerged,
+	X = unknown,
+	B = broken pairing,
+accepted:
+	A = added,
+	M = modified,
+	D = deleted,
+	R = renamed,
+" ;;
 	esac
-
-done > $lstcmdfile
-cat $lstcmdfile
-
-# cat $lstcmdfile
+done < <(git --no-pager diff --name-status -z "$oldcommit" "$newcommit")

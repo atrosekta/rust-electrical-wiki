@@ -1,27 +1,24 @@
 #!/bin/bash
 
-MRKDWNDIR=content
-mapfile -t files <<< $(find "$MRKDWNDIR" -maxdepth 1 -type f)
+files=(content/*.md)
 
-for file in "${files[@]}"; do
-	file="${file#"$MRKDWNDIR/"}"
+for file in "${files[@]}"
+do
+	file="${file#content/}"
 	file="${file/%.md/.html}"
 	grep -Fq "$file" navbar.md && continue
-	echo -e "WARNING file is not in sidebar :\t" "$file"
-	cat "${files[@]}" | grep -Fq "$file" && continue;
-	echo -e "\tneither stated in any other file"
-done
+	echo "FILE NOT IN SIDEBAR: $file"
+	grep -Fq "$file" "${files[@]}" && continue;
+	echo -e "\tNEITHER LINKED IN ANY OTHER PAGE"
+done >&2
 
-printf "\nsearching for bad casing in links...\n"
-for file in content/*.md
+# i dont remember what error in links this is supposed to catch exactly,
+# but we had it only once, before adding that check.
+# and i thinks this also flag some good links ...
+for file in "${files[@]}"
 do
-	badlinks=$( grep -PnTo '#[-\w]+\s*\)' "$file" | grep "[A-Z]") \
+	badlinks=$(grep -PnTo '#[-\w]+\s*\)' "$file" | grep "[A-Z]") \
 		|| continue
-	printf "%s\n\e[31m%s\e[0m\n" "$file" "$badlinks"
-	HASBADLINKS=1
+	echo -e "BAD LINK FOUND: $file\n\t$badlinks"
 done
-
-[ -z $HASBADLINKS ] \
-	&& echo -e "  \e[32mfound none.\e[0m" \
-	|| echo -e "ERROR FOUND SOME !\e[0m"
 
