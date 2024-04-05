@@ -9,7 +9,7 @@ lastcommit=$(<$commitfile)
 if [ "$1" == "-n" ]; then
 	commitfile=/dev/null
 else
-	./changedfiles.sh $lastcommit $currcommit > $ftpcmdfile
+	./git-ftp-diff.sh $lastcommit $currcommit > $ftpcmdfile
 fi
 
 [ -z "$(<$ftpcmdfile)" ] && {
